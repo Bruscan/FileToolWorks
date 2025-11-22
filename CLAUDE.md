@@ -11,8 +11,14 @@ Free online tools for file conversion and editing. Built with Next.js 15, TypeSc
 - ✅ robots.txt created
 - ✅ sitemap.xml generator implemented
 - ✅ Canonical URLs configured
+- ✅ First tool completed: Image to PDF
+  - Client-side conversion with jsPDF
+  - Drag & drop upload
+  - Image reordering
+  - SEO-optimized metadata
+  - FAQ and related tools
 - ✅ GitHub repo created: https://github.com/Bruscan/FileToolWorks
-- 🔄 Ready for tool page development
+- 🔄 Ready for more tools and static pages
 
 ## Tech Stack
 - **Framework**: Next.js 15 (App Router)
@@ -20,6 +26,7 @@ Free online tools for file conversion and editing. Built with Next.js 15, TypeSc
 - **Styling**: Tailwind CSS
 - **Icons**: Lucide React
 - **Dev Server**: Turbopack
+- **PDF Processing**: jsPDF (client-side)
 
 ## Key Design Principles
 - **Extra Simple UI**: Minimalist, one purpose per page
