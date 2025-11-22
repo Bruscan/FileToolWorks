@@ -439,7 +439,7 @@ Per sida:
 ## 🔗 Important Links
 
 - **Domain**: FileToolWorks.com
-- **GitHub**: TBD
+- **GitHub**: https://github.com/Bruscan/FileToolWorks
 - **Hosting**: TBD (Vercel/Netlify)
 - **Analytics**: Google Search Console + Google Analytics
 - **Email**: TBD (support@filetoolworks.com)
