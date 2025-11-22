@@ -252,6 +252,7 @@ export default function ImageToPDF() {
                     key={image.id}
                     className="flex items-center gap-3 p-3 bg-gray-50 rounded-lg border border-gray-200"
                   >
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
                     <img
                       src={image.preview}
                       alt={image.file.name}
@@ -500,7 +501,7 @@ export default function ImageToPDF() {
               <div>
                 <strong className="text-gray-900">Convert and download</strong>
                 <p className="text-gray-600 text-sm">
-                  Click "Convert to PDF" and your file will download automatically.
+                  Click &quot;Convert to PDF&quot; and your file will download automatically.
                 </p>
               </div>
             </li>
