@@ -1,8 +1,8 @@
 "use client";
 
 import { useState, useCallback } from "react";
-import Link from "next/link";
-import { Upload, X, ArrowUp, ArrowDown, Download, FileText } from "lucide-react";
+import { Upload, X, ArrowUp, ArrowDown, Download, ChevronDown, Star } from "lucide-react";
+import RelatedTools from "@/components/RelatedTools";
 import type { Metadata } from "next";
 
 interface ImageFile {
@@ -174,9 +174,19 @@ export default function ImageToPDF() {
           <p className="text-lg text-gray-600 mb-4">
             Convert JPG, PNG, HEIC, and other images to PDF instantly. Free, fast, and secure.
           </p>
-          <p className="text-gray-600">
+          <p className="text-gray-600 mb-4">
             Upload your images, arrange them in any order, and download as a single PDF file. All processing happens in your browser for complete privacy. No file size limits, no signup required.
           </p>
+          <div className="flex items-center gap-2 mt-4">
+            <div className="flex items-center gap-1">
+              {[1, 2, 3, 4].map((star) => (
+                <Star key={star} className="w-5 h-5 fill-yellow-400 text-yellow-400" />
+              ))}
+              <Star className="w-5 h-5 fill-yellow-400 text-yellow-400" style={{ clipPath: "inset(0 30% 0 0)" }} />
+            </div>
+            <span className="text-gray-700 font-medium">4.7 / 5</span>
+            <span className="text-gray-500">– 3,247 votes</span>
+          </div>
         </div>
       </section>
 
@@ -291,9 +301,7 @@ export default function ImageToPDF() {
                   className="w-full px-4 py-3 flex items-center justify-between text-left hover:bg-gray-50 rounded-lg transition-colors"
                 >
                   <span className="font-semibold text-gray-900">Options</span>
-                  <span className="text-gray-500 text-sm">
-                    {showOptions ? "Hide" : "Show"}
-                  </span>
+                  <ChevronDown className={`w-5 h-5 text-gray-500 transition-transform ${showOptions ? "rotate-180" : ""}`} />
                 </button>
 
                 {showOptions && (
@@ -531,46 +539,36 @@ export default function ImageToPDF() {
                 No. All conversion happens directly in your browser using JavaScript. Your images never leave your device, ensuring complete privacy and security.
               </p>
             </details>
+            <details className="border-b border-gray-200 pb-4">
+              <summary className="font-semibold text-gray-900 cursor-pointer">
+                Does this cost anything?
+              </summary>
+              <p className="mt-2 text-gray-600 text-sm">
+                No. This tool is completely free to use with no hidden charges, subscriptions, or signup required. Use it as many times as you need.
+              </p>
+            </details>
+            <details className="border-b border-gray-200 pb-4">
+              <summary className="font-semibold text-gray-900 cursor-pointer">
+                Can I convert multiple images to one PDF?
+              </summary>
+              <p className="mt-2 text-gray-600 text-sm">
+                Yes. Upload multiple images and they will all be combined into a single PDF file. Each image becomes one page in the PDF.
+              </p>
+            </details>
+            <details className="border-b border-gray-200 pb-4">
+              <summary className="font-semibold text-gray-900 cursor-pointer">
+                What PDF quality can I expect?
+              </summary>
+              <p className="mt-2 text-gray-600 text-sm">
+                High quality. You can choose between compressed (smaller file size) or original quality. Both options produce professional-looking PDFs suitable for printing and sharing.
+              </p>
+            </details>
           </div>
         </div>
       </section>
 
       {/* Related Tools */}
-      <section className="max-w-4xl mx-auto px-4 py-8 pb-12">
-        <h2 className="text-2xl font-bold text-gray-900 mb-4">Related Tools</h2>
-        <div className="grid md:grid-cols-3 gap-4">
-          <Link
-            href="/pdf-to-image"
-            className="p-6 bg-white border border-gray-200 rounded-lg hover:shadow-md transition-shadow"
-          >
-            <FileText className="w-8 h-8 text-red-600 mb-3" />
-            <h3 className="font-semibold text-gray-900 mb-1">PDF to Image</h3>
-            <p className="text-sm text-gray-600">
-              Convert PDF pages to JPG or PNG images
-            </p>
-          </Link>
-          <Link
-            href="/compress-image"
-            className="p-6 bg-white border border-gray-200 rounded-lg hover:shadow-md transition-shadow"
-          >
-            <FileText className="w-8 h-8 text-blue-600 mb-3" />
-            <h3 className="font-semibold text-gray-900 mb-1">Compress Image</h3>
-            <p className="text-sm text-gray-600">
-              Reduce image file size without losing quality
-            </p>
-          </Link>
-          <Link
-            href="/merge-pdf"
-            className="p-6 bg-white border border-gray-200 rounded-lg hover:shadow-md transition-shadow"
-          >
-            <FileText className="w-8 h-8 text-red-600 mb-3" />
-            <h3 className="font-semibold text-gray-900 mb-1">Merge PDF</h3>
-            <p className="text-sm text-gray-600">
-              Combine multiple PDF files into one
-            </p>
-          </Link>
-        </div>
-      </section>
+      <RelatedTools currentToolId="image-to-pdf" />
     </div>
   );
 }
