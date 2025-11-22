@@ -15,6 +15,11 @@ Free online tools for file conversion and editing. Built with Next.js 15, TypeSc
   - Client-side conversion with jsPDF
   - Drag & drop upload
   - Image reordering
+  - PDF conversion options:
+    - Page orientation (Portrait/Landscape)
+    - Page size (A4/US Letter/Same as Image)
+    - Page margin (None/Small/Big)
+    - Image compression (On/Off)
   - SEO-optimized metadata
   - FAQ and related tools
 - ✅ GitHub repo created: https://github.com/Bruscan/FileToolWorks

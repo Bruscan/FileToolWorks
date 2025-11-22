@@ -11,9 +11,22 @@ interface ImageFile {
   preview: string;
 }
 
+interface PDFOptions {
+  orientation: "portrait" | "landscape";
+  pageSize: "a4" | "letter" | "auto";
+  margin: "none" | "small" | "big";
+  compress: boolean;
+}
+
 export default function ImageToPDF() {
   const [images, setImages] = useState<ImageFile[]>([]);
   const [converting, setConverting] = useState(false);
+  const [options, setOptions] = useState<PDFOptions>({
+    orientation: "portrait",
+    pageSize: "a4",
+    margin: "small",
+    compress: true,
+  });
 
   const handleFileSelect = useCallback((files: FileList | null) => {
     if (!files) return;
@@ -76,7 +89,28 @@ export default function ImageToPDF() {
       // Dynamic import of jsPDF
       const { jsPDF } = await import("jspdf");
 
-      const pdf = new jsPDF();
+      // Determine page format
+      let format: [number, number] | "a4" | "letter" = "a4";
+      if (options.pageSize === "letter") {
+        format = "letter";
+      } else if (options.pageSize === "auto" && images.length > 0) {
+        // Use first image dimensions for auto
+        const firstImg = new Image();
+        firstImg.src = images[0].preview;
+        await new Promise((resolve) => { firstImg.onload = resolve; });
+        format = [firstImg.width * 0.264583, firstImg.height * 0.264583]; // px to mm
+      }
+
+      const pdf = new jsPDF({
+        orientation: options.orientation,
+        unit: "mm",
+        format: format,
+      });
+
+      // Calculate margins
+      const marginMap = { none: 0, small: 10, big: 20 };
+      const margin = marginMap[options.margin];
+
       let isFirstPage = true;
 
       for (const image of images) {
@@ -90,14 +124,20 @@ export default function ImageToPDF() {
         const imgWidth = img.width;
         const imgHeight = img.height;
 
-        // Calculate dimensions to fit page
+        // Get page dimensions
         const pdfWidth = pdf.internal.pageSize.getWidth();
         const pdfHeight = pdf.internal.pageSize.getHeight();
 
-        const ratio = Math.min(pdfWidth / imgWidth, pdfHeight / imgHeight);
+        // Calculate available space with margins
+        const availableWidth = pdfWidth - (margin * 2);
+        const availableHeight = pdfHeight - (margin * 2);
+
+        // Calculate dimensions to fit page
+        const ratio = Math.min(availableWidth / imgWidth, availableHeight / imgHeight);
         const width = imgWidth * ratio;
         const height = imgHeight * ratio;
 
+        // Center image
         const x = (pdfWidth - width) / 2;
         const y = (pdfHeight - height) / 2;
 
@@ -106,7 +146,11 @@ export default function ImageToPDF() {
         }
         isFirstPage = false;
 
-        pdf.addImage(image.preview, "JPEG", x, y, width, height);
+        // Add image with optional compression
+        const format = options.compress ? "JPEG" : "PNG";
+        const quality = options.compress ? 0.85 : 1.0;
+
+        pdf.addImage(image.preview, format, x, y, width, height, undefined, options.compress ? "FAST" : "NONE");
       }
 
       pdf.save("converted.pdf");
@@ -240,6 +284,157 @@ export default function ImageToPDF() {
                     </div>
                   </div>
                 ))}
+              </div>
+
+              {/* Options */}
+              <div className="bg-gray-50 border border-gray-200 rounded-lg p-4 mb-4">
+                <h3 className="font-semibold text-gray-900 mb-4">Options</h3>
+
+                <div className="grid md:grid-cols-2 gap-4">
+                  {/* Page Orientation */}
+                  <div>
+                    <label className="block text-sm font-medium text-gray-700 mb-2">
+                      Page Orientation
+                    </label>
+                    <div className="space-y-2">
+                      <label className="flex items-center">
+                        <input
+                          type="radio"
+                          name="orientation"
+                          value="portrait"
+                          checked={options.orientation === "portrait"}
+                          onChange={(e) => setOptions({ ...options, orientation: "portrait" })}
+                          className="mr-2"
+                        />
+                        <span className="text-sm text-gray-700">Portrait</span>
+                      </label>
+                      <label className="flex items-center">
+                        <input
+                          type="radio"
+                          name="orientation"
+                          value="landscape"
+                          checked={options.orientation === "landscape"}
+                          onChange={(e) => setOptions({ ...options, orientation: "landscape" })}
+                          className="mr-2"
+                        />
+                        <span className="text-sm text-gray-700">Landscape</span>
+                      </label>
+                    </div>
+                  </div>
+
+                  {/* Page Size */}
+                  <div>
+                    <label className="block text-sm font-medium text-gray-700 mb-2">
+                      Page Size
+                    </label>
+                    <div className="space-y-2">
+                      <label className="flex items-center">
+                        <input
+                          type="radio"
+                          name="pageSize"
+                          value="a4"
+                          checked={options.pageSize === "a4"}
+                          onChange={(e) => setOptions({ ...options, pageSize: "a4" })}
+                          className="mr-2"
+                        />
+                        <span className="text-sm text-gray-700">A4</span>
+                      </label>
+                      <label className="flex items-center">
+                        <input
+                          type="radio"
+                          name="pageSize"
+                          value="letter"
+                          checked={options.pageSize === "letter"}
+                          onChange={(e) => setOptions({ ...options, pageSize: "letter" })}
+                          className="mr-2"
+                        />
+                        <span className="text-sm text-gray-700">US Letter</span>
+                      </label>
+                      <label className="flex items-center">
+                        <input
+                          type="radio"
+                          name="pageSize"
+                          value="auto"
+                          checked={options.pageSize === "auto"}
+                          onChange={(e) => setOptions({ ...options, pageSize: "auto" })}
+                          className="mr-2"
+                        />
+                        <span className="text-sm text-gray-700">Same as Image</span>
+                      </label>
+                    </div>
+                  </div>
+
+                  {/* Page Margin */}
+                  <div>
+                    <label className="block text-sm font-medium text-gray-700 mb-2">
+                      Page Margin
+                    </label>
+                    <div className="space-y-2">
+                      <label className="flex items-center">
+                        <input
+                          type="radio"
+                          name="margin"
+                          value="none"
+                          checked={options.margin === "none"}
+                          onChange={(e) => setOptions({ ...options, margin: "none" })}
+                          className="mr-2"
+                        />
+                        <span className="text-sm text-gray-700">None</span>
+                      </label>
+                      <label className="flex items-center">
+                        <input
+                          type="radio"
+                          name="margin"
+                          value="small"
+                          checked={options.margin === "small"}
+                          onChange={(e) => setOptions({ ...options, margin: "small" })}
+                          className="mr-2"
+                        />
+                        <span className="text-sm text-gray-700">Small</span>
+                      </label>
+                      <label className="flex items-center">
+                        <input
+                          type="radio"
+                          name="margin"
+                          value="big"
+                          checked={options.margin === "big"}
+                          onChange={(e) => setOptions({ ...options, margin: "big" })}
+                          className="mr-2"
+                        />
+                        <span className="text-sm text-gray-700">Big</span>
+                      </label>
+                    </div>
+                  </div>
+
+                  {/* Compression */}
+                  <div>
+                    <label className="block text-sm font-medium text-gray-700 mb-2">
+                      Compression
+                    </label>
+                    <div className="space-y-2">
+                      <label className="flex items-center">
+                        <input
+                          type="radio"
+                          name="compress"
+                          checked={options.compress}
+                          onChange={(e) => setOptions({ ...options, compress: true })}
+                          className="mr-2"
+                        />
+                        <span className="text-sm text-gray-700">Compress Images</span>
+                      </label>
+                      <label className="flex items-center">
+                        <input
+                          type="radio"
+                          name="compress"
+                          checked={!options.compress}
+                          onChange={(e) => setOptions({ ...options, compress: false })}
+                          className="mr-2"
+                        />
+                        <span className="text-sm text-gray-700">Don&apos;t Compress</span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
               </div>
 
               <button
