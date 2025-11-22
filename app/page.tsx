@@ -1,5 +1,12 @@
 import Link from "next/link";
 import { Search, FileImage, FileText, Video, ArrowRight } from "lucide-react";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  alternates: {
+    canonical: "/",
+  },
+};
 
 export default function Home() {
   return (
@@ -8,10 +15,13 @@ export default function Home() {
       <section className="px-4 py-16 md:py-24 bg-gradient-to-b from-blue-50 to-white">
         <div className="max-w-6xl mx-auto text-center">
           <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
-            Free Online Tools
+            Free Online File Conversion Tools
           </h1>
-          <p className="text-xl md:text-2xl text-gray-600 mb-8">
-            Fast, Simple, No Signup
+          <p className="text-xl md:text-2xl text-gray-600 mb-4">
+            Convert, compress, and edit files instantly
+          </p>
+          <p className="text-base md:text-lg text-gray-500 mb-8 max-w-3xl mx-auto">
+            Transform images to PDF, compress files, convert formats, and more. All tools work directly in your browser. Fast, secure, and completely free. No signup or software installation required.
           </p>
 
           {/* Search Bar */}
@@ -54,10 +64,13 @@ export default function Home() {
       {/* Image Tools Category */}
       <section className="px-4 py-16 bg-gray-50">
         <div className="max-w-6xl mx-auto">
-          <div className="flex items-center mb-8">
+          <div className="flex items-center mb-3">
             <FileImage className="w-8 h-8 text-blue-600 mr-3" />
             <h2 className="text-3xl font-bold text-gray-900">Image Tools</h2>
           </div>
+          <p className="text-gray-600 mb-6 max-w-3xl">
+            Convert images between formats, compress photos, resize pictures, and remove backgrounds. All image processing happens securely in your browser.
+          </p>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
             {imageTools.map((tool) => (
               <ToolCard key={tool.href} {...tool} />
@@ -69,10 +82,13 @@ export default function Home() {
       {/* PDF Tools Category */}
       <section className="px-4 py-16">
         <div className="max-w-6xl mx-auto">
-          <div className="flex items-center mb-8">
+          <div className="flex items-center mb-3">
             <FileText className="w-8 h-8 text-red-600 mr-3" />
             <h2 className="text-3xl font-bold text-gray-900">PDF Tools</h2>
           </div>
+          <p className="text-gray-600 mb-6 max-w-3xl">
+            Merge, split, compress, and convert PDF files. Extract text with OCR, add signatures, or convert PDFs to Word, images, and other formats.
+          </p>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
             {pdfTools.map((tool) => (
               <ToolCard key={tool.href} {...tool} />
@@ -84,10 +100,13 @@ export default function Home() {
       {/* Video Tools Category */}
       <section className="px-4 py-16 bg-gray-50">
         <div className="max-w-6xl mx-auto">
-          <div className="flex items-center mb-8">
+          <div className="flex items-center mb-3">
             <Video className="w-8 h-8 text-purple-600 mr-3" />
             <h2 className="text-3xl font-bold text-gray-900">Video Tools</h2>
           </div>
+          <p className="text-gray-600 mb-6 max-w-3xl">
+            Convert videos and GIFs to different formats. Extract audio from video files quickly and easily.
+          </p>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
             {videoTools.map((tool) => (
               <ToolCard key={tool.href} {...tool} />
