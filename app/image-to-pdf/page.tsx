@@ -168,9 +168,6 @@ export default function ImageToPDF() {
       {/* Hero/Header */}
       <section className="bg-white border-b border-gray-200">
         <div className="max-w-4xl mx-auto px-4 py-8">
-          <Link href="/" className="text-blue-600 hover:text-blue-800 text-sm mb-4 inline-block">
-            ← Back to Home
-          </Link>
           <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
             Image to PDF Converter
           </h1>

@@ -5,6 +5,10 @@ Free online tools for file conversion and editing. Built with Next.js 15, TypeSc
 
 ## Current Status
 - ✅ Next.js project initialized
+- ✅ Global Navbar and Footer components
+  - Navbar: Logo, navigation links (Home, Blog, About, Contact)
+  - Footer: Tool links, company links, copyright
+  - Both sticky and responsive
 - ✅ Home page created with all sections (SEO-optimized)
 - ✅ Hero section with keyword-rich text
 - ✅ Category descriptions added (Image, PDF, Video)

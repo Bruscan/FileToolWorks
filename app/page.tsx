@@ -163,56 +163,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="bg-gray-900 text-gray-300 px-4 py-12">
-        <div className="max-w-6xl mx-auto">
-          <div className="grid md:grid-cols-4 gap-8">
-            <div>
-              <h3 className="font-bold text-white mb-4">FileToolWorks</h3>
-              <p className="text-sm">
-                Free online tools for file conversion and editing.
-              </p>
-            </div>
-            <div>
-              <h4 className="font-semibold text-white mb-4">Image Tools</h4>
-              <ul className="space-y-2 text-sm">
-                {imageTools.slice(0, 5).map((tool) => (
-                  <li key={tool.href}>
-                    <Link href={tool.href} className="hover:text-white">
-                      {tool.title}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
-            <div>
-              <h4 className="font-semibold text-white mb-4">PDF Tools</h4>
-              <ul className="space-y-2 text-sm">
-                {pdfTools.slice(0, 5).map((tool) => (
-                  <li key={tool.href}>
-                    <Link href={tool.href} className="hover:text-white">
-                      {tool.title}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
-            <div>
-              <h4 className="font-semibold text-white mb-4">Company</h4>
-              <ul className="space-y-2 text-sm">
-                <li><Link href="/about" className="hover:text-white">About</Link></li>
-                <li><Link href="/blog" className="hover:text-white">Blog</Link></li>
-                <li><Link href="/privacy" className="hover:text-white">Privacy</Link></li>
-                <li><Link href="/terms" className="hover:text-white">Terms</Link></li>
-                <li><Link href="/contact" className="hover:text-white">Contact</Link></li>
-              </ul>
-            </div>
-          </div>
-          <div className="border-t border-gray-800 mt-8 pt-8 text-center text-sm">
-            <p>&copy; 2025 FileToolWorks. All rights reserved.</p>
-          </div>
-        </div>
-      </footer>
     </div>
   );
 }
