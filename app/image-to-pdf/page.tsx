@@ -21,6 +21,7 @@ interface PDFOptions {
 export default function ImageToPDF() {
   const [images, setImages] = useState<ImageFile[]>([]);
   const [converting, setConverting] = useState(false);
+  const [showOptions, setShowOptions] = useState(false);
   const [options, setOptions] = useState<PDFOptions>({
     orientation: "portrait",
     pageSize: "a4",
@@ -287,154 +288,158 @@ export default function ImageToPDF() {
               </div>
 
               {/* Options */}
-              <div className="bg-gray-50 border border-gray-200 rounded-lg p-4 mb-4">
-                <h3 className="font-semibold text-gray-900 mb-4">Options</h3>
+              <div className="bg-white border border-gray-200 rounded-lg mb-4">
+                <button
+                  onClick={() => setShowOptions(!showOptions)}
+                  className="w-full px-4 py-3 flex items-center justify-between text-left hover:bg-gray-50 rounded-lg transition-colors"
+                >
+                  <span className="font-semibold text-gray-900">Options</span>
+                  <span className="text-gray-500 text-sm">
+                    {showOptions ? "Hide" : "Show"}
+                  </span>
+                </button>
 
-                <div className="grid md:grid-cols-2 gap-4">
-                  {/* Page Orientation */}
-                  <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-2">
-                      Page Orientation
-                    </label>
-                    <div className="space-y-2">
-                      <label className="flex items-center">
-                        <input
-                          type="radio"
-                          name="orientation"
-                          value="portrait"
-                          checked={options.orientation === "portrait"}
-                          onChange={(e) => setOptions({ ...options, orientation: "portrait" })}
-                          className="mr-2"
-                        />
-                        <span className="text-sm text-gray-700">Portrait</span>
-                      </label>
-                      <label className="flex items-center">
-                        <input
-                          type="radio"
-                          name="orientation"
-                          value="landscape"
-                          checked={options.orientation === "landscape"}
-                          onChange={(e) => setOptions({ ...options, orientation: "landscape" })}
-                          className="mr-2"
-                        />
-                        <span className="text-sm text-gray-700">Landscape</span>
-                      </label>
+                {showOptions && (
+                  <div className="px-4 pb-4 pt-2 border-t border-gray-200">
+                    <div className="grid md:grid-cols-2 gap-4">
+                      {/* Page Orientation */}
+                      <div>
+                        <label className="block text-sm font-medium text-gray-700 mb-2">
+                          Page Orientation
+                        </label>
+                        <div className="flex gap-2">
+                          <button
+                            onClick={() => setOptions({ ...options, orientation: "portrait" })}
+                            className={`flex-1 px-4 py-2 text-sm font-medium border rounded-lg transition-colors ${
+                              options.orientation === "portrait"
+                                ? "bg-blue-600 text-white border-blue-600"
+                                : "bg-white text-gray-700 border-gray-300 hover:border-gray-400"
+                            }`}
+                          >
+                            Portrait
+                          </button>
+                          <button
+                            onClick={() => setOptions({ ...options, orientation: "landscape" })}
+                            className={`flex-1 px-4 py-2 text-sm font-medium border rounded-lg transition-colors ${
+                              options.orientation === "landscape"
+                                ? "bg-blue-600 text-white border-blue-600"
+                                : "bg-white text-gray-700 border-gray-300 hover:border-gray-400"
+                            }`}
+                          >
+                            Landscape
+                          </button>
+                        </div>
+                      </div>
+
+                      {/* Page Size */}
+                      <div>
+                        <label className="block text-sm font-medium text-gray-700 mb-2">
+                          Page Size
+                        </label>
+                        <div className="flex gap-2">
+                          <button
+                            onClick={() => setOptions({ ...options, pageSize: "a4" })}
+                            className={`flex-1 px-3 py-2 text-sm font-medium border rounded-lg transition-colors ${
+                              options.pageSize === "a4"
+                                ? "bg-blue-600 text-white border-blue-600"
+                                : "bg-white text-gray-700 border-gray-300 hover:border-gray-400"
+                            }`}
+                          >
+                            A4
+                          </button>
+                          <button
+                            onClick={() => setOptions({ ...options, pageSize: "letter" })}
+                            className={`flex-1 px-3 py-2 text-sm font-medium border rounded-lg transition-colors ${
+                              options.pageSize === "letter"
+                                ? "bg-blue-600 text-white border-blue-600"
+                                : "bg-white text-gray-700 border-gray-300 hover:border-gray-400"
+                            }`}
+                          >
+                            Letter
+                          </button>
+                          <button
+                            onClick={() => setOptions({ ...options, pageSize: "auto" })}
+                            className={`flex-1 px-3 py-2 text-sm font-medium border rounded-lg transition-colors ${
+                              options.pageSize === "auto"
+                                ? "bg-blue-600 text-white border-blue-600"
+                                : "bg-white text-gray-700 border-gray-300 hover:border-gray-400"
+                            }`}
+                          >
+                            Auto
+                          </button>
+                        </div>
+                      </div>
+
+                      {/* Page Margin */}
+                      <div>
+                        <label className="block text-sm font-medium text-gray-700 mb-2">
+                          Page Margin
+                        </label>
+                        <div className="flex gap-2">
+                          <button
+                            onClick={() => setOptions({ ...options, margin: "none" })}
+                            className={`flex-1 px-4 py-2 text-sm font-medium border rounded-lg transition-colors ${
+                              options.margin === "none"
+                                ? "bg-blue-600 text-white border-blue-600"
+                                : "bg-white text-gray-700 border-gray-300 hover:border-gray-400"
+                            }`}
+                          >
+                            None
+                          </button>
+                          <button
+                            onClick={() => setOptions({ ...options, margin: "small" })}
+                            className={`flex-1 px-4 py-2 text-sm font-medium border rounded-lg transition-colors ${
+                              options.margin === "small"
+                                ? "bg-blue-600 text-white border-blue-600"
+                                : "bg-white text-gray-700 border-gray-300 hover:border-gray-400"
+                            }`}
+                          >
+                            Small
+                          </button>
+                          <button
+                            onClick={() => setOptions({ ...options, margin: "big" })}
+                            className={`flex-1 px-4 py-2 text-sm font-medium border rounded-lg transition-colors ${
+                              options.margin === "big"
+                                ? "bg-blue-600 text-white border-blue-600"
+                                : "bg-white text-gray-700 border-gray-300 hover:border-gray-400"
+                            }`}
+                          >
+                            Big
+                          </button>
+                        </div>
+                      </div>
+
+                      {/* Compression */}
+                      <div>
+                        <label className="block text-sm font-medium text-gray-700 mb-2">
+                          Compression
+                        </label>
+                        <div className="flex gap-2">
+                          <button
+                            onClick={() => setOptions({ ...options, compress: true })}
+                            className={`flex-1 px-4 py-2 text-sm font-medium border rounded-lg transition-colors ${
+                              options.compress
+                                ? "bg-blue-600 text-white border-blue-600"
+                                : "bg-white text-gray-700 border-gray-300 hover:border-gray-400"
+                            }`}
+                          >
+                            Compress
+                          </button>
+                          <button
+                            onClick={() => setOptions({ ...options, compress: false })}
+                            className={`flex-1 px-4 py-2 text-sm font-medium border rounded-lg transition-colors ${
+                              !options.compress
+                                ? "bg-blue-600 text-white border-blue-600"
+                                : "bg-white text-gray-700 border-gray-300 hover:border-gray-400"
+                            }`}
+                          >
+                            Original
+                          </button>
+                        </div>
+                      </div>
                     </div>
                   </div>
-
-                  {/* Page Size */}
-                  <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-2">
-                      Page Size
-                    </label>
-                    <div className="space-y-2">
-                      <label className="flex items-center">
-                        <input
-                          type="radio"
-                          name="pageSize"
-                          value="a4"
-                          checked={options.pageSize === "a4"}
-                          onChange={(e) => setOptions({ ...options, pageSize: "a4" })}
-                          className="mr-2"
-                        />
-                        <span className="text-sm text-gray-700">A4</span>
-                      </label>
-                      <label className="flex items-center">
-                        <input
-                          type="radio"
-                          name="pageSize"
-                          value="letter"
-                          checked={options.pageSize === "letter"}
-                          onChange={(e) => setOptions({ ...options, pageSize: "letter" })}
-                          className="mr-2"
-                        />
-                        <span className="text-sm text-gray-700">US Letter</span>
-                      </label>
-                      <label className="flex items-center">
-                        <input
-                          type="radio"
-                          name="pageSize"
-                          value="auto"
-                          checked={options.pageSize === "auto"}
-                          onChange={(e) => setOptions({ ...options, pageSize: "auto" })}
-                          className="mr-2"
-                        />
-                        <span className="text-sm text-gray-700">Same as Image</span>
-                      </label>
-                    </div>
-                  </div>
-
-                  {/* Page Margin */}
-                  <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-2">
-                      Page Margin
-                    </label>
-                    <div className="space-y-2">
-                      <label className="flex items-center">
-                        <input
-                          type="radio"
-                          name="margin"
-                          value="none"
-                          checked={options.margin === "none"}
-                          onChange={(e) => setOptions({ ...options, margin: "none" })}
-                          className="mr-2"
-                        />
-                        <span className="text-sm text-gray-700">None</span>
-                      </label>
-                      <label className="flex items-center">
-                        <input
-                          type="radio"
-                          name="margin"
-                          value="small"
-                          checked={options.margin === "small"}
-                          onChange={(e) => setOptions({ ...options, margin: "small" })}
-                          className="mr-2"
-                        />
-                        <span className="text-sm text-gray-700">Small</span>
-                      </label>
-                      <label className="flex items-center">
-                        <input
-                          type="radio"
-                          name="margin"
-                          value="big"
-                          checked={options.margin === "big"}
-                          onChange={(e) => setOptions({ ...options, margin: "big" })}
-                          className="mr-2"
-                        />
-                        <span className="text-sm text-gray-700">Big</span>
-                      </label>
-                    </div>
-                  </div>
-
-                  {/* Compression */}
-                  <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-2">
-                      Compression
-                    </label>
-                    <div className="space-y-2">
-                      <label className="flex items-center">
-                        <input
-                          type="radio"
-                          name="compress"
-                          checked={options.compress}
-                          onChange={(e) => setOptions({ ...options, compress: true })}
-                          className="mr-2"
-                        />
-                        <span className="text-sm text-gray-700">Compress Images</span>
-                      </label>
-                      <label className="flex items-center">
-                        <input
-                          type="radio"
-                          name="compress"
-                          checked={!options.compress}
-                          onChange={(e) => setOptions({ ...options, compress: false })}
-                          className="mr-2"
-                        />
-                        <span className="text-sm text-gray-700">Don&apos;t Compress</span>
-                      </label>
-                    </div>
-                  </div>
-                </div>
+                )}
               </div>
 
               <button
