@@ -113,7 +113,7 @@ export default function SplitPDF() {
           newPdf.addPage(copiedPage);
 
           const pdfBytes = await newPdf.save();
-          const blob = new Blob([pdfBytes], { type: "application/pdf" });
+          const blob = new Blob([new Uint8Array(pdfBytes)], { type: "application/pdf" });
           const url = URL.createObjectURL(blob);
 
           const a = document.createElement("a");
@@ -141,7 +141,7 @@ export default function SplitPDF() {
           copiedPages.forEach((page) => newPdf.addPage(page));
 
           const pdfBytes = await newPdf.save();
-          const blob = new Blob([pdfBytes], { type: "application/pdf" });
+          const blob = new Blob([new Uint8Array(pdfBytes)], { type: "application/pdf" });
           const url = URL.createObjectURL(blob);
 
           const a = document.createElement("a");
