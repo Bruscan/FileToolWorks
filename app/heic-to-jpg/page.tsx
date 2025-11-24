@@ -91,16 +91,13 @@ export default function HEICToJPG() {
             url,
             filename,
           });
-        } catch (error) {
-          // eslint-disable-next-line no-console
-          console.error(`Error converting ${heicFile.originalName}:`, error);
+        } catch {
+          // Skip failed conversions silently
         }
       }
 
       setConvertedImages(converted);
-    } catch (error) {
-      // eslint-disable-next-line no-console
-      console.error("Conversion error:", error);
+    } catch {
       alert("An error occurred during conversion. Please try again.");
     } finally {
       setConverting(false);
