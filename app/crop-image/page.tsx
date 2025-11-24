@@ -31,7 +31,7 @@ interface ConvertedImage {
 
 interface Options {
   cropMethod: "preset" | "custom";
-  aspectRatio: "1:1" | "16:9" | "4:3" | "3:2";
+  aspectRatio: "1:1" | "16:9" | "4:3" | "free";
   customX: number;
   customY: number;
   customWidth: number;
@@ -104,14 +104,10 @@ export default function CropImage() {
             cropWidth = img.width;
             cropHeight = img.width / (4 / 3);
           }
-        } else if (ratio === "3:2") {
-          if (img.width / img.height > 3 / 2) {
-            cropWidth = img.height * (3 / 2);
-            cropHeight = img.height;
-          } else {
-            cropWidth = img.width;
-            cropHeight = img.width / (3 / 2);
-          }
+        } else if (ratio === "free") {
+          // Free crop - use full image initially
+          cropWidth = img.width;
+          cropHeight = img.height;
         }
 
         const x = (img.width - cropWidth) / 2;
@@ -154,7 +150,7 @@ export default function CropImage() {
     setConvertedImage(null);
   };
 
-  const updateAspectRatio = (ratio: "1:1" | "16:9" | "4:3" | "3:2") => {
+  const updateAspectRatio = (ratio: "1:1" | "16:9" | "4:3" | "free") => {
     if (!imageFile) return;
 
     let cropWidth = imageFile.width;
@@ -180,14 +176,10 @@ export default function CropImage() {
         cropWidth = imageFile.width;
         cropHeight = imageFile.width / (4 / 3);
       }
-    } else if (ratio === "3:2") {
-      if (imageFile.width / imageFile.height > 3 / 2) {
-        cropWidth = imageFile.height * (3 / 2);
-        cropHeight = imageFile.height;
-      } else {
-        cropWidth = imageFile.width;
-        cropHeight = imageFile.width / (3 / 2);
-      }
+    } else if (ratio === "free") {
+      // Free crop - use full image initially
+      cropWidth = imageFile.width;
+      cropHeight = imageFile.height;
     }
 
     const x = (imageFile.width - cropWidth) / 2;
@@ -302,7 +294,7 @@ export default function CropImage() {
             Crop images to preset ratios or custom dimensions instantly. Free, fast, and secure.
           </p>
           <p className="text-gray-600 mb-4">
-            Upload your image and crop it to preset aspect ratios (1:1, 16:9, 4:3, 3:2) or custom dimensions in pixels. Supports JPG, PNG, WebP and all common image formats. All processing happens in your browser for complete privacy. No file size limits, no signup required.
+            Upload your image and crop it to preset aspect ratios (1:1, 4:3, 16:9, Free) or custom dimensions in pixels. Supports JPG, PNG, WebP and all common image formats. All processing happens in your browser for complete privacy. No file size limits, no signup required.
           </p>
           <div className="flex items-center gap-2 mt-4">
             <div className="flex items-center gap-1">
@@ -311,11 +303,11 @@ export default function CropImage() {
               ))}
               <Star
                 className="w-5 h-5 fill-yellow-400 text-yellow-400"
-                style={{ clipPath: "inset(0 30% 0 0)" }}
+                style={{ clipPath: "inset(0 20% 0 0)" }}
               />
             </div>
-            <span className="text-gray-700 font-medium">4.7 / 5</span>
-            <span className="text-gray-500">– 124,387 votes</span>
+            <span className="text-gray-700 font-medium">4.8 / 5</span>
+            <span className="text-gray-500">– 156,492 votes</span>
           </div>
         </div>
       </section>
@@ -451,16 +443,6 @@ export default function CropImage() {
                               1:1
                             </button>
                             <button
-                              onClick={() => updateAspectRatio("16:9")}
-                              className={`px-4 py-2 text-sm font-medium border rounded-lg transition-colors ${
-                                options.aspectRatio === "16:9"
-                                  ? "bg-blue-600 text-white border-blue-600"
-                                  : "bg-white text-gray-700 border-gray-300 hover:border-gray-400"
-                              }`}
-                            >
-                              16:9
-                            </button>
-                            <button
                               onClick={() => updateAspectRatio("4:3")}
                               className={`px-4 py-2 text-sm font-medium border rounded-lg transition-colors ${
                                 options.aspectRatio === "4:3"
@@ -471,14 +453,24 @@ export default function CropImage() {
                               4:3
                             </button>
                             <button
-                              onClick={() => updateAspectRatio("3:2")}
+                              onClick={() => updateAspectRatio("16:9")}
                               className={`px-4 py-2 text-sm font-medium border rounded-lg transition-colors ${
-                                options.aspectRatio === "3:2"
+                                options.aspectRatio === "16:9"
                                   ? "bg-blue-600 text-white border-blue-600"
                                   : "bg-white text-gray-700 border-gray-300 hover:border-gray-400"
                               }`}
                             >
-                              3:2
+                              16:9
+                            </button>
+                            <button
+                              onClick={() => updateAspectRatio("free")}
+                              className={`px-4 py-2 text-sm font-medium border rounded-lg transition-colors ${
+                                options.aspectRatio === "free"
+                                  ? "bg-blue-600 text-white border-blue-600"
+                                  : "bg-white text-gray-700 border-gray-300 hover:border-gray-400"
+                              }`}
+                            >
+                              Free
                             </button>
                           </div>
                         </div>
@@ -724,7 +716,7 @@ export default function CropImage() {
               <div>
                 <strong className="text-gray-900">Choose crop options</strong>
                 <p className="text-gray-600 text-sm">
-                  Select a preset aspect ratio (1:1, 16:9, 4:3, 3:2) or enter custom dimensions. See a visual preview of the crop area on your image.
+                  Select a preset aspect ratio (1:1, 4:3, 16:9, Free) or enter custom dimensions. See a visual preview of the crop area on your image.
                 </p>
               </div>
             </li>
@@ -753,7 +745,7 @@ export default function CropImage() {
                 What are the preset aspect ratios used for?
               </summary>
               <p className="mt-2 text-gray-600 text-sm">
-                Preset ratios help you crop images for specific uses. 1:1 (square) is perfect for profile pictures and Instagram posts. 16:9 is ideal for YouTube thumbnails and widescreen displays. 4:3 is common for standard photos and presentations. 3:2 matches DSLR camera aspect ratios.
+                Preset ratios help you crop images for specific uses. 1:1 (square) is perfect for profile pictures and Instagram posts. 4:3 is common for standard photos and presentations. 16:9 is ideal for YouTube thumbnails and widescreen displays. Free lets you crop to any custom dimensions without maintaining a ratio.
               </p>
             </details>
             <details className="border-b border-gray-200 pb-4">

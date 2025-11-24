@@ -121,14 +121,6 @@ export const tools: Tool[] = [
     category: "image",
     iconColor: "text-red-600",
   },
-  {
-    id: "image-to-heic",
-    name: "Image to HEIC",
-    href: "/image-to-heic",
-    description: "Convert images to HEIC format (Coming Soon)",
-    category: "image",
-    iconColor: "text-rose-600",
-  },
 
   // PDF Tools
   {
@@ -195,14 +187,6 @@ export const tools: Tool[] = [
     category: "pdf",
     iconColor: "text-indigo-600",
   },
-  {
-    id: "sign-pdf",
-    name: "Sign PDF",
-    href: "/sign-pdf",
-    description: "Add signature to PDF documents",
-    category: "pdf",
-    iconColor: "text-teal-600",
-  },
 
   // Video Tools
   {
@@ -236,14 +220,6 @@ export const tools: Tool[] = [
     description: "Convert any video format to MP4",
     category: "video",
     iconColor: "text-blue-600",
-  },
-  {
-    id: "video-to-webm",
-    name: "Video to WebM",
-    href: "/video-to-webm",
-    description: "Convert videos to WebM format for web",
-    category: "video",
-    iconColor: "text-green-600",
   },
 
   // Audio Tools

@@ -2,10 +2,27 @@
 
 import Link from "next/link";
 import { FileText, ChevronDown } from "lucide-react";
-import { useState } from "react";
+import { useState, useRef } from "react";
 
 export default function Navbar() {
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
+  const closeTimeoutRef = useRef<NodeJS.Timeout | null>(null);
+
+  const handleMouseEnter = (categoryName: string) => {
+    // Clear any pending close timeout
+    if (closeTimeoutRef.current) {
+      clearTimeout(closeTimeoutRef.current);
+      closeTimeoutRef.current = null;
+    }
+    setOpenDropdown(categoryName);
+  };
+
+  const handleMouseLeave = () => {
+    // Add a small delay before closing to allow user to move mouse to dropdown
+    closeTimeoutRef.current = setTimeout(() => {
+      setOpenDropdown(null);
+    }, 150);
+  };
 
   const categories = [
     {
@@ -43,6 +60,7 @@ export default function Navbar() {
       tools: [
         { name: "Audio Compressor", href: "/compress-audio" },
         { name: "Audio Trimmer", href: "/trim-audio" },
+        { name: "MP3 to WAV", href: "/mp3-to-wav" },
       ],
     },
     {
@@ -78,8 +96,8 @@ export default function Navbar() {
               <div
                 key={category.name}
                 className="relative"
-                onMouseEnter={() => setOpenDropdown(category.name)}
-                onMouseLeave={() => setOpenDropdown(null)}
+                onMouseEnter={() => handleMouseEnter(category.name)}
+                onMouseLeave={handleMouseLeave}
               >
                 <button className="flex items-center gap-1 px-3 py-2 text-gray-700 hover:text-blue-600 font-medium transition-colors rounded-lg hover:bg-gray-50">
                   {category.name}
