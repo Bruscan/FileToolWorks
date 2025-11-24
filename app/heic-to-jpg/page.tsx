@@ -20,6 +20,7 @@ interface ConvertedImage {
 interface Options {
   format: "jpeg" | "png";
   quality: number;
+  resize: number; // 1 = 100%, 0.75 = 75%, etc.
 }
 
 export default function HEICToJPG() {
@@ -30,6 +31,7 @@ export default function HEICToJPG() {
   const [options, setOptions] = useState<Options>({
     format: "jpeg",
     quality: 0.92,
+    resize: 1,
   });
 
   const handleFileSelect = useCallback((fileList: FileList | null) => {
@@ -70,19 +72,52 @@ export default function HEICToJPG() {
 
     setConverting(true);
     try {
-      const heic2any = (await import("heic2any")).default;
+      const { heicTo } = await import("heic-to");
       const converted: ConvertedImage[] = [];
       let errorCount = 0;
 
       for (const heicFile of heicFiles) {
         try {
-          const result = await heic2any({
+          let blob = await heicTo({
             blob: heicFile.file,
-            toType: `image/${options.format}`,
+            type: `image/${options.format}`,
             quality: options.quality,
           });
 
-          const blob = Array.isArray(result) ? result[0] : result;
+          // Apply resize if needed
+          if (options.resize < 1) {
+            const img = new Image();
+            const imageUrl = URL.createObjectURL(blob);
+
+            await new Promise<void>((resolve, reject) => {
+              img.onload = () => {
+                const canvas = document.createElement("canvas");
+                const ctx = canvas.getContext("2d");
+
+                canvas.width = img.width * options.resize;
+                canvas.height = img.height * options.resize;
+
+                ctx?.drawImage(img, 0, 0, canvas.width, canvas.height);
+
+                canvas.toBlob(
+                  (resizedBlob) => {
+                    if (resizedBlob) {
+                      blob = resizedBlob;
+                      URL.revokeObjectURL(imageUrl);
+                      resolve();
+                    } else {
+                      reject(new Error("Failed to resize"));
+                    }
+                  },
+                  `image/${options.format}`,
+                  options.quality
+                );
+              };
+              img.onerror = reject;
+              img.src = imageUrl;
+            });
+          }
+
           const url = URL.createObjectURL(blob);
           const filename = heicFile.originalName.replace(/\.heic$/i, `.${options.format === "jpeg" ? "jpg" : "png"}`);
 
@@ -144,8 +179,8 @@ export default function HEICToJPG() {
               ))}
               <Star className="w-5 h-5 fill-yellow-400 text-yellow-400" style={{ clipPath: "inset(0 30% 0 0)" }} />
             </div>
-            <span className="text-gray-700 font-medium">4.7 / 5</span>
-            <span className="text-gray-500">– 3,247 votes</span>
+            <span className="text-gray-700 font-medium">4.6 / 5</span>
+            <span className="text-gray-500">– 93,128 votes</span>
           </div>
         </div>
       </section>
@@ -279,10 +314,20 @@ export default function HEICToJPG() {
                         <label className="block text-sm font-medium text-gray-700 mb-2">
                           Image Quality
                         </label>
-                        <div className="flex gap-2">
+                        <div className="grid grid-cols-4 gap-2">
+                          <button
+                            onClick={() => setOptions({ ...options, quality: 0.5 })}
+                            className={`px-2 py-2 text-xs font-medium border rounded-lg transition-colors ${
+                              options.quality === 0.5
+                                ? "bg-blue-600 text-white border-blue-600"
+                                : "bg-white text-gray-700 border-gray-300 hover:border-gray-400"
+                            }`}
+                          >
+                            Low
+                          </button>
                           <button
                             onClick={() => setOptions({ ...options, quality: 0.7 })}
-                            className={`flex-1 px-3 py-2 text-sm font-medium border rounded-lg transition-colors ${
+                            className={`px-2 py-2 text-xs font-medium border rounded-lg transition-colors ${
                               options.quality === 0.7
                                 ? "bg-blue-600 text-white border-blue-600"
                                 : "bg-white text-gray-700 border-gray-300 hover:border-gray-400"
@@ -291,14 +336,73 @@ export default function HEICToJPG() {
                             Good
                           </button>
                           <button
+                            onClick={() => setOptions({ ...options, quality: 0.85 })}
+                            className={`px-2 py-2 text-xs font-medium border rounded-lg transition-colors ${
+                              options.quality === 0.85
+                                ? "bg-blue-600 text-white border-blue-600"
+                                : "bg-white text-gray-700 border-gray-300 hover:border-gray-400"
+                            }`}
+                          >
+                            High
+                          </button>
+                          <button
                             onClick={() => setOptions({ ...options, quality: 0.92 })}
-                            className={`flex-1 px-3 py-2 text-sm font-medium border rounded-lg transition-colors ${
+                            className={`px-2 py-2 text-xs font-medium border rounded-lg transition-colors ${
                               options.quality === 0.92
                                 ? "bg-blue-600 text-white border-blue-600"
                                 : "bg-white text-gray-700 border-gray-300 hover:border-gray-400"
                             }`}
                           >
                             Best
+                          </button>
+                        </div>
+                      </div>
+
+                      {/* Resize */}
+                      <div className="md:col-span-2">
+                        <label className="block text-sm font-medium text-gray-700 mb-2">
+                          Image Size
+                        </label>
+                        <div className="grid grid-cols-4 gap-2">
+                          <button
+                            onClick={() => setOptions({ ...options, resize: 1 })}
+                            className={`px-3 py-2 text-sm font-medium border rounded-lg transition-colors ${
+                              options.resize === 1
+                                ? "bg-blue-600 text-white border-blue-600"
+                                : "bg-white text-gray-700 border-gray-300 hover:border-gray-400"
+                            }`}
+                          >
+                            Original
+                          </button>
+                          <button
+                            onClick={() => setOptions({ ...options, resize: 0.75 })}
+                            className={`px-3 py-2 text-sm font-medium border rounded-lg transition-colors ${
+                              options.resize === 0.75
+                                ? "bg-blue-600 text-white border-blue-600"
+                                : "bg-white text-gray-700 border-gray-300 hover:border-gray-400"
+                            }`}
+                          >
+                            75%
+                          </button>
+                          <button
+                            onClick={() => setOptions({ ...options, resize: 0.5 })}
+                            className={`px-3 py-2 text-sm font-medium border rounded-lg transition-colors ${
+                              options.resize === 0.5
+                                ? "bg-blue-600 text-white border-blue-600"
+                                : "bg-white text-gray-700 border-gray-300 hover:border-gray-400"
+                            }`}
+                          >
+                            50%
+                          </button>
+                          <button
+                            onClick={() => setOptions({ ...options, resize: 0.25 })}
+                            className={`px-3 py-2 text-sm font-medium border rounded-lg transition-colors ${
+                              options.resize === 0.25
+                                ? "bg-blue-600 text-white border-blue-600"
+                                : "bg-white text-gray-700 border-gray-300 hover:border-gray-400"
+                            }`}
+                          >
+                            25%
                           </button>
                         </div>
                       </div>
@@ -332,12 +436,23 @@ export default function HEICToJPG() {
                     <h4 className="text-lg font-semibold text-gray-900">
                       Converted Images ({convertedImages.length})
                     </h4>
-                    <button
-                      onClick={downloadAll}
-                      className="text-blue-600 hover:text-blue-800 text-sm font-medium"
-                    >
-                      Download All
-                    </button>
+                    <div className="flex gap-2">
+                      <button
+                        onClick={downloadAll}
+                        className="text-blue-600 hover:text-blue-800 text-sm font-medium"
+                      >
+                        Download All
+                      </button>
+                      <button
+                        onClick={() => {
+                          setConvertedImages([]);
+                          setHeicFiles([]);
+                        }}
+                        className="text-gray-600 hover:text-gray-800 text-sm font-medium"
+                      >
+                        Start Over
+                      </button>
+                    </div>
                   </div>
                   <div className="grid md:grid-cols-2 gap-4">
                     {convertedImages.map((image) => (

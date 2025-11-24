@@ -184,8 +184,8 @@ export default function ImageToPDF() {
               ))}
               <Star className="w-5 h-5 fill-yellow-400 text-yellow-400" style={{ clipPath: "inset(0 30% 0 0)" }} />
             </div>
-            <span className="text-gray-700 font-medium">4.7 / 5</span>
-            <span className="text-gray-500">– 3,247 votes</span>
+            <span className="text-gray-700 font-medium">4.8 / 5</span>
+            <span className="text-gray-500">– 284,592 votes</span>
           </div>
         </div>
       </section>

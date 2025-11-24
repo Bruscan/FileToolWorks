@@ -4,46 +4,51 @@ import { useState, useCallback } from "react";
 import { Upload, X, Download, ChevronDown, Star } from "lucide-react";
 import RelatedTools from "@/components/RelatedTools";
 
-interface PDFFile {
+interface ImageFile {
   id: string;
   file: File;
-  pageCount?: number;
+  originalName: string;
+  preview: string;
 }
 
 interface ConvertedImage {
-  pageNumber: number;
-  dataUrl: string;
+  id: string;
+  blob: Blob;
+  url: string;
   filename: string;
 }
 
 interface Options {
-  format: "jpg" | "png";
   quality: number;
-  scale: number;
+  resize: number; // 1 = 100%, 0.75 = 75%, etc.
 }
 
-export default function PDFToJPG() {
-  const [pdfFile, setPdfFile] = useState<PDFFile | null>(null);
+export default function PNGToJPG() {
+  const [pngFiles, setPngFiles] = useState<ImageFile[]>([]);
   const [converting, setConverting] = useState(false);
   const [convertedImages, setConvertedImages] = useState<ConvertedImage[]>([]);
   const [showOptions, setShowOptions] = useState(false);
   const [options, setOptions] = useState<Options>({
-    format: "jpg",
     quality: 0.92,
-    scale: 2,
+    resize: 1,
   });
 
   const handleFileSelect = useCallback((fileList: FileList | null) => {
-    if (!fileList || fileList.length === 0) return;
+    if (!fileList) return;
 
-    const file = fileList[0];
-    if (file.type === "application/pdf") {
-      setPdfFile({
-        id: Math.random().toString(36).substr(2, 9),
-        file,
-      });
-      setConvertedImages([]);
-    }
+    const newFiles: ImageFile[] = [];
+    Array.from(fileList).forEach((file) => {
+      if (file.type === "image/png") {
+        newFiles.push({
+          id: Math.random().toString(36).substr(2, 9),
+          file,
+          originalName: file.name,
+          preview: URL.createObjectURL(file),
+        });
+      }
+    });
+
+    setPngFiles((prev) => [...prev, ...newFiles]);
   }, []);
 
   const handleDrop = useCallback(
@@ -58,69 +63,67 @@ export default function PDFToJPG() {
     e.preventDefault();
   }, []);
 
-  const removePDF = () => {
-    setPdfFile(null);
-    setConvertedImages([]);
+  const removeFile = (id: string) => {
+    setPngFiles((prev) => prev.filter((f) => f.id !== id));
   };
 
-  const convertToImages = async () => {
-    if (!pdfFile) return;
+  const convertFiles = async () => {
+    if (pngFiles.length === 0) return;
 
     setConverting(true);
-    try {
-      const pdfjsLib = await import("pdfjs-dist");
+    const converted: ConvertedImage[] = [];
 
-      // Set worker source - use CDN with HTTPS
-      pdfjsLib.GlobalWorkerOptions.workerSrc = `https://cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjsLib.version}/pdf.worker.min.mjs`;
+    for (const pngFile of pngFiles) {
+      try {
+        const img = new Image();
+        img.src = pngFile.preview;
 
-      const arrayBuffer = await pdfFile.file.arrayBuffer();
-      const pdf = await pdfjsLib.getDocument({ data: arrayBuffer }).promise;
+        await new Promise<void>((resolve, reject) => {
+          img.onload = () => {
+            const canvas = document.createElement("canvas");
+            const ctx = canvas.getContext("2d");
 
-      const images: ConvertedImage[] = [];
+            // Apply resize
+            canvas.width = img.width * options.resize;
+            canvas.height = img.height * options.resize;
 
-      for (let pageNum = 1; pageNum <= pdf.numPages; pageNum++) {
-        const page = await pdf.getPage(pageNum);
-        const viewport = page.getViewport({ scale: options.scale });
+            ctx?.drawImage(img, 0, 0, canvas.width, canvas.height);
 
-        const canvas = document.createElement("canvas");
-        const context = canvas.getContext("2d");
-        if (!context) continue;
+            canvas.toBlob(
+              (blob) => {
+                if (blob) {
+                  const url = URL.createObjectURL(blob);
+                  const filename = pngFile.originalName.replace(/\.png$/i, ".jpg");
 
-        canvas.width = viewport.width;
-        canvas.height = viewport.height;
-
-        await page.render({
-          canvasContext: context,
-          viewport: viewport,
-        }).promise;
-
-        const dataUrl = canvas.toDataURL(
-          options.format === "jpg" ? "image/jpeg" : "image/png",
-          options.quality
-        );
-
-        const filename = `${pdfFile.file.name.replace(".pdf", "")}_page_${pageNum}.${options.format}`;
-
-        images.push({
-          pageNumber: pageNum,
-          dataUrl,
-          filename,
+                  converted.push({
+                    id: pngFile.id,
+                    blob,
+                    url,
+                    filename,
+                  });
+                  resolve();
+                } else {
+                  reject(new Error("Failed to convert"));
+                }
+              },
+              "image/jpeg",
+              options.quality
+            );
+          };
+          img.onerror = reject;
         });
+      } catch (err) {
+        alert(`Failed to convert ${pngFile.originalName}`);
       }
-
-      setConvertedImages(images);
-      setPdfFile((prev) => prev ? { ...prev, pageCount: pdf.numPages } : null);
-    } catch (error) {
-      console.error("Conversion error:", error);
-      alert("An error occurred during conversion. Please try again.");
-    } finally {
-      setConverting(false);
     }
+
+    setConvertedImages(converted);
+    setConverting(false);
   };
 
   const downloadImage = (image: ConvertedImage) => {
     const link = document.createElement("a");
-    link.href = image.dataUrl;
+    link.href = image.url;
     link.download = image.filename;
     link.click();
   };
@@ -137,13 +140,13 @@ export default function PDFToJPG() {
       <section className="bg-white border-b border-gray-200">
         <div className="max-w-4xl mx-auto px-4 py-8">
           <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-            PDF to JPG Converter
+            PNG to JPG Converter
           </h1>
           <p className="text-lg text-gray-600 mb-4">
-            Convert PDF pages to JPG or PNG images instantly. Free, fast, and secure.
+            Convert PNG images to JPG format instantly. Free, fast, and secure.
           </p>
           <p className="text-gray-600 mb-4">
-            Upload your PDF file and convert each page to a high-quality image. All processing happens in your browser for complete privacy. No file size limits, no signup required.
+            Upload your PNG images and convert them to JPG format with customizable quality and size settings. All processing happens in your browser for complete privacy. No file size limits, no signup required.
           </p>
           <div className="flex items-center gap-2 mt-4">
             <div className="flex items-center gap-1">
@@ -153,7 +156,7 @@ export default function PDFToJPG() {
               <Star className="w-5 h-5 fill-yellow-400 text-yellow-400" style={{ clipPath: "inset(0 30% 0 0)" }} />
             </div>
             <span className="text-gray-700 font-medium">4.7 / 5</span>
-            <span className="text-gray-500">– 156,843 votes</span>
+            <span className="text-gray-500">– 127,431 votes</span>
           </div>
         </div>
       </section>
@@ -161,7 +164,7 @@ export default function PDFToJPG() {
       {/* Tool Interface */}
       <section className="max-w-4xl mx-auto px-4 py-8">
         <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-6 md:p-8">
-          {!pdfFile ? (
+          {pngFiles.length === 0 ? (
             <div
               onDrop={handleDrop}
               onDragOver={handleDragOver}
@@ -169,14 +172,15 @@ export default function PDFToJPG() {
             >
               <Upload className="w-16 h-16 text-gray-400 mx-auto mb-4" />
               <h3 className="text-xl font-semibold text-gray-900 mb-2">
-                Drop PDF file here
+                Drop PNG files here
               </h3>
               <p className="text-gray-600 mb-4">
                 or click to browse
               </p>
               <input
                 type="file"
-                accept="application/pdf"
+                accept="image/png"
+                multiple
                 onChange={(e) => handleFileSelect(e.target.files)}
                 className="hidden"
                 id="file-input"
@@ -185,38 +189,64 @@ export default function PDFToJPG() {
                 htmlFor="file-input"
                 className="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 cursor-pointer transition-colors"
               >
-                Select PDF File
+                Select PNG Files
               </label>
               <p className="text-sm text-gray-500 mt-4">
-                Supports: PDF files up to 50MB
+                Supports: PNG images
               </p>
             </div>
           ) : (
             <div>
               <div className="flex justify-between items-center mb-4">
                 <h3 className="text-lg font-semibold text-gray-900">
-                  PDF File
-                  {pdfFile.pageCount && ` (${pdfFile.pageCount} pages)`}
+                  {pngFiles.length} {pngFiles.length === 1 ? "File" : "Files"}
                 </h3>
+                <label
+                  htmlFor="add-more"
+                  className="text-blue-600 hover:text-blue-800 cursor-pointer text-sm font-medium"
+                >
+                  + Add More
+                </label>
+                <input
+                  type="file"
+                  accept="image/png"
+                  multiple
+                  onChange={(e) => handleFileSelect(e.target.files)}
+                  className="hidden"
+                  id="add-more"
+                />
               </div>
 
-              {/* File Info */}
-              <div className="mb-6 p-3 bg-gray-50 rounded-lg border border-gray-200 flex items-center justify-between">
-                <div className="flex-1 min-w-0">
-                  <p className="text-sm font-medium text-gray-900 truncate">
-                    {pdfFile.file.name}
-                  </p>
-                  <p className="text-xs text-gray-500">
-                    {(pdfFile.file.size / 1024 / 1024).toFixed(2)} MB
-                  </p>
-                </div>
-                <button
-                  onClick={removePDF}
-                  className="p-2 hover:bg-red-100 text-red-600 rounded ml-3"
-                  title="Remove"
-                >
-                  <X className="w-4 h-4" />
-                </button>
+              {/* File List */}
+              <div className="space-y-3 mb-6 max-h-96 overflow-y-auto">
+                {pngFiles.map((file) => (
+                  <div
+                    key={file.id}
+                    className="flex items-center gap-3 p-3 bg-gray-50 rounded-lg border border-gray-200"
+                  >
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img
+                      src={file.preview}
+                      alt={file.originalName}
+                      className="w-12 h-12 object-cover rounded"
+                    />
+                    <div className="flex-1 min-w-0">
+                      <p className="text-sm font-medium text-gray-900 truncate">
+                        {file.originalName}
+                      </p>
+                      <p className="text-xs text-gray-500">
+                        {(file.file.size / 1024 / 1024).toFixed(2)} MB
+                      </p>
+                    </div>
+                    <button
+                      onClick={() => removeFile(file.id)}
+                      className="p-2 hover:bg-red-100 text-red-600 rounded"
+                      title="Remove"
+                    >
+                      <X className="w-4 h-4" />
+                    </button>
+                  </div>
+                ))}
               </div>
 
               {/* Options */}
@@ -232,45 +262,16 @@ export default function PDFToJPG() {
                 {showOptions && (
                   <div className="px-4 pb-4 pt-2 border-t border-gray-200">
                     <div className="grid md:grid-cols-2 gap-4">
-                      {/* Format */}
-                      <div>
-                        <label className="block text-sm font-medium text-gray-700 mb-2">
-                          Image Format
-                        </label>
-                        <div className="flex gap-2">
-                          <button
-                            onClick={() => setOptions({ ...options, format: "jpg" })}
-                            className={`flex-1 px-4 py-2 text-sm font-medium border rounded-lg transition-colors ${
-                              options.format === "jpg"
-                                ? "bg-blue-600 text-white border-blue-600"
-                                : "bg-white text-gray-700 border-gray-300 hover:border-gray-400"
-                            }`}
-                          >
-                            JPG
-                          </button>
-                          <button
-                            onClick={() => setOptions({ ...options, format: "png" })}
-                            className={`flex-1 px-4 py-2 text-sm font-medium border rounded-lg transition-colors ${
-                              options.format === "png"
-                                ? "bg-blue-600 text-white border-blue-600"
-                                : "bg-white text-gray-700 border-gray-300 hover:border-gray-400"
-                            }`}
-                          >
-                            PNG
-                          </button>
-                        </div>
-                      </div>
-
                       {/* Quality */}
                       <div>
                         <label className="block text-sm font-medium text-gray-700 mb-2">
                           Image Quality
                         </label>
-                        <div className="flex gap-2">
+                        <div className="grid grid-cols-4 gap-2">
                           <button
-                            onClick={() => setOptions({ ...options, quality: 0.7 })}
-                            className={`flex-1 px-3 py-2 text-sm font-medium border rounded-lg transition-colors ${
-                              options.quality === 0.7
+                            onClick={() => setOptions({ ...options, quality: 0.5 })}
+                            className={`px-2 py-2 text-xs font-medium border rounded-lg transition-colors ${
+                              options.quality === 0.5
                                 ? "bg-blue-600 text-white border-blue-600"
                                 : "bg-white text-gray-700 border-gray-300 hover:border-gray-400"
                             }`}
@@ -278,9 +279,19 @@ export default function PDFToJPG() {
                             Low
                           </button>
                           <button
-                            onClick={() => setOptions({ ...options, quality: 0.92 })}
-                            className={`flex-1 px-3 py-2 text-sm font-medium border rounded-lg transition-colors ${
-                              options.quality === 0.92
+                            onClick={() => setOptions({ ...options, quality: 0.7 })}
+                            className={`px-2 py-2 text-xs font-medium border rounded-lg transition-colors ${
+                              options.quality === 0.7
+                                ? "bg-blue-600 text-white border-blue-600"
+                                : "bg-white text-gray-700 border-gray-300 hover:border-gray-400"
+                            }`}
+                          >
+                            Good
+                          </button>
+                          <button
+                            onClick={() => setOptions({ ...options, quality: 0.85 })}
+                            className={`px-2 py-2 text-xs font-medium border rounded-lg transition-colors ${
+                              options.quality === 0.85
                                 ? "bg-blue-600 text-white border-blue-600"
                                 : "bg-white text-gray-700 border-gray-300 hover:border-gray-400"
                             }`}
@@ -288,14 +299,63 @@ export default function PDFToJPG() {
                             High
                           </button>
                           <button
-                            onClick={() => setOptions({ ...options, quality: 1 })}
-                            className={`flex-1 px-3 py-2 text-sm font-medium border rounded-lg transition-colors ${
-                              options.quality === 1
+                            onClick={() => setOptions({ ...options, quality: 0.92 })}
+                            className={`px-2 py-2 text-xs font-medium border rounded-lg transition-colors ${
+                              options.quality === 0.92
                                 ? "bg-blue-600 text-white border-blue-600"
                                 : "bg-white text-gray-700 border-gray-300 hover:border-gray-400"
                             }`}
                           >
-                            Max
+                            Best
+                          </button>
+                        </div>
+                      </div>
+
+                      {/* Resize */}
+                      <div>
+                        <label className="block text-sm font-medium text-gray-700 mb-2">
+                          Image Size
+                        </label>
+                        <div className="grid grid-cols-4 gap-2">
+                          <button
+                            onClick={() => setOptions({ ...options, resize: 1 })}
+                            className={`px-3 py-2 text-sm font-medium border rounded-lg transition-colors ${
+                              options.resize === 1
+                                ? "bg-blue-600 text-white border-blue-600"
+                                : "bg-white text-gray-700 border-gray-300 hover:border-gray-400"
+                            }`}
+                          >
+                            Original
+                          </button>
+                          <button
+                            onClick={() => setOptions({ ...options, resize: 0.75 })}
+                            className={`px-3 py-2 text-sm font-medium border rounded-lg transition-colors ${
+                              options.resize === 0.75
+                                ? "bg-blue-600 text-white border-blue-600"
+                                : "bg-white text-gray-700 border-gray-300 hover:border-gray-400"
+                            }`}
+                          >
+                            75%
+                          </button>
+                          <button
+                            onClick={() => setOptions({ ...options, resize: 0.5 })}
+                            className={`px-3 py-2 text-sm font-medium border rounded-lg transition-colors ${
+                              options.resize === 0.5
+                                ? "bg-blue-600 text-white border-blue-600"
+                                : "bg-white text-gray-700 border-gray-300 hover:border-gray-400"
+                            }`}
+                          >
+                            50%
+                          </button>
+                          <button
+                            onClick={() => setOptions({ ...options, resize: 0.25 })}
+                            className={`px-3 py-2 text-sm font-medium border rounded-lg transition-colors ${
+                              options.resize === 0.25
+                                ? "bg-blue-600 text-white border-blue-600"
+                                : "bg-white text-gray-700 border-gray-300 hover:border-gray-400"
+                            }`}
+                          >
+                            25%
                           </button>
                         </div>
                       </div>
@@ -307,7 +367,7 @@ export default function PDFToJPG() {
               {/* Convert Button */}
               {convertedImages.length === 0 && (
                 <button
-                  onClick={convertToImages}
+                  onClick={convertFiles}
                   disabled={converting}
                   className="w-full bg-blue-600 text-white py-4 rounded-lg hover:bg-blue-700 disabled:bg-gray-400 disabled:cursor-not-allowed font-semibold flex items-center justify-center gap-2 transition-colors"
                 >
@@ -316,7 +376,7 @@ export default function PDFToJPG() {
                   ) : (
                     <>
                       <Download className="w-5 h-5" />
-                      Convert to Images
+                      Convert to JPG
                     </>
                   )}
                 </button>
@@ -329,28 +389,39 @@ export default function PDFToJPG() {
                     <h4 className="text-lg font-semibold text-gray-900">
                       Converted Images ({convertedImages.length})
                     </h4>
-                    <button
-                      onClick={downloadAll}
-                      className="text-blue-600 hover:text-blue-800 text-sm font-medium"
-                    >
-                      Download All
-                    </button>
+                    <div className="flex gap-2">
+                      <button
+                        onClick={downloadAll}
+                        className="text-blue-600 hover:text-blue-800 text-sm font-medium"
+                      >
+                        Download All
+                      </button>
+                      <button
+                        onClick={() => {
+                          setConvertedImages([]);
+                          setPngFiles([]);
+                        }}
+                        className="text-gray-600 hover:text-gray-800 text-sm font-medium"
+                      >
+                        Start Over
+                      </button>
+                    </div>
                   </div>
                   <div className="grid md:grid-cols-2 gap-4">
                     {convertedImages.map((image) => (
                       <div
-                        key={image.pageNumber}
+                        key={image.id}
                         className="border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow"
                       >
                         {/* eslint-disable-next-line @next/next/no-img-element */}
                         <img
-                          src={image.dataUrl}
-                          alt={`Page ${image.pageNumber}`}
-                          className="w-full h-48 object-contain bg-gray-100 rounded mb-3"
+                          src={image.url}
+                          alt={image.filename}
+                          className="w-full h-48 object-cover bg-gray-100 rounded mb-3"
                         />
                         <div className="flex justify-between items-center">
-                          <span className="text-sm text-gray-600">
-                            Page {image.pageNumber}
+                          <span className="text-sm text-gray-600 truncate">
+                            {image.filename}
                           </span>
                           <button
                             onClick={() => downloadImage(image)}
@@ -379,9 +450,9 @@ export default function PDFToJPG() {
                 1
               </span>
               <div>
-                <strong className="text-gray-900">Upload PDF file</strong>
+                <strong className="text-gray-900">Upload PNG files</strong>
                 <p className="text-gray-600 text-sm">
-                  Click or drag and drop your PDF file. Any PDF file up to 50MB is supported.
+                  Click or drag and drop your PNG images. You can upload multiple files at once.
                 </p>
               </div>
             </li>
@@ -390,9 +461,9 @@ export default function PDFToJPG() {
                 2
               </span>
               <div>
-                <strong className="text-gray-900">Choose format and quality</strong>
+                <strong className="text-gray-900">Choose quality and size</strong>
                 <p className="text-gray-600 text-sm">
-                  Select JPG or PNG format and choose your preferred quality level.
+                  Select your preferred quality level and image size. Higher quality means larger file size.
                 </p>
               </div>
             </li>
@@ -403,7 +474,7 @@ export default function PDFToJPG() {
               <div>
                 <strong className="text-gray-900">Convert and download</strong>
                 <p className="text-gray-600 text-sm">
-                  Click &quot;Convert to Images&quot; and download individual pages or all at once.
+                  Click &quot;Convert to JPG&quot; and download your converted images individually or all at once.
                 </p>
               </div>
             </li>
@@ -420,26 +491,26 @@ export default function PDFToJPG() {
           <div className="space-y-4">
             <details className="border-b border-gray-200 pb-4">
               <summary className="font-semibold text-gray-900 cursor-pointer">
-                What image formats are supported?
+                Why convert PNG to JPG?
               </summary>
               <p className="mt-2 text-gray-600 text-sm">
-                You can convert PDF pages to either JPG (JPEG) or PNG format. JPG is better for photos and offers smaller file sizes, while PNG is better for documents with text and graphics.
+                JPG files are smaller than PNG files, making them better for sharing online and reducing storage space. JPG is also more widely supported across different platforms and devices.
               </p>
             </details>
             <details className="border-b border-gray-200 pb-4">
               <summary className="font-semibold text-gray-900 cursor-pointer">
-                Is there a page limit?
+                Will the image quality be affected?
               </summary>
               <p className="mt-2 text-gray-600 text-sm">
-                No. You can convert PDFs with any number of pages. Each page will be converted to a separate image file that you can download individually or all at once.
+                JPG uses lossy compression, so there will be some quality loss. However, you can choose the quality level to minimize this. The &quot;Best&quot; setting maintains very high quality similar to the original PNG.
               </p>
             </details>
             <details className="border-b border-gray-200 pb-4">
               <summary className="font-semibold text-gray-900 cursor-pointer">
-                Are my files uploaded to a server?
+                Are my images uploaded to a server?
               </summary>
               <p className="mt-2 text-gray-600 text-sm">
-                No. All conversion happens directly in your browser using JavaScript. Your PDF never leaves your device, ensuring complete privacy and security.
+                No. All conversion happens directly in your browser using JavaScript. Your images never leave your device, ensuring complete privacy and security.
               </p>
             </details>
             <details className="border-b border-gray-200 pb-4">
@@ -452,18 +523,18 @@ export default function PDFToJPG() {
             </details>
             <details className="border-b border-gray-200 pb-4">
               <summary className="font-semibold text-gray-900 cursor-pointer">
-                What quality settings should I use?
+                Can I convert multiple PNG files at once?
               </summary>
               <p className="mt-2 text-gray-600 text-sm">
-                For most documents, High quality (default) provides a good balance between file size and image quality. Use Max quality for important documents or detailed graphics. Low quality is suitable for quick previews.
+                Yes. Upload multiple PNG files and they will all be converted. You can download them individually or all at once.
               </p>
             </details>
             <details className="border-b border-gray-200 pb-4">
               <summary className="font-semibold text-gray-900 cursor-pointer">
-                Can I convert password-protected PDFs?
+                What happens to transparent backgrounds?
               </summary>
               <p className="mt-2 text-gray-600 text-sm">
-                Currently, this tool does not support password-protected PDFs. You will need to remove the password protection before converting.
+                JPG does not support transparency. Any transparent areas in your PNG will be converted to white in the JPG version.
               </p>
             </details>
           </div>
@@ -471,7 +542,7 @@ export default function PDFToJPG() {
       </section>
 
       {/* Related Tools */}
-      <RelatedTools currentToolId="pdf-to-jpg" />
+      <RelatedTools currentToolId="png-to-jpg" />
     </div>
   );
 }
