@@ -92,12 +92,14 @@ export default function HEICToJPG() {
             filename,
           });
         } catch (error) {
+          // eslint-disable-next-line no-console
           console.error(`Error converting ${heicFile.originalName}:`, error);
         }
       }
 
       setConvertedImages(converted);
     } catch (error) {
+      // eslint-disable-next-line no-console
       console.error("Conversion error:", error);
       alert("An error occurred during conversion. Please try again.");
     } finally {
