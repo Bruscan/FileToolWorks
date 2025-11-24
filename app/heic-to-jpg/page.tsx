@@ -72,6 +72,7 @@ export default function HEICToJPG() {
     try {
       const heic2any = (await import("heic2any")).default;
       const converted: ConvertedImage[] = [];
+      let errorCount = 0;
 
       for (const heicFile of heicFiles) {
         try {
@@ -91,14 +92,19 @@ export default function HEICToJPG() {
             url,
             filename,
           });
-        } catch {
-          // Skip failed conversions silently
+        } catch (err) {
+          errorCount++;
+          alert(`Failed to convert ${heicFile.originalName}. Make sure it's a valid HEIC file.`);
         }
       }
 
-      setConvertedImages(converted);
-    } catch {
-      alert("An error occurred during conversion. Please try again.");
+      if (converted.length === 0 && errorCount > 0) {
+        alert("No files were converted successfully. Please make sure you're uploading valid HEIC files.");
+      } else {
+        setConvertedImages(converted);
+      }
+    } catch (err) {
+      alert("An error occurred during conversion. Please make sure you have uploaded valid HEIC files.");
     } finally {
       setConverting(false);
     }
