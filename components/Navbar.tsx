@@ -27,6 +27,7 @@ export default function Navbar() {
         { name: "Split PDF", href: "/split-pdf" },
         { name: "PDF to JPG", href: "/pdf-to-jpg" },
         { name: "JPG to PDF", href: "/jpg-to-pdf" },
+        { name: "PDF to Word", href: "/pdf-to-word" },
       ],
     },
     {

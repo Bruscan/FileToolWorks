@@ -26,6 +26,7 @@ const tools = [
   'pdf-sign-tool',
   'ocr-image-to-text',
   'text-to-pdf',
+  'extract-audio',
 ]
 
 // Blog posts

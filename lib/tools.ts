@@ -50,6 +50,14 @@ export const tools: Tool[] = [
     iconColor: "text-orange-600",
   },
   {
+    id: "webp-to-png",
+    name: "WebP to PNG",
+    href: "/webp-to-png",
+    description: "Convert WebP images to PNG format",
+    category: "image",
+    iconColor: "text-pink-600",
+  },
+  {
     id: "compress-image",
     name: "Image Compressor",
     href: "/compress-image",
@@ -64,6 +72,30 @@ export const tools: Tool[] = [
     description: "Resize images to specific dimensions",
     category: "image",
     iconColor: "text-cyan-600",
+  },
+  {
+    id: "rotate-image",
+    name: "Rotate Image",
+    href: "/rotate-image",
+    description: "Rotate and flip images instantly",
+    category: "image",
+    iconColor: "text-teal-600",
+  },
+  {
+    id: "image-to-webp",
+    name: "Image to WebP",
+    href: "/image-to-webp",
+    description: "Convert images to WebP format",
+    category: "image",
+    iconColor: "text-lime-600",
+  },
+  {
+    id: "crop-image",
+    name: "Crop Image",
+    href: "/crop-image",
+    description: "Crop images to preset ratios or custom dimensions",
+    category: "image",
+    iconColor: "text-amber-600",
   },
 
   // PDF Tools
@@ -107,6 +139,14 @@ export const tools: Tool[] = [
     category: "pdf",
     iconColor: "text-blue-600",
   },
+  {
+    id: "pdf-to-word",
+    name: "PDF to Word",
+    href: "/pdf-to-word",
+    description: "Convert PDF files to Word DOCX format",
+    category: "pdf",
+    iconColor: "text-blue-600",
+  },
 
   // Video Tools
   {
@@ -135,6 +175,14 @@ export const tools: Tool[] = [
   },
 
   // Audio Tools
+  {
+    id: "extract-audio",
+    name: "Extract Audio from Video",
+    href: "/extract-audio",
+    description: "Extract audio from video files as MP3, WAV, or AAC",
+    category: "audio",
+    iconColor: "text-blue-600",
+  },
   {
     id: "compress-audio",
     name: "Audio Compressor",

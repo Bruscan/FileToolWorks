@@ -71,6 +71,74 @@ Free online tools for file conversion and editing. Built with Next.js 15, TypeSc
   - Rating display (4.8/5 with 104k+ votes)
   - 6 FAQ questions about image resizing
   - SEO-optimized metadata
+- ✅ Sixth tool completed: Image to WebP
+  - Accepts all image formats (image/*)
+  - Converts to WebP format using Canvas API
+  - Quality settings: Low (0.5), Good (0.7), High (0.85), Best (0.92)
+  - Resize options: Original, 75%, 50%, 25%
+  - Uses canvas.toBlob() with "image/webp" and quality parameter
+  - Automatic filename extension change to .webp
+  - Drag & drop support with image previews
+  - Batch conversion with "Download All" and "Start Over"
+  - Rating display (4.7/5 with 118k+ votes)
+  - 6 FAQ questions about WebP benefits and compatibility
+  - SEO-optimized metadata
+- ✅ Seventh tool completed: WebP to PNG
+  - Accepts WebP files only (image/webp)
+  - Converts to PNG format using Canvas API
+  - No quality option (PNG is lossless)
+  - Resize options: Original, 75%, 50%, 25%
+  - Uses canvas.toBlob() with "image/png" mime type
+  - Automatic filename extension change to .png
+  - Drag & drop support with image previews
+  - Batch conversion with "Download All" and "Start Over"
+  - Rating display (4.7/5 with 102k+ votes)
+  - 6 FAQ questions about WebP to PNG conversion and compatibility
+  - SEO-optimized metadata
+- ✅ Eighth tool completed: Merge PDF
+  - Accepts multiple PDF files (application/pdf)
+  - Merges all PDFs into a single document using pdf-lib
+  - PDF reordering with arrow buttons (up/down)
+  - Numbered indicators show merge order (1, 2, 3...)
+  - No additional options needed (simple merge only)
+  - Drag & drop upload support
+  - Requires minimum 2 PDFs to merge
+  - "Merge More PDFs" button after successful merge
+  - Rating display (4.8/5 with 156k+ votes)
+  - 6 FAQ questions about merging PDFs, file limits, quality preservation
+  - SEO-optimized metadata
+- ✅ Ninth tool completed: Rotate Image
+  - Accepts all image formats (image/*)
+  - Rotation options: None / 90° CW / 180° / 90° CCW (4 buttons)
+  - Flip options: None / Horizontal / Vertical / Both (4 buttons)
+  - Output format: JPG / PNG / WebP (3 buttons)
+  - Quality settings: Low (0.5), Good (0.7), High (0.85), Best (0.92) for JPG/WebP
+  - Real-time preview of transformations before applying
+  - Uses Canvas API with ctx.rotate() and ctx.scale() for transformations
+  - Properly handles dimension swapping for 90° and 270° rotations
+  - Drag & drop support with image previews
+  - Batch processing with "Download All" and "Start Over"
+  - Rating display (4.7/5 with 124k+ votes)
+  - 6 FAQ questions about rotating, flipping, and image quality
+  - SEO-optimized metadata
+- ✅ Tenth tool completed: Video to GIF
+  - Accepts all video formats (video/*)
+  - Converts videos to animated GIF using FFmpeg.js WebAssembly
+  - FPS options: 10 / 15 / 24 / 30 (4 buttons)
+  - Size options: Original / 720p / 480p / 360p (4 buttons)
+  - Quality options: Low / Medium / High (3 buttons with palette optimization)
+  - Start time and duration inputs (optional) for trimming videos
+  - Progress indicator showing FFmpeg conversion percentage
+  - Loads FFmpeg on component mount from unpkg.com CDN
+  - Uses lanczos scaling for high-quality resizing
+  - Implements palette generation for better GIF colors
+  - Warns users about large GIF file sizes
+  - Drag & drop support for video files
+  - Batch processing with "Download All" and "Start Over"
+  - Rating display (4.8/5 with 104k+ votes)
+  - 6 FAQ questions about video to GIF conversion, file sizes, and settings
+  - SEO-optimized metadata
+  - Note: FFmpeg.js is complex but works well for browser-based video processing
 - ✅ Central tool management system
   - lib/tools.ts: Database with all 23 tools and metadata
   - Smart getRelatedTools() function (category-based)
@@ -88,7 +156,8 @@ Free online tools for file conversion and editing. Built with Next.js 15, TypeSc
 - **Styling**: Tailwind CSS
 - **Icons**: Lucide React
 - **Dev Server**: Turbopack
-- **PDF Processing**: jsPDF (client-side)
+- **PDF Processing**: jsPDF (client-side), pdf-lib (merging, manipulation)
+- **Video Processing**: FFmpeg.js (@ffmpeg/ffmpeg, @ffmpeg/util) for video to GIF conversion
 
 ## Key Design Principles
 - **Extra Simple UI**: Minimalist, one purpose per page
@@ -137,9 +206,14 @@ All tools use flat URLs (e.g., `/image-to-pdf/` not `/tools/image-to-pdf/`)
 3. PNG to JPG - Convert PNG images to JPG format with quality options
 4. JPG to PNG - Convert JPG/JPEG images to PNG format
 5. Image Resizer - Resize images by percentage or custom dimensions
+6. Image to WebP - Convert any image format to modern WebP format
+7. WebP to PNG - Convert WebP images to PNG format with lossless quality
+8. Merge PDF - Combine multiple PDF files into one document
+9. Rotate Image - Rotate and flip images with real-time preview
+10. Video to GIF - Convert video clips to animated GIFs with FFmpeg.js
 
 ## Next Steps
-1. Build remaining 18 tools using templates
+1. Build remaining 13 tools using templates
 2. Create static pages (About, Terms, Privacy, Contact)
 3. Create blog structure
 4. Deploy to production
