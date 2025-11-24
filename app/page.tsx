@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Search, FileImage, FileText, Video, ArrowRight } from "lucide-react";
 import type { Metadata } from "next";
+import { tools, getToolsByCategory } from "@/lib/tools";
 
 export const metadata: Metadata = {
   alternates: {
@@ -73,7 +74,7 @@ export default function Home() {
           </p>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
             {imageTools.map((tool) => (
-              <ToolCard key={tool.href} {...tool} />
+              <ToolCard key={tool.href} title={tool.name} href={tool.href} />
             ))}
           </div>
         </div>
@@ -91,7 +92,7 @@ export default function Home() {
           </p>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
             {pdfTools.map((tool) => (
-              <ToolCard key={tool.href} {...tool} />
+              <ToolCard key={tool.href} title={tool.name} href={tool.href} />
             ))}
           </div>
         </div>
@@ -109,7 +110,7 @@ export default function Home() {
           </p>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
             {videoTools.map((tool) => (
-              <ToolCard key={tool.href} {...tool} />
+              <ToolCard key={tool.href} title={tool.name} href={tool.href} />
             ))}
           </div>
         </div>
@@ -178,52 +179,16 @@ function ToolCard({ title, href }: { title: string; href: string }) {
   );
 }
 
-// Data
-const topTools = [
-  { title: "Image to PDF", href: "/image-to-pdf", icon: <FileImage className="w-full h-full" /> },
-  { title: "PDF to Image", href: "/pdf-to-image", icon: <FileText className="w-full h-full" /> },
-  { title: "Compress Image", href: "/compress-image", icon: <FileImage className="w-full h-full" /> },
-  { title: "Compress PDF", href: "/compress-pdf", icon: <FileText className="w-full h-full" /> },
-  { title: "JPG to PNG", href: "/jpg-to-png", icon: <FileImage className="w-full h-full" /> },
-  { title: "PNG to JPG", href: "/png-to-jpg", icon: <FileImage className="w-full h-full" /> },
-  { title: "Resize Image", href: "/resize-image", icon: <FileImage className="w-full h-full" /> },
-  { title: "Remove Background", href: "/remove-background", icon: <FileImage className="w-full h-full" /> },
-  { title: "PDF to Word", href: "/pdf-to-word", icon: <FileText className="w-full h-full" /> },
-  { title: "Word to PDF", href: "/word-to-pdf", icon: <FileText className="w-full h-full" /> },
-  { title: "Merge PDF", href: "/merge-pdf", icon: <FileText className="w-full h-full" /> },
-  { title: "Split PDF", href: "/split-pdf", icon: <FileText className="w-full h-full" /> },
-];
+// Data - now using central tools database
+const topTools = tools.slice(0, 12).map(tool => ({
+  title: tool.name,
+  href: tool.href,
+  icon: <FileImage className="w-full h-full" />
+}));
 
-const imageTools = [
-  { title: "Image to PDF", href: "/image-to-pdf" },
-  { title: "Compress Image", href: "/compress-image" },
-  { title: "JPG to PNG", href: "/jpg-to-png" },
-  { title: "PNG to JPG", href: "/png-to-jpg" },
-  { title: "Resize Image", href: "/resize-image" },
-  { title: "Crop Image", href: "/crop-image" },
-  { title: "Remove Background", href: "/remove-background" },
-  { title: "HEIC to JPG", href: "/heic-to-jpg" },
-  { title: "WebP to PNG", href: "/webp-to-png" },
-];
-
-const pdfTools = [
-  { title: "PDF to Image", href: "/pdf-to-image" },
-  { title: "Compress PDF", href: "/compress-pdf" },
-  { title: "PDF to Word", href: "/pdf-to-word" },
-  { title: "Word to PDF", href: "/word-to-pdf" },
-  { title: "Merge PDF", href: "/merge-pdf" },
-  { title: "Split PDF", href: "/split-pdf" },
-  { title: "Extract Images", href: "/extract-images-from-pdf" },
-  { title: "PPT to PDF", href: "/convert-ppt-to-pdf" },
-  { title: "PDF Sign", href: "/pdf-sign-tool" },
-  { title: "OCR to Text", href: "/ocr-image-to-text" },
-  { title: "Text to PDF", href: "/text-to-pdf" },
-];
-
-const videoTools = [
-  { title: "Video to MP3", href: "/video-to-mp3" },
-  { title: "GIF to MP4", href: "/gif-to-mp4" },
-];
+const imageTools = getToolsByCategory("image");
+const pdfTools = getToolsByCategory("pdf");
+const videoTools = getToolsByCategory("video");
 
 const blogPosts = [
   {
