@@ -98,52 +98,40 @@ export default function CompressImage() {
 
     for (const imageFile of imageFiles) {
       try {
-        const img = new Image();
-        img.src = imageFile.preview;
+        const Compressor = (await import("compressorjs")).default;
+        const outputFormat = getOutputFormat(imageFile.file);
+        const outputExtension = getOutputExtension(outputFormat);
 
         await new Promise<void>((resolve, reject) => {
-          img.onload = () => {
-            const canvas = document.createElement("canvas");
-            const ctx = canvas.getContext("2d");
+          new Compressor(imageFile.file, {
+            quality: options.compressionLevel,
+            maxWidth: options.resize < 1 ? undefined : undefined,
+            width: options.resize < 1 ? undefined : undefined,
+            convertSize: 0,
+            mimeType: outputFormat,
+            success(result) {
+              const blob = result as Blob;
+              const url = URL.createObjectURL(blob);
+              const basename = imageFile.originalName.replace(/\.[^.]+$/, '');
+              const filename = `${basename}-compressed${outputExtension}`;
 
-            // Apply resize
-            canvas.width = img.width * options.resize;
-            canvas.height = img.height * options.resize;
+              const savings = ((imageFile.originalSize - blob.size) / imageFile.originalSize) * 100;
 
-            ctx?.drawImage(img, 0, 0, canvas.width, canvas.height);
-
-            const outputFormat = getOutputFormat(imageFile.file);
-            const outputExtension = getOutputExtension(outputFormat);
-
-            canvas.toBlob(
-              (blob) => {
-                if (blob) {
-                  const url = URL.createObjectURL(blob);
-                  const originalExtension = imageFile.originalName.match(/\.[^.]+$/)?.[0] || '';
-                  const basename = imageFile.originalName.replace(/\.[^.]+$/, '');
-                  const filename = `${basename}-compressed${outputExtension}`;
-
-                  const savings = ((imageFile.originalSize - blob.size) / imageFile.originalSize) * 100;
-
-                  compressed.push({
-                    id: imageFile.id,
-                    blob,
-                    url,
-                    filename,
-                    originalSize: imageFile.originalSize,
-                    compressedSize: blob.size,
-                    savings: Math.max(0, savings),
-                  });
-                  resolve();
-                } else {
-                  reject(new Error("Failed to compress"));
-                }
-              },
-              outputFormat,
-              options.compressionLevel
-            );
-          };
-          img.onerror = reject;
+              compressed.push({
+                id: imageFile.id,
+                blob,
+                url,
+                filename,
+                originalSize: imageFile.originalSize,
+                compressedSize: blob.size,
+                savings: Math.max(0, savings),
+              });
+              resolve();
+            },
+            error(err) {
+              reject(err);
+            },
+          });
         });
       } catch (err) {
         alert(`Failed to compress ${imageFile.originalName}`);
@@ -303,10 +291,10 @@ export default function CompressImage() {
                 {showOptions && (
                   <div className="px-4 pb-4 pt-2 border-t border-gray-200">
                     <div className="space-y-4">
-                      {/* Compression Level */}
+                      {/* Image Quality */}
                       <div>
                         <label className="block text-sm font-medium text-gray-700 mb-2">
-                          Compression Level
+                          Image Quality
                         </label>
                         <div className="grid grid-cols-4 gap-2">
                           <button
@@ -327,7 +315,7 @@ export default function CompressImage() {
                                 : "bg-white text-gray-700 border-gray-300 hover:border-gray-400"
                             }`}
                           >
-                            Medium
+                            Good
                           </button>
                           <button
                             onClick={() => setOptions({ ...options, compressionLevel: 0.85 })}
@@ -347,7 +335,7 @@ export default function CompressImage() {
                                 : "bg-white text-gray-700 border-gray-300 hover:border-gray-400"
                             }`}
                           >
-                            Maximum
+                            Best
                           </button>
                         </div>
                       </div>

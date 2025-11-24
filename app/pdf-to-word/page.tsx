@@ -57,125 +57,57 @@ export default function PDFToWord() {
     setError(null);
 
     try {
-      // Dynamic imports
-      const pdfjsLib = await import("pdfjs-dist");
-      const { Document, Packer, Paragraph, TextRun } = await import("docx");
-
-      // Set up PDF.js worker
-      pdfjsLib.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjsLib.version}/pdf.worker.min.js`;
-
-      // Load PDF
+      // Read file as base64
       const arrayBuffer = await file.arrayBuffer();
-      const pdf = await pdfjsLib.getDocument({ data: arrayBuffer }).promise;
-      const pageCount = pdf.numPages;
+      const base64 = btoa(
+        new Uint8Array(arrayBuffer).reduce(
+          (data, byte) => data + String.fromCharCode(byte),
+          ''
+        )
+      );
 
-      // Extract text from all pages
-      const paragraphs: Paragraph[] = [];
-
-      for (let i = 1; i <= pageCount; i++) {
-        const page = await pdf.getPage(i);
-        const textContent = await page.getTextContent();
-
-        // Add page header if multiple pages
-        if (pageCount > 1) {
-          paragraphs.push(
-            new Paragraph({
-              children: [
-                new TextRun({
-                  text: `Page ${i}`,
-                  bold: true,
-                  size: 28,
-                }),
-              ],
-              spacing: {
-                before: i === 1 ? 0 : 400,
-                after: 200,
-              },
-            })
-          );
-        }
-
-        // Group text items into lines based on Y position
-        const lines: { y: number; text: string }[] = [];
-        let currentY = -1;
-        let currentLine = "";
-
-        textContent.items.forEach((item: any) => {
-          if (item.str) {
-            const itemY = Math.round(item.transform[5]);
-
-            // Check if this is a new line (different Y position)
-            if (currentY === -1 || Math.abs(itemY - currentY) > 2) {
-              if (currentLine) {
-                lines.push({ y: currentY, text: currentLine.trim() });
-              }
-              currentLine = item.str;
-              currentY = itemY;
-            } else {
-              // Same line, add space if needed
-              currentLine += (item.str.startsWith(" ") ? "" : " ") + item.str;
-            }
-          }
-        });
-
-        // Add the last line
-        if (currentLine) {
-          lines.push({ y: currentY, text: currentLine.trim() });
-        }
-
-        // Convert lines to paragraphs
-        lines.forEach((line) => {
-          if (line.text) {
-            paragraphs.push(
-              new Paragraph({
-                children: [
-                  new TextRun({
-                    text: line.text,
-                    size: 22,
-                  }),
-                ],
-                spacing: {
-                  after: 120,
-                },
-              })
-            );
-          }
-        });
-
-        // Add spacing between pages
-        if (i < pageCount) {
-          paragraphs.push(
-            new Paragraph({
-              children: [new TextRun({ text: "", size: 22 })],
-              spacing: { after: 200 },
-            })
-          );
-        }
-      }
-
-      // Create Word document
-      const doc = new Document({
-        sections: [
-          {
-            properties: {},
-            children: paragraphs,
-          },
-        ],
+      // Call API
+      const response = await fetch('/api/pdf-to-word', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          pdf: base64,
+        }),
       });
 
-      // Generate DOCX file
-      const blob = await Packer.toBlob(doc);
+      if (!response.ok) {
+        throw new Error('Conversion failed');
+      }
+
+      const data = await response.json();
+
+      if (!data.success) {
+        throw new Error(data.error || 'Conversion failed');
+      }
+
+      // Decode base64 DOCX
+      const docxBase64 = data.docx;
+      const docxBinary = atob(docxBase64);
+      const docxArray = new Uint8Array(docxBinary.length);
+      for (let i = 0; i < docxBinary.length; i++) {
+        docxArray[i] = docxBinary.charCodeAt(i);
+      }
+      const blob = new Blob([docxArray], {
+        type: 'application/vnd.openxmlformats-officedocument.wordprocessingml.document',
+      });
 
       setConvertedFile({
         id: Math.random().toString(36).substr(2, 9),
-        originalName: file.name.replace(".pdf", ".docx"),
+        originalName: file.name.replace('.pdf', '.docx'),
         blob,
-        pageCount,
+        pageCount: 0, // We don't know page count from API
       });
     } catch (err) {
-      console.error("Conversion error:", err);
+      console.error('Conversion error:', err);
       setError(
-        "Failed to convert PDF. Please make sure the PDF contains text and is not a scanned image."
+        'Failed to convert PDF. Please make sure the PDF contains text and is not a scanned image.'
       );
     } finally {
       setConverting(false);
@@ -269,11 +201,7 @@ export default function PDFToWord() {
                 <h3 className="text-xl font-semibold text-gray-900 mb-2">
                   Conversion Complete!
                 </h3>
-                <p className="text-gray-600 mb-1">{convertedFile.originalName}</p>
-                <p className="text-sm text-gray-500">
-                  {convertedFile.pageCount} {convertedFile.pageCount === 1 ? "page" : "pages"}{" "}
-                  converted
-                </p>
+                <p className="text-gray-600">{convertedFile.originalName}</p>
               </div>
               <div className="flex flex-col sm:flex-row gap-3 justify-center">
                 <button
@@ -430,8 +358,9 @@ export default function PDFToWord() {
                 Is my PDF uploaded to a server?
               </summary>
               <p className="mt-2 text-gray-600 text-sm">
-                No. All conversion happens directly in your browser using JavaScript. Your PDF
-                never leaves your device, ensuring complete privacy and security.
+                Yes, for better conversion quality, your PDF is temporarily sent to our server
+                for processing. However, your file is never stored and is immediately deleted
+                after conversion. We do not keep any copies of your documents.
               </p>
             </details>
             <details className="border-b border-gray-200 pb-4">
@@ -439,9 +368,9 @@ export default function PDFToWord() {
                 Is there a file size limit?
               </summary>
               <p className="mt-2 text-gray-600 text-sm">
-                Since processing happens in your browser, there are no server-side limits.
-                However, very large PDFs may take longer to process and require more memory
-                depending on your device capabilities.
+                The maximum file size is 50MB. Files larger than this cannot be processed.
+                Most PDFs are well under this limit, but very large documents with many images
+                may exceed it.
               </p>
             </details>
             <details className="border-b border-gray-200 pb-4">

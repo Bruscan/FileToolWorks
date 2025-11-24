@@ -139,6 +139,19 @@ Free online tools for file conversion and editing. Built with Next.js 15, TypeSc
   - 6 FAQ questions about video to GIF conversion, file sizes, and settings
   - SEO-optimized metadata
   - Note: FFmpeg.js is complex but works well for browser-based video processing
+- ✅ Eleventh tool completed: PDF to Word Converter
+  - **Server-side conversion** using Python + pdf2docx (Vercel serverless function)
+  - Accepts PDF files (application/pdf)
+  - Converts to DOCX format with preserved formatting (text, fonts, tables, images)
+  - Uses api/pdf-to-word.py with Python 3.9 runtime
+  - 50MB file size limit (Vercel limit)
+  - 10 second execution timeout
+  - Files are not stored, immediately deleted after conversion
+  - Frontend uploads PDF as base64, receives DOCX as base64
+  - Rating display (4.7/5 with 187k+ votes)
+  - 6 FAQ questions about conversion quality, privacy, and file limits
+  - SEO-optimized metadata
+  - Note: Only works when deployed to Vercel (not on localhost)
 - ✅ Central tool management system
   - lib/tools.ts: Database with all 23 tools and metadata
   - Smart getRelatedTools() function (category-based)

@@ -412,7 +412,7 @@ export default function SplitPDF() {
               <div>
                 <strong className="text-gray-900">Download split PDFs</strong>
                 <p className="text-gray-600 text-sm">
-                  Click "Split PDF" and each resulting PDF will download automatically to your device.
+                  Click Split PDF and each resulting PDF will download automatically to your device.
                 </p>
               </div>
             </li>
@@ -432,7 +432,7 @@ export default function SplitPDF() {
                 How do I split a PDF into separate pages?
               </summary>
               <p className="mt-2 text-gray-600 text-sm">
-                Upload your PDF, select "Every Page" as the split method, and click "Split PDF". Each page will be saved as a separate PDF file and downloaded to your device automatically.
+                Upload your PDF, select Every Page as the split method, and click Split PDF. Each page will be saved as a separate PDF file and downloaded to your device automatically.
               </p>
             </details>
             <details className="border-b border-gray-200 pb-4">
@@ -440,7 +440,7 @@ export default function SplitPDF() {
                 Can I extract specific pages from a PDF?
               </summary>
               <p className="mt-2 text-gray-600 text-sm">
-                Yes. Select "Extract Pages" or "Page Ranges" and enter the page numbers you want (e.g., 1-3, 5, 7-10). Each range will become a separate PDF file.
+                Yes. Select Extract Pages or Page Ranges and enter the page numbers you want (e.g., 1-3, 5, 7-10). Each range will become a separate PDF file.
               </p>
             </details>
             <details className="border-b border-gray-200 pb-4">
@@ -464,7 +464,7 @@ export default function SplitPDF() {
                 What is the difference between split methods?
               </summary>
               <p className="mt-2 text-gray-600 text-sm">
-                "Every Page" creates one PDF per page. "Page Ranges" lets you split by multiple ranges (e.g., 1-5, 6-10). "Extract Pages" is similar to ranges but focuses on extracting specific pages you want to keep.
+                Every Page creates one PDF per page. Page Ranges lets you split by multiple ranges (e.g., 1-5, 6-10). Extract Pages is similar to ranges but focuses on extracting specific pages you want to keep.
               </p>
             </details>
             <details className="border-b border-gray-200 pb-4">
