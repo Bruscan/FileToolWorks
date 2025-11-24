@@ -139,14 +139,6 @@ export const tools: Tool[] = [
     category: "pdf",
     iconColor: "text-blue-600",
   },
-  {
-    id: "pdf-to-word",
-    name: "PDF to Word",
-    href: "/pdf-to-word",
-    description: "Convert PDF files to Word DOCX format",
-    category: "pdf",
-    iconColor: "text-blue-600",
-  },
 
   // Video Tools
   {
