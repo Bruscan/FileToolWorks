@@ -103,7 +103,7 @@ export default function CompressPDF() {
 
         // Simulate compression by creating a blob
         // In production, you'd use actual compression libraries
-        const blob = new Blob([savedBytes], { type: "application/pdf" });
+        const blob = new Blob([savedBytes.buffer], { type: "application/pdf" });
         const compressedSize = blob.size;
         const actualSavings = ((pdfFile.originalSize - compressedSize) / pdfFile.originalSize) * 100;
 
