@@ -50,8 +50,8 @@ export default function PDFToText() {
     try {
       const pdfjsLib = await import("pdfjs-dist");
 
-      // Set worker source - use CDN with HTTPS
-      pdfjsLib.GlobalWorkerOptions.workerSrc = `https://cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjsLib.version}/pdf.worker.min.mjs`;
+      // Set worker source - use unpkg.com (more reliable)
+      pdfjsLib.GlobalWorkerOptions.workerSrc = `https://unpkg.com/pdfjs-dist@${pdfjsLib.version}/build/pdf.worker.min.mjs`;
 
       const arrayBuffer = await pdfFile.file.arrayBuffer();
       const pdf = await pdfjsLib.getDocument({ data: arrayBuffer }).promise;
