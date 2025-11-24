@@ -42,6 +42,14 @@ export const tools: Tool[] = [
     iconColor: "text-indigo-600",
   },
   {
+    id: "webp-to-jpg",
+    name: "WebP to JPG",
+    href: "/webp-to-jpg",
+    description: "Convert WebP images to JPG format",
+    category: "image",
+    iconColor: "text-orange-600",
+  },
+  {
     id: "compress-image",
     name: "Image Compressor",
     href: "/compress-image",

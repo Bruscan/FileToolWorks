@@ -29,6 +29,48 @@ Free online tools for file conversion and editing. Built with Next.js 15, TypeSc
   - 6 FAQ questions
   - SEO-optimized metadata
   - Automatic Related Tools
+- ✅ Second tool completed: JPG to PDF
+  - Identical to Image to PDF but JPG/JPEG only
+  - File validation: only accepts image/jpeg and image/jpg
+  - All same features: drag & drop, reordering, options, compression
+  - "Start Over" button after successful conversion
+  - Rating display (4.7/5 with 128k+ votes)
+  - 6 customized FAQ questions for JPG conversion
+  - SEO-optimized metadata
+- ✅ Third tool completed: PNG to JPG
+  - Client-side conversion using Canvas API
+  - Accepts PNG files, outputs JPG
+  - Quality settings: Low (0.5), Good (0.7), High (0.85), Best (0.92)
+  - Resize options: Original, 75%, 50%, 25%
+  - Batch conversion with "Download All"
+  - Rating display (4.7/5 with 127k+ votes)
+  - 6 FAQ questions about PNG to JPG conversion
+  - SEO-optimized metadata
+- ✅ Fourth tool completed: JPG to PNG
+  - Reverse of PNG to JPG converter
+  - Accepts JPG/JPEG files, outputs PNG
+  - Same quality and resize options as PNG to JPG
+  - Drag & drop support with preview thumbnails
+  - Batch conversion with "Download All" and "Start Over"
+  - Rating display (4.6/5 with 142k+ votes)
+  - 6 customized FAQ questions for JPG to PNG conversion
+  - SEO-optimized metadata
+- ✅ Fifth tool completed: Image Resizer
+  - Accepts all image formats (image/*)
+  - Two resize methods:
+    - By percentage: 75%, 50%, 25% (button selectors)
+    - Custom dimensions: Width/height input fields in pixels
+  - "Keep aspect ratio" checkbox (default: checked)
+  - Automatic dimension calculation when aspect ratio locked
+  - Output format options: JPG, PNG, WebP (3 buttons)
+  - Quality settings: Low, Good, High, Best (only for JPG/WebP)
+  - Shows original dimensions (width x height) for each image
+  - Shows new dimensions after resizing
+  - Drag & drop support with image previews
+  - Batch processing with "Download All" and "Start Over"
+  - Rating display (4.8/5 with 104k+ votes)
+  - 6 FAQ questions about image resizing
+  - SEO-optimized metadata
 - ✅ Central tool management system
   - lib/tools.ts: Database with all 23 tools and metadata
   - Smart getRelatedTools() function (category-based)
@@ -38,7 +80,7 @@ Free online tools for file conversion and editing. Built with Next.js 15, TypeSc
   - templates/tool-layout-template.tsx: SEO metadata template
   - templates/README.md: Usage guide
 - ✅ GitHub repo created: https://github.com/Bruscan/FileToolWorks
-- 🔄 Ready to build remaining 22 tools using templates
+- 🔄 Ready to build remaining 18 tools using templates
 
 ## Tech Stack
 - **Framework**: Next.js 15 (App Router)
@@ -89,8 +131,15 @@ All tools use flat URLs (e.g., `/image-to-pdf/` not `/tools/image-to-pdf/`)
 
 4. Test and deploy
 
+## Completed Tools
+1. Image to PDF - Convert any image format to PDF
+2. JPG to PDF - Convert JPG/JPEG images to PDF (specialized version)
+3. PNG to JPG - Convert PNG images to JPG format with quality options
+4. JPG to PNG - Convert JPG/JPEG images to PNG format
+5. Image Resizer - Resize images by percentage or custom dimensions
+
 ## Next Steps
-1. Build remaining 22 tools using templates
+1. Build remaining 18 tools using templates
 2. Create static pages (About, Terms, Privacy, Contact)
 3. Create blog structure
 4. Deploy to production
