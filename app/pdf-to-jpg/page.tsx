@@ -92,6 +92,7 @@ export default function PDFToJPG() {
         await page.render({
           canvasContext: context,
           viewport: viewport,
+          canvas: canvas as any,
         }).promise;
 
         const dataUrl = canvas.toDataURL(
