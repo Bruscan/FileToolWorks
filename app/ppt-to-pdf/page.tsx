@@ -97,7 +97,7 @@ export default function PPTToPDF() {
               <div>
                 <h3 className="font-semibold text-gray-900 mb-1">Server-Side Rendering</h3>
                 <p className="text-gray-600 text-sm">
-                  To accurately preserve your presentation's appearance, we need server-side rendering engines similar to Microsoft PowerPoint. This ensures every slide looks exactly as intended.
+                  To accurately preserve your presentation&apos;s appearance, we need server-side rendering engines similar to Microsoft PowerPoint. This ensures every slide looks exactly as intended.
                 </p>
               </div>
             </div>
@@ -260,7 +260,7 @@ export default function PPTToPDF() {
                 Can I use alternative tools in the meantime?
               </summary>
               <p className="mt-2 text-gray-600 text-sm">
-                Absolutely. We recommend using PowerPoint's built-in Save as PDF feature, Google Slides, or services like CloudConvert for your immediate conversion needs. See the "Need to Convert PowerPoint Now?" section above for detailed alternatives.
+                Absolutely. We recommend using PowerPoint&apos;s built-in Save as PDF feature, Google Slides, or services like CloudConvert for your immediate conversion needs. See the &quot;Need to Convert PowerPoint Now?&quot; section above for detailed alternatives.
               </p>
             </details>
           </div>

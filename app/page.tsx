@@ -1,15 +1,112 @@
-import Link from "next/link";
-import { Search, FileImage, FileText, Video, ArrowRight } from "lucide-react";
-import type { Metadata } from "next";
-import { tools, getToolsByCategory } from "@/lib/tools";
+"use client";
 
-export const metadata: Metadata = {
-  alternates: {
-    canonical: "/",
+import Link from "next/link";
+import { Search, FileImage, FileText, Video, Music, FileCheck, ArrowRight } from "lucide-react";
+import { tools, getToolsByCategory } from "@/lib/tools";
+import { useState, useMemo } from "react";
+
+// Data - using central tools database
+const imageTools = getToolsByCategory("image");
+const pdfTools = getToolsByCategory("pdf");
+const videoTools = getToolsByCategory("video");
+const audioTools = getToolsByCategory("audio");
+const documentTools = getToolsByCategory("document");
+const compressionTools = getToolsByCategory("compression");
+
+const topTools = tools.slice(0, 12).map(tool => ({
+  title: tool.name,
+  href: tool.href,
+  icon: <FileImage className="w-full h-full" />
+}));
+
+const blogPosts = [
+  {
+    title: "How to Convert Image to PDF",
+    excerpt: "Learn the easiest ways to convert images to PDF on Windows, Mac, and iPhone.",
+    href: "/blog/how-to-convert-image-to-pdf",
   },
-};
+  {
+    title: "How to Compress a PDF Without Losing Quality",
+    excerpt: "Reduce PDF file size while maintaining quality with these simple techniques.",
+    href: "/blog/how-to-compress-pdf",
+  },
+  {
+    title: "DPI vs PPI – What's the Difference?",
+    excerpt: "Understanding the difference between DPI and PPI for better image quality.",
+    href: "/blog/dpi-vs-ppi",
+  },
+];
+
+const faqs = [
+  {
+    question: "Are these tools really free?",
+    answer: "Yes, all our tools are completely free to use. No signup or credit card required.",
+  },
+  {
+    question: "Is my data safe?",
+    answer: "Absolutely. Files are processed in your browser when possible, and any server-processed files are deleted immediately after conversion.",
+  },
+  {
+    question: "Do I need to create an account?",
+    answer: "No account needed. Just upload your file, convert it, and download the result.",
+  },
+  {
+    question: "What file size limits do you have?",
+    answer: "Most tools support files up to 50MB. Larger files may be available with premium features in the future.",
+  },
+  {
+    question: "Can I use these tools on mobile?",
+    answer: "Yes! All our tools are fully optimized for mobile devices.",
+  },
+  {
+    question: "How long are files stored?",
+    answer: "Files are deleted immediately after conversion. We don't store your files.",
+  },
+];
 
 export default function Home() {
+  const [searchQuery, setSearchQuery] = useState("");
+
+  // Filter tools based on search query
+  const filteredTools = useMemo(() => {
+    if (!searchQuery.trim()) return tools;
+
+    const query = searchQuery.toLowerCase();
+    return tools.filter(tool =>
+      tool.name.toLowerCase().includes(query) ||
+      tool.description.toLowerCase().includes(query) ||
+      tool.category.toLowerCase().includes(query)
+    );
+  }, [searchQuery]);
+
+  // Filter categories based on search
+  const filteredImageTools = useMemo(() =>
+    imageTools.filter(t => filteredTools.some(ft => ft.id === t.id)),
+    [filteredTools]
+  );
+  const filteredPdfTools = useMemo(() =>
+    pdfTools.filter(t => filteredTools.some(ft => ft.id === t.id)),
+    [filteredTools]
+  );
+  const filteredVideoTools = useMemo(() =>
+    videoTools.filter(t => filteredTools.some(ft => ft.id === t.id)),
+    [filteredTools]
+  );
+  const filteredAudioTools = useMemo(() =>
+    audioTools.filter(t => filteredTools.some(ft => ft.id === t.id)),
+    [filteredTools]
+  );
+  const filteredDocumentTools = useMemo(() =>
+    documentTools.filter(t => filteredTools.some(ft => ft.id === t.id)),
+    [filteredTools]
+  );
+  const filteredCompressionTools = useMemo(() =>
+    compressionTools.filter(t => filteredTools.some(ft => ft.id === t.id)),
+    [filteredTools]
+  );
+
+  const isSearching = searchQuery.trim().length > 0;
+
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
@@ -32,89 +129,198 @@ export default function Home() {
               <input
                 type="text"
                 placeholder="Search for a tool..."
+                value={searchQuery}
+                onChange={(e) => setSearchQuery(e.target.value)}
                 className="w-full pl-12 pr-4 py-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-lg"
               />
             </div>
+            {isSearching && (
+              <p className="text-sm text-gray-600 mt-2">
+                Found {filteredTools.length} tool{filteredTools.length !== 1 ? 's' : ''}
+              </p>
+            )}
           </div>
         </div>
       </section>
 
-      {/* Top 12 Tools Grid */}
-      <section className="px-4 py-16 max-w-6xl mx-auto">
-        <h2 className="text-3xl font-bold text-gray-900 mb-8">Popular Tools</h2>
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-          {topTools.map((tool) => (
-            <Link
-              key={tool.href}
-              href={tool.href}
-              className="p-6 border border-gray-200 rounded-lg hover:shadow-lg transition-shadow bg-white group"
-            >
-              <div className="flex flex-col items-center text-center">
-                <div className="w-12 h-12 mb-3 text-blue-600 group-hover:scale-110 transition-transform">
-                  {tool.icon}
+      {/* Top 12 Tools Grid - only show if not searching */}
+      {!isSearching && (
+        <section className="px-4 py-16 max-w-6xl mx-auto">
+          <h2 className="text-3xl font-bold text-gray-900 mb-8">Popular Tools</h2>
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+            {topTools.map((tool) => (
+              <Link
+                key={tool.href}
+                href={tool.href}
+                className="p-6 border border-gray-200 rounded-lg hover:shadow-lg transition-shadow bg-white group"
+              >
+                <div className="flex flex-col items-center text-center">
+                  <div className="w-12 h-12 mb-3 text-blue-600 group-hover:scale-110 transition-transform">
+                    {tool.icon}
+                  </div>
+                  <h3 className="font-semibold text-gray-900 text-sm md:text-base">
+                    {tool.title}
+                  </h3>
                 </div>
-                <h3 className="font-semibold text-gray-900 text-sm md:text-base">
-                  {tool.title}
-                </h3>
-              </div>
-            </Link>
-          ))}
-        </div>
-      </section>
+              </Link>
+            ))}
+          </div>
+        </section>
+      )}
 
       {/* Image Tools Category */}
-      <section className="px-4 py-16 bg-gray-50">
-        <div className="max-w-6xl mx-auto">
-          <div className="flex items-center mb-3">
-            <FileImage className="w-8 h-8 text-blue-600 mr-3" />
-            <h2 className="text-3xl font-bold text-gray-900">Image Tools</h2>
+      {filteredImageTools.length > 0 && (
+        <section className="px-4 py-16 bg-gray-50">
+          <div className="max-w-6xl mx-auto">
+            <div className="flex items-center mb-3">
+              <FileImage className="w-8 h-8 text-blue-600 mr-3" />
+              <h2 className="text-3xl font-bold text-gray-900">
+                Image Tools {isSearching && `(${filteredImageTools.length})`}
+              </h2>
+            </div>
+            {!isSearching && (
+              <p className="text-gray-600 mb-6 max-w-3xl">
+                Convert images between formats, compress photos, resize pictures, and remove backgrounds. All image processing happens securely in your browser.
+              </p>
+            )}
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+              {filteredImageTools.map((tool) => (
+                <ToolCard
+                  key={tool.href}
+                  title={tool.name}
+                  href={tool.href}
+                  comingSoon={tool.id === "image-to-heic"}
+                />
+              ))}
+            </div>
           </div>
-          <p className="text-gray-600 mb-6 max-w-3xl">
-            Convert images between formats, compress photos, resize pictures, and remove backgrounds. All image processing happens securely in your browser.
-          </p>
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-            {imageTools.map((tool) => (
-              <ToolCard key={tool.href} title={tool.name} href={tool.href} />
-            ))}
-          </div>
-        </div>
-      </section>
+        </section>
+      )}
 
       {/* PDF Tools Category */}
-      <section className="px-4 py-16">
-        <div className="max-w-6xl mx-auto">
-          <div className="flex items-center mb-3">
-            <FileText className="w-8 h-8 text-red-600 mr-3" />
-            <h2 className="text-3xl font-bold text-gray-900">PDF Tools</h2>
+      {filteredPdfTools.length > 0 && (
+        <section className="px-4 py-16">
+          <div className="max-w-6xl mx-auto">
+            <div className="flex items-center mb-3">
+              <FileText className="w-8 h-8 text-red-600 mr-3" />
+              <h2 className="text-3xl font-bold text-gray-900">
+                PDF Tools {isSearching && `(${filteredPdfTools.length})`}
+              </h2>
+            </div>
+            {!isSearching && (
+              <p className="text-gray-600 mb-6 max-w-3xl">
+                Merge, split, compress, and convert PDF files. Extract text with OCR, add signatures, or convert PDFs to Word, images, and other formats.
+              </p>
+            )}
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+              {filteredPdfTools.map((tool) => (
+                <ToolCard key={tool.href} title={tool.name} href={tool.href} />
+              ))}
+            </div>
           </div>
-          <p className="text-gray-600 mb-6 max-w-3xl">
-            Merge, split, compress, and convert PDF files. Extract text with OCR, add signatures, or convert PDFs to Word, images, and other formats.
-          </p>
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-            {pdfTools.map((tool) => (
-              <ToolCard key={tool.href} title={tool.name} href={tool.href} />
-            ))}
-          </div>
-        </div>
-      </section>
+        </section>
+      )}
 
       {/* Video Tools Category */}
-      <section className="px-4 py-16 bg-gray-50">
-        <div className="max-w-6xl mx-auto">
-          <div className="flex items-center mb-3">
-            <Video className="w-8 h-8 text-purple-600 mr-3" />
-            <h2 className="text-3xl font-bold text-gray-900">Video Tools</h2>
+      {filteredVideoTools.length > 0 && (
+        <section className="px-4 py-16 bg-gray-50">
+          <div className="max-w-6xl mx-auto">
+            <div className="flex items-center mb-3">
+              <Video className="w-8 h-8 text-purple-600 mr-3" />
+              <h2 className="text-3xl font-bold text-gray-900">
+                Video Tools {isSearching && `(${filteredVideoTools.length})`}
+              </h2>
+            </div>
+            {!isSearching && (
+              <p className="text-gray-600 mb-6 max-w-3xl">
+                Convert videos and GIFs to different formats. Compress, trim, and convert video files quickly.
+              </p>
+            )}
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+              {filteredVideoTools.map((tool) => (
+                <ToolCard key={tool.href} title={tool.name} href={tool.href} />
+              ))}
+            </div>
           </div>
-          <p className="text-gray-600 mb-6 max-w-3xl">
-            Convert videos and GIFs to different formats. Extract audio from video files quickly and easily.
-          </p>
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-            {videoTools.map((tool) => (
-              <ToolCard key={tool.href} title={tool.name} href={tool.href} />
-            ))}
+        </section>
+      )}
+
+      {/* Audio Tools Category */}
+      {filteredAudioTools.length > 0 && (
+        <section className="px-4 py-16">
+          <div className="max-w-6xl mx-auto">
+            <div className="flex items-center mb-3">
+              <Music className="w-8 h-8 text-green-600 mr-3" />
+              <h2 className="text-3xl font-bold text-gray-900">
+                Audio Tools {isSearching && `(${filteredAudioTools.length})`}
+              </h2>
+            </div>
+            {!isSearching && (
+              <p className="text-gray-600 mb-6 max-w-3xl">
+                Extract audio from videos, compress audio files, trim clips, and convert between audio formats like MP3 and WAV.
+              </p>
+            )}
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+              {filteredAudioTools.map((tool) => (
+                <ToolCard key={tool.href} title={tool.name} href={tool.href} />
+              ))}
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
+      )}
+
+      {/* Document Tools Category */}
+      {filteredDocumentTools.length > 0 && (
+        <section className="px-4 py-16 bg-gray-50">
+          <div className="max-w-6xl mx-auto">
+            <div className="flex items-center mb-3">
+              <FileCheck className="w-8 h-8 text-blue-700 mr-3" />
+              <h2 className="text-3xl font-bold text-gray-900">
+                Document Tools {isSearching && `(${filteredDocumentTools.length})`}
+              </h2>
+            </div>
+            {!isSearching && (
+              <p className="text-gray-600 mb-6 max-w-3xl">
+                Convert Word, Excel, and PowerPoint documents to PDF format for easy sharing and printing.
+              </p>
+            )}
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+              {filteredDocumentTools.map((tool) => (
+                <ToolCard
+                  key={tool.href}
+                  title={tool.name}
+                  href={tool.href}
+                  comingSoon={tool.id === "ppt-to-pdf"}
+                />
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* Compression Tools Category */}
+      {filteredCompressionTools.length > 0 && (
+        <section className="px-4 py-16">
+          <div className="max-w-6xl mx-auto">
+            <div className="flex items-center mb-3">
+              <FileCheck className="w-8 h-8 text-gray-600 mr-3" />
+              <h2 className="text-3xl font-bold text-gray-900">
+                Compression Tools {isSearching && `(${filteredCompressionTools.length})`}
+              </h2>
+            </div>
+            {!isSearching && (
+              <p className="text-gray-600 mb-6 max-w-3xl">
+                Compress files into ZIP archives or extract files from existing ZIP files.
+              </p>
+            )}
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+              {filteredCompressionTools.map((tool) => (
+                <ToolCard key={tool.href} title={tool.name} href={tool.href} />
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
 
       {/* Blog Previews */}
       <section className="px-4 py-16">
@@ -168,7 +374,27 @@ export default function Home() {
   );
 }
 
-function ToolCard({ title, href }: { title: string; href: string }) {
+function ToolCard({
+  title,
+  href,
+  comingSoon = false,
+}: {
+  title: string;
+  href: string;
+  comingSoon?: boolean;
+}) {
+  if (comingSoon) {
+    return (
+      <Link
+        href={href}
+        className="p-4 border border-gray-200 rounded-lg bg-gray-100 text-center text-sm md:text-base font-medium text-gray-400 cursor-default relative"
+      >
+        {title}
+        <span className="block text-xs mt-1 text-gray-400">Coming Soon</span>
+      </Link>
+    );
+  }
+
   return (
     <Link
       href={href}
@@ -178,59 +404,3 @@ function ToolCard({ title, href }: { title: string; href: string }) {
     </Link>
   );
 }
-
-// Data - now using central tools database
-const topTools = tools.slice(0, 12).map(tool => ({
-  title: tool.name,
-  href: tool.href,
-  icon: <FileImage className="w-full h-full" />
-}));
-
-const imageTools = getToolsByCategory("image");
-const pdfTools = getToolsByCategory("pdf");
-const videoTools = getToolsByCategory("video");
-
-const blogPosts = [
-  {
-    title: "How to Convert Image to PDF",
-    excerpt: "Learn the easiest ways to convert images to PDF on Windows, Mac, and iPhone.",
-    href: "/blog/how-to-convert-image-to-pdf",
-  },
-  {
-    title: "How to Compress a PDF Without Losing Quality",
-    excerpt: "Reduce PDF file size while maintaining quality with these simple techniques.",
-    href: "/blog/how-to-compress-pdf",
-  },
-  {
-    title: "DPI vs PPI – What's the Difference?",
-    excerpt: "Understanding the difference between DPI and PPI for better image quality.",
-    href: "/blog/dpi-vs-ppi",
-  },
-];
-
-const faqs = [
-  {
-    question: "Are these tools really free?",
-    answer: "Yes, all our tools are completely free to use. No signup or credit card required.",
-  },
-  {
-    question: "Is my data safe?",
-    answer: "Absolutely. Files are processed in your browser when possible, and any server-processed files are deleted immediately after conversion.",
-  },
-  {
-    question: "Do I need to create an account?",
-    answer: "No account needed. Just upload your file, convert it, and download the result.",
-  },
-  {
-    question: "What file size limits do you have?",
-    answer: "Most tools support files up to 50MB. Larger files may be available with premium features in the future.",
-  },
-  {
-    question: "Can I use these tools on mobile?",
-    answer: "Yes! All our tools are fully optimized for mobile devices.",
-  },
-  {
-    question: "How long are files stored?",
-    answer: "Files are deleted immediately after conversion. We don't store your files.",
-  },
-];

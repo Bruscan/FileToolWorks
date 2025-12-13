@@ -15,7 +15,7 @@ export default function BlogPost() {
         </Link>
 
         <h1 className="text-4xl font-bold text-gray-900 mb-4">
-          DPI vs PPI – What's the Difference?
+          DPI vs PPI – What&apos;s the Difference?
         </h1>
 
         <p className="text-gray-600 mb-8">

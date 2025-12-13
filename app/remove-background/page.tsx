@@ -72,7 +72,7 @@ export default function RemoveBackground() {
 
     try {
       // Dynamically import the library
-      const removeBackground = (await import("@imgly/background-removal")).default;
+      const { removeBackground } = await import("@imgly/background-removal");
 
       if (!modelLoaded) {
         setModelLoaded(true);
