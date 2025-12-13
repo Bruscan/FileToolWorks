@@ -2,45 +2,66 @@ import { MetadataRoute } from 'next'
 
 const BASE_URL = 'https://filetoolworks.com'
 
-// All tools
+// All tools - matches actual pages in /app folder
 const tools = [
+  // Image Tools (15)
   'image-to-pdf',
-  'pdf-to-image',
-  'compress-image',
-  'compress-pdf',
-  'jpg-to-png',
+  'heic-to-jpg',
   'png-to-jpg',
+  'jpg-to-png',
+  'webp-to-jpg',
+  'webp-to-png',
+  'compress-image',
   'resize-image',
+  'rotate-image',
+  'image-to-webp',
   'crop-image',
+  'sharpen-image',
+  'blur-image',
   'remove-background',
-  'pdf-to-word',
-  'word-to-pdf',
+  'image-to-heic',
+
+  // PDF Tools (10)
+  'compress-pdf',
   'merge-pdf',
   'split-pdf',
-  'heic-to-jpg',
-  'webp-to-png',
-  'video-to-mp3',
-  'gif-to-mp4',
-  'extract-images-from-pdf',
-  'convert-ppt-to-pdf',
-  'pdf-sign-tool',
-  'ocr-image-to-text',
-  'text-to-pdf',
+  'pdf-to-jpg',
+  'jpg-to-pdf',
+  'pdf-to-text',
+  'extract-pdf-pages',
+  'html-to-pdf',
+  'sign-pdf',
+  'pdf-to-word',
+
+  // Video Tools (5)
+  'compress-video',
+  'video-to-gif',
+  'trim-video',
+  'video-to-mp4',
+  'video-to-webm',
+
+  // Audio Tools (5)
   'extract-audio',
+  'compress-audio',
+  'trim-audio',
+  'wav-to-mp3',
+  'mp3-to-wav',
+
+  // Document Tools (3)
+  'word-to-pdf',
+  'excel-to-pdf',
+  'ppt-to-pdf',
+
+  // Compression Tools (2)
+  'zip-files',
+  'unzip-files',
 ]
 
-// Blog posts
+// Blog posts - matches actual pages in /app/blog folder
 const blogPosts = [
-  'how-to-convert-image-to-pdf',
-  'how-to-compress-pdf',
-  'how-to-remove-background',
   'dpi-vs-ppi',
-  'how-to-merge-pdfs',
-  'how-to-compress-images',
-  'how-to-convert-word-to-pdf',
-  'heic-vs-jpg',
-  'why-pdf-still-dominates',
-  'how-to-resize-images-for-social',
+  'how-to-compress-pdf',
+  'how-to-convert-image-to-pdf',
 ]
 
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -56,24 +77,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
   ]
 
-  // Static pages
-  const staticPages = ['about', 'privacy', 'terms', 'contact', 'blog']
-  staticPages.forEach((page) => {
-    routes.push({
-      url: `${BASE_URL}/${page}`,
-      lastModified: currentDate,
-      changeFrequency: 'monthly',
-      priority: 0.5,
-    })
-  })
-
-  // Tool pages
+  // Tool pages (high priority)
   tools.forEach((tool) => {
     routes.push({
       url: `${BASE_URL}/${tool}`,
       lastModified: currentDate,
       changeFrequency: 'weekly',
-      priority: 0.8,
+      priority: 0.9,
     })
   })
 
@@ -83,7 +93,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: `${BASE_URL}/blog/${post}`,
       lastModified: currentDate,
       changeFrequency: 'monthly',
-      priority: 0.6,
+      priority: 0.7,
     })
   })
 
