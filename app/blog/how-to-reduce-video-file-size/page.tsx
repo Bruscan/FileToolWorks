@@ -136,6 +136,13 @@ export default function BlogPost() {
             >
               how to convert MOV to MP4
             </Link>
+            {" "}or compare the two containers in{" "}
+            <Link
+              href="/blog/mp4-vs-mov"
+              className="text-blue-600 hover:underline"
+            >
+              MP4 vs MOV
+            </Link>
             .
           </p>
 

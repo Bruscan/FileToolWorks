@@ -70,7 +70,7 @@ export default function BlogPost() {
             Need to switch formats? Our <Link href="/video-to-mp4" className="text-blue-600 hover:underline font-semibold">video to MP4 converter</Link> handles WebM, MOV, AVI, and other formats. For the reverse direction, our <Link href="/video-to-webm" className="text-blue-600 hover:underline font-semibold">video to WebM converter</Link> uses VP9 encoding with adjustable quality. Both tools run in your browser with no file uploads.
           </p>
           <p>
-            For a broader look at video format choices, check out <Link href="/blog/gif-vs-mp4" className="text-blue-600 hover:underline">GIF vs MP4</Link> and <Link href="/blog/how-to-reduce-video-file-size" className="text-blue-600 hover:underline">how to reduce video file size</Link>.
+            For a broader look at video format choices, check out <Link href="/blog/gif-vs-mp4" className="text-blue-600 hover:underline">GIF vs MP4</Link>, <Link href="/blog/how-to-reduce-video-file-size" className="text-blue-600 hover:underline">how to reduce video file size</Link>, and <Link href="/blog/mp4-vs-mov" className="text-blue-600 hover:underline">MP4 vs MOV</Link>.
           </p>
         </div>
       </article>

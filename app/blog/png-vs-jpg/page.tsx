@@ -128,6 +128,13 @@ export default function BlogPost() {
             >
               SVG vs PNG
             </Link>
+            . Wondering if JPG and JPEG are different? Read{" "}
+            <Link
+              href="/blog/jpg-vs-jpeg"
+              className="text-blue-600 hover:underline"
+            >
+              JPG vs JPEG
+            </Link>
             .
           </p>
         </div>

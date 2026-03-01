@@ -34,6 +34,9 @@ const blogPosts = [
   { slug: "mp4-vs-webm", title: "MP4 vs WebM: File Size, Quality, and Compatibility Compared", date: "2026-03-02", description: "MP4 uses H.264, WebM uses VP9. Compare file size, quality, browser support, and learn which video format to choose for web and sharing." },
   { slug: "how-to-make-gif-from-video", title: "How to Make a GIF from a Video (Best Settings for Small Files)", date: "2026-03-02", description: "Turn any video clip into a GIF with the right FPS, resolution, and duration. Includes platform file size limits for Discord, Twitter, and Slack." },
   { slug: "how-to-convert-mov-to-mp4", title: "How to Convert MOV to MP4 (3 Free Methods)", date: "2026-03-02", description: "Convert MOV to MP4 free using online tools, iMovie on Mac, or VLC. Keep full quality with the right codec settings." },
+  { slug: "mp4-vs-mov", title: "MP4 vs MOV: Which Video Format Should You Use?", date: "2026-03-03", description: "MP4 and MOV compared on file size, codec support, compatibility, editing, and streaming. Learn which video format fits your project." },
+  { slug: "webp-vs-jpg", title: "WebP vs JPG: File Size, Quality, and Browser Support", date: "2026-03-03", description: "WebP produces 25-34% smaller files than JPG at the same quality. Compare compression, transparency, animation, and browser support." },
+  { slug: "jpg-vs-jpeg", title: "JPG vs JPEG: Is There a Difference?", date: "2026-03-03", description: "JPG and JPEG are the same format. The only difference is the file extension. Here is why both exist and which one to use." },
 ];
 
 function escapeXml(str: string): string {

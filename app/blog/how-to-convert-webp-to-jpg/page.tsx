@@ -103,7 +103,7 @@ export default function BlogPost() {
             >
               WebP to PNG converter
             </Link>
-            . PNG preserves every pixel without compression artifacts. For a detailed comparison, read our <Link href="/blog/webp-vs-png" className="text-blue-600 hover:underline">WebP vs PNG breakdown</Link>. Choosing the best format for your website? See <Link href="/blog/best-image-format-for-web" className="text-blue-600 hover:underline">best image format for web</Link>.
+            . PNG preserves every pixel without compression artifacts. For a detailed comparison, read our <Link href="/blog/webp-vs-png" className="text-blue-600 hover:underline">WebP vs PNG breakdown</Link>. Want to know exactly how WebP and JPG stack up? See <Link href="/blog/webp-vs-jpg" className="text-blue-600 hover:underline">WebP vs JPG</Link>. Choosing the best format for your website? See <Link href="/blog/best-image-format-for-web" className="text-blue-600 hover:underline">best image format for web</Link>.
           </p>
         </div>
       </article>
