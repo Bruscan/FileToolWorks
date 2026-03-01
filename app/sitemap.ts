@@ -62,6 +62,9 @@ const blogPosts = [
   'dpi-vs-ppi',
   'how-to-compress-pdf',
   'how-to-convert-image-to-pdf',
+  'how-to-compress-wav-files',
+  'mp3-vs-wav',
+  'how-to-reduce-audio-file-size',
 ]
 
 export default function sitemap(): MetadataRoute.Sitemap {
