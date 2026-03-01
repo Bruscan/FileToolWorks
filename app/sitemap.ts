@@ -83,6 +83,9 @@ const blogPosts = [
   'mp3-to-wav-conversion',
   'best-audio-format-for-web',
   'ogg-vs-mp3',
+  'how-to-compress-podcast-audio',
+  'how-to-extract-audio-from-video',
+  'webp-vs-png',
 ]
 
 export default function sitemap(): MetadataRoute.Sitemap {
