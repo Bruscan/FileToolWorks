@@ -65,6 +65,12 @@ const blogPosts = [
   'how-to-compress-wav-files',
   'mp3-vs-wav',
   'how-to-reduce-audio-file-size',
+  'audio-bitrate-explained',
+  'png-vs-jpg',
+  'how-to-convert-webp-to-jpg',
+  'how-to-compress-images-for-email',
+  'gif-vs-mp4',
+  'how-to-compress-video-for-email',
 ]
 
 export default function sitemap(): MetadataRoute.Sitemap {
