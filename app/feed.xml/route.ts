@@ -31,6 +31,9 @@ const blogPosts = [
   { slug: "how-to-compress-video-for-email", title: "How to Compress Video for Email (Under 25MB)", date: "2026-03-01", description: "Compress video files to fit email attachment limits. Reduce video size below 25MB while keeping reasonable quality." },
   { slug: "how-to-reduce-video-file-size", title: "How to Reduce Video File Size Without Losing Quality", date: "2026-03-01", description: "Reduce video file size using resolution, codec, and bitrate adjustments. Practical methods that preserve visual quality." },
   { slug: "gif-vs-mp4", title: "GIF vs MP4: Which Format Should You Use?", date: "2026-03-01", description: "GIF vs MP4 compared on file size, quality, browser support, and use cases. Learn which video format fits your needs." },
+  { slug: "mp4-vs-webm", title: "MP4 vs WebM: File Size, Quality, and Compatibility Compared", date: "2026-03-02", description: "MP4 uses H.264, WebM uses VP9. Compare file size, quality, browser support, and learn which video format to choose for web and sharing." },
+  { slug: "how-to-make-gif-from-video", title: "How to Make a GIF from a Video (Best Settings for Small Files)", date: "2026-03-02", description: "Turn any video clip into a GIF with the right FPS, resolution, and duration. Includes platform file size limits for Discord, Twitter, and Slack." },
+  { slug: "how-to-convert-mov-to-mp4", title: "How to Convert MOV to MP4 (3 Free Methods)", date: "2026-03-02", description: "Convert MOV to MP4 free using online tools, iMovie on Mac, or VLC. Keep full quality with the right codec settings." },
 ];
 
 function escapeXml(str: string): string {

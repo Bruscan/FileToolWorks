@@ -130,6 +130,18 @@ const videoPosts = [
     slug: "gif-vs-mp4",
     title: "GIF vs MP4: Which Format Should You Use?",
   },
+  {
+    slug: "mp4-vs-webm",
+    title: "MP4 vs WebM: File Size, Quality, and Compatibility Compared",
+  },
+  {
+    slug: "how-to-make-gif-from-video",
+    title: "How to Make a GIF from a Video (Best Settings for Small Files)",
+  },
+  {
+    slug: "how-to-convert-mov-to-mp4",
+    title: "How to Convert MOV to MP4 (3 Free Methods)",
+  },
 ];
 
 const categories = [
