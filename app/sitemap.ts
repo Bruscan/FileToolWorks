@@ -86,6 +86,9 @@ const blogPosts = [
   'how-to-compress-podcast-audio',
   'how-to-extract-audio-from-video',
   'webp-vs-png',
+  'how-to-convert-heic-to-jpg',
+  'how-to-reduce-video-file-size',
+  'svg-vs-png',
 ]
 
 export default function sitemap(): MetadataRoute.Sitemap {
