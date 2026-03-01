@@ -149,6 +149,13 @@ export default function BlogPost() {
             >
               PNG vs GIF
             </Link>
+            . For professional print work, see{" "}
+            <Link
+              href="/blog/tiff-vs-png"
+              className="text-blue-600 hover:underline"
+            >
+              TIFF vs PNG
+            </Link>
             . Want to understand how image compression works under the hood? See{" "}
             <Link
               href="/blog/lossless-vs-lossy-compression"

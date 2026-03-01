@@ -107,6 +107,9 @@ const blogPosts = [
   'best-video-format-for-social-media',
   'lossless-vs-lossy-compression',
   'png-vs-gif',
+  'tiff-vs-png',
+  'gif-vs-webp',
+  'flac-vs-alac',
 ]
 
 export default function sitemap(): MetadataRoute.Sitemap {

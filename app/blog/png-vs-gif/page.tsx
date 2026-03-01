@@ -63,7 +63,7 @@ export default function BlogPost() {
           </p>
 
           <p>
-            For more image format comparisons, see <Link href="/blog/png-vs-jpg" className="text-blue-600 hover:underline">PNG vs JPG</Link>, <Link href="/blog/svg-vs-png" className="text-blue-600 hover:underline">SVG vs PNG</Link>, and <Link href="/blog/webp-vs-png" className="text-blue-600 hover:underline">WebP vs PNG</Link>.
+            For more image format comparisons, see <Link href="/blog/png-vs-jpg" className="text-blue-600 hover:underline">PNG vs JPG</Link>, <Link href="/blog/svg-vs-png" className="text-blue-600 hover:underline">SVG vs PNG</Link>, <Link href="/blog/webp-vs-png" className="text-blue-600 hover:underline">WebP vs PNG</Link>, <Link href="/blog/tiff-vs-png" className="text-blue-600 hover:underline">TIFF vs PNG</Link>, and <Link href="/blog/gif-vs-webp" className="text-blue-600 hover:underline">GIF vs WebP</Link>.
           </p>
         </div>
       </article>
