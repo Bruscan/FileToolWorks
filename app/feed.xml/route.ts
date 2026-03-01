@@ -40,6 +40,9 @@ const blogPosts = [
   { slug: "aac-vs-mp3", title: "AAC vs MP3: Quality, Compatibility, and Which to Choose", date: "2026-03-04", description: "AAC delivers better audio quality than MP3 at the same bitrate. Compare sound quality, file size, device support, and streaming use cases." },
   { slug: "avi-vs-mp4", title: "AVI vs MP4: File Size, Quality, and Compatibility Compared", date: "2026-03-04", description: "MP4 produces smaller files with better compression than AVI. Compare file size, codec support, streaming, and compatibility for both video formats." },
   { slug: "wav-vs-flac", title: "WAV vs FLAC: File Size, Quality, and When to Use Each", date: "2026-03-04", description: "FLAC is 30-50% smaller than WAV with zero quality loss. Compare file size, metadata support, compatibility, and use cases for both lossless formats." },
+  { slug: "mkv-vs-mp4", title: "MKV vs MP4: File Size, Quality, and Compatibility Compared", date: "2026-03-05", description: "MKV supports unlimited tracks and subtitles, MP4 works everywhere. Compare file size, codec support, streaming, and learn which video format to pick." },
+  { slug: "avif-vs-webp", title: "AVIF vs WebP: Compression, Quality, and Browser Support", date: "2026-03-05", description: "AVIF compresses 20% smaller than WebP but decodes slower. Compare quality, file size, browser support, and learn which next-gen image format to use." },
+  { slug: "flv-vs-mp4", title: "FLV vs MP4: Why FLV Is Dead and How to Convert", date: "2026-03-05", description: "FLV was built for Flash Player, which is gone. MP4 replaced it everywhere. Compare the two formats and learn how to convert FLV files to MP4." },
 ];
 
 function escapeXml(str: string): string {

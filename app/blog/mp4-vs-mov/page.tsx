@@ -68,7 +68,7 @@ export default function BlogPost() {
             Got a MOV file you need in MP4? Our <Link href="/video-to-mp4" className="text-blue-600 hover:underline font-semibold">video to MP4 converter</Link> handles MOV, AVI, WebM, and other formats right in your browser. No upload to external servers needed. If the file is too large, try our <Link href="/compress-video" className="text-blue-600 hover:underline font-semibold">video compressor</Link> to bring the size down first.
           </p>
           <p>
-            For a step-by-step walkthrough, see our guide on <Link href="/blog/how-to-convert-mov-to-mp4" className="text-blue-600 hover:underline">how to convert MOV to MP4</Link>. You might also find <Link href="/blog/mp4-vs-webm" className="text-blue-600 hover:underline">MP4 vs WebM</Link> or <Link href="/blog/avi-vs-mp4" className="text-blue-600 hover:underline">AVI vs MP4</Link> useful if you are choosing between formats.
+            For a step-by-step walkthrough, see our guide on <Link href="/blog/how-to-convert-mov-to-mp4" className="text-blue-600 hover:underline">how to convert MOV to MP4</Link>. You might also find <Link href="/blog/mkv-vs-mp4" className="text-blue-600 hover:underline">MKV vs MP4</Link>, <Link href="/blog/mp4-vs-webm" className="text-blue-600 hover:underline">MP4 vs WebM</Link>, or <Link href="/blog/avi-vs-mp4" className="text-blue-600 hover:underline">AVI vs MP4</Link> useful if you are choosing between formats.
           </p>
         </div>
       </article>

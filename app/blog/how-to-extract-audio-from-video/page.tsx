@@ -63,7 +63,7 @@ export default function BlogPost() {
             If you only need a specific section of the audio, consider trimming the video first with our <Link href="/trim-video" className="text-blue-600 hover:underline font-semibold">video trimmer</Link> before extracting. This saves processing time and gives you exactly the clip you need.
           </p>
           <p>
-            After extraction, you can further reduce the audio file size with our <Link href="/compress-audio" className="text-blue-600 hover:underline font-semibold">audio compressor</Link> if the file is still too large for your needs. For help picking the right output format, see our <Link href="/blog/best-audio-format-for-web" className="text-blue-600 hover:underline">best audio format for web</Link> guide, or read <Link href="/blog/how-to-reduce-audio-file-size" className="text-blue-600 hover:underline">how to reduce audio file size</Link> for more methods.
+            After extraction, you can further reduce the audio file size with our <Link href="/compress-audio" className="text-blue-600 hover:underline font-semibold">audio compressor</Link> if the file is still too large for your needs. If you extracted as MP3 and need WAV instead, see <Link href="/blog/mp3-to-wav-conversion" className="text-blue-600 hover:underline">how to convert MP3 to WAV</Link>. For help picking the right output format, see our <Link href="/blog/best-audio-format-for-web" className="text-blue-600 hover:underline">best audio format for web</Link> guide, or read <Link href="/blog/how-to-reduce-audio-file-size" className="text-blue-600 hover:underline">how to reduce audio file size</Link> for more methods.
           </p>
         </div>
       </article>

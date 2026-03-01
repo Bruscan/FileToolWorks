@@ -104,6 +104,10 @@ const imagePosts = [
     slug: "jpg-vs-jpeg",
     title: "JPG vs JPEG: Is There a Difference?",
   },
+  {
+    slug: "avif-vs-webp",
+    title: "AVIF vs WebP: Compression, Quality, and Browser Support",
+  },
 ];
 
 const pdfPosts = [
@@ -165,6 +169,14 @@ const videoPosts = [
   {
     slug: "avi-vs-mp4",
     title: "AVI vs MP4: File Size, Quality, and Compatibility Compared",
+  },
+  {
+    slug: "mkv-vs-mp4",
+    title: "MKV vs MP4: File Size, Quality, and Compatibility Compared",
+  },
+  {
+    slug: "flv-vs-mp4",
+    title: "FLV vs MP4: Why FLV Is Dead and How to Convert",
   },
 ];
 

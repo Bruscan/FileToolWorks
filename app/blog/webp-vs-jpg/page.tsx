@@ -75,7 +75,7 @@ export default function BlogPost() {
             To switch a JPG to WebP for your website, use our <Link href="/image-to-webp" className="text-blue-600 hover:underline font-semibold">image to WebP converter</Link>. Going the other direction, our <Link href="/webp-to-jpg" className="text-blue-600 hover:underline font-semibold">WebP to JPG converter</Link> handles the conversion in your browser.
           </p>
           <p>
-            For a broader format comparison, check out <Link href="/blog/webp-vs-png" className="text-blue-600 hover:underline">WebP vs PNG</Link>, <Link href="/blog/png-vs-jpg" className="text-blue-600 hover:underline">PNG vs JPG</Link>, and our overview of the <Link href="/blog/best-image-format-for-web" className="text-blue-600 hover:underline">best image format for web</Link>.
+            For a step-by-step walkthrough, read <Link href="/blog/how-to-convert-webp-to-jpg" className="text-blue-600 hover:underline">how to convert WebP to JPG</Link>. For a broader format comparison, check out <Link href="/blog/webp-vs-png" className="text-blue-600 hover:underline">WebP vs PNG</Link>, <Link href="/blog/png-vs-jpg" className="text-blue-600 hover:underline">PNG vs JPG</Link>, and our overview of the <Link href="/blog/best-image-format-for-web" className="text-blue-600 hover:underline">best image format for web</Link>.
           </p>
         </div>
       </article>
