@@ -64,7 +64,7 @@ export default function BlogPost() {
             Our <Link href="/video-to-mp4" className="text-blue-600 hover:underline font-semibold">video to MP4 converter</Link> handles AVI, MOV, MKV, WebM, and other formats directly in your browser. For large AVI files, you might also want to use the <Link href="/compress-video" className="text-blue-600 hover:underline font-semibold">video compressor</Link> to bring the file size down.
           </p>
           <p>
-            See also: <Link href="/blog/mp4-vs-mov" className="text-blue-600 hover:underline">MP4 vs MOV</Link> and <Link href="/blog/mp4-vs-webm" className="text-blue-600 hover:underline">MP4 vs WebM</Link> for more format comparisons.
+            See also: <Link href="/blog/mkv-vs-mp4" className="text-blue-600 hover:underline">MKV vs MP4</Link>, <Link href="/blog/flv-vs-mp4" className="text-blue-600 hover:underline">FLV vs MP4</Link>, <Link href="/blog/mp4-vs-mov" className="text-blue-600 hover:underline">MP4 vs MOV</Link>, and <Link href="/blog/mp4-vs-webm" className="text-blue-600 hover:underline">MP4 vs WebM</Link> for more format comparisons.
           </p>
         </div>
       </article>

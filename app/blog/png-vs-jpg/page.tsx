@@ -135,6 +135,13 @@ export default function BlogPost() {
             >
               JPG vs JPEG
             </Link>
+            . Need to combine images into a document? See{" "}
+            <Link
+              href="/blog/how-to-convert-image-to-pdf"
+              className="text-blue-600 hover:underline"
+            >
+              how to convert image to PDF
+            </Link>
             .
           </p>
         </div>
