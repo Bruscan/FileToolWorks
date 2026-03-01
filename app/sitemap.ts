@@ -80,6 +80,9 @@ const blogPosts = [
   'flac-to-mp3',
   'best-image-format-for-web',
   'pdf-vs-docx',
+  'mp3-to-wav-conversion',
+  'best-audio-format-for-web',
+  'ogg-vs-mp3',
 ]
 
 export default function sitemap(): MetadataRoute.Sitemap {
