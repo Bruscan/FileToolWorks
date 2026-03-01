@@ -26,7 +26,7 @@ export default function BlogPost() {
         </h1>
 
         <p className="text-gray-600 mb-8">
-          Published on November 24, 2024
+          Published on March 1, 2026
         </p>
 
         <div className="prose prose-lg max-w-none">
