@@ -62,6 +62,9 @@ export default function BlogPost() {
           <p>
             If you are starting from a WAV file, our <Link href="/wav-to-mp3" className="text-blue-600 hover:underline font-semibold">WAV to MP3 converter</Link> handles the format change and compression in one step. Need to trim silence or intros first? Use the <Link href="/trim-audio" className="text-blue-600 hover:underline font-semibold">audio trimmer</Link> before compressing.
           </p>
+          <p>
+            Want to understand how bitrate affects quality? Read <Link href="/blog/audio-bitrate-explained" className="text-blue-600 hover:underline">audio bitrate explained</Link>. For general file size reduction beyond podcasts, see <Link href="/blog/how-to-reduce-audio-file-size" className="text-blue-600 hover:underline">how to reduce audio file size</Link>.
+          </p>
         </div>
       </article>
     </div>

@@ -60,6 +60,9 @@ export default function BlogPost() {
           <p>
             If you have a video clip and need a GIF for messaging or email, our <Link href="/video-to-gif" className="text-blue-600 hover:underline font-semibold">video to GIF converter</Link> handles the conversion in your browser. Keep the duration short (under 10 seconds) and the resolution low (480p or 360p) to avoid huge files. Going the other direction, our <Link href="/video-to-mp4" className="text-blue-600 hover:underline font-semibold">video to MP4 converter</Link> can take any video format and produce a compact, widely-compatible MP4 file.
           </p>
+          <p>
+            For tips on shrinking video files in general, see <Link href="/blog/how-to-reduce-video-file-size" className="text-blue-600 hover:underline">how to reduce video file size</Link>. Trying to email a video? Read <Link href="/blog/how-to-compress-video-for-email" className="text-blue-600 hover:underline">how to compress video for email</Link>.
+          </p>
         </div>
       </article>
     </div>

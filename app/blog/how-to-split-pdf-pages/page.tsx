@@ -97,6 +97,10 @@ export default function BlogPost() {
           </p>
 
           <p>
+            For a full guide on merging, read <Link href="/blog/how-to-merge-pdf-files" className="text-blue-600 hover:underline">how to merge PDF files</Link>. Need to add a signature after splitting? See <Link href="/blog/how-to-sign-pdf-online" className="text-blue-600 hover:underline">how to sign a PDF online</Link>.
+          </p>
+
+          <p>
             <strong>Need specific pages?</strong>{" "}
             <Link
               href="/split-pdf"

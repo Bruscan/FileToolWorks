@@ -100,6 +100,10 @@ export default function BlogPost() {
           </p>
 
           <p>
+            Choosing the best format for your website? Read our <Link href="/blog/best-image-format-for-web" className="text-blue-600 hover:underline">best image format for web</Link> guide.
+          </p>
+
+          <p>
             <strong>Ready to convert?</strong>{" "}
             <Link
               href="/heic-to-jpg"

@@ -61,6 +61,9 @@ export default function BlogPost() {
           <p>
             <strong>Need to switch between the two?</strong> Use our <Link href="/word-to-pdf" className="text-blue-600 hover:underline font-semibold">Word to PDF converter</Link> to lock down your DOCX, or extract text from existing PDFs with our <Link href="/pdf-to-text" className="text-blue-600 hover:underline font-semibold">PDF to text tool</Link>.
           </p>
+          <p>
+            If your PDF is too large to share, learn <Link href="/blog/how-to-compress-pdf" className="text-blue-600 hover:underline">how to compress a PDF</Link>. Need to add a signature before sending? See <Link href="/blog/how-to-sign-pdf-online" className="text-blue-600 hover:underline">how to sign a PDF online</Link>.
+          </p>
         </div>
       </article>
     </div>

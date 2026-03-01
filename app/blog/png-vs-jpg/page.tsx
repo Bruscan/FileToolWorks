@@ -107,7 +107,21 @@ export default function BlogPost() {
             >
               JPG to PNG
             </Link>{" "}
-            when you need lossless quality or transparency support.
+            when you need lossless quality or transparency support. For a broader comparison including WebP, see our{" "}
+            <Link
+              href="/blog/best-image-format-for-web"
+              className="text-blue-600 hover:underline"
+            >
+              best image format for web
+            </Link>{" "}
+            guide. Working with vector graphics? Check{" "}
+            <Link
+              href="/blog/svg-vs-png"
+              className="text-blue-600 hover:underline"
+            >
+              SVG vs PNG
+            </Link>
+            .
           </p>
         </div>
       </article>

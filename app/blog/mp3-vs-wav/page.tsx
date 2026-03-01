@@ -49,7 +49,7 @@ export default function BlogPost() {
 
           <h2>When to Use MP3</h2>
           <p>
-            Use MP3 for sharing, streaming, uploading to websites, and storing large music libraries. MP3 is supported everywhere: every phone, browser, car stereo, and media player. If file size or bandwidth matters, MP3 at 192kbps gives you great quality at a fraction of the storage cost.
+            Use MP3 for sharing, streaming, uploading to websites, and storing large music libraries. MP3 is supported everywhere: every phone, browser, car stereo, and media player. If file size or bandwidth matters, MP3 at 192kbps gives you great quality at a fraction of the storage cost. For web projects, see our guide on the <Link href="/blog/best-audio-format-for-web" className="text-blue-600 hover:underline">best audio format for websites</Link>, which also covers OGG and AAC.
           </p>
 
           <h2>Quick Decision Guide</h2>
@@ -59,6 +59,10 @@ export default function BlogPost() {
             <li>Archiving originals? Use WAV (or FLAC).</li>
             <li>Building a website or app? Use MP3 (or OGG/AAC for even better compression).</li>
           </ul>
+
+          <p>
+            Curious how OGG stacks up against MP3? Read our <Link href="/blog/ogg-vs-mp3" className="text-blue-600 hover:underline">OGG vs MP3 comparison</Link>. If you need to shrink audio files in general, see <Link href="/blog/how-to-reduce-audio-file-size" className="text-blue-600 hover:underline">5 methods to reduce audio file size</Link>.
+          </p>
 
           <p>
             <strong>Need to compress audio files?</strong> <Link href="/compress-audio" className="text-blue-600 hover:underline font-semibold">Try our free audio compressor</Link> to reduce file size without losing quality.

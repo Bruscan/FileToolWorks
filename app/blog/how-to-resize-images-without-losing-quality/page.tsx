@@ -122,6 +122,10 @@ export default function BlogPost() {
               Resize your images now
             </Link>
           </p>
+
+          <p>
+            Confused about DPI and PPI settings? Our guide on <Link href="/blog/dpi-vs-ppi" className="text-blue-600 hover:underline">DPI vs PPI</Link> clears up the difference. Need to compress images for email after resizing? See <Link href="/blog/how-to-compress-images-for-email" className="text-blue-600 hover:underline">how to compress images for email</Link>.
+          </p>
         </div>
       </article>
     </div>

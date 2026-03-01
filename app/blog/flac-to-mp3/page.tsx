@@ -38,6 +38,9 @@ export default function BlogPost() {
             <li><strong>192kbps:</strong> Good balance. Most listeners cannot tell the difference from 320kbps in everyday listening.</li>
             <li><strong>128kbps:</strong> Smallest file size. Fine for spoken word, podcasts, or background music. Not ideal for critical listening.</li>
           </ul>
+          <p>
+            For a detailed breakdown of what each bitrate means, read <Link href="/blog/audio-bitrate-explained" className="text-blue-600 hover:underline">audio bitrate explained</Link>. And if you want to understand the broader MP3 quality tradeoff, see our <Link href="/blog/mp3-vs-wav" className="text-blue-600 hover:underline">MP3 vs WAV comparison</Link>.
+          </p>
 
           <h2>FLAC vs MP3: File Size Comparison</h2>
           <p>
