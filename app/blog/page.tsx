@@ -153,11 +153,11 @@ export default function BlogIndex() {
     name: "FileToolWorks Blog",
     description:
       "Practical guides on file formats, conversion, and compression.",
-    url: "https://www.filetoolworks.com/blog",
+    url: "https://filetoolworks.com/blog",
     publisher: {
       "@type": "Organization",
       name: "FileToolWorks",
-      url: "https://www.filetoolworks.com",
+      url: "https://filetoolworks.com",
     },
     mainEntity: {
       "@type": "ItemList",
@@ -165,7 +165,7 @@ export default function BlogIndex() {
       itemListElement: allPosts.map((post, i) => ({
         "@type": "ListItem",
         position: i + 1,
-        url: `https://www.filetoolworks.com/blog/${post.slug}`,
+        url: `https://filetoolworks.com/blog/${post.slug}`,
         name: post.title,
       })),
     },
@@ -179,13 +179,13 @@ export default function BlogIndex() {
         "@type": "ListItem",
         position: 1,
         name: "Home",
-        item: "https://www.filetoolworks.com",
+        item: "https://filetoolworks.com",
       },
       {
         "@type": "ListItem",
         position: 2,
         name: "Blog",
-        item: "https://www.filetoolworks.com/blog",
+        item: "https://filetoolworks.com/blog",
       },
     ],
   };
