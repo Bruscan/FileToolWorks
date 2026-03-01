@@ -43,6 +43,9 @@ const blogPosts = [
   { slug: "mkv-vs-mp4", title: "MKV vs MP4: File Size, Quality, and Compatibility Compared", date: "2026-03-05", description: "MKV supports unlimited tracks and subtitles, MP4 works everywhere. Compare file size, codec support, streaming, and learn which video format to pick." },
   { slug: "avif-vs-webp", title: "AVIF vs WebP: Compression, Quality, and Browser Support", date: "2026-03-05", description: "AVIF compresses 20% smaller than WebP but decodes slower. Compare quality, file size, browser support, and learn which next-gen image format to use." },
   { slug: "flv-vs-mp4", title: "FLV vs MP4: Why FLV Is Dead and How to Convert", date: "2026-03-05", description: "FLV was built for Flash Player, which is gone. MP4 replaced it everywhere. Compare the two formats and learn how to convert FLV files to MP4." },
+  { slug: "wmv-vs-mp4", title: "WMV vs MP4: Compatibility, Quality, and File Size Compared", date: "2026-03-06", description: "WMV is a Windows-only format with shrinking support. MP4 plays everywhere. Compare codec quality, file size, streaming, and when to convert." },
+  { slug: "heif-vs-heic", title: "HEIF vs HEIC: What is the Difference?", date: "2026-03-06", description: "HEIF is the container format, HEIC is the HEVC-encoded variant. Learn how they relate, why Apple uses HEIC, and how to convert both to JPG." },
+  { slug: "m4a-vs-mp3", title: "M4A vs MP3: Quality, Compatibility, and File Size Compared", date: "2026-03-06", description: "M4A (AAC) sounds better than MP3 at the same bitrate but has narrower device support. Compare quality, file size, and when to use each format." },
 ];
 
 function escapeXml(str: string): string {

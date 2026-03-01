@@ -101,6 +101,9 @@ const blogPosts = [
   'mkv-vs-mp4',
   'avif-vs-webp',
   'flv-vs-mp4',
+  'wmv-vs-mp4',
+  'heif-vs-heic',
+  'm4a-vs-mp3',
 ]
 
 export default function sitemap(): MetadataRoute.Sitemap {
