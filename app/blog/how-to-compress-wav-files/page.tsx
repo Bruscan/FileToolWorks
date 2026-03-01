@@ -55,7 +55,7 @@ export default function BlogPost() {
           </p>
 
           <p>
-            Not sure which bitrate to pick? Our guide on <Link href="/blog/audio-bitrate-explained" className="text-blue-600 hover:underline">audio bitrate explained</Link> breaks down the numbers.
+            Not sure which bitrate to pick? Our guide on <Link href="/blog/audio-bitrate-explained" className="text-blue-600 hover:underline">audio bitrate explained</Link> breaks down the numbers. For a lossless alternative to WAV, read <Link href="/blog/wav-vs-flac" className="text-blue-600 hover:underline">WAV vs FLAC</Link>.
           </p>
 
           <p>

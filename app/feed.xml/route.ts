@@ -37,6 +37,9 @@ const blogPosts = [
   { slug: "mp4-vs-mov", title: "MP4 vs MOV: Which Video Format Should You Use?", date: "2026-03-03", description: "MP4 and MOV compared on file size, codec support, compatibility, editing, and streaming. Learn which video format fits your project." },
   { slug: "webp-vs-jpg", title: "WebP vs JPG: File Size, Quality, and Browser Support", date: "2026-03-03", description: "WebP produces 25-34% smaller files than JPG at the same quality. Compare compression, transparency, animation, and browser support." },
   { slug: "jpg-vs-jpeg", title: "JPG vs JPEG: Is There a Difference?", date: "2026-03-03", description: "JPG and JPEG are the same format. The only difference is the file extension. Here is why both exist and which one to use." },
+  { slug: "aac-vs-mp3", title: "AAC vs MP3: Quality, Compatibility, and Which to Choose", date: "2026-03-04", description: "AAC delivers better audio quality than MP3 at the same bitrate. Compare sound quality, file size, device support, and streaming use cases." },
+  { slug: "avi-vs-mp4", title: "AVI vs MP4: File Size, Quality, and Compatibility Compared", date: "2026-03-04", description: "MP4 produces smaller files with better compression than AVI. Compare file size, codec support, streaming, and compatibility for both video formats." },
+  { slug: "wav-vs-flac", title: "WAV vs FLAC: File Size, Quality, and When to Use Each", date: "2026-03-04", description: "FLAC is 30-50% smaller than WAV with zero quality loss. Compare file size, metadata support, compatibility, and use cases for both lossless formats." },
 ];
 
 function escapeXml(str: string): string {

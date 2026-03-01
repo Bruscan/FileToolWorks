@@ -68,7 +68,7 @@ export default function BlogPost() {
           </ul>
 
           <p>
-            Curious how OGG stacks up against MP3? Read our <Link href="/blog/ogg-vs-mp3" className="text-blue-600 hover:underline">OGG vs MP3 comparison</Link>. If you need to shrink audio files in general, see <Link href="/blog/how-to-reduce-audio-file-size" className="text-blue-600 hover:underline">5 methods to reduce audio file size</Link>.
+            Curious how OGG stacks up against MP3? Read our <Link href="/blog/ogg-vs-mp3" className="text-blue-600 hover:underline">OGG vs MP3 comparison</Link>. For AAC details, see <Link href="/blog/aac-vs-mp3" className="text-blue-600 hover:underline">AAC vs MP3</Link>. Considering lossless? Read <Link href="/blog/wav-vs-flac" className="text-blue-600 hover:underline">WAV vs FLAC</Link>. If you need to shrink audio files in general, see <Link href="/blog/how-to-reduce-audio-file-size" className="text-blue-600 hover:underline">5 methods to reduce audio file size</Link>.
           </p>
 
           <p>

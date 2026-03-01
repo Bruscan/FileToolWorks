@@ -41,6 +41,14 @@ const audioPosts = [
     slug: "how-to-extract-audio-from-video",
     title: "How to Extract Audio from Video (Free, Any Format)",
   },
+  {
+    slug: "aac-vs-mp3",
+    title: "AAC vs MP3: Quality, Compatibility, and Which to Choose",
+  },
+  {
+    slug: "wav-vs-flac",
+    title: "WAV vs FLAC: File Size, Quality, and When to Use Each",
+  },
 ];
 
 const imagePosts = [
@@ -87,6 +95,14 @@ const imagePosts = [
   {
     slug: "how-to-convert-image-to-pdf",
     title: "How to Convert Image to PDF",
+  },
+  {
+    slug: "webp-vs-jpg",
+    title: "WebP vs JPG: File Size, Quality, and Browser Support",
+  },
+  {
+    slug: "jpg-vs-jpeg",
+    title: "JPG vs JPEG: Is There a Difference?",
   },
 ];
 
@@ -141,6 +157,14 @@ const videoPosts = [
   {
     slug: "how-to-convert-mov-to-mp4",
     title: "How to Convert MOV to MP4 (3 Free Methods)",
+  },
+  {
+    slug: "mp4-vs-mov",
+    title: "MP4 vs MOV: Which Video Format Should You Use?",
+  },
+  {
+    slug: "avi-vs-mp4",
+    title: "AVI vs MP4: File Size, Quality, and Compatibility Compared",
   },
 ];
 

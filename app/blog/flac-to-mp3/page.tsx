@@ -61,7 +61,7 @@ export default function BlogPost() {
 
           <h2>How to Convert</h2>
           <p>
-            The fastest way is a browser-based converter. Our <Link href="/wav-to-mp3" className="text-blue-600 hover:underline font-semibold">WAV to MP3 converter</Link> handles audio conversion directly in your browser with no upload to any server. For large collections, you can also <Link href="/compress-audio" className="text-blue-600 hover:underline font-semibold">compress audio files</Link> to reduce file size while keeping the format you want.
+            The fastest way is a browser-based converter. Our <Link href="/wav-to-mp3" className="text-blue-600 hover:underline font-semibold">WAV to MP3 converter</Link> handles audio conversion directly in your browser with no upload to any server. For large collections, you can also <Link href="/compress-audio" className="text-blue-600 hover:underline font-semibold">compress audio files</Link> to reduce file size while keeping the format you want. Wondering whether to keep FLAC or switch to WAV? See <Link href="/blog/wav-vs-flac" className="text-blue-600 hover:underline">WAV vs FLAC</Link>.
           </p>
         </div>
       </article>
