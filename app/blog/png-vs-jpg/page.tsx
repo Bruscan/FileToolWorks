@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Metadata } from "next";
+import BlogJsonLd from "@/components/BlogJsonLd";
 
 export const metadata: Metadata = {
   title: "PNG vs JPG: When to Use Each Format",
@@ -10,6 +11,12 @@ export const metadata: Metadata = {
 export default function BlogPost() {
   return (
     <div className="min-h-screen bg-gray-50">
+        <BlogJsonLd
+          title="PNG vs JPG: When to Use Each Format"
+          description="A clear comparison of PNG and JPG image formats. Learn which one to use for photos, graphics, transparency, and web images."
+          slug="png-vs-jpg"
+          datePublished="2026-03-01"
+        />
       <article className="max-w-3xl mx-auto px-4 py-12">
         <Link
           href="/"

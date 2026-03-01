@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Metadata } from "next";
+import BlogJsonLd from "@/components/BlogJsonLd";
 
 export const metadata: Metadata = {
   title: "How to Extract Pages from a PDF for Free | FileToolWorks",
@@ -10,6 +11,12 @@ export const metadata: Metadata = {
 export default function BlogPost() {
   return (
     <div className="min-h-screen bg-gray-50">
+        <BlogJsonLd
+          title="How to Extract Pages from a PDF for Free | FileToolWorks"
+          description="Select and extract specific pages from any PDF file. Free online tool, no signup, runs in your browser."
+          slug="extract-pages-from-pdf"
+          datePublished="2026-03-01"
+        />
       <article className="max-w-3xl mx-auto px-4 py-12">
         <Link
           href="/"

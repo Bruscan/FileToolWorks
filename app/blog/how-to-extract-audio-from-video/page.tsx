@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Metadata } from "next";
+import BlogJsonLd from "@/components/BlogJsonLd";
 
 export const metadata: Metadata = {
   title: "How to Extract Audio from Video (Free, Any Format) | FileToolWorks",
@@ -9,6 +10,12 @@ export const metadata: Metadata = {
 export default function BlogPost() {
   return (
     <div className="min-h-screen bg-gray-50">
+        <BlogJsonLd
+          title="How to Extract Audio from Video (Free, Any Format) | FileToolWorks"
+          description="Extract audio from any video file as MP3, WAV, or AAC. Free browser tool, no software install, works with MP4, MOV, AVI, MKV, and more."
+          slug="how-to-extract-audio-from-video"
+          datePublished="2026-03-01"
+        />
       <article className="max-w-3xl mx-auto px-4 py-12">
         <Link href="/" className="text-blue-600 hover:underline mb-4 inline-block">
           &larr; Back to Home

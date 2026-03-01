@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Metadata } from "next";
+import BlogJsonLd from "@/components/BlogJsonLd";
 
 export const metadata: Metadata = {
   title: "How to Compress WAV Files (Without Ruining Audio Quality) | FileToolWorks",
@@ -9,6 +10,12 @@ export const metadata: Metadata = {
 export default function BlogPost() {
   return (
     <div className="min-h-screen bg-gray-50">
+        <BlogJsonLd
+          title="How to Compress WAV Files (Without Ruining Audio Quality) | FileToolWorks"
+          description="Compress WAV files to reduce size by 80-90%. Learn which settings preserve quality and when to use WAV vs MP3."
+          slug="how-to-compress-wav-files"
+          datePublished="2026-03-01"
+        />
       <article className="max-w-3xl mx-auto px-4 py-12">
         <Link href="/" className="text-blue-600 hover:underline mb-4 inline-block">
           &larr; Back to Home

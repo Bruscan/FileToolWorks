@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Metadata } from "next";
+import BlogJsonLd from "@/components/BlogJsonLd";
 
 export const metadata: Metadata = {
   title: "HEIC vs JPG: Which Image Format Should You Use? | FileToolWorks",
@@ -10,6 +11,12 @@ export const metadata: Metadata = {
 export default function BlogPost() {
   return (
     <div className="min-h-screen bg-gray-50">
+        <BlogJsonLd
+          title="HEIC vs JPG: Which Image Format Should You Use? | FileToolWorks"
+          description="HEIC vs JPG compared. Learn the differences in file size, quality, compatibility, and when to convert between them."
+          slug="heic-vs-jpg"
+          datePublished="2026-03-01"
+        />
       <article className="max-w-3xl mx-auto px-4 py-12">
         <Link
           href="/"

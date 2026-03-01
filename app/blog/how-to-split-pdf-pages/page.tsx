@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Metadata } from "next";
+import BlogJsonLd from "@/components/BlogJsonLd";
 
 export const metadata: Metadata = {
   title: "How to Split PDF Pages Online for Free | FileToolWorks",
@@ -10,6 +11,12 @@ export const metadata: Metadata = {
 export default function BlogPost() {
   return (
     <div className="min-h-screen bg-gray-50">
+        <BlogJsonLd
+          title="How to Split PDF Pages Online for Free | FileToolWorks"
+          description="Split a PDF into separate pages or sections. Free browser-based tool, no installation required."
+          slug="how-to-split-pdf-pages"
+          datePublished="2026-03-01"
+        />
       <article className="max-w-3xl mx-auto px-4 py-12">
         <Link
           href="/"

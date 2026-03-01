@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Metadata } from "next";
+import BlogJsonLd from "@/components/BlogJsonLd";
 
 export const metadata: Metadata = {
   title: "How to Sign a PDF Online for Free | FileToolWorks",
@@ -10,6 +11,12 @@ export const metadata: Metadata = {
 export default function BlogPost() {
   return (
     <div className="min-h-screen bg-gray-50">
+        <BlogJsonLd
+          title="How to Sign a PDF Online for Free | FileToolWorks"
+          description="Sign PDF documents online without printing. Draw or upload your signature and place it on any page. Free, private, no account needed."
+          slug="how-to-sign-pdf-online"
+          datePublished="2026-03-01"
+        />
       <article className="max-w-3xl mx-auto px-4 py-12">
         <Link
           href="/"
