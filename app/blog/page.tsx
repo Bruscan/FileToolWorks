@@ -65,6 +65,18 @@ const audioPosts = [
     slug: "ogg-vs-flac",
     title: "OGG vs FLAC: Lossy vs Lossless Audio Compared",
   },
+  {
+    slug: "aiff-vs-wav",
+    title: "AIFF vs WAV: Differences, Compatibility, and Which to Choose",
+  },
+  {
+    slug: "wav-vs-aac",
+    title: "WAV vs AAC: Quality, File Size, and When to Use Each",
+  },
+  {
+    slug: "wma-vs-mp3",
+    title: "WMA vs MP3: Quality, Compatibility, and File Size Compared",
+  },
 ];
 
 const imagePosts = [
