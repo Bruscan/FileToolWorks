@@ -55,7 +55,7 @@ export default function BlogPost() {
 
           <h2>When to Stay with MP3</h2>
           <p>
-            If you are just listening, sharing, or uploading to a website, keep the MP3. The smaller file size is an advantage and the quality difference is inaudible for playback. Need to shrink an audio file even further? Our <Link href="/compress-audio" className="text-blue-600 hover:underline font-semibold">audio compressor</Link> can reduce bitrate while keeping the file in MP3 format.
+            If you are just listening, sharing, or uploading to a website, keep the MP3. The smaller file size is an advantage and the quality difference is inaudible for playback. For a full comparison of both formats, read <Link href="/blog/mp3-vs-wav" className="text-blue-600 hover:underline">MP3 vs WAV: Quality, File Size, and When to Use Each</Link>. Need to shrink an audio file even further? Our <Link href="/compress-audio" className="text-blue-600 hover:underline font-semibold">audio compressor</Link> can reduce bitrate while keeping the file in MP3 format. For web projects, see which format wins in our <Link href="/blog/best-audio-format-for-web" className="text-blue-600 hover:underline">best audio format for web</Link> guide.
           </p>
         </div>
       </article>

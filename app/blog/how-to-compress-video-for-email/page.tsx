@@ -54,6 +54,10 @@ export default function BlogPost() {
             <li><strong>2 minutes at 720p, medium quality:</strong> 15-30MB (tight, may need lower quality)</li>
             <li><strong>Over 2 minutes:</strong> Consider a file sharing service or cloud link instead</li>
           </ul>
+
+          <p>
+            For a complete guide to reducing video file size beyond email, see <Link href="/blog/how-to-reduce-video-file-size" className="text-blue-600 hover:underline">how to reduce video file size</Link>. Deciding between GIF and MP4 for short clips? Read <Link href="/blog/gif-vs-mp4" className="text-blue-600 hover:underline">GIF vs MP4</Link>.
+          </p>
         </div>
       </article>
     </div>

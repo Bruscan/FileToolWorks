@@ -39,12 +39,16 @@ export default function BlogPost() {
 
           <h2>WAV Compression vs. Converting to MP3</h2>
           <p>
-            When people say "compress WAV," they usually mean converting to MP3 or another lossy format. True WAV compression (like FLAC) keeps every bit of audio data intact but only cuts file size by about 50%. Converting to MP3 cuts 80-90% because it removes frequencies most humans cannot hear. For most uses, MP3 is the right call. If you need the conversion specifically, try our <Link href="/wav-to-mp3" className="text-blue-600 hover:underline font-semibold">WAV to MP3 converter</Link>.
+            When people say "compress WAV," they usually mean converting to MP3 or another lossy format. True WAV compression (like FLAC) keeps every bit of audio data intact but only cuts file size by about 50%. Converting to MP3 cuts 80-90% because it removes frequencies most humans cannot hear. For a full breakdown of the tradeoffs, see our <Link href="/blog/mp3-vs-wav" className="text-blue-600 hover:underline">MP3 vs WAV comparison</Link>. For most uses, MP3 is the right call. If you need the conversion specifically, try our <Link href="/wav-to-mp3" className="text-blue-600 hover:underline font-semibold">WAV to MP3 converter</Link>.
           </p>
 
           <h2>When to Keep WAV Uncompressed</h2>
           <p>
             Keep the original WAV if you are editing audio in a DAW (Audacity, Logic, Ableton). Every time you compress and decompress lossy audio, quality degrades slightly. Edit in WAV, export to MP3 as the final step. Also keep WAV originals if you are archiving recordings you might need to re-edit later.
+          </p>
+
+          <p>
+            Not sure which bitrate to pick? Our guide on <Link href="/blog/audio-bitrate-explained" className="text-blue-600 hover:underline">audio bitrate explained</Link> breaks down the numbers.
           </p>
 
           <p>

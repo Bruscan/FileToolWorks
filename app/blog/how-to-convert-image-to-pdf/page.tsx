@@ -61,6 +61,10 @@ export default function BlogPost() {
           </p>
 
           <p>
+            If your images are too large, try <Link href="/blog/how-to-compress-images-for-email" className="text-blue-600 hover:underline">compressing them first</Link>. For help choosing between image formats, see our <Link href="/blog/png-vs-jpg" className="text-blue-600 hover:underline">PNG vs JPG comparison</Link>.
+          </p>
+
+          <p>
             <strong>Try it now:</strong> <Link href="/image-to-pdf" className="text-blue-600 hover:underline font-semibold">Convert Image to PDF for free</Link>
           </p>
         </div>

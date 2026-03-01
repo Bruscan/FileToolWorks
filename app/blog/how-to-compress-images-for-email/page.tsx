@@ -54,6 +54,10 @@ export default function BlogPost() {
             <li><strong>1MB - 5MB:</strong> Acceptable for a few attachments. May be slow on mobile.</li>
             <li><strong>Over 5MB:</strong> Consider a file sharing link instead of an attachment.</li>
           </ul>
+
+          <p>
+            For more on keeping images sharp at smaller sizes, see <Link href="/blog/how-to-resize-images-without-losing-quality" className="text-blue-600 hover:underline">how to resize images without losing quality</Link>. Not sure whether to send JPG or PNG? Our <Link href="/blog/png-vs-jpg" className="text-blue-600 hover:underline">PNG vs JPG comparison</Link> has the answer.
+          </p>
         </div>
       </article>
     </div>

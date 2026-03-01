@@ -105,6 +105,10 @@ export default function BlogPost() {
           </p>
 
           <p>
+            Need to merge signed documents with other PDFs? See <Link href="/blog/how-to-merge-pdf-files" className="text-blue-600 hover:underline">how to merge PDF files</Link>. Choosing between PDF and editable Word format? Read <Link href="/blog/pdf-vs-docx" className="text-blue-600 hover:underline">PDF vs DOCX</Link>.
+          </p>
+
+          <p>
             <strong>Ready to sign?</strong>{" "}
             <Link
               href="/sign-pdf"

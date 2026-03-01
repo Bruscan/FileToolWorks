@@ -91,6 +91,10 @@ export default function BlogPost() {
           </p>
 
           <p>
+            For a comparison of splitting vs extracting, read <Link href="/blog/how-to-split-pdf-pages" className="text-blue-600 hover:underline">how to split PDF pages</Link>. If the result is too large for email, <Link href="/blog/how-to-compress-pdf" className="text-blue-600 hover:underline">compress the PDF</Link> to reduce file size.
+          </p>
+
+          <p>
             <strong>Get started:</strong>{" "}
             <Link
               href="/extract-pdf-pages"

@@ -34,7 +34,7 @@ export default function BlogPost() {
 
           <h2>2. Lower the Bitrate</h2>
           <p>
-            Already have an MP3? Re-encoding at a lower bitrate makes it smaller. Going from 320kbps to 128kbps cuts file size by 60%. The tradeoff is some quality loss, but for voice recordings, podcasts, and background music, 128kbps sounds perfectly fine.
+            Already have an MP3? Re-encoding at a lower bitrate makes it smaller. Going from 320kbps to 128kbps cuts file size by 60%. The tradeoff is some quality loss, but for voice recordings, podcasts, and background music, 128kbps sounds perfectly fine. Not sure which bitrate to use? Our <Link href="/blog/audio-bitrate-explained" className="text-blue-600 hover:underline">audio bitrate guide</Link> has specific recommendations.
           </p>
 
           <h2>3. Convert WAV or FLAC to MP3</h2>
@@ -50,6 +50,10 @@ export default function BlogPost() {
           <h2>5. Use Mono Instead of Stereo</h2>
           <p>
             Stereo audio has two channels. Mono has one. Switching to mono halves the data. For voice recordings, phone calls, and podcasts where spatial audio does not matter, mono is the right choice. Most audio editors and converters have a mono option in their export settings.
+          </p>
+
+          <p>
+            Compressing podcast audio specifically? See our <Link href="/blog/how-to-compress-podcast-audio" className="text-blue-600 hover:underline">podcast compression guide</Link> for bitrate and mono settings tuned for voice. For a detailed format comparison, check <Link href="/blog/mp3-vs-wav" className="text-blue-600 hover:underline">MP3 vs WAV</Link>.
           </p>
 
           <p>

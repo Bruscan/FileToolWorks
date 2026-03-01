@@ -106,6 +106,10 @@ export default function BlogPost() {
           </p>
 
           <p>
+            For a step-by-step conversion walkthrough, read <Link href="/blog/how-to-convert-heic-to-jpg" className="text-blue-600 hover:underline">how to convert HEIC to JPG</Link>. Choosing a format for your website? See our <Link href="/blog/best-image-format-for-web" className="text-blue-600 hover:underline">best image format for web</Link> guide.
+          </p>
+
+          <p>
             <strong>Need to convert?</strong>{" "}
             <Link
               href="/heic-to-jpg"

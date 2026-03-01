@@ -60,6 +60,10 @@ export default function BlogPost() {
           </p>
 
           <p>
+            Need to combine multiple PDFs? See <Link href="/blog/how-to-merge-pdf-files" className="text-blue-600 hover:underline">how to merge PDF files</Link>. Deciding between PDF and Word format? Read <Link href="/blog/pdf-vs-docx" className="text-blue-600 hover:underline">PDF vs DOCX</Link>.
+          </p>
+
+          <p>
             <strong>Ready to compress?</strong> <Link href="/compress-pdf" className="text-blue-600 hover:underline font-semibold">Reduce your PDF size now</Link>
           </p>
         </div>

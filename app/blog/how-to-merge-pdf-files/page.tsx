@@ -91,6 +91,10 @@ export default function BlogPost() {
           </p>
 
           <p>
+            For more PDF operations, see <Link href="/blog/extract-pages-from-pdf" className="text-blue-600 hover:underline">how to extract pages from a PDF</Link> or <Link href="/blog/how-to-compress-pdf" className="text-blue-600 hover:underline">how to compress a PDF</Link> if your merged file is too large.
+          </p>
+
+          <p>
             <strong>Ready to combine?</strong>{" "}
             <Link
               href="/merge-pdf"
