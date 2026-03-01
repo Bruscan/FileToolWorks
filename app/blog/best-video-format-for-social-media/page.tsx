@@ -65,7 +65,7 @@ export default function BlogPost() {
           </p>
 
           <p>
-            For more on video formats, see <Link href="/blog/mp4-vs-mov" className="text-blue-600 hover:underline">MP4 vs MOV</Link>, <Link href="/blog/mp4-vs-webm" className="text-blue-600 hover:underline">MP4 vs WebM</Link>, and <Link href="/blog/how-to-compress-video-for-email" className="text-blue-600 hover:underline">how to compress video for email</Link>.
+            For more on video formats, see <Link href="/blog/h264-vs-h265" className="text-blue-600 hover:underline">H.264 vs H.265</Link> (the codecs that matter most), <Link href="/blog/mp4-vs-mov" className="text-blue-600 hover:underline">MP4 vs MOV</Link>, <Link href="/blog/mp4-vs-webm" className="text-blue-600 hover:underline">MP4 vs WebM</Link>, and <Link href="/blog/how-to-compress-video-for-email" className="text-blue-600 hover:underline">how to compress video for email</Link>.
           </p>
         </div>
       </article>

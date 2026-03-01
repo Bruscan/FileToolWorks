@@ -57,6 +57,10 @@ const audioPosts = [
     slug: "flac-vs-alac",
     title: "FLAC vs ALAC: Lossless Audio Formats Compared",
   },
+  {
+    slug: "opus-vs-mp3",
+    title: "Opus vs MP3: Audio Quality, File Size, and Compatibility Compared",
+  },
 ];
 
 const imagePosts = [
@@ -213,6 +217,14 @@ const videoPosts = [
   {
     slug: "best-video-format-for-social-media",
     title: "Best Video Format for Social Media in 2026",
+  },
+  {
+    slug: "h264-vs-h265",
+    title: "H.264 vs H.265: Compression, Quality, and When to Use Each",
+  },
+  {
+    slug: "webm-vs-mkv",
+    title: "WebM vs MKV: Web Streaming vs Media Storage Compared",
   },
 ];
 
