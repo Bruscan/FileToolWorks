@@ -74,6 +74,9 @@ const blogPosts = [
   'how-to-merge-pdf-files',
   'how-to-split-pdf-pages',
   'extract-pages-from-pdf',
+  'how-to-resize-images-without-losing-quality',
+  'heic-vs-jpg',
+  'how-to-sign-pdf-online',
 ]
 
 export default function sitemap(): MetadataRoute.Sitemap {
