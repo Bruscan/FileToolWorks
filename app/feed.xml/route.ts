@@ -52,6 +52,9 @@ const blogPosts = [
   { slug: "tiff-vs-png", title: "TIFF vs PNG: File Size, Quality, and When to Use Each", date: "2026-03-08", description: "TIFF is built for print and editing. PNG is built for the web. Compare file size, compression, color space support, and transparency for both formats." },
   { slug: "gif-vs-webp", title: "GIF vs WebP: File Size, Animation, and Quality Compared", date: "2026-03-08", description: "WebP animated images are 64% smaller than GIF with better color depth. Compare file size, animation, transparency, and browser support for both formats." },
   { slug: "flac-vs-alac", title: "FLAC vs ALAC: Lossless Audio Formats Compared", date: "2026-03-08", description: "FLAC and ALAC both deliver identical lossless audio quality. FLAC works everywhere, ALAC works best on Apple devices. Compare compatibility, file size, and features." },
+  { slug: "h264-vs-h265", title: "H.264 vs H.265: Compression, Quality, and When to Use Each", date: "2026-03-09", description: "H.265 cuts file size in half compared to H.264 at the same quality, but needs more processing power. Compare codecs for streaming, storage, and editing." },
+  { slug: "webm-vs-mkv", title: "WebM vs MKV: Web Streaming vs Media Storage Compared", date: "2026-03-09", description: "WebM is optimized for web browsers with VP8/VP9 codecs. MKV supports unlimited tracks and codecs for local storage. Compare features, size, and compatibility." },
+  { slug: "opus-vs-mp3", title: "Opus vs MP3: Audio Quality, File Size, and Compatibility Compared", date: "2026-03-09", description: "Opus sounds better than MP3 at the same bitrate and is the default codec for Discord, WhatsApp, and web audio. Compare quality, size, and device support." },
 ];
 
 function escapeXml(str: string): string {
