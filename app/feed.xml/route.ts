@@ -58,6 +58,9 @@ const blogPosts = [
   { slug: "raw-vs-jpeg", title: "RAW vs JPEG: Quality, File Size, and When to Shoot Each", date: "2026-03-10", description: "RAW captures all sensor data for maximum editing flexibility. JPEG is processed and compressed in-camera for smaller files. Compare quality, size, and workflow." },
   { slug: "bmp-vs-png", title: "BMP vs PNG: File Size, Quality, and When to Use Each", date: "2026-03-10", description: "BMP stores raw uncompressed pixel data. PNG uses lossless compression for smaller files with identical quality. Compare features, transparency, and use cases." },
   { slug: "ogg-vs-flac", title: "OGG vs FLAC: Lossy vs Lossless Audio Compared", date: "2026-03-10", description: "FLAC preserves original audio quality with lossless compression. OGG Vorbis uses lossy compression for much smaller files. Compare quality, size, and use cases." },
+  { slug: "aiff-vs-wav", title: "AIFF vs WAV: Differences, Compatibility, and Which to Choose", date: "2026-03-11", description: "AIFF and WAV both store uncompressed lossless audio at identical quality. WAV has broader device support, AIFF stores richer metadata. Compare features and pick the right one." },
+  { slug: "wav-vs-aac", title: "WAV vs AAC: Quality, File Size, and When to Use Each", date: "2026-03-11", description: "WAV is uncompressed lossless audio. AAC is lossy but 90% smaller. Compare sound quality, file size, device support, and learn when each format makes sense." },
+  { slug: "wma-vs-mp3", title: "WMA vs MP3: Quality, Compatibility, and File Size Compared", date: "2026-03-11", description: "WMA sounds slightly better than MP3 at low bitrates but only works on Windows. MP3 plays everywhere. Compare quality, file size, DRM, and device support." },
 ];
 
 function escapeXml(str: string): string {
