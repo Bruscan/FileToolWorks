@@ -4,3 +4,6 @@ Allow: /
 
 # Sitemap location
 Sitemap: https://filetoolworks.com/sitemap.xml
+
+# RSS Feed
+# https://www.filetoolworks.com/feed.xml
