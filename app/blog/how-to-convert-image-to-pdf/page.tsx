@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Metadata } from "next";
+import BlogJsonLd from "@/components/BlogJsonLd";
 
 export const metadata: Metadata = {
   title: "How to Convert Image to PDF - Free Guide | FileToolWorks",
@@ -9,6 +10,12 @@ export const metadata: Metadata = {
 export default function BlogPost() {
   return (
     <div className="min-h-screen bg-gray-50">
+        <BlogJsonLd
+          title="How to Convert Image to PDF - Free Guide | FileToolWorks"
+          description="Learn the easiest ways to convert JPG, PNG, and HEIC images to PDF on any device. Free online converter included."
+          slug="how-to-convert-image-to-pdf"
+          datePublished="2026-03-01"
+        />
       <article className="max-w-3xl mx-auto px-4 py-12">
         <Link href="/" className="text-blue-600 hover:underline mb-4 inline-block">
           ← Back to Home

@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Metadata } from "next";
+import BlogJsonLd from "@/components/BlogJsonLd";
 
 export const metadata: Metadata = {
   title: "SVG vs PNG: When to Use Each Format | FileToolWorks",
@@ -10,6 +11,12 @@ export const metadata: Metadata = {
 export default function BlogPost() {
   return (
     <div className="min-h-screen bg-gray-50">
+        <BlogJsonLd
+          title="SVG vs PNG: When to Use Each Format | FileToolWorks"
+          description="SVG vs PNG compared for web, print, and design use. Learn when vector SVG beats raster PNG and how to convert between them."
+          slug="svg-vs-png"
+          datePublished="2026-03-01"
+        />
       <article className="max-w-3xl mx-auto px-4 py-12">
         <Link
           href="/"

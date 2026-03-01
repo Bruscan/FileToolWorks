@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Metadata } from "next";
+import BlogJsonLd from "@/components/BlogJsonLd";
 
 export const metadata: Metadata = {
   title: "How to Convert HEIC to JPG (Free, No Upload) | FileToolWorks",
@@ -10,6 +11,12 @@ export const metadata: Metadata = {
 export default function BlogPost() {
   return (
     <div className="min-h-screen bg-gray-50">
+        <BlogJsonLd
+          title="How to Convert HEIC to JPG (Free, No Upload) | FileToolWorks"
+          description="Convert HEIC photos to JPG format directly in your browser. No upload required, works on any device. Step-by-step guide with free tool."
+          slug="how-to-convert-heic-to-jpg"
+          datePublished="2026-03-01"
+        />
       <article className="max-w-3xl mx-auto px-4 py-12">
         <Link
           href="/"

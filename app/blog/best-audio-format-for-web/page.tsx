@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Metadata } from "next";
+import BlogJsonLd from "@/components/BlogJsonLd";
 
 export const metadata: Metadata = {
   title: "Best Audio Format for Web: MP3, OGG, AAC, or WAV? | FileToolWorks",
@@ -9,6 +10,12 @@ export const metadata: Metadata = {
 export default function BlogPost() {
   return (
     <div className="min-h-screen bg-gray-50">
+        <BlogJsonLd
+          title="Best Audio Format for Web: MP3, OGG, AAC, or WAV? | FileToolWorks"
+          description="Which audio format is best for websites? Compare MP3, OGG, AAC, and WAV for browser support, file size, and quality to pick the right one."
+          slug="best-audio-format-for-web"
+          datePublished="2026-03-01"
+        />
       <article className="max-w-3xl mx-auto px-4 py-12">
         <Link href="/" className="text-blue-600 hover:underline mb-4 inline-block">
           &larr; Back to Home

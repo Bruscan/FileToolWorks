@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Metadata } from "next";
+import BlogJsonLd from "@/components/BlogJsonLd";
 
 export const metadata: Metadata = {
   title: "Best Image Format for Web: JPG, PNG, WebP Compared | FileToolWorks",
@@ -9,6 +10,12 @@ export const metadata: Metadata = {
 export default function BlogPost() {
   return (
     <div className="min-h-screen bg-gray-50">
+        <BlogJsonLd
+          title="Best Image Format for Web: JPG, PNG, WebP Compared | FileToolWorks"
+          description="Pick the right image format for your website. JPG, PNG, and WebP compared by file size, quality, transparency, and browser support."
+          slug="best-image-format-for-web"
+          datePublished="2026-03-01"
+        />
       <article className="max-w-3xl mx-auto px-4 py-12">
         <Link href="/" className="text-blue-600 hover:underline mb-4 inline-block">
           &larr; Back to Home
