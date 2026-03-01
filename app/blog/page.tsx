@@ -77,6 +77,10 @@ const audioPosts = [
     slug: "wma-vs-mp3",
     title: "WMA vs MP3: Quality, Compatibility, and File Size Compared",
   },
+  {
+    slug: "cbr-vs-vbr",
+    title: "CBR vs VBR: Constant vs Variable Bitrate Explained",
+  },
 ];
 
 const imagePosts = [
@@ -163,6 +167,10 @@ const imagePosts = [
   {
     slug: "bmp-vs-png",
     title: "BMP vs PNG: File Size, Quality, and When to Use Each",
+  },
+  {
+    slug: "tiff-vs-jpg",
+    title: "TIFF vs JPG: When to Use Each Image Format",
   },
 ];
 
@@ -252,11 +260,19 @@ const videoPosts = [
   },
 ];
 
+const generalPosts = [
+  {
+    slug: "zip-vs-rar",
+    title: "ZIP vs RAR: File Compression Formats Compared",
+  },
+];
+
 const categories = [
   { name: "Audio", posts: audioPosts, icon: "🎵" },
   { name: "Image", posts: imagePosts, icon: "🖼" },
   { name: "PDF", posts: pdfPosts, icon: "📄" },
   { name: "Video", posts: videoPosts, icon: "🎬" },
+  { name: "General", posts: generalPosts, icon: "📁" },
 ];
 
 export default function BlogIndex() {
@@ -265,6 +281,7 @@ export default function BlogIndex() {
     ...imagePosts,
     ...pdfPosts,
     ...videoPosts,
+    ...generalPosts,
   ];
 
   const structuredData = {
