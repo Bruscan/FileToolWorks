@@ -114,6 +114,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     })
   })
 
+  // Blog index page
+  routes.push({
+    url: `${BASE_URL}/blog`,
+    lastModified: currentDate,
+    changeFrequency: 'weekly',
+    priority: 0.8,
+  })
+
   // Blog posts
   blogPosts.forEach((post) => {
     routes.push({
