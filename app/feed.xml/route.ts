@@ -61,6 +61,9 @@ const blogPosts = [
   { slug: "aiff-vs-wav", title: "AIFF vs WAV: Differences, Compatibility, and Which to Choose", date: "2026-03-11", description: "AIFF and WAV both store uncompressed lossless audio at identical quality. WAV has broader device support, AIFF stores richer metadata. Compare features and pick the right one." },
   { slug: "wav-vs-aac", title: "WAV vs AAC: Quality, File Size, and When to Use Each", date: "2026-03-11", description: "WAV is uncompressed lossless audio. AAC is lossy but 90% smaller. Compare sound quality, file size, device support, and learn when each format makes sense." },
   { slug: "wma-vs-mp3", title: "WMA vs MP3: Quality, Compatibility, and File Size Compared", date: "2026-03-11", description: "WMA sounds slightly better than MP3 at low bitrates but only works on Windows. MP3 plays everywhere. Compare quality, file size, DRM, and device support." },
+  { slug: "cbr-vs-vbr", title: "CBR vs VBR: Constant vs Variable Bitrate Explained", date: "2026-03-12", description: "CBR uses a fixed bitrate throughout the file. VBR adjusts dynamically for better quality per byte. Learn when to use each for audio and video encoding." },
+  { slug: "tiff-vs-jpg", title: "TIFF vs JPG: When to Use Each Image Format", date: "2026-03-12", description: "TIFF preserves full image quality for editing and print. JPG compresses images for smaller files ideal for web and sharing. Compare quality, size, and use cases." },
+  { slug: "zip-vs-rar", title: "ZIP vs RAR: File Compression Formats Compared", date: "2026-03-12", description: "ZIP is universally supported and works without extra software. RAR offers better compression and error recovery. Compare features, compatibility, and use cases." },
 ];
 
 function escapeXml(str: string): string {
