@@ -53,6 +53,10 @@ const audioPosts = [
     slug: "m4a-vs-mp3",
     title: "M4A vs MP3: Quality, Compatibility, and File Size Compared",
   },
+  {
+    slug: "flac-vs-alac",
+    title: "FLAC vs ALAC: Lossless Audio Formats Compared",
+  },
 ];
 
 const imagePosts = [
@@ -123,6 +127,14 @@ const imagePosts = [
   {
     slug: "png-vs-gif",
     title: "PNG vs GIF: Color Depth, Animation, and When to Use Each",
+  },
+  {
+    slug: "tiff-vs-png",
+    title: "TIFF vs PNG: File Size, Quality, and When to Use Each",
+  },
+  {
+    slug: "gif-vs-webp",
+    title: "GIF vs WebP: File Size, Animation, and Quality Compared",
   },
 ];
 

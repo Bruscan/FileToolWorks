@@ -49,6 +49,9 @@ const blogPosts = [
   { slug: "best-video-format-for-social-media", title: "Best Video Format for Social Media in 2026", date: "2026-03-07", description: "MP4 with H.264 is the universal video format for social media. See format requirements for YouTube, Instagram, TikTok, Facebook, and LinkedIn." },
   { slug: "lossless-vs-lossy-compression", title: "Lossless vs Lossy Compression: How They Work and When to Use Each", date: "2026-03-07", description: "Lossy compression discards data to shrink files. Lossless keeps every bit intact. Learn how each works for images, audio, and video with real examples." },
   { slug: "png-vs-gif", title: "PNG vs GIF: Color Depth, Animation, and When to Use Each", date: "2026-03-07", description: "PNG supports millions of colors and alpha transparency. GIF is limited to 256 colors but supports animation. Compare both formats and when to use each." },
+  { slug: "tiff-vs-png", title: "TIFF vs PNG: File Size, Quality, and When to Use Each", date: "2026-03-08", description: "TIFF is built for print and editing. PNG is built for the web. Compare file size, compression, color space support, and transparency for both formats." },
+  { slug: "gif-vs-webp", title: "GIF vs WebP: File Size, Animation, and Quality Compared", date: "2026-03-08", description: "WebP animated images are 64% smaller than GIF with better color depth. Compare file size, animation, transparency, and browser support for both formats." },
+  { slug: "flac-vs-alac", title: "FLAC vs ALAC: Lossless Audio Formats Compared", date: "2026-03-08", description: "FLAC and ALAC both deliver identical lossless audio quality. FLAC works everywhere, ALAC works best on Apple devices. Compare compatibility, file size, and features." },
 ];
 
 function escapeXml(str: string): string {
