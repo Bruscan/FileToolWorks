@@ -46,6 +46,9 @@ const blogPosts = [
   { slug: "wmv-vs-mp4", title: "WMV vs MP4: Compatibility, Quality, and File Size Compared", date: "2026-03-06", description: "WMV is a Windows-only format with shrinking support. MP4 plays everywhere. Compare codec quality, file size, streaming, and when to convert." },
   { slug: "heif-vs-heic", title: "HEIF vs HEIC: What is the Difference?", date: "2026-03-06", description: "HEIF is the container format, HEIC is the HEVC-encoded variant. Learn how they relate, why Apple uses HEIC, and how to convert both to JPG." },
   { slug: "m4a-vs-mp3", title: "M4A vs MP3: Quality, Compatibility, and File Size Compared", date: "2026-03-06", description: "M4A (AAC) sounds better than MP3 at the same bitrate but has narrower device support. Compare quality, file size, and when to use each format." },
+  { slug: "best-video-format-for-social-media", title: "Best Video Format for Social Media in 2026", date: "2026-03-07", description: "MP4 with H.264 is the universal video format for social media. See format requirements for YouTube, Instagram, TikTok, Facebook, and LinkedIn." },
+  { slug: "lossless-vs-lossy-compression", title: "Lossless vs Lossy Compression: How They Work and When to Use Each", date: "2026-03-07", description: "Lossy compression discards data to shrink files. Lossless keeps every bit intact. Learn how each works for images, audio, and video with real examples." },
+  { slug: "png-vs-gif", title: "PNG vs GIF: Color Depth, Animation, and When to Use Each", date: "2026-03-07", description: "PNG supports millions of colors and alpha transparency. GIF is limited to 256 colors but supports animation. Compare both formats and when to use each." },
 ];
 
 function escapeXml(str: string): string {

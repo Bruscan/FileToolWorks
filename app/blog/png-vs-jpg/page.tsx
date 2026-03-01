@@ -142,6 +142,20 @@ export default function BlogPost() {
             >
               how to convert image to PDF
             </Link>
+            . Comparing PNG to GIF? Read{" "}
+            <Link
+              href="/blog/png-vs-gif"
+              className="text-blue-600 hover:underline"
+            >
+              PNG vs GIF
+            </Link>
+            . Want to understand how image compression works under the hood? See{" "}
+            <Link
+              href="/blog/lossless-vs-lossy-compression"
+              className="text-blue-600 hover:underline"
+            >
+              lossless vs lossy compression
+            </Link>
             .
           </p>
         </div>

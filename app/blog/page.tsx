@@ -116,6 +116,14 @@ const imagePosts = [
     slug: "heif-vs-heic",
     title: "HEIF vs HEIC: What is the Difference?",
   },
+  {
+    slug: "lossless-vs-lossy-compression",
+    title: "Lossless vs Lossy Compression: How They Work and When to Use Each",
+  },
+  {
+    slug: "png-vs-gif",
+    title: "PNG vs GIF: Color Depth, Animation, and When to Use Each",
+  },
 ];
 
 const pdfPosts = [
@@ -189,6 +197,10 @@ const videoPosts = [
   {
     slug: "wmv-vs-mp4",
     title: "WMV vs MP4: Compatibility, Quality, and File Size Compared",
+  },
+  {
+    slug: "best-video-format-for-social-media",
+    title: "Best Video Format for Social Media in 2026",
   },
 ];
 
