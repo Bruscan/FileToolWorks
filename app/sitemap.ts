@@ -89,6 +89,9 @@ const blogPosts = [
   'how-to-convert-heic-to-jpg',
   'how-to-reduce-video-file-size',
   'svg-vs-png',
+  'mp4-vs-webm',
+  'how-to-make-gif-from-video',
+  'how-to-convert-mov-to-mp4',
 ]
 
 export default function sitemap(): MetadataRoute.Sitemap {
