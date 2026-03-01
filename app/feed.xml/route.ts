@@ -55,6 +55,9 @@ const blogPosts = [
   { slug: "h264-vs-h265", title: "H.264 vs H.265: Compression, Quality, and When to Use Each", date: "2026-03-09", description: "H.265 cuts file size in half compared to H.264 at the same quality, but needs more processing power. Compare codecs for streaming, storage, and editing." },
   { slug: "webm-vs-mkv", title: "WebM vs MKV: Web Streaming vs Media Storage Compared", date: "2026-03-09", description: "WebM is optimized for web browsers with VP8/VP9 codecs. MKV supports unlimited tracks and codecs for local storage. Compare features, size, and compatibility." },
   { slug: "opus-vs-mp3", title: "Opus vs MP3: Audio Quality, File Size, and Compatibility Compared", date: "2026-03-09", description: "Opus sounds better than MP3 at the same bitrate and is the default codec for Discord, WhatsApp, and web audio. Compare quality, size, and device support." },
+  { slug: "raw-vs-jpeg", title: "RAW vs JPEG: Quality, File Size, and When to Shoot Each", date: "2026-03-10", description: "RAW captures all sensor data for maximum editing flexibility. JPEG is processed and compressed in-camera for smaller files. Compare quality, size, and workflow." },
+  { slug: "bmp-vs-png", title: "BMP vs PNG: File Size, Quality, and When to Use Each", date: "2026-03-10", description: "BMP stores raw uncompressed pixel data. PNG uses lossless compression for smaller files with identical quality. Compare features, transparency, and use cases." },
+  { slug: "ogg-vs-flac", title: "OGG vs FLAC: Lossy vs Lossless Audio Compared", date: "2026-03-10", description: "FLAC preserves original audio quality with lossless compression. OGG Vorbis uses lossy compression for much smaller files. Compare quality, size, and use cases." },
 ];
 
 function escapeXml(str: string): string {

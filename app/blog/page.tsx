@@ -61,6 +61,10 @@ const audioPosts = [
     slug: "opus-vs-mp3",
     title: "Opus vs MP3: Audio Quality, File Size, and Compatibility Compared",
   },
+  {
+    slug: "ogg-vs-flac",
+    title: "OGG vs FLAC: Lossy vs Lossless Audio Compared",
+  },
 ];
 
 const imagePosts = [
@@ -139,6 +143,14 @@ const imagePosts = [
   {
     slug: "gif-vs-webp",
     title: "GIF vs WebP: File Size, Animation, and Quality Compared",
+  },
+  {
+    slug: "raw-vs-jpeg",
+    title: "RAW vs JPEG: Quality, File Size, and When to Shoot Each",
+  },
+  {
+    slug: "bmp-vs-png",
+    title: "BMP vs PNG: File Size, Quality, and When to Use Each",
   },
 ];
 
