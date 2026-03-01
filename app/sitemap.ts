@@ -77,6 +77,9 @@ const blogPosts = [
   'how-to-resize-images-without-losing-quality',
   'heic-vs-jpg',
   'how-to-sign-pdf-online',
+  'flac-to-mp3',
+  'best-image-format-for-web',
+  'pdf-vs-docx',
 ]
 
 export default function sitemap(): MetadataRoute.Sitemap {
