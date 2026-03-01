@@ -60,7 +60,7 @@ export default function BlogPost() {
             If you have audio in WAV or another lossless format and need to pick one, encode directly to your target format. Converting from MP3 to OGG (or vice versa) adds a second round of lossy compression and degrades quality. When working with compressed audio files, our <Link href="/compress-audio" className="text-blue-600 hover:underline font-semibold">audio compressor</Link> lets you adjust bitrate to hit your target file size. You can also use our <Link href="/wav-to-mp3" className="text-blue-600 hover:underline font-semibold">WAV to MP3 converter</Link> if you need to create MP3 files from uncompressed sources.
           </p>
           <p>
-            For a broader comparison of web audio options, see our guide on the <Link href="/blog/best-audio-format-for-web" className="text-blue-600 hover:underline">best audio format for web</Link>. If you are comparing MP3 and WAV specifically, check out <Link href="/blog/mp3-vs-wav" className="text-blue-600 hover:underline">MP3 vs WAV</Link>.
+            For a broader comparison of web audio options, see our guide on the <Link href="/blog/best-audio-format-for-web" className="text-blue-600 hover:underline">best audio format for web</Link>. Wondering how AAC compares? Read <Link href="/blog/aac-vs-mp3" className="text-blue-600 hover:underline">AAC vs MP3</Link>. If you are comparing MP3 and WAV specifically, check out <Link href="/blog/mp3-vs-wav" className="text-blue-600 hover:underline">MP3 vs WAV</Link>.
           </p>
         </div>
       </article>
