@@ -49,6 +49,10 @@ const audioPosts = [
     slug: "wav-vs-flac",
     title: "WAV vs FLAC: File Size, Quality, and When to Use Each",
   },
+  {
+    slug: "m4a-vs-mp3",
+    title: "M4A vs MP3: Quality, Compatibility, and File Size Compared",
+  },
 ];
 
 const imagePosts = [
@@ -107,6 +111,10 @@ const imagePosts = [
   {
     slug: "avif-vs-webp",
     title: "AVIF vs WebP: Compression, Quality, and Browser Support",
+  },
+  {
+    slug: "heif-vs-heic",
+    title: "HEIF vs HEIC: What is the Difference?",
   },
 ];
 
@@ -177,6 +185,10 @@ const videoPosts = [
   {
     slug: "flv-vs-mp4",
     title: "FLV vs MP4: Why FLV Is Dead and How to Convert",
+  },
+  {
+    slug: "wmv-vs-mp4",
+    title: "WMV vs MP4: Compatibility, Quality, and File Size Compared",
   },
 ];
 
