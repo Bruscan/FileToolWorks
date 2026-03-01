@@ -57,7 +57,7 @@ export default function BlogPost() {
           </ul>
 
           <p>
-            If your converted MP4 is still too large for email or messaging, run it through our <Link href="/compress-video" className="text-blue-600 hover:underline font-semibold">video compressor</Link> to reduce the file size further. For a deeper look at how these formats differ, read <Link href="/blog/how-to-reduce-video-file-size" className="text-blue-600 hover:underline">how to reduce video file size</Link> and <Link href="/blog/mp4-vs-webm" className="text-blue-600 hover:underline">MP4 vs WebM</Link>.
+            If your converted MP4 is still too large for email or messaging, run it through our <Link href="/compress-video" className="text-blue-600 hover:underline font-semibold">video compressor</Link> to reduce the file size further. For a deeper look at how these formats differ, read <Link href="/blog/how-to-reduce-video-file-size" className="text-blue-600 hover:underline">how to reduce video file size</Link> and <Link href="/blog/mp4-vs-webm" className="text-blue-600 hover:underline">MP4 vs WebM</Link>. For a detailed comparison of the two formats, see <Link href="/blog/mp4-vs-mov" className="text-blue-600 hover:underline">MP4 vs MOV</Link>.
           </p>
         </div>
       </article>

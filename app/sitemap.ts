@@ -92,6 +92,9 @@ const blogPosts = [
   'mp4-vs-webm',
   'how-to-make-gif-from-video',
   'how-to-convert-mov-to-mp4',
+  'mp4-vs-mov',
+  'webp-vs-jpg',
+  'jpg-vs-jpeg',
 ]
 
 export default function sitemap(): MetadataRoute.Sitemap {
