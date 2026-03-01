@@ -115,12 +115,26 @@ export default function BlogPost() {
               WebM format
             </Link>{" "}
             for even smaller files, though compatibility is more limited.
-            For a format comparison, check our{" "}
+            For format comparisons, check{" "}
             <Link
               href="/blog/gif-vs-mp4"
               className="text-blue-600 hover:underline font-semibold"
             >
-              GIF vs MP4 guide
+              GIF vs MP4
+            </Link>
+            {" "}and{" "}
+            <Link
+              href="/blog/mp4-vs-webm"
+              className="text-blue-600 hover:underline"
+            >
+              MP4 vs WebM
+            </Link>
+            . Working with MOV files from your iPhone? Read{" "}
+            <Link
+              href="/blog/how-to-convert-mov-to-mp4"
+              className="text-blue-600 hover:underline"
+            >
+              how to convert MOV to MP4
             </Link>
             .
           </p>

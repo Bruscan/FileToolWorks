@@ -63,7 +63,7 @@ export default function BlogPost() {
           </ul>
 
           <p>
-            For a complete guide to reducing video file size beyond email, see <Link href="/blog/how-to-reduce-video-file-size" className="text-blue-600 hover:underline">how to reduce video file size</Link>. Deciding between GIF and MP4 for short clips? Read <Link href="/blog/gif-vs-mp4" className="text-blue-600 hover:underline">GIF vs MP4</Link>.
+            For a complete guide to reducing video file size beyond email, see <Link href="/blog/how-to-reduce-video-file-size" className="text-blue-600 hover:underline">how to reduce video file size</Link>. Got a MOV file from your iPhone? Read <Link href="/blog/how-to-convert-mov-to-mp4" className="text-blue-600 hover:underline">how to convert MOV to MP4</Link> before compressing. Deciding between GIF and MP4 for short clips? Read <Link href="/blog/gif-vs-mp4" className="text-blue-600 hover:underline">GIF vs MP4</Link>.
           </p>
         </div>
       </article>
