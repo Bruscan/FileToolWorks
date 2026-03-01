@@ -153,11 +153,11 @@ export default function BlogIndex() {
     name: "FileToolWorks Blog",
     description:
       "Practical guides on file formats, conversion, and compression.",
-    url: "https://filetoolworks.com/blog",
+    url: "https://www.filetoolworks.com/blog",
     publisher: {
       "@type": "Organization",
       name: "FileToolWorks",
-      url: "https://filetoolworks.com",
+      url: "https://www.filetoolworks.com",
     },
     mainEntity: {
       "@type": "ItemList",
@@ -165,10 +165,29 @@ export default function BlogIndex() {
       itemListElement: allPosts.map((post, i) => ({
         "@type": "ListItem",
         position: i + 1,
-        url: `https://filetoolworks.com/blog/${post.slug}`,
+        url: `https://www.filetoolworks.com/blog/${post.slug}`,
         name: post.title,
       })),
     },
+  };
+
+  const breadcrumbData = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "Home",
+        item: "https://www.filetoolworks.com",
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: "Blog",
+        item: "https://www.filetoolworks.com/blog",
+      },
+    ],
   };
 
   return (
@@ -176,6 +195,10 @@ export default function BlogIndex() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }}
       />
       <div className="max-w-4xl mx-auto px-4 py-12">
         <Link
