@@ -71,6 +71,9 @@ const blogPosts = [
   'how-to-compress-images-for-email',
   'gif-vs-mp4',
   'how-to-compress-video-for-email',
+  'how-to-merge-pdf-files',
+  'how-to-split-pdf-pages',
+  'extract-pages-from-pdf',
 ]
 
 export default function sitemap(): MetadataRoute.Sitemap {
