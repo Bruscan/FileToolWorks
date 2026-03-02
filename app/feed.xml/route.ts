@@ -100,6 +100,9 @@ const blogPosts = [
   { slug: "webp-vs-heic", title: "WebP vs HEIC: Format Differences, Compression, and Compatibility", date: "2026-03-24", description: "WebP works everywhere on the web with 96% browser support. HEIC compresses 50% better than JPEG but is limited to Apple devices. Full format comparison." },
   { slug: "h264-vs-vp9", title: "H.264 vs VP9: Codec Comparison for Streaming and Video", date: "2026-03-24", description: "VP9 compresses 30-50% better than H.264 but encodes slower. H.264 has universal device support and faster real-time performance. Full codec comparison." },
   { slug: "aac-vs-flac", title: "AAC vs FLAC: Lossy Convenience vs Lossless Quality", date: "2026-03-24", description: "AAC files are 10x smaller than FLAC and sound nearly identical to most listeners. FLAC preserves every bit of the original audio. Full format comparison." },
+  { slug: "mp3-vs-mp4", title: "MP3 vs MP4: Key Differences Between Audio and Multimedia Formats", date: "2026-03-25", description: "MP3 is an audio-only format. MP4 is a multimedia container for video, audio, and subtitles. Compare file size, quality, compatibility, and use cases." },
+  { slug: "aiff-vs-mp3", title: "AIFF vs MP3: Quality, File Size, and When to Use Each", date: "2026-03-25", description: "AIFF is uncompressed with full audio quality. MP3 is 10x smaller with lossy compression. Compare sound quality, file size, and compatibility." },
+  { slug: "wma-vs-aac", title: "WMA vs AAC: Audio Quality, File Size, and Compatibility Compared", date: "2026-03-25", description: "AAC sounds better than WMA at the same bitrate and works on more devices. WMA is a legacy Windows format with shrinking support. Full comparison." },
 ];
 
 function escapeXml(str: string): string {

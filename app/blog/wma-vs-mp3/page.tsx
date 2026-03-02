@@ -63,7 +63,7 @@ export default function BlogPost() {
             To compress or convert audio files, try our <Link href="/compress-audio" className="text-blue-600 hover:underline font-semibold">audio compressor</Link> for reducing file sizes, or the <Link href="/wav-to-mp3" className="text-blue-600 hover:underline font-semibold">WAV to MP3 converter</Link> for lossless-to-MP3 conversion.
           </p>
           <p>
-            Related reading: <Link href="/blog/aac-vs-mp3" className="text-blue-600 hover:underline">AAC vs MP3</Link> compares the two formats that actually replaced WMA, <Link href="/blog/ogg-vs-mp3" className="text-blue-600 hover:underline">OGG vs MP3</Link> covers the open-source alternative, and <Link href="/blog/m4a-vs-mp3" className="text-blue-600 hover:underline">M4A vs MP3</Link> explains Apple's container for AAC audio.
+            Related reading: <Link href="/blog/wma-vs-aac" className="text-blue-600 hover:underline">WMA vs AAC</Link> compares Microsoft's codec against its most capable rival, <Link href="/blog/aac-vs-mp3" className="text-blue-600 hover:underline">AAC vs MP3</Link> compares the two formats that replaced WMA, and <Link href="/blog/ogg-vs-mp3" className="text-blue-600 hover:underline">OGG vs MP3</Link> covers the open-source alternative.
           </p>
         </div>
       </article>
