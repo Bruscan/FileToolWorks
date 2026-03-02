@@ -176,6 +176,9 @@ export default function ToolsPage() {
               { name: "Online-Convert", href: "/vs/online-convert", desc: "vs Online-Convert" },
               { name: "Media.io", href: "/vs/media-io", desc: "vs Media.io" },
               { name: "XConvert", href: "/vs/xconvert", desc: "vs XConvert" },
+              { name: "Adobe Acrobat", href: "/vs/adobe-acrobat", desc: "vs Adobe Acrobat" },
+              { name: "HandBrake", href: "/vs/handbrake", desc: "vs HandBrake" },
+              { name: "TinyPNG", href: "/vs/tinypng", desc: "vs TinyPNG" },
             ].map((item) => (
               <Link
                 key={item.href}
