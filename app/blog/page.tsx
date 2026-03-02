@@ -264,6 +264,14 @@ const imagePosts = [
     slug: "avif-vs-png",
     title: "AVIF vs PNG: Compression, Quality, and When to Use Each",
   },
+  {
+    slug: "raw-vs-dng",
+    title: "RAW vs DNG: File Size, Compatibility, and Which to Shoot",
+  },
+  {
+    slug: "gif-vs-svg",
+    title: "GIF vs SVG: Animation, File Size, and When to Use Each",
+  },
 ];
 
 const pdfPosts = [
@@ -405,6 +413,10 @@ const videoPosts = [
   {
     slug: "m4v-vs-mp4",
     title: "M4V vs MP4: DRM, Compatibility, and Key Differences",
+  },
+  {
+    slug: "mov-vs-mkv",
+    title: "MOV vs MKV: Compatibility, Features, and Which to Choose",
   },
 ];
 
