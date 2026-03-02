@@ -71,7 +71,7 @@ export default function BlogPost() {
             If you need to convert lossless audio to a smaller lossy format for portable use, our <Link href="/compress-audio" className="text-blue-600 hover:underline font-semibold">audio compressor</Link> handles FLAC, WAV, and other formats with adjustable bitrate settings. For converting between WAV and MP3, use the <Link href="/wav-to-mp3" className="text-blue-600 hover:underline font-semibold">WAV to MP3 converter</Link>.
           </p>
           <p>
-            Related reading: <Link href="/blog/wav-vs-flac" className="text-blue-600 hover:underline">WAV vs FLAC</Link> compares compressed and uncompressed lossless, <Link href="/blog/flac-to-mp3" className="text-blue-600 hover:underline">FLAC to MP3</Link> covers what you lose going lossy, and <Link href="/blog/lossless-vs-lossy-compression" className="text-blue-600 hover:underline">lossless vs lossy compression</Link> explains how both compression types work across all file formats.
+            Related reading: <Link href="/blog/alac-vs-aac" className="text-blue-600 hover:underline">ALAC vs AAC</Link> compares Apple's lossless and lossy codecs, <Link href="/blog/wav-vs-flac" className="text-blue-600 hover:underline">WAV vs FLAC</Link> compares compressed and uncompressed lossless, <Link href="/blog/flac-to-mp3" className="text-blue-600 hover:underline">FLAC to MP3</Link> covers what you lose going lossy, and <Link href="/blog/lossless-vs-lossy-compression" className="text-blue-600 hover:underline">lossless vs lossy compression</Link> explains how both compression types work across all file formats.
           </p>
         </div>
       </article>

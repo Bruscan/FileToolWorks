@@ -56,7 +56,7 @@ export default function BlogPost() {
 
           <h2>What About 7z?</h2>
           <p>
-            7z (7-Zip) often beats both ZIP and RAR on compression ratio, is open-source, and is free to use. Its main downside is even less native OS support than RAR. If you control both ends of the transfer and can install 7-Zip, it is worth considering. For universal compatibility, ZIP remains the standard.
+            7z (7-Zip) often beats both ZIP and RAR on compression ratio, is open-source, and is free to use. Its main downside is even less native OS support than RAR. If you control both ends of the transfer and can install 7-Zip, it is worth considering. For a head-to-head breakdown, see <Link href="/blog/rar-vs-7z" className="text-blue-600 hover:underline">RAR vs 7z</Link>. For universal compatibility, ZIP remains the standard.
           </p>
 
           <p>

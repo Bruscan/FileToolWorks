@@ -97,6 +97,10 @@ const audioPosts = [
     slug: "opus-vs-aac",
     title: "Opus vs AAC: Quality, Latency, and Compatibility Compared",
   },
+  {
+    slug: "alac-vs-aac",
+    title: "ALAC vs AAC: Apple Lossless vs Lossy Audio Compared",
+  },
 ];
 
 const imagePosts = [
@@ -203,6 +207,10 @@ const imagePosts = [
   {
     slug: "apng-vs-gif",
     title: "APNG vs GIF: Color Depth, Transparency, and Animation Compared",
+  },
+  {
+    slug: "heic-vs-png",
+    title: "HEIC vs PNG: File Size, Quality, and Compatibility Compared",
   },
 ];
 
@@ -360,6 +368,10 @@ const generalPosts = [
   {
     slug: "gzip-vs-zip",
     title: "GZIP vs ZIP: Compression, Use Cases, and Key Differences",
+  },
+  {
+    slug: "rar-vs-7z",
+    title: "RAR vs 7z: Compression, Speed, and Compatibility Compared",
   },
 ];
 

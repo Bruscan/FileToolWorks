@@ -55,7 +55,7 @@ export default function BlogPost() {
           </p>
 
           <p>
-            For related reading, see <Link href="/blog/heic-vs-jpg" className="text-blue-600 hover:underline">HEIC vs JPG</Link>, <Link href="/blog/avif-vs-webp" className="text-blue-600 hover:underline">AVIF vs WebP</Link>, and <Link href="/blog/best-image-format-for-web" className="text-blue-600 hover:underline">best image format for the web</Link>.
+            For related reading, see <Link href="/blog/heic-vs-jpg" className="text-blue-600 hover:underline">HEIC vs JPG</Link>, <Link href="/blog/heic-vs-png" className="text-blue-600 hover:underline">HEIC vs PNG</Link>, <Link href="/blog/avif-vs-webp" className="text-blue-600 hover:underline">AVIF vs WebP</Link>, and <Link href="/blog/best-image-format-for-web" className="text-blue-600 hover:underline">best image format for the web</Link>.
           </p>
         </div>
       </article>
