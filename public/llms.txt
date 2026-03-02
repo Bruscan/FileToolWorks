@@ -1,0 +1,67 @@
+# FileToolWorks
+
+> Free online file conversion and editing tools. All processing happens in your browser for complete privacy. No signup, no uploads to servers, no file size limits. 40+ tools for image, PDF, video, audio, and document conversion.
+
+FileToolWorks is a collection of free browser-based file tools at https://www.filetoolworks.com. Every tool runs client-side using WebAssembly or Canvas API, so files never leave the user's device. No account required, no watermarks, no ads.
+
+## Image Tools
+
+- [Image to PDF](https://www.filetoolworks.com/image-to-pdf): Convert JPG, PNG, HEIC, or any image to PDF with page size and orientation options
+- [HEIC to JPG](https://www.filetoolworks.com/heic-to-jpg): Convert iPhone HEIC photos to JPG format
+- [PNG to JPG](https://www.filetoolworks.com/png-to-jpg): Convert PNG images to JPG with quality control
+- [JPG to PNG](https://www.filetoolworks.com/jpg-to-png): Convert JPG images to lossless PNG format
+- [WebP to JPG](https://www.filetoolworks.com/webp-to-jpg): Convert WebP images to widely compatible JPG
+- [WebP to PNG](https://www.filetoolworks.com/webp-to-png): Convert WebP images to lossless PNG
+- [Image Compressor](https://www.filetoolworks.com/compress-image): Reduce image file size without losing quality
+- [Image Resizer](https://www.filetoolworks.com/resize-image): Resize images by percentage or custom pixel dimensions
+- [Rotate Image](https://www.filetoolworks.com/rotate-image): Rotate and flip images with real-time preview
+- [Image to WebP](https://www.filetoolworks.com/image-to-webp): Convert any image to modern WebP format for smaller file sizes
+- [Crop Image](https://www.filetoolworks.com/crop-image): Crop images to preset aspect ratios (1:1, 4:3, 16:9) or custom dimensions
+- [Sharpen Image](https://www.filetoolworks.com/sharpen-image): Sharpen and enhance image details using convolution filters
+- [Blur Image](https://www.filetoolworks.com/blur-image): Apply blur effect to images for privacy or artistic purposes
+- [Remove Background](https://www.filetoolworks.com/remove-background): AI-powered background removal running entirely in your browser
+
+## PDF Tools
+
+- [Compress PDF](https://www.filetoolworks.com/compress-pdf): Reduce PDF file size while maintaining quality
+- [Merge PDF](https://www.filetoolworks.com/merge-pdf): Combine multiple PDF files into one document
+- [Split PDF](https://www.filetoolworks.com/split-pdf): Split PDF into separate pages or page ranges
+- [PDF to JPG](https://www.filetoolworks.com/pdf-to-jpg): Convert PDF pages to JPG images
+- [JPG to PDF](https://www.filetoolworks.com/jpg-to-pdf): Convert JPG images to PDF documents
+- [PDF to Text](https://www.filetoolworks.com/pdf-to-text): Extract text content from PDF files
+- [Extract PDF Pages](https://www.filetoolworks.com/extract-pdf-pages): Extract specific pages from PDF documents
+- [HTML to PDF](https://www.filetoolworks.com/html-to-pdf): Convert HTML files or code to PDF format
+- [Sign PDF](https://www.filetoolworks.com/sign-pdf): Add drawn or uploaded signatures to PDF documents
+
+## Video Tools
+
+- [Compress Video](https://www.filetoolworks.com/compress-video): Reduce video file size using H.264 codec with quality and resolution controls
+- [Video to GIF](https://www.filetoolworks.com/video-to-gif): Convert video clips to animated GIFs with FPS and size options
+- [Video Trimmer](https://www.filetoolworks.com/trim-video): Cut and trim video clips without re-encoding
+- [Video to MP4](https://www.filetoolworks.com/video-to-mp4): Convert AVI, MOV, MKV, WebM, FLV to MP4 format
+- [Video to WebM](https://www.filetoolworks.com/video-to-webm): Convert videos to WebM format optimized for web
+
+## Audio Tools
+
+- [Audio Compressor](https://www.filetoolworks.com/compress-audio): Compress MP3, WAV, AAC, OGG, FLAC files with bitrate control (64k, 128k, 192k). Most popular tool on the site.
+- [Extract Audio from Video](https://www.filetoolworks.com/extract-audio): Extract audio tracks from video files as MP3, WAV, or AAC
+- [Audio Trimmer](https://www.filetoolworks.com/trim-audio): Cut and trim audio files to specific start and end times
+- [WAV to MP3](https://www.filetoolworks.com/wav-to-mp3): Convert WAV audio to compressed MP3 format (80-90% smaller files)
+- [MP3 to WAV](https://www.filetoolworks.com/mp3-to-wav): Convert MP3 to uncompressed WAV for editing or archival
+
+## Document Tools
+
+- [Word to PDF](https://www.filetoolworks.com/word-to-pdf): Convert Word documents (DOC, DOCX) to PDF
+- [Excel to PDF](https://www.filetoolworks.com/excel-to-pdf): Convert Excel spreadsheets (XLS, XLSX) to PDF tables
+- [PPT to PDF](https://www.filetoolworks.com/ppt-to-pdf): Convert PowerPoint presentations to PDF
+
+## Other Tools
+
+- [ZIP Files](https://www.filetoolworks.com/zip-files): Compress files into a ZIP archive
+- [Unzip Files](https://www.filetoolworks.com/unzip-files): Extract files from ZIP archives
+
+## Optional
+
+- [All Tools Directory](https://www.filetoolworks.com/tools): Browse all 40+ tools organized by category
+- [File Formats Reference](https://www.filetoolworks.com/file-formats): Guide to 60+ file formats with conversion recommendations
+- [Blog](https://www.filetoolworks.com/blog): Tutorials and format comparisons for file conversion
