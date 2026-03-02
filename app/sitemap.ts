@@ -323,6 +323,17 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.8,
   })
 
+  // Trust / legal pages
+  const trustPages = ['about', 'privacy', 'terms', 'contact']
+  trustPages.forEach((page) => {
+    routes.push({
+      url: `${BASE_URL}/${page}`,
+      lastModified: '2026-03-01T10:00:00.000Z',
+      changeFrequency: 'yearly',
+      priority: 0.4,
+    })
+  })
+
   // Blog index page
   routes.push({
     url: `${BASE_URL}/blog`,
