@@ -6,6 +6,9 @@ export const metadata: Metadata = {
   title: "How to Split PDF Pages Online for Free | FileToolWorks",
   description:
     "Split a PDF into separate pages or sections. Free browser-based tool, no installation required.",
+  alternates: {
+    canonical: "/blog/how-to-split-pdf-pages",
+  },
 };
 
 export default function BlogPost() {

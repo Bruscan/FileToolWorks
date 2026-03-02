@@ -5,6 +5,9 @@ import BlogJsonLd from "@/components/BlogJsonLd";
 export const metadata: Metadata = {
   title: "PDF vs DOCX: Differences and When to Use Each | FileToolWorks",
   description: "PDF vs DOCX explained. Learn when to use each format for sharing, editing, printing, and archiving documents.",
+  alternates: {
+    canonical: "/blog/pdf-vs-docx",
+  },
 };
 
 export default function BlogPost() {

@@ -5,6 +5,9 @@ import BlogJsonLd from "@/components/BlogJsonLd";
 export const metadata: Metadata = {
   title: "ZIP vs RAR: File Compression Formats Compared | FileToolWorks",
   description: "ZIP is universally supported and works without extra software. RAR offers better compression and error recovery. Compare features, compatibility, and use cases.",
+  alternates: {
+    canonical: "/blog/zip-vs-rar",
+  },
 };
 
 export default function BlogPost() {

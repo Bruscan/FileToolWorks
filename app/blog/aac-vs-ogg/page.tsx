@@ -5,6 +5,9 @@ import BlogJsonLd from "@/components/BlogJsonLd";
 export const metadata: Metadata = {
   title: "AAC vs OGG Vorbis: Quality, Compatibility, and File Size | FileToolWorks",
   description: "AAC sounds better at low bitrates and works on Apple devices. OGG Vorbis is open-source with higher max bitrate. Compare quality, size, and device support.",
+  alternates: {
+    canonical: "/blog/aac-vs-ogg",
+  },
 };
 
 export default function BlogPost() {

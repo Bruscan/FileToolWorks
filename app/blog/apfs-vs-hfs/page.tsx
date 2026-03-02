@@ -5,6 +5,9 @@ import BlogJsonLd from "@/components/BlogJsonLd";
 export const metadata: Metadata = {
   title: "APFS vs HFS+: Apple File System Differences Explained | FileToolWorks",
   description: "APFS replaced HFS+ in 2017 with SSD optimization, snapshots, and native encryption. Compare performance, features, and when each Apple file system applies.",
+  alternates: {
+    canonical: "/blog/apfs-vs-hfs",
+  },
 };
 
 export default function BlogPost() {

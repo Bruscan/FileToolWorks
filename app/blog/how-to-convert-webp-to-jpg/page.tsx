@@ -6,6 +6,9 @@ export const metadata: Metadata = {
   title: "How to Convert WebP to JPG (Free, No Upload Required)",
   description:
     "Convert WebP images to JPG format instantly in your browser. No upload needed, no software to install. Works on any device.",
+  alternates: {
+    canonical: "/blog/how-to-convert-webp-to-jpg",
+  },
 };
 
 export default function BlogPost() {

@@ -6,6 +6,9 @@ export const metadata: Metadata = {
   title: "How to Resize Images Without Losing Quality | FileToolWorks",
   description:
     "Resize images while keeping them sharp. Learn which formats, methods, and settings preserve quality when scaling photos down or up.",
+  alternates: {
+    canonical: "/blog/how-to-resize-images-without-losing-quality",
+  },
 };
 
 export default function BlogPost() {

@@ -5,6 +5,9 @@ import BlogJsonLd from "@/components/BlogJsonLd";
 export const metadata: Metadata = {
   title: "MP3 vs WAV: Quality, File Size, and When to Use Each | FileToolWorks",
   description: "MP3 vs WAV compared. Learn the real differences in quality, file size, and compatibility, plus when each format is the better choice.",
+  alternates: {
+    canonical: "/blog/mp3-vs-wav",
+  },
 };
 
 export default function BlogPost() {

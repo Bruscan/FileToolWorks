@@ -5,6 +5,9 @@ import BlogJsonLd from "@/components/BlogJsonLd";
 export const metadata: Metadata = {
   title: "HEIC vs PNG: File Size, Quality, and Compatibility Compared | FileToolWorks",
   description: "HEIC files are 60-70% smaller than PNG at similar quality. PNG offers lossless quality and universal compatibility. Compare file size, transparency, and use cases.",
+  alternates: {
+    canonical: "/blog/heic-vs-png",
+  },
 };
 
 export default function BlogPost() {

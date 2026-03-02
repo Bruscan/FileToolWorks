@@ -5,6 +5,9 @@ import BlogJsonLd from "@/components/BlogJsonLd";
 export const metadata: Metadata = {
   title: "PDF vs PPTX: When to Use Each for Presentations and Documents | FileToolWorks",
   description: "PDF preserves formatting across all devices. PPTX supports animations, editing, and live presenting. Compare features, compatibility, file size, and best use cases.",
+  alternates: {
+    canonical: "/blog/pdf-vs-pptx",
+  },
 };
 
 export default function BlogPost() {

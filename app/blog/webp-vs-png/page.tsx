@@ -5,6 +5,9 @@ import BlogJsonLd from "@/components/BlogJsonLd";
 export const metadata: Metadata = {
   title: "WebP vs PNG: File Size, Quality, and When to Use Each | FileToolWorks",
   description: "WebP vs PNG compared. Learn the differences in file size, transparency support, browser compatibility, and which format is best for your images.",
+  alternates: {
+    canonical: "/blog/webp-vs-png",
+  },
 };
 
 export default function BlogPost() {

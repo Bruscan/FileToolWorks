@@ -5,6 +5,9 @@ import BlogJsonLd from "@/components/BlogJsonLd";
 export const metadata: Metadata = {
   title: "TIFF vs PNG: File Size, Quality, and When to Use Each | FileToolWorks",
   description: "TIFF is built for print and editing. PNG is built for the web. Compare file size, compression, color space support, and transparency for both formats.",
+  alternates: {
+    canonical: "/blog/tiff-vs-png",
+  },
 };
 
 export default function BlogPost() {

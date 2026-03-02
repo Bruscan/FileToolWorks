@@ -5,6 +5,9 @@ import BlogJsonLd from "@/components/BlogJsonLd";
 export const metadata: Metadata = {
   title: "tar.gz vs ZIP: Compression, Compatibility, and Key Differences | FileToolWorks",
   description: "tar.gz compresses all files as one stream for better ratios. ZIP compresses each file separately for easy random access. Compare both archive formats side by side.",
+  alternates: {
+    canonical: "/blog/tar-gz-vs-zip",
+  },
 };
 
 export default function BlogPost() {

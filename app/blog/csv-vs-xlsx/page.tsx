@@ -5,6 +5,9 @@ import BlogJsonLd from "@/components/BlogJsonLd";
 export const metadata: Metadata = {
   title: "CSV vs XLSX: When to Use Each Spreadsheet Format | FileToolWorks",
   description: "CSV is plain text that any program can read. XLSX supports formulas, formatting, and multiple sheets. Compare features, compatibility, and file size.",
+  alternates: {
+    canonical: "/blog/csv-vs-xlsx",
+  },
 };
 
 export default function BlogPost() {

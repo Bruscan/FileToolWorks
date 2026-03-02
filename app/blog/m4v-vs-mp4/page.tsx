@@ -5,6 +5,9 @@ import BlogJsonLd from "@/components/BlogJsonLd";
 export const metadata: Metadata = {
   title: "M4V vs MP4: DRM, Compatibility, and Key Differences | FileToolWorks",
   description: "M4V is Apple's DRM-protected video format based on MP4. MP4 plays everywhere. Compare compatibility, codecs, file size, and when to use each format.",
+  alternates: {
+    canonical: "/blog/m4v-vs-mp4",
+  },
 };
 
 export default function BlogPost() {

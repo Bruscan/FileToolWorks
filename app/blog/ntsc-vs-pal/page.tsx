@@ -5,6 +5,9 @@ import BlogJsonLd from "@/components/BlogJsonLd";
 export const metadata: Metadata = {
   title: "NTSC vs PAL: What Is the Difference? | FileToolWorks",
   description: "NTSC runs at 30fps with 480 lines. PAL runs at 25fps with 576 lines. Learn the differences between NTSC and PAL video standards and which one to use.",
+  alternates: {
+    canonical: "/blog/ntsc-vs-pal",
+  },
 };
 
 export default function BlogPost() {

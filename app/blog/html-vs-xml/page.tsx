@@ -5,6 +5,9 @@ import BlogJsonLd from "@/components/BlogJsonLd";
 export const metadata: Metadata = {
   title: "HTML vs XML: Key Differences Between Markup Languages | FileToolWorks",
   description: "HTML displays content in web browsers. XML stores and transports structured data. Compare syntax, purpose, flexibility, and when to use each markup language.",
+  alternates: {
+    canonical: "/blog/html-vs-xml",
+  },
 };
 
 export default function BlogPost() {

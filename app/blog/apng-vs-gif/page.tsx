@@ -5,6 +5,9 @@ import BlogJsonLd from "@/components/BlogJsonLd";
 export const metadata: Metadata = {
   title: "APNG vs GIF: Color Depth, Transparency, and Animation Compared | FileToolWorks",
   description: "APNG supports 16 million colors and alpha transparency while GIF is limited to 256 colors. Compare file size, browser support, and animation quality.",
+  alternates: {
+    canonical: "/blog/apng-vs-gif",
+  },
 };
 
 export default function BlogPost() {

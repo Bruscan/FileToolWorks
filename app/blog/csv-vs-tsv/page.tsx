@@ -5,6 +5,9 @@ import BlogJsonLd from "@/components/BlogJsonLd";
 export const metadata: Metadata = {
   title: "CSV vs TSV: Difference Between Comma and Tab Delimited Files | FileToolWorks",
   description: "CSV uses commas as delimiters. TSV uses tabs. Compare parsing complexity, compatibility, performance, and which format to pick for your data.",
+  alternates: {
+    canonical: "/blog/csv-vs-tsv",
+  },
 };
 
 export default function BlogPost() {
