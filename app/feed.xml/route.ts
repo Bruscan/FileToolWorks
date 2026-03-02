@@ -76,6 +76,9 @@ const blogPosts = [
   { slug: "eps-vs-svg", title: "EPS vs SVG: Differences, Features, and Which to Use", date: "2026-03-16", description: "EPS is a legacy print format. SVG is the web standard for vector graphics. Compare file structure, compatibility, transparency, and learn when to use each." },
   { slug: "flac-vs-mp3", title: "FLAC vs MP3: Quality, File Size, and Compatibility Compared", date: "2026-03-16", description: "FLAC is lossless with identical quality to the original. MP3 is lossy but 80% smaller. Compare audio quality, file size, device support, and pick the right format." },
   { slug: "rtf-vs-docx", title: "RTF vs DOCX: Compatibility, Features, and When to Use Each", date: "2026-03-16", description: "RTF is a simple cross-platform text format. DOCX supports full formatting, macros, and modern features. Compare compatibility, security, file size, and use cases." },
+  { slug: "avif-vs-jpeg", title: "AVIF vs JPEG: File Size, Quality, and Compatibility Compared", date: "2026-03-17", description: "AVIF compresses images 50% smaller than JPEG with better quality. Compare file size, browser support, encoding speed, and when each format makes sense." },
+  { slug: "gzip-vs-zip", title: "GZIP vs ZIP: Compression, Use Cases, and Key Differences", date: "2026-03-17", description: "GZIP compresses a single file stream while ZIP bundles and compresses multiple files. Compare compression ratio, speed, and when to use each format." },
+  { slug: "mov-vs-avi", title: "MOV vs AVI: Quality, File Size, and Compatibility Compared", date: "2026-03-17", description: "MOV is Apple's video format with modern codec support. AVI is a legacy Microsoft format. Compare file size, quality, streaming, and compatibility." },
 ];
 
 function escapeXml(str: string): string {
