@@ -151,6 +151,9 @@ const blogPosts = [
   { slug: "rgb-vs-cmyk", title: "RGB vs CMYK: What's the Difference and When to Use Each", date: "2026-04-10", description: "RGB uses light for screens, CMYK uses ink for print. Understand the key differences in color range, file formats, and when to pick each color mode." },
   { slug: "30fps-vs-60fps", title: "30fps vs 60fps: Which Frame Rate Should You Choose?", date: "2026-04-10", description: "30fps is standard for most video content. 60fps is smoother for action and gaming. Compare file sizes, use cases, and when each frame rate makes sense." },
   { slug: "1080i-vs-1080p", title: "1080i vs 1080p: What's the Difference?", date: "2026-04-10", description: "1080i uses interlaced scanning while 1080p uses progressive scan. Both are 1920x1080 but display images differently. Learn which is better for your use case." },
+  { slug: "720p-vs-1080p", title: "720p vs 1080p: What's the Difference?", date: "2026-04-11", description: "720p has 1280x720 pixels while 1080p has 1920x1080 pixels, giving 1080p over twice the detail. Learn when each resolution makes sense for your needs." },
+  { slug: "1440p-vs-4k", title: "1440p vs 4K: Which Resolution Should You Pick?", date: "2026-04-11", description: "1440p (2560x1440) offers a balance of clarity and performance. 4K (3840x2160) delivers maximum detail. Compare both resolutions for gaming, work, and media." },
+  { slug: "24fps-vs-30fps", title: "24fps vs 30fps: Which Frame Rate Should You Use?", date: "2026-04-11", description: "24fps gives video a cinematic film look while 30fps produces smoother, more realistic motion. Learn when to use each frame rate for your projects." },
 ];
 
 function escapeXml(str: string): string {
