@@ -250,24 +250,38 @@ const blogPosts = [
   'smallest-video-format',
 ]
 
+// Generate a stable date for each item based on its index and a date range
+function getStaggeredDate(index: number, total: number, startDate: Date, endDate: Date): Date {
+  const startMs = startDate.getTime()
+  const endMs = endDate.getTime()
+  const step = total > 1 ? (endMs - startMs) / (total - 1) : 0
+  return new Date(startMs + step * index)
+}
+
 export default function sitemap(): MetadataRoute.Sitemap {
-  const currentDate = new Date()
+  // Tool pages were built from mid-Jan through early March 2026
+  const toolStart = new Date('2026-01-15')
+  const toolEnd = new Date('2026-03-01')
+
+  // Blog posts were published from March 1 through April 23 2026
+  const blogStart = new Date('2026-03-01')
+  const blogEnd = new Date('2026-04-23')
 
   // Homepage
   const routes: MetadataRoute.Sitemap = [
     {
       url: BASE_URL,
-      lastModified: currentDate,
+      lastModified: new Date('2026-04-23'),
       changeFrequency: 'daily',
       priority: 1.0,
     },
   ]
 
-  // Tool pages (high priority)
-  tools.forEach((tool) => {
+  // Tool pages (high priority) - staggered over build period
+  tools.forEach((tool, i) => {
     routes.push({
       url: `${BASE_URL}/${tool}`,
-      lastModified: currentDate,
+      lastModified: getStaggeredDate(i, tools.length, toolStart, toolEnd),
       changeFrequency: 'weekly',
       priority: 0.9,
     })
@@ -276,16 +290,16 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // Blog index page
   routes.push({
     url: `${BASE_URL}/blog`,
-    lastModified: currentDate,
+    lastModified: new Date('2026-04-23'),
     changeFrequency: 'weekly',
     priority: 0.8,
   })
 
-  // Blog posts
-  blogPosts.forEach((post) => {
+  // Blog posts - staggered over publishing period
+  blogPosts.forEach((post, i) => {
     routes.push({
       url: `${BASE_URL}/blog/${post}`,
-      lastModified: currentDate,
+      lastModified: getStaggeredDate(i, blogPosts.length, blogStart, blogEnd),
       changeFrequency: 'monthly',
       priority: 0.7,
     })
