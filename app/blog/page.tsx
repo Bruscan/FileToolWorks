@@ -133,6 +133,14 @@ const audioPosts = [
     slug: "stereo-vs-mono",
     title: "Stereo vs Mono: Differences in Sound, File Size, and Use Cases",
   },
+  {
+    slug: "44-1khz-vs-48khz",
+    title: "44.1kHz vs 48kHz: Which Sample Rate Should You Use?",
+  },
+  {
+    slug: "ac3-vs-aac",
+    title: "AC3 vs AAC: Dolby Digital or Advanced Audio Coding?",
+  },
 ];
 
 const imagePosts = [
@@ -537,6 +545,10 @@ const videoPosts = [
   {
     slug: "8-bit-vs-10-bit",
     title: "8-Bit vs 10-Bit Video: Does Color Depth Matter?",
+  },
+  {
+    slug: "interlaced-vs-progressive",
+    title: "Interlaced vs Progressive Scan: What Is the Difference?",
   },
 ];
 

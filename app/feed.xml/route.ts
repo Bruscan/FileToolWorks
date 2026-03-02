@@ -163,6 +163,9 @@ const blogPosts = [
   { slug: "4k-vs-8k", title: "4K vs 8K: Do You Actually Need 8K Resolution?", date: "2026-04-14", description: "4K is 3840x2160 pixels. 8K is 7680x4320, four times as many pixels. Learn the real differences between 4K and 8K resolution and whether 8K is worth it." },
   { slug: "ntsc-vs-pal", title: "NTSC vs PAL: What Is the Difference?", date: "2026-04-14", description: "NTSC runs at 30fps with 480 lines. PAL runs at 25fps with 576 lines. Learn the differences between NTSC and PAL video standards and which one to use." },
   { slug: "8-bit-vs-10-bit", title: "8-Bit vs 10-Bit Video: Does Color Depth Matter?", date: "2026-04-14", description: "8-bit video supports 16.7 million colors. 10-bit supports over 1 billion. Learn when the extra color depth actually matters for your video workflow." },
+  { slug: "interlaced-vs-progressive", title: "Interlaced vs Progressive Scan: What Is the Difference?", date: "2026-04-15", description: "Interlaced video draws odd and even lines in alternating fields. Progressive video draws every line in sequence. Here is when each method matters." },
+  { slug: "44-1khz-vs-48khz", title: "44.1kHz vs 48kHz: Which Sample Rate Should You Use?", date: "2026-04-15", description: "44.1kHz is the CD standard. 48kHz is the video and broadcast standard. Here is why the difference exists and which one to pick for your project." },
+  { slug: "ac3-vs-aac", title: "AC3 vs AAC: Dolby Digital or Advanced Audio Coding?", date: "2026-04-15", description: "AC3 (Dolby Digital) is built for surround sound in DVDs and Blu-rays. AAC is the modern codec for streaming and mobile. Here is how they compare." },
 ];
 
 function escapeXml(str: string): string {
