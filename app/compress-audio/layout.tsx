@@ -11,6 +11,7 @@ export const metadata: Metadata = {
     title: "Free Online Audio Compressor | Reduce Audio File Size",
     description: "Shrink MP3, WAV, and other audio files online. Free, no signup, no upload to servers.",
     type: "website",
+    images: [{ url: "/api/og?title=Audio%20Compressor&description=Reduce%20MP3%2C%20WAV%2C%20AAC%20file%20size%20by%20up%20to%2090%25&category=audio", width: 1200, height: 630 }],
   },
   twitter: {
     card: "summary_large_image",

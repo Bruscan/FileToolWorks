@@ -12,6 +12,7 @@ export const metadata: Metadata = {
     description:
       "Sign PDF documents online for free. Draw or upload your signature, position it anywhere on the PDF, and download instantly.",
     type: "website",
+    images: [{ url: "/api/og?title=Sign%20PDF%20Online&description=Add%20your%20signature%20to%20PDF%20documents%20instantly&category=pdf", width: 1200, height: 630 }],
   },
   twitter: {
     card: "summary_large_image",

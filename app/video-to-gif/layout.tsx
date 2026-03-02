@@ -11,6 +11,7 @@ export const metadata: Metadata = {
     title: "Video to GIF",
     description: "Convert video clips to animated GIFs. Free.",
     type: "website",
+    images: [{ url: "/api/og?title=Video%20to%20GIF&description=Convert%20video%20clips%20to%20animated%20GIFs&category=video", width: 1200, height: 630 }],
   },
   twitter: {
     card: "summary_large_image",

@@ -11,6 +11,7 @@ export const metadata: Metadata = {
     title: "Image to PDF Converter | Free & Fast",
     description: "Convert images to PDF instantly. Free, secure, no signup.",
     type: "website",
+    images: [{ url: "/api/og?title=Image%20to%20PDF&description=Convert%20JPG%2C%20PNG%2C%20HEIC%20to%20PDF%20instantly&category=image", width: 1200, height: 630 }],
   },
   twitter: {
     card: "summary_large_image",

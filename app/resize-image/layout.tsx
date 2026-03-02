@@ -11,6 +11,7 @@ export const metadata: Metadata = {
     title: "Image Resizer",
     description: "Resize images to specific dimensions. Free, no signup.",
     type: "website",
+    images: [{ url: "/api/og?title=Image%20Resizer&description=Resize%20images%20by%20percentage%20or%20custom%20dimensions&category=image", width: 1200, height: 630 }],
   },
   twitter: {
     card: "summary_large_image",

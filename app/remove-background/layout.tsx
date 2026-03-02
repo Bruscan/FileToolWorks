@@ -26,6 +26,7 @@ export const metadata: Metadata = {
     description:
       "Remove image backgrounds automatically with AI. Free online tool to remove background from photos of people, products, animals, and objects. Get transparent PNG files instantly.",
     type: "website",
+    images: [{ url: "/api/og?title=AI%20Background%20Remover&description=Remove%20image%20backgrounds%20automatically%20with%20AI&category=image", width: 1200, height: 630 }],
   },
   twitter: {
     card: "summary_large_image",

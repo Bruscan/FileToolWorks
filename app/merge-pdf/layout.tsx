@@ -11,6 +11,7 @@ export const metadata: Metadata = {
     title: "Merge PDF",
     description: "Combine multiple PDF files into one document. Free.",
     type: "website",
+    images: [{ url: "/api/og?title=Merge%20PDF&description=Combine%20multiple%20PDF%20files%20into%20one%20document&category=pdf", width: 1200, height: 630 }],
   },
   twitter: {
     card: "summary_large_image",

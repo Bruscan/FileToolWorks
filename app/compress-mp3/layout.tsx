@@ -11,6 +11,7 @@ export const metadata: Metadata = {
     title: "Free MP3 Compressor Online | Reduce MP3 File Size",
     description: "Compress MP3 files instantly in your browser. Choose your bitrate, reduce file size by up to 90%. Free, private, no signup.",
     type: "website",
+    images: [{ url: "/api/og?title=MP3%20Compressor&description=Reduce%20MP3%20file%20size%20by%20up%20to%2090%25&category=audio", width: 1200, height: 630 }],
   },
   twitter: {
     card: "summary_large_image",

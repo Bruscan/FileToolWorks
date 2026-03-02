@@ -17,6 +17,7 @@ export const metadata: Metadata = {
     "reduce video file size online",
   ],
   openGraph: {
+    images: [{ url: "/api/og?title=Video%20Compressor&description=Reduce%20video%20file%20size%20while%20maintaining%20quality&category=video", width: 1200, height: 630 }],
     title: "Compress Video Online - Free Video Compressor",
     description: "Reduce video file size while maintaining quality. Free, fast, and secure video compression in your browser.",
     type: "website",

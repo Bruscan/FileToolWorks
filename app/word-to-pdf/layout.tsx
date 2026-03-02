@@ -13,6 +13,7 @@ export const metadata: Metadata = {
       "Convert Word documents to PDF format instantly. Supports DOC and DOCX files. No signup required.",
     type: "website",
     url: "/word-to-pdf",
+    images: [{ url: "/api/og?title=Word%20to%20PDF&description=Convert%20DOC%20and%20DOCX%20to%20PDF%20instantly&category=document", width: 1200, height: 630 }],
   },
   twitter: {
     card: "summary_large_image",
