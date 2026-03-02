@@ -2,6 +2,7 @@
 
 import { useState, useRef } from "react";
 import { Upload, X, Download, Star, Loader2 } from "lucide-react";
+import Link from "next/link";
 import RelatedTools from "@/components/RelatedTools";
 
 type Bitrate = "64k" | "128k" | "192k";
@@ -251,7 +252,7 @@ export default function CompressAudio() {
             Reduce audio file size and bitrate instantly. Free, fast, and secure.
           </p>
           <p className="text-gray-600 mb-4">
-            Upload audio files and compress them to reduce file size. Choose your preferred bitrate to balance between quality and file size. All processing happens in your browser for complete privacy. Supports MP3, WAV, AAC, OGG, and FLAC formats.
+            Upload audio files and compress them to reduce file size. Choose your preferred bitrate to balance between quality and file size. All processing happens in your browser for complete privacy. Supports MP3, WAV, AAC, OGG, and FLAC formats. Need to <Link href="/trim-audio" className="text-blue-600 hover:underline">trim audio</Link> or <Link href="/extract-audio" className="text-blue-600 hover:underline">extract audio from video</Link> first? We have tools for that too.
           </p>
           <div className="flex items-center gap-2 mt-4">
             <div className="flex items-center gap-1">
@@ -499,6 +500,9 @@ export default function CompressAudio() {
                 <p className="text-gray-600 text-sm">
                   Click Compress Audio and your files will be ready to download as MP3 with reduced file size.
                 </p>
+                <p className="text-gray-500 text-xs mt-1">
+                  Tip: Need to cut your file first? Use the <Link href="/trim-audio" className="text-blue-600 hover:underline">Audio Trimmer</Link> before compressing.
+                </p>
               </div>
             </li>
           </ol>
@@ -517,7 +521,7 @@ export default function CompressAudio() {
                 What audio formats can I compress?
               </summary>
               <p className="mt-2 text-gray-600 text-sm">
-                We support MP3, WAV, AAC, OGG, and FLAC audio formats. All files are compressed and output as MP3 format for maximum compatibility across devices.
+                We support MP3, WAV, AAC, OGG, and FLAC audio formats. All files are compressed and output as MP3 format for maximum compatibility across devices. If you need to convert between formats without compressing, try our <Link href="/wav-to-mp3" className="text-blue-600 hover:underline">WAV to MP3</Link> or <Link href="/mp3-to-wav" className="text-blue-600 hover:underline">MP3 to WAV</Link> converters.
               </p>
             </details>
             <details className="border-b border-gray-200 pb-4">
@@ -541,7 +545,7 @@ export default function CompressAudio() {
                 How much can I reduce file size?
               </summary>
               <p className="mt-2 text-gray-600 text-sm">
-                File size reduction depends on the original file and selected bitrate. You can typically reduce file sizes by 50-90%, especially when compressing high-quality WAV or FLAC files to MP3.
+                File size reduction depends on the original file and selected bitrate. You can typically reduce file sizes by 50-90%, especially when compressing high-quality WAV or FLAC files to MP3. We also offer tools to <Link href="/compress-video" className="text-blue-600 hover:underline">compress video</Link> and <Link href="/compress-image" className="text-blue-600 hover:underline">compress images</Link>.
               </p>
             </details>
             <details className="border-b border-gray-200 pb-4">
