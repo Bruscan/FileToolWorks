@@ -113,7 +113,7 @@ export default function BlogPost() {
           </p>
 
           <p>
-            For a step-by-step conversion walkthrough, read <Link href="/blog/how-to-convert-heic-to-jpg" className="text-blue-600 hover:underline">how to convert HEIC to JPG</Link>. Want to know the difference between HEIF and HEIC? See <Link href="/blog/heif-vs-heic" className="text-blue-600 hover:underline">HEIF vs HEIC</Link>. Choosing a format for your website? See our <Link href="/blog/best-image-format-for-web" className="text-blue-600 hover:underline">best image format for web</Link> guide.
+            For a step-by-step conversion walkthrough, read <Link href="/blog/how-to-convert-heic-to-jpg" className="text-blue-600 hover:underline">how to convert HEIC to JPG</Link>. Want to know the difference between HEIF and HEIC? See <Link href="/blog/heif-vs-heic" className="text-blue-600 hover:underline">HEIF vs HEIC</Link>. For a comparison with web-friendly formats, see <Link href="/blog/webp-vs-heic" className="text-blue-600 hover:underline">WebP vs HEIC</Link>.
           </p>
 
           <p>

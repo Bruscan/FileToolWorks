@@ -97,6 +97,9 @@ const blogPosts = [
   { slug: "xml-vs-json", title: "XML vs JSON: Syntax, Performance, and When to Use Each", date: "2026-03-23", description: "JSON is lighter and faster for APIs and web apps. XML is better for complex documents and strict validation. Compare syntax, file size, parsing speed, and use cases." },
   { slug: "yaml-vs-json", title: "YAML vs JSON: Readability, Features, and Best Use Cases", date: "2026-03-23", description: "YAML is more readable and supports comments, making it ideal for config files. JSON is faster to parse and better for APIs. See when to use each format." },
   { slug: "png-vs-pdf", title: "PNG vs PDF: Image Format vs Document Format Compared", date: "2026-03-23", description: "PNG is a raster image format for web graphics and screenshots. PDF is a document format for multi-page content and printing. Compare quality, size, and use cases." },
+  { slug: "webp-vs-heic", title: "WebP vs HEIC: Format Differences, Compression, and Compatibility", date: "2026-03-24", description: "WebP works everywhere on the web with 96% browser support. HEIC compresses 50% better than JPEG but is limited to Apple devices. Full format comparison." },
+  { slug: "h264-vs-vp9", title: "H.264 vs VP9: Codec Comparison for Streaming and Video", date: "2026-03-24", description: "VP9 compresses 30-50% better than H.264 but encodes slower. H.264 has universal device support and faster real-time performance. Full codec comparison." },
+  { slug: "aac-vs-flac", title: "AAC vs FLAC: Lossy Convenience vs Lossless Quality", date: "2026-03-24", description: "AAC files are 10x smaller than FLAC and sound nearly identical to most listeners. FLAC preserves every bit of the original audio. Full format comparison." },
 ];
 
 function escapeXml(str: string): string {

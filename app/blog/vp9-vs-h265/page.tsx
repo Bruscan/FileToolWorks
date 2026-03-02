@@ -60,7 +60,7 @@ export default function BlogPost() {
           </p>
 
           <p>
-            Need to convert or compress video? Our <Link href="/compress-video" className="text-blue-600 hover:underline font-semibold">video compressor</Link> handles file size reduction, and the <Link href="/video-to-webm" className="text-blue-600 hover:underline font-semibold">video to WebM converter</Link> outputs VP9-compatible files. For codec background, see <Link href="/blog/h264-vs-h265" className="text-blue-600 hover:underline">H.264 vs H.265</Link>, <Link href="/blog/mp4-vs-webm" className="text-blue-600 hover:underline">MP4 vs WebM</Link>, and <Link href="/blog/av1-vs-vp9" className="text-blue-600 hover:underline">AV1 vs VP9</Link> for a direct comparison between VP9 and its successor.
+            Need to convert or compress video? Our <Link href="/compress-video" className="text-blue-600 hover:underline font-semibold">video compressor</Link> handles file size reduction, and the <Link href="/video-to-webm" className="text-blue-600 hover:underline font-semibold">video to WebM converter</Link> outputs VP9-compatible files. For codec background, see <Link href="/blog/h264-vs-vp9" className="text-blue-600 hover:underline">H.264 vs VP9</Link>, <Link href="/blog/h264-vs-h265" className="text-blue-600 hover:underline">H.264 vs H.265</Link>, and <Link href="/blog/av1-vs-vp9" className="text-blue-600 hover:underline">AV1 vs VP9</Link>.
           </p>
         </div>
       </article>

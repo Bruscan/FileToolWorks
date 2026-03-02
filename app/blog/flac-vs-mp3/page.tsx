@@ -56,7 +56,7 @@ export default function BlogPost() {
 
           <h2>Which Should You Use?</h2>
           <p>
-            Keep FLAC as your archive master. Use MP3 (or AAC) for portable devices, sharing, and situations where file size matters. If you need to convert between formats, our <Link href="/wav-to-mp3" className="text-blue-600 hover:underline font-semibold">WAV to MP3 converter</Link> handles audio conversion in your browser, and you can <Link href="/compress-audio" className="text-blue-600 hover:underline font-semibold">compress audio files</Link> to reduce size while choosing your target format. For guidance on converting FLAC to MP3 specifically, see <Link href="/blog/flac-to-mp3" className="text-blue-600 hover:underline">FLAC to MP3: how to convert and what you lose</Link>.
+            Keep FLAC as your archive master. Use MP3 (or AAC) for portable devices, sharing, and situations where file size matters. For a direct FLAC vs AAC comparison, see <Link href="/blog/aac-vs-flac" className="text-blue-600 hover:underline">AAC vs FLAC</Link>. If you need to convert between formats, our <Link href="/wav-to-mp3" className="text-blue-600 hover:underline font-semibold">WAV to MP3 converter</Link> handles audio conversion in your browser, and you can <Link href="/compress-audio" className="text-blue-600 hover:underline font-semibold">compress audio files</Link> to reduce size. For guidance on converting FLAC to MP3 specifically, see <Link href="/blog/flac-to-mp3" className="text-blue-600 hover:underline">FLAC to MP3: how to convert and what you lose</Link>.
           </p>
         </div>
       </article>
