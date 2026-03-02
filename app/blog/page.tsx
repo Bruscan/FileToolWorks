@@ -277,6 +277,18 @@ const generalPosts = [
     slug: "doc-vs-docx",
     title: "DOC vs DOCX: What Changed and Does It Matter?",
   },
+  {
+    slug: "tar-vs-zip",
+    title: "TAR vs ZIP: Archiving, Compression, and Platform Differences",
+  },
+  {
+    slug: "csv-vs-xlsx",
+    title: "CSV vs XLSX: When to Use Each Spreadsheet Format",
+  },
+  {
+    slug: "ppt-vs-pptx",
+    title: "PPT vs PPTX: File Size, Features, and Compatibility Compared",
+  },
 ];
 
 const categories = [
