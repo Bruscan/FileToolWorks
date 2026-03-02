@@ -133,6 +133,9 @@ const blogPosts = [
   { slug: "ods-vs-xlsx", title: "ODS vs XLSX: Open Document vs Excel Spreadsheet Format", date: "2026-04-04", description: "ODS is the open standard spreadsheet format for LibreOffice and OpenOffice. XLSX is Microsoft Excel's format. Compare compatibility, features, and when to use each." },
   { slug: "xml-vs-csv", title: "XML vs CSV: Structure, File Size, and When to Use Each", date: "2026-04-04", description: "CSV is plain text with comma-separated values for flat tabular data. XML uses tags for hierarchical structured data. Compare file size, parsing, and best use cases." },
   { slug: "dng-vs-jpg", title: "DNG vs JPG: RAW Quality vs Compressed Photos", date: "2026-04-04", description: "DNG is Adobe's open raw format with full editing flexibility. JPG is compressed and ready to share. Compare quality, file size, editing options, and when to use each." },
+  { slug: "pages-vs-docx", title: "Pages vs DOCX: Apple Pages vs Microsoft Word Format Compared", date: "2026-04-05", description: "Pages (.pages) is free on Apple devices with clean templates. DOCX is the universal standard for documents. Compare compatibility, features, and when to use each format." },
+  { slug: "numbers-vs-excel", title: "Numbers vs Excel: Apple Numbers vs Microsoft Excel Compared", date: "2026-04-05", description: "Apple Numbers is free with beautiful templates. Excel has 420+ functions and is the industry standard. Compare features, formulas, compatibility, and pricing." },
+  { slug: "xml-vs-yaml", title: "XML vs YAML: Markup Language vs Data Serialization Compared", date: "2026-04-05", description: "YAML is human-readable and used for config files. XML supports validation and complex document structures. Compare syntax, use cases, parsing, and readability." },
 ];
 
 function escapeXml(str: string): string {
