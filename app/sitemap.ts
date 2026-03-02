@@ -227,6 +227,9 @@ const blogPosts = [
   'cfr-vs-vfr',
   '16-bit-vs-24-bit-audio',
   'zstd-vs-gzip',
+  'exfat-vs-ntfs',
+  'dolby-digital-vs-dts',
+  'pcm-vs-bitstream',
 ]
 
 export default function sitemap(): MetadataRoute.Sitemap {
