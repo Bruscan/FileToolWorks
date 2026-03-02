@@ -60,7 +60,7 @@ export default function BlogPost() {
           </p>
 
           <p>
-            Need to prepare your photos for the web? Our <Link href="/resize-image" className="text-blue-600 hover:underline font-semibold">image resizer</Link> handles any format with quality options. For related comparisons, see <Link href="/blog/raw-vs-jpeg" className="text-blue-600 hover:underline">RAW vs JPEG</Link>, <Link href="/blog/raw-vs-dng" className="text-blue-600 hover:underline">RAW vs DNG</Link>, and <Link href="/blog/heic-vs-jpg" className="text-blue-600 hover:underline">HEIC vs JPG</Link>.
+            Need to prepare your photos for the web? Our <Link href="/resize-image" className="text-blue-600 hover:underline font-semibold">image resizer</Link> handles any format with quality options. For related comparisons, see <Link href="/blog/nef-vs-jpg" className="text-blue-600 hover:underline">NEF vs JPG</Link>, <Link href="/blog/raw-vs-jpeg" className="text-blue-600 hover:underline">RAW vs JPEG</Link>, <Link href="/blog/raw-vs-dng" className="text-blue-600 hover:underline">RAW vs DNG</Link>, and <Link href="/blog/heic-vs-jpg" className="text-blue-600 hover:underline">HEIC vs JPG</Link>.
           </p>
         </div>
       </article>
