@@ -127,6 +127,9 @@ const blogPosts = [
   { slug: "tiff-vs-bmp", title: "TIFF vs BMP: Compression, Quality, and When to Use Each", date: "2026-04-02", description: "TIFF supports lossless compression and layers while BMP stores raw uncompressed pixels. Compare file size, quality, features, and best use cases for each format." },
   { slug: "cr2-vs-jpg", title: "CR2 vs JPG: Canon RAW vs JPEG for Photos", date: "2026-04-02", description: "CR2 is Canon's RAW format with full sensor data and editing flexibility. JPG is compressed and ready to share. Compare quality, file size, and when to shoot each." },
   { slug: "ico-vs-png", title: "ICO vs PNG: Which Format for Favicons and Icons?", date: "2026-04-02", description: "ICO bundles multiple icon sizes in one file while PNG offers better compression and transparency. Compare browser support, file size, and when to use each for favicons." },
+  { slug: "pdf-vs-jpg", title: "PDF vs JPG: Key Differences and When to Use Each", date: "2026-04-03", description: "PDF preserves document layout with text and multi-page support. JPG is a compressed image format ideal for photos. Compare quality, file size, editing, and best use cases." },
+  { slug: "svg-vs-ai", title: "SVG vs AI: Open Standard vs Adobe's Proprietary Vector Format", date: "2026-04-03", description: "SVG is an open XML-based vector format for the web. AI is Adobe Illustrator's proprietary format for print design. Compare compatibility, features, and use cases." },
+  { slug: "keynote-vs-pptx", title: "Keynote vs PPTX: Apple vs Microsoft Presentation Formats Compared", date: "2026-04-03", description: "Keynote (.key) is free on Apple devices with polished animations. PPTX is the industry standard that works everywhere. Compare compatibility, features, and export options." },
 ];
 
 function escapeXml(str: string): string {

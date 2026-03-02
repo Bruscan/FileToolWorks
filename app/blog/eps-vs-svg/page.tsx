@@ -59,7 +59,7 @@ export default function BlogPost() {
             Use SVG for websites, app interfaces, icons, animated graphics, and any screen-based output. Use EPS only when a print vendor specifically requires it or when working with legacy design files. Most modern print workflows have moved to PDF, which handles vector graphics better than EPS. If you need to convert between image formats for web use, our <Link href="/image-to-webp" className="text-blue-600 hover:underline font-semibold">Image to WebP converter</Link> can help reduce file sizes further.
           </p>
           <p>
-            Related reading: <Link href="/blog/svg-vs-pdf" className="text-blue-600 hover:underline">SVG vs PDF</Link> compares the two main vector formats for web and print, <Link href="/blog/best-image-format-for-web" className="text-blue-600 hover:underline">Best image format for web</Link> covers how SVG fits alongside JPG, PNG, and WebP for web projects, and <Link href="/blog/png-vs-jpg" className="text-blue-600 hover:underline">PNG vs JPG</Link> compares the two main raster formats.
+            Related reading: <Link href="/blog/svg-vs-ai" className="text-blue-600 hover:underline">SVG vs AI</Link> compares SVG with Adobe Illustrator&#39;s format, <Link href="/blog/svg-vs-pdf" className="text-blue-600 hover:underline">SVG vs PDF</Link> compares the two main vector formats for web and print, and <Link href="/blog/best-image-format-for-web" className="text-blue-600 hover:underline">Best image format for web</Link> covers how SVG fits alongside JPG, PNG, and WebP.
           </p>
         </div>
       </article>
