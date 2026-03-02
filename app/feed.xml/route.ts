@@ -67,6 +67,9 @@ const blogPosts = [
   { slug: "7z-vs-zip", title: "7z vs ZIP: Compression, Compatibility, and Speed Compared", date: "2026-03-13", description: "7z compresses files 30-70% smaller than ZIP but needs extra software. ZIP works on every OS out of the box. Compare compression, speed, and compatibility." },
   { slug: "doc-vs-docx", title: "DOC vs DOCX: What Changed and Does It Matter?", date: "2026-03-13", description: "DOCX replaced DOC in 2007 with smaller file sizes, better formatting, and XML-based structure. Learn the key differences and when the old format still shows up." },
   { slug: "av1-vs-h265", title: "AV1 vs H.265 (HEVC): Compression, Quality, and Compatibility", date: "2026-03-13", description: "AV1 compresses 20-30% better than H.265 and is royalty-free. H.265 has wider device support and faster encoding. Compare quality, speed, and licensing." },
+  { slug: "tar-vs-zip", title: "TAR vs ZIP: Archiving, Compression, and Platform Differences", date: "2026-03-14", description: "TAR bundles files without compression and preserves Unix permissions. ZIP compresses and archives in one step with universal OS support. Compare both formats." },
+  { slug: "csv-vs-xlsx", title: "CSV vs XLSX: When to Use Each Spreadsheet Format", date: "2026-03-14", description: "CSV is plain text that any program can read. XLSX supports formulas, formatting, and multiple sheets. Compare features, compatibility, and file size." },
+  { slug: "ppt-vs-pptx", title: "PPT vs PPTX: File Size, Features, and Compatibility Compared", date: "2026-03-14", description: "PPTX replaced PPT in 2007 with 75% smaller files and XML-based structure. PPT is binary and lacks modern features. Compare both PowerPoint formats." },
 ];
 
 function escapeXml(str: string): string {

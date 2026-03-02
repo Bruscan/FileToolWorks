@@ -63,7 +63,7 @@ export default function BlogPost() {
             Need to create a ZIP archive right now? Our <Link href="/zip-files" className="text-blue-600 hover:underline font-semibold">ZIP file creator</Link> runs entirely in your browser with no upload required. Already have an archive? Use the <Link href="/unzip-files" className="text-blue-600 hover:underline font-semibold">file extractor</Link> to open it.
           </p>
           <p>
-            Related reading: <Link href="/blog/zip-vs-rar" className="text-blue-600 hover:underline">ZIP vs RAR</Link> compares ZIP with the other major archive format, and <Link href="/blog/lossless-vs-lossy-compression" className="text-blue-600 hover:underline">Lossless vs Lossy Compression</Link> explains the fundamental compression approaches.
+            Related reading: <Link href="/blog/zip-vs-rar" className="text-blue-600 hover:underline">ZIP vs RAR</Link> compares ZIP with the other major archive format, <Link href="/blog/tar-vs-zip" className="text-blue-600 hover:underline">TAR vs ZIP</Link> covers the Unix archiving approach, and <Link href="/blog/lossless-vs-lossy-compression" className="text-blue-600 hover:underline">Lossless vs Lossy Compression</Link> explains the fundamental compression approaches.
           </p>
         </div>
       </article>
