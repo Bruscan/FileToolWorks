@@ -333,7 +333,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   })
 
   // Use-case landing pages
-  const useCasePages = ['compress-video-for-discord', 'compress-video-for-whatsapp']
+  const useCasePages = ['compress-video-for-discord', 'compress-video-for-whatsapp', 'compress-audio-for-discord', 'compress-video-for-email']
   useCasePages.forEach((page) => {
     routes.push({
       url: `${BASE_URL}/${page}`,
