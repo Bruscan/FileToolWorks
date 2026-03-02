@@ -2,6 +2,7 @@
 
 import { useState, useCallback } from "react";
 import { Upload, X, Download, ChevronDown, Star, FileText } from "lucide-react";
+import Link from "next/link";
 import RelatedTools from "@/components/RelatedTools";
 import { PDFDocument } from "pdf-lib";
 
@@ -191,7 +192,7 @@ export default function SplitPDF() {
             Split PDF files into separate pages or custom page ranges instantly
           </p>
           <p className="text-gray-600 mb-4">
-            Upload your PDF and choose how to split it. Extract specific pages, split by page ranges, or separate every page into individual files. All processing happens in your browser for complete privacy. No file size limits, no signup required.
+            Upload your PDF and choose how to split it. Extract specific pages, split by page ranges, or separate every page into individual files. Need the opposite? Use our <Link href="/merge-pdf" className="text-blue-600 hover:underline">Merge PDF</Link> tool to combine files. All processing happens in your browser for complete privacy. No file size limits, no signup required.
           </p>
           {/* Rating */}
           <div className="flex items-center gap-2 mt-4">
@@ -440,7 +441,7 @@ export default function SplitPDF() {
                 Can I extract specific pages from a PDF?
               </summary>
               <p className="mt-2 text-gray-600 text-sm">
-                Yes. Select Extract Pages or Page Ranges and enter the page numbers you want (e.g., 1-3, 5, 7-10). Each range will become a separate PDF file.
+                Yes. Select Extract Pages or Page Ranges and enter the page numbers you want (e.g., 1-3, 5, 7-10). Each range will become a separate PDF file. For a visual page selection grid, try our <Link href="/extract-pdf-pages" className="text-blue-600 hover:underline">Extract PDF Pages</Link> tool.
               </p>
             </details>
             <details className="border-b border-gray-200 pb-4">
@@ -448,7 +449,7 @@ export default function SplitPDF() {
                 Is there a file size limit?
               </summary>
               <p className="mt-2 text-gray-600 text-sm">
-                No. Since all processing happens in your browser, there are no server-side limits. However, very large PDFs may take longer to process depending on your device.
+                No. Since all processing happens in your browser, there are no server-side limits. However, very large PDFs may take longer to process depending on your device. You can <Link href="/compress-pdf" className="text-blue-600 hover:underline">compress the PDF</Link> first to speed up processing.
               </p>
             </details>
             <details className="border-b border-gray-200 pb-4">

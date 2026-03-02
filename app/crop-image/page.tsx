@@ -2,6 +2,7 @@
 
 import { useState, useCallback, useRef } from "react";
 import { Upload, X, Download, ChevronDown, Star } from "lucide-react";
+import Link from "next/link";
 import RelatedTools from "@/components/RelatedTools";
 
 interface ImageFile {
@@ -294,7 +295,7 @@ export default function CropImage() {
             Crop images to preset ratios or custom dimensions instantly. Free, fast, and secure.
           </p>
           <p className="text-gray-600 mb-4">
-            Upload your image and crop it to preset aspect ratios (1:1, 4:3, 16:9, Free) or custom dimensions in pixels. Supports JPG, PNG, WebP and all common image formats. All processing happens in your browser for complete privacy. No file size limits, no signup required.
+            Upload your image and crop it to preset aspect ratios (1:1, 4:3, 16:9, Free) or custom dimensions in pixels. Need to change image size instead? Try our <Link href="/resize-image" className="text-blue-600 hover:underline">Image Resizer</Link>. Supports JPG, PNG, WebP and all common image formats. All processing happens in your browser for complete privacy. No file size limits, no signup required.
           </p>
           <div className="flex items-center gap-2 mt-4">
             <div className="flex items-center gap-1">
@@ -777,7 +778,7 @@ export default function CropImage() {
                 Which output format should I choose?
               </summary>
               <p className="mt-2 text-gray-600 text-sm">
-                JPG is best for photos with smaller file sizes. PNG is best for images with transparency or text that need lossless quality. WebP offers excellent compression with high quality but may not work on older browsers.
+                JPG is best for photos with smaller file sizes. PNG is best for images with transparency or text that need lossless quality. WebP offers excellent compression with high quality but may not work on older browsers. You can also <Link href="/rotate-image" className="text-blue-600 hover:underline">rotate your image</Link> or <Link href="/compress-image" className="text-blue-600 hover:underline">compress it</Link> after cropping.
               </p>
             </details>
             <details className="border-b border-gray-200 pb-4">

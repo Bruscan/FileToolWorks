@@ -2,6 +2,7 @@
 
 import { useState, useCallback } from "react";
 import { Upload, X, Download, ChevronDown, Star, Archive, FileText, FileIcon, Image as ImageIcon } from "lucide-react";
+import Link from "next/link";
 import RelatedTools from "@/components/RelatedTools";
 import JSZip from "jszip";
 
@@ -133,7 +134,7 @@ export default function UnzipFiles() {
             Extract files from ZIP archives instantly. Free, fast, and secure.
           </p>
           <p className="text-gray-600 mb-4">
-            Upload a ZIP file and extract all its contents. View the list of files inside, check their sizes, and download individual files or all at once. All processing happens in your browser for complete privacy. No file size limits, no signup required.
+            Upload a ZIP file and extract all its contents. View the list of files inside, check their sizes, and download individual files or all at once. Need to create a ZIP? Use our <Link href="/zip-files" className="text-blue-600 hover:underline">ZIP Files</Link> tool. All processing happens in your browser for complete privacy. No file size limits, no signup required.
           </p>
           <div className="flex items-center gap-2 mt-4">
             <div className="flex items-center gap-1">

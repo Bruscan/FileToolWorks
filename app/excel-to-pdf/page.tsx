@@ -2,6 +2,7 @@
 
 import { useState, useCallback } from "react";
 import { Upload, X, Download, Star } from "lucide-react";
+import Link from "next/link";
 import RelatedTools from "@/components/RelatedTools";
 import * as XLSX from "xlsx";
 import jsPDF from "jspdf";
@@ -132,7 +133,7 @@ export default function ExcelToPDF() {
             Convert Excel spreadsheets to PDF format instantly. Free, fast, and secure.
           </p>
           <p className="text-gray-600 mb-4">
-            Upload your Excel files (.xls or .xlsx) and convert them to PDF documents with preserved formatting. The first sheet of your spreadsheet will be converted to a professional-looking PDF table. All processing happens in your browser for complete privacy.
+            Upload your Excel files (.xls or .xlsx) and convert them to PDF documents with preserved formatting. The first sheet of your spreadsheet will be converted to a professional-looking PDF table. Also try our <Link href="/word-to-pdf" className="text-blue-600 hover:underline">Word to PDF</Link> converter. All processing happens in your browser for complete privacy.
           </p>
           <div className="flex items-center gap-2 mt-4">
             <div className="flex items-center gap-1">

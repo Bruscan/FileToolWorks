@@ -2,6 +2,7 @@
 
 import { useState, useCallback } from "react";
 import { Upload, X, Download, Star, FileText, AlertCircle } from "lucide-react";
+import Link from "next/link";
 import RelatedTools from "@/components/RelatedTools";
 // @ts-ignore - mammoth types are incomplete
 import mammoth from "mammoth";
@@ -151,7 +152,7 @@ export default function WordToPDF() {
             Convert Word documents to PDF format instantly. Free, fast, and secure in your browser.
           </p>
           <p className="text-gray-600 mb-4">
-            Transform Microsoft Word files (DOC and DOCX) into universally compatible PDF documents. Perfect for sharing documents that need to look the same on any device. All conversion happens directly in your browser with no uploads required.
+            Transform Microsoft Word files (DOC and DOCX) into universally compatible PDF documents. Perfect for sharing documents that need to look the same on any device. Need the reverse? Try our <Link href="/pdf-to-text" className="text-blue-600 hover:underline">PDF to Text</Link> extractor. All conversion happens directly in your browser with no uploads required.
           </p>
 
           {/* Disclaimer */}

@@ -2,6 +2,7 @@
 
 import { useState, useCallback } from "react";
 import { Upload, X, Download, ChevronDown, Star } from "lucide-react";
+import Link from "next/link";
 import RelatedTools from "@/components/RelatedTools";
 
 interface ImageFile {
@@ -143,7 +144,7 @@ export default function WebPToPNG() {
             Convert WebP images to PNG format instantly. Free, fast, and secure.
           </p>
           <p className="text-gray-600 mb-4">
-            Upload your WebP images and convert them to PNG format with lossless quality and customizable size settings. All processing happens in your browser for complete privacy. No file size limits, no signup required.
+            Upload your WebP images and convert them to PNG format with lossless quality and customizable size settings. Want to go the other direction? Use our <Link href="/image-to-webp" className="text-blue-600 hover:underline">Image to WebP</Link> converter. All processing happens in your browser for complete privacy.
           </p>
           <div className="flex items-center gap-2 mt-4">
             <div className="flex items-center gap-1">

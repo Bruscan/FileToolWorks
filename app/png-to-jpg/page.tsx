@@ -2,6 +2,7 @@
 
 import { useState, useCallback } from "react";
 import { Upload, X, Download, ChevronDown, Star } from "lucide-react";
+import Link from "next/link";
 import RelatedTools from "@/components/RelatedTools";
 
 interface ImageFile {
@@ -146,7 +147,7 @@ export default function PNGToJPG() {
             Convert PNG images to JPG format instantly. Free, fast, and secure.
           </p>
           <p className="text-gray-600 mb-4">
-            Upload your PNG images and convert them to JPG format with customizable quality and size settings. All processing happens in your browser for complete privacy. No file size limits, no signup required.
+            Upload your PNG images and convert them to JPG format with customizable quality and size settings. Need the reverse? Try <Link href="/jpg-to-png" className="text-blue-600 hover:underline">JPG to PNG</Link>. For modern web use, consider <Link href="/image-to-webp" className="text-blue-600 hover:underline">WebP format</Link> instead. All processing happens in your browser for complete privacy.
           </p>
           <div className="flex items-center gap-2 mt-4">
             <div className="flex items-center gap-1">

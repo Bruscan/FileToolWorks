@@ -2,6 +2,7 @@
 
 import { useState, useCallback } from "react";
 import { Upload, X, Download, ChevronDown, Star } from "lucide-react";
+import Link from "next/link";
 import RelatedTools from "@/components/RelatedTools";
 
 interface ImageFile {
@@ -160,7 +161,7 @@ export default function BlurImage() {
             Apply blur effect to images instantly. Free, fast, and secure.
           </p>
           <p className="text-gray-600 mb-4">
-            Upload your images and apply blur effect with adjustable intensity from 0 to 20 pixels. Perfect for creating background effects, censoring sensitive information, or adding artistic blur to photos. Supports JPG, PNG, WebP and all common image formats. All processing happens in your browser for complete privacy. No file size limits, no signup required.
+            Upload your images and apply blur effect with adjustable intensity from 0 to 20 pixels. Perfect for creating background effects, censoring sensitive information, or adding artistic blur to photos. Want the opposite? Try our <Link href="/sharpen-image" className="text-blue-600 hover:underline">Sharpen Image</Link> tool. Supports JPG, PNG, WebP and all common image formats. All processing happens in your browser for complete privacy.
           </p>
           <div className="flex items-center gap-2 mt-4">
             <div className="flex items-center gap-1">

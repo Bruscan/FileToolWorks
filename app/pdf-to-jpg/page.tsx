@@ -2,6 +2,7 @@
 
 import { useState, useCallback } from "react";
 import { Upload, X, Download, ChevronDown, Star } from "lucide-react";
+import Link from "next/link";
 import RelatedTools from "@/components/RelatedTools";
 
 interface PDFFile {
@@ -144,7 +145,7 @@ export default function PDFToJPG() {
             Convert PDF pages to JPG or PNG images instantly. Free, fast, and secure.
           </p>
           <p className="text-gray-600 mb-4">
-            Upload your PDF file and convert each page to a high-quality image. All processing happens in your browser for complete privacy. No file size limits, no signup required.
+            Upload your PDF file and convert each page to a high-quality image. Need the reverse? Use our <Link href="/jpg-to-pdf" className="text-blue-600 hover:underline">JPG to PDF</Link> converter. All processing happens in your browser for complete privacy. No file size limits, no signup required.
           </p>
           <div className="flex items-center gap-2 mt-4">
             <div className="flex items-center gap-1">
@@ -424,7 +425,7 @@ export default function PDFToJPG() {
                 What image formats are supported?
               </summary>
               <p className="mt-2 text-gray-600 text-sm">
-                You can convert PDF pages to either JPG (JPEG) or PNG format. JPG is better for photos and offers smaller file sizes, while PNG is better for documents with text and graphics.
+                You can convert PDF pages to either JPG (JPEG) or PNG format. JPG is better for photos and offers smaller file sizes, while PNG is better for documents with text and graphics. If you only need the text content, try our <Link href="/pdf-to-text" className="text-blue-600 hover:underline">PDF to Text</Link> extractor instead.
               </p>
             </details>
             <details className="border-b border-gray-200 pb-4">
@@ -456,7 +457,7 @@ export default function PDFToJPG() {
                 What quality settings should I use?
               </summary>
               <p className="mt-2 text-gray-600 text-sm">
-                For most documents, High quality (default) provides a good balance between file size and image quality. Use Max quality for important documents or detailed graphics. Low quality is suitable for quick previews.
+                For most documents, High quality (default) provides a good balance between file size and image quality. Use Max quality for important documents or detailed graphics. Low quality is suitable for quick previews. You can also <Link href="/compress-image" className="text-blue-600 hover:underline">compress the images</Link> after conversion to reduce file size further.
               </p>
             </details>
             <details className="border-b border-gray-200 pb-4">

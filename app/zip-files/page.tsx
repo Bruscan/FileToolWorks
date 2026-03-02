@@ -2,6 +2,7 @@
 
 import { useState, useCallback } from "react";
 import { Upload, X, Download, ChevronDown, Star, Archive } from "lucide-react";
+import Link from "next/link";
 import RelatedTools from "@/components/RelatedTools";
 import JSZip from "jszip";
 
@@ -105,7 +106,7 @@ export default function ZipFiles() {
             Compress multiple files into a single ZIP archive. Free, fast, and secure.
           </p>
           <p className="text-gray-600 mb-4">
-            Upload any files and combine them into a compressed ZIP archive. Perfect for sharing multiple files at once or reducing storage space. All processing happens in your browser for complete privacy. No file size limits, no signup required.
+            Upload any files and combine them into a compressed ZIP archive. Perfect for sharing multiple files at once or reducing storage space. Need to extract a ZIP? Use our <Link href="/unzip-files" className="text-blue-600 hover:underline">Unzip Files</Link> tool. All processing happens in your browser for complete privacy. No file size limits, no signup required.
           </p>
           <div className="flex items-center gap-2 mt-4">
             <div className="flex items-center gap-1">

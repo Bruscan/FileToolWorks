@@ -2,6 +2,7 @@
 
 import { useState, useCallback } from "react";
 import { Upload, X, Download, ChevronDown, Star } from "lucide-react";
+import Link from "next/link";
 import RelatedTools from "@/components/RelatedTools";
 import { PDFDocument } from "pdf-lib";
 
@@ -162,7 +163,7 @@ export default function CompressPDF() {
             Reduce PDF file size while maintaining quality. Free, fast, and secure.
           </p>
           <p className="text-gray-600 mb-4">
-            Compress PDF files online for free. Reduce file size by up to 30% while preserving document quality. Choose from Low, Medium, High, or Maximum compression levels. All processing happens in your browser for complete privacy. No file upload to servers, no file size limits, no signup required.
+            Compress PDF files online for free. Reduce file size by up to 30% while preserving document quality. Choose from Low, Medium, High, or Maximum compression levels. Need to combine files first? Use our <Link href="/merge-pdf" className="text-blue-600 hover:underline">Merge PDF</Link> tool. All processing happens in your browser for complete privacy. No file upload to servers, no file size limits, no signup required.
           </p>
           <div className="flex items-center gap-2 mt-4">
             <div className="flex items-center gap-1">
@@ -494,7 +495,7 @@ export default function CompressPDF() {
                 What types of PDFs can I compress?
               </summary>
               <p className="mt-2 text-gray-600 text-sm">
-                You can compress any standard PDF file including documents, forms, ebooks, and presentations. PDFs with many images or high-resolution graphics compress more effectively than text-only documents. Password-protected PDFs cannot be compressed without the password.
+                You can compress any standard PDF file including documents, forms, ebooks, and presentations. PDFs with many images or high-resolution graphics compress more effectively than text-only documents. Password-protected PDFs cannot be compressed without the password. For image-heavy PDFs, consider <Link href="/compress-image" className="text-blue-600 hover:underline">compressing the images</Link> before creating the PDF.
               </p>
             </details>
             <details className="border-b border-gray-200 pb-4">
@@ -510,7 +511,7 @@ export default function CompressPDF() {
                 Which compression level should I choose?
               </summary>
               <p className="mt-2 text-gray-600 text-sm">
-                For most users, High compression (default) offers the best balance of quality and file size reduction. Use Maximum if quality is critical and file size is less important. Use Medium or Low for maximum size reduction when sharing files via email or uploading to websites with file size limits.
+                For most users, High compression (default) offers the best balance of quality and file size reduction. Use Maximum if quality is critical and file size is less important. Use Medium or Low for maximum size reduction when sharing files via email or uploading to websites with file size limits. If you need to remove pages before compressing, try our <Link href="/extract-pdf-pages" className="text-blue-600 hover:underline">Extract PDF Pages</Link> tool first.
               </p>
             </details>
           </div>

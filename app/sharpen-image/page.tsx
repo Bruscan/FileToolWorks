@@ -2,6 +2,7 @@
 
 import { useState, useCallback } from "react";
 import { Upload, X, Download, ChevronDown, Star } from "lucide-react";
+import Link from "next/link";
 import RelatedTools from "@/components/RelatedTools";
 
 interface ImageFile {
@@ -233,7 +234,7 @@ export default function SharpenImage() {
             Sharpen and enhance image details instantly. Free, fast, and secure.
           </p>
           <p className="text-gray-600 mb-4">
-            Upload your images and sharpen them to enhance details and clarity. Choose from low, medium, or high intensity sharpening. Supports JPG, PNG, WebP and all common image formats. All processing happens in your browser for complete privacy. No file size limits, no signup required.
+            Upload your images and sharpen them to enhance details and clarity. Choose from low, medium, or high intensity sharpening. Need to soften an image instead? Use our <Link href="/blur-image" className="text-blue-600 hover:underline">Blur Image</Link> tool. Supports JPG, PNG, WebP and all common formats. All processing happens in your browser for complete privacy.
           </p>
           <div className="flex items-center gap-2 mt-4">
             <div className="flex items-center gap-1">
@@ -636,7 +637,7 @@ export default function SharpenImage() {
                 When should I sharpen images?
               </summary>
               <p className="mt-2 text-gray-600 text-sm">
-                Sharpen images when they look soft or blurry, especially after resizing or when photos lack detail. Sharpening enhances edges and makes images appear crisper and more defined.
+                Sharpen images when they look soft or blurry, especially after <Link href="/resize-image" className="text-blue-600 hover:underline">resizing</Link> or when photos lack detail. Sharpening enhances edges and makes images appear crisper and more defined.
               </p>
             </details>
             <details className="border-b border-gray-200 pb-4">
