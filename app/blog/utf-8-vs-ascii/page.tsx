@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import BlogJsonLd from "@/components/BlogJsonLd";
 
 export const metadata: Metadata = {
-  title: "UTF-8 vs ASCII: Character Sets, Encoding, and Compatibility | FileToolWorks",
+  title: "UTF-8 vs ASCII: Character Sets, Encoding, and Compatibility",
   description: "ASCII encodes 128 English characters in 7 bits. UTF-8 encodes every Unicode character in 1-4 bytes and is backward compatible with ASCII. Compare both encodings.",
   alternates: {
     canonical: "/blog/utf-8-vs-ascii",
@@ -14,7 +14,7 @@ export default function BlogPost() {
   return (
     <div className="min-h-screen bg-gray-50">
         <BlogJsonLd
-          title="UTF-8 vs ASCII: Character Sets, Encoding, and Compatibility | FileToolWorks"
+          title="UTF-8 vs ASCII: Character Sets, Encoding, and Compatibility"
           description="ASCII encodes 128 English characters in 7 bits. UTF-8 encodes every Unicode character in 1-4 bytes and is backward compatible with ASCII. Compare both encodings."
           slug="utf-8-vs-ascii"
           datePublished="2026-04-22"

@@ -2,7 +2,7 @@ import Link from "next/link";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "About FileToolWorks | Free Online File Tools",
+  title: "About | Free Online File Conversion Tools",
   description:
     "FileToolWorks offers 40+ free online tools for file conversion, compression, and editing. All tools work in your browser with no signup.",
 };

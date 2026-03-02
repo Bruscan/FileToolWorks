@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import BlogJsonLd from "@/components/BlogJsonLd";
 
 export const metadata: Metadata = {
-  title: "NTSC vs PAL: What Is the Difference? | FileToolWorks",
+  title: "NTSC vs PAL: What Is the Difference?",
   description: "NTSC runs at 30fps with 480 lines. PAL runs at 25fps with 576 lines. Learn the differences between NTSC and PAL video standards and which one to use.",
   alternates: {
     canonical: "/blog/ntsc-vs-pal",
@@ -14,7 +14,7 @@ export default function BlogPost() {
   return (
     <div className="min-h-screen bg-gray-50">
         <BlogJsonLd
-          title="NTSC vs PAL: What Is the Difference? | FileToolWorks"
+          title="NTSC vs PAL: What Is the Difference?"
           description="NTSC runs at 30fps with 480 lines. PAL runs at 25fps with 576 lines. Learn the differences between NTSC and PAL video standards and which one to use."
           slug="ntsc-vs-pal"
           datePublished="2026-04-14"

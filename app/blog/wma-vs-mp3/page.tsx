@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import BlogJsonLd from "@/components/BlogJsonLd";
 
 export const metadata: Metadata = {
-  title: "WMA vs MP3: Quality, Compatibility, and File Size Compared | FileToolWorks",
+  title: "WMA vs MP3: Quality, Compatibility, and File Size Compared",
   description: "WMA sounds slightly better than MP3 at low bitrates but only works on Windows. MP3 plays everywhere. Compare quality, file size, DRM, and device support.",
   alternates: {
     canonical: "/blog/wma-vs-mp3",
@@ -14,7 +14,7 @@ export default function BlogPost() {
   return (
     <div className="min-h-screen bg-gray-50">
         <BlogJsonLd
-          title="WMA vs MP3: Quality, Compatibility, and File Size Compared | FileToolWorks"
+          title="WMA vs MP3: Quality, Compatibility, and File Size Compared"
           description="WMA sounds slightly better than MP3 at low bitrates but only works on Windows. MP3 plays everywhere. Compare quality, file size, DRM, and device support."
           slug="wma-vs-mp3"
           datePublished="2026-03-11"

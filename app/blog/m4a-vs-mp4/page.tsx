@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import BlogJsonLd from "@/components/BlogJsonLd";
 
 export const metadata: Metadata = {
-  title: "M4A vs MP4: Same Container, Different Contents Explained | FileToolWorks",
+  title: "M4A vs MP4: Same Container, Different Contents Explained",
   description: "M4A and MP4 both use the MPEG-4 container. M4A holds audio only (AAC or ALAC), while MP4 includes video. Compare compatibility, quality, and use cases.",
   alternates: {
     canonical: "/blog/m4a-vs-mp4",
@@ -14,7 +14,7 @@ export default function BlogPost() {
   return (
     <div className="min-h-screen bg-gray-50">
         <BlogJsonLd
-          title="M4A vs MP4: Same Container, Different Contents Explained | FileToolWorks"
+          title="M4A vs MP4: Same Container, Different Contents Explained"
           description="M4A and MP4 both use the MPEG-4 container. M4A holds audio only (AAC or ALAC), while MP4 includes video. Compare compatibility, quality, and use cases."
           slug="m4a-vs-mp4"
           datePublished="2026-03-19"

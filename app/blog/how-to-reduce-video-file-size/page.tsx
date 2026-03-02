@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import BlogJsonLd from "@/components/BlogJsonLd";
 
 export const metadata: Metadata = {
-  title: "How to Reduce Video File Size Without Losing Quality | FileToolWorks",
+  title: "How to Reduce Video File Size Without Losing Quality",
   description:
     "Reduce video file size by 50-80% using compression, resolution changes, and trimming. Free browser-based tools, no upload needed.",
   alternates: {
@@ -15,7 +15,7 @@ export default function BlogPost() {
   return (
     <div className="min-h-screen bg-gray-50">
         <BlogJsonLd
-          title="How to Reduce Video File Size Without Losing Quality | FileToolWorks"
+          title="How to Reduce Video File Size Without Losing Quality"
           description="Reduce video file size by 50-80% using compression, resolution changes, and trimming. Free browser-based tools, no upload needed."
           slug="how-to-reduce-video-file-size"
           datePublished="2026-03-01"

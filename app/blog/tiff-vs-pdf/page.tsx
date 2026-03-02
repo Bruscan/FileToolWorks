@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import BlogJsonLd from "@/components/BlogJsonLd";
 
 export const metadata: Metadata = {
-  title: "TIFF vs PDF: Quality, File Size, and Best Use Cases | FileToolWorks",
+  title: "TIFF vs PDF: Quality, File Size, and Best Use Cases",
   description: "TIFF preserves lossless image quality for printing and scanning. PDF is smaller, searchable, and better for sharing documents. Compare both formats for your needs.",
   alternates: {
     canonical: "/blog/tiff-vs-pdf",
@@ -14,7 +14,7 @@ export default function BlogPost() {
   return (
     <div className="min-h-screen bg-gray-50">
         <BlogJsonLd
-          title="TIFF vs PDF: Quality, File Size, and Best Use Cases | FileToolWorks"
+          title="TIFF vs PDF: Quality, File Size, and Best Use Cases"
           description="TIFF preserves lossless image quality for printing and scanning. PDF is smaller, searchable, and better for sharing documents. Compare both formats for your needs."
           slug="tiff-vs-pdf"
           datePublished="2026-03-29"

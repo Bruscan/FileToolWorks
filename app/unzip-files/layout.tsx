@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import ToolJsonLd from "@/components/ToolJsonLd";
 
 export const metadata: Metadata = {
-  title: "Unzip Files Online - Free ZIP Extractor | FileToolWorks",
+  title: "Unzip Files Online - Free ZIP Extractor",
   description:
     "Extract files from ZIP archives online. Free ZIP extractor with no file size limits. View all files, check sizes, and download individually or all at once. Secure and private.",
   keywords:

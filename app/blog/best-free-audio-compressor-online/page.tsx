@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import BlogJsonLd from "@/components/BlogJsonLd";
 
 export const metadata: Metadata = {
-  title: "7 Best Free Audio Compressors Online (2026 Comparison) | FileToolWorks",
+  title: "7 Best Free Audio Compressors Online (2026 Comparison)",
   description: "Compare the top free online audio compressors. Side-by-side review of features, file limits, privacy, and output quality for MP3, WAV, and more.",
   alternates: {
     canonical: "/blog/best-free-audio-compressor-online",
@@ -14,7 +14,7 @@ export default function BlogPost() {
   return (
     <div className="min-h-screen bg-gray-50">
         <BlogJsonLd
-          title="7 Best Free Audio Compressors Online (2026 Comparison) | FileToolWorks"
+          title="7 Best Free Audio Compressors Online (2026 Comparison)"
           description="Compare the top free online audio compressors. Side-by-side review of features, file limits, privacy, and output quality for MP3, WAV, and more."
           slug="best-free-audio-compressor-online"
           datePublished="2026-03-02"

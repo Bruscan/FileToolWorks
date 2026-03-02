@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import BlogJsonLd from "@/components/BlogJsonLd";
 
 export const metadata: Metadata = {
-  title: "FLAC vs ALAC: Lossless Audio Formats Compared | FileToolWorks",
+  title: "FLAC vs ALAC: Lossless Audio Formats Compared",
   description: "FLAC and ALAC both deliver identical lossless audio quality. FLAC works everywhere, ALAC works best on Apple devices. Compare compatibility, file size, and features.",
   alternates: {
     canonical: "/blog/flac-vs-alac",
@@ -14,7 +14,7 @@ export default function BlogPost() {
   return (
     <div className="min-h-screen bg-gray-50">
         <BlogJsonLd
-          title="FLAC vs ALAC: Lossless Audio Formats Compared | FileToolWorks"
+          title="FLAC vs ALAC: Lossless Audio Formats Compared"
           description="FLAC and ALAC both deliver identical lossless audio quality. FLAC works everywhere, ALAC works best on Apple devices. Compare compatibility, file size, and features."
           slug="flac-vs-alac"
           datePublished="2026-03-08"

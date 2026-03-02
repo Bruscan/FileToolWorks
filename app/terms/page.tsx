@@ -2,7 +2,7 @@ import Link from "next/link";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Terms of Service | FileToolWorks",
+  title: "Terms of Service",
   description:
     "FileToolWorks terms of service. Free online file conversion tools with no signup required.",
 };

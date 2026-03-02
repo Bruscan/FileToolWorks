@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import BlogJsonLd from "@/components/BlogJsonLd";
 
 export const metadata: Metadata = {
-  title: "HTML vs XML: Key Differences Between Markup Languages | FileToolWorks",
+  title: "HTML vs XML: Key Differences Between Markup Languages",
   description: "HTML displays content in web browsers. XML stores and transports structured data. Compare syntax, purpose, flexibility, and when to use each markup language.",
   alternates: {
     canonical: "/blog/html-vs-xml",
@@ -14,7 +14,7 @@ export default function BlogPost() {
   return (
     <div className="min-h-screen bg-gray-50">
         <BlogJsonLd
-          title="HTML vs XML: Key Differences Between Markup Languages | FileToolWorks"
+          title="HTML vs XML: Key Differences Between Markup Languages"
           description="HTML displays content in web browsers. XML stores and transports structured data. Compare syntax, purpose, flexibility, and when to use each markup language."
           slug="html-vs-xml"
           datePublished="2026-04-07"

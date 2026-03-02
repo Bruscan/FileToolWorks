@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import BlogJsonLd from "@/components/BlogJsonLd";
 
 export const metadata: Metadata = {
-  title: "FLAC vs Opus: Lossless vs Lossy Audio Quality Compared | FileToolWorks",
+  title: "FLAC vs Opus: Lossless vs Lossy Audio Quality Compared",
   description: "FLAC preserves perfect audio quality with lossless compression. Opus delivers near-transparent quality at much smaller file sizes. Compare formats, use cases, and compatibility.",
   alternates: {
     canonical: "/blog/flac-vs-opus",
@@ -14,7 +14,7 @@ export default function BlogPost() {
   return (
     <div className="min-h-screen bg-gray-50">
         <BlogJsonLd
-          title="FLAC vs Opus: Lossless vs Lossy Audio Quality Compared | FileToolWorks"
+          title="FLAC vs Opus: Lossless vs Lossy Audio Quality Compared"
           description="FLAC preserves perfect audio quality with lossless compression. Opus delivers near-transparent quality at much smaller file sizes. Compare formats, use cases, and compatibility."
           slug="flac-vs-opus"
           datePublished="2026-04-08"

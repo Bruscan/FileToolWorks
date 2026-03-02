@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import BlogJsonLd from "@/components/BlogJsonLd";
 
 export const metadata: Metadata = {
-  title: "XML vs CSV: Structure, File Size, and When to Use Each | FileToolWorks",
+  title: "XML vs CSV: Structure, File Size, and When to Use Each",
   description: "CSV is plain text with comma-separated values for flat tabular data. XML uses tags for hierarchical structured data. Compare file size, parsing, and best use cases.",
   alternates: {
     canonical: "/blog/xml-vs-csv",
@@ -14,7 +14,7 @@ export default function BlogPost() {
   return (
     <div className="min-h-screen bg-gray-50">
         <BlogJsonLd
-          title="XML vs CSV: Structure, File Size, and When to Use Each | FileToolWorks"
+          title="XML vs CSV: Structure, File Size, and When to Use Each"
           description="CSV is plain text with comma-separated values for flat tabular data. XML uses tags for hierarchical structured data. Compare file size, parsing, and best use cases."
           slug="xml-vs-csv"
           datePublished="2026-04-04"

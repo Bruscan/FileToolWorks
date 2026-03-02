@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import BlogJsonLd from "@/components/BlogJsonLd";
 
 export const metadata: Metadata = {
-  title: "CFR vs VFR: Constant vs Variable Frame Rate Explained | FileToolWorks",
+  title: "CFR vs VFR: Constant vs Variable Frame Rate Explained",
   description: "CFR uses a fixed frame rate throughout, while VFR changes frame rate dynamically. Learn the differences, compatibility issues, and when to use each.",
   alternates: {
     canonical: "/blog/cfr-vs-vfr",
@@ -14,7 +14,7 @@ export default function BlogPost() {
   return (
     <div className="min-h-screen bg-gray-50">
         <BlogJsonLd
-          title="CFR vs VFR: Constant vs Variable Frame Rate Explained | FileToolWorks"
+          title="CFR vs VFR: Constant vs Variable Frame Rate Explained"
           description="CFR uses a fixed frame rate throughout, while VFR changes frame rate dynamically. Learn the differences, compatibility issues, and when to use each."
           slug="cfr-vs-vfr"
           datePublished="2026-04-16"

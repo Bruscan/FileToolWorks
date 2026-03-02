@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import BlogJsonLd from "@/components/BlogJsonLd";
 
 export const metadata: Metadata = {
-  title: "WebP vs HEIC: Format Differences, Compression, and Compatibility | FileToolWorks",
+  title: "WebP vs HEIC: Format Differences, Compression, and Compatibility",
   description: "WebP works everywhere on the web with 96% browser support. HEIC compresses 50% better than JPEG but is limited to Apple devices. Full format comparison.",
   alternates: {
     canonical: "/blog/webp-vs-heic",
@@ -14,7 +14,7 @@ export default function BlogPost() {
   return (
     <div className="min-h-screen bg-gray-50">
         <BlogJsonLd
-          title="WebP vs HEIC: Format Differences, Compression, and Compatibility | FileToolWorks"
+          title="WebP vs HEIC: Format Differences, Compression, and Compatibility"
           description="WebP works everywhere on the web with 96% browser support. HEIC compresses 50% better than JPEG but is limited to Apple devices. Full format comparison."
           slug="webp-vs-heic"
           datePublished="2026-03-24"

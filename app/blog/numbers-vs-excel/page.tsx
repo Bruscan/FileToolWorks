@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import BlogJsonLd from "@/components/BlogJsonLd";
 
 export const metadata: Metadata = {
-  title: "Numbers vs Excel: Apple Numbers vs Microsoft Excel Compared | FileToolWorks",
+  title: "Numbers vs Excel: Apple Numbers vs Microsoft Excel Compared",
   description: "Apple Numbers is free with beautiful templates. Excel has 420+ functions and is the industry standard. Compare features, formulas, compatibility, and pricing.",
   alternates: {
     canonical: "/blog/numbers-vs-excel",
@@ -14,7 +14,7 @@ export default function BlogPost() {
   return (
     <div className="min-h-screen bg-gray-50">
         <BlogJsonLd
-          title="Numbers vs Excel: Apple Numbers vs Microsoft Excel Compared | FileToolWorks"
+          title="Numbers vs Excel: Apple Numbers vs Microsoft Excel Compared"
           description="Apple Numbers is free with beautiful templates. Excel has 420+ functions and is the industry standard. Compare features, formulas, compatibility, and pricing."
           slug="numbers-vs-excel"
           datePublished="2026-04-05"

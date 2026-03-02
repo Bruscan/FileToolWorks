@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import BlogJsonLd from "@/components/BlogJsonLd";
 
 export const metadata: Metadata = {
-  title: "GIF vs SVG: Animation, File Size, and When to Use Each | FileToolWorks",
+  title: "GIF vs SVG: Animation, File Size, and When to Use Each",
   description: "GIF is a raster format limited to 256 colors. SVG is vector-based, scalable, and interactive. Compare animation, file size, browser support, and best use cases.",
   alternates: {
     canonical: "/blog/gif-vs-svg",
@@ -14,7 +14,7 @@ export default function BlogPost() {
   return (
     <div className="min-h-screen bg-gray-50">
         <BlogJsonLd
-          title="GIF vs SVG: Animation, File Size, and When to Use Each | FileToolWorks"
+          title="GIF vs SVG: Animation, File Size, and When to Use Each"
           description="GIF is a raster format limited to 256 colors. SVG is vector-based, scalable, and interactive. Compare animation, file size, browser support, and best use cases."
           slug="gif-vs-svg"
           datePublished="2026-04-01"

@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import ToolJsonLd from "@/components/ToolJsonLd";
 
 export const metadata: Metadata = {
-  title: "Sign PDF Online - Add Signature to PDF Documents | FileToolWorks",
+  title: "Sign PDF Online - Add Signature to PDF Documents",
   description:
     "Sign PDF documents online for free. Draw or upload your signature, position it anywhere on the PDF, and download instantly. No signup required. Fast, secure, and private.",
   keywords:

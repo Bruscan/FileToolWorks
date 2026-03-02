@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import BlogJsonLd from "@/components/BlogJsonLd";
 
 export const metadata: Metadata = {
-  title: "CSV vs XLSX: When to Use Each Spreadsheet Format | FileToolWorks",
+  title: "CSV vs XLSX: When to Use Each Spreadsheet Format",
   description: "CSV is plain text that any program can read. XLSX supports formulas, formatting, and multiple sheets. Compare features, compatibility, and file size.",
   alternates: {
     canonical: "/blog/csv-vs-xlsx",
@@ -14,7 +14,7 @@ export default function BlogPost() {
   return (
     <div className="min-h-screen bg-gray-50">
         <BlogJsonLd
-          title="CSV vs XLSX: When to Use Each Spreadsheet Format | FileToolWorks"
+          title="CSV vs XLSX: When to Use Each Spreadsheet Format"
           description="CSV is plain text that any program can read. XLSX supports formulas, formatting, and multiple sheets. Compare features, compatibility, and file size."
           slug="csv-vs-xlsx"
           datePublished="2026-03-14"

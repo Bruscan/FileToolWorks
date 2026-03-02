@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import BlogJsonLd from "@/components/BlogJsonLd";
 
 export const metadata: Metadata = {
-  title: "How to Merge PDF Files Online for Free | FileToolWorks",
+  title: "How to Merge PDF Files Online for Free",
   description:
     "Combine multiple PDF files into one document in seconds. Free, no signup, works in your browser.",
   alternates: {
@@ -15,7 +15,7 @@ export default function BlogPost() {
   return (
     <div className="min-h-screen bg-gray-50">
         <BlogJsonLd
-          title="How to Merge PDF Files Online for Free | FileToolWorks"
+          title="How to Merge PDF Files Online for Free"
           description="Combine multiple PDF files into one document in seconds. Free, no signup, works in your browser."
           slug="how-to-merge-pdf-files"
           datePublished="2026-03-01"

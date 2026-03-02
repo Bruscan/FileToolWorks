@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import BlogJsonLd from "@/components/BlogJsonLd";
 
 export const metadata: Metadata = {
-  title: "PSD vs TIFF: Which Format for Editing and Archiving Photos | FileToolWorks",
+  title: "PSD vs TIFF: Which Format for Editing and Archiving Photos",
   description: "PSD is Adobe's native format with full layer support. TIFF is a universal lossless format. Compare compatibility, file size, features, and which to use for your workflow.",
   alternates: {
     canonical: "/blog/psd-vs-tiff",
@@ -14,7 +14,7 @@ export default function BlogPost() {
   return (
     <div className="min-h-screen bg-gray-50">
         <BlogJsonLd
-          title="PSD vs TIFF: Which Format for Editing and Archiving Photos | FileToolWorks"
+          title="PSD vs TIFF: Which Format for Editing and Archiving Photos"
           description="PSD is Adobe's native format with full layer support. TIFF is a universal lossless format. Compare compatibility, file size, features, and which to use for your workflow."
           slug="psd-vs-tiff"
           datePublished="2026-04-06"

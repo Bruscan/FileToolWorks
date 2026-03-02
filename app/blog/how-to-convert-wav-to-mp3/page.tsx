@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import BlogJsonLd from "@/components/BlogJsonLd";
 
 export const metadata: Metadata = {
-  title: "How to Convert WAV to MP3 Online for Free | FileToolWorks",
+  title: "How to Convert WAV to MP3 Online for Free",
   description:
     "Convert WAV files to MP3 in seconds. Choose your bitrate, keep good quality, and reduce file size by up to 90%. Free, no signup.",
   alternates: {
@@ -15,7 +15,7 @@ export default function BlogPost() {
   return (
     <div className="min-h-screen bg-gray-50">
       <BlogJsonLd
-        title="How to Convert WAV to MP3 Online for Free | FileToolWorks"
+        title="How to Convert WAV to MP3 Online for Free"
         description="Convert WAV files to MP3 in seconds. Choose your bitrate, keep good quality, and reduce file size by up to 90%. Free, no signup."
         slug="how-to-convert-wav-to-mp3"
         datePublished="2026-04-23"

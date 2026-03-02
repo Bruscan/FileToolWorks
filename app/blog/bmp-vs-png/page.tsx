@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import BlogJsonLd from "@/components/BlogJsonLd";
 
 export const metadata: Metadata = {
-  title: "BMP vs PNG: File Size, Quality, and When to Use Each | FileToolWorks",
+  title: "BMP vs PNG: File Size, Quality, and When to Use Each",
   description: "BMP stores raw uncompressed pixel data. PNG uses lossless compression for smaller files with identical quality. Compare features, transparency, and use cases.",
   alternates: {
     canonical: "/blog/bmp-vs-png",
@@ -14,7 +14,7 @@ export default function BlogPost() {
   return (
     <div className="min-h-screen bg-gray-50">
         <BlogJsonLd
-          title="BMP vs PNG: File Size, Quality, and When to Use Each | FileToolWorks"
+          title="BMP vs PNG: File Size, Quality, and When to Use Each"
           description="BMP stores raw uncompressed pixel data. PNG uses lossless compression for smaller files with identical quality. Compare features, transparency, and use cases."
           slug="bmp-vs-png"
           datePublished="2026-03-10"

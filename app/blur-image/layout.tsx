@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import ToolJsonLd from "@/components/ToolJsonLd";
 
 export const metadata: Metadata = {
-  title: "Blur Image - Apply Blur Effect Online Free | FileToolWorks",
+  title: "Blur Image - Apply Blur Effect Online Free",
   description:
     "Apply blur effect to images instantly. Free online tool to blur photos with adjustable intensity from 0-20px. Perfect for censoring, background effects, and privacy protection. No signup required.",
   keywords: [

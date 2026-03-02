@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import BlogJsonLd from "@/components/BlogJsonLd";
 
 export const metadata: Metadata = {
-  title: "How to Convert HEIC to JPG (Free, No Upload) | FileToolWorks",
+  title: "How to Convert HEIC to JPG (Free, No Upload)",
   description:
     "Convert HEIC photos to JPG format directly in your browser. No upload required, works on any device. Step-by-step guide with free tool.",
   alternates: {
@@ -15,7 +15,7 @@ export default function BlogPost() {
   return (
     <div className="min-h-screen bg-gray-50">
         <BlogJsonLd
-          title="How to Convert HEIC to JPG (Free, No Upload) | FileToolWorks"
+          title="How to Convert HEIC to JPG (Free, No Upload)"
           description="Convert HEIC photos to JPG format directly in your browser. No upload required, works on any device. Step-by-step guide with free tool."
           slug="how-to-convert-heic-to-jpg"
           datePublished="2026-03-01"

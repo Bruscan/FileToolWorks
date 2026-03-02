@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import BlogJsonLd from "@/components/BlogJsonLd";
 
 export const metadata: Metadata = {
-  title: "How to Split PDF Pages Online for Free | FileToolWorks",
+  title: "How to Split PDF Pages Online for Free",
   description:
     "Split a PDF into separate pages or sections. Free browser-based tool, no installation required.",
   alternates: {
@@ -15,7 +15,7 @@ export default function BlogPost() {
   return (
     <div className="min-h-screen bg-gray-50">
         <BlogJsonLd
-          title="How to Split PDF Pages Online for Free | FileToolWorks"
+          title="How to Split PDF Pages Online for Free"
           description="Split a PDF into separate pages or sections. Free browser-based tool, no installation required."
           slug="how-to-split-pdf-pages"
           datePublished="2026-03-01"

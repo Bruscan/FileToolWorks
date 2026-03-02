@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import ToolJsonLd from "@/components/ToolJsonLd";
 
 export const metadata: Metadata = {
-  title: "Word to PDF Converter - Free Online DOC to PDF Tool | FileToolWorks",
+  title: "Word to PDF Converter - Free Online DOC to PDF Tool",
   description:
     "Convert Word documents to PDF format instantly. Free online Word to PDF converter supporting DOC and DOCX files. Fast, secure, and works directly in your browser with no uploads.",
   keywords:

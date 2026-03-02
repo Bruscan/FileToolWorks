@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import BlogJsonLd from "@/components/BlogJsonLd";
 
 export const metadata: Metadata = {
-  title: "5 Best Free iLovePDF Alternatives (2026) - No Account Needed | FileToolWorks",
+  title: "5 Best Free iLovePDF Alternatives (2026) - No Account Needed",
   description: "Need a free iLovePDF alternative? Compare 5 online PDF tools for merging, compressing, splitting, signing, and converting PDFs without signup.",
   alternates: {
     canonical: "/blog/best-ilovepdf-alternatives-free",

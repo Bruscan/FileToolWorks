@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import BlogJsonLd from "@/components/BlogJsonLd";
 
 export const metadata: Metadata = {
-  title: "How to Compress Video for WhatsApp (Under 16MB) | FileToolWorks",
+  title: "How to Compress Video for WhatsApp (Under 16MB)",
   description:
     "Reduce video file size to fit WhatsApp's 16MB limit. Free browser-based compression with no signup required.",
   alternates: {
@@ -15,7 +15,7 @@ export default function BlogPost() {
   return (
     <div className="min-h-screen bg-gray-50">
       <BlogJsonLd
-        title="How to Compress Video for WhatsApp (Under 16MB) | FileToolWorks"
+        title="How to Compress Video for WhatsApp (Under 16MB)"
         description="Reduce video file size to fit WhatsApp's 16MB limit. Free browser-based compression with no signup required."
         slug="how-to-compress-video-for-whatsapp"
         datePublished="2026-04-23"

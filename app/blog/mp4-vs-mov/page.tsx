@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import BlogJsonLd from "@/components/BlogJsonLd";
 
 export const metadata: Metadata = {
-  title: "MP4 vs MOV: Which Video Format Should You Use? | FileToolWorks",
+  title: "MP4 vs MOV: Which Video Format Should You Use?",
   description: "MP4 and MOV compared on file size, codec support, compatibility, editing, and streaming. Learn which video format fits your project.",
   alternates: {
     canonical: "/blog/mp4-vs-mov",
@@ -14,7 +14,7 @@ export default function BlogPost() {
   return (
     <div className="min-h-screen bg-gray-50">
         <BlogJsonLd
-          title="MP4 vs MOV: Which Video Format Should You Use? | FileToolWorks"
+          title="MP4 vs MOV: Which Video Format Should You Use?"
           description="MP4 and MOV compared on file size, codec support, compatibility, editing, and streaming. Learn which video format fits your project."
           slug="mp4-vs-mov"
           datePublished="2026-03-03"

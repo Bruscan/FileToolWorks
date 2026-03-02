@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import BlogJsonLd from "@/components/BlogJsonLd";
 
 export const metadata: Metadata = {
-  title: "AVI vs MP4: File Size, Quality, and Compatibility Compared | FileToolWorks",
+  title: "AVI vs MP4: File Size, Quality, and Compatibility Compared",
   description: "MP4 produces smaller files with better compression than AVI. Compare file size, codec support, streaming, and compatibility for both video formats.",
   alternates: {
     canonical: "/blog/avi-vs-mp4",
@@ -14,7 +14,7 @@ export default function BlogPost() {
   return (
     <div className="min-h-screen bg-gray-50">
         <BlogJsonLd
-          title="AVI vs MP4: File Size, Quality, and Compatibility Compared | FileToolWorks"
+          title="AVI vs MP4: File Size, Quality, and Compatibility Compared"
           description="MP4 produces smaller files with better compression than AVI. Compare file size, codec support, streaming, and compatibility for both video formats."
           slug="avi-vs-mp4"
           datePublished="2026-03-04"

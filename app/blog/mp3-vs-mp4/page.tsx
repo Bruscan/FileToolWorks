@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import BlogJsonLd from "@/components/BlogJsonLd";
 
 export const metadata: Metadata = {
-  title: "MP3 vs MP4: Key Differences Between Audio and Multimedia Formats | FileToolWorks",
+  title: "MP3 vs MP4: Key Differences Between Audio and Multimedia Formats",
   description: "MP3 is an audio-only format. MP4 is a multimedia container for video, audio, and subtitles. Compare file size, quality, compatibility, and use cases.",
   alternates: {
     canonical: "/blog/mp3-vs-mp4",
@@ -14,7 +14,7 @@ export default function BlogPost() {
   return (
     <div className="min-h-screen bg-gray-50">
         <BlogJsonLd
-          title="MP3 vs MP4: Key Differences Between Audio and Multimedia Formats | FileToolWorks"
+          title="MP3 vs MP4: Key Differences Between Audio and Multimedia Formats"
           description="MP3 is an audio-only format. MP4 is a multimedia container for video, audio, and subtitles. Compare file size, quality, compatibility, and use cases."
           slug="mp3-vs-mp4"
           datePublished="2026-03-25"

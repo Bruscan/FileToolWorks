@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import BlogJsonLd from "@/components/BlogJsonLd";
 
 export const metadata: Metadata = {
-  title: "CBR vs VBR: Constant vs Variable Bitrate Explained | FileToolWorks",
+  title: "CBR vs VBR: Constant vs Variable Bitrate Explained",
   description: "CBR uses a fixed bitrate throughout the file. VBR adjusts dynamically for better quality per byte. Learn when to use each for audio and video encoding.",
   alternates: {
     canonical: "/blog/cbr-vs-vbr",
@@ -14,7 +14,7 @@ export default function BlogPost() {
   return (
     <div className="min-h-screen bg-gray-50">
         <BlogJsonLd
-          title="CBR vs VBR: Constant vs Variable Bitrate Explained | FileToolWorks"
+          title="CBR vs VBR: Constant vs Variable Bitrate Explained"
           description="CBR uses a fixed bitrate throughout the file. VBR adjusts dynamically for better quality per byte. Learn when to use each for audio and video encoding."
           slug="cbr-vs-vbr"
           datePublished="2026-03-12"

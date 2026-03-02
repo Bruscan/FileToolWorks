@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import BlogJsonLd from "@/components/BlogJsonLd";
 
 export const metadata: Metadata = {
-  title: "MIDI vs MP3: Instructions vs Recorded Audio Explained | FileToolWorks",
+  title: "MIDI vs MP3: Instructions vs Recorded Audio Explained",
   description: "MIDI stores musical instructions, not actual sound. MP3 stores compressed recorded audio. Compare file size, quality, compatibility, and when to use each format.",
   alternates: {
     canonical: "/blog/midi-vs-mp3",
@@ -14,7 +14,7 @@ export default function BlogPost() {
   return (
     <div className="min-h-screen bg-gray-50">
         <BlogJsonLd
-          title="MIDI vs MP3: Instructions vs Recorded Audio Explained | FileToolWorks"
+          title="MIDI vs MP3: Instructions vs Recorded Audio Explained"
           description="MIDI stores musical instructions, not actual sound. MP3 stores compressed recorded audio. Compare file size, quality, compatibility, and when to use each format."
           slug="midi-vs-mp3"
           datePublished="2026-03-26"

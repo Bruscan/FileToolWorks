@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import BlogJsonLd from "@/components/BlogJsonLd";
 
 export const metadata: Metadata = {
-  title: "How to Sign a PDF Online for Free | FileToolWorks",
+  title: "How to Sign a PDF Online for Free",
   description:
     "Sign PDF documents online without printing. Draw or upload your signature and place it on any page. Free, private, no account needed.",
   alternates: {
@@ -15,7 +15,7 @@ export default function BlogPost() {
   return (
     <div className="min-h-screen bg-gray-50">
         <BlogJsonLd
-          title="How to Sign a PDF Online for Free | FileToolWorks"
+          title="How to Sign a PDF Online for Free"
           description="Sign PDF documents online without printing. Draw or upload your signature and place it on any page. Free, private, no account needed."
           slug="how-to-sign-pdf-online"
           datePublished="2026-03-01"

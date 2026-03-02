@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import BlogJsonLd from "@/components/BlogJsonLd";
 
 export const metadata: Metadata = {
-  title: "XML vs YAML: Markup Language vs Data Serialization Compared | FileToolWorks",
+  title: "XML vs YAML: Markup Language vs Data Serialization Compared",
   description: "YAML is human-readable and used for config files. XML supports validation and complex document structures. Compare syntax, use cases, parsing, and readability.",
   alternates: {
     canonical: "/blog/xml-vs-yaml",
@@ -14,7 +14,7 @@ export default function BlogPost() {
   return (
     <div className="min-h-screen bg-gray-50">
         <BlogJsonLd
-          title="XML vs YAML: Markup Language vs Data Serialization Compared | FileToolWorks"
+          title="XML vs YAML: Markup Language vs Data Serialization Compared"
           description="YAML is human-readable and used for config files. XML supports validation and complex document structures. Compare syntax, use cases, parsing, and readability."
           slug="xml-vs-yaml"
           datePublished="2026-04-05"

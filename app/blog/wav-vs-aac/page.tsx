@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import BlogJsonLd from "@/components/BlogJsonLd";
 
 export const metadata: Metadata = {
-  title: "WAV vs AAC: Quality, File Size, and When to Use Each | FileToolWorks",
+  title: "WAV vs AAC: Quality, File Size, and When to Use Each",
   description: "WAV is uncompressed lossless audio. AAC is lossy but 90% smaller. Compare sound quality, file size, device support, and learn when each format makes sense.",
   alternates: {
     canonical: "/blog/wav-vs-aac",
@@ -14,7 +14,7 @@ export default function BlogPost() {
   return (
     <div className="min-h-screen bg-gray-50">
         <BlogJsonLd
-          title="WAV vs AAC: Quality, File Size, and When to Use Each | FileToolWorks"
+          title="WAV vs AAC: Quality, File Size, and When to Use Each"
           description="WAV is uncompressed lossless audio. AAC is lossy but 90% smaller. Compare sound quality, file size, device support, and learn when each format makes sense."
           slug="wav-vs-aac"
           datePublished="2026-03-11"

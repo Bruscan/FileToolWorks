@@ -2,7 +2,7 @@ import Link from "next/link";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy | FileToolWorks",
+  title: "Privacy Policy",
   description:
     "FileToolWorks privacy policy. Your files are processed in your browser and never uploaded to our servers.",
 };

@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import BlogJsonLd from "@/components/BlogJsonLd";
 
 export const metadata: Metadata = {
-  title: "LaTeX vs Word: Which Is Better for Documents? | FileToolWorks",
+  title: "LaTeX vs Word: Which Is Better for Documents?",
   description: "LaTeX handles math, citations, and large documents with precision. Word is faster to learn and better for collaboration. Compare features, use cases, and when each makes sense.",
   alternates: {
     canonical: "/blog/latex-vs-word",
@@ -14,7 +14,7 @@ export default function BlogPost() {
   return (
     <div className="min-h-screen bg-gray-50">
         <BlogJsonLd
-          title="LaTeX vs Word: Which Is Better for Documents? | FileToolWorks"
+          title="LaTeX vs Word: Which Is Better for Documents?"
           description="LaTeX handles math, citations, and large documents with precision. Word is faster to learn and better for collaboration. Compare features, use cases, and when each makes sense."
           slug="latex-vs-word"
           datePublished="2026-04-08"

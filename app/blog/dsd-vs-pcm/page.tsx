@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import BlogJsonLd from "@/components/BlogJsonLd";
 
 export const metadata: Metadata = {
-  title: "DSD vs PCM: How the Two Digital Audio Formats Differ | FileToolWorks",
+  title: "DSD vs PCM: How the Two Digital Audio Formats Differ",
   description: "DSD uses 1-bit samples at 2.8 MHz while PCM uses multi-bit samples at lower rates. Compare sound quality, editing, and compatibility for audiophile playback.",
   alternates: {
     canonical: "/blog/dsd-vs-pcm",
@@ -14,7 +14,7 @@ export default function BlogPost() {
   return (
     <div className="min-h-screen bg-gray-50">
         <BlogJsonLd
-          title="DSD vs PCM: How the Two Digital Audio Formats Differ | FileToolWorks"
+          title="DSD vs PCM: How the Two Digital Audio Formats Differ"
           description="DSD uses 1-bit samples at 2.8 MHz while PCM uses multi-bit samples at lower rates. Compare sound quality, editing, and compatibility for audiophile playback."
           slug="dsd-vs-pcm"
           datePublished="2026-04-19"

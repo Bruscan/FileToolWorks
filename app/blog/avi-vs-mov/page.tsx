@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import BlogJsonLd from "@/components/BlogJsonLd";
 
 export const metadata: Metadata = {
-  title: "AVI vs MOV: Which Video Container Format Is Better? | FileToolWorks",
+  title: "AVI vs MOV: Which Video Container Format Is Better?",
   description: "AVI is Microsoft's legacy video container. MOV is Apple's QuickTime format. Compare compatibility, compression, features, and when to convert.",
   alternates: {
     canonical: "/blog/avi-vs-mov",
@@ -14,7 +14,7 @@ export default function BlogPost() {
   return (
     <div className="min-h-screen bg-gray-50">
         <BlogJsonLd
-          title="AVI vs MOV: Which Video Container Format Is Better? | FileToolWorks"
+          title="AVI vs MOV: Which Video Container Format Is Better?"
           description="AVI is Microsoft's legacy video container. MOV is Apple's QuickTime format. Compare compatibility, compression, features, and when to convert."
           slug="avi-vs-mov"
           datePublished="2026-04-13"

@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import BlogJsonLd from "@/components/BlogJsonLd";
 
 export const metadata: Metadata = {
-  title: "ODS vs XLSX: Open Document vs Excel Spreadsheet Format | FileToolWorks",
+  title: "ODS vs XLSX: Open Document vs Excel Spreadsheet Format",
   description: "ODS is the open standard spreadsheet format for LibreOffice and OpenOffice. XLSX is Microsoft Excel's format. Compare compatibility, features, and when to use each.",
   alternates: {
     canonical: "/blog/ods-vs-xlsx",
@@ -14,7 +14,7 @@ export default function BlogPost() {
   return (
     <div className="min-h-screen bg-gray-50">
         <BlogJsonLd
-          title="ODS vs XLSX: Open Document vs Excel Spreadsheet Format | FileToolWorks"
+          title="ODS vs XLSX: Open Document vs Excel Spreadsheet Format"
           description="ODS is the open standard spreadsheet format for LibreOffice and OpenOffice. XLSX is Microsoft Excel's format. Compare compatibility, features, and when to use each."
           slug="ods-vs-xlsx"
           datePublished="2026-04-04"

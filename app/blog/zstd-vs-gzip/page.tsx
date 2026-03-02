@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import BlogJsonLd from "@/components/BlogJsonLd";
 
 export const metadata: Metadata = {
-  title: "Zstd vs Gzip: Compression Speed, Ratio, and Use Cases | FileToolWorks",
+  title: "Zstd vs Gzip: Compression Speed, Ratio, and Use Cases",
   description: "Zstandard compresses and decompresses faster than Gzip at similar ratios. Compare speed, compression level, and when to use each algorithm.",
   alternates: {
     canonical: "/blog/zstd-vs-gzip",
@@ -14,7 +14,7 @@ export default function BlogPost() {
   return (
     <div className="min-h-screen bg-gray-50">
         <BlogJsonLd
-          title="Zstd vs Gzip: Compression Speed, Ratio, and Use Cases | FileToolWorks"
+          title="Zstd vs Gzip: Compression Speed, Ratio, and Use Cases"
           description="Zstandard compresses and decompresses faster than Gzip at similar ratios. Compare speed, compression level, and when to use each algorithm."
           slug="zstd-vs-gzip"
           datePublished="2026-04-16"

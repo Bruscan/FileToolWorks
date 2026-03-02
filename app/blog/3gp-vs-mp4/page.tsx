@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import BlogJsonLd from "@/components/BlogJsonLd";
 
 export const metadata: Metadata = {
-  title: "3GP vs MP4: Quality, Compatibility, and Which to Use | FileToolWorks",
+  title: "3GP vs MP4: Quality, Compatibility, and Which to Use",
   description: "3GP was designed for old mobile phones with limited bandwidth. MP4 supports HD/4K and plays everywhere. Compare both video formats and learn when to convert.",
   alternates: {
     canonical: "/blog/3gp-vs-mp4",
@@ -14,7 +14,7 @@ export default function BlogPost() {
   return (
     <div className="min-h-screen bg-gray-50">
         <BlogJsonLd
-          title="3GP vs MP4: Quality, Compatibility, and Which to Use | FileToolWorks"
+          title="3GP vs MP4: Quality, Compatibility, and Which to Use"
           description="3GP was designed for old mobile phones with limited bandwidth. MP4 supports HD/4K and plays everywhere. Compare both video formats and learn when to convert."
           slug="3gp-vs-mp4"
           datePublished="2026-03-29"

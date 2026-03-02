@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import BlogJsonLd from "@/components/BlogJsonLd";
 
 export const metadata: Metadata = {
-  title: "How to Reduce Audio File Size (5 Methods That Work) | FileToolWorks",
+  title: "How to Reduce Audio File Size (5 Methods That Work)",
   description: "Reduce audio file size by up to 90%. Five practical methods from format conversion to bitrate adjustment, with free tools.",
   alternates: {
     canonical: "/blog/how-to-reduce-audio-file-size",
@@ -14,7 +14,7 @@ export default function BlogPost() {
   return (
     <div className="min-h-screen bg-gray-50">
         <BlogJsonLd
-          title="How to Reduce Audio File Size (5 Methods That Work) | FileToolWorks"
+          title="How to Reduce Audio File Size (5 Methods That Work)"
           description="Reduce audio file size by up to 90%. Five practical methods from format conversion to bitrate adjustment, with free tools."
           slug="how-to-reduce-audio-file-size"
           datePublished="2026-03-01"

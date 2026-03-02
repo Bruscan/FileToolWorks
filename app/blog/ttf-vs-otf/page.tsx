@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import BlogJsonLd from "@/components/BlogJsonLd";
 
 export const metadata: Metadata = {
-  title: "TTF vs OTF: Font Format Differences and Which to Use | FileToolWorks",
+  title: "TTF vs OTF: Font Format Differences and Which to Use",
   description: "TTF uses quadratic curves and is universally compatible. OTF supports advanced typography features in a smaller file. Compare font formats, features, and pick the right one.",
   alternates: {
     canonical: "/blog/ttf-vs-otf",
@@ -14,7 +14,7 @@ export default function BlogPost() {
   return (
     <div className="min-h-screen bg-gray-50">
         <BlogJsonLd
-          title="TTF vs OTF: Font Format Differences and Which to Use | FileToolWorks"
+          title="TTF vs OTF: Font Format Differences and Which to Use"
           description="TTF uses quadratic curves and is universally compatible. OTF supports advanced typography features in a smaller file. Compare font formats, features, and pick the right one."
           slug="ttf-vs-otf"
           datePublished="2026-03-28"

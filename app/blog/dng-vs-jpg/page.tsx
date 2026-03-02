@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import BlogJsonLd from "@/components/BlogJsonLd";
 
 export const metadata: Metadata = {
-  title: "DNG vs JPG: RAW Quality vs Compressed Photos | FileToolWorks",
+  title: "DNG vs JPG: RAW Quality vs Compressed Photos",
   description: "DNG is Adobe's open raw format with full editing flexibility. JPG is compressed and ready to share. Compare quality, file size, editing options, and when to use each.",
   alternates: {
     canonical: "/blog/dng-vs-jpg",
@@ -14,7 +14,7 @@ export default function BlogPost() {
   return (
     <div className="min-h-screen bg-gray-50">
         <BlogJsonLd
-          title="DNG vs JPG: RAW Quality vs Compressed Photos | FileToolWorks"
+          title="DNG vs JPG: RAW Quality vs Compressed Photos"
           description="DNG is Adobe's open raw format with full editing flexibility. JPG is compressed and ready to share. Compare quality, file size, editing options, and when to use each."
           slug="dng-vs-jpg"
           datePublished="2026-04-04"

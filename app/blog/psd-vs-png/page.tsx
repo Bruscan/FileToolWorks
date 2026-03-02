@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import BlogJsonLd from "@/components/BlogJsonLd";
 
 export const metadata: Metadata = {
-  title: "PSD vs PNG: Editing Format vs Distribution Format | FileToolWorks",
+  title: "PSD vs PNG: Editing Format vs Distribution Format",
   description: "PSD is Adobe Photoshop's layered editing format. PNG is a compressed image for sharing and the web. Compare features, file size, transparency, and when to use each.",
   alternates: {
     canonical: "/blog/psd-vs-png",
@@ -14,7 +14,7 @@ export default function BlogPost() {
   return (
     <div className="min-h-screen bg-gray-50">
         <BlogJsonLd
-          title="PSD vs PNG: Editing Format vs Distribution Format | FileToolWorks"
+          title="PSD vs PNG: Editing Format vs Distribution Format"
           description="PSD is Adobe Photoshop's layered editing format. PNG is a compressed image for sharing and the web. Compare features, file size, transparency, and when to use each."
           slug="psd-vs-png"
           datePublished="2026-03-27"

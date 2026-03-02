@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import BlogJsonLd from "@/components/BlogJsonLd";
 
 export const metadata: Metadata = {
-  title: "AVIF vs WebP: Compression, Quality, and Browser Support | FileToolWorks",
+  title: "AVIF vs WebP: Compression, Quality, and Browser Support",
   description: "AVIF compresses 20% smaller than WebP but decodes slower. Compare quality, file size, browser support, and learn which next-gen image format to use.",
   alternates: {
     canonical: "/blog/avif-vs-webp",
@@ -14,7 +14,7 @@ export default function BlogPost() {
   return (
     <div className="min-h-screen bg-gray-50">
         <BlogJsonLd
-          title="AVIF vs WebP: Compression, Quality, and Browser Support | FileToolWorks"
+          title="AVIF vs WebP: Compression, Quality, and Browser Support"
           description="AVIF compresses 20% smaller than WebP but decodes slower. Compare quality, file size, browser support, and learn which next-gen image format to use."
           slug="avif-vs-webp"
           datePublished="2026-03-05"

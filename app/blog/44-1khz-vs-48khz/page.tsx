@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import BlogJsonLd from "@/components/BlogJsonLd";
 
 export const metadata: Metadata = {
-  title: "44.1kHz vs 48kHz: Which Sample Rate Should You Use? | FileToolWorks",
+  title: "44.1kHz vs 48kHz: Which Sample Rate Should You Use?",
   description: "44.1kHz is the CD standard. 48kHz is the video and broadcast standard. Here is why the difference exists and which one to pick for your project.",
   alternates: {
     canonical: "/blog/44-1khz-vs-48khz",
@@ -14,7 +14,7 @@ export default function BlogPost() {
   return (
     <div className="min-h-screen bg-gray-50">
         <BlogJsonLd
-          title="44.1kHz vs 48kHz: Which Sample Rate Should You Use? | FileToolWorks"
+          title="44.1kHz vs 48kHz: Which Sample Rate Should You Use?"
           description="44.1kHz is the CD standard. 48kHz is the video and broadcast standard. Here is why the difference exists and which one to pick for your project."
           slug="44-1khz-vs-48khz"
           datePublished="2026-04-15"

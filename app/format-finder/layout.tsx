@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "File Format Finder - What Format Should I Use? | FileToolWorks",
+  title: "File Format Finder - What Format Should I Use?",
   description:
     "Answer 3 quick questions to find the best file format for your needs. Get recommendations for image, audio, video, and document formats with free conversion tools.",
   alternates: {

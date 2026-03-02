@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import BlogJsonLd from "@/components/BlogJsonLd";
 
 export const metadata: Metadata = {
-  title: "DPI vs PPI – What's the Difference? | FileToolWorks",
+  title: "DPI vs PPI – What's the Difference?",
   description: "Understand the difference between DPI and PPI for better image quality. Simple explanation without the technical jargon.",
   alternates: {
     canonical: "/blog/dpi-vs-ppi",
@@ -14,7 +14,7 @@ export default function BlogPost() {
   return (
     <div className="min-h-screen bg-gray-50">
         <BlogJsonLd
-          title="DPI vs PPI – What's the Difference? | FileToolWorks"
+          title="DPI vs PPI – What's the Difference?"
           description="Understand the difference between DPI and PPI for better image quality. Simple explanation without the technical jargon."
           slug="dpi-vs-ppi"
           datePublished="2026-03-01"

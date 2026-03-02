@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import BlogJsonLd from "@/components/BlogJsonLd";
 
 export const metadata: Metadata = {
-  title: "Best Image Format for Web: JPG, PNG, WebP Compared | FileToolWorks",
+  title: "Best Image Format for Web: JPG, PNG, WebP Compared",
   description: "Pick the right image format for your website. JPG, PNG, and WebP compared by file size, quality, transparency, and browser support.",
   alternates: {
     canonical: "/blog/best-image-format-for-web",
@@ -14,7 +14,7 @@ export default function BlogPost() {
   return (
     <div className="min-h-screen bg-gray-50">
         <BlogJsonLd
-          title="Best Image Format for Web: JPG, PNG, WebP Compared | FileToolWorks"
+          title="Best Image Format for Web: JPG, PNG, WebP Compared"
           description="Pick the right image format for your website. JPG, PNG, and WebP compared by file size, quality, transparency, and browser support."
           slug="best-image-format-for-web"
           datePublished="2026-03-01"
