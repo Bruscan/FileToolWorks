@@ -128,6 +128,9 @@ const blogPosts = [
   'tar-vs-zip',
   'csv-vs-xlsx',
   'ppt-vs-pptx',
+  'odt-vs-docx',
+  'pdf-vs-epub',
+  'xls-vs-xlsx',
 ]
 
 export default function sitemap(): MetadataRoute.Sitemap {

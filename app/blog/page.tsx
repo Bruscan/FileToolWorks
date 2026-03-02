@@ -289,6 +289,18 @@ const generalPosts = [
     slug: "ppt-vs-pptx",
     title: "PPT vs PPTX: File Size, Features, and Compatibility Compared",
   },
+  {
+    slug: "odt-vs-docx",
+    title: "ODT vs DOCX: Which Document Format Should You Use?",
+  },
+  {
+    slug: "pdf-vs-epub",
+    title: "PDF vs EPUB: Which Format for Your Document?",
+  },
+  {
+    slug: "xls-vs-xlsx",
+    title: "XLS vs XLSX: Key Differences Between Excel Formats",
+  },
 ];
 
 const categories = [

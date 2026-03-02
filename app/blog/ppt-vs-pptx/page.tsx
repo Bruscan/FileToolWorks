@@ -63,7 +63,7 @@ export default function BlogPost() {
             Need to share a presentation as a PDF? Our <Link href="/ppt-to-pdf" className="text-blue-600 hover:underline font-semibold">PPT to PDF converter</Link> handles both PPT and PPTX files. PDF ensures your slides look identical on any device.
           </p>
           <p>
-            Related reading: <Link href="/blog/doc-vs-docx" className="text-blue-600 hover:underline">DOC vs DOCX</Link> covers the same format transition for Word documents, and <Link href="/blog/pdf-vs-docx" className="text-blue-600 hover:underline">PDF vs DOCX</Link> compares document formats for sharing.
+            Related reading: <Link href="/blog/doc-vs-docx" className="text-blue-600 hover:underline">DOC vs DOCX</Link> covers the same format transition for Word documents, <Link href="/blog/xls-vs-xlsx" className="text-blue-600 hover:underline">XLS vs XLSX</Link> covers it for Excel, and <Link href="/blog/pdf-vs-docx" className="text-blue-600 hover:underline">PDF vs DOCX</Link> compares document formats for sharing.
           </p>
         </div>
       </article>
