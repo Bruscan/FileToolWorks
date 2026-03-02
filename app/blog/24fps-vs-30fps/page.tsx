@@ -60,7 +60,7 @@ export default function BlogPost() {
           </p>
 
           <p>
-            Need to process video files? Try our <Link href="/video-to-gif" className="text-blue-600 hover:underline font-semibold">video to GIF converter</Link> or <Link href="/compress-video" className="text-blue-600 hover:underline font-semibold">video compressor</Link>. For more frame rate and format comparisons, see <Link href="/blog/30fps-vs-60fps" className="text-blue-600 hover:underline">30fps vs 60fps</Link>, <Link href="/blog/1080i-vs-1080p" className="text-blue-600 hover:underline">1080i vs 1080p</Link>, and <Link href="/blog/h264-vs-h265" className="text-blue-600 hover:underline">H.264 vs H.265</Link>.
+            Need to process video files? Try our <Link href="/video-to-gif" className="text-blue-600 hover:underline font-semibold">video to GIF converter</Link> or <Link href="/compress-video" className="text-blue-600 hover:underline font-semibold">video compressor</Link>. For more frame rate and format comparisons, see <Link href="/blog/30fps-vs-60fps" className="text-blue-600 hover:underline">30fps vs 60fps</Link>, <Link href="/blog/ntsc-vs-pal" className="text-blue-600 hover:underline">NTSC vs PAL</Link>, and <Link href="/blog/1080i-vs-1080p" className="text-blue-600 hover:underline">1080i vs 1080p</Link>.
           </p>
         </div>
       </article>
