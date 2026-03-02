@@ -81,6 +81,10 @@ const audioPosts = [
     slug: "cbr-vs-vbr",
     title: "CBR vs VBR: Constant vs Variable Bitrate Explained",
   },
+  {
+    slug: "flac-vs-mp3",
+    title: "FLAC vs MP3: Quality, File Size, and Compatibility Compared",
+  },
 ];
 
 const imagePosts = [
@@ -171,6 +175,10 @@ const imagePosts = [
   {
     slug: "tiff-vs-jpg",
     title: "TIFF vs JPG: When to Use Each Image Format",
+  },
+  {
+    slug: "eps-vs-svg",
+    title: "EPS vs SVG: Differences, Features, and Which to Use",
   },
 ];
 
@@ -300,6 +308,10 @@ const generalPosts = [
   {
     slug: "xls-vs-xlsx",
     title: "XLS vs XLSX: Key Differences Between Excel Formats",
+  },
+  {
+    slug: "rtf-vs-docx",
+    title: "RTF vs DOCX: Compatibility, Features, and When to Use Each",
   },
 ];
 
