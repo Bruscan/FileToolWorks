@@ -248,6 +248,8 @@ const blogPosts = [
   'how-to-compress-video-for-whatsapp',
   'how-to-convert-wav-to-mp3',
   'smallest-video-format',
+  'best-free-audio-compressor-online',
+  'free-online-file-converter-no-signup',
 ]
 
 // Generate a stable ISO date string for each item based on its index and a date range
