@@ -1,0 +1,300 @@
+# FileToolWorks - Complete Reference
+
+> Free online file conversion and editing tools at https://www.filetoolworks.com. All 40+ tools process files directly in your browser using WebAssembly and Canvas API. No signup required, no file uploads to servers, no watermarks, completely free.
+
+## Why FileToolWorks
+
+- **Privacy**: Files never leave your device. All processing happens client-side in the browser.
+- **No signup**: No account, email, or registration required.
+- **No limits**: No file size limits, no daily usage caps, no watermarks.
+- **Free**: Completely free with no premium tiers.
+- **Fast**: Processing uses WebAssembly (FFmpeg.js) for video/audio and Canvas API for images.
+- **Batch support**: Most tools support processing multiple files at once.
+
+## Image Tools (14 tools)
+
+### Image to PDF
+- URL: https://www.filetoolworks.com/image-to-pdf
+- Accepts: Any image format (JPG, PNG, HEIC, WebP, BMP, GIF, TIFF)
+- Output: PDF document
+- Features: Drag and drop, image reordering, page orientation (portrait/landscape), page size (A4/US Letter/Auto), margin control, image compression
+- Use case: When you need to combine one or more images into a single PDF document
+
+### HEIC to JPG
+- URL: https://www.filetoolworks.com/heic-to-jpg
+- Accepts: HEIC/HEIF files (iPhone photos)
+- Output: JPG images
+- Features: Batch conversion, quality settings
+- Use case: When you receive iPhone photos in HEIC format and need JPG for compatibility
+
+### PNG to JPG
+- URL: https://www.filetoolworks.com/png-to-jpg
+- Accepts: PNG files
+- Output: JPG images
+- Features: Quality settings (Low/Good/High/Best), resize options (Original/75%/50%/25%), batch conversion
+- Use case: When you need smaller file sizes than PNG provides, or need JPG for compatibility
+
+### JPG to PNG
+- URL: https://www.filetoolworks.com/jpg-to-png
+- Accepts: JPG/JPEG files
+- Output: PNG images (lossless)
+- Features: Quality settings, resize options, batch conversion
+- Use case: When you need lossless quality or transparency support
+
+### WebP to JPG
+- URL: https://www.filetoolworks.com/webp-to-jpg
+- Accepts: WebP files
+- Output: JPG images
+- Features: Quality control, batch processing
+- Use case: When you have WebP images that need to be in JPG format for compatibility
+
+### WebP to PNG
+- URL: https://www.filetoolworks.com/webp-to-png
+- Accepts: WebP files
+- Output: PNG images (lossless)
+- Features: Resize options, batch conversion
+- Use case: When you need lossless PNG from WebP source files
+
+### Image Compressor
+- URL: https://www.filetoolworks.com/compress-image
+- Accepts: Any image format
+- Output: Compressed image (JPG, PNG, or WebP)
+- Features: Quality control, format selection, batch processing
+- Use case: When you need to reduce image file size for email, web, or storage
+
+### Image Resizer
+- URL: https://www.filetoolworks.com/resize-image
+- Accepts: Any image format
+- Output: Resized image (JPG, PNG, or WebP)
+- Features: Resize by percentage (75%/50%/25%) or custom pixel dimensions, aspect ratio lock, output format selection, quality settings, batch processing
+- Use case: When you need images at specific dimensions or smaller sizes
+
+### Rotate Image
+- URL: https://www.filetoolworks.com/rotate-image
+- Accepts: Any image format
+- Output: Rotated/flipped image (JPG, PNG, or WebP)
+- Features: Rotation (90 CW/180/90 CCW), flip (horizontal/vertical/both), real-time preview, quality settings, batch processing
+- Use case: When images are sideways or need flipping
+
+### Image to WebP
+- URL: https://www.filetoolworks.com/image-to-webp
+- Accepts: Any image format
+- Output: WebP images
+- Features: Quality settings, resize options, batch conversion
+- Use case: When you need modern WebP format for web use (typically 25-34% smaller than JPG)
+
+### Crop Image
+- URL: https://www.filetoolworks.com/crop-image
+- Accepts: Any image format
+- Output: Cropped image (JPG, PNG, or WebP)
+- Features: Preset aspect ratios (1:1, 4:3, 16:9, Free), custom dimensions with pixel-level control, visual crop preview
+- Use case: When you need to crop an image to a specific aspect ratio or dimensions
+
+### Sharpen Image
+- URL: https://www.filetoolworks.com/sharpen-image
+- Accepts: Any image format
+- Output: Sharpened image (JPG, PNG, or WebP)
+- Features: Three intensity levels (Low/Medium/High), convolution filter processing, batch support
+- Use case: When images look soft or slightly out of focus
+
+### Blur Image
+- URL: https://www.filetoolworks.com/blur-image
+- Accepts: Any image format
+- Output: Blurred image (JPG, PNG, or WebP)
+- Features: Blur intensity slider (0-20px), real-time preview, quality settings
+- Use case: Censoring information, creating background effects, privacy
+
+### Remove Background
+- URL: https://www.filetoolworks.com/remove-background
+- Accepts: Any image format
+- Output: PNG with transparent background
+- Features: AI-powered using machine learning (runs in browser via WASM), before/after preview, batch processing
+- Note: First use downloads ~50MB AI model (cached for future use). Works best with clear subjects.
+- Use case: When you need to remove the background from product photos, portraits, or any image
+
+## PDF Tools (9 tools)
+
+### Compress PDF
+- URL: https://www.filetoolworks.com/compress-pdf
+- Accepts: PDF files
+- Output: Compressed PDF
+- Use case: When PDF files are too large for email or upload limits
+
+### Merge PDF
+- URL: https://www.filetoolworks.com/merge-pdf
+- Accepts: Multiple PDF files
+- Output: Single merged PDF
+- Features: Drag and drop, PDF reordering with numbered indicators, requires minimum 2 PDFs
+- Use case: When you need to combine multiple PDF documents into one
+
+### Split PDF
+- URL: https://www.filetoolworks.com/split-pdf
+- Accepts: PDF files
+- Output: Individual PDF pages or page ranges
+- Use case: When you need to break a PDF into separate files
+
+### PDF to JPG
+- URL: https://www.filetoolworks.com/pdf-to-jpg
+- Accepts: PDF files
+- Output: JPG images (one per page)
+- Use case: When you need PDF pages as images for presentations, social media, or editing
+
+### JPG to PDF
+- URL: https://www.filetoolworks.com/jpg-to-pdf
+- Accepts: JPG/JPEG files
+- Output: PDF document
+- Features: Same as Image to PDF but JPG-only, reordering, page options
+- Use case: When you need to create a PDF from JPG photos
+
+### PDF to Text
+- URL: https://www.filetoolworks.com/pdf-to-text
+- Accepts: PDF files
+- Output: Plain text file (.txt)
+- Features: Extracts selectable text from all pages, shows character count, text preview
+- Note: No OCR - only extracts existing selectable text
+- Use case: When you need to extract text content from a PDF for editing or copying
+
+### Extract PDF Pages
+- URL: https://www.filetoolworks.com/extract-pdf-pages
+- Accepts: PDF files
+- Output: New PDF with selected pages only
+- Features: Visual page selection grid, quick range input (e.g., "1,3,5-7"), select all/deselect all, page counter
+- Use case: When you need specific pages from a large PDF
+
+### HTML to PDF
+- URL: https://www.filetoolworks.com/html-to-pdf
+- Accepts: HTML files or pasted HTML code
+- Output: PDF document
+- Features: Two input modes (upload file or paste code), A4 or US Letter page size, multi-page support
+- Use case: When you need to convert a web page or HTML content to PDF
+
+### Sign PDF
+- URL: https://www.filetoolworks.com/sign-pdf
+- Accepts: PDF files
+- Output: Signed PDF
+- Features: Draw signature on canvas or upload signature image, drag-and-drop positioning on PDF preview, optional name and date fields
+- Use case: When you need to add a signature to a PDF document
+
+## Video Tools (5 tools)
+
+### Compress Video
+- URL: https://www.filetoolworks.com/compress-video
+- Accepts: Any video format
+- Output: Compressed MP4
+- Features: Quality presets (Low/Medium/High via CRF), resolution options (Original/1080p/720p/480p), H.264 codec, shows compression percentage
+- Technology: FFmpeg.js WebAssembly
+- Use case: When video files are too large for sharing, email, or upload
+
+### Video to GIF
+- URL: https://www.filetoolworks.com/video-to-gif
+- Accepts: Any video format
+- Output: Animated GIF
+- Features: FPS options (10/15/24/30), size options (Original/720p/480p/360p), quality levels with palette optimization, start time and duration trimming
+- Technology: FFmpeg.js WebAssembly
+- Use case: When you want to create an animated GIF from a video clip
+
+### Video Trimmer
+- URL: https://www.filetoolworks.com/trim-video
+- Accepts: Any video format
+- Output: Trimmed video (same format)
+- Features: Start/end time inputs (seconds or MM:SS format), codec copy mode (no quality loss), automatic duration detection
+- Technology: FFmpeg.js WebAssembly
+- Use case: When you need to cut a specific segment from a video
+
+### Video to MP4
+- URL: https://www.filetoolworks.com/video-to-mp4
+- Accepts: Any video format (AVI, MOV, MKV, WebM, FLV, etc.)
+- Output: MP4 video
+- Features: Quality options (High/Medium/Low), resolution options, H.264 codec
+- Technology: FFmpeg.js WebAssembly
+- Use case: When you need to convert a video to the most widely compatible format
+
+### Video to WebM
+- URL: https://www.filetoolworks.com/video-to-webm
+- Accepts: Any video format
+- Output: WebM video
+- Features: Quality options, VP9 video codec, Opus audio codec
+- Technology: FFmpeg.js WebAssembly
+- Use case: When you need WebM format for web embedding (smaller than MP4 at similar quality)
+
+## Audio Tools (5 tools)
+
+### Audio Compressor (Most Popular Tool)
+- URL: https://www.filetoolworks.com/compress-audio
+- Accepts: MP3, WAV, AAC, OGG, FLAC
+- Output: Compressed MP3
+- Features: Bitrate options (64kbps/128kbps/192kbps), shows file size before/after with compression percentage, batch processing
+- Technology: FFmpeg.js WebAssembly
+- Use case: When audio files are too large and you need to reduce their size. Especially useful for compressing WAV or FLAC to MP3.
+
+### Extract Audio from Video
+- URL: https://www.filetoolworks.com/extract-audio
+- Accepts: Any video format
+- Output: MP3, WAV, or AAC audio file
+- Features: Output format selection, batch processing
+- Technology: FFmpeg.js WebAssembly
+- Use case: When you need just the audio track from a video file
+
+### Audio Trimmer
+- URL: https://www.filetoolworks.com/trim-audio
+- Accepts: MP3, WAV, AAC, OGG
+- Output: Trimmed audio (same format)
+- Features: Start/end time inputs in seconds, duration display, codec copy (no quality loss)
+- Technology: FFmpeg.js WebAssembly
+- Use case: When you need to cut a specific segment from an audio file
+
+### WAV to MP3
+- URL: https://www.filetoolworks.com/wav-to-mp3
+- Accepts: WAV files
+- Output: MP3 files
+- Features: Bitrate options (128k/192k/320k), typically 80-90% file size reduction
+- Technology: FFmpeg.js WebAssembly with LAME encoder
+- Use case: When you need to convert large WAV files to smaller MP3 format
+
+### MP3 to WAV
+- URL: https://www.filetoolworks.com/mp3-to-wav
+- Accepts: MP3 files
+- Output: WAV files (16-bit PCM, 44.1kHz)
+- Features: CD-quality output, batch processing
+- Note: WAV files are typically 10x larger than MP3
+- Technology: FFmpeg.js WebAssembly
+- Use case: When you need uncompressed audio for editing software or archival
+
+## Document Tools (3 tools)
+
+### Word to PDF
+- URL: https://www.filetoolworks.com/word-to-pdf
+- Accepts: DOC, DOCX files
+- Output: PDF document
+- Features: Client-side conversion using mammoth.js + jsPDF, preserves text and basic formatting
+- Note: Complex layouts, images, and tables may not convert perfectly
+- Use case: When you need to convert a Word document to PDF
+
+### Excel to PDF
+- URL: https://www.filetoolworks.com/excel-to-pdf
+- Accepts: XLS, XLSX files
+- Output: PDF with formatted tables
+- Features: Uses xlsx library + jspdf-autotable for table rendering
+- Use case: When you need to convert Excel spreadsheets to PDF
+
+### PPT to PDF
+- URL: https://www.filetoolworks.com/ppt-to-pdf
+- Accepts: PPT, PPTX files
+- Output: PDF document
+- Use case: When you need to convert PowerPoint presentations to PDF
+
+## Other Tools (2 tools)
+
+### ZIP Files
+- URL: https://www.filetoolworks.com/zip-files
+- Accepts: Any file type
+- Output: ZIP archive
+- Features: Client-side compression using JSZip, file size display, remove files before zipping
+- Use case: When you need to compress multiple files into a single archive
+
+### Unzip Files
+- URL: https://www.filetoolworks.com/unzip-files
+- Accepts: ZIP files
+- Output: Extracted files
+- Features: Shows file list with paths and sizes, individual or bulk download, preserves folder structure
+- Use case: When you need to extract files from a ZIP archive
