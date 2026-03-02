@@ -170,6 +170,13 @@ export default function BlogPost() {
             >
               PNG vs PDF
             </Link>
+            . Curious how PNG compares to next-gen formats? See{" "}
+            <Link
+              href="/blog/avif-vs-png"
+              className="text-blue-600 hover:underline"
+            >
+              AVIF vs PNG
+            </Link>
             .
           </p>
         </div>

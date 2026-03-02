@@ -260,6 +260,10 @@ const imagePosts = [
     slug: "bmp-vs-jpg",
     title: "BMP vs JPG: File Size, Quality, and When to Use Each",
   },
+  {
+    slug: "avif-vs-png",
+    title: "AVIF vs PNG: Compression, Quality, and When to Use Each",
+  },
 ];
 
 const pdfPosts = [
@@ -468,6 +472,14 @@ const generalPosts = [
   {
     slug: "ttf-vs-otf",
     title: "TTF vs OTF: Font Format Differences and Which to Use",
+  },
+  {
+    slug: "woff-vs-ttf",
+    title: "WOFF vs TTF: Font Formats for Web and Desktop Compared",
+  },
+  {
+    slug: "markdown-vs-html",
+    title: "Markdown vs HTML: Syntax, Features, and When to Use Each",
   },
 ];
 

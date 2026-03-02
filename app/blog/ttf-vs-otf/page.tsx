@@ -60,7 +60,7 @@ export default function BlogPost() {
           </p>
 
           <p>
-            Need to convert documents between formats? Try our <Link href="/word-to-pdf" className="text-blue-600 hover:underline font-semibold">Word to PDF</Link> converter or <Link href="/html-to-pdf" className="text-blue-600 hover:underline font-semibold">HTML to PDF</Link> tool. For more format comparisons, see <Link href="/blog/doc-vs-docx" className="text-blue-600 hover:underline">DOC vs DOCX</Link> and <Link href="/blog/eps-vs-svg" className="text-blue-600 hover:underline">EPS vs SVG</Link>.
+            Need to convert documents between formats? Try our <Link href="/word-to-pdf" className="text-blue-600 hover:underline font-semibold">Word to PDF</Link> converter or <Link href="/html-to-pdf" className="text-blue-600 hover:underline font-semibold">HTML to PDF</Link> tool. For more format comparisons, see <Link href="/blog/doc-vs-docx" className="text-blue-600 hover:underline">DOC vs DOCX</Link>, <Link href="/blog/eps-vs-svg" className="text-blue-600 hover:underline">EPS vs SVG</Link>, and <Link href="/blog/woff-vs-ttf" className="text-blue-600 hover:underline">WOFF vs TTF</Link> for the web font equivalent of this comparison.
           </p>
         </div>
       </article>

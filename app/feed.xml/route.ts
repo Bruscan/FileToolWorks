@@ -115,6 +115,9 @@ const blogPosts = [
   { slug: "bmp-vs-jpg", title: "BMP vs JPG: File Size, Quality, and When to Use Each", date: "2026-03-29", description: "BMP stores uncompressed pixel data for perfect quality but huge files. JPG uses lossy compression for much smaller files. Compare both image formats and pick the right one." },
   { slug: "tiff-vs-pdf", title: "TIFF vs PDF: Quality, File Size, and Best Use Cases", date: "2026-03-29", description: "TIFF preserves lossless image quality for printing and scanning. PDF is smaller, searchable, and better for sharing documents. Compare both formats for your needs." },
   { slug: "3gp-vs-mp4", title: "3GP vs MP4: Quality, Compatibility, and Which to Use", date: "2026-03-29", description: "3GP was designed for old mobile phones with limited bandwidth. MP4 supports HD/4K and plays everywhere. Compare both video formats and learn when to convert." },
+  { slug: "avif-vs-png", title: "AVIF vs PNG: Compression, Quality, and When to Use Each", date: "2026-03-30", description: "AVIF compresses photos 10x smaller than PNG with minimal quality loss. PNG is lossless with universal support. Compare file size, features, and pick the right format." },
+  { slug: "woff-vs-ttf", title: "WOFF vs TTF: Font Formats for Web and Desktop Compared", date: "2026-03-30", description: "WOFF is 40-50% smaller than TTF and built for web delivery. TTF is the standard desktop font format. Compare file size, browser support, and when to use each." },
+  { slug: "markdown-vs-html", title: "Markdown vs HTML: Syntax, Features, and When to Use Each", date: "2026-03-30", description: "Markdown is simple and readable for writing content. HTML gives full control over layout and interactivity. Compare syntax, use cases, and pick the right format." },
 ];
 
 function escapeXml(str: string): string {
