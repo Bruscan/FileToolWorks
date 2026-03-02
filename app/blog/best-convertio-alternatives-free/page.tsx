@@ -69,6 +69,10 @@ export default function BlogPost() {
           <p>
             All five are genuinely free to use. The right choice depends on whether you prioritize privacy (browser-based), file size limits (CloudConvert), or format variety (Zamzar).
           </p>
+          <p>
+            For a detailed feature-by-feature breakdown, see our full{" "}
+            <Link href="/vs/convertio" className="text-blue-600 hover:underline">FileToolWorks vs Convertio comparison</Link>.
+          </p>
         </div>
       </article>
     </div>
