@@ -13,6 +13,11 @@ export const metadata: Metadata = {
       "Sign PDF documents online for free. Draw or upload your signature, position it anywhere on the PDF, and download instantly.",
     type: "website",
   },
+  twitter: {
+    card: "summary_large_image",
+    title: "Sign PDF",
+    description: "Add signature to PDF documents. Free, private, no upload.",
+  },
   alternates: {
     canonical: "/sign-pdf",
   },

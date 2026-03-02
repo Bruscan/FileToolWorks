@@ -7,6 +7,16 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "/split-pdf",
   },
+  openGraph: {
+    title: "Split PDF",
+    description: "Split PDF into separate pages or ranges. Free online tool.",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Split PDF",
+    description: "Split PDF into separate pages or ranges. Free online tool.",
+  },
 };
 
 const faqs = [

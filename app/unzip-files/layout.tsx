@@ -13,6 +13,11 @@ export const metadata: Metadata = {
       "Extract files from ZIP archives instantly. Free, secure, and no file size limits.",
     type: "website",
   },
+  twitter: {
+    card: "summary_large_image",
+    title: "Unzip Files",
+    description: "Extract files from ZIP archives. Free, no signup.",
+  },
   alternates: {
     canonical: "/unzip-files",
   },

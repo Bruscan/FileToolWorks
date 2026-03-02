@@ -7,6 +7,16 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "/zip-files",
   },
+  openGraph: {
+    title: "ZIP Files",
+    description: "Compress files into a ZIP archive. Free, no signup.",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "ZIP Files",
+    description: "Compress files into a ZIP archive. Free, no signup.",
+  },
 };
 
 const faqs = [

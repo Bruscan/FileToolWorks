@@ -12,6 +12,11 @@ export const metadata: Metadata = {
     description: "Compress audio files instantly. Free, secure, no signup.",
     type: "website",
   },
+  twitter: {
+    card: "summary_large_image",
+    title: "Audio Compressor",
+    description: "Reduce audio file size and bitrate. Free, no signup.",
+  },
 };
 
 const faqs = [

@@ -7,6 +7,16 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "/sharpen-image",
   },
+  openGraph: {
+    title: "Sharpen Image",
+    description: "Sharpen and enhance image details. Free online tool.",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Sharpen Image",
+    description: "Sharpen and enhance image details. Free online tool.",
+  },
 };
 
 const faqs = [

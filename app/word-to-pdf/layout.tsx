@@ -14,6 +14,11 @@ export const metadata: Metadata = {
     type: "website",
     url: "/word-to-pdf",
   },
+  twitter: {
+    card: "summary_large_image",
+    title: "Word to PDF",
+    description: "Convert Word documents to PDF format. Free.",
+  },
   alternates: {
     canonical: "/word-to-pdf",
   },

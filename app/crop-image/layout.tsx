@@ -7,6 +7,16 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "/crop-image",
   },
+  openGraph: {
+    title: "Crop Image",
+    description: "Crop images to preset ratios or custom dimensions. Free.",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Crop Image",
+    description: "Crop images to preset ratios or custom dimensions. Free.",
+  },
 };
 
 const faqs = [

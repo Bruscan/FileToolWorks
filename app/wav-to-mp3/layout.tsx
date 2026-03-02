@@ -26,6 +26,11 @@ export const metadata: Metadata = {
     url: "/wav-to-mp3",
     type: "website",
   },
+  twitter: {
+    card: "summary_large_image",
+    title: "WAV to MP3",
+    description: "Convert WAV audio to MP3 format. Free.",
+  },
 };
 
 const faqs = [

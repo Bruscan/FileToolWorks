@@ -21,6 +21,11 @@ export const metadata: Metadata = {
     description: "Reduce video file size while maintaining quality. Free, fast, and secure video compression in your browser.",
     type: "website",
   },
+  twitter: {
+    card: "summary_large_image",
+    title: "Compress Video",
+    description: "Reduce video file size for easier sharing. Free.",
+  },
   alternates: {
     canonical: "/compress-video",
   },
