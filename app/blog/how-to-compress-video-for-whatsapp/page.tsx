@@ -88,12 +88,19 @@ export default function BlogPost() {
           </p>
 
           <p>
-            <strong>Ready to compress?</strong>{" "}
+            <strong>Ready to compress?</strong> Use our{" "}
+            <Link
+              href="/compress-video-for-whatsapp"
+              className="text-blue-600 hover:underline font-semibold"
+            >
+              WhatsApp video compressor
+            </Link>{" "}
+            with step-by-step instructions and size estimates, or jump straight to the{" "}
             <Link
               href="/compress-video"
               className="text-blue-600 hover:underline font-semibold"
             >
-              Compress your video for WhatsApp now
+              video compressor tool
             </Link>
           </p>
         </div>
