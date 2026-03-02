@@ -166,6 +166,9 @@ const blogPosts = [
   { slug: "interlaced-vs-progressive", title: "Interlaced vs Progressive Scan: What Is the Difference?", date: "2026-04-15", description: "Interlaced video draws odd and even lines in alternating fields. Progressive video draws every line in sequence. Here is when each method matters." },
   { slug: "44-1khz-vs-48khz", title: "44.1kHz vs 48kHz: Which Sample Rate Should You Use?", date: "2026-04-15", description: "44.1kHz is the CD standard. 48kHz is the video and broadcast standard. Here is why the difference exists and which one to pick for your project." },
   { slug: "ac3-vs-aac", title: "AC3 vs AAC: Dolby Digital or Advanced Audio Coding?", date: "2026-04-15", description: "AC3 (Dolby Digital) is built for surround sound in DVDs and Blu-rays. AAC is the modern codec for streaming and mobile. Here is how they compare." },
+  { slug: "cfr-vs-vfr", title: "CFR vs VFR: Constant vs Variable Frame Rate Explained", date: "2026-04-16", description: "CFR uses a fixed frame rate throughout, while VFR changes frame rate dynamically. Learn the differences, compatibility issues, and when to use each." },
+  { slug: "16-bit-vs-24-bit-audio", title: "16-Bit vs 24-Bit Audio: Does Bit Depth Matter?", date: "2026-04-16", description: "16-bit audio is CD quality with 96dB dynamic range. 24-bit gives 144dB for recording and mixing. Here is when each bit depth actually matters." },
+  { slug: "zstd-vs-gzip", title: "Zstd vs Gzip: Compression Speed, Ratio, and Use Cases", date: "2026-04-16", description: "Zstandard compresses and decompresses faster than Gzip at similar ratios. Compare speed, compression level, and when to use each algorithm." },
 ];
 
 function escapeXml(str: string): string {
