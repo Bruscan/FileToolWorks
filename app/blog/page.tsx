@@ -109,6 +109,18 @@ const audioPosts = [
     slug: "aac-vs-flac",
     title: "AAC vs FLAC: Lossy Convenience vs Lossless Quality",
   },
+  {
+    slug: "mp3-vs-mp4",
+    title: "MP3 vs MP4: Key Differences Between Audio and Multimedia Formats",
+  },
+  {
+    slug: "aiff-vs-mp3",
+    title: "AIFF vs MP3: Quality, File Size, and When to Use Each",
+  },
+  {
+    slug: "wma-vs-aac",
+    title: "WMA vs AAC: Audio Quality, File Size, and Compatibility Compared",
+  },
 ];
 
 const imagePosts = [

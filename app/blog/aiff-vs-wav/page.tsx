@@ -65,7 +65,7 @@ export default function BlogPost() {
             If you need to convert audio formats or reduce file sizes, our <Link href="/compress-audio" className="text-blue-600 hover:underline font-semibold">audio compressor</Link> handles both AIFF and WAV input. The <Link href="/wav-to-mp3" className="text-blue-600 hover:underline font-semibold">WAV to MP3 converter</Link> is useful when you need smaller files for sharing.
           </p>
           <p>
-            Related reading: <Link href="/blog/mp3-vs-wav" className="text-blue-600 hover:underline">MP3 vs WAV</Link> covers the lossy vs lossless tradeoff, <Link href="/blog/flac-vs-alac" className="text-blue-600 hover:underline">FLAC vs ALAC</Link> compares lossless compressed alternatives, and <Link href="/blog/audio-bitrate-explained" className="text-blue-600 hover:underline">audio bitrate explained</Link> covers how compression settings affect quality.
+            Related reading: <Link href="/blog/aiff-vs-mp3" className="text-blue-600 hover:underline">AIFF vs MP3</Link> covers the uncompressed vs compressed tradeoff, <Link href="/blog/flac-vs-alac" className="text-blue-600 hover:underline">FLAC vs ALAC</Link> compares lossless compressed alternatives, and <Link href="/blog/audio-bitrate-explained" className="text-blue-600 hover:underline">audio bitrate explained</Link> covers how compression settings affect quality.
           </p>
         </div>
       </article>

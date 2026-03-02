@@ -60,7 +60,7 @@ export default function BlogPost() {
           </p>
 
           <p>
-            Need to extract audio from video? Our <Link href="/extract-audio" className="text-blue-600 hover:underline font-semibold">audio extractor</Link> pulls audio tracks from any video file. For audio format decisions, see <Link href="/blog/m4a-vs-mp3" className="text-blue-600 hover:underline">M4A vs MP3</Link>, <Link href="/blog/aac-vs-mp3" className="text-blue-600 hover:underline">AAC vs MP3</Link>, and <Link href="/blog/wav-vs-aac" className="text-blue-600 hover:underline">WAV vs AAC</Link>.
+            Need to extract audio from video? Our <Link href="/extract-audio" className="text-blue-600 hover:underline font-semibold">audio extractor</Link> pulls audio tracks from any video file. For audio format decisions, see <Link href="/blog/m4a-vs-mp3" className="text-blue-600 hover:underline">M4A vs MP3</Link>, <Link href="/blog/mp3-vs-mp4" className="text-blue-600 hover:underline">MP3 vs MP4</Link>, and <Link href="/blog/wav-vs-aac" className="text-blue-600 hover:underline">WAV vs AAC</Link>.
           </p>
         </div>
       </article>
