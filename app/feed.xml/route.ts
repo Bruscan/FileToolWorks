@@ -103,6 +103,9 @@ const blogPosts = [
   { slug: "mp3-vs-mp4", title: "MP3 vs MP4: Key Differences Between Audio and Multimedia Formats", date: "2026-03-25", description: "MP3 is an audio-only format. MP4 is a multimedia container for video, audio, and subtitles. Compare file size, quality, compatibility, and use cases." },
   { slug: "aiff-vs-mp3", title: "AIFF vs MP3: Quality, File Size, and When to Use Each", date: "2026-03-25", description: "AIFF is uncompressed with full audio quality. MP3 is 10x smaller with lossy compression. Compare sound quality, file size, and compatibility." },
   { slug: "wma-vs-aac", title: "WMA vs AAC: Audio Quality, File Size, and Compatibility Compared", date: "2026-03-25", description: "AAC sounds better than WMA at the same bitrate and works on more devices. WMA is a legacy Windows format with shrinking support. Full comparison." },
+  { slug: "midi-vs-mp3", title: "MIDI vs MP3: Instructions vs Recorded Audio Explained", date: "2026-03-26", description: "MIDI stores musical instructions, not actual sound. MP3 stores compressed recorded audio. Compare file size, quality, compatibility, and when to use each format." },
+  { slug: "mp4-vs-ts", title: "MP4 vs TS: Container Formats for Streaming and Storage", date: "2026-03-26", description: "MP4 is the standard container for video downloads and playback. TS (MPEG Transport Stream) is built for broadcasting and live streaming. Compare features and use cases." },
+  { slug: "pdf-vs-html", title: "PDF vs HTML: Fixed Layout vs Flexible Web Content", date: "2026-03-26", description: "PDF preserves exact layout for print and legal documents. HTML adapts to any screen size for web content. Compare formatting, accessibility, and when to use each." },
 ];
 
 function escapeXml(str: string): string {

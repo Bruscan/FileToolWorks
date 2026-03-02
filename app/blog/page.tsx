@@ -121,6 +121,10 @@ const audioPosts = [
     slug: "wma-vs-aac",
     title: "WMA vs AAC: Audio Quality, File Size, and Compatibility Compared",
   },
+  {
+    slug: "midi-vs-mp3",
+    title: "MIDI vs MP3: Instructions vs Recorded Audio Explained",
+  },
 ];
 
 const imagePosts = [
@@ -267,6 +271,10 @@ const pdfPosts = [
     slug: "pdf-vs-docx",
     title: "PDF vs DOCX: Differences and When to Use Each",
   },
+  {
+    slug: "pdf-vs-html",
+    title: "PDF vs HTML: Fixed Layout vs Flexible Web Content",
+  },
 ];
 
 const videoPosts = [
@@ -357,6 +365,10 @@ const videoPosts = [
   {
     slug: "h264-vs-vp9",
     title: "H.264 vs VP9: Codec Comparison for Streaming and Video",
+  },
+  {
+    slug: "mp4-vs-ts",
+    title: "MP4 vs TS: Container Formats for Streaming and Storage",
   },
 ];
 
