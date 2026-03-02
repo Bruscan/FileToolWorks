@@ -21,6 +21,11 @@ export const metadata: Metadata = {
       "Convert Excel spreadsheets to PDF instantly. Free, fast, and secure.",
     type: "website",
   },
+  twitter: {
+    card: "summary_large_image",
+    title: "Excel to PDF",
+    description: "Convert Excel spreadsheets to PDF format. Free.",
+  },
   alternates: {
     canonical: "/excel-to-pdf",
   },

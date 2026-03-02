@@ -7,6 +7,16 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "/video-to-gif",
   },
+  openGraph: {
+    title: "Video to GIF",
+    description: "Convert video clips to animated GIFs. Free.",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Video to GIF",
+    description: "Convert video clips to animated GIFs. Free.",
+  },
 };
 
 const faqs = [

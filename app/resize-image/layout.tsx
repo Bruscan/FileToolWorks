@@ -7,6 +7,16 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "/resize-image",
   },
+  openGraph: {
+    title: "Image Resizer",
+    description: "Resize images to specific dimensions. Free, no signup.",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Image Resizer",
+    description: "Resize images to specific dimensions. Free, no signup.",
+  },
 };
 
 const faqs = [

@@ -12,6 +12,11 @@ export const metadata: Metadata = {
     description: "Extract audio from video files instantly. Free, secure, no signup.",
     type: "website",
   },
+  twitter: {
+    card: "summary_large_image",
+    title: "Extract Audio",
+    description: "Extract audio from video files as MP3, WAV, or AAC. Free.",
+  },
 };
 
 const faqs = [

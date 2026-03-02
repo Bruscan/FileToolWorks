@@ -27,6 +27,11 @@ export const metadata: Metadata = {
     locale: "en_US",
     type: "website",
   },
+  twitter: {
+    card: "summary_large_image",
+    title: "Image to HEIC",
+    description: "Convert images to HEIC format.",
+  },
 };
 
 const faqs = [

@@ -12,6 +12,11 @@ export const metadata: Metadata = {
     description: "Convert images to PDF instantly. Free, secure, no signup.",
     type: "website",
   },
+  twitter: {
+    card: "summary_large_image",
+    title: "Image to PDF Converter",
+    description: "Convert JPG, PNG, HEIC to PDF instantly. Free, no signup.",
+  },
 };
 
 const faqs = [

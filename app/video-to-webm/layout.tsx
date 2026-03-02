@@ -12,6 +12,11 @@ export const metadata: Metadata = {
     description: "Convert videos to WebM format for web use. Free online video converter supporting all video formats.",
     type: "website",
   },
+  twitter: {
+    card: "summary_large_image",
+    title: "Video to WebM",
+    description: "Convert videos to WebM format for web. Free.",
+  },
 };
 
 const faqs = [

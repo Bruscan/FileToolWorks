@@ -27,6 +27,11 @@ export const metadata: Metadata = {
     type: "website",
     url: "/blur-image",
   },
+  twitter: {
+    card: "summary_large_image",
+    title: "Blur Image",
+    description: "Apply blur effect to images. Free online tool.",
+  },
 };
 
 const faqs = [

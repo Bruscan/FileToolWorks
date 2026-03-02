@@ -7,6 +7,16 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "/webp-to-jpg",
   },
+  openGraph: {
+    title: "WebP to JPG Converter",
+    description: "Convert WebP images to JPG format. Free, no signup.",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "WebP to JPG Converter",
+    description: "Convert WebP images to JPG format. Free, no signup.",
+  },
 };
 
 const faqs = [
