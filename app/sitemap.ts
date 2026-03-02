@@ -233,6 +233,9 @@ const blogPosts = [
   'fat32-vs-exfat',
   'fat32-vs-ntfs',
   'ext4-vs-ntfs',
+  'h265-vs-h266',
+  'vp8-vs-vp9',
+  'dsd-vs-pcm',
 ]
 
 export default function sitemap(): MetadataRoute.Sitemap {
