@@ -145,6 +145,9 @@ const blogPosts = [
   { slug: "flac-vs-opus", title: "FLAC vs Opus: Lossless vs Lossy Audio Quality Compared", date: "2026-04-08", description: "FLAC preserves perfect audio quality with lossless compression. Opus delivers near-transparent quality at much smaller file sizes. Compare formats, use cases, and compatibility." },
   { slug: "latex-vs-word", title: "LaTeX vs Word: Which Is Better for Documents?", date: "2026-04-08", description: "LaTeX handles math, citations, and large documents with precision. Word is faster to learn and better for collaboration. Compare features, use cases, and when each makes sense." },
   { slug: "svg-vs-webp", title: "SVG vs WebP: Vector vs Raster for Web Images", date: "2026-04-08", description: "SVG is a vector format that scales infinitely for logos and icons. WebP is a raster format with excellent compression for photos. Compare features, performance, and when to use each." },
+  { slug: "stereo-vs-mono", title: "Stereo vs Mono: Differences in Sound, File Size, and Use Cases", date: "2026-04-09", description: "Stereo uses two audio channels for spatial sound. Mono uses one channel for consistent playback. Compare quality, file size, and when each makes sense." },
+  { slug: "4k-vs-1080p", title: "4K vs 1080p: Resolution, File Size, and Quality Differences", date: "2026-04-09", description: "4K has four times the pixels of 1080p for sharper video, but files are 4x larger. Compare resolution, file size, hardware needs, and when each makes sense." },
+  { slug: "vector-vs-raster", title: "Vector vs Raster: Key Differences Between Image Types", date: "2026-04-09", description: "Vector images use math to scale infinitely without quality loss. Raster images use pixels and lose clarity when enlarged. Compare formats, use cases, and file sizes." },
 ];
 
 function escapeXml(str: string): string {

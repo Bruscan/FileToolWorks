@@ -129,6 +129,10 @@ const audioPosts = [
     slug: "flac-vs-opus",
     title: "FLAC vs Opus: Lossless vs Lossy Audio Quality Compared",
   },
+  {
+    slug: "stereo-vs-mono",
+    title: "Stereo vs Mono: Differences in Sound, File Size, and Use Cases",
+  },
 ];
 
 const imagePosts = [
@@ -308,6 +312,10 @@ const imagePosts = [
     slug: "svg-vs-webp",
     title: "SVG vs WebP: Vector vs Raster for Web Images",
   },
+  {
+    slug: "vector-vs-raster",
+    title: "Vector vs Raster: Key Differences Between Image Types",
+  },
 ];
 
 const pdfPosts = [
@@ -465,6 +473,10 @@ const videoPosts = [
   {
     slug: "h264-vs-av1",
     title: "H.264 vs AV1: Codec Comparison for Streaming and Video",
+  },
+  {
+    slug: "4k-vs-1080p",
+    title: "4K vs 1080p: Resolution, File Size, and Quality Differences",
   },
 ];
 
