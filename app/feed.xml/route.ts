@@ -82,6 +82,9 @@ const blogPosts = [
   { slug: "vp9-vs-h265", title: "VP9 vs H.265 (HEVC): Quality, Speed, and Licensing Compared", date: "2026-03-18", description: "VP9 is royalty-free with strong browser support. H.265 compresses slightly better with wider hardware decoding. Compare quality, encoding speed, and licensing." },
   { slug: "jpeg-xl-vs-avif", title: "JPEG XL vs AVIF: Compression, Quality, and Browser Support", date: "2026-03-18", description: "JPEG XL beats AVIF at high quality and handles huge images. AVIF has full browser support and wins at low bitrates. Compare both next-gen image formats." },
   { slug: "aac-vs-ogg", title: "AAC vs OGG Vorbis: Quality, Compatibility, and File Size", date: "2026-03-18", description: "AAC sounds better at low bitrates and works on Apple devices. OGG Vorbis is open-source with higher max bitrate. Compare quality, size, and device support." },
+  { slug: "apng-vs-gif", title: "APNG vs GIF: Color Depth, Transparency, and Animation Compared", date: "2026-03-19", description: "APNG supports 16 million colors and alpha transparency while GIF is limited to 256 colors. Compare file size, browser support, and animation quality." },
+  { slug: "prores-vs-h264", title: "ProRes vs H.264: Quality, File Size, and When to Use Each", date: "2026-03-19", description: "ProRes is an editing codec with huge files and maximum quality. H.264 compresses aggressively for delivery. Compare file size, color depth, and workflows." },
+  { slug: "m4a-vs-mp4", title: "M4A vs MP4: Same Container, Different Contents Explained", date: "2026-03-19", description: "M4A and MP4 both use the MPEG-4 container. M4A holds audio only (AAC or ALAC), while MP4 includes video. Compare compatibility, quality, and use cases." },
 ];
 
 function escapeXml(str: string): string {

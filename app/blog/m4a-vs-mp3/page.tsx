@@ -67,7 +67,7 @@ export default function BlogPost() {
           </p>
 
           <p>
-            Related comparisons: <Link href="/blog/aac-vs-mp3" className="text-blue-600 hover:underline">AAC vs MP3</Link>, <Link href="/blog/ogg-vs-mp3" className="text-blue-600 hover:underline">OGG vs MP3</Link>, and <Link href="/blog/wav-vs-flac" className="text-blue-600 hover:underline">WAV vs FLAC</Link>.
+            Related comparisons: <Link href="/blog/m4a-vs-mp4" className="text-blue-600 hover:underline">M4A vs MP4</Link>, <Link href="/blog/aac-vs-mp3" className="text-blue-600 hover:underline">AAC vs MP3</Link>, <Link href="/blog/ogg-vs-mp3" className="text-blue-600 hover:underline">OGG vs MP3</Link>, and <Link href="/blog/wav-vs-flac" className="text-blue-600 hover:underline">WAV vs FLAC</Link>.
           </p>
         </div>
       </article>

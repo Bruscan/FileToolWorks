@@ -140,6 +140,9 @@ const blogPosts = [
   'vp9-vs-h265',
   'jpeg-xl-vs-avif',
   'aac-vs-ogg',
+  'apng-vs-gif',
+  'prores-vs-h264',
+  'm4a-vs-mp4',
 ]
 
 export default function sitemap(): MetadataRoute.Sitemap {
