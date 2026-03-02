@@ -60,7 +60,7 @@ export default function BlogPost() {
           </p>
 
           <p>
-            Need to compress files for sharing? Our <Link href="/zip-files" className="text-blue-600 hover:underline font-semibold">ZIP file creator</Link> works directly in your browser. For more compression format comparisons, see <Link href="/blog/gzip-vs-zip" className="text-blue-600 hover:underline">GZIP vs ZIP</Link>, <Link href="/blog/tar-vs-zip" className="text-blue-600 hover:underline">TAR vs ZIP</Link>, <Link href="/blog/7z-vs-zip" className="text-blue-600 hover:underline">7z vs ZIP</Link>, and <Link href="/blog/zip-vs-rar" className="text-blue-600 hover:underline">ZIP vs RAR</Link>.
+            Need to compress files for sharing? Our <Link href="/zip-files" className="text-blue-600 hover:underline font-semibold">ZIP file creator</Link> works directly in your browser. For more compression format comparisons, see <Link href="/blog/zstd-vs-gzip" className="text-blue-600 hover:underline">Zstd vs Gzip</Link>, <Link href="/blog/gzip-vs-zip" className="text-blue-600 hover:underline">GZIP vs ZIP</Link>, <Link href="/blog/tar-vs-zip" className="text-blue-600 hover:underline">TAR vs ZIP</Link>, and <Link href="/blog/7z-vs-zip" className="text-blue-600 hover:underline">7z vs ZIP</Link>.
           </p>
         </div>
       </article>
