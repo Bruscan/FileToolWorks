@@ -60,7 +60,7 @@ export default function BlogPost() {
           </p>
 
           <p>
-            Need to work with audio files? Try our <Link href="/compress-audio" className="text-blue-600 hover:underline font-semibold">audio compressor</Link> or <Link href="/extract-audio" className="text-blue-600 hover:underline font-semibold">extract audio from video</Link> tool. For more codec comparisons, see <Link href="/blog/aac-vs-mp3" className="text-blue-600 hover:underline">AAC vs MP3</Link>, <Link href="/blog/aac-vs-flac" className="text-blue-600 hover:underline">AAC vs FLAC</Link>, and <Link href="/blog/opus-vs-aac" className="text-blue-600 hover:underline">Opus vs AAC</Link>.
+            Need to work with audio files? Try our <Link href="/compress-audio" className="text-blue-600 hover:underline font-semibold">audio compressor</Link> or <Link href="/extract-audio" className="text-blue-600 hover:underline font-semibold">extract audio from video</Link> tool. For more codec comparisons, see <Link href="/blog/dolby-digital-vs-dts" className="text-blue-600 hover:underline">Dolby Digital vs DTS</Link>, <Link href="/blog/aac-vs-mp3" className="text-blue-600 hover:underline">AAC vs MP3</Link>, and <Link href="/blog/pcm-vs-bitstream" className="text-blue-600 hover:underline">PCM vs Bitstream</Link>.
           </p>
         </div>
       </article>

@@ -169,6 +169,9 @@ const blogPosts = [
   { slug: "cfr-vs-vfr", title: "CFR vs VFR: Constant vs Variable Frame Rate Explained", date: "2026-04-16", description: "CFR uses a fixed frame rate throughout, while VFR changes frame rate dynamically. Learn the differences, compatibility issues, and when to use each." },
   { slug: "16-bit-vs-24-bit-audio", title: "16-Bit vs 24-Bit Audio: Does Bit Depth Matter?", date: "2026-04-16", description: "16-bit audio is CD quality with 96dB dynamic range. 24-bit gives 144dB for recording and mixing. Here is when each bit depth actually matters." },
   { slug: "zstd-vs-gzip", title: "Zstd vs Gzip: Compression Speed, Ratio, and Use Cases", date: "2026-04-16", description: "Zstandard compresses and decompresses faster than Gzip at similar ratios. Compare speed, compression level, and when to use each algorithm." },
+  { slug: "exfat-vs-ntfs", title: "exFAT vs NTFS: Which File System Should You Use?", date: "2026-04-17", description: "exFAT is best for external drives shared across Windows and Mac. NTFS is better for internal Windows drives with its journaling and permissions support." },
+  { slug: "dolby-digital-vs-dts", title: "Dolby Digital vs DTS: Audio Format Differences Explained", date: "2026-04-17", description: "DTS uses higher bitrates than Dolby Digital for potentially better audio quality. Compare surround sound formats, compatibility, and streaming support." },
+  { slug: "pcm-vs-bitstream", title: "PCM vs Bitstream: Which Audio Output Should You Use?", date: "2026-04-17", description: "PCM decodes audio at the source device while bitstream sends compressed audio to your receiver for decoding. Learn when to use each setting." },
 ];
 
 function escapeXml(str: string): string {
