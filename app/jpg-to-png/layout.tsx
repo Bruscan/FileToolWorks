@@ -7,6 +7,16 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "/jpg-to-png",
   },
+  openGraph: {
+    title: "JPG to PNG Converter",
+    description: "Convert JPG images to PNG format with transparency.",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "JPG to PNG Converter",
+    description: "Convert JPG images to PNG format with transparency.",
+  },
 };
 
 const faqs = [

@@ -12,6 +12,11 @@ export const metadata: Metadata = {
     description: "Convert PDF to Word DOCX instantly. Free, secure, no signup.",
     type: "website",
   },
+  twitter: {
+    card: "summary_large_image",
+    title: "PDF to Word",
+    description: "Convert PDF files to Word DOCX format. Free.",
+  },
 };
 
 const faqs = [

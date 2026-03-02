@@ -7,6 +7,16 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "/compress-image",
   },
+  openGraph: {
+    title: "Image Compressor",
+    description: "Reduce image file size without losing quality. Free.",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Image Compressor",
+    description: "Reduce image file size without losing quality. Free.",
+  },
 };
 
 const faqs = [

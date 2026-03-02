@@ -7,6 +7,16 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "/heic-to-jpg",
   },
+  openGraph: {
+    title: "HEIC to JPG Converter",
+    description: "Convert iPhone HEIC photos to JPG format. Free, no signup.",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "HEIC to JPG Converter",
+    description: "Convert iPhone HEIC photos to JPG format. Free, no signup.",
+  },
 };
 
 const faqs = [

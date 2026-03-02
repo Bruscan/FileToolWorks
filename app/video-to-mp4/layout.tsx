@@ -22,6 +22,11 @@ export const metadata: Metadata = {
     description: "Convert any video format to MP4 online for free. Fast, secure, and works in your browser.",
     type: "website",
   },
+  twitter: {
+    card: "summary_large_image",
+    title: "Video to MP4",
+    description: "Convert any video format to MP4. Free.",
+  },
   alternates: {
     canonical: "/video-to-mp4",
   },

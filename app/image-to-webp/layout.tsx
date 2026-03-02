@@ -7,6 +7,16 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "/image-to-webp",
   },
+  openGraph: {
+    title: "Image to WebP",
+    description: "Convert images to WebP format for smaller file sizes.",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Image to WebP",
+    description: "Convert images to WebP format for smaller file sizes.",
+  },
 };
 
 const faqs = [

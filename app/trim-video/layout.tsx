@@ -7,6 +7,16 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "/trim-video",
   },
+  openGraph: {
+    title: "Video Trimmer",
+    description: "Cut and trim video clips online. Free, no upload.",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Video Trimmer",
+    description: "Cut and trim video clips online. Free, no upload.",
+  },
 };
 
 const faqs = [

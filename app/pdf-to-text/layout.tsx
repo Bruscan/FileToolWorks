@@ -21,6 +21,11 @@ export const metadata: Metadata = {
       "Extract text from PDF files instantly. Free online tool with no upload required.",
     type: "website",
   },
+  twitter: {
+    card: "summary_large_image",
+    title: "PDF to Text",
+    description: "Extract text from PDF files instantly. Free.",
+  },
   alternates: {
     canonical: "/pdf-to-text",
   },
