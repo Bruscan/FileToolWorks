@@ -352,6 +352,10 @@ const imagePosts = [
     slug: "nef-vs-jpg",
     title: "NEF vs JPG: Nikon RAW vs JPEG for Photography",
   },
+  {
+    slug: "jpeg-2000-vs-jpeg",
+    title: "JPEG 2000 vs JPEG: Quality, Compression, and Compatibility",
+  },
 ];
 
 const pdfPosts = [
@@ -732,6 +736,14 @@ const generalPosts = [
   {
     slug: "ext4-vs-xfs",
     title: "ext4 vs XFS: Which Linux File System Should You Use?",
+  },
+  {
+    slug: "btrfs-vs-ext4",
+    title: "Btrfs vs ext4: Which Linux File System Should You Choose?",
+  },
+  {
+    slug: "gzip-vs-brotli",
+    title: "Gzip vs Brotli: Compression Ratio, Speed, and Web Performance",
   },
 ];
 
