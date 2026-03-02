@@ -60,7 +60,7 @@ export default function BlogPost() {
           </p>
 
           <p>
-            Want to try a modern format? Our <Link href="/image-to-webp" className="text-blue-600 hover:underline font-semibold">image to WebP converter</Link> outputs another next-gen format with even broader browser support. See our <Link href="/blog/avif-vs-webp" className="text-blue-600 hover:underline">AVIF vs WebP</Link> comparison for how those two stack up, or read <Link href="/blog/best-image-format-for-web" className="text-blue-600 hover:underline">best image format for web</Link> for a full overview. You can also compare the legacy formats in our <Link href="/blog/png-vs-jpg" className="text-blue-600 hover:underline">PNG vs JPG</Link> guide.
+            Want to try a modern format? Our <Link href="/image-to-webp" className="text-blue-600 hover:underline font-semibold">image to WebP converter</Link> outputs another next-gen format with even broader browser support. See our <Link href="/blog/avif-vs-webp" className="text-blue-600 hover:underline">AVIF vs WebP</Link> comparison for how those two stack up, or read <Link href="/blog/best-image-format-for-web" className="text-blue-600 hover:underline">best image format for web</Link> for a full overview. You can also compare the legacy formats in our <Link href="/blog/png-vs-jpg" className="text-blue-600 hover:underline">PNG vs JPG</Link> guide or see how JPEG holds up against its older successor in our <Link href="/blog/jpeg-2000-vs-jpeg" className="text-blue-600 hover:underline">JPEG 2000 vs JPEG</Link> comparison.
           </p>
         </div>
       </article>
