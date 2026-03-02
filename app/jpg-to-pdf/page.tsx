@@ -2,6 +2,7 @@
 
 import { useState, useCallback } from "react";
 import { Upload, X, ArrowUp, ArrowDown, Download, ChevronDown, Star, RotateCcw } from "lucide-react";
+import Link from "next/link";
 import RelatedTools from "@/components/RelatedTools";
 import type { Metadata } from "next";
 
@@ -185,7 +186,7 @@ export default function JpgToPDF() {
             Convert JPG and JPEG images to PDF instantly. Free, fast, and secure.
           </p>
           <p className="text-gray-600 mb-4">
-            Upload your JPG files, arrange them in any order, and download as a single PDF file. All processing happens in your browser for complete privacy. No file size limits, no signup required.
+            Upload your JPG files, arrange them in any order, and download as a single PDF file. For other image formats like PNG, HEIC, or WebP, use our <Link href="/image-to-pdf" className="text-blue-600 hover:underline">Image to PDF</Link> converter. All processing happens in your browser for complete privacy. No file size limits, no signup required.
           </p>
           <div className="flex items-center gap-2 mt-4">
             <div className="flex items-center gap-1">
@@ -554,7 +555,7 @@ export default function JpgToPDF() {
                 Why only JPG files?
               </summary>
               <p className="mt-2 text-gray-600 text-sm">
-                This tool is specifically optimized for JPG and JPEG files, the most common photo format. For other image formats like PNG, HEIC, or WebP, please use our general Image to PDF converter.
+                This tool is specifically optimized for JPG and JPEG files, the most common photo format. For other image formats like PNG, HEIC, or WebP, use our <Link href="/image-to-pdf" className="text-blue-600 hover:underline">Image to PDF</Link> converter. Need to convert the other way? Try <Link href="/pdf-to-jpg" className="text-blue-600 hover:underline">PDF to JPG</Link>.
               </p>
             </details>
             <details className="border-b border-gray-200 pb-4">

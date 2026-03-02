@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { Star, FileText, Server, Mail, CheckCircle2, ExternalLink } from "lucide-react";
+import Link from "next/link";
 import RelatedTools from "@/components/RelatedTools";
 
 export default function PPTToPDF() {
@@ -34,7 +35,7 @@ export default function PPTToPDF() {
             PowerPoint to PDF Converter
           </h1>
           <p className="text-lg text-gray-600 mb-4">
-            Convert PowerPoint presentations to PDF format. Professional quality conversion with full formatting preservation.
+            Convert PowerPoint presentations to PDF format. Professional quality conversion with full formatting preservation. In the meantime, try our <Link href="/word-to-pdf" className="text-blue-600 hover:underline">Word to PDF</Link> or <Link href="/excel-to-pdf" className="text-blue-600 hover:underline">Excel to PDF</Link> converters.
           </p>
           <p className="text-gray-600 mb-4">
             Transform PPTX and PPT files into high-quality PDF documents. Perfect for sharing presentations that maintain their exact appearance across all devices and platforms.

@@ -2,6 +2,7 @@
 
 import { useState, useCallback, useRef, useEffect } from "react";
 import { Upload, X, Download, ChevronDown, Star } from "lucide-react";
+import Link from "next/link";
 import RelatedTools from "@/components/RelatedTools";
 import { FFmpeg } from "@ffmpeg/ffmpeg";
 import { fetchFile, toBlobURL } from "@ffmpeg/util";
@@ -216,7 +217,7 @@ export default function VideoToWebM() {
             Convert videos to WebM format for web use. Optimized for HTML5 video and modern browsers.
           </p>
           <p className="text-gray-600 mb-4">
-            Upload your video files in any format and convert them to WebM, the modern web video format. WebM provides excellent compression and quality, making it ideal for websites and HTML5 video players. Uses VP9 codec for video and Opus for audio to ensure maximum compatibility with modern browsers. All processing happens in your browser for complete privacy.
+            Upload your video files in any format and convert them to WebM, the modern web video format. WebM provides excellent compression and quality, making it ideal for websites and HTML5 video players. Need MP4 instead? Use our <Link href="/video-to-mp4" className="text-blue-600 hover:underline">Video to MP4</Link> converter. You can also <Link href="/compress-video" className="text-blue-600 hover:underline">compress videos</Link> to reduce file size. All processing happens in your browser for complete privacy.
           </p>
           <div className="flex items-center gap-2 mt-4">
             <div className="flex items-center gap-1">

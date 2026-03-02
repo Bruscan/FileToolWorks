@@ -2,6 +2,7 @@
 
 import { useState, useCallback } from "react";
 import { Upload, X, Download, ChevronDown, Star } from "lucide-react";
+import Link from "next/link";
 import RelatedTools from "@/components/RelatedTools";
 
 interface ImageFile {
@@ -170,7 +171,7 @@ export default function HEICToJPG() {
             Convert iPhone HEIC photos to JPG or PNG instantly. Free, fast, and secure.
           </p>
           <p className="text-gray-600 mb-4">
-            Upload your HEIC images from iPhone or iPad and convert them to widely compatible JPG or PNG format. All processing happens in your browser for complete privacy. No file size limits, no signup required.
+            Upload your HEIC images from iPhone or iPad and convert them to widely compatible JPG or PNG format. After converting, you can <Link href="/resize-image" className="text-blue-600 hover:underline">resize images</Link> or <Link href="/compress-image" className="text-blue-600 hover:underline">compress them</Link> further. All processing happens in your browser for complete privacy. No file size limits, no signup required.
           </p>
           <div className="flex items-center gap-2 mt-4">
             <div className="flex items-center gap-1">
@@ -549,7 +550,7 @@ export default function HEICToJPG() {
                 Why convert HEIC to JPG?
               </summary>
               <p className="mt-2 text-gray-600 text-sm">
-                While HEIC files are smaller and higher quality, many devices and websites do not support them. Converting to JPG ensures compatibility across all platforms and devices.
+                While HEIC files are smaller and higher quality, many devices and websites do not support them. Converting to JPG ensures compatibility across all platforms and devices. For modern web use, you might also consider converting to <Link href="/image-to-webp" className="text-blue-600 hover:underline">WebP format</Link> for even better compression.
               </p>
             </details>
             <details className="border-b border-gray-200 pb-4">
