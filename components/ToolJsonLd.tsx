@@ -31,7 +31,7 @@ export default function ToolJsonLd({
     "@type": "WebApplication",
     name: name,
     description: description,
-    url: `https://filetoolworks.com/${slug}`,
+    url: `https://www.filetoolworks.com/${slug}`,
     applicationCategory: "UtilityApplication",
     operatingSystem: "Any",
     offers: {
@@ -48,7 +48,7 @@ export default function ToolJsonLd({
     creator: {
       "@type": "Organization",
       name: "FileToolWorks",
-      url: "https://filetoolworks.com",
+      url: "https://www.filetoolworks.com",
     },
   };
 
@@ -60,13 +60,13 @@ export default function ToolJsonLd({
         "@type": "ListItem",
         position: 1,
         name: "Home",
-        item: "https://filetoolworks.com",
+        item: "https://www.filetoolworks.com",
       },
       {
         "@type": "ListItem",
         position: 2,
         name: name,
-        item: `https://filetoolworks.com/${slug}`,
+        item: `https://www.filetoolworks.com/${slug}`,
       },
     ],
   };
