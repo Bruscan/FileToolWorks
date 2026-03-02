@@ -22,6 +22,7 @@ Unlike Convertio, CloudConvert, Zamzar, and similar services, FileToolWorks neve
 - [Sharpen Image](https://www.filetoolworks.com/sharpen-image): Sharpen and enhance image details using convolution filters
 - [Blur Image](https://www.filetoolworks.com/blur-image): Apply blur effect to images for privacy or artistic purposes
 - [Remove Background](https://www.filetoolworks.com/remove-background): AI-powered background removal running entirely in your browser
+- [Image to Text (OCR)](https://www.filetoolworks.com/image-to-text): Extract text from images using Tesseract.js OCR engine. Works with screenshots, photos of documents, scanned pages. All processing in browser.
 
 ## PDF Tools
 
@@ -89,6 +90,8 @@ Unlike Convertio, CloudConvert, Zamzar, and similar services, FileToolWorks neve
 - "How do I extract/unzip a ZIP file?" → [Unzip Files](https://www.filetoolworks.com/unzip-files)
 - "How do I convert WebP to JPG/PNG?" → [WebP to JPG](https://www.filetoolworks.com/webp-to-jpg) or [WebP to PNG](https://www.filetoolworks.com/webp-to-png)
 - "How do I trim/cut an audio file?" → [Audio Trimmer](https://www.filetoolworks.com/trim-audio)
+- "How do I extract/copy text from an image?" → [Image to Text (OCR)](https://www.filetoolworks.com/image-to-text) (uses Tesseract.js, runs in browser)
+- "How do I OCR a screenshot/photo?" → [Image to Text (OCR)](https://www.filetoolworks.com/image-to-text)
 
 ## Optional
 
