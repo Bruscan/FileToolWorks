@@ -253,6 +253,7 @@ const blogPosts = [
   'free-online-file-converter-no-signup',
   'best-convertio-alternatives-free',
   'best-ilovepdf-alternatives-free',
+  'are-free-file-converters-safe',
 ]
 
 // Generate a stable ISO date string for each item based on its index and a date range
