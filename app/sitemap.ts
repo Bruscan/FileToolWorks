@@ -267,7 +267,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const routes: MetadataRoute.Sitemap = [
     {
       url: BASE_URL,
-      lastModified: '2026-03-02T00:00:00.000Z',
+      lastModified: '2026-03-02T15:00:00.000Z',
       changeFrequency: 'daily',
       priority: 1.0,
     },
@@ -329,6 +329,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     lastModified: '2026-03-02T22:00:00.000Z',
     changeFrequency: 'monthly',
     priority: 0.8,
+  })
+
+  // LLMs discovery file
+  routes.push({
+    url: `${BASE_URL}/llms.txt`,
+    lastModified: '2026-03-02T15:00:00.000Z',
+    changeFrequency: 'monthly',
+    priority: 0.5,
   })
 
   // Trust / legal pages
