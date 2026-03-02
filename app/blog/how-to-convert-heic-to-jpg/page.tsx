@@ -6,6 +6,9 @@ export const metadata: Metadata = {
   title: "How to Convert HEIC to JPG (Free, No Upload) | FileToolWorks",
   description:
     "Convert HEIC photos to JPG format directly in your browser. No upload required, works on any device. Step-by-step guide with free tool.",
+  alternates: {
+    canonical: "/blog/how-to-convert-heic-to-jpg",
+  },
 };
 
 export default function BlogPost() {

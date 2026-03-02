@@ -5,6 +5,9 @@ import BlogJsonLd from "@/components/BlogJsonLd";
 export const metadata: Metadata = {
   title: "Vector vs Raster: Key Differences Between Image Types | FileToolWorks",
   description: "Vector images use math to scale infinitely without quality loss. Raster images use pixels and lose clarity when enlarged. Compare formats, use cases, and file sizes.",
+  alternates: {
+    canonical: "/blog/vector-vs-raster",
+  },
 };
 
 export default function BlogPost() {

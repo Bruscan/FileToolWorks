@@ -5,6 +5,9 @@ import BlogJsonLd from "@/components/BlogJsonLd";
 export const metadata: Metadata = {
   title: "Gzip vs Brotli: Compression Ratio, Speed, and Web Performance | FileToolWorks",
   description: "Brotli compresses 15-25% smaller than Gzip for web assets like HTML, CSS, and JavaScript. Compare compression ratio, speed, browser support, and server setup.",
+  alternates: {
+    canonical: "/blog/gzip-vs-brotli",
+  },
 };
 
 export default function BlogPost() {

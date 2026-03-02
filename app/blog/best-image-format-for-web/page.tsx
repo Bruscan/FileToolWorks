@@ -5,6 +5,9 @@ import BlogJsonLd from "@/components/BlogJsonLd";
 export const metadata: Metadata = {
   title: "Best Image Format for Web: JPG, PNG, WebP Compared | FileToolWorks",
   description: "Pick the right image format for your website. JPG, PNG, and WebP compared by file size, quality, transparency, and browser support.",
+  alternates: {
+    canonical: "/blog/best-image-format-for-web",
+  },
 };
 
 export default function BlogPost() {

@@ -5,6 +5,9 @@ import BlogJsonLd from "@/components/BlogJsonLd";
 export const metadata: Metadata = {
   title: "AV1 vs H.265 (HEVC): Compression, Quality, and Compatibility | FileToolWorks",
   description: "AV1 compresses 20-30% better than H.265 and is royalty-free. H.265 has wider device support and faster encoding. Compare quality, speed, and licensing.",
+  alternates: {
+    canonical: "/blog/av1-vs-h265",
+  },
 };
 
 export default function BlogPost() {

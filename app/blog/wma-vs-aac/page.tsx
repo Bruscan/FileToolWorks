@@ -5,6 +5,9 @@ import BlogJsonLd from "@/components/BlogJsonLd";
 export const metadata: Metadata = {
   title: "WMA vs AAC: Audio Quality, File Size, and Compatibility Compared | FileToolWorks",
   description: "AAC sounds better than WMA at the same bitrate and works on more devices. WMA is a legacy Windows format with shrinking support. Full comparison.",
+  alternates: {
+    canonical: "/blog/wma-vs-aac",
+  },
 };
 
 export default function BlogPost() {

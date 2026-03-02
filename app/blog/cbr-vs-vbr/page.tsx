@@ -5,6 +5,9 @@ import BlogJsonLd from "@/components/BlogJsonLd";
 export const metadata: Metadata = {
   title: "CBR vs VBR: Constant vs Variable Bitrate Explained | FileToolWorks",
   description: "CBR uses a fixed bitrate throughout the file. VBR adjusts dynamically for better quality per byte. Learn when to use each for audio and video encoding.",
+  alternates: {
+    canonical: "/blog/cbr-vs-vbr",
+  },
 };
 
 export default function BlogPost() {

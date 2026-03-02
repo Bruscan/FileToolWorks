@@ -5,6 +5,9 @@ import BlogJsonLd from "@/components/BlogJsonLd";
 export const metadata: Metadata = {
   title: "How to Compress a PDF Without Losing Quality | FileToolWorks",
   description: "Reduce PDF file size while maintaining quality. Learn compression techniques that actually work.",
+  alternates: {
+    canonical: "/blog/how-to-compress-pdf",
+  },
 };
 
 export default function BlogPost() {

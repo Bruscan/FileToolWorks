@@ -6,6 +6,9 @@ export const metadata: Metadata = {
   title: "How to Compress Video for WhatsApp (Under 16MB) | FileToolWorks",
   description:
     "Reduce video file size to fit WhatsApp's 16MB limit. Free browser-based compression with no signup required.",
+  alternates: {
+    canonical: "/blog/how-to-compress-video-for-whatsapp",
+  },
 };
 
 export default function BlogPost() {

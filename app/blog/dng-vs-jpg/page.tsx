@@ -5,6 +5,9 @@ import BlogJsonLd from "@/components/BlogJsonLd";
 export const metadata: Metadata = {
   title: "DNG vs JPG: RAW Quality vs Compressed Photos | FileToolWorks",
   description: "DNG is Adobe's open raw format with full editing flexibility. JPG is compressed and ready to share. Compare quality, file size, editing options, and when to use each.",
+  alternates: {
+    canonical: "/blog/dng-vs-jpg",
+  },
 };
 
 export default function BlogPost() {

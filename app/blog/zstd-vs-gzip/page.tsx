@@ -5,6 +5,9 @@ import BlogJsonLd from "@/components/BlogJsonLd";
 export const metadata: Metadata = {
   title: "Zstd vs Gzip: Compression Speed, Ratio, and Use Cases | FileToolWorks",
   description: "Zstandard compresses and decompresses faster than Gzip at similar ratios. Compare speed, compression level, and when to use each algorithm.",
+  alternates: {
+    canonical: "/blog/zstd-vs-gzip",
+  },
 };
 
 export default function BlogPost() {

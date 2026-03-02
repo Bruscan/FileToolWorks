@@ -5,6 +5,9 @@ import BlogJsonLd from "@/components/BlogJsonLd";
 export const metadata: Metadata = {
   title: "AAC vs MP3: Quality, Compatibility, and Which to Choose | FileToolWorks",
   description: "AAC delivers better audio quality than MP3 at the same bitrate. Compare sound quality, file size, device support, and streaming use cases.",
+  alternates: {
+    canonical: "/blog/aac-vs-mp3",
+  },
 };
 
 export default function BlogPost() {

@@ -5,6 +5,9 @@ import BlogJsonLd from "@/components/BlogJsonLd";
 export const metadata: Metadata = {
   title: "DPI vs PPI – What's the Difference? | FileToolWorks",
   description: "Understand the difference between DPI and PPI for better image quality. Simple explanation without the technical jargon.",
+  alternates: {
+    canonical: "/blog/dpi-vs-ppi",
+  },
 };
 
 export default function BlogPost() {

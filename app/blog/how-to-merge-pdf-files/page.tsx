@@ -6,6 +6,9 @@ export const metadata: Metadata = {
   title: "How to Merge PDF Files Online for Free | FileToolWorks",
   description:
     "Combine multiple PDF files into one document in seconds. Free, no signup, works in your browser.",
+  alternates: {
+    canonical: "/blog/how-to-merge-pdf-files",
+  },
 };
 
 export default function BlogPost() {

@@ -5,6 +5,9 @@ import BlogJsonLd from "@/components/BlogJsonLd";
 export const metadata: Metadata = {
   title: "TTF vs OTF: Font Format Differences and Which to Use | FileToolWorks",
   description: "TTF uses quadratic curves and is universally compatible. OTF supports advanced typography features in a smaller file. Compare font formats, features, and pick the right one.",
+  alternates: {
+    canonical: "/blog/ttf-vs-otf",
+  },
 };
 
 export default function BlogPost() {

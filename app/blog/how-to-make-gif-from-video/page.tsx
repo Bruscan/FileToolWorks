@@ -5,6 +5,9 @@ import BlogJsonLd from "@/components/BlogJsonLd";
 export const metadata: Metadata = {
   title: "How to Make a GIF from a Video (Best Settings for Small Files) | FileToolWorks",
   description: "Turn any video clip into a GIF with the right FPS, resolution, and duration. Includes platform file size limits for Discord, Twitter, and Slack.",
+  alternates: {
+    canonical: "/blog/how-to-make-gif-from-video",
+  },
 };
 
 export default function BlogPost() {

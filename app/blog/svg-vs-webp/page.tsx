@@ -5,6 +5,9 @@ import BlogJsonLd from "@/components/BlogJsonLd";
 export const metadata: Metadata = {
   title: "SVG vs WebP: Vector vs Raster for Web Images | FileToolWorks",
   description: "SVG is a vector format that scales infinitely for logos and icons. WebP is a raster format with excellent compression for photos. Compare features, performance, and when to use each.",
+  alternates: {
+    canonical: "/blog/svg-vs-webp",
+  },
 };
 
 export default function BlogPost() {

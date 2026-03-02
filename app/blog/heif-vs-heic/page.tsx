@@ -5,6 +5,9 @@ import BlogJsonLd from "@/components/BlogJsonLd";
 export const metadata: Metadata = {
   title: "HEIF vs HEIC: What is the Difference? | FileToolWorks",
   description: "HEIF is the container format, HEIC is the HEVC-encoded variant. Learn how they relate, why Apple uses HEIC, and how to convert both to JPG.",
+  alternates: {
+    canonical: "/blog/heif-vs-heic",
+  },
 };
 
 export default function BlogPost() {

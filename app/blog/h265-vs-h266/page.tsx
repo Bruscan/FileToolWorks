@@ -5,6 +5,9 @@ import BlogJsonLd from "@/components/BlogJsonLd";
 export const metadata: Metadata = {
   title: "H.265 vs H.266: VVC Next-Gen Codec Compared to HEVC | FileToolWorks",
   description: "H.266 (VVC) cuts bitrate by 50% compared to H.265 (HEVC) at the same quality. Compare compression, hardware support, and real-world adoption.",
+  alternates: {
+    canonical: "/blog/h265-vs-h266",
+  },
 };
 
 export default function BlogPost() {

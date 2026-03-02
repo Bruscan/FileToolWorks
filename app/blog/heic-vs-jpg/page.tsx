@@ -6,6 +6,9 @@ export const metadata: Metadata = {
   title: "HEIC vs JPG: Which Image Format Should You Use? | FileToolWorks",
   description:
     "HEIC vs JPG compared. Learn the differences in file size, quality, compatibility, and when to convert between them.",
+  alternates: {
+    canonical: "/blog/heic-vs-jpg",
+  },
 };
 
 export default function BlogPost() {

@@ -5,6 +5,9 @@ import BlogJsonLd from "@/components/BlogJsonLd";
 export const metadata: Metadata = {
   title: "30fps vs 60fps: Which Frame Rate Should You Choose? | FileToolWorks",
   description: "30fps is standard for most video content. 60fps is smoother for action and gaming. Compare file sizes, use cases, and when each frame rate makes sense.",
+  alternates: {
+    canonical: "/blog/30fps-vs-60fps",
+  },
 };
 
 export default function BlogPost() {

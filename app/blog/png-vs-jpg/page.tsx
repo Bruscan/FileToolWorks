@@ -6,6 +6,9 @@ export const metadata: Metadata = {
   title: "PNG vs JPG: When to Use Each Format",
   description:
     "A clear comparison of PNG and JPG image formats. Learn which one to use for photos, graphics, transparency, and web images.",
+  alternates: {
+    canonical: "/blog/png-vs-jpg",
+  },
 };
 
 export default function BlogPost() {

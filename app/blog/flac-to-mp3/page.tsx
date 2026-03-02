@@ -5,6 +5,9 @@ import BlogJsonLd from "@/components/BlogJsonLd";
 export const metadata: Metadata = {
   title: "FLAC to MP3: How to Convert and What You Lose | FileToolWorks",
   description: "Convert FLAC to MP3 to save space. Learn what changes during conversion, which bitrate to pick, and how to keep your audio sounding great.",
+  alternates: {
+    canonical: "/blog/flac-to-mp3",
+  },
 };
 
 export default function BlogPost() {

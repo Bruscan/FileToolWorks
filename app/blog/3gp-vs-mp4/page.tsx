@@ -5,6 +5,9 @@ import BlogJsonLd from "@/components/BlogJsonLd";
 export const metadata: Metadata = {
   title: "3GP vs MP4: Quality, Compatibility, and Which to Use | FileToolWorks",
   description: "3GP was designed for old mobile phones with limited bandwidth. MP4 supports HD/4K and plays everywhere. Compare both video formats and learn when to convert.",
+  alternates: {
+    canonical: "/blog/3gp-vs-mp4",
+  },
 };
 
 export default function BlogPost() {

@@ -5,6 +5,9 @@ import BlogJsonLd from "@/components/BlogJsonLd";
 export const metadata: Metadata = {
   title: "FAT32 vs NTFS: Key Differences and When to Use Each | FileToolWorks",
   description: "FAT32 works on every device but limits files to 4GB. NTFS supports huge files, permissions, and journaling but is Windows-only for full read/write.",
+  alternates: {
+    canonical: "/blog/fat32-vs-ntfs",
+  },
 };
 
 export default function BlogPost() {
