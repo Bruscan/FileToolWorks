@@ -526,6 +526,18 @@ const videoPosts = [
     slug: "avi-vs-mov",
     title: "AVI vs MOV: Which Video Container Format Is Better?",
   },
+  {
+    slug: "4k-vs-8k",
+    title: "4K vs 8K: Do You Actually Need 8K Resolution?",
+  },
+  {
+    slug: "ntsc-vs-pal",
+    title: "NTSC vs PAL: What Is the Difference?",
+  },
+  {
+    slug: "8-bit-vs-10-bit",
+    title: "8-Bit vs 10-Bit Video: Does Color Depth Matter?",
+  },
 ];
 
 const generalPosts = [
