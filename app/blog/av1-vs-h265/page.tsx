@@ -63,7 +63,7 @@ export default function BlogPost() {
             Working with video files? Our <Link href="/compress-video" className="text-blue-600 hover:underline font-semibold">video compressor</Link> reduces file sizes using H.264 encoding, and the <Link href="/video-to-mp4" className="text-blue-600 hover:underline font-semibold">video to MP4 converter</Link> handles format conversion for maximum compatibility.
           </p>
           <p>
-            Related reading: <Link href="/blog/h264-vs-h265" className="text-blue-600 hover:underline">H.264 vs H.265</Link> covers the previous generation codec comparison, <Link href="/blog/mp4-vs-webm" className="text-blue-600 hover:underline">MP4 vs WebM</Link> compares the container formats these codecs typically use, and <Link href="/blog/av1-vs-vp9" className="text-blue-600 hover:underline">AV1 vs VP9</Link> compares AV1 against its royalty-free predecessor.
+            Related reading: <Link href="/blog/h264-vs-h265" className="text-blue-600 hover:underline">H.264 vs H.265</Link> covers the previous generation codec comparison, <Link href="/blog/h265-vs-h266" className="text-blue-600 hover:underline">H.265 vs H.266</Link> looks at the next-generation VVC codec, <Link href="/blog/mp4-vs-webm" className="text-blue-600 hover:underline">MP4 vs WebM</Link> compares the container formats these codecs typically use, and <Link href="/blog/av1-vs-vp9" className="text-blue-600 hover:underline">AV1 vs VP9</Link> compares AV1 against its royalty-free predecessor.
           </p>
         </div>
       </article>

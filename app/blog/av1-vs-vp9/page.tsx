@@ -65,7 +65,7 @@ export default function BlogPost() {
           </p>
 
           <p>
-            Working with video files? Our <Link href="/compress-video" className="text-blue-600 hover:underline font-semibold">video compressor</Link> reduces file sizes in your browser, and you can convert clips to <Link href="/video-to-webm" className="text-blue-600 hover:underline font-semibold">WebM format</Link> (VP9 container) or <Link href="/video-to-mp4" className="text-blue-600 hover:underline font-semibold">MP4</Link> for universal playback. For more codec breakdowns, see <Link href="/blog/prores-vs-h264" className="text-blue-600 hover:underline">ProRes vs H.264</Link> and <Link href="/blog/mpeg-vs-mp4" className="text-blue-600 hover:underline">MPEG vs MP4</Link>.
+            Working with video files? Our <Link href="/compress-video" className="text-blue-600 hover:underline font-semibold">video compressor</Link> reduces file sizes in your browser, and you can convert clips to <Link href="/video-to-webm" className="text-blue-600 hover:underline font-semibold">WebM format</Link> (VP9 container) or <Link href="/video-to-mp4" className="text-blue-600 hover:underline font-semibold">MP4</Link> for universal playback. For more codec breakdowns, see <Link href="/blog/vp8-vs-vp9" className="text-blue-600 hover:underline">VP8 vs VP9</Link>, <Link href="/blog/prores-vs-h264" className="text-blue-600 hover:underline">ProRes vs H.264</Link>, and <Link href="/blog/mpeg-vs-mp4" className="text-blue-600 hover:underline">MPEG vs MP4</Link>.
           </p>
         </div>
       </article>

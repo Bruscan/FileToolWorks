@@ -153,6 +153,10 @@ const audioPosts = [
     slug: "pcm-vs-bitstream",
     title: "PCM vs Bitstream: Which Audio Output Should You Use?",
   },
+  {
+    slug: "dsd-vs-pcm",
+    title: "DSD vs PCM: How the Two Digital Audio Formats Differ",
+  },
 ];
 
 const imagePosts = [
@@ -565,6 +569,14 @@ const videoPosts = [
   {
     slug: "cfr-vs-vfr",
     title: "CFR vs VFR: Constant vs Variable Frame Rate Explained",
+  },
+  {
+    slug: "h265-vs-h266",
+    title: "H.265 vs H.266: VVC Next-Gen Codec Compared to HEVC",
+  },
+  {
+    slug: "vp8-vs-vp9",
+    title: "VP8 vs VP9: Compression, Quality, and Browser Support",
   },
 ];
 

@@ -175,6 +175,9 @@ const blogPosts = [
   { slug: "fat32-vs-exfat", title: "FAT32 vs exFAT: File Size Limits, Compatibility, and Which to Use", date: "2026-04-18", description: "FAT32 has a 4GB file size limit and works on everything. exFAT removes that limit and is better for large files on USB drives and SD cards." },
   { slug: "fat32-vs-ntfs", title: "FAT32 vs NTFS: Key Differences and When to Use Each", date: "2026-04-18", description: "FAT32 works on every device but limits files to 4GB. NTFS supports huge files, permissions, and journaling but is Windows-only for full read/write." },
   { slug: "ext4-vs-ntfs", title: "ext4 vs NTFS: Linux and Windows File Systems Compared", date: "2026-04-18", description: "ext4 is the default Linux file system with fast I/O and low fragmentation. NTFS is the Windows default with encryption and ACL permissions." },
+  { slug: "h265-vs-h266", title: "H.265 vs H.266: VVC Next-Gen Codec Compared to HEVC", date: "2026-04-19", description: "H.266 (VVC) cuts bitrate by 50% compared to H.265 (HEVC) at the same quality. Compare compression, hardware support, and real-world adoption." },
+  { slug: "vp8-vs-vp9", title: "VP8 vs VP9: Compression, Quality, and Browser Support", date: "2026-04-19", description: "VP9 delivers roughly 50% better compression than VP8 at the same quality. Compare Google's open video codecs for streaming, WebRTC, and web delivery." },
+  { slug: "dsd-vs-pcm", title: "DSD vs PCM: How the Two Digital Audio Formats Differ", date: "2026-04-19", description: "DSD uses 1-bit samples at 2.8 MHz while PCM uses multi-bit samples at lower rates. Compare sound quality, editing, and compatibility for audiophile playback." },
 ];
 
 function escapeXml(str: string): string {

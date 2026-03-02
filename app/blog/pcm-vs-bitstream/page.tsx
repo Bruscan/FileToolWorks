@@ -58,6 +58,9 @@ export default function BlogPost() {
           <p>
             Choose bitstream when you have an AV receiver or soundbar that supports Dolby Atmos, DTS:X, or other advanced formats. Bitstream lets your receiver handle all audio processing, including applying room correction (like Audyssey or Dirac). It also displays the codec information on your receiver's screen, which is useful for confirming you are getting the surround mix. For most home theater setups with a modern receiver, bitstream is the recommended setting.
           </p>
+          <p>
+            Related reading: <Link href="/blog/dolby-digital-vs-dts" className="text-blue-600 hover:underline">Dolby Digital vs DTS</Link> compares the two main surround formats, <Link href="/blog/dsd-vs-pcm" className="text-blue-600 hover:underline">DSD vs PCM</Link> covers the audiophile digital format debate, and <Link href="/blog/16-bit-vs-24-bit-audio" className="text-blue-600 hover:underline">16-bit vs 24-bit audio</Link> explains how bit depth affects PCM quality.
+          </p>
         </div>
       </article>
     </div>
