@@ -60,7 +60,7 @@ export default function BlogPost() {
           </p>
 
           <p>
-            Need to reduce your video file size? Try our <Link href="/compress-video" className="text-blue-600 hover:underline font-semibold">video compressor</Link> or <Link href="/video-to-mp4" className="text-blue-600 hover:underline font-semibold">video to MP4 converter</Link>. For more on video settings, see <Link href="/blog/1080i-vs-1080p" className="text-blue-600 hover:underline">1080i vs 1080p</Link>, <Link href="/blog/30fps-vs-60fps" className="text-blue-600 hover:underline">30fps vs 60fps</Link>, and <Link href="/blog/h264-vs-h265" className="text-blue-600 hover:underline">H.264 vs H.265</Link>.
+            Need to reduce your video file size? Try our <Link href="/compress-video" className="text-blue-600 hover:underline font-semibold">video compressor</Link> or <Link href="/video-to-mp4" className="text-blue-600 hover:underline font-semibold">video to MP4 converter</Link>. For more on video settings, see <Link href="/blog/720p-vs-1080p" className="text-blue-600 hover:underline">720p vs 1080p</Link>, <Link href="/blog/1440p-vs-4k" className="text-blue-600 hover:underline">1440p vs 4K</Link>, and <Link href="/blog/1080i-vs-1080p" className="text-blue-600 hover:underline">1080i vs 1080p</Link>.
           </p>
         </div>
       </article>
