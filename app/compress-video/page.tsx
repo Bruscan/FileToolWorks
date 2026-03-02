@@ -2,6 +2,7 @@
 
 import { useState, useCallback, useRef, useEffect } from "react";
 import { Upload, X, Download, ChevronDown, Star } from "lucide-react";
+import Link from "next/link";
 import RelatedTools from "@/components/RelatedTools";
 import { FFmpeg } from "@ffmpeg/ffmpeg";
 import { fetchFile, toBlobURL } from "@ffmpeg/util";
@@ -232,7 +233,7 @@ export default function CompressVideo() {
             Compress video files for easier sharing. Reduce file size while maintaining quality.
           </p>
           <p className="text-gray-600 mb-4">
-            Upload your video files and compress them to reduce file size without significant quality loss. Choose from quality presets and resolution options to control the compression level. All processing happens in your browser for complete privacy. No file size limits, no signup required.
+            Upload your video files and compress them to reduce file size without significant quality loss. Choose from quality presets and resolution options to control the compression level. All processing happens in your browser for complete privacy. No file size limits, no signup required. Need to <Link href="/trim-video" className="text-blue-600 hover:underline">trim your video</Link> or <Link href="/video-to-gif" className="text-blue-600 hover:underline">convert it to a GIF</Link> instead? We have tools for that too.
           </p>
           <div className="flex items-center gap-2 mt-4">
             <div className="flex items-center gap-1">
@@ -528,6 +529,9 @@ export default function CompressVideo() {
                 <p className="text-gray-600 text-sm">
                   Click Compress Videos and download your compressed files. View file size comparison before and after.
                 </p>
+                <p className="text-gray-500 text-xs mt-1">
+                  Tip: Want to cut out unnecessary parts first? Use the <Link href="/trim-video" className="text-blue-600 hover:underline">Video Trimmer</Link> before compressing to reduce file size even further.
+                </p>
               </div>
             </li>
           </ol>
@@ -546,7 +550,7 @@ export default function CompressVideo() {
                 Why compress video files?
               </summary>
               <p className="mt-2 text-gray-600 text-sm">
-                Compressing videos reduces file size, making them easier to share via email, messaging apps, and social media. Smaller files also upload faster and take up less storage space.
+                Compressing videos reduces file size, making them easier to share via email, messaging apps, and social media. Smaller files also upload faster and take up less storage space. We also offer tools to <Link href="/compress-audio" className="text-blue-600 hover:underline">compress audio</Link> and <Link href="/compress-image" className="text-blue-600 hover:underline">compress images</Link>.
               </p>
             </details>
             <details className="border-b border-gray-200 pb-4">
@@ -586,7 +590,7 @@ export default function CompressVideo() {
                 What format is the output video?
               </summary>
               <p className="mt-2 text-gray-600 text-sm">
-                All compressed videos are output as MP4 files using the H.264 codec, which is widely supported across all devices and platforms. The audio is encoded as AAC at 128kbps for good quality and small size.
+                All compressed videos are output as MP4 files using the H.264 codec, which is widely supported across all devices and platforms. The audio is encoded as AAC at 128kbps for good quality and small size. If you need a different format, try our <Link href="/video-to-mp4" className="text-blue-600 hover:underline">Video to MP4</Link> or <Link href="/video-to-webm" className="text-blue-600 hover:underline">Video to WebM</Link> converters.
               </p>
             </details>
           </div>
