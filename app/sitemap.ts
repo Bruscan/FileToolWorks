@@ -287,6 +287,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     })
   })
 
+  // File format reference page
+  routes.push({
+    url: `${BASE_URL}/file-formats`,
+    lastModified: new Date('2026-03-02'),
+    changeFrequency: 'monthly',
+    priority: 0.8,
+  })
+
   // Blog index page
   routes.push({
     url: `${BASE_URL}/blog`,
