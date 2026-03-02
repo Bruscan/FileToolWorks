@@ -64,7 +64,7 @@ export default function BlogPost() {
             To reduce audio file size with bitrate control, try our <Link href="/compress-audio" className="text-blue-600 hover:underline font-semibold">audio compressor</Link>. You can pick a target bitrate (64, 128, or 192 kbps) to balance quality and size.
           </p>
           <p>
-            Related reading: <Link href="/blog/audio-bitrate-explained" className="text-blue-600 hover:underline">Audio Bitrate Explained</Link> covers how bitrate affects sound quality, <Link href="/blog/lossless-vs-lossy-compression" className="text-blue-600 hover:underline">Lossless vs Lossy Compression</Link> explains the broader compression trade-offs, and <Link href="/blog/stereo-vs-mono" className="text-blue-600 hover:underline">Stereo vs Mono</Link> covers how channel count affects file size.
+            Related reading: <Link href="/blog/audio-bitrate-explained" className="text-blue-600 hover:underline">Audio Bitrate Explained</Link> covers how bitrate affects sound quality, <Link href="/blog/44-1khz-vs-48khz" className="text-blue-600 hover:underline">44.1kHz vs 48kHz</Link> explains sample rates, and <Link href="/blog/stereo-vs-mono" className="text-blue-600 hover:underline">Stereo vs Mono</Link> covers how channel count affects file size.
           </p>
         </div>
       </article>
