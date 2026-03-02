@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import BlogJsonLd from "@/components/BlogJsonLd";
 
 export const metadata: Metadata = {
-  title: "Opus vs AAC: Quality, Latency, and Compatibility Compared",
+  title: "Opus vs AAC: Quality, Latency, Compatibility",
   description: "Opus beats AAC at low bitrates and handles voice and music in one codec. AAC has broader device support. Compare quality, latency, file size, and use cases.",
   alternates: {
     canonical: "/blog/opus-vs-aac",

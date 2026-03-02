@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import BlogJsonLd from "@/components/BlogJsonLd";
 
 export const metadata: Metadata = {
-  title: "Dolby Digital vs DTS: Audio Format Differences Explained",
+  title: "Dolby Digital vs DTS: Audio Differences",
   description: "DTS uses higher bitrates than Dolby Digital for potentially better audio quality. Compare surround sound formats, compatibility, and streaming support.",
   alternates: {
     canonical: "/blog/dolby-digital-vs-dts",

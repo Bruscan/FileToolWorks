@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import BlogJsonLd from "@/components/BlogJsonLd";
 
 export const metadata: Metadata = {
-  title: "Pages vs DOCX: Apple Pages vs Microsoft Word Format Compared",
+  title: "Pages vs DOCX: Apple vs Microsoft Word Format",
   description: "Pages (.pages) is free on Apple devices with clean templates. DOCX is the universal standard for documents. Compare compatibility, features, and when to use each format.",
   alternates: {
     canonical: "/blog/pages-vs-docx",

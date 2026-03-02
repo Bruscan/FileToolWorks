@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import BlogJsonLd from "@/components/BlogJsonLd";
 
 export const metadata: Metadata = {
-  title: "PNG vs GIF: Color Depth, Animation, and When to Use Each",
+  title: "PNG vs GIF: Color Depth, Animation, and Uses",
   description: "PNG supports millions of colors and alpha transparency. GIF is limited to 256 colors but supports animation. Compare both formats and when to use each.",
   alternates: {
     canonical: "/blog/png-vs-gif",

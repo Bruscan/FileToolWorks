@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import BlogJsonLd from "@/components/BlogJsonLd";
 
 export const metadata: Metadata = {
-  title: "XML vs CSV: Structure, File Size, and When to Use Each",
+  title: "XML vs CSV: Structure, Size, and Best Uses",
   description: "CSV is plain text with comma-separated values for flat tabular data. XML uses tags for hierarchical structured data. Compare file size, parsing, and best use cases.",
   alternates: {
     canonical: "/blog/xml-vs-csv",

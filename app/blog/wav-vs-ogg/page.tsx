@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import BlogJsonLd from "@/components/BlogJsonLd";
 
 export const metadata: Metadata = {
-  title: "WAV vs OGG: Quality, File Size, and Compatibility Compared",
+  title: "WAV vs OGG: Quality, Size, and Compatibility",
   description: "WAV is uncompressed with perfect audio quality but 10x larger files. OGG offers great quality at a fraction of the size. Compare formats, use cases, and compatibility.",
   alternates: {
     canonical: "/blog/wav-vs-ogg",

@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import BlogJsonLd from "@/components/BlogJsonLd";
 
 export const metadata: Metadata = {
-  title: "WOFF vs TTF: Font Formats for Web and Desktop Compared",
+  title: "WOFF vs TTF: Font Formats for Web and Desktop",
   description: "WOFF is 40-50% smaller than TTF and built for web delivery. TTF is the standard desktop font format. Compare file size, browser support, and when to use each.",
   alternates: {
     canonical: "/blog/woff-vs-ttf",

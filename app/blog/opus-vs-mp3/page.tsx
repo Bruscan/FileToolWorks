@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import BlogJsonLd from "@/components/BlogJsonLd";
 
 export const metadata: Metadata = {
-  title: "Opus vs MP3: Audio Quality, File Size, and Compatibility Compared",
+  title: "Opus vs MP3: Quality, Size, and Compatibility",
   description: "Opus sounds better than MP3 at the same bitrate and is the default codec for Discord, WhatsApp, and web audio. Compare quality, size, and device support.",
   alternates: {
     canonical: "/blog/opus-vs-mp3",

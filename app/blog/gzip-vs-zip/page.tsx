@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import BlogJsonLd from "@/components/BlogJsonLd";
 
 export const metadata: Metadata = {
-  title: "GZIP vs ZIP: Compression, Use Cases, and Key Differences",
+  title: "GZIP vs ZIP: Compression and Key Differences",
   description: "GZIP compresses a single file stream while ZIP bundles and compresses multiple files. Compare compression ratio, speed, and when to use each format.",
   alternates: {
     canonical: "/blog/gzip-vs-zip",

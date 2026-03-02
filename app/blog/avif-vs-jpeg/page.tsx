@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import BlogJsonLd from "@/components/BlogJsonLd";
 
 export const metadata: Metadata = {
-  title: "AVIF vs JPEG: File Size, Quality, and Compatibility Compared",
+  title: "AVIF vs JPEG: Size, Quality, and Compatibility",
   description: "AVIF compresses images 50% smaller than JPEG with better quality. Compare file size, browser support, encoding speed, and when each format makes sense.",
   alternates: {
     canonical: "/blog/avif-vs-jpeg",

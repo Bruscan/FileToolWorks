@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import BlogJsonLd from "@/components/BlogJsonLd";
 
 export const metadata: Metadata = {
-  title: "H.264 vs VP9: Codec Comparison for Streaming and Video",
+  title: "H.264 vs VP9: Codec Comparison for Streaming",
   description: "VP9 compresses 30-50% better than H.264 but encodes slower. H.264 has universal device support and faster real-time performance. Full codec comparison.",
   alternates: {
     canonical: "/blog/h264-vs-vp9",

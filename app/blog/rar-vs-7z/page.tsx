@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import BlogJsonLd from "@/components/BlogJsonLd";
 
 export const metadata: Metadata = {
-  title: "RAR vs 7z: Compression, Speed, and Compatibility Compared",
+  title: "RAR vs 7z: Compression, Speed, Compatibility",
   description: "RAR offers better speed and error recovery. 7z achieves higher compression with AES-256 encryption and is completely free. Compare compression ratio, speed, and features.",
   alternates: {
     canonical: "/blog/rar-vs-7z",

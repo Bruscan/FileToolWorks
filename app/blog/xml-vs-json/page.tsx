@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import BlogJsonLd from "@/components/BlogJsonLd";
 
 export const metadata: Metadata = {
-  title: "XML vs JSON: Syntax, Performance, and When to Use Each",
+  title: "XML vs JSON: Syntax, Performance, and Uses",
   description: "JSON is lighter and faster for APIs and web apps. XML is better for complex documents and strict validation. Compare syntax, file size, parsing speed, and use cases.",
   alternates: {
     canonical: "/blog/xml-vs-json",

@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import BlogJsonLd from "@/components/BlogJsonLd";
 
 export const metadata: Metadata = {
-  title: "Stereo vs Mono: Differences in Sound, File Size, and Use Cases",
+  title: "Stereo vs Mono: Sound and File Size Differences",
   description: "Stereo uses two audio channels for spatial sound. Mono uses one channel for consistent playback. Compare quality, file size, and when each makes sense.",
   alternates: {
     canonical: "/blog/stereo-vs-mono",

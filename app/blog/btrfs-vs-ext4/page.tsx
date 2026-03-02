@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import BlogJsonLd from "@/components/BlogJsonLd";
 
 export const metadata: Metadata = {
-  title: "Btrfs vs ext4: Which Linux File System Should You Choose?",
+  title: "Btrfs vs ext4: Which Linux File System to Use",
   description: "Btrfs has snapshots, checksums, and built-in RAID. ext4 is faster, simpler, and the default on most distros. Compare both Linux file systems and pick the right one.",
   alternates: {
     canonical: "/blog/btrfs-vs-ext4",
