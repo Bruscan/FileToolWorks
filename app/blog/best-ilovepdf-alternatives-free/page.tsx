@@ -66,6 +66,10 @@ export default function BlogPost() {
           <p>
             For privacy, <Link href="/tools" className="text-blue-600 hover:underline">FileToolWorks</Link> is the best choice since it processes PDFs locally in your browser. For the most generous free tier without limits, PDF24 and PDFgear are strong picks. Smallpdf has the best UI but the most restrictive free plan. Sejda is ideal if you need to edit PDF content directly.
           </p>
+          <p>
+            For a detailed feature-by-feature breakdown, see our full{" "}
+            <Link href="/vs/ilovepdf" className="text-blue-600 hover:underline">FileToolWorks vs iLovePDF comparison</Link>.
+          </p>
         </div>
       </article>
     </div>

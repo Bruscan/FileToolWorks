@@ -157,6 +157,31 @@ export default function ToolsPage() {
           );
         })}
 
+        <section className="mt-12 mb-12">
+          <h2 className="text-2xl font-bold text-gray-900 mb-4">
+            Compare With Other Tools
+          </h2>
+          <p className="text-gray-600 mb-4">
+            See how FileToolWorks stacks up against popular file conversion platforms:
+          </p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            {[
+              { name: "Convertio", href: "/vs/convertio", desc: "vs Convertio" },
+              { name: "iLovePDF", href: "/vs/ilovepdf", desc: "vs iLovePDF" },
+              { name: "CloudConvert", href: "/vs/cloudconvert", desc: "vs CloudConvert" },
+              { name: "Zamzar", href: "/vs/zamzar", desc: "vs Zamzar" },
+            ].map((item) => (
+              <Link
+                key={item.href}
+                href={item.href}
+                className="block p-4 bg-white rounded-lg border border-gray-200 hover:shadow-md transition-shadow text-center"
+              >
+                <span className="font-semibold text-blue-600">{item.desc}</span>
+              </Link>
+            ))}
+          </div>
+        </section>
+
         <section className="mt-16 bg-white rounded-lg border border-gray-200 p-8">
           <h2 className="text-2xl font-bold text-gray-900 mb-4">
             Why FileToolWorks?
