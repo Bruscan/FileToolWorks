@@ -320,6 +320,10 @@ const imagePosts = [
     slug: "rgb-vs-cmyk",
     title: "RGB vs CMYK: What's the Difference and When to Use Each",
   },
+  {
+    slug: "srgb-vs-adobe-rgb",
+    title: "sRGB vs Adobe RGB: Which Color Space Should You Use?",
+  },
 ];
 
 const pdfPosts = [
@@ -501,6 +505,14 @@ const videoPosts = [
   {
     slug: "24fps-vs-30fps",
     title: "24fps vs 30fps: Which Frame Rate Should You Use?",
+  },
+  {
+    slug: "60fps-vs-120fps",
+    title: "60fps vs 120fps: Is Double the Frame Rate Worth It?",
+  },
+  {
+    slug: "hdr-vs-sdr",
+    title: "HDR vs SDR: What's the Difference in Video and Display?",
   },
 ];
 
