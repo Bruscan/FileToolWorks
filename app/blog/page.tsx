@@ -288,6 +288,10 @@ const imagePosts = [
     slug: "svg-vs-ai",
     title: "SVG vs AI: Open Standard vs Adobe's Proprietary Vector Format",
   },
+  {
+    slug: "dng-vs-jpg",
+    title: "DNG vs JPG: RAW Quality vs Compressed Photos",
+  },
 ];
 
 const pdfPosts = [
@@ -528,6 +532,14 @@ const generalPosts = [
   {
     slug: "keynote-vs-pptx",
     title: "Keynote vs PPTX: Apple vs Microsoft Presentation Formats Compared",
+  },
+  {
+    slug: "ods-vs-xlsx",
+    title: "ODS vs XLSX: Open Document vs Excel Spreadsheet Format",
+  },
+  {
+    slug: "xml-vs-csv",
+    title: "XML vs CSV: Structure, File Size, and When to Use Each",
   },
 ];
 

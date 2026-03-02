@@ -130,6 +130,9 @@ const blogPosts = [
   { slug: "pdf-vs-jpg", title: "PDF vs JPG: Key Differences and When to Use Each", date: "2026-04-03", description: "PDF preserves document layout with text and multi-page support. JPG is a compressed image format ideal for photos. Compare quality, file size, editing, and best use cases." },
   { slug: "svg-vs-ai", title: "SVG vs AI: Open Standard vs Adobe's Proprietary Vector Format", date: "2026-04-03", description: "SVG is an open XML-based vector format for the web. AI is Adobe Illustrator's proprietary format for print design. Compare compatibility, features, and use cases." },
   { slug: "keynote-vs-pptx", title: "Keynote vs PPTX: Apple vs Microsoft Presentation Formats Compared", date: "2026-04-03", description: "Keynote (.key) is free on Apple devices with polished animations. PPTX is the industry standard that works everywhere. Compare compatibility, features, and export options." },
+  { slug: "ods-vs-xlsx", title: "ODS vs XLSX: Open Document vs Excel Spreadsheet Format", date: "2026-04-04", description: "ODS is the open standard spreadsheet format for LibreOffice and OpenOffice. XLSX is Microsoft Excel's format. Compare compatibility, features, and when to use each." },
+  { slug: "xml-vs-csv", title: "XML vs CSV: Structure, File Size, and When to Use Each", date: "2026-04-04", description: "CSV is plain text with comma-separated values for flat tabular data. XML uses tags for hierarchical structured data. Compare file size, parsing, and best use cases." },
+  { slug: "dng-vs-jpg", title: "DNG vs JPG: RAW Quality vs Compressed Photos", date: "2026-04-04", description: "DNG is Adobe's open raw format with full editing flexibility. JPG is compressed and ready to share. Compare quality, file size, editing options, and when to use each." },
 ];
 
 function escapeXml(str: string): string {
