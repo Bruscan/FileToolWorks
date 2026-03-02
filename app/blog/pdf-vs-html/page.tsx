@@ -60,7 +60,7 @@ export default function BlogPost() {
           </p>
 
           <p>
-            Need to convert between formats? Use our <Link href="/html-to-pdf" className="text-blue-600 hover:underline font-semibold">HTML to PDF converter</Link> to turn web pages into PDF documents. You can also <Link href="/pdf-to-text" className="text-blue-600 hover:underline font-semibold">extract text from PDF</Link> files for web publishing. For more format comparisons, see <Link href="/blog/svg-vs-pdf" className="text-blue-600 hover:underline">SVG vs PDF</Link>, <Link href="/blog/pdf-vs-docx" className="text-blue-600 hover:underline">PDF vs DOCX</Link>, and <Link href="/blog/rtf-vs-docx" className="text-blue-600 hover:underline">RTF vs DOCX</Link>.
+            Need to convert between formats? Use our <Link href="/html-to-pdf" className="text-blue-600 hover:underline font-semibold">HTML to PDF converter</Link> to turn web pages into PDF documents. You can also <Link href="/pdf-to-text" className="text-blue-600 hover:underline font-semibold">extract text from PDF</Link> files for web publishing. For more format comparisons, see <Link href="/blog/svg-vs-pdf" className="text-blue-600 hover:underline">SVG vs PDF</Link>, <Link href="/blog/pdf-vs-docx" className="text-blue-600 hover:underline">PDF vs DOCX</Link>, <Link href="/blog/rtf-vs-docx" className="text-blue-600 hover:underline">RTF vs DOCX</Link>, and <Link href="/blog/markdown-vs-html" className="text-blue-600 hover:underline">Markdown vs HTML</Link> for a lightweight alternative to full HTML authoring.
           </p>
         </div>
       </article>
