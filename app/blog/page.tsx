@@ -454,6 +454,10 @@ const videoPosts = [
     slug: "mov-vs-mkv",
     title: "MOV vs MKV: Compatibility, Features, and Which to Choose",
   },
+  {
+    slug: "h264-vs-av1",
+    title: "H.264 vs AV1: Codec Comparison for Streaming and Video",
+  },
 ];
 
 const generalPosts = [
@@ -564,6 +568,14 @@ const generalPosts = [
   {
     slug: "xml-vs-yaml",
     title: "XML vs YAML: Markup Language vs Data Serialization Compared",
+  },
+  {
+    slug: "csv-vs-tsv",
+    title: "CSV vs TSV: Difference Between Comma and Tab Delimited Files",
+  },
+  {
+    slug: "html-vs-xml",
+    title: "HTML vs XML: Key Differences Between Markup Languages",
   },
 ];
 

@@ -60,7 +60,7 @@ export default function BlogPost() {
           </p>
 
           <p>
-            Need to convert documents between formats? Our <Link href="/html-to-pdf" className="text-blue-600 hover:underline font-semibold">HTML to PDF converter</Link> handles web content, and you can explore format differences in our <Link href="/blog/csv-vs-xlsx" className="text-blue-600 hover:underline">CSV vs XLSX</Link> comparison. For another markup language comparison, see <Link href="/blog/markdown-vs-html" className="text-blue-600 hover:underline">Markdown vs HTML</Link>, and <Link href="/blog/xml-vs-yaml" className="text-blue-600 hover:underline">XML vs YAML</Link> compares XML with another popular data serialization format.
+            Need to convert documents between formats? Our <Link href="/html-to-pdf" className="text-blue-600 hover:underline font-semibold">HTML to PDF converter</Link> handles web content, and you can explore format differences in our <Link href="/blog/csv-vs-xlsx" className="text-blue-600 hover:underline">CSV vs XLSX</Link> comparison. For another markup language comparison, see <Link href="/blog/html-vs-xml" className="text-blue-600 hover:underline">HTML vs XML</Link> and <Link href="/blog/markdown-vs-html" className="text-blue-600 hover:underline">Markdown vs HTML</Link>, and <Link href="/blog/xml-vs-yaml" className="text-blue-600 hover:underline">XML vs YAML</Link> compares XML with another popular data serialization format.
           </p>
         </div>
       </article>
