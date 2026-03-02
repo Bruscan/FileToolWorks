@@ -187,6 +187,9 @@ const blogPosts = [
   { slug: "tar-gz-vs-zip", title: "tar.gz vs ZIP: Compression, Compatibility, and Key Differences", date: "2026-04-22", description: "tar.gz compresses all files as one stream for better ratios. ZIP compresses each file separately for easy random access. Compare both archive formats side by side." },
   { slug: "zfs-vs-btrfs", title: "ZFS vs Btrfs: Features, Performance, and Which to Choose", date: "2026-04-22", description: "ZFS has unmatched data integrity and RAID-Z. Btrfs is lighter, built into the Linux kernel, and easier to manage. Compare both copy-on-write file systems." },
   { slug: "utf-8-vs-ascii", title: "UTF-8 vs ASCII: Character Sets, Encoding, and Compatibility", date: "2026-04-22", description: "ASCII encodes 128 English characters in 7 bits. UTF-8 encodes every Unicode character in 1-4 bytes and is backward compatible with ASCII. Compare both encodings." },
+  { slug: "how-to-compress-video-for-whatsapp", title: "How to Compress Video for WhatsApp (Under 16MB)", date: "2026-04-23", description: "Reduce video file size to fit WhatsApp's 16MB limit. Free browser-based compression with no signup required." },
+  { slug: "how-to-convert-wav-to-mp3", title: "How to Convert WAV to MP3 Online for Free", date: "2026-04-23", description: "Convert WAV files to MP3 in seconds. Choose your bitrate, keep good quality, and reduce file size by up to 90%. Free, no signup." },
+  { slug: "smallest-video-format", title: "Smallest Video Format: Which Has the Smallest File Size?", date: "2026-04-23", description: "Compare MP4, WebM, AVI, and MKV file sizes. Learn which video format gives the smallest files while keeping good quality." },
 ];
 
 function escapeXml(str: string): string {
