@@ -56,7 +56,7 @@ export default function BlogPost() {
 
           <h2>Which to Choose</h2>
           <p>
-            Record and mix at 24-bit. Deliver and distribute at 16-bit. If you are archiving masters, keep them at 24-bit. If you are converting audio for podcasts, music streaming, or sharing, 16-bit at 44.1kHz or 48kHz is the right target. Need to convert between formats? Use our <Link href="/wav-to-mp3" className="text-blue-600 hover:underline font-semibold">WAV to MP3</Link> converter or <Link href="/compress-audio" className="text-blue-600 hover:underline font-semibold">audio compressor</Link>. For related comparisons, see <Link href="/blog/stereo-vs-mono" className="text-blue-600 hover:underline">Stereo vs Mono</Link> and <Link href="/blog/flac-vs-mp3" className="text-blue-600 hover:underline">FLAC vs MP3</Link>.
+            Record and mix at 24-bit. Deliver and distribute at 16-bit. If you are archiving masters, keep them at 24-bit. If you are converting audio for podcasts, music streaming, or sharing, 16-bit at 44.1kHz or 48kHz is the right target. Need to convert between formats? Use our <Link href="/wav-to-mp3" className="text-blue-600 hover:underline font-semibold">WAV to MP3</Link> converter or <Link href="/compress-audio" className="text-blue-600 hover:underline font-semibold">audio compressor</Link>. For related comparisons, see <Link href="/blog/pcm-vs-bitstream" className="text-blue-600 hover:underline">PCM vs Bitstream</Link>, <Link href="/blog/stereo-vs-mono" className="text-blue-600 hover:underline">Stereo vs Mono</Link>, and <Link href="/blog/flac-vs-mp3" className="text-blue-600 hover:underline">FLAC vs MP3</Link>.
           </p>
         </div>
       </article>
