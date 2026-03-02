@@ -323,6 +323,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.8,
   })
 
+  // File Size Calculator
+  routes.push({
+    url: `${BASE_URL}/file-size-calculator`,
+    lastModified: '2026-03-02T22:00:00.000Z',
+    changeFrequency: 'monthly',
+    priority: 0.8,
+  })
+
   // Trust / legal pages
   const trustPages = ['about', 'privacy', 'terms', 'contact']
   trustPages.forEach((page) => {
