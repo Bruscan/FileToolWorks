@@ -63,7 +63,7 @@ export default function BlogPost() {
             Need to share a spreadsheet as a fixed document? Our <Link href="/excel-to-pdf" className="text-blue-600 hover:underline font-semibold">Excel to PDF converter</Link> handles both XLS and XLSX files in your browser.
           </p>
           <p>
-            Related reading: <Link href="/blog/csv-vs-xlsx" className="text-blue-600 hover:underline">CSV vs XLSX</Link> compares spreadsheet data formats, and <Link href="/blog/ppt-vs-pptx" className="text-blue-600 hover:underline">PPT vs PPTX</Link> covers the same format transition for presentations.
+            Related reading: <Link href="/blog/csv-vs-xlsx" className="text-blue-600 hover:underline">CSV vs XLSX</Link> compares spreadsheet data formats, and <Link href="/blog/ppt-vs-pptx" className="text-blue-600 hover:underline">PPT vs PPTX</Link> covers the same format transition for presentations, and <Link href="/blog/numbers-vs-excel" className="text-blue-600 hover:underline">Numbers vs Excel</Link> compares Apple Numbers with Microsoft Excel.
           </p>
         </div>
       </article>
