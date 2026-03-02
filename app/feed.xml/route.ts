@@ -118,6 +118,9 @@ const blogPosts = [
   { slug: "avif-vs-png", title: "AVIF vs PNG: Compression, Quality, and When to Use Each", date: "2026-03-30", description: "AVIF compresses photos 10x smaller than PNG with minimal quality loss. PNG is lossless with universal support. Compare file size, features, and pick the right format." },
   { slug: "woff-vs-ttf", title: "WOFF vs TTF: Font Formats for Web and Desktop Compared", date: "2026-03-30", description: "WOFF is 40-50% smaller than TTF and built for web delivery. TTF is the standard desktop font format. Compare file size, browser support, and when to use each." },
   { slug: "markdown-vs-html", title: "Markdown vs HTML: Syntax, Features, and When to Use Each", date: "2026-03-30", description: "Markdown is simple and readable for writing content. HTML gives full control over layout and interactivity. Compare syntax, use cases, and pick the right format." },
+  { slug: "woff2-vs-woff", title: "WOFF2 vs WOFF: Compression, Browser Support, and Which to Use", date: "2026-03-31", description: "WOFF2 is 30% smaller than WOFF thanks to Brotli compression and has 97%+ browser support. Compare file size, performance, and when to use each web font format." },
+  { slug: "m4v-vs-mp4", title: "M4V vs MP4: DRM, Compatibility, and Key Differences", date: "2026-03-31", description: "M4V is Apple's DRM-protected video format based on MP4. MP4 plays everywhere. Compare compatibility, codecs, file size, and when to use each format." },
+  { slug: "bzip2-vs-gzip", title: "Bzip2 vs Gzip: Compression Ratio, Speed, and When to Use Each", date: "2026-03-31", description: "Bzip2 compresses 10-20% better than gzip but decompresses 6x slower. Compare compression speed, ratio, and use cases for Linux and server environments." },
 ];
 
 function escapeXml(str: string): string {

@@ -60,7 +60,7 @@ export default function BlogPost() {
           </p>
 
           <p>
-            Working with different file formats? Check out our <Link href="/image-to-webp" className="text-blue-600 hover:underline font-semibold">Image to WebP</Link> converter for optimizing web images, or browse more comparisons like <Link href="/blog/svg-vs-png" className="text-blue-600 hover:underline">SVG vs PNG</Link> and <Link href="/blog/eps-vs-svg" className="text-blue-600 hover:underline">EPS vs SVG</Link>.
+            Working with different file formats? Check out our <Link href="/image-to-webp" className="text-blue-600 hover:underline font-semibold">Image to WebP</Link> converter for optimizing web images, or browse more comparisons like <Link href="/blog/woff2-vs-woff" className="text-blue-600 hover:underline">WOFF2 vs WOFF</Link>, <Link href="/blog/svg-vs-png" className="text-blue-600 hover:underline">SVG vs PNG</Link>, and <Link href="/blog/eps-vs-svg" className="text-blue-600 hover:underline">EPS vs SVG</Link>.
           </p>
         </div>
       </article>
