@@ -129,6 +129,14 @@ export const tools: Tool[] = [
     category: "image",
     iconColor: "text-rose-600",
   },
+  {
+    id: "image-to-text",
+    name: "Image to Text (OCR)",
+    href: "/image-to-text",
+    description: "Extract text from images using OCR",
+    category: "image",
+    iconColor: "text-slate-600",
+  },
 
   // PDF Tools
   {

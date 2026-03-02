@@ -20,6 +20,7 @@ const tools = [
   'blur-image',
   'remove-background',
   'image-to-heic',
+  'image-to-text',
 
   // PDF Tools (10)
   'compress-pdf',
