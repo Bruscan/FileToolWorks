@@ -125,6 +125,10 @@ const audioPosts = [
     slug: "midi-vs-mp3",
     title: "MIDI vs MP3: Instructions vs Recorded Audio Explained",
   },
+  {
+    slug: "flac-vs-opus",
+    title: "FLAC vs Opus: Lossless vs Lossy Audio Quality Compared",
+  },
 ];
 
 const imagePosts = [
@@ -299,6 +303,10 @@ const imagePosts = [
   {
     slug: "raw-vs-tiff",
     title: "RAW vs TIFF: Choosing Between Capture and Output Formats",
+  },
+  {
+    slug: "svg-vs-webp",
+    title: "SVG vs WebP: Vector vs Raster for Web Images",
   },
 ];
 
@@ -576,6 +584,10 @@ const generalPosts = [
   {
     slug: "html-vs-xml",
     title: "HTML vs XML: Key Differences Between Markup Languages",
+  },
+  {
+    slug: "latex-vs-word",
+    title: "LaTeX vs Word: Which Is Better for Documents?",
   },
 ];
 
