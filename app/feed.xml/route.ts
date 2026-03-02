@@ -139,6 +139,9 @@ const blogPosts = [
   { slug: "psd-vs-tiff", title: "PSD vs TIFF: Which Format for Editing and Archiving Photos", date: "2026-04-06", description: "PSD is Adobe's native format with full layer support. TIFF is a universal lossless format. Compare compatibility, file size, features, and which to use for your workflow." },
   { slug: "raw-vs-tiff", title: "RAW vs TIFF: Choosing Between Capture and Output Formats", date: "2026-04-06", description: "RAW stores unprocessed sensor data for maximum editing flexibility. TIFF is a lossless processed format for archival and delivery. Compare quality, workflow, and best uses." },
   { slug: "pdf-vs-pptx", title: "PDF vs PPTX: When to Use Each for Presentations and Documents", date: "2026-04-06", description: "PDF preserves formatting across all devices. PPTX supports animations, editing, and live presenting. Compare features, compatibility, file size, and best use cases." },
+  { slug: "h264-vs-av1", title: "H.264 vs AV1: Codec Comparison for Streaming and Video", date: "2026-04-07", description: "H.264 offers universal compatibility and fast encoding. AV1 delivers 50% better compression and is royalty-free. Compare quality, speed, support, and which codec to choose." },
+  { slug: "csv-vs-tsv", title: "CSV vs TSV: Difference Between Comma and Tab Delimited Files", date: "2026-04-07", description: "CSV uses commas as delimiters. TSV uses tabs. Compare parsing complexity, compatibility, performance, and which format to pick for your data." },
+  { slug: "html-vs-xml", title: "HTML vs XML: Key Differences Between Markup Languages", date: "2026-04-07", description: "HTML displays content in web browsers. XML stores and transports structured data. Compare syntax, purpose, flexibility, and when to use each markup language." },
 ];
 
 function escapeXml(str: string): string {

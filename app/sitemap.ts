@@ -197,6 +197,9 @@ const blogPosts = [
   'psd-vs-tiff',
   'raw-vs-tiff',
   'pdf-vs-pptx',
+  'h264-vs-av1',
+  'csv-vs-tsv',
+  'html-vs-xml',
 ]
 
 export default function sitemap(): MetadataRoute.Sitemap {
