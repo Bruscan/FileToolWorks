@@ -142,6 +142,9 @@ const blogPosts = [
   { slug: "h264-vs-av1", title: "H.264 vs AV1: Codec Comparison for Streaming and Video", date: "2026-04-07", description: "H.264 offers universal compatibility and fast encoding. AV1 delivers 50% better compression and is royalty-free. Compare quality, speed, support, and which codec to choose." },
   { slug: "csv-vs-tsv", title: "CSV vs TSV: Difference Between Comma and Tab Delimited Files", date: "2026-04-07", description: "CSV uses commas as delimiters. TSV uses tabs. Compare parsing complexity, compatibility, performance, and which format to pick for your data." },
   { slug: "html-vs-xml", title: "HTML vs XML: Key Differences Between Markup Languages", date: "2026-04-07", description: "HTML displays content in web browsers. XML stores and transports structured data. Compare syntax, purpose, flexibility, and when to use each markup language." },
+  { slug: "flac-vs-opus", title: "FLAC vs Opus: Lossless vs Lossy Audio Quality Compared", date: "2026-04-08", description: "FLAC preserves perfect audio quality with lossless compression. Opus delivers near-transparent quality at much smaller file sizes. Compare formats, use cases, and compatibility." },
+  { slug: "latex-vs-word", title: "LaTeX vs Word: Which Is Better for Documents?", date: "2026-04-08", description: "LaTeX handles math, citations, and large documents with precision. Word is faster to learn and better for collaboration. Compare features, use cases, and when each makes sense." },
+  { slug: "svg-vs-webp", title: "SVG vs WebP: Vector vs Raster for Web Images", date: "2026-04-08", description: "SVG is a vector format that scales infinitely for logos and icons. WebP is a raster format with excellent compression for photos. Compare features, performance, and when to use each." },
 ];
 
 function escapeXml(str: string): string {
