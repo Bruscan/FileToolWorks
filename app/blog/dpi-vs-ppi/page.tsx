@@ -70,7 +70,7 @@ export default function BlogPost() {
           </p>
 
           <p>
-            Need to resize images for web or print? Read our guide on <Link href="/blog/how-to-resize-images-without-losing-quality" className="text-blue-600 hover:underline">how to resize images without losing quality</Link>. Choosing between image formats? See our <Link href="/blog/png-vs-jpg" className="text-blue-600 hover:underline">PNG vs JPG comparison</Link>.
+            Need to resize images for web or print? Read our guide on <Link href="/blog/how-to-resize-images-without-losing-quality" className="text-blue-600 hover:underline">how to resize images without losing quality</Link>. Choosing between image formats? See our <Link href="/blog/png-vs-jpg" className="text-blue-600 hover:underline">PNG vs JPG comparison</Link>. Preparing images for print? Learn the difference between <Link href="/blog/rgb-vs-cmyk" className="text-blue-600 hover:underline">RGB vs CMYK</Link>.
           </p>
 
           <p>

@@ -316,6 +316,10 @@ const imagePosts = [
     slug: "vector-vs-raster",
     title: "Vector vs Raster: Key Differences Between Image Types",
   },
+  {
+    slug: "rgb-vs-cmyk",
+    title: "RGB vs CMYK: What's the Difference and When to Use Each",
+  },
 ];
 
 const pdfPosts = [
@@ -477,6 +481,14 @@ const videoPosts = [
   {
     slug: "4k-vs-1080p",
     title: "4K vs 1080p: Resolution, File Size, and Quality Differences",
+  },
+  {
+    slug: "30fps-vs-60fps",
+    title: "30fps vs 60fps: Which Frame Rate Should You Choose?",
+  },
+  {
+    slug: "1080i-vs-1080p",
+    title: "1080i vs 1080p: What's the Difference?",
   },
 ];
 
