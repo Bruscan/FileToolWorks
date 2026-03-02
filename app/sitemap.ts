@@ -363,7 +363,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   })
 
   // Trust / legal pages
-  const trustPages = ['about', 'privacy', 'terms', 'contact']
+  const trustPages = ['about', 'privacy', 'terms', 'contact', 'security']
   trustPages.forEach((page) => {
     routes.push({
       url: `${BASE_URL}/${page}`,
