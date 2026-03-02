@@ -60,7 +60,7 @@ export default function BlogPost() {
           </p>
 
           <p>
-            Related reading: <Link href="/blog/pdf-vs-docx" className="text-blue-600 hover:underline">PDF vs DOCX</Link> covers when to use each office document format, and <Link href="/blog/how-to-compress-pdf" className="text-blue-600 hover:underline">how to compress a PDF</Link> helps reduce file size for sharing.
+            Related reading: <Link href="/blog/pdf-vs-docx" className="text-blue-600 hover:underline">PDF vs DOCX</Link> covers when to use each office document format, <Link href="/blog/epub-vs-mobi" className="text-blue-600 hover:underline">EPUB vs MOBI</Link> compares eBook-specific formats, and <Link href="/blog/how-to-compress-pdf" className="text-blue-600 hover:underline">how to compress a PDF</Link> helps reduce file size for sharing.
           </p>
         </div>
       </article>

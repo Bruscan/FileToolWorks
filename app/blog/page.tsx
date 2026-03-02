@@ -244,6 +244,10 @@ const imagePosts = [
     slug: "webp-vs-heic",
     title: "WebP vs HEIC: Format Differences, Compression, and Compatibility",
   },
+  {
+    slug: "psd-vs-png",
+    title: "PSD vs PNG: Editing Format vs Distribution Format",
+  },
 ];
 
 const pdfPosts = [
@@ -370,6 +374,10 @@ const videoPosts = [
     slug: "mp4-vs-ts",
     title: "MP4 vs TS: Container Formats for Streaming and Storage",
   },
+  {
+    slug: "avi-vs-wmv",
+    title: "AVI vs WMV: Microsoft's Video Formats Compared",
+  },
 ];
 
 const generalPosts = [
@@ -432,6 +440,10 @@ const generalPosts = [
   {
     slug: "yaml-vs-json",
     title: "YAML vs JSON: Readability, Features, and Best Use Cases",
+  },
+  {
+    slug: "epub-vs-mobi",
+    title: "EPUB vs MOBI: eBook Formats Compared",
   },
 ];
 
