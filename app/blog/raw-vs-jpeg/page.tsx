@@ -60,7 +60,7 @@ export default function BlogPost() {
             Once you have finished editing your RAW files and exported them, you may need to convert between image formats for web or sharing. Our <Link href="/png-to-jpg" className="text-blue-600 hover:underline font-semibold">PNG to JPG converter</Link> handles lossless-to-lossy conversion, and the <Link href="/image-to-webp" className="text-blue-600 hover:underline font-semibold">image to WebP converter</Link> produces smaller files for web use.
           </p>
           <p>
-            Related reading: <Link href="/blog/lossless-vs-lossy-compression" className="text-blue-600 hover:underline">lossless vs lossy compression</Link> explains the fundamental tradeoff, <Link href="/blog/png-vs-jpg" className="text-blue-600 hover:underline">PNG vs JPG</Link> compares two common export formats, and <Link href="/blog/tiff-vs-png" className="text-blue-600 hover:underline">TIFF vs PNG</Link> covers another editing-oriented format choice.
+            Related reading: <Link href="/blog/lossless-vs-lossy-compression" className="text-blue-600 hover:underline">lossless vs lossy compression</Link> explains the fundamental tradeoff, <Link href="/blog/png-vs-jpg" className="text-blue-600 hover:underline">PNG vs JPG</Link> compares two common export formats, <Link href="/blog/tiff-vs-png" className="text-blue-600 hover:underline">TIFF vs PNG</Link> covers another editing-oriented format choice, and <Link href="/blog/avif-vs-jpeg" className="text-blue-600 hover:underline">AVIF vs JPEG</Link> looks at the next-gen replacement for JPEG.
           </p>
         </div>
       </article>

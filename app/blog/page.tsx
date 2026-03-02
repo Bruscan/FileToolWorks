@@ -180,6 +180,10 @@ const imagePosts = [
     slug: "eps-vs-svg",
     title: "EPS vs SVG: Differences, Features, and Which to Use",
   },
+  {
+    slug: "avif-vs-jpeg",
+    title: "AVIF vs JPEG: File Size, Quality, and Compatibility Compared",
+  },
 ];
 
 const pdfPosts = [
@@ -270,6 +274,10 @@ const videoPosts = [
     slug: "av1-vs-h265",
     title: "AV1 vs H.265 (HEVC): Compression, Quality, and Compatibility",
   },
+  {
+    slug: "mov-vs-avi",
+    title: "MOV vs AVI: Quality, File Size, and Compatibility Compared",
+  },
 ];
 
 const generalPosts = [
@@ -312,6 +320,10 @@ const generalPosts = [
   {
     slug: "rtf-vs-docx",
     title: "RTF vs DOCX: Compatibility, Features, and When to Use Each",
+  },
+  {
+    slug: "gzip-vs-zip",
+    title: "GZIP vs ZIP: Compression, Use Cases, and Key Differences",
   },
 ];
 

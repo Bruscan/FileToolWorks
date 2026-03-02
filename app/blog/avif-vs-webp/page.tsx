@@ -60,7 +60,7 @@ export default function BlogPost() {
           </p>
 
           <p>
-            For a broader look at image format choices, read <Link href="/blog/best-image-format-for-web" className="text-blue-600 hover:underline">best image format for web</Link> or see <Link href="/blog/png-vs-jpg" className="text-blue-600 hover:underline">PNG vs JPG</Link> for the classic format comparison.
+            For a broader look at image format choices, read <Link href="/blog/best-image-format-for-web" className="text-blue-600 hover:underline">best image format for web</Link>, see <Link href="/blog/png-vs-jpg" className="text-blue-600 hover:underline">PNG vs JPG</Link> for the classic format comparison, or check <Link href="/blog/avif-vs-jpeg" className="text-blue-600 hover:underline">AVIF vs JPEG</Link> for a direct comparison with the legacy standard.
           </p>
         </div>
       </article>
