@@ -60,7 +60,7 @@ export default function BlogPost() {
           </p>
 
           <p>
-            Need to convert HTML documents? Try our <Link href="/html-to-pdf" className="text-blue-600 hover:underline font-semibold">HTML to PDF converter</Link>. For more format comparisons, see <Link href="/blog/xml-vs-json" className="text-blue-600 hover:underline">XML vs JSON</Link>, <Link href="/blog/xml-vs-yaml" className="text-blue-600 hover:underline">XML vs YAML</Link>, and <Link href="/blog/markdown-vs-html" className="text-blue-600 hover:underline">Markdown vs HTML</Link>.
+            Need to convert HTML documents? Try our <Link href="/html-to-pdf" className="text-blue-600 hover:underline font-semibold">HTML to PDF converter</Link>. For more format comparisons, see <Link href="/blog/xml-vs-json" className="text-blue-600 hover:underline">XML vs JSON</Link>, <Link href="/blog/xml-vs-yaml" className="text-blue-600 hover:underline">XML vs YAML</Link>, <Link href="/blog/markdown-vs-html" className="text-blue-600 hover:underline">Markdown vs HTML</Link>, and <Link href="/blog/utf-8-vs-ascii" className="text-blue-600 hover:underline">UTF-8 vs ASCII</Link>.
           </p>
         </div>
       </article>
