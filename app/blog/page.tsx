@@ -256,6 +256,10 @@ const imagePosts = [
     slug: "svg-vs-pdf",
     title: "SVG vs PDF: Vector Formats for Web and Print Compared",
   },
+  {
+    slug: "bmp-vs-jpg",
+    title: "BMP vs JPG: File Size, Quality, and When to Use Each",
+  },
 ];
 
 const pdfPosts = [
@@ -286,6 +290,10 @@ const pdfPosts = [
   {
     slug: "pdf-vs-html",
     title: "PDF vs HTML: Fixed Layout vs Flexible Web Content",
+  },
+  {
+    slug: "tiff-vs-pdf",
+    title: "TIFF vs PDF: Quality, File Size, and Best Use Cases",
   },
 ];
 
@@ -385,6 +393,10 @@ const videoPosts = [
   {
     slug: "avi-vs-wmv",
     title: "AVI vs WMV: Microsoft's Video Formats Compared",
+  },
+  {
+    slug: "3gp-vs-mp4",
+    title: "3GP vs MP4: Quality, Compatibility, and Which to Use",
   },
 ];
 

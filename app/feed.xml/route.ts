@@ -112,6 +112,9 @@ const blogPosts = [
   { slug: "ttf-vs-otf", title: "TTF vs OTF: Font Format Differences and Which to Use", date: "2026-03-28", description: "TTF uses quadratic curves and is universally compatible. OTF supports advanced typography features in a smaller file. Compare font formats, features, and pick the right one." },
   { slug: "jpg-vs-gif", title: "JPG vs GIF: When to Use Each Image Format", date: "2026-03-28", description: "JPG handles photos with millions of colors and small file sizes. GIF supports animation and transparency but only 256 colors. Compare both formats and pick the right one." },
   { slug: "svg-vs-pdf", title: "SVG vs PDF: Vector Formats for Web and Print Compared", date: "2026-03-28", description: "SVG is the web standard for scalable vector graphics with animation support. PDF preserves exact layout for print and documents. Compare features, use cases, and compatibility." },
+  { slug: "bmp-vs-jpg", title: "BMP vs JPG: File Size, Quality, and When to Use Each", date: "2026-03-29", description: "BMP stores uncompressed pixel data for perfect quality but huge files. JPG uses lossy compression for much smaller files. Compare both image formats and pick the right one." },
+  { slug: "tiff-vs-pdf", title: "TIFF vs PDF: Quality, File Size, and Best Use Cases", date: "2026-03-29", description: "TIFF preserves lossless image quality for printing and scanning. PDF is smaller, searchable, and better for sharing documents. Compare both formats for your needs." },
+  { slug: "3gp-vs-mp4", title: "3GP vs MP4: Quality, Compatibility, and Which to Use", date: "2026-03-29", description: "3GP was designed for old mobile phones with limited bandwidth. MP4 supports HD/4K and plays everywhere. Compare both video formats and learn when to convert." },
 ];
 
 function escapeXml(str: string): string {
