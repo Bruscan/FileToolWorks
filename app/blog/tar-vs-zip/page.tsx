@@ -61,7 +61,7 @@ export default function BlogPost() {
             Need to create a ZIP file right now? Our <Link href="/zip-files" className="text-blue-600 hover:underline font-semibold">ZIP file creator</Link> packages files in your browser with no server upload. You can also <Link href="/unzip-files" className="text-blue-600 hover:underline font-semibold">extract ZIP files</Link> directly online.
           </p>
           <p>
-            Related reading: <Link href="/blog/zip-vs-rar" className="text-blue-600 hover:underline">ZIP vs RAR</Link> compares ZIP against the other major compressed archive format, and <Link href="/blog/7z-vs-zip" className="text-blue-600 hover:underline">7z vs ZIP</Link> covers the highest-compression alternative.
+            Related reading: <Link href="/blog/tar-gz-vs-zip" className="text-blue-600 hover:underline">tar.gz vs ZIP</Link> goes deeper into the gzip-compressed variant, <Link href="/blog/zip-vs-rar" className="text-blue-600 hover:underline">ZIP vs RAR</Link> compares ZIP against the other major compressed archive format, and <Link href="/blog/7z-vs-zip" className="text-blue-600 hover:underline">7z vs ZIP</Link> covers the highest-compression alternative.
           </p>
         </div>
       </article>

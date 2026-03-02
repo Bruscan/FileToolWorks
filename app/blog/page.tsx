@@ -745,6 +745,18 @@ const generalPosts = [
     slug: "gzip-vs-brotli",
     title: "Gzip vs Brotli: Compression Ratio, Speed, and Web Performance",
   },
+  {
+    slug: "tar-gz-vs-zip",
+    title: "tar.gz vs ZIP: Compression, Compatibility, and Key Differences",
+  },
+  {
+    slug: "zfs-vs-btrfs",
+    title: "ZFS vs Btrfs: Features, Performance, and Which to Choose",
+  },
+  {
+    slug: "utf-8-vs-ascii",
+    title: "UTF-8 vs ASCII: Character Sets, Encoding, and Compatibility",
+  },
 ];
 
 const categories = [
