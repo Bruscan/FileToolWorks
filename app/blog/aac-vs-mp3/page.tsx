@@ -68,7 +68,7 @@ export default function BlogPost() {
             Need to reduce an audio file's size regardless of format? Our <Link href="/compress-audio" className="text-blue-600 hover:underline font-semibold">audio compressor</Link> handles MP3, AAC, WAV, and OGG files with adjustable bitrate settings. You can also <Link href="/extract-audio" className="text-blue-600 hover:underline font-semibold">extract audio from video</Link> as either MP3 or AAC.
           </p>
           <p>
-            For more format comparisons, check out <Link href="/blog/opus-vs-mp3" className="text-blue-600 hover:underline">Opus vs MP3</Link> (the newer codec used by Discord and WhatsApp), <Link href="/blog/m4a-vs-mp3" className="text-blue-600 hover:underline">M4A vs MP3</Link>, <Link href="/blog/ogg-vs-mp3" className="text-blue-600 hover:underline">OGG vs MP3</Link>, or <Link href="/blog/best-audio-format-for-web" className="text-blue-600 hover:underline">best audio format for the web</Link>.
+            For more format comparisons, check out <Link href="/blog/opus-vs-aac" className="text-blue-600 hover:underline">Opus vs AAC</Link> (how AAC stacks up against the newest lossy codec), <Link href="/blog/opus-vs-mp3" className="text-blue-600 hover:underline">Opus vs MP3</Link> (the newer codec used by Discord and WhatsApp), <Link href="/blog/m4a-vs-mp3" className="text-blue-600 hover:underline">M4A vs MP3</Link>, <Link href="/blog/ogg-vs-mp3" className="text-blue-600 hover:underline">OGG vs MP3</Link>, or <Link href="/blog/best-audio-format-for-web" className="text-blue-600 hover:underline">best audio format for the web</Link>.
           </p>
         </div>
       </article>

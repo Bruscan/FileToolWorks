@@ -65,7 +65,7 @@ export default function BlogPost() {
             If you need to compress audio files for sharing or storage, our <Link href="/compress-audio" className="text-blue-600 hover:underline font-semibold">audio compressor</Link> reduces file sizes with adjustable bitrate. To convert between formats, the <Link href="/wav-to-mp3" className="text-blue-600 hover:underline font-semibold">WAV to MP3 converter</Link> handles lossless-to-lossy conversion.
           </p>
           <p>
-            Related reading: <Link href="/blog/aac-vs-mp3" className="text-blue-600 hover:underline">AAC vs MP3</Link> covers the other major lossy codec, <Link href="/blog/ogg-vs-mp3" className="text-blue-600 hover:underline">OGG vs MP3</Link> compares open-source lossy formats, and <Link href="/blog/audio-bitrate-explained" className="text-blue-600 hover:underline">audio bitrate explained</Link> breaks down how bitrate affects quality across all codecs.
+            Related reading: <Link href="/blog/opus-vs-aac" className="text-blue-600 hover:underline">Opus vs AAC</Link> compares the two best modern lossy codecs head to head, <Link href="/blog/aac-vs-mp3" className="text-blue-600 hover:underline">AAC vs MP3</Link> covers the other major lossy codec, <Link href="/blog/ogg-vs-mp3" className="text-blue-600 hover:underline">OGG vs MP3</Link> compares open-source lossy formats, and <Link href="/blog/audio-bitrate-explained" className="text-blue-600 hover:underline">audio bitrate explained</Link> breaks down how bitrate affects quality across all codecs.
           </p>
         </div>
       </article>

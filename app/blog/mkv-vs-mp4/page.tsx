@@ -55,7 +55,7 @@ export default function BlogPost() {
           </p>
 
           <p>
-            For more video format comparisons, see <Link href="/blog/webm-vs-mkv" className="text-blue-600 hover:underline">WebM vs MKV</Link> (both use the Matroska container), <Link href="/blog/h264-vs-h265" className="text-blue-600 hover:underline">H.264 vs H.265</Link>, <Link href="/blog/avi-vs-mp4" className="text-blue-600 hover:underline">AVI vs MP4</Link>, and <Link href="/blog/mp4-vs-webm" className="text-blue-600 hover:underline">MP4 vs WebM</Link>.
+            For more video format comparisons, see <Link href="/blog/mkv-vs-avi" className="text-blue-600 hover:underline">MKV vs AVI</Link>, <Link href="/blog/webm-vs-mkv" className="text-blue-600 hover:underline">WebM vs MKV</Link> (both use the Matroska container), <Link href="/blog/h264-vs-h265" className="text-blue-600 hover:underline">H.264 vs H.265</Link>, <Link href="/blog/avi-vs-mp4" className="text-blue-600 hover:underline">AVI vs MP4</Link>, and <Link href="/blog/mp4-vs-webm" className="text-blue-600 hover:underline">MP4 vs WebM</Link>.
           </p>
         </div>
       </article>
