@@ -224,6 +224,9 @@ const blogPosts = [
   'interlaced-vs-progressive',
   '44-1khz-vs-48khz',
   'ac3-vs-aac',
+  'cfr-vs-vfr',
+  '16-bit-vs-24-bit-audio',
+  'zstd-vs-gzip',
 ]
 
 export default function sitemap(): MetadataRoute.Sitemap {

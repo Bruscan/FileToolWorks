@@ -141,6 +141,10 @@ const audioPosts = [
     slug: "ac3-vs-aac",
     title: "AC3 vs AAC: Dolby Digital or Advanced Audio Coding?",
   },
+  {
+    slug: "16-bit-vs-24-bit-audio",
+    title: "16-Bit vs 24-Bit Audio: Does Bit Depth Matter?",
+  },
 ];
 
 const imagePosts = [
@@ -550,6 +554,10 @@ const videoPosts = [
     slug: "interlaced-vs-progressive",
     title: "Interlaced vs Progressive Scan: What Is the Difference?",
   },
+  {
+    slug: "cfr-vs-vfr",
+    title: "CFR vs VFR: Constant vs Variable Frame Rate Explained",
+  },
 ];
 
 const generalPosts = [
@@ -672,6 +680,10 @@ const generalPosts = [
   {
     slug: "latex-vs-word",
     title: "LaTeX vs Word: Which Is Better for Documents?",
+  },
+  {
+    slug: "zstd-vs-gzip",
+    title: "Zstd vs Gzip: Compression Speed, Ratio, and Use Cases",
   },
 ];
 
