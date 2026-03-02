@@ -105,6 +105,10 @@ const audioPosts = [
     slug: "wav-vs-ogg",
     title: "WAV vs OGG: Quality, File Size, and Compatibility Compared",
   },
+  {
+    slug: "aac-vs-flac",
+    title: "AAC vs FLAC: Lossy Convenience vs Lossless Quality",
+  },
 ];
 
 const imagePosts = [
@@ -220,6 +224,10 @@ const imagePosts = [
     slug: "png-vs-pdf",
     title: "PNG vs PDF: Image Format vs Document Format Compared",
   },
+  {
+    slug: "webp-vs-heic",
+    title: "WebP vs HEIC: Format Differences, Compression, and Compatibility",
+  },
 ];
 
 const pdfPosts = [
@@ -333,6 +341,10 @@ const videoPosts = [
   {
     slug: "av1-vs-vp9",
     title: "AV1 vs VP9: Compression, Quality, and Performance Compared",
+  },
+  {
+    slug: "h264-vs-vp9",
+    title: "H.264 vs VP9: Codec Comparison for Streaming and Video",
   },
 ];
 
