@@ -12,6 +12,11 @@ export const metadata: Metadata = {
     description: "Trim audio files instantly. Free, secure, no signup required.",
     type: "website",
   },
+  twitter: {
+    card: "summary_large_image",
+    title: "Audio Trimmer",
+    description: "Cut and trim audio files online. Free.",
+  },
 };
 
 const faqs = [

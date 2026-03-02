@@ -7,6 +7,16 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "/pdf-to-jpg",
   },
+  openGraph: {
+    title: "PDF to JPG",
+    description: "Convert PDF pages to JPG images. Free online tool.",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "PDF to JPG",
+    description: "Convert PDF pages to JPG images. Free online tool.",
+  },
 };
 
 const faqs = [

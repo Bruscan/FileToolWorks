@@ -7,6 +7,16 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "/rotate-image",
   },
+  openGraph: {
+    title: "Rotate Image",
+    description: "Rotate and flip images instantly. Free online tool.",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Rotate Image",
+    description: "Rotate and flip images instantly. Free online tool.",
+  },
 };
 
 const faqs = [

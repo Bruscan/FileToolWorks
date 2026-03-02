@@ -19,6 +19,11 @@ export const metadata: Metadata = {
     description: "Convert MP3 audio files to uncompressed WAV format. Free, fast, and secure.",
     type: "website",
   },
+  twitter: {
+    card: "summary_large_image",
+    title: "MP3 to WAV",
+    description: "Convert MP3 audio to WAV format. Free.",
+  },
   alternates: {
     canonical: "/mp3-to-wav",
   },

@@ -7,6 +7,16 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "/merge-pdf",
   },
+  openGraph: {
+    title: "Merge PDF",
+    description: "Combine multiple PDF files into one document. Free.",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Merge PDF",
+    description: "Combine multiple PDF files into one document. Free.",
+  },
 };
 
 const faqs = [

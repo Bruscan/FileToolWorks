@@ -7,6 +7,16 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "/compress-pdf",
   },
+  openGraph: {
+    title: "Compress PDF",
+    description: "Reduce PDF file size while maintaining quality. Free.",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Compress PDF",
+    description: "Reduce PDF file size while maintaining quality. Free.",
+  },
 };
 
 const faqs = [
