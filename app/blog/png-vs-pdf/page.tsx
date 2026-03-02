@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import BlogJsonLd from "@/components/BlogJsonLd";
 
 export const metadata: Metadata = {
-  title: "PNG vs PDF: Image Format vs Document Format Compared | FileToolWorks",
+  title: "PNG vs PDF: Image Format vs Document Format Compared",
   description: "PNG is a raster image format for web graphics and screenshots. PDF is a document format for multi-page content and printing. Compare quality, size, and use cases.",
   alternates: {
     canonical: "/blog/png-vs-pdf",
@@ -14,7 +14,7 @@ export default function BlogPost() {
   return (
     <div className="min-h-screen bg-gray-50">
         <BlogJsonLd
-          title="PNG vs PDF: Image Format vs Document Format Compared | FileToolWorks"
+          title="PNG vs PDF: Image Format vs Document Format Compared"
           description="PNG is a raster image format for web graphics and screenshots. PDF is a document format for multi-page content and printing. Compare quality, size, and use cases."
           slug="png-vs-pdf"
           datePublished="2026-03-23"

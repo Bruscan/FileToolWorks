@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import BlogJsonLd from "@/components/BlogJsonLd";
 
 export const metadata: Metadata = {
-  title: "ext4 vs NTFS: Linux and Windows File Systems Compared | FileToolWorks",
+  title: "ext4 vs NTFS: Linux and Windows File Systems Compared",
   description: "ext4 is the default Linux file system with fast I/O and low fragmentation. NTFS is the Windows default with encryption and ACL permissions.",
   alternates: {
     canonical: "/blog/ext4-vs-ntfs",
@@ -14,7 +14,7 @@ export default function BlogPost() {
   return (
     <div className="min-h-screen bg-gray-50">
         <BlogJsonLd
-          title="ext4 vs NTFS: Linux and Windows File Systems Compared | FileToolWorks"
+          title="ext4 vs NTFS: Linux and Windows File Systems Compared"
           description="ext4 is the default Linux file system with fast I/O and low fragmentation. NTFS is the Windows default with encryption and ACL permissions."
           slug="ext4-vs-ntfs"
           datePublished="2026-04-18"

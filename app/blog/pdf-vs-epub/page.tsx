@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import BlogJsonLd from "@/components/BlogJsonLd";
 
 export const metadata: Metadata = {
-  title: "PDF vs EPUB: Which Format for Your Document? | FileToolWorks",
+  title: "PDF vs EPUB: Which Format for Your Document?",
   description: "PDF preserves exact layout. EPUB reflows text for different screen sizes. Learn which format works best for ebooks, reports, and reading on mobile.",
   alternates: {
     canonical: "/blog/pdf-vs-epub",
@@ -14,7 +14,7 @@ export default function BlogPost() {
   return (
     <div className="min-h-screen bg-gray-50">
         <BlogJsonLd
-          title="PDF vs EPUB: Which Format for Your Document? | FileToolWorks"
+          title="PDF vs EPUB: Which Format for Your Document?"
           description="PDF preserves exact layout. EPUB reflows text for different screen sizes. Learn which format works best for ebooks, reports, and reading on mobile."
           slug="pdf-vs-epub"
           datePublished="2026-03-15"

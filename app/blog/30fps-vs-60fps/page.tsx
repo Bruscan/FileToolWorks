@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import BlogJsonLd from "@/components/BlogJsonLd";
 
 export const metadata: Metadata = {
-  title: "30fps vs 60fps: Which Frame Rate Should You Choose? | FileToolWorks",
+  title: "30fps vs 60fps: Which Frame Rate Should You Choose?",
   description: "30fps is standard for most video content. 60fps is smoother for action and gaming. Compare file sizes, use cases, and when each frame rate makes sense.",
   alternates: {
     canonical: "/blog/30fps-vs-60fps",
@@ -14,7 +14,7 @@ export default function BlogPost() {
   return (
     <div className="min-h-screen bg-gray-50">
         <BlogJsonLd
-          title="30fps vs 60fps: Which Frame Rate Should You Choose? | FileToolWorks"
+          title="30fps vs 60fps: Which Frame Rate Should You Choose?"
           description="30fps is standard for most video content. 60fps is smoother for action and gaming. Compare file sizes, use cases, and when each frame rate makes sense."
           slug="30fps-vs-60fps"
           datePublished="2026-04-10"

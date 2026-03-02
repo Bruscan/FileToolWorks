@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import BlogJsonLd from "@/components/BlogJsonLd";
 
 export const metadata: Metadata = {
-  title: "AVI vs WMV: Microsoft's Video Formats Compared | FileToolWorks",
+  title: "AVI vs WMV: Microsoft's Video Formats Compared",
   description: "AVI stores high-quality uncompressed video in large files. WMV compresses aggressively for streaming and sharing. Compare file size, quality, compatibility, and modern alternatives.",
   alternates: {
     canonical: "/blog/avi-vs-wmv",
@@ -14,7 +14,7 @@ export default function BlogPost() {
   return (
     <div className="min-h-screen bg-gray-50">
         <BlogJsonLd
-          title="AVI vs WMV: Microsoft's Video Formats Compared | FileToolWorks"
+          title="AVI vs WMV: Microsoft's Video Formats Compared"
           description="AVI stores high-quality uncompressed video in large files. WMV compresses aggressively for streaming and sharing. Compare file size, quality, compatibility, and modern alternatives."
           slug="avi-vs-wmv"
           datePublished="2026-03-27"

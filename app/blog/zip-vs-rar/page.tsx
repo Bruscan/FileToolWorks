@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import BlogJsonLd from "@/components/BlogJsonLd";
 
 export const metadata: Metadata = {
-  title: "ZIP vs RAR: File Compression Formats Compared | FileToolWorks",
+  title: "ZIP vs RAR: File Compression Formats Compared",
   description: "ZIP is universally supported and works without extra software. RAR offers better compression and error recovery. Compare features, compatibility, and use cases.",
   alternates: {
     canonical: "/blog/zip-vs-rar",
@@ -14,7 +14,7 @@ export default function BlogPost() {
   return (
     <div className="min-h-screen bg-gray-50">
         <BlogJsonLd
-          title="ZIP vs RAR: File Compression Formats Compared | FileToolWorks"
+          title="ZIP vs RAR: File Compression Formats Compared"
           description="ZIP is universally supported and works without extra software. RAR offers better compression and error recovery. Compare features, compatibility, and use cases."
           slug="zip-vs-rar"
           datePublished="2026-03-12"

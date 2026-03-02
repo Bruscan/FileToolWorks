@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import BlogJsonLd from "@/components/BlogJsonLd";
 
 export const metadata: Metadata = {
-  title: "NTFS vs ReFS: Windows File System Differences Compared | FileToolWorks",
+  title: "NTFS vs ReFS: Windows File System Differences Compared",
   description: "NTFS is the default Windows file system. ReFS adds data integrity and petabyte-scale volumes for servers. Compare features, performance, and use cases.",
   alternates: {
     canonical: "/blog/ntfs-vs-refs",
@@ -14,7 +14,7 @@ export default function BlogPost() {
   return (
     <div className="min-h-screen bg-gray-50">
         <BlogJsonLd
-          title="NTFS vs ReFS: Windows File System Differences Compared | FileToolWorks"
+          title="NTFS vs ReFS: Windows File System Differences Compared"
           description="NTFS is the default Windows file system. ReFS adds data integrity and petabyte-scale volumes for servers. Compare features, performance, and use cases."
           slug="ntfs-vs-refs"
           datePublished="2026-04-20"

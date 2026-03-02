@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import BlogJsonLd from "@/components/BlogJsonLd";
 
 export const metadata: Metadata = {
-  title: "MOV vs MKV: Compatibility, Features, and Which to Choose | FileToolWorks",
+  title: "MOV vs MKV: Compatibility, Features, and Which to Choose",
   description: "MOV is Apple's video format for editing. MKV is an open container with unlimited tracks and chapters. Compare compatibility, features, file size, and use cases.",
   alternates: {
     canonical: "/blog/mov-vs-mkv",
@@ -14,7 +14,7 @@ export default function BlogPost() {
   return (
     <div className="min-h-screen bg-gray-50">
         <BlogJsonLd
-          title="MOV vs MKV: Compatibility, Features, and Which to Choose | FileToolWorks"
+          title="MOV vs MKV: Compatibility, Features, and Which to Choose"
           description="MOV is Apple's video format for editing. MKV is an open container with unlimited tracks and chapters. Compare compatibility, features, file size, and use cases."
           slug="mov-vs-mkv"
           datePublished="2026-04-01"

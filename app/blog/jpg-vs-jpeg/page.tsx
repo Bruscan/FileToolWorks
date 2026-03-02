@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import BlogJsonLd from "@/components/BlogJsonLd";
 
 export const metadata: Metadata = {
-  title: "JPG vs JPEG: Is There a Difference? | FileToolWorks",
+  title: "JPG vs JPEG: Is There a Difference?",
   description: "JPG and JPEG are the same format. The only difference is the file extension. Here is why both exist and which one to use.",
   alternates: {
     canonical: "/blog/jpg-vs-jpeg",
@@ -14,7 +14,7 @@ export default function BlogPost() {
   return (
     <div className="min-h-screen bg-gray-50">
         <BlogJsonLd
-          title="JPG vs JPEG: Is There a Difference? | FileToolWorks"
+          title="JPG vs JPEG: Is There a Difference?"
           description="JPG and JPEG are the same format. The only difference is the file extension. Here is why both exist and which one to use."
           slug="jpg-vs-jpeg"
           datePublished="2026-03-03"

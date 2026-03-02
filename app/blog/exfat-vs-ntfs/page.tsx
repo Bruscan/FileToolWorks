@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import BlogJsonLd from "@/components/BlogJsonLd";
 
 export const metadata: Metadata = {
-  title: "exFAT vs NTFS: Which File System Should You Use? | FileToolWorks",
+  title: "exFAT vs NTFS: Which File System Should You Use?",
   description: "exFAT is best for external drives shared across Windows and Mac. NTFS is better for internal Windows drives with its journaling and permissions support.",
   alternates: {
     canonical: "/blog/exfat-vs-ntfs",
@@ -14,7 +14,7 @@ export default function BlogPost() {
   return (
     <div className="min-h-screen bg-gray-50">
         <BlogJsonLd
-          title="exFAT vs NTFS: Which File System Should You Use? | FileToolWorks"
+          title="exFAT vs NTFS: Which File System Should You Use?"
           description="exFAT is best for external drives shared across Windows and Mac. NTFS is better for internal Windows drives with its journaling and permissions support."
           slug="exfat-vs-ntfs"
           datePublished="2026-04-17"

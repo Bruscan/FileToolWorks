@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import BlogJsonLd from "@/components/BlogJsonLd";
 
 export const metadata: Metadata = {
-  title: "FLV vs MP4: Why FLV Is Dead and How to Convert | FileToolWorks",
+  title: "FLV vs MP4: Why FLV Is Dead and How to Convert",
   description: "FLV was built for Flash Player, which is gone. MP4 replaced it everywhere. Compare the two formats and learn how to convert FLV files to MP4.",
   alternates: {
     canonical: "/blog/flv-vs-mp4",
@@ -14,7 +14,7 @@ export default function BlogPost() {
   return (
     <div className="min-h-screen bg-gray-50">
         <BlogJsonLd
-          title="FLV vs MP4: Why FLV Is Dead and How to Convert | FileToolWorks"
+          title="FLV vs MP4: Why FLV Is Dead and How to Convert"
           description="FLV was built for Flash Player, which is gone. MP4 replaced it everywhere. Compare the two formats and learn how to convert FLV files to MP4."
           slug="flv-vs-mp4"
           datePublished="2026-03-05"

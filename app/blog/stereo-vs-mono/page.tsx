@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import BlogJsonLd from "@/components/BlogJsonLd";
 
 export const metadata: Metadata = {
-  title: "Stereo vs Mono: Differences in Sound, File Size, and Use Cases | FileToolWorks",
+  title: "Stereo vs Mono: Differences in Sound, File Size, and Use Cases",
   description: "Stereo uses two audio channels for spatial sound. Mono uses one channel for consistent playback. Compare quality, file size, and when each makes sense.",
   alternates: {
     canonical: "/blog/stereo-vs-mono",
@@ -14,7 +14,7 @@ export default function BlogPost() {
   return (
     <div className="min-h-screen bg-gray-50">
         <BlogJsonLd
-          title="Stereo vs Mono: Differences in Sound, File Size, and Use Cases | FileToolWorks"
+          title="Stereo vs Mono: Differences in Sound, File Size, and Use Cases"
           description="Stereo uses two audio channels for spatial sound. Mono uses one channel for consistent playback. Compare quality, file size, and when each makes sense."
           slug="stereo-vs-mono"
           datePublished="2026-04-09"

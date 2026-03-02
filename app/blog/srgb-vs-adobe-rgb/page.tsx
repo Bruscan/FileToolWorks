@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import BlogJsonLd from "@/components/BlogJsonLd";
 
 export const metadata: Metadata = {
-  title: "sRGB vs Adobe RGB: Which Color Space Should You Use? | FileToolWorks",
+  title: "sRGB vs Adobe RGB: Which Color Space Should You Use?",
   description: "sRGB is the web and screen standard. Adobe RGB covers 35% more colors for print work. Learn the differences and when each color space matters.",
   alternates: {
     canonical: "/blog/srgb-vs-adobe-rgb",
@@ -14,7 +14,7 @@ export default function BlogPost() {
   return (
     <div className="min-h-screen bg-gray-50">
         <BlogJsonLd
-          title="sRGB vs Adobe RGB: Which Color Space Should You Use? | FileToolWorks"
+          title="sRGB vs Adobe RGB: Which Color Space Should You Use?"
           description="sRGB is the web and screen standard. Adobe RGB covers 35% more colors for print work. Learn the differences and when each color space matters."
           slug="srgb-vs-adobe-rgb"
           datePublished="2026-04-12"

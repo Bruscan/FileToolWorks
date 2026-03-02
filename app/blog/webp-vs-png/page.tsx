@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import BlogJsonLd from "@/components/BlogJsonLd";
 
 export const metadata: Metadata = {
-  title: "WebP vs PNG: File Size, Quality, and When to Use Each | FileToolWorks",
+  title: "WebP vs PNG: File Size, Quality, and When to Use Each",
   description: "WebP vs PNG compared. Learn the differences in file size, transparency support, browser compatibility, and which format is best for your images.",
   alternates: {
     canonical: "/blog/webp-vs-png",
@@ -14,7 +14,7 @@ export default function BlogPost() {
   return (
     <div className="min-h-screen bg-gray-50">
         <BlogJsonLd
-          title="WebP vs PNG: File Size, Quality, and When to Use Each | FileToolWorks"
+          title="WebP vs PNG: File Size, Quality, and When to Use Each"
           description="WebP vs PNG compared. Learn the differences in file size, transparency support, browser compatibility, and which format is best for your images."
           slug="webp-vs-png"
           datePublished="2026-03-01"

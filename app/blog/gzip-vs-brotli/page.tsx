@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import BlogJsonLd from "@/components/BlogJsonLd";
 
 export const metadata: Metadata = {
-  title: "Gzip vs Brotli: Compression Ratio, Speed, and Web Performance | FileToolWorks",
+  title: "Gzip vs Brotli: Compression Ratio, Speed, and Web Performance",
   description: "Brotli compresses 15-25% smaller than Gzip for web assets like HTML, CSS, and JavaScript. Compare compression ratio, speed, browser support, and server setup.",
   alternates: {
     canonical: "/blog/gzip-vs-brotli",
@@ -14,7 +14,7 @@ export default function BlogPost() {
   return (
     <div className="min-h-screen bg-gray-50">
         <BlogJsonLd
-          title="Gzip vs Brotli: Compression Ratio, Speed, and Web Performance | FileToolWorks"
+          title="Gzip vs Brotli: Compression Ratio, Speed, and Web Performance"
           description="Brotli compresses 15-25% smaller than Gzip for web assets like HTML, CSS, and JavaScript. Compare compression ratio, speed, browser support, and server setup."
           slug="gzip-vs-brotli"
           datePublished="2026-04-21"

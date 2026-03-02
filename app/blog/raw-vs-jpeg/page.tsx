@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import BlogJsonLd from "@/components/BlogJsonLd";
 
 export const metadata: Metadata = {
-  title: "RAW vs JPEG: Quality, File Size, and When to Shoot Each | FileToolWorks",
+  title: "RAW vs JPEG: Quality, File Size, and When to Shoot Each",
   description: "RAW captures all sensor data for maximum editing flexibility. JPEG is processed and compressed in-camera for smaller files. Compare quality, size, and workflow.",
   alternates: {
     canonical: "/blog/raw-vs-jpeg",
@@ -14,7 +14,7 @@ export default function BlogPost() {
   return (
     <div className="min-h-screen bg-gray-50">
         <BlogJsonLd
-          title="RAW vs JPEG: Quality, File Size, and When to Shoot Each | FileToolWorks"
+          title="RAW vs JPEG: Quality, File Size, and When to Shoot Each"
           description="RAW captures all sensor data for maximum editing flexibility. JPEG is processed and compressed in-camera for smaller files. Compare quality, size, and workflow."
           slug="raw-vs-jpeg"
           datePublished="2026-03-10"

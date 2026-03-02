@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import BlogJsonLd from "@/components/BlogJsonLd";
 
 export const metadata: Metadata = {
-  title: "Markdown vs HTML: Syntax, Features, and When to Use Each | FileToolWorks",
+  title: "Markdown vs HTML: Syntax, Features, and When to Use Each",
   description: "Markdown is simple and readable for writing content. HTML gives full control over layout and interactivity. Compare syntax, use cases, and pick the right format.",
   alternates: {
     canonical: "/blog/markdown-vs-html",
@@ -14,7 +14,7 @@ export default function BlogPost() {
   return (
     <div className="min-h-screen bg-gray-50">
         <BlogJsonLd
-          title="Markdown vs HTML: Syntax, Features, and When to Use Each | FileToolWorks"
+          title="Markdown vs HTML: Syntax, Features, and When to Use Each"
           description="Markdown is simple and readable for writing content. HTML gives full control over layout and interactivity. Compare syntax, use cases, and pick the right format."
           slug="markdown-vs-html"
           datePublished="2026-03-30"

@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import BlogJsonLd from "@/components/BlogJsonLd";
 
 export const metadata: Metadata = {
-  title: "JPEG 2000 vs JPEG: Quality, Compression, and Compatibility | FileToolWorks",
+  title: "JPEG 2000 vs JPEG: Quality, Compression, and Compatibility",
   description: "JPEG 2000 uses wavelet compression for better quality at low bitrates, but has poor browser and device support. JPEG is universal. Compare both image formats.",
   alternates: {
     canonical: "/blog/jpeg-2000-vs-jpeg",
@@ -14,7 +14,7 @@ export default function BlogPost() {
   return (
     <div className="min-h-screen bg-gray-50">
         <BlogJsonLd
-          title="JPEG 2000 vs JPEG: Quality, Compression, and Compatibility | FileToolWorks"
+          title="JPEG 2000 vs JPEG: Quality, Compression, and Compatibility"
           description="JPEG 2000 uses wavelet compression for better quality at low bitrates, but has poor browser and device support. JPEG is universal. Compare both image formats."
           slug="jpeg-2000-vs-jpeg"
           datePublished="2026-04-21"

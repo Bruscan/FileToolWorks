@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import BlogJsonLd from "@/components/BlogJsonLd";
 
 export const metadata: Metadata = {
-  title: "FLAC to MP3: How to Convert and What You Lose | FileToolWorks",
+  title: "FLAC to MP3: How to Convert and What You Lose",
   description: "Convert FLAC to MP3 to save space. Learn what changes during conversion, which bitrate to pick, and how to keep your audio sounding great.",
   alternates: {
     canonical: "/blog/flac-to-mp3",
@@ -14,7 +14,7 @@ export default function BlogPost() {
   return (
     <div className="min-h-screen bg-gray-50">
         <BlogJsonLd
-          title="FLAC to MP3: How to Convert and What You Lose | FileToolWorks"
+          title="FLAC to MP3: How to Convert and What You Lose"
           description="Convert FLAC to MP3 to save space. Learn what changes during conversion, which bitrate to pick, and how to keep your audio sounding great."
           slug="flac-to-mp3"
           datePublished="2026-03-01"

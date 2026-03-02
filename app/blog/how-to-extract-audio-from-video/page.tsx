@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import BlogJsonLd from "@/components/BlogJsonLd";
 
 export const metadata: Metadata = {
-  title: "How to Extract Audio from Video (Free, Any Format) | FileToolWorks",
+  title: "How to Extract Audio from Video (Free, Any Format)",
   description: "Extract audio from any video file as MP3, WAV, or AAC. Free browser tool, no software install, works with MP4, MOV, AVI, MKV, and more.",
   alternates: {
     canonical: "/blog/how-to-extract-audio-from-video",
@@ -14,7 +14,7 @@ export default function BlogPost() {
   return (
     <div className="min-h-screen bg-gray-50">
         <BlogJsonLd
-          title="How to Extract Audio from Video (Free, Any Format) | FileToolWorks"
+          title="How to Extract Audio from Video (Free, Any Format)"
           description="Extract audio from any video file as MP3, WAV, or AAC. Free browser tool, no software install, works with MP4, MOV, AVI, MKV, and more."
           slug="how-to-extract-audio-from-video"
           datePublished="2026-03-01"

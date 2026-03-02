@@ -2,7 +2,7 @@ import Link from "next/link";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Contact Us | FileToolWorks",
+  title: "Contact Us",
   description:
     "Get in touch with FileToolWorks. Report bugs, suggest features, or ask questions about our free online file tools.",
 };

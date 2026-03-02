@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import BlogJsonLd from "@/components/BlogJsonLd";
 
 export const metadata: Metadata = {
-  title: "AC3 vs AAC: Dolby Digital or Advanced Audio Coding? | FileToolWorks",
+  title: "AC3 vs AAC: Dolby Digital or Advanced Audio Coding?",
   description: "AC3 (Dolby Digital) is built for surround sound in DVDs and Blu-rays. AAC is the modern codec for streaming and mobile. Here is how they compare.",
   alternates: {
     canonical: "/blog/ac3-vs-aac",
@@ -14,7 +14,7 @@ export default function BlogPost() {
   return (
     <div className="min-h-screen bg-gray-50">
         <BlogJsonLd
-          title="AC3 vs AAC: Dolby Digital or Advanced Audio Coding? | FileToolWorks"
+          title="AC3 vs AAC: Dolby Digital or Advanced Audio Coding?"
           description="AC3 (Dolby Digital) is built for surround sound in DVDs and Blu-rays. AAC is the modern codec for streaming and mobile. Here is how they compare."
           slug="ac3-vs-aac"
           datePublished="2026-04-15"

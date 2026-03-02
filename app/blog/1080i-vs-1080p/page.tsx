@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import BlogJsonLd from "@/components/BlogJsonLd";
 
 export const metadata: Metadata = {
-  title: "1080i vs 1080p: What's the Difference? | FileToolWorks",
+  title: "1080i vs 1080p: What's the Difference?",
   description: "1080i uses interlaced scanning while 1080p uses progressive scan. Both are 1920x1080 but display images differently. Learn which is better for your use case.",
   alternates: {
     canonical: "/blog/1080i-vs-1080p",
@@ -14,7 +14,7 @@ export default function BlogPost() {
   return (
     <div className="min-h-screen bg-gray-50">
         <BlogJsonLd
-          title="1080i vs 1080p: What's the Difference? | FileToolWorks"
+          title="1080i vs 1080p: What's the Difference?"
           description="1080i uses interlaced scanning while 1080p uses progressive scan. Both are 1920x1080 but display images differently. Learn which is better for your use case."
           slug="1080i-vs-1080p"
           datePublished="2026-04-10"

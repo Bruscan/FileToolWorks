@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import BlogJsonLd from "@/components/BlogJsonLd";
 
 export const metadata: Metadata = {
-  title: "APNG vs GIF: Color Depth, Transparency, and Animation Compared | FileToolWorks",
+  title: "APNG vs GIF: Color Depth, Transparency, and Animation Compared",
   description: "APNG supports 16 million colors and alpha transparency while GIF is limited to 256 colors. Compare file size, browser support, and animation quality.",
   alternates: {
     canonical: "/blog/apng-vs-gif",
@@ -14,7 +14,7 @@ export default function BlogPost() {
   return (
     <div className="min-h-screen bg-gray-50">
         <BlogJsonLd
-          title="APNG vs GIF: Color Depth, Transparency, and Animation Compared | FileToolWorks"
+          title="APNG vs GIF: Color Depth, Transparency, and Animation Compared"
           description="APNG supports 16 million colors and alpha transparency while GIF is limited to 256 colors. Compare file size, browser support, and animation quality."
           slug="apng-vs-gif"
           datePublished="2026-03-19"

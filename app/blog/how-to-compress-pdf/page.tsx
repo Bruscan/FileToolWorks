@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import BlogJsonLd from "@/components/BlogJsonLd";
 
 export const metadata: Metadata = {
-  title: "How to Compress a PDF Without Losing Quality | FileToolWorks",
+  title: "How to Compress a PDF Without Losing Quality",
   description: "Reduce PDF file size while maintaining quality. Learn compression techniques that actually work.",
   alternates: {
     canonical: "/blog/how-to-compress-pdf",
@@ -14,7 +14,7 @@ export default function BlogPost() {
   return (
     <div className="min-h-screen bg-gray-50">
         <BlogJsonLd
-          title="How to Compress a PDF Without Losing Quality | FileToolWorks"
+          title="How to Compress a PDF Without Losing Quality"
           description="Reduce PDF file size while maintaining quality. Learn compression techniques that actually work."
           slug="how-to-compress-pdf"
           datePublished="2026-03-01"

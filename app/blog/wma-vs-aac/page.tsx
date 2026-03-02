@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import BlogJsonLd from "@/components/BlogJsonLd";
 
 export const metadata: Metadata = {
-  title: "WMA vs AAC: Audio Quality, File Size, and Compatibility Compared | FileToolWorks",
+  title: "WMA vs AAC: Audio Quality, File Size, and Compatibility Compared",
   description: "AAC sounds better than WMA at the same bitrate and works on more devices. WMA is a legacy Windows format with shrinking support. Full comparison.",
   alternates: {
     canonical: "/blog/wma-vs-aac",
@@ -14,7 +14,7 @@ export default function BlogPost() {
   return (
     <div className="min-h-screen bg-gray-50">
         <BlogJsonLd
-          title="WMA vs AAC: Audio Quality, File Size, and Compatibility Compared | FileToolWorks"
+          title="WMA vs AAC: Audio Quality, File Size, and Compatibility Compared"
           description="AAC sounds better than WMA at the same bitrate and works on more devices. WMA is a legacy Windows format with shrinking support. Full comparison."
           slug="wma-vs-aac"
           datePublished="2026-03-25"

@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import BlogJsonLd from "@/components/BlogJsonLd";
 
 export const metadata: Metadata = {
-  title: "How to Compress WAV Files (Without Ruining Audio Quality) | FileToolWorks",
+  title: "How to Compress WAV Files (Without Ruining Audio Quality)",
   description: "Compress WAV files to reduce size by 80-90%. Learn which settings preserve quality and when to use WAV vs MP3.",
   alternates: {
     canonical: "/blog/how-to-compress-wav-files",
@@ -14,7 +14,7 @@ export default function BlogPost() {
   return (
     <div className="min-h-screen bg-gray-50">
         <BlogJsonLd
-          title="How to Compress WAV Files (Without Ruining Audio Quality) | FileToolWorks"
+          title="How to Compress WAV Files (Without Ruining Audio Quality)"
           description="Compress WAV files to reduce size by 80-90%. Learn which settings preserve quality and when to use WAV vs MP3."
           slug="how-to-compress-wav-files"
           datePublished="2026-03-01"

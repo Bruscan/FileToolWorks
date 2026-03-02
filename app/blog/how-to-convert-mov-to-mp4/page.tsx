@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import BlogJsonLd from "@/components/BlogJsonLd";
 
 export const metadata: Metadata = {
-  title: "How to Convert MOV to MP4 (3 Free Methods) | FileToolWorks",
+  title: "How to Convert MOV to MP4 (3 Free Methods)",
   description: "Convert MOV to MP4 free using online tools, iMovie on Mac, or VLC. Keep full quality with the right codec settings.",
   alternates: {
     canonical: "/blog/how-to-convert-mov-to-mp4",
@@ -14,7 +14,7 @@ export default function BlogPost() {
   return (
     <div className="min-h-screen bg-gray-50">
         <BlogJsonLd
-          title="How to Convert MOV to MP4 (3 Free Methods) | FileToolWorks"
+          title="How to Convert MOV to MP4 (3 Free Methods)"
           description="Convert MOV to MP4 free using online tools, iMovie on Mac, or VLC. Keep full quality with the right codec settings."
           slug="how-to-convert-mov-to-mp4"
           datePublished="2026-03-02"

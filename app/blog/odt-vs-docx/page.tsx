@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import BlogJsonLd from "@/components/BlogJsonLd";
 
 export const metadata: Metadata = {
-  title: "ODT vs DOCX: Which Document Format Should You Use? | FileToolWorks",
+  title: "ODT vs DOCX: Which Document Format Should You Use?",
   description: "ODT is the open standard for documents. DOCX is Microsoft's format. Compare compatibility, features, and file size to pick the right one.",
   alternates: {
     canonical: "/blog/odt-vs-docx",
@@ -14,7 +14,7 @@ export default function BlogPost() {
   return (
     <div className="min-h-screen bg-gray-50">
         <BlogJsonLd
-          title="ODT vs DOCX: Which Document Format Should You Use? | FileToolWorks"
+          title="ODT vs DOCX: Which Document Format Should You Use?"
           description="ODT is the open standard for documents. DOCX is Microsoft's format. Compare compatibility, features, and file size to pick the right one."
           slug="odt-vs-docx"
           datePublished="2026-03-15"

@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import ToolJsonLd from "@/components/ToolJsonLd";
 
 export const metadata: Metadata = {
-  title: "Video to MP4 Converter - Convert Any Video to MP4 | FileToolWorks",
+  title: "Video to MP4 Converter - Convert Any Video to MP4",
   description: "Convert any video format to MP4 online for free. Supports AVI, MOV, MKV, WebM, FLV, and more. Fast, secure, and works in your browser without uploads.",
   keywords: [
     "video to mp4",

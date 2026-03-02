@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import BlogJsonLd from "@/components/BlogJsonLd";
 
 export const metadata: Metadata = {
-  title: "MP4 vs TS: Container Formats for Streaming and Storage | FileToolWorks",
+  title: "MP4 vs TS: Container Formats for Streaming and Storage",
   description: "MP4 is the standard container for video downloads and playback. TS (MPEG Transport Stream) is built for broadcasting and live streaming. Compare features and use cases.",
   alternates: {
     canonical: "/blog/mp4-vs-ts",
@@ -14,7 +14,7 @@ export default function BlogPost() {
   return (
     <div className="min-h-screen bg-gray-50">
         <BlogJsonLd
-          title="MP4 vs TS: Container Formats for Streaming and Storage | FileToolWorks"
+          title="MP4 vs TS: Container Formats for Streaming and Storage"
           description="MP4 is the standard container for video downloads and playback. TS (MPEG Transport Stream) is built for broadcasting and live streaming. Compare features and use cases."
           slug="mp4-vs-ts"
           datePublished="2026-03-26"

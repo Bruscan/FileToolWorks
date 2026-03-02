@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import BlogJsonLd from "@/components/BlogJsonLd";
 
 export const metadata: Metadata = {
-  title: "JPEG XL vs AVIF: Compression, Quality, and Browser Support | FileToolWorks",
+  title: "JPEG XL vs AVIF: Compression, Quality, and Browser Support",
   description: "JPEG XL beats AVIF at high quality and handles huge images. AVIF has full browser support and wins at low bitrates. Compare both next-gen image formats.",
   alternates: {
     canonical: "/blog/jpeg-xl-vs-avif",
@@ -14,7 +14,7 @@ export default function BlogPost() {
   return (
     <div className="min-h-screen bg-gray-50">
         <BlogJsonLd
-          title="JPEG XL vs AVIF: Compression, Quality, and Browser Support | FileToolWorks"
+          title="JPEG XL vs AVIF: Compression, Quality, and Browser Support"
           description="JPEG XL beats AVIF at high quality and handles huge images. AVIF has full browser support and wins at low bitrates. Compare both next-gen image formats."
           slug="jpeg-xl-vs-avif"
           datePublished="2026-03-18"

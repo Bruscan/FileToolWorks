@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import BlogJsonLd from "@/components/BlogJsonLd";
 
 export const metadata: Metadata = {
-  title: "DOC vs DOCX: What Changed and Does It Matter? | FileToolWorks",
+  title: "DOC vs DOCX: What Changed and Does It Matter?",
   description: "DOCX replaced DOC in 2007 with smaller file sizes, better formatting, and XML-based structure. Learn the key differences and when the old format still shows up.",
   alternates: {
     canonical: "/blog/doc-vs-docx",
@@ -14,7 +14,7 @@ export default function BlogPost() {
   return (
     <div className="min-h-screen bg-gray-50">
         <BlogJsonLd
-          title="DOC vs DOCX: What Changed and Does It Matter? | FileToolWorks"
+          title="DOC vs DOCX: What Changed and Does It Matter?"
           description="DOCX replaced DOC in 2007 with smaller file sizes, better formatting, and XML-based structure. Learn the key differences and when the old format still shows up."
           slug="doc-vs-docx"
           datePublished="2026-03-13"

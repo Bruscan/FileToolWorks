@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import BlogJsonLd from "@/components/BlogJsonLd";
 
 export const metadata: Metadata = {
-  title: "PDF vs PPTX: When to Use Each for Presentations and Documents | FileToolWorks",
+  title: "PDF vs PPTX: When to Use Each for Presentations and Documents",
   description: "PDF preserves formatting across all devices. PPTX supports animations, editing, and live presenting. Compare features, compatibility, file size, and best use cases.",
   alternates: {
     canonical: "/blog/pdf-vs-pptx",
@@ -14,7 +14,7 @@ export default function BlogPost() {
   return (
     <div className="min-h-screen bg-gray-50">
         <BlogJsonLd
-          title="PDF vs PPTX: When to Use Each for Presentations and Documents | FileToolWorks"
+          title="PDF vs PPTX: When to Use Each for Presentations and Documents"
           description="PDF preserves formatting across all devices. PPTX supports animations, editing, and live presenting. Compare features, compatibility, file size, and best use cases."
           slug="pdf-vs-pptx"
           datePublished="2026-04-06"

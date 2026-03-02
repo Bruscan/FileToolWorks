@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import BlogJsonLd from "@/components/BlogJsonLd";
 
 export const metadata: Metadata = {
-  title: "HDR vs SDR: What's the Difference in Video and Display? | FileToolWorks",
+  title: "HDR vs SDR: What's the Difference in Video and Display?",
   description: "HDR delivers brighter highlights, deeper blacks, and wider color range than SDR. Learn the key differences for video, gaming, and photo editing.",
   alternates: {
     canonical: "/blog/hdr-vs-sdr",
@@ -14,7 +14,7 @@ export default function BlogPost() {
   return (
     <div className="min-h-screen bg-gray-50">
         <BlogJsonLd
-          title="HDR vs SDR: What's the Difference in Video and Display? | FileToolWorks"
+          title="HDR vs SDR: What's the Difference in Video and Display?"
           description="HDR delivers brighter highlights, deeper blacks, and wider color range than SDR. Learn the key differences for video, gaming, and photo editing."
           slug="hdr-vs-sdr"
           datePublished="2026-04-12"

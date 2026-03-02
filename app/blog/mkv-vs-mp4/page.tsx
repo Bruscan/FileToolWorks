@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import BlogJsonLd from "@/components/BlogJsonLd";
 
 export const metadata: Metadata = {
-  title: "MKV vs MP4: File Size, Quality, and Compatibility Compared | FileToolWorks",
+  title: "MKV vs MP4: File Size, Quality, and Compatibility Compared",
   description: "MKV supports unlimited tracks and subtitles, MP4 works everywhere. Compare file size, codec support, streaming, and learn which video format to pick.",
   alternates: {
     canonical: "/blog/mkv-vs-mp4",
@@ -14,7 +14,7 @@ export default function BlogPost() {
   return (
     <div className="min-h-screen bg-gray-50">
         <BlogJsonLd
-          title="MKV vs MP4: File Size, Quality, and Compatibility Compared | FileToolWorks"
+          title="MKV vs MP4: File Size, Quality, and Compatibility Compared"
           description="MKV supports unlimited tracks and subtitles, MP4 works everywhere. Compare file size, codec support, streaming, and learn which video format to pick."
           slug="mkv-vs-mp4"
           datePublished="2026-03-05"

@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import BlogJsonLd from "@/components/BlogJsonLd";
 
 export const metadata: Metadata = {
-  title: "SVG vs PDF: Vector Formats for Web and Print Compared | FileToolWorks",
+  title: "SVG vs PDF: Vector Formats for Web and Print Compared",
   description: "SVG is the web standard for scalable vector graphics with animation support. PDF preserves exact layout for print and documents. Compare features, use cases, and compatibility.",
   alternates: {
     canonical: "/blog/svg-vs-pdf",
@@ -14,7 +14,7 @@ export default function BlogPost() {
   return (
     <div className="min-h-screen bg-gray-50">
         <BlogJsonLd
-          title="SVG vs PDF: Vector Formats for Web and Print Compared | FileToolWorks"
+          title="SVG vs PDF: Vector Formats for Web and Print Compared"
           description="SVG is the web standard for scalable vector graphics with animation support. PDF preserves exact layout for print and documents. Compare features, use cases, and compatibility."
           slug="svg-vs-pdf"
           datePublished="2026-03-28"

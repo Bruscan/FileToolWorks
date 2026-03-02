@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import BlogJsonLd from "@/components/BlogJsonLd";
 
 export const metadata: Metadata = {
-  title: "ICO vs PNG: Which Format for Favicons and Icons? | FileToolWorks",
+  title: "ICO vs PNG: Which Format for Favicons and Icons?",
   description: "ICO bundles multiple icon sizes in one file while PNG offers better compression and transparency. Compare browser support, file size, and when to use each for favicons.",
   alternates: {
     canonical: "/blog/ico-vs-png",
@@ -14,7 +14,7 @@ export default function BlogPost() {
   return (
     <div className="min-h-screen bg-gray-50">
         <BlogJsonLd
-          title="ICO vs PNG: Which Format for Favicons and Icons? | FileToolWorks"
+          title="ICO vs PNG: Which Format for Favicons and Icons?"
           description="ICO bundles multiple icon sizes in one file while PNG offers better compression and transparency. Compare browser support, file size, and when to use each for favicons."
           slug="ico-vs-png"
           datePublished="2026-04-02"

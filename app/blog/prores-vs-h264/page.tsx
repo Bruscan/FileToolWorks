@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import BlogJsonLd from "@/components/BlogJsonLd";
 
 export const metadata: Metadata = {
-  title: "ProRes vs H.264: Quality, File Size, and When to Use Each | FileToolWorks",
+  title: "ProRes vs H.264: Quality, File Size, and When to Use Each",
   description: "ProRes is an editing codec with huge files and maximum quality. H.264 compresses aggressively for delivery. Compare file size, color depth, and workflows.",
   alternates: {
     canonical: "/blog/prores-vs-h264",
@@ -14,7 +14,7 @@ export default function BlogPost() {
   return (
     <div className="min-h-screen bg-gray-50">
         <BlogJsonLd
-          title="ProRes vs H.264: Quality, File Size, and When to Use Each | FileToolWorks"
+          title="ProRes vs H.264: Quality, File Size, and When to Use Each"
           description="ProRes is an editing codec with huge files and maximum quality. H.264 compresses aggressively for delivery. Compare file size, color depth, and workflows."
           slug="prores-vs-h264"
           datePublished="2026-03-19"

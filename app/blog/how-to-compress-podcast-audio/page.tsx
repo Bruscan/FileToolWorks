@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import BlogJsonLd from "@/components/BlogJsonLd";
 
 export const metadata: Metadata = {
-  title: "How to Compress Podcast Audio Without Losing Voice Quality | FileToolWorks",
+  title: "How to Compress Podcast Audio Without Losing Voice Quality",
   description: "Reduce podcast file size by 50-80% without noticeable quality loss. Practical guide covering bitrate, mono conversion, and format choices.",
   alternates: {
     canonical: "/blog/how-to-compress-podcast-audio",
@@ -14,7 +14,7 @@ export default function BlogPost() {
   return (
     <div className="min-h-screen bg-gray-50">
         <BlogJsonLd
-          title="How to Compress Podcast Audio Without Losing Voice Quality | FileToolWorks"
+          title="How to Compress Podcast Audio Without Losing Voice Quality"
           description="Reduce podcast file size by 50-80% without noticeable quality loss. Practical guide covering bitrate, mono conversion, and format choices."
           slug="how-to-compress-podcast-audio"
           datePublished="2026-03-01"

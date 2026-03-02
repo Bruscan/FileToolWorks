@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import BlogJsonLd from "@/components/BlogJsonLd";
 
 export const metadata: Metadata = {
-  title: "Interlaced vs Progressive Scan: What Is the Difference? | FileToolWorks",
+  title: "Interlaced vs Progressive Scan: What Is the Difference?",
   description: "Interlaced video draws odd and even lines in alternating fields. Progressive video draws every line in sequence. Here is when each method matters.",
   alternates: {
     canonical: "/blog/interlaced-vs-progressive",
@@ -14,7 +14,7 @@ export default function BlogPost() {
   return (
     <div className="min-h-screen bg-gray-50">
         <BlogJsonLd
-          title="Interlaced vs Progressive Scan: What Is the Difference? | FileToolWorks"
+          title="Interlaced vs Progressive Scan: What Is the Difference?"
           description="Interlaced video draws odd and even lines in alternating fields. Progressive video draws every line in sequence. Here is when each method matters."
           slug="interlaced-vs-progressive"
           datePublished="2026-04-15"

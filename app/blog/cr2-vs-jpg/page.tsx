@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import BlogJsonLd from "@/components/BlogJsonLd";
 
 export const metadata: Metadata = {
-  title: "CR2 vs JPG: Canon RAW vs JPEG for Photos | FileToolWorks",
+  title: "CR2 vs JPG: Canon RAW vs JPEG for Photos",
   description: "CR2 is Canon's RAW format with full sensor data and editing flexibility. JPG is compressed and ready to share. Compare quality, file size, and when to shoot each.",
   alternates: {
     canonical: "/blog/cr2-vs-jpg",
@@ -14,7 +14,7 @@ export default function BlogPost() {
   return (
     <div className="min-h-screen bg-gray-50">
         <BlogJsonLd
-          title="CR2 vs JPG: Canon RAW vs JPEG for Photos | FileToolWorks"
+          title="CR2 vs JPG: Canon RAW vs JPEG for Photos"
           description="CR2 is Canon's RAW format with full sensor data and editing flexibility. JPG is compressed and ready to share. Compare quality, file size, and when to shoot each."
           slug="cr2-vs-jpg"
           datePublished="2026-04-02"

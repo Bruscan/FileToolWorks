@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "File Format Reference Guide | 60+ Formats Explained | FileToolWorks",
+  title: "File Format Reference Guide | 60+ Formats Explained",
   description:
     "Complete reference for 60+ file formats. Audio, video, image, document, and archive formats with extensions, use cases, and free conversion tools.",
   alternates: {

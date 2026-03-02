@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import BlogJsonLd from "@/components/BlogJsonLd";
 
 export const metadata: Metadata = {
-  title: "TIFF vs BMP: Compression, Quality, and When to Use Each | FileToolWorks",
+  title: "TIFF vs BMP: Compression, Quality, and When to Use Each",
   description: "TIFF supports lossless compression and layers while BMP stores raw uncompressed pixels. Compare file size, quality, features, and best use cases for each format.",
   alternates: {
     canonical: "/blog/tiff-vs-bmp",
@@ -14,7 +14,7 @@ export default function BlogPost() {
   return (
     <div className="min-h-screen bg-gray-50">
         <BlogJsonLd
-          title="TIFF vs BMP: Compression, Quality, and When to Use Each | FileToolWorks"
+          title="TIFF vs BMP: Compression, Quality, and When to Use Each"
           description="TIFF supports lossless compression and layers while BMP stores raw uncompressed pixels. Compare file size, quality, features, and best use cases for each format."
           slug="tiff-vs-bmp"
           datePublished="2026-04-02"

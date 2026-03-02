@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import BlogJsonLd from "@/components/BlogJsonLd";
 
 export const metadata: Metadata = {
-  title: "AIFF vs MP3: Quality, File Size, and When to Use Each | FileToolWorks",
+  title: "AIFF vs MP3: Quality, File Size, and When to Use Each",
   description: "AIFF is uncompressed with full audio quality. MP3 is 10x smaller with lossy compression. Compare sound quality, file size, and compatibility.",
   alternates: {
     canonical: "/blog/aiff-vs-mp3",
@@ -14,7 +14,7 @@ export default function BlogPost() {
   return (
     <div className="min-h-screen bg-gray-50">
         <BlogJsonLd
-          title="AIFF vs MP3: Quality, File Size, and When to Use Each | FileToolWorks"
+          title="AIFF vs MP3: Quality, File Size, and When to Use Each"
           description="AIFF is uncompressed with full audio quality. MP3 is 10x smaller with lossy compression. Compare sound quality, file size, and compatibility."
           slug="aiff-vs-mp3"
           datePublished="2026-03-25"

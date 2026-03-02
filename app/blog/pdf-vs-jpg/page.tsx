@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import BlogJsonLd from "@/components/BlogJsonLd";
 
 export const metadata: Metadata = {
-  title: "PDF vs JPG: Key Differences and When to Use Each | FileToolWorks",
+  title: "PDF vs JPG: Key Differences and When to Use Each",
   description: "PDF preserves document layout with text and multi-page support. JPG is a compressed image format ideal for photos. Compare quality, file size, editing, and best use cases.",
   alternates: {
     canonical: "/blog/pdf-vs-jpg",
@@ -14,7 +14,7 @@ export default function BlogPost() {
   return (
     <div className="min-h-screen bg-gray-50">
         <BlogJsonLd
-          title="PDF vs JPG: Key Differences and When to Use Each | FileToolWorks"
+          title="PDF vs JPG: Key Differences and When to Use Each"
           description="PDF preserves document layout with text and multi-page support. JPG is a compressed image format ideal for photos. Compare quality, file size, editing, and best use cases."
           slug="pdf-vs-jpg"
           datePublished="2026-04-03"

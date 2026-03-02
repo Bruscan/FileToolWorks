@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import BlogJsonLd from "@/components/BlogJsonLd";
 
 export const metadata: Metadata = {
-  title: "How to Compress Video for Email (Under 25MB) | FileToolWorks",
+  title: "How to Compress Video for Email (Under 25MB)",
   description: "Compress video files to fit email attachment limits. Reduce video size under 25MB with the right resolution, codec, and quality settings.",
   alternates: {
     canonical: "/blog/how-to-compress-video-for-email",
@@ -14,7 +14,7 @@ export default function BlogPost() {
   return (
     <div className="min-h-screen bg-gray-50">
         <BlogJsonLd
-          title="How to Compress Video for Email (Under 25MB) | FileToolWorks"
+          title="How to Compress Video for Email (Under 25MB)"
           description="Compress video files to fit email attachment limits. Reduce video size under 25MB with the right resolution, codec, and quality settings."
           slug="how-to-compress-video-for-email"
           datePublished="2026-03-01"

@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import ToolJsonLd from "@/components/ToolJsonLd";
 
 export const metadata: Metadata = {
-  title: "Excel to PDF Converter - Free Online Tool | FileToolWorks",
+  title: "Excel to PDF Converter - Free Online Tool",
   description:
     "Convert Excel spreadsheets to PDF instantly. Free Excel to PDF converter for .xls and .xlsx files. No signup required, completely private and secure.",
   keywords: [

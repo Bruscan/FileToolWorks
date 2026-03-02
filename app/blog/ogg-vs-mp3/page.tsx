@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import BlogJsonLd from "@/components/BlogJsonLd";
 
 export const metadata: Metadata = {
-  title: "OGG vs MP3: Quality, Compatibility, and Which to Use | FileToolWorks",
+  title: "OGG vs MP3: Quality, Compatibility, and Which to Use",
   description: "OGG vs MP3 compared side by side. Learn how they differ in sound quality, file size, compatibility, and which format to pick for your use case.",
   alternates: {
     canonical: "/blog/ogg-vs-mp3",
@@ -14,7 +14,7 @@ export default function BlogPost() {
   return (
     <div className="min-h-screen bg-gray-50">
         <BlogJsonLd
-          title="OGG vs MP3: Quality, Compatibility, and Which to Use | FileToolWorks"
+          title="OGG vs MP3: Quality, Compatibility, and Which to Use"
           description="OGG vs MP3 compared side by side. Learn how they differ in sound quality, file size, compatibility, and which format to pick for your use case."
           slug="ogg-vs-mp3"
           datePublished="2026-03-01"

@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import BlogJsonLd from "@/components/BlogJsonLd";
 
 export const metadata: Metadata = {
-  title: "PCM vs Bitstream: Which Audio Output Should You Use? | FileToolWorks",
+  title: "PCM vs Bitstream: Which Audio Output Should You Use?",
   description: "PCM decodes audio at the source device while bitstream sends compressed audio to your receiver for decoding. Learn when to use each setting.",
   alternates: {
     canonical: "/blog/pcm-vs-bitstream",
@@ -14,7 +14,7 @@ export default function BlogPost() {
   return (
     <div className="min-h-screen bg-gray-50">
         <BlogJsonLd
-          title="PCM vs Bitstream: Which Audio Output Should You Use? | FileToolWorks"
+          title="PCM vs Bitstream: Which Audio Output Should You Use?"
           description="PCM decodes audio at the source device while bitstream sends compressed audio to your receiver for decoding. Learn when to use each setting."
           slug="pcm-vs-bitstream"
           datePublished="2026-04-17"

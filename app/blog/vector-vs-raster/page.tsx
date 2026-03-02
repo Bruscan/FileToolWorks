@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import BlogJsonLd from "@/components/BlogJsonLd";
 
 export const metadata: Metadata = {
-  title: "Vector vs Raster: Key Differences Between Image Types | FileToolWorks",
+  title: "Vector vs Raster: Key Differences Between Image Types",
   description: "Vector images use math to scale infinitely without quality loss. Raster images use pixels and lose clarity when enlarged. Compare formats, use cases, and file sizes.",
   alternates: {
     canonical: "/blog/vector-vs-raster",
@@ -14,7 +14,7 @@ export default function BlogPost() {
   return (
     <div className="min-h-screen bg-gray-50">
         <BlogJsonLd
-          title="Vector vs Raster: Key Differences Between Image Types | FileToolWorks"
+          title="Vector vs Raster: Key Differences Between Image Types"
           description="Vector images use math to scale infinitely without quality loss. Raster images use pixels and lose clarity when enlarged. Compare formats, use cases, and file sizes."
           slug="vector-vs-raster"
           datePublished="2026-04-09"

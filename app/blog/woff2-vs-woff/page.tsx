@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import BlogJsonLd from "@/components/BlogJsonLd";
 
 export const metadata: Metadata = {
-  title: "WOFF2 vs WOFF: Compression, Browser Support, and Which to Use | FileToolWorks",
+  title: "WOFF2 vs WOFF: Compression, Browser Support, and Which to Use",
   description: "WOFF2 is 30% smaller than WOFF thanks to Brotli compression and has 97%+ browser support. Compare file size, performance, and when to use each web font format.",
   alternates: {
     canonical: "/blog/woff2-vs-woff",
@@ -14,7 +14,7 @@ export default function BlogPost() {
   return (
     <div className="min-h-screen bg-gray-50">
         <BlogJsonLd
-          title="WOFF2 vs WOFF: Compression, Browser Support, and Which to Use | FileToolWorks"
+          title="WOFF2 vs WOFF: Compression, Browser Support, and Which to Use"
           description="WOFF2 is 30% smaller than WOFF thanks to Brotli compression and has 97%+ browser support. Compare file size, performance, and when to use each web font format."
           slug="woff2-vs-woff"
           datePublished="2026-03-31"

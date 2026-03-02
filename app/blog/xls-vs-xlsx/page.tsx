@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import BlogJsonLd from "@/components/BlogJsonLd";
 
 export const metadata: Metadata = {
-  title: "XLS vs XLSX: Key Differences Between Excel Formats | FileToolWorks",
+  title: "XLS vs XLSX: Key Differences Between Excel Formats",
   description: "XLSX replaced XLS in 2007 with smaller files, more rows, and better compatibility. Learn the key differences and when the old XLS format still matters.",
   alternates: {
     canonical: "/blog/xls-vs-xlsx",
@@ -14,7 +14,7 @@ export default function BlogPost() {
   return (
     <div className="min-h-screen bg-gray-50">
         <BlogJsonLd
-          title="XLS vs XLSX: Key Differences Between Excel Formats | FileToolWorks"
+          title="XLS vs XLSX: Key Differences Between Excel Formats"
           description="XLSX replaced XLS in 2007 with smaller files, more rows, and better compatibility. Learn the key differences and when the old XLS format still matters."
           slug="xls-vs-xlsx"
           datePublished="2026-03-15"

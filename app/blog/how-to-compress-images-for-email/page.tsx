@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import BlogJsonLd from "@/components/BlogJsonLd";
 
 export const metadata: Metadata = {
-  title: "How to Compress Images for Email (Under 1MB Fast) | FileToolWorks",
+  title: "How to Compress Images for Email (Under 1MB Fast)",
   description: "Compress images for email attachments in seconds. Reduce photo file size below 1MB without visible quality loss using free browser-based tools.",
   alternates: {
     canonical: "/blog/how-to-compress-images-for-email",
@@ -14,7 +14,7 @@ export default function BlogPost() {
   return (
     <div className="min-h-screen bg-gray-50">
         <BlogJsonLd
-          title="How to Compress Images for Email (Under 1MB Fast) | FileToolWorks"
+          title="How to Compress Images for Email (Under 1MB Fast)"
           description="Compress images for email attachments in seconds. Reduce photo file size below 1MB without visible quality loss using free browser-based tools."
           slug="how-to-compress-images-for-email"
           datePublished="2026-03-01"

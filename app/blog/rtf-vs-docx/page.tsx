@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import BlogJsonLd from "@/components/BlogJsonLd";
 
 export const metadata: Metadata = {
-  title: "RTF vs DOCX: Compatibility, Features, and When to Use Each | FileToolWorks",
+  title: "RTF vs DOCX: Compatibility, Features, and When to Use Each",
   description: "RTF is a simple cross-platform text format. DOCX supports full formatting, macros, and modern features. Compare compatibility, security, file size, and use cases.",
   alternates: {
     canonical: "/blog/rtf-vs-docx",
@@ -14,7 +14,7 @@ export default function BlogPost() {
   return (
     <div className="min-h-screen bg-gray-50">
         <BlogJsonLd
-          title="RTF vs DOCX: Compatibility, Features, and When to Use Each | FileToolWorks"
+          title="RTF vs DOCX: Compatibility, Features, and When to Use Each"
           description="RTF is a simple cross-platform text format. DOCX supports full formatting, macros, and modern features. Compare compatibility, security, file size, and use cases."
           slug="rtf-vs-docx"
           datePublished="2026-03-16"

@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import BlogJsonLd from "@/components/BlogJsonLd";
 
 export const metadata: Metadata = {
-  title: "24fps vs 30fps: Which Frame Rate Should You Use? | FileToolWorks",
+  title: "24fps vs 30fps: Which Frame Rate Should You Use?",
   description: "24fps gives video a cinematic film look while 30fps produces smoother, more realistic motion. Learn when to use each frame rate for your projects.",
   alternates: {
     canonical: "/blog/24fps-vs-30fps",
@@ -14,7 +14,7 @@ export default function BlogPost() {
   return (
     <div className="min-h-screen bg-gray-50">
         <BlogJsonLd
-          title="24fps vs 30fps: Which Frame Rate Should You Use? | FileToolWorks"
+          title="24fps vs 30fps: Which Frame Rate Should You Use?"
           description="24fps gives video a cinematic film look while 30fps produces smoother, more realistic motion. Learn when to use each frame rate for your projects."
           slug="24fps-vs-30fps"
           datePublished="2026-04-11"

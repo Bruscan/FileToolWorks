@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import BlogJsonLd from "@/components/BlogJsonLd";
 
 export const metadata: Metadata = {
-  title: "NEF vs JPG: Nikon RAW vs JPEG for Photography | FileToolWorks",
+  title: "NEF vs JPG: Nikon RAW vs JPEG for Photography",
   description: "NEF is Nikon's RAW format with full editing flexibility. JPG is smaller and ready to share. Compare quality, file size, and when to shoot each format.",
   alternates: {
     canonical: "/blog/nef-vs-jpg",
@@ -14,7 +14,7 @@ export default function BlogPost() {
   return (
     <div className="min-h-screen bg-gray-50">
         <BlogJsonLd
-          title="NEF vs JPG: Nikon RAW vs JPEG for Photography | FileToolWorks"
+          title="NEF vs JPG: Nikon RAW vs JPEG for Photography"
           description="NEF is Nikon's RAW format with full editing flexibility. JPG is smaller and ready to share. Compare quality, file size, and when to shoot each format."
           slug="nef-vs-jpg"
           datePublished="2026-04-13"

@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import BlogJsonLd from "@/components/BlogJsonLd";
 
 export const metadata: Metadata = {
-  title: "MP4 vs WebM: File Size, Quality, and Compatibility Compared | FileToolWorks",
+  title: "MP4 vs WebM: File Size, Quality, and Compatibility Compared",
   description: "MP4 uses H.264, WebM uses VP9. Compare file size, quality, browser support, and learn which video format to choose for web and sharing.",
   alternates: {
     canonical: "/blog/mp4-vs-webm",
@@ -14,7 +14,7 @@ export default function BlogPost() {
   return (
     <div className="min-h-screen bg-gray-50">
         <BlogJsonLd
-          title="MP4 vs WebM: File Size, Quality, and Compatibility Compared | FileToolWorks"
+          title="MP4 vs WebM: File Size, Quality, and Compatibility Compared"
           description="MP4 uses H.264, WebM uses VP9. Compare file size, quality, browser support, and learn which video format to choose for web and sharing."
           slug="mp4-vs-webm"
           datePublished="2026-03-02"

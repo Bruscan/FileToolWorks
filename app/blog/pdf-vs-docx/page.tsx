@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import BlogJsonLd from "@/components/BlogJsonLd";
 
 export const metadata: Metadata = {
-  title: "PDF vs DOCX: Differences and When to Use Each | FileToolWorks",
+  title: "PDF vs DOCX: Differences and When to Use Each",
   description: "PDF vs DOCX explained. Learn when to use each format for sharing, editing, printing, and archiving documents.",
   alternates: {
     canonical: "/blog/pdf-vs-docx",
@@ -14,7 +14,7 @@ export default function BlogPost() {
   return (
     <div className="min-h-screen bg-gray-50">
         <BlogJsonLd
-          title="PDF vs DOCX: Differences and When to Use Each | FileToolWorks"
+          title="PDF vs DOCX: Differences and When to Use Each"
           description="PDF vs DOCX explained. Learn when to use each format for sharing, editing, printing, and archiving documents."
           slug="pdf-vs-docx"
           datePublished="2026-03-01"

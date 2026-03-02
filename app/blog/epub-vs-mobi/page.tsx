@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import BlogJsonLd from "@/components/BlogJsonLd";
 
 export const metadata: Metadata = {
-  title: "EPUB vs MOBI: eBook Formats Compared | FileToolWorks",
+  title: "EPUB vs MOBI: eBook Formats Compared",
   description: "EPUB is the universal eBook standard supported by almost every reader. MOBI is Amazon's legacy format, now largely replaced. Compare features, compatibility, and which to use.",
   alternates: {
     canonical: "/blog/epub-vs-mobi",
@@ -14,7 +14,7 @@ export default function BlogPost() {
   return (
     <div className="min-h-screen bg-gray-50">
         <BlogJsonLd
-          title="EPUB vs MOBI: eBook Formats Compared | FileToolWorks"
+          title="EPUB vs MOBI: eBook Formats Compared"
           description="EPUB is the universal eBook standard supported by almost every reader. MOBI is Amazon's legacy format, now largely replaced. Compare features, compatibility, and which to use."
           slug="epub-vs-mobi"
           datePublished="2026-03-27"

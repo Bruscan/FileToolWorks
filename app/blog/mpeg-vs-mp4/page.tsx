@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import BlogJsonLd from "@/components/BlogJsonLd";
 
 export const metadata: Metadata = {
-  title: "MPEG vs MP4: Format Differences, Codecs, and Compatibility | FileToolWorks",
+  title: "MPEG vs MP4: Format Differences, Codecs, and Compatibility",
   description: "MPEG is a family of compression standards (MPEG-1, MPEG-2, MPEG-4). MP4 is a container format based on MPEG-4 Part 14. Compare codecs, quality, and use cases.",
   alternates: {
     canonical: "/blog/mpeg-vs-mp4",
@@ -14,7 +14,7 @@ export default function BlogPost() {
   return (
     <div className="min-h-screen bg-gray-50">
         <BlogJsonLd
-          title="MPEG vs MP4: Format Differences, Codecs, and Compatibility | FileToolWorks"
+          title="MPEG vs MP4: Format Differences, Codecs, and Compatibility"
           description="MPEG is a family of compression standards (MPEG-1, MPEG-2, MPEG-4). MP4 is a container format based on MPEG-4 Part 14. Compare codecs, quality, and use cases."
           slug="mpeg-vs-mp4"
           datePublished="2026-03-20"

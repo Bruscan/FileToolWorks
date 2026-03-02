@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import BlogJsonLd from "@/components/BlogJsonLd";
 
 export const metadata: Metadata = {
-  title: "tar.gz vs ZIP: Compression, Compatibility, and Key Differences | FileToolWorks",
+  title: "tar.gz vs ZIP: Compression, Compatibility, and Key Differences",
   description: "tar.gz compresses all files as one stream for better ratios. ZIP compresses each file separately for easy random access. Compare both archive formats side by side.",
   alternates: {
     canonical: "/blog/tar-gz-vs-zip",
@@ -14,7 +14,7 @@ export default function BlogPost() {
   return (
     <div className="min-h-screen bg-gray-50">
         <BlogJsonLd
-          title="tar.gz vs ZIP: Compression, Compatibility, and Key Differences | FileToolWorks"
+          title="tar.gz vs ZIP: Compression, Compatibility, and Key Differences"
           description="tar.gz compresses all files as one stream for better ratios. ZIP compresses each file separately for easy random access. Compare both archive formats side by side."
           slug="tar-gz-vs-zip"
           datePublished="2026-04-22"

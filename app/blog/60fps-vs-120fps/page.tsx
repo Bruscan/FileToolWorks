@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import BlogJsonLd from "@/components/BlogJsonLd";
 
 export const metadata: Metadata = {
-  title: "60fps vs 120fps: Is Double the Frame Rate Worth It? | FileToolWorks",
+  title: "60fps vs 120fps: Is Double the Frame Rate Worth It?",
   description: "60fps is smooth enough for most video and gaming. 120fps adds visible fluidity for fast-paced games and high-refresh displays. Compare both frame rates.",
   alternates: {
     canonical: "/blog/60fps-vs-120fps",
@@ -14,7 +14,7 @@ export default function BlogPost() {
   return (
     <div className="min-h-screen bg-gray-50">
         <BlogJsonLd
-          title="60fps vs 120fps: Is Double the Frame Rate Worth It? | FileToolWorks"
+          title="60fps vs 120fps: Is Double the Frame Rate Worth It?"
           description="60fps is smooth enough for most video and gaming. 120fps adds visible fluidity for fast-paced games and high-refresh displays. Compare both frame rates."
           slug="60fps-vs-120fps"
           datePublished="2026-04-12"

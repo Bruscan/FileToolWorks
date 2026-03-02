@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import BlogJsonLd from "@/components/BlogJsonLd";
 
 export const metadata: Metadata = {
-  title: "AVIF vs PNG: Compression, Quality, and When to Use Each | FileToolWorks",
+  title: "AVIF vs PNG: Compression, Quality, and When to Use Each",
   description: "AVIF compresses photos 10x smaller than PNG with minimal quality loss. PNG is lossless with universal support. Compare file size, features, and pick the right format.",
   alternates: {
     canonical: "/blog/avif-vs-png",
@@ -14,7 +14,7 @@ export default function BlogPost() {
   return (
     <div className="min-h-screen bg-gray-50">
         <BlogJsonLd
-          title="AVIF vs PNG: Compression, Quality, and When to Use Each | FileToolWorks"
+          title="AVIF vs PNG: Compression, Quality, and When to Use Each"
           description="AVIF compresses photos 10x smaller than PNG with minimal quality loss. PNG is lossless with universal support. Compare file size, features, and pick the right format."
           slug="avif-vs-png"
           datePublished="2026-03-30"

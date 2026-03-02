@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import BlogJsonLd from "@/components/BlogJsonLd";
 
 export const metadata: Metadata = {
-  title: "HEIF vs HEIC: What is the Difference? | FileToolWorks",
+  title: "HEIF vs HEIC: What is the Difference?",
   description: "HEIF is the container format, HEIC is the HEVC-encoded variant. Learn how they relate, why Apple uses HEIC, and how to convert both to JPG.",
   alternates: {
     canonical: "/blog/heif-vs-heic",
@@ -14,7 +14,7 @@ export default function BlogPost() {
   return (
     <div className="min-h-screen bg-gray-50">
         <BlogJsonLd
-          title="HEIF vs HEIC: What is the Difference? | FileToolWorks"
+          title="HEIF vs HEIC: What is the Difference?"
           description="HEIF is the container format, HEIC is the HEVC-encoded variant. Learn how they relate, why Apple uses HEIC, and how to convert both to JPG."
           slug="heif-vs-heic"
           datePublished="2026-03-06"

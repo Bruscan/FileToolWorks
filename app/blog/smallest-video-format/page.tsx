@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import BlogJsonLd from "@/components/BlogJsonLd";
 
 export const metadata: Metadata = {
-  title: "Smallest Video Format: Which Format Has the Smallest File Size? | FileToolWorks",
+  title: "Smallest Video Format: Which Format Has the Smallest File Size?",
   description:
     "Compare MP4, WebM, AVI, and MKV file sizes. Learn which video format gives the smallest files while keeping good quality.",
   alternates: {
@@ -15,7 +15,7 @@ export default function BlogPost() {
   return (
     <div className="min-h-screen bg-gray-50">
       <BlogJsonLd
-        title="Smallest Video Format: Which Format Has the Smallest File Size? | FileToolWorks"
+        title="Smallest Video Format: Which Format Has the Smallest File Size?"
         description="Compare MP4, WebM, AVI, and MKV file sizes. Learn which video format gives the smallest files while keeping good quality."
         slug="smallest-video-format"
         datePublished="2026-04-23"

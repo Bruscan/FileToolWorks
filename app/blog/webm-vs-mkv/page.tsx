@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import BlogJsonLd from "@/components/BlogJsonLd";
 
 export const metadata: Metadata = {
-  title: "WebM vs MKV: Web Streaming vs Media Storage Compared | FileToolWorks",
+  title: "WebM vs MKV: Web Streaming vs Media Storage Compared",
   description: "WebM is optimized for web browsers with VP8/VP9 codecs. MKV supports unlimited tracks and codecs for local storage. Compare features, size, and compatibility.",
   alternates: {
     canonical: "/blog/webm-vs-mkv",
@@ -14,7 +14,7 @@ export default function BlogPost() {
   return (
     <div className="min-h-screen bg-gray-50">
         <BlogJsonLd
-          title="WebM vs MKV: Web Streaming vs Media Storage Compared | FileToolWorks"
+          title="WebM vs MKV: Web Streaming vs Media Storage Compared"
           description="WebM is optimized for web browsers with VP8/VP9 codecs. MKV supports unlimited tracks and codecs for local storage. Compare features, size, and compatibility."
           slug="webm-vs-mkv"
           datePublished="2026-03-09"

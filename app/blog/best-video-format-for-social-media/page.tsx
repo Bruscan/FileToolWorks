@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import BlogJsonLd from "@/components/BlogJsonLd";
 
 export const metadata: Metadata = {
-  title: "Best Video Format for Social Media in 2026 | FileToolWorks",
+  title: "Best Video Format for Social Media in 2026",
   description: "MP4 with H.264 is the universal video format for social media. See format requirements for YouTube, Instagram, TikTok, Facebook, and LinkedIn.",
   alternates: {
     canonical: "/blog/best-video-format-for-social-media",
@@ -14,7 +14,7 @@ export default function BlogPost() {
   return (
     <div className="min-h-screen bg-gray-50">
         <BlogJsonLd
-          title="Best Video Format for Social Media in 2026 | FileToolWorks"
+          title="Best Video Format for Social Media in 2026"
           description="MP4 with H.264 is the universal video format for social media. See format requirements for YouTube, Instagram, TikTok, Facebook, and LinkedIn."
           slug="best-video-format-for-social-media"
           datePublished="2026-03-07"

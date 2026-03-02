@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import BlogJsonLd from "@/components/BlogJsonLd";
 
 export const metadata: Metadata = {
-  title: "8-Bit vs 10-Bit Video: Does Color Depth Matter? | FileToolWorks",
+  title: "8-Bit vs 10-Bit Video: Does Color Depth Matter?",
   description: "8-bit video supports 16.7 million colors. 10-bit supports over 1 billion. Learn when the extra color depth actually matters for your video workflow.",
   alternates: {
     canonical: "/blog/8-bit-vs-10-bit",
@@ -14,7 +14,7 @@ export default function BlogPost() {
   return (
     <div className="min-h-screen bg-gray-50">
         <BlogJsonLd
-          title="8-Bit vs 10-Bit Video: Does Color Depth Matter? | FileToolWorks"
+          title="8-Bit vs 10-Bit Video: Does Color Depth Matter?"
           description="8-bit video supports 16.7 million colors. 10-bit supports over 1 billion. Learn when the extra color depth actually matters for your video workflow."
           slug="8-bit-vs-10-bit"
           datePublished="2026-04-14"

@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import ToolJsonLd from "@/components/ToolJsonLd";
 
 export const metadata: Metadata = {
-  title: "Compress Video Online - Free Video Compressor | FileToolWorks",
+  title: "Compress Video Online - Free Video Compressor",
   description: "Compress video files online for free. Reduce video file size while maintaining quality. Supports MP4, MOV, AVI, WebM. No upload required, works in your browser.",
   keywords: [
     "compress video",

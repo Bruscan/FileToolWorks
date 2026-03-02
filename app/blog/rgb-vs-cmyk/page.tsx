@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import BlogJsonLd from "@/components/BlogJsonLd";
 
 export const metadata: Metadata = {
-  title: "RGB vs CMYK: What's the Difference and When to Use Each | FileToolWorks",
+  title: "RGB vs CMYK: What's the Difference and When to Use Each",
   description: "RGB uses light for screens, CMYK uses ink for print. Understand the key differences in color range, file formats, and when to pick each color mode.",
   alternates: {
     canonical: "/blog/rgb-vs-cmyk",
@@ -14,7 +14,7 @@ export default function BlogPost() {
   return (
     <div className="min-h-screen bg-gray-50">
         <BlogJsonLd
-          title="RGB vs CMYK: What's the Difference and When to Use Each | FileToolWorks"
+          title="RGB vs CMYK: What's the Difference and When to Use Each"
           description="RGB uses light for screens, CMYK uses ink for print. Understand the key differences in color range, file formats, and when to pick each color mode."
           slug="rgb-vs-cmyk"
           datePublished="2026-04-10"

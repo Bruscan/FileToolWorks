@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import BlogJsonLd from "@/components/BlogJsonLd";
 
 export const metadata: Metadata = {
-  title: "TIFF vs PNG: File Size, Quality, and When to Use Each | FileToolWorks",
+  title: "TIFF vs PNG: File Size, Quality, and When to Use Each",
   description: "TIFF is built for print and editing. PNG is built for the web. Compare file size, compression, color space support, and transparency for both formats.",
   alternates: {
     canonical: "/blog/tiff-vs-png",
@@ -14,7 +14,7 @@ export default function BlogPost() {
   return (
     <div className="min-h-screen bg-gray-50">
         <BlogJsonLd
-          title="TIFF vs PNG: File Size, Quality, and When to Use Each | FileToolWorks"
+          title="TIFF vs PNG: File Size, Quality, and When to Use Each"
           description="TIFF is built for print and editing. PNG is built for the web. Compare file size, compression, color space support, and transparency for both formats."
           slug="tiff-vs-png"
           datePublished="2026-03-08"

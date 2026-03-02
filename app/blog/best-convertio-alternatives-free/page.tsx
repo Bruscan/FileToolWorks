@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import BlogJsonLd from "@/components/BlogJsonLd";
 
 export const metadata: Metadata = {
-  title: "5 Best Free Convertio Alternatives (2026) - No Signup Required | FileToolWorks",
+  title: "5 Best Free Convertio Alternatives (2026) - No Signup Required",
   description: "Looking for free Convertio alternatives without signup or file limits? Compare 5 online file converters for images, video, audio, and PDFs.",
   alternates: {
     canonical: "/blog/best-convertio-alternatives-free",

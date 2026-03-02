@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import BlogJsonLd from "@/components/BlogJsonLd";
 
 export const metadata: Metadata = {
-  title: "MKV vs AVI: Features, File Size, and Compatibility Compared | FileToolWorks",
+  title: "MKV vs AVI: Features, File Size, and Compatibility Compared",
   description: "MKV supports modern codecs, multiple audio tracks, and subtitles. AVI is a legacy format with broad playback support. Compare features, quality, and use cases.",
   alternates: {
     canonical: "/blog/mkv-vs-avi",
@@ -14,7 +14,7 @@ export default function BlogPost() {
   return (
     <div className="min-h-screen bg-gray-50">
         <BlogJsonLd
-          title="MKV vs AVI: Features, File Size, and Compatibility Compared | FileToolWorks"
+          title="MKV vs AVI: Features, File Size, and Compatibility Compared"
           description="MKV supports modern codecs, multiple audio tracks, and subtitles. AVI is a legacy format with broad playback support. Compare features, quality, and use cases."
           slug="mkv-vs-avi"
           datePublished="2026-03-20"

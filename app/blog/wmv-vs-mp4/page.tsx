@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import BlogJsonLd from "@/components/BlogJsonLd";
 
 export const metadata: Metadata = {
-  title: "WMV vs MP4: Compatibility, Quality, and File Size Compared | FileToolWorks",
+  title: "WMV vs MP4: Compatibility, Quality, and File Size Compared",
   description: "WMV is a Windows-only format with shrinking support. MP4 plays everywhere. Compare codec quality, file size, streaming, and when to convert.",
   alternates: {
     canonical: "/blog/wmv-vs-mp4",
@@ -14,7 +14,7 @@ export default function BlogPost() {
   return (
     <div className="min-h-screen bg-gray-50">
         <BlogJsonLd
-          title="WMV vs MP4: Compatibility, Quality, and File Size Compared | FileToolWorks"
+          title="WMV vs MP4: Compatibility, Quality, and File Size Compared"
           description="WMV is a Windows-only format with shrinking support. MP4 plays everywhere. Compare codec quality, file size, streaming, and when to convert."
           slug="wmv-vs-mp4"
           datePublished="2026-03-06"

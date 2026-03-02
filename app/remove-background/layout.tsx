@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import ToolJsonLd from "@/components/ToolJsonLd";
 
 export const metadata: Metadata = {
-  title: "Remove Background from Images - AI Background Remover | FileToolWorks",
+  title: "Remove Background from Images - AI Background Remover",
   description:
     "Remove image backgrounds automatically with AI. Free online tool to remove background from photos of people, products, animals, and objects. Get transparent PNG files instantly.",
   keywords: [

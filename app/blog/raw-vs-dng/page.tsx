@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import BlogJsonLd from "@/components/BlogJsonLd";
 
 export const metadata: Metadata = {
-  title: "RAW vs DNG: File Size, Compatibility, and Which to Shoot | FileToolWorks",
+  title: "RAW vs DNG: File Size, Compatibility, and Which to Shoot",
   description: "DNG is Adobe's open raw format that is 15-20% smaller than proprietary RAW files. Compare editing flexibility, compatibility, metadata handling, and archival use.",
   alternates: {
     canonical: "/blog/raw-vs-dng",
@@ -14,7 +14,7 @@ export default function BlogPost() {
   return (
     <div className="min-h-screen bg-gray-50">
         <BlogJsonLd
-          title="RAW vs DNG: File Size, Compatibility, and Which to Shoot | FileToolWorks"
+          title="RAW vs DNG: File Size, Compatibility, and Which to Shoot"
           description="DNG is Adobe's open raw format that is 15-20% smaller than proprietary RAW files. Compare editing flexibility, compatibility, metadata handling, and archival use."
           slug="raw-vs-dng"
           datePublished="2026-04-01"

@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import BlogJsonLd from "@/components/BlogJsonLd";
 
 export const metadata: Metadata = {
-  title: "VP8 vs VP9: Compression, Quality, and Browser Support | FileToolWorks",
+  title: "VP8 vs VP9: Compression, Quality, and Browser Support",
   description: "VP9 delivers roughly 50% better compression than VP8 at the same quality. Compare Google's open video codecs for streaming, WebRTC, and web delivery.",
   alternates: {
     canonical: "/blog/vp8-vs-vp9",
@@ -14,7 +14,7 @@ export default function BlogPost() {
   return (
     <div className="min-h-screen bg-gray-50">
         <BlogJsonLd
-          title="VP8 vs VP9: Compression, Quality, and Browser Support | FileToolWorks"
+          title="VP8 vs VP9: Compression, Quality, and Browser Support"
           description="VP9 delivers roughly 50% better compression than VP8 at the same quality. Compare Google's open video codecs for streaming, WebRTC, and web delivery."
           slug="vp8-vs-vp9"
           datePublished="2026-04-19"

@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import BlogJsonLd from "@/components/BlogJsonLd";
 
 export const metadata: Metadata = {
-  title: "YAML vs JSON: Readability, Features, and Best Use Cases | FileToolWorks",
+  title: "YAML vs JSON: Readability, Features, and Best Use Cases",
   description: "YAML is more readable and supports comments, making it ideal for config files. JSON is faster to parse and better for APIs. See when to use each format.",
   alternates: {
     canonical: "/blog/yaml-vs-json",
@@ -14,7 +14,7 @@ export default function BlogPost() {
   return (
     <div className="min-h-screen bg-gray-50">
         <BlogJsonLd
-          title="YAML vs JSON: Readability, Features, and Best Use Cases | FileToolWorks"
+          title="YAML vs JSON: Readability, Features, and Best Use Cases"
           description="YAML is more readable and supports comments, making it ideal for config files. JSON is faster to parse and better for APIs. See when to use each format."
           slug="yaml-vs-json"
           datePublished="2026-03-23"

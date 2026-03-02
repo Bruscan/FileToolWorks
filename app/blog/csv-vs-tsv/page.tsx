@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import BlogJsonLd from "@/components/BlogJsonLd";
 
 export const metadata: Metadata = {
-  title: "CSV vs TSV: Difference Between Comma and Tab Delimited Files | FileToolWorks",
+  title: "CSV vs TSV: Difference Between Comma and Tab Delimited Files",
   description: "CSV uses commas as delimiters. TSV uses tabs. Compare parsing complexity, compatibility, performance, and which format to pick for your data.",
   alternates: {
     canonical: "/blog/csv-vs-tsv",
@@ -14,7 +14,7 @@ export default function BlogPost() {
   return (
     <div className="min-h-screen bg-gray-50">
         <BlogJsonLd
-          title="CSV vs TSV: Difference Between Comma and Tab Delimited Files | FileToolWorks"
+          title="CSV vs TSV: Difference Between Comma and Tab Delimited Files"
           description="CSV uses commas as delimiters. TSV uses tabs. Compare parsing complexity, compatibility, performance, and which format to pick for your data."
           slug="csv-vs-tsv"
           datePublished="2026-04-07"
