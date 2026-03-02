@@ -5,6 +5,9 @@ import BlogJsonLd from "@/components/BlogJsonLd";
 export const metadata: Metadata = {
   title: "RAW vs DNG: File Size, Compatibility, and Which to Shoot | FileToolWorks",
   description: "DNG is Adobe's open raw format that is 15-20% smaller than proprietary RAW files. Compare editing flexibility, compatibility, metadata handling, and archival use.",
+  alternates: {
+    canonical: "/blog/raw-vs-dng",
+  },
 };
 
 export default function BlogPost() {

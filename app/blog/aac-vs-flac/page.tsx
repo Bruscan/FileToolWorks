@@ -5,6 +5,9 @@ import BlogJsonLd from "@/components/BlogJsonLd";
 export const metadata: Metadata = {
   title: "AAC vs FLAC: Lossy Convenience vs Lossless Quality | FileToolWorks",
   description: "AAC files are 10x smaller than FLAC and sound nearly identical to most listeners. FLAC preserves every bit of the original audio. Full format comparison.",
+  alternates: {
+    canonical: "/blog/aac-vs-flac",
+  },
 };
 
 export default function BlogPost() {

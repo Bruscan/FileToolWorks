@@ -5,6 +5,9 @@ import BlogJsonLd from "@/components/BlogJsonLd";
 export const metadata: Metadata = {
   title: "PDF vs JPG: Key Differences and When to Use Each | FileToolWorks",
   description: "PDF preserves document layout with text and multi-page support. JPG is a compressed image format ideal for photos. Compare quality, file size, editing, and best use cases.",
+  alternates: {
+    canonical: "/blog/pdf-vs-jpg",
+  },
 };
 
 export default function BlogPost() {

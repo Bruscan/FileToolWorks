@@ -5,6 +5,9 @@ import BlogJsonLd from "@/components/BlogJsonLd";
 export const metadata: Metadata = {
   title: "SVG vs AI: Open Standard vs Adobe's Proprietary Vector Format | FileToolWorks",
   description: "SVG is an open XML-based vector format for the web. AI is Adobe Illustrator's proprietary format for print design. Compare compatibility, features, and use cases.",
+  alternates: {
+    canonical: "/blog/svg-vs-ai",
+  },
 };
 
 export default function BlogPost() {

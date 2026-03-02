@@ -5,6 +5,9 @@ import BlogJsonLd from "@/components/BlogJsonLd";
 export const metadata: Metadata = {
   title: "RTF vs DOCX: Compatibility, Features, and When to Use Each | FileToolWorks",
   description: "RTF is a simple cross-platform text format. DOCX supports full formatting, macros, and modern features. Compare compatibility, security, file size, and use cases.",
+  alternates: {
+    canonical: "/blog/rtf-vs-docx",
+  },
 };
 
 export default function BlogPost() {

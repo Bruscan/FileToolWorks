@@ -5,6 +5,9 @@ import BlogJsonLd from "@/components/BlogJsonLd";
 export const metadata: Metadata = {
   title: "EPUB vs MOBI: eBook Formats Compared | FileToolWorks",
   description: "EPUB is the universal eBook standard supported by almost every reader. MOBI is Amazon's legacy format, now largely replaced. Compare features, compatibility, and which to use.",
+  alternates: {
+    canonical: "/blog/epub-vs-mobi",
+  },
 };
 
 export default function BlogPost() {

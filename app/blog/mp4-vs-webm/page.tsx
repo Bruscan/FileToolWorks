@@ -5,6 +5,9 @@ import BlogJsonLd from "@/components/BlogJsonLd";
 export const metadata: Metadata = {
   title: "MP4 vs WebM: File Size, Quality, and Compatibility Compared | FileToolWorks",
   description: "MP4 uses H.264, WebM uses VP9. Compare file size, quality, browser support, and learn which video format to choose for web and sharing.",
+  alternates: {
+    canonical: "/blog/mp4-vs-webm",
+  },
 };
 
 export default function BlogPost() {

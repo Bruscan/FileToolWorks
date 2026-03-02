@@ -5,6 +5,9 @@ import BlogJsonLd from "@/components/BlogJsonLd";
 export const metadata: Metadata = {
   title: "How to Convert MP3 to WAV (Free, No Software) | FileToolWorks",
   description: "Convert MP3 to WAV format for free in your browser. Step-by-step guide covering when and why to convert, plus quality and file size expectations.",
+  alternates: {
+    canonical: "/blog/mp3-to-wav-conversion",
+  },
 };
 
 export default function BlogPost() {

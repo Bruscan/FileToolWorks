@@ -5,6 +5,9 @@ import BlogJsonLd from "@/components/BlogJsonLd";
 export const metadata: Metadata = {
   title: "BMP vs PNG: File Size, Quality, and When to Use Each | FileToolWorks",
   description: "BMP stores raw uncompressed pixel data. PNG uses lossless compression for smaller files with identical quality. Compare features, transparency, and use cases.",
+  alternates: {
+    canonical: "/blog/bmp-vs-png",
+  },
 };
 
 export default function BlogPost() {

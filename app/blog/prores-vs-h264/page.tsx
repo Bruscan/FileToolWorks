@@ -5,6 +5,9 @@ import BlogJsonLd from "@/components/BlogJsonLd";
 export const metadata: Metadata = {
   title: "ProRes vs H.264: Quality, File Size, and When to Use Each | FileToolWorks",
   description: "ProRes is an editing codec with huge files and maximum quality. H.264 compresses aggressively for delivery. Compare file size, color depth, and workflows.",
+  alternates: {
+    canonical: "/blog/prores-vs-h264",
+  },
 };
 
 export default function BlogPost() {

@@ -5,6 +5,9 @@ import BlogJsonLd from "@/components/BlogJsonLd";
 export const metadata: Metadata = {
   title: "MP4 vs MOV: Which Video Format Should You Use? | FileToolWorks",
   description: "MP4 and MOV compared on file size, codec support, compatibility, editing, and streaming. Learn which video format fits your project.",
+  alternates: {
+    canonical: "/blog/mp4-vs-mov",
+  },
 };
 
 export default function BlogPost() {

@@ -5,6 +5,9 @@ import BlogJsonLd from "@/components/BlogJsonLd";
 export const metadata: Metadata = {
   title: "AVIF vs WebP: Compression, Quality, and Browser Support | FileToolWorks",
   description: "AVIF compresses 20% smaller than WebP but decodes slower. Compare quality, file size, browser support, and learn which next-gen image format to use.",
+  alternates: {
+    canonical: "/blog/avif-vs-webp",
+  },
 };
 
 export default function BlogPost() {

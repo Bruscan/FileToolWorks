@@ -5,6 +5,9 @@ import BlogJsonLd from "@/components/BlogJsonLd";
 export const metadata: Metadata = {
   title: "JPG vs GIF: When to Use Each Image Format | FileToolWorks",
   description: "JPG handles photos with millions of colors and small file sizes. GIF supports animation and transparency but only 256 colors. Compare both formats and pick the right one.",
+  alternates: {
+    canonical: "/blog/jpg-vs-gif",
+  },
 };
 
 export default function BlogPost() {

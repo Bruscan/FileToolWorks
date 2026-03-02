@@ -5,6 +5,9 @@ import BlogJsonLd from "@/components/BlogJsonLd";
 export const metadata: Metadata = {
   title: "DSD vs PCM: How the Two Digital Audio Formats Differ | FileToolWorks",
   description: "DSD uses 1-bit samples at 2.8 MHz while PCM uses multi-bit samples at lower rates. Compare sound quality, editing, and compatibility for audiophile playback.",
+  alternates: {
+    canonical: "/blog/dsd-vs-pcm",
+  },
 };
 
 export default function BlogPost() {

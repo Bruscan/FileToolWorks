@@ -5,6 +5,9 @@ import BlogJsonLd from "@/components/BlogJsonLd";
 export const metadata: Metadata = {
   title: "GIF vs WebP: File Size, Animation, and Quality Compared | FileToolWorks",
   description: "WebP animated images are 64% smaller than GIF with better color depth. Compare file size, animation, transparency, and browser support for both formats.",
+  alternates: {
+    canonical: "/blog/gif-vs-webp",
+  },
 };
 
 export default function BlogPost() {

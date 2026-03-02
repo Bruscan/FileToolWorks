@@ -5,6 +5,9 @@ import BlogJsonLd from "@/components/BlogJsonLd";
 export const metadata: Metadata = {
   title: "Keynote vs PPTX: Apple vs Microsoft Presentation Formats Compared | FileToolWorks",
   description: "Keynote (.key) is free on Apple devices with polished animations. PPTX is the industry standard that works everywhere. Compare compatibility, features, and export options.",
+  alternates: {
+    canonical: "/blog/keynote-vs-pptx",
+  },
 };
 
 export default function BlogPost() {

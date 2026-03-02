@@ -5,6 +5,9 @@ import BlogJsonLd from "@/components/BlogJsonLd";
 export const metadata: Metadata = {
   title: "PCM vs Bitstream: Which Audio Output Should You Use? | FileToolWorks",
   description: "PCM decodes audio at the source device while bitstream sends compressed audio to your receiver for decoding. Learn when to use each setting.",
+  alternates: {
+    canonical: "/blog/pcm-vs-bitstream",
+  },
 };
 
 export default function BlogPost() {

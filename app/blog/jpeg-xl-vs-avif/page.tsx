@@ -5,6 +5,9 @@ import BlogJsonLd from "@/components/BlogJsonLd";
 export const metadata: Metadata = {
   title: "JPEG XL vs AVIF: Compression, Quality, and Browser Support | FileToolWorks",
   description: "JPEG XL beats AVIF at high quality and handles huge images. AVIF has full browser support and wins at low bitrates. Compare both next-gen image formats.",
+  alternates: {
+    canonical: "/blog/jpeg-xl-vs-avif",
+  },
 };
 
 export default function BlogPost() {

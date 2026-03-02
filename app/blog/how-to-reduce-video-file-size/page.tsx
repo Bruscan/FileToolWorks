@@ -6,6 +6,9 @@ export const metadata: Metadata = {
   title: "How to Reduce Video File Size Without Losing Quality | FileToolWorks",
   description:
     "Reduce video file size by 50-80% using compression, resolution changes, and trimming. Free browser-based tools, no upload needed.",
+  alternates: {
+    canonical: "/blog/how-to-reduce-video-file-size",
+  },
 };
 
 export default function BlogPost() {
