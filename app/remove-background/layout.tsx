@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     description: "Remove image background automatically with AI. Free.",
   },
   alternates: {
-    canonical: "/remove-background",
+    canonical: "https://www.filetoolworks.com/remove-background",
   },
 };
 

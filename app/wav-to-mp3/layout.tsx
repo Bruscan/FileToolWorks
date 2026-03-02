@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     "free audio converter",
   ],
   alternates: {
-    canonical: "/wav-to-mp3",
+    canonical: "https://www.filetoolworks.com/wav-to-mp3",
   },
   openGraph: {
     title: "WAV to MP3 Converter - Free Online Audio Converter",

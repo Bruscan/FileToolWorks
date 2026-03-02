@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     description: "Convert MP3 audio to WAV format. Free.",
   },
   alternates: {
-    canonical: "/mp3-to-wav",
+    canonical: "https://www.filetoolworks.com/mp3-to-wav",
   },
 };
 

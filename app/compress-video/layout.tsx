@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     description: "Reduce video file size for easier sharing. Free.",
   },
   alternates: {
-    canonical: "/compress-video",
+    canonical: "https://www.filetoolworks.com/compress-video",
   },
 };
 

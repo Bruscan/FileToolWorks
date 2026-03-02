@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   description:
     "Add free file conversion tools to your website. Embeddable audio compressor, image converter, PDF tools, and more. No API key needed.",
   alternates: {
-    canonical: "/free-tools-widget",
+    canonical: "https://www.filetoolworks.com/free-tools-widget",
   },
   openGraph: {
     title: "Free File Converter Widgets for Your Website",

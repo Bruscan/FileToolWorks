@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     description: "Extract files from ZIP archives. Free, no signup.",
   },
   alternates: {
-    canonical: "/unzip-files",
+    canonical: "https://www.filetoolworks.com/unzip-files",
   },
 };
 

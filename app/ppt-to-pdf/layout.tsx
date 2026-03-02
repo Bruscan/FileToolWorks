@@ -28,7 +28,7 @@ export const metadata: Metadata = {
       "Convert PowerPoint presentations to PDF online. Free PPT to PDF converter with formatting preservation. Transform PPTX files to high-quality PDF documents instantly.",
   },
   alternates: {
-    canonical: "/ppt-to-pdf",
+    canonical: "https://www.filetoolworks.com/ppt-to-pdf",
   },
 };
 

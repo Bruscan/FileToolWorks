@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   title: "JPG to PNG Converter | Free & Fast (No Signup)",
   description: "Convert JPG images to PNG instantly. Works online, supports mobile, keeps high quality. Free forever, no signup required.",
   alternates: {
-    canonical: "/jpg-to-png",
+    canonical: "https://www.filetoolworks.com/jpg-to-png",
   },
   openGraph: {
     title: "JPG to PNG Converter",

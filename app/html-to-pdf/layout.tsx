@@ -27,7 +27,7 @@ export const metadata: Metadata = {
       "Convert HTML and web pages to PDF online. Free, fast, and secure HTML to PDF converter.",
   },
   alternates: {
-    canonical: "/html-to-pdf",
+    canonical: "https://www.filetoolworks.com/html-to-pdf",
   },
 };
 

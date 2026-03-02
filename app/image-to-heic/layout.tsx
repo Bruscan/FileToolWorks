@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     "heic format",
   ],
   alternates: {
-    canonical: "/image-to-heic",
+    canonical: "https://www.filetoolworks.com/image-to-heic",
   },
   openGraph: {
     title: "Image to HEIC Converter - Free Online Tool",

@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   title: "WebP to JPG Converter | Free & Fast (No Signup)",
   description: "Convert WebP images to JPG instantly. Works online, supports mobile, keeps high quality. Free forever, no signup required.",
   alternates: {
-    canonical: "/webp-to-jpg",
+    canonical: "https://www.filetoolworks.com/webp-to-jpg",
   },
   openGraph: {
     title: "WebP to JPG Converter",

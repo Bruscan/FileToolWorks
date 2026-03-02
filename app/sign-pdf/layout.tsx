@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     description: "Add signature to PDF documents. Free, private, no upload.",
   },
   alternates: {
-    canonical: "/sign-pdf",
+    canonical: "https://www.filetoolworks.com/sign-pdf",
   },
 };
 

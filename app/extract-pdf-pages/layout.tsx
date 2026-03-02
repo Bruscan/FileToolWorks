@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     "free pdf extractor",
   ],
   alternates: {
-    canonical: "/extract-pdf-pages",
+    canonical: "https://www.filetoolworks.com/extract-pdf-pages",
   },
   openGraph: {
     title: "Extract PDF Pages - Free Online PDF Page Extractor",
