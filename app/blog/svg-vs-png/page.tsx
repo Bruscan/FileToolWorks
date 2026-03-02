@@ -125,7 +125,7 @@ export default function BlogPost() {
           </p>
 
           <p>
-            For the difference between SVG and another vector format used in print, see <Link href="/blog/eps-vs-svg" className="text-blue-600 hover:underline">EPS vs SVG</Link>. For animation comparisons, see <Link href="/blog/gif-vs-svg" className="text-blue-600 hover:underline">GIF vs SVG</Link>. For favicon format choices, see <Link href="/blog/ico-vs-png" className="text-blue-600 hover:underline">ICO vs PNG</Link>.
+            For the difference between SVG and another vector format used in print, see <Link href="/blog/eps-vs-svg" className="text-blue-600 hover:underline">EPS vs SVG</Link>. For animation comparisons, see <Link href="/blog/gif-vs-svg" className="text-blue-600 hover:underline">GIF vs SVG</Link>. For favicon format choices, see <Link href="/blog/ico-vs-png" className="text-blue-600 hover:underline">ICO vs PNG</Link>. For a broader look at image types, see <Link href="/blog/vector-vs-raster" className="text-blue-600 hover:underline">Vector vs Raster</Link>.
           </p>
           <p>
             <strong>Need to convert?</strong>{" "}
