@@ -55,7 +55,7 @@ export default function BlogPost() {
           </p>
 
           <p>
-            Comparing other video formats? Read <Link href="/blog/wmv-vs-mp4" className="text-blue-600 hover:underline">WMV vs MP4</Link>, <Link href="/blog/mkv-vs-mp4" className="text-blue-600 hover:underline">MKV vs MP4</Link>, <Link href="/blog/avi-vs-mp4" className="text-blue-600 hover:underline">AVI vs MP4</Link>, or <Link href="/blog/mp4-vs-mov" className="text-blue-600 hover:underline">MP4 vs MOV</Link>.
+            Comparing other video formats? Read <Link href="/blog/mpeg-vs-mp4" className="text-blue-600 hover:underline">MPEG vs MP4</Link>, <Link href="/blog/wmv-vs-mp4" className="text-blue-600 hover:underline">WMV vs MP4</Link>, <Link href="/blog/mkv-vs-mp4" className="text-blue-600 hover:underline">MKV vs MP4</Link>, <Link href="/blog/avi-vs-mp4" className="text-blue-600 hover:underline">AVI vs MP4</Link>, or <Link href="/blog/mp4-vs-mov" className="text-blue-600 hover:underline">MP4 vs MOV</Link>.
           </p>
         </div>
       </article>

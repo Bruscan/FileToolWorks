@@ -93,6 +93,10 @@ const audioPosts = [
     slug: "m4a-vs-mp4",
     title: "M4A vs MP4: Same Container, Different Contents Explained",
   },
+  {
+    slug: "opus-vs-aac",
+    title: "Opus vs AAC: Quality, Latency, and Compatibility Compared",
+  },
 ];
 
 const imagePosts = [
@@ -301,6 +305,14 @@ const videoPosts = [
   {
     slug: "prores-vs-h264",
     title: "ProRes vs H.264: Quality, File Size, and When to Use Each",
+  },
+  {
+    slug: "mkv-vs-avi",
+    title: "MKV vs AVI: Features, File Size, and Compatibility Compared",
+  },
+  {
+    slug: "mpeg-vs-mp4",
+    title: "MPEG vs MP4: Format Differences, Codecs, and Compatibility",
   },
 ];
 

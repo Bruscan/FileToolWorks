@@ -85,6 +85,9 @@ const blogPosts = [
   { slug: "apng-vs-gif", title: "APNG vs GIF: Color Depth, Transparency, and Animation Compared", date: "2026-03-19", description: "APNG supports 16 million colors and alpha transparency while GIF is limited to 256 colors. Compare file size, browser support, and animation quality." },
   { slug: "prores-vs-h264", title: "ProRes vs H.264: Quality, File Size, and When to Use Each", date: "2026-03-19", description: "ProRes is an editing codec with huge files and maximum quality. H.264 compresses aggressively for delivery. Compare file size, color depth, and workflows." },
   { slug: "m4a-vs-mp4", title: "M4A vs MP4: Same Container, Different Contents Explained", date: "2026-03-19", description: "M4A and MP4 both use the MPEG-4 container. M4A holds audio only (AAC or ALAC), while MP4 includes video. Compare compatibility, quality, and use cases." },
+  { slug: "opus-vs-aac", title: "Opus vs AAC: Quality, Latency, and Compatibility Compared", date: "2026-03-20", description: "Opus beats AAC at low bitrates and handles voice and music in one codec. AAC has broader device support. Compare quality, latency, file size, and use cases." },
+  { slug: "mkv-vs-avi", title: "MKV vs AVI: Features, File Size, and Compatibility Compared", date: "2026-03-20", description: "MKV supports modern codecs, multiple audio tracks, and subtitles. AVI is a legacy format with broad playback support. Compare features, quality, and use cases." },
+  { slug: "mpeg-vs-mp4", title: "MPEG vs MP4: Format Differences, Codecs, and Compatibility", date: "2026-03-20", description: "MPEG is a family of compression standards (MPEG-1, MPEG-2, MPEG-4). MP4 is a container format based on MPEG-4 Part 14. Compare codecs, quality, and use cases." },
 ];
 
 function escapeXml(str: string): string {

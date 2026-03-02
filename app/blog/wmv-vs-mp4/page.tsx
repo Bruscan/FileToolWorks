@@ -60,7 +60,7 @@ export default function BlogPost() {
           </p>
 
           <p>
-            For more video format comparisons, see <Link href="/blog/mkv-vs-mp4" className="text-blue-600 hover:underline">MKV vs MP4</Link>, <Link href="/blog/avi-vs-mp4" className="text-blue-600 hover:underline">AVI vs MP4</Link>, and <Link href="/blog/flv-vs-mp4" className="text-blue-600 hover:underline">FLV vs MP4</Link>.
+            For more video format comparisons, see <Link href="/blog/mpeg-vs-mp4" className="text-blue-600 hover:underline">MPEG vs MP4</Link>, <Link href="/blog/mkv-vs-mp4" className="text-blue-600 hover:underline">MKV vs MP4</Link>, <Link href="/blog/avi-vs-mp4" className="text-blue-600 hover:underline">AVI vs MP4</Link>, and <Link href="/blog/flv-vs-mp4" className="text-blue-600 hover:underline">FLV vs MP4</Link>.
           </p>
         </div>
       </article>
