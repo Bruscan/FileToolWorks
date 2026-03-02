@@ -3,19 +3,19 @@ import ToolJsonLd from "@/components/ToolJsonLd";
 
 export const metadata: Metadata = {
   title: "Audio Compressor | Reduce MP3, WAV, AAC File Size",
-  description: "Compress audio files and reduce bitrate instantly. Convert to MP3 with custom bitrate settings. Free, fast, and secure.",
+  description: "Free online audio compressor. Reduce MP3, WAV, AAC, OGG, and FLAC file size by up to 90%. No signup required. All processing happens in your browser.",
   alternates: {
     canonical: "https://www.filetoolworks.com/compress-audio",
   },
   openGraph: {
-    title: "Audio Compressor | Reduce Audio File Size",
-    description: "Compress audio files instantly. Free, secure, no signup.",
+    title: "Free Online Audio Compressor | Reduce Audio File Size",
+    description: "Shrink MP3, WAV, and other audio files online. Free, no signup, no upload to servers.",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
     title: "Audio Compressor",
-    description: "Reduce audio file size and bitrate. Free, no signup.",
+    description: "Free online audio compressor. Reduce MP3, WAV file size instantly. No signup.",
   },
 };
 
@@ -37,7 +37,7 @@ export default function CompressAudioLayout({
     <>
       <ToolJsonLd
         name="Audio Compressor"
-        description="Compress audio files and reduce bitrate instantly. Convert to MP3 with custom bitrate settings. Free, fast, and secure."
+        description="Free online audio compressor. Reduce MP3, WAV, AAC, OGG, and FLAC file size by up to 90%. No signup required. All processing happens in your browser."
         slug="compress-audio"
         faqs={faqs}
         rating={4.6}

@@ -249,10 +249,10 @@ export default function CompressAudio() {
             Audio Compressor
           </h1>
           <p className="text-lg text-gray-600 mb-4">
-            Reduce audio file size and bitrate instantly. Free, fast, and secure.
+            Free online MP3 compressor and audio file size reducer. No signup, no upload to servers.
           </p>
           <p className="text-gray-600 mb-4">
-            Upload audio files and compress them to reduce file size. Choose your preferred bitrate to balance between quality and file size. All processing happens in your browser for complete privacy. Supports MP3, WAV, AAC, OGG, and FLAC formats. Need to <Link href="/trim-audio" className="text-blue-600 hover:underline">trim audio</Link> or <Link href="/extract-audio" className="text-blue-600 hover:underline">extract audio from video</Link> first? We have tools for that too.
+            Shrink audio files by up to 90% with this free online audio compressor. Reduce MP3, WAV, AAC, OGG, and FLAC file sizes by choosing your preferred bitrate. All compression happens directly in your browser for complete privacy. Need to <Link href="/trim-audio" className="text-blue-600 hover:underline">trim audio</Link> or <Link href="/extract-audio" className="text-blue-600 hover:underline">extract audio from video</Link> first? We have tools for that too.
           </p>
           <div className="flex items-center gap-2 mt-4">
             <div className="flex items-center gap-1">
@@ -498,7 +498,7 @@ export default function CompressAudio() {
               <div>
                 <strong className="text-gray-900">Compress and download</strong>
                 <p className="text-gray-600 text-sm">
-                  Click Compress Audio and your files will be ready to download as MP3 with reduced file size.
+                  Click Compress Audio to shrink your files. Download the compressed MP3 files with reduced file size, ready to share or upload anywhere.
                 </p>
                 <p className="text-gray-500 text-xs mt-1">
                   Tip: Need to cut your file first? Use the <Link href="/trim-audio" className="text-blue-600 hover:underline">Audio Trimmer</Link> before compressing.
