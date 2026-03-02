@@ -65,7 +65,7 @@ export default function BlogPost() {
           </p>
 
           <p>
-            Working with structured documents? Our <Link href="/html-to-pdf" className="text-blue-600 hover:underline font-semibold">HTML to PDF converter</Link> handles web content, and our <Link href="/blog/doc-vs-docx" className="text-blue-600 hover:underline">DOC vs DOCX</Link> guide covers document format differences.
+            Working with structured documents? Our <Link href="/html-to-pdf" className="text-blue-600 hover:underline font-semibold">HTML to PDF converter</Link> handles web content, and our <Link href="/blog/doc-vs-docx" className="text-blue-600 hover:underline">DOC vs DOCX</Link> guide covers document format differences. For another serialization format comparison, see <Link href="/blog/xml-vs-yaml" className="text-blue-600 hover:underline">XML vs YAML</Link>.
           </p>
         </div>
       </article>
