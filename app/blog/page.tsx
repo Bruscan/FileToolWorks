@@ -101,6 +101,10 @@ const audioPosts = [
     slug: "alac-vs-aac",
     title: "ALAC vs AAC: Apple Lossless vs Lossy Audio Compared",
   },
+  {
+    slug: "wav-vs-ogg",
+    title: "WAV vs OGG: Quality, File Size, and Compatibility Compared",
+  },
 ];
 
 const imagePosts = [
@@ -322,6 +326,10 @@ const videoPosts = [
     slug: "mpeg-vs-mp4",
     title: "MPEG vs MP4: Format Differences, Codecs, and Compatibility",
   },
+  {
+    slug: "av1-vs-vp9",
+    title: "AV1 vs VP9: Compression, Quality, and Performance Compared",
+  },
 ];
 
 const generalPosts = [
@@ -372,6 +380,10 @@ const generalPosts = [
   {
     slug: "rar-vs-7z",
     title: "RAR vs 7z: Compression, Speed, and Compatibility Compared",
+  },
+  {
+    slug: "json-vs-csv",
+    title: "JSON vs CSV: Structure, Performance, and Use Cases Compared",
   },
 ];
 

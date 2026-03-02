@@ -91,6 +91,9 @@ const blogPosts = [
   { slug: "rar-vs-7z", title: "RAR vs 7z: Compression, Speed, and Compatibility Compared", date: "2026-03-21", description: "RAR offers better speed and error recovery. 7z achieves higher compression with AES-256 encryption and is completely free. Compare compression ratio, speed, and features." },
   { slug: "alac-vs-aac", title: "ALAC vs AAC: Apple Lossless vs Lossy Audio Compared", date: "2026-03-21", description: "ALAC preserves full audio quality in Apple's lossless format. AAC delivers good quality at 90% smaller file sizes. Compare quality, file size, and compatibility." },
   { slug: "heic-vs-png", title: "HEIC vs PNG: File Size, Quality, and Compatibility Compared", date: "2026-03-21", description: "HEIC files are 60-70% smaller than PNG at similar quality. PNG offers lossless quality and universal compatibility. Compare file size, transparency, and use cases." },
+  { slug: "av1-vs-vp9", title: "AV1 vs VP9: Compression, Quality, and Performance Compared", date: "2026-03-22", description: "AV1 compresses 30-50% better than VP9 but encodes much slower. VP9 has broader device support and faster real-time performance. Full codec comparison." },
+  { slug: "wav-vs-ogg", title: "WAV vs OGG: Quality, File Size, and Compatibility Compared", date: "2026-03-22", description: "WAV is uncompressed with perfect audio quality but 10x larger files. OGG offers great quality at a fraction of the size. Compare formats, use cases, and compatibility." },
+  { slug: "json-vs-csv", title: "JSON vs CSV: Structure, Performance, and Use Cases Compared", date: "2026-03-22", description: "CSV is smaller and faster for flat tabular data. JSON handles nested structures and mixed data types. Compare file size, parsing speed, and when to use each format." },
 ];
 
 function escapeXml(str: string): string {
