@@ -221,6 +221,9 @@ const blogPosts = [
   '4k-vs-8k',
   'ntsc-vs-pal',
   '8-bit-vs-10-bit',
+  'interlaced-vs-progressive',
+  '44-1khz-vs-48khz',
+  'ac3-vs-aac',
 ]
 
 export default function sitemap(): MetadataRoute.Sitemap {
