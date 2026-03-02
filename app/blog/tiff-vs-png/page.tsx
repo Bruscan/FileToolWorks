@@ -71,7 +71,7 @@ export default function BlogPost() {
             Need to convert PNG files for different uses? Our <Link href="/png-to-jpg" className="text-blue-600 hover:underline font-semibold">PNG to JPG converter</Link> handles batch conversion with quality controls, and <Link href="/image-to-pdf" className="text-blue-600 hover:underline font-semibold">image to PDF</Link> can turn PNG or TIFF images into PDF documents.
           </p>
           <p>
-            For more format comparisons, see <Link href="/blog/png-vs-jpg" className="text-blue-600 hover:underline">PNG vs JPG</Link>, <Link href="/blog/png-vs-gif" className="text-blue-600 hover:underline">PNG vs GIF</Link>, and <Link href="/blog/lossless-vs-lossy-compression" className="text-blue-600 hover:underline">lossless vs lossy compression</Link>.
+            For more format comparisons, see <Link href="/blog/png-vs-jpg" className="text-blue-600 hover:underline">PNG vs JPG</Link>, <Link href="/blog/png-vs-gif" className="text-blue-600 hover:underline">PNG vs GIF</Link>, and <Link href="/blog/lossless-vs-lossy-compression" className="text-blue-600 hover:underline">lossless vs lossy compression</Link>. For photographer workflows, also check <Link href="/blog/raw-vs-tiff" className="text-blue-600 hover:underline">RAW vs TIFF</Link>.
           </p>
         </div>
       </article>
