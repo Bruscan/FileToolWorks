@@ -148,6 +148,9 @@ const blogPosts = [
   { slug: "stereo-vs-mono", title: "Stereo vs Mono: Differences in Sound, File Size, and Use Cases", date: "2026-04-09", description: "Stereo uses two audio channels for spatial sound. Mono uses one channel for consistent playback. Compare quality, file size, and when each makes sense." },
   { slug: "4k-vs-1080p", title: "4K vs 1080p: Resolution, File Size, and Quality Differences", date: "2026-04-09", description: "4K has four times the pixels of 1080p for sharper video, but files are 4x larger. Compare resolution, file size, hardware needs, and when each makes sense." },
   { slug: "vector-vs-raster", title: "Vector vs Raster: Key Differences Between Image Types", date: "2026-04-09", description: "Vector images use math to scale infinitely without quality loss. Raster images use pixels and lose clarity when enlarged. Compare formats, use cases, and file sizes." },
+  { slug: "rgb-vs-cmyk", title: "RGB vs CMYK: What's the Difference and When to Use Each", date: "2026-04-10", description: "RGB uses light for screens, CMYK uses ink for print. Understand the key differences in color range, file formats, and when to pick each color mode." },
+  { slug: "30fps-vs-60fps", title: "30fps vs 60fps: Which Frame Rate Should You Choose?", date: "2026-04-10", description: "30fps is standard for most video content. 60fps is smoother for action and gaming. Compare file sizes, use cases, and when each frame rate makes sense." },
+  { slug: "1080i-vs-1080p", title: "1080i vs 1080p: What's the Difference?", date: "2026-04-10", description: "1080i uses interlaced scanning while 1080p uses progressive scan. Both are 1920x1080 but display images differently. Learn which is better for your use case." },
 ];
 
 function escapeXml(str: string): string {
