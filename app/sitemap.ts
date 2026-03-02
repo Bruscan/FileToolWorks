@@ -245,6 +245,9 @@ const blogPosts = [
   'tar-gz-vs-zip',
   'zfs-vs-btrfs',
   'utf-8-vs-ascii',
+  'how-to-compress-video-for-whatsapp',
+  'how-to-convert-wav-to-mp3',
+  'smallest-video-format',
 ]
 
 export default function sitemap(): MetadataRoute.Sitemap {

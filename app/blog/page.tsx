@@ -157,6 +157,10 @@ const audioPosts = [
     slug: "dsd-vs-pcm",
     title: "DSD vs PCM: How the Two Digital Audio Formats Differ",
   },
+  {
+    slug: "how-to-convert-wav-to-mp3",
+    title: "How to Convert WAV to MP3 Online for Free",
+  },
 ];
 
 const imagePosts = [
@@ -581,6 +585,14 @@ const videoPosts = [
   {
     slug: "vp8-vs-vp9",
     title: "VP8 vs VP9: Compression, Quality, and Browser Support",
+  },
+  {
+    slug: "how-to-compress-video-for-whatsapp",
+    title: "How to Compress Video for WhatsApp (Under 16MB)",
+  },
+  {
+    slug: "smallest-video-format",
+    title: "Smallest Video Format: Which Has the Smallest File Size?",
   },
 ];
 
