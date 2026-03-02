@@ -402,6 +402,10 @@ const videoPosts = [
     slug: "3gp-vs-mp4",
     title: "3GP vs MP4: Quality, Compatibility, and Which to Use",
   },
+  {
+    slug: "m4v-vs-mp4",
+    title: "M4V vs MP4: DRM, Compatibility, and Key Differences",
+  },
 ];
 
 const generalPosts = [
@@ -480,6 +484,14 @@ const generalPosts = [
   {
     slug: "markdown-vs-html",
     title: "Markdown vs HTML: Syntax, Features, and When to Use Each",
+  },
+  {
+    slug: "woff2-vs-woff",
+    title: "WOFF2 vs WOFF: Compression, Browser Support, and Which to Use",
+  },
+  {
+    slug: "bzip2-vs-gzip",
+    title: "Bzip2 vs Gzip: Compression Ratio, Speed, and When to Use Each",
   },
 ];
 

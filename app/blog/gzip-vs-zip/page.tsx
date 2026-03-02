@@ -63,7 +63,7 @@ export default function BlogPost() {
             Need to create a ZIP archive? Our <Link href="/zip-files" className="text-blue-600 hover:underline font-semibold">ZIP file creator</Link> runs in your browser with no upload required. To extract an existing archive, use the <Link href="/unzip-files" className="text-blue-600 hover:underline font-semibold">file extractor</Link>.
           </p>
           <p>
-            Related comparisons: <Link href="/blog/zip-vs-rar" className="text-blue-600 hover:underline">ZIP vs RAR</Link>, <Link href="/blog/7z-vs-zip" className="text-blue-600 hover:underline">7z vs ZIP</Link>, <Link href="/blog/tar-vs-zip" className="text-blue-600 hover:underline">TAR vs ZIP</Link>, and <Link href="/blog/lossless-vs-lossy-compression" className="text-blue-600 hover:underline">lossless vs lossy compression</Link>.
+            Related comparisons: <Link href="/blog/bzip2-vs-gzip" className="text-blue-600 hover:underline">Bzip2 vs Gzip</Link>, <Link href="/blog/zip-vs-rar" className="text-blue-600 hover:underline">ZIP vs RAR</Link>, <Link href="/blog/7z-vs-zip" className="text-blue-600 hover:underline">7z vs ZIP</Link>, <Link href="/blog/tar-vs-zip" className="text-blue-600 hover:underline">TAR vs ZIP</Link>, and <Link href="/blog/lossless-vs-lossy-compression" className="text-blue-600 hover:underline">lossless vs lossy compression</Link>.
           </p>
         </div>
       </article>
