@@ -272,6 +272,18 @@ const imagePosts = [
     slug: "gif-vs-svg",
     title: "GIF vs SVG: Animation, File Size, and When to Use Each",
   },
+  {
+    slug: "tiff-vs-bmp",
+    title: "TIFF vs BMP: Compression, Quality, and When to Use Each",
+  },
+  {
+    slug: "cr2-vs-jpg",
+    title: "CR2 vs JPG: Canon RAW vs JPEG for Photos",
+  },
+  {
+    slug: "ico-vs-png",
+    title: "ICO vs PNG: Which Format for Favicons and Icons?",
+  },
 ];
 
 const pdfPosts = [

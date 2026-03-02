@@ -124,6 +124,9 @@ const blogPosts = [
   { slug: "raw-vs-dng", title: "RAW vs DNG: File Size, Compatibility, and Which to Shoot", date: "2026-04-01", description: "DNG is Adobe's open raw format that is 15-20% smaller than proprietary RAW files. Compare editing flexibility, compatibility, metadata handling, and archival use." },
   { slug: "gif-vs-svg", title: "GIF vs SVG: Animation, File Size, and When to Use Each", date: "2026-04-01", description: "GIF is a raster format limited to 256 colors. SVG is vector-based, scalable, and interactive. Compare animation, file size, browser support, and best use cases." },
   { slug: "mov-vs-mkv", title: "MOV vs MKV: Compatibility, Features, and Which to Choose", date: "2026-04-01", description: "MOV is Apple's video format for editing. MKV is an open container with unlimited tracks and chapters. Compare compatibility, features, file size, and use cases." },
+  { slug: "tiff-vs-bmp", title: "TIFF vs BMP: Compression, Quality, and When to Use Each", date: "2026-04-02", description: "TIFF supports lossless compression and layers while BMP stores raw uncompressed pixels. Compare file size, quality, features, and best use cases for each format." },
+  { slug: "cr2-vs-jpg", title: "CR2 vs JPG: Canon RAW vs JPEG for Photos", date: "2026-04-02", description: "CR2 is Canon's RAW format with full sensor data and editing flexibility. JPG is compressed and ready to share. Compare quality, file size, and when to shoot each." },
+  { slug: "ico-vs-png", title: "ICO vs PNG: Which Format for Favicons and Icons?", date: "2026-04-02", description: "ICO bundles multiple icon sizes in one file while PNG offers better compression and transparency. Compare browser support, file size, and when to use each for favicons." },
 ];
 
 function escapeXml(str: string): string {

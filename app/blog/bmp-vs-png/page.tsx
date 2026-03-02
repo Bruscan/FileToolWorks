@@ -64,7 +64,7 @@ export default function BlogPost() {
             If you have BMP files you need to share or upload, converting to PNG or JPG will save significant space. Our <Link href="/png-to-jpg" className="text-blue-600 hover:underline font-semibold">PNG to JPG converter</Link> can reduce files even further when transparency is not needed.
           </p>
           <p>
-            Related reading: <Link href="/blog/bmp-vs-jpg" className="text-blue-600 hover:underline">BMP vs JPG</Link> covers the uncompressed vs lossy tradeoff, <Link href="/blog/png-vs-jpg" className="text-blue-600 hover:underline">PNG vs JPG</Link> covers lossy vs lossless tradeoffs, <Link href="/blog/tiff-vs-png" className="text-blue-600 hover:underline">TIFF vs PNG</Link> compares two lossless formats for different use cases, and <Link href="/blog/png-vs-gif" className="text-blue-600 hover:underline">PNG vs GIF</Link> explains when animation matters.
+            Related reading: <Link href="/blog/bmp-vs-jpg" className="text-blue-600 hover:underline">BMP vs JPG</Link> covers the uncompressed vs lossy tradeoff, <Link href="/blog/tiff-vs-bmp" className="text-blue-600 hover:underline">TIFF vs BMP</Link> compares two uncompressed-friendly formats, <Link href="/blog/png-vs-jpg" className="text-blue-600 hover:underline">PNG vs JPG</Link> covers lossy vs lossless tradeoffs, <Link href="/blog/tiff-vs-png" className="text-blue-600 hover:underline">TIFF vs PNG</Link> compares two lossless formats for different use cases, and <Link href="/blog/png-vs-gif" className="text-blue-600 hover:underline">PNG vs GIF</Link> explains when animation matters.
           </p>
         </div>
       </article>
