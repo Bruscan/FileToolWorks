@@ -1,4 +1,4 @@
-const BASE_URL = "https://filetoolworks.com";
+const BASE_URL = "https://www.filetoolworks.com";
 
 const blogPosts = [
   { slug: "how-to-compress-wav-files", title: "How to Compress WAV Files Without Ruining Audio Quality", date: "2026-03-01", description: "Five proven methods to reduce WAV file size while keeping audio quality intact. Convert to MP3/FLAC, reduce sample rate, or use online tools." },

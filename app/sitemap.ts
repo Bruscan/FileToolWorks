@@ -1,6 +1,6 @@
 import { MetadataRoute } from 'next'
 
-const BASE_URL = 'https://filetoolworks.com'
+const BASE_URL = 'https://www.filetoolworks.com'
 
 // All tools - matches actual pages in /app folder
 const tools = [
