@@ -697,6 +697,18 @@ const generalPosts = [
     slug: "exfat-vs-ntfs",
     title: "exFAT vs NTFS: Which File System Should You Use?",
   },
+  {
+    slug: "fat32-vs-exfat",
+    title: "FAT32 vs exFAT: File Size Limits, Compatibility, and Which to Use",
+  },
+  {
+    slug: "fat32-vs-ntfs",
+    title: "FAT32 vs NTFS: Key Differences and When to Use Each",
+  },
+  {
+    slug: "ext4-vs-ntfs",
+    title: "ext4 vs NTFS: Linux and Windows File Systems Compared",
+  },
 ];
 
 const categories = [
