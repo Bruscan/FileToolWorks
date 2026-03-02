@@ -250,6 +250,8 @@ const blogPosts = [
   'smallest-video-format',
   'best-free-audio-compressor-online',
   'free-online-file-converter-no-signup',
+  'best-convertio-alternatives-free',
+  'best-ilovepdf-alternatives-free',
 ]
 
 // Generate a stable ISO date string for each item based on its index and a date range
@@ -287,6 +289,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     lastModified: '2026-03-02T12:00:00.000Z',
     changeFrequency: 'monthly',
     priority: 0.8,
+  })
+
+  // Tools directory page
+  routes.push({
+    url: `${BASE_URL}/tools`,
+    lastModified: '2026-03-02T18:00:00.000Z',
+    changeFrequency: 'weekly',
+    priority: 0.9,
   })
 
   // Free tools widget page

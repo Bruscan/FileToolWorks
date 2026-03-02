@@ -602,6 +602,14 @@ const videoPosts = [
 
 const generalPosts = [
   {
+    slug: "best-convertio-alternatives-free",
+    title: "5 Best Free Convertio Alternatives (2026)",
+  },
+  {
+    slug: "best-ilovepdf-alternatives-free",
+    title: "5 Best Free iLovePDF Alternatives (2026)",
+  },
+  {
     slug: "free-online-file-converter-no-signup",
     title: "Free Online File Converter With No Signup (Browser-Based, Private)",
   },
