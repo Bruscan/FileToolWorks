@@ -73,6 +73,9 @@ const blogPosts = [
   { slug: "odt-vs-docx", title: "ODT vs DOCX: Which Document Format Should You Use?", date: "2026-03-15", description: "ODT is the open standard for documents. DOCX is Microsoft's format. Compare compatibility, features, and file size to pick the right one." },
   { slug: "pdf-vs-epub", title: "PDF vs EPUB: Which Format for Your Document?", date: "2026-03-15", description: "PDF preserves exact layout. EPUB reflows text for different screen sizes. Learn which format works best for ebooks, reports, and reading on mobile." },
   { slug: "xls-vs-xlsx", title: "XLS vs XLSX: Key Differences Between Excel Formats", date: "2026-03-15", description: "XLSX replaced XLS in 2007 with smaller files, more rows, and better compatibility. Learn the key differences and when the old XLS format still matters." },
+  { slug: "eps-vs-svg", title: "EPS vs SVG: Differences, Features, and Which to Use", date: "2026-03-16", description: "EPS is a legacy print format. SVG is the web standard for vector graphics. Compare file structure, compatibility, transparency, and learn when to use each." },
+  { slug: "flac-vs-mp3", title: "FLAC vs MP3: Quality, File Size, and Compatibility Compared", date: "2026-03-16", description: "FLAC is lossless with identical quality to the original. MP3 is lossy but 80% smaller. Compare audio quality, file size, device support, and pick the right format." },
+  { slug: "rtf-vs-docx", title: "RTF vs DOCX: Compatibility, Features, and When to Use Each", date: "2026-03-16", description: "RTF is a simple cross-platform text format. DOCX supports full formatting, macros, and modern features. Compare compatibility, security, file size, and use cases." },
 ];
 
 function escapeXml(str: string): string {

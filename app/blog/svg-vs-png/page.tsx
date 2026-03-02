@@ -125,6 +125,9 @@ export default function BlogPost() {
           </p>
 
           <p>
+            For the difference between SVG and another vector format used in print, see <Link href="/blog/eps-vs-svg" className="text-blue-600 hover:underline">EPS vs SVG</Link>.
+          </p>
+          <p>
             <strong>Need to convert?</strong>{" "}
             <Link
               href="/png-to-jpg"
