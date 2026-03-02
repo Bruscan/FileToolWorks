@@ -60,7 +60,7 @@ export default function BlogPost() {
           </p>
 
           <p>
-            Working with video content? Try our <Link href="/compress-video" className="text-blue-600 hover:underline font-semibold">video compressor</Link> or <Link href="/video-to-mp4" className="text-blue-600 hover:underline font-semibold">video to MP4 converter</Link>. For more resolution and format comparisons, see <Link href="/blog/4k-vs-1080p" className="text-blue-600 hover:underline">4K vs 1080p</Link>, <Link href="/blog/720p-vs-1080p" className="text-blue-600 hover:underline">720p vs 1080p</Link>, and <Link href="/blog/h264-vs-h265" className="text-blue-600 hover:underline">H.264 vs H.265</Link>.
+            Working with video content? Try our <Link href="/compress-video" className="text-blue-600 hover:underline font-semibold">video compressor</Link> or <Link href="/video-to-mp4" className="text-blue-600 hover:underline font-semibold">video to MP4 converter</Link>. For more resolution and format comparisons, see <Link href="/blog/4k-vs-8k" className="text-blue-600 hover:underline">4K vs 8K</Link>, <Link href="/blog/4k-vs-1080p" className="text-blue-600 hover:underline">4K vs 1080p</Link>, and <Link href="/blog/720p-vs-1080p" className="text-blue-600 hover:underline">720p vs 1080p</Link>.
           </p>
         </div>
       </article>

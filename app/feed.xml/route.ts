@@ -160,6 +160,9 @@ const blogPosts = [
   { slug: "mpeg4-vs-mp4", title: "MPEG-4 vs MP4: Are They the Same Thing?", date: "2026-04-13", description: "MPEG-4 is a compression standard. MP4 is a container format based on that standard. Learn the actual differences between MPEG-4 and MP4." },
   { slug: "avi-vs-mov", title: "AVI vs MOV: Which Video Container Format Is Better?", date: "2026-04-13", description: "AVI is Microsoft's legacy video container. MOV is Apple's QuickTime format. Compare compatibility, compression, features, and when to convert." },
   { slug: "nef-vs-jpg", title: "NEF vs JPG: Nikon RAW vs JPEG for Photography", date: "2026-04-13", description: "NEF is Nikon's RAW format with full editing flexibility. JPG is smaller and ready to share. Compare quality, file size, and when to shoot each format." },
+  { slug: "4k-vs-8k", title: "4K vs 8K: Do You Actually Need 8K Resolution?", date: "2026-04-14", description: "4K is 3840x2160 pixels. 8K is 7680x4320, four times as many pixels. Learn the real differences between 4K and 8K resolution and whether 8K is worth it." },
+  { slug: "ntsc-vs-pal", title: "NTSC vs PAL: What Is the Difference?", date: "2026-04-14", description: "NTSC runs at 30fps with 480 lines. PAL runs at 25fps with 576 lines. Learn the differences between NTSC and PAL video standards and which one to use." },
+  { slug: "8-bit-vs-10-bit", title: "8-Bit vs 10-Bit Video: Does Color Depth Matter?", date: "2026-04-14", description: "8-bit video supports 16.7 million colors. 10-bit supports over 1 billion. Learn when the extra color depth actually matters for your video workflow." },
 ];
 
 function escapeXml(str: string): string {

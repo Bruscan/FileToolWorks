@@ -60,7 +60,7 @@ export default function BlogPost() {
           </p>
 
           <p>
-            Working with video files? Our <Link href="/compress-video" className="text-blue-600 hover:underline font-semibold">video compressor</Link> can reduce file sizes while keeping quality. For format conversions, try <Link href="/video-to-mp4" className="text-blue-600 hover:underline font-semibold">video to MP4</Link>. See also <Link href="/blog/4k-vs-1080p" className="text-blue-600 hover:underline">4K vs 1080p</Link>, <Link href="/blog/1440p-vs-4k" className="text-blue-600 hover:underline">1440p vs 4K</Link>, and <Link href="/blog/h264-vs-h265" className="text-blue-600 hover:underline">H.264 vs H.265</Link>.
+            Working with video files? Our <Link href="/compress-video" className="text-blue-600 hover:underline font-semibold">video compressor</Link> can reduce file sizes while keeping quality. For format conversions, try <Link href="/video-to-mp4" className="text-blue-600 hover:underline font-semibold">video to MP4</Link>. See also <Link href="/blog/8-bit-vs-10-bit" className="text-blue-600 hover:underline">8-Bit vs 10-Bit</Link>, <Link href="/blog/4k-vs-1080p" className="text-blue-600 hover:underline">4K vs 1080p</Link>, and <Link href="/blog/1440p-vs-4k" className="text-blue-600 hover:underline">1440p vs 4K</Link>.
           </p>
         </div>
       </article>
