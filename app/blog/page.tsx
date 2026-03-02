@@ -89,6 +89,10 @@ const audioPosts = [
     slug: "aac-vs-ogg",
     title: "AAC vs OGG Vorbis: Quality, Compatibility, and File Size",
   },
+  {
+    slug: "m4a-vs-mp4",
+    title: "M4A vs MP4: Same Container, Different Contents Explained",
+  },
 ];
 
 const imagePosts = [
@@ -192,6 +196,10 @@ const imagePosts = [
     slug: "jpeg-xl-vs-avif",
     title: "JPEG XL vs AVIF: Compression, Quality, and Browser Support",
   },
+  {
+    slug: "apng-vs-gif",
+    title: "APNG vs GIF: Color Depth, Transparency, and Animation Compared",
+  },
 ];
 
 const pdfPosts = [
@@ -289,6 +297,10 @@ const videoPosts = [
   {
     slug: "vp9-vs-h265",
     title: "VP9 vs H.265 (HEVC): Quality, Speed, and Licensing Compared",
+  },
+  {
+    slug: "prores-vs-h264",
+    title: "ProRes vs H.264: Quality, File Size, and When to Use Each",
   },
 ];
 
