@@ -46,7 +46,7 @@ export default function BlogPost() {
 
           <h2>File Size and Volume Limits</h2>
           <p>
-            Both exFAT and NTFS support very large files. exFAT handles files up to 128 PB (petabytes) and volumes up to 128 PB. NTFS supports files up to 16 EB (exabytes) and volumes up to 256 TB in practice. Neither has the 4 GB file size limit of <Link href="/blog/7z-vs-zip" className="text-blue-600 hover:underline">FAT32</Link>, which makes both suitable for large video files, disk images, and archives. For compressing large files before transferring them, try our <Link href="/zip-files" className="text-blue-600 hover:underline font-semibold">ZIP Files</Link> tool.
+            Both exFAT and NTFS support very large files. exFAT handles files up to 128 PB (petabytes) and volumes up to 128 PB. NTFS supports files up to 16 EB (exabytes) and volumes up to 256 TB in practice. Neither has the 4 GB file size limit of <Link href="/blog/fat32-vs-exfat" className="text-blue-600 hover:underline">FAT32</Link>, which makes both suitable for large video files, disk images, and archives. For compressing large files before transferring them, try our <Link href="/zip-files" className="text-blue-600 hover:underline font-semibold">ZIP Files</Link> tool.
           </p>
 
           <h2>Performance</h2>
