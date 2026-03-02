@@ -88,6 +88,9 @@ const blogPosts = [
   { slug: "opus-vs-aac", title: "Opus vs AAC: Quality, Latency, and Compatibility Compared", date: "2026-03-20", description: "Opus beats AAC at low bitrates and handles voice and music in one codec. AAC has broader device support. Compare quality, latency, file size, and use cases." },
   { slug: "mkv-vs-avi", title: "MKV vs AVI: Features, File Size, and Compatibility Compared", date: "2026-03-20", description: "MKV supports modern codecs, multiple audio tracks, and subtitles. AVI is a legacy format with broad playback support. Compare features, quality, and use cases." },
   { slug: "mpeg-vs-mp4", title: "MPEG vs MP4: Format Differences, Codecs, and Compatibility", date: "2026-03-20", description: "MPEG is a family of compression standards (MPEG-1, MPEG-2, MPEG-4). MP4 is a container format based on MPEG-4 Part 14. Compare codecs, quality, and use cases." },
+  { slug: "rar-vs-7z", title: "RAR vs 7z: Compression, Speed, and Compatibility Compared", date: "2026-03-21", description: "RAR offers better speed and error recovery. 7z achieves higher compression with AES-256 encryption and is completely free. Compare compression ratio, speed, and features." },
+  { slug: "alac-vs-aac", title: "ALAC vs AAC: Apple Lossless vs Lossy Audio Compared", date: "2026-03-21", description: "ALAC preserves full audio quality in Apple's lossless format. AAC delivers good quality at 90% smaller file sizes. Compare quality, file size, and compatibility." },
+  { slug: "heic-vs-png", title: "HEIC vs PNG: File Size, Quality, and Compatibility Compared", date: "2026-03-21", description: "HEIC files are 60-70% smaller than PNG at similar quality. PNG offers lossless quality and universal compatibility. Compare file size, transparency, and use cases." },
 ];
 
 function escapeXml(str: string): string {
