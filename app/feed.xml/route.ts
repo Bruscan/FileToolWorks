@@ -64,6 +64,9 @@ const blogPosts = [
   { slug: "cbr-vs-vbr", title: "CBR vs VBR: Constant vs Variable Bitrate Explained", date: "2026-03-12", description: "CBR uses a fixed bitrate throughout the file. VBR adjusts dynamically for better quality per byte. Learn when to use each for audio and video encoding." },
   { slug: "tiff-vs-jpg", title: "TIFF vs JPG: When to Use Each Image Format", date: "2026-03-12", description: "TIFF preserves full image quality for editing and print. JPG compresses images for smaller files ideal for web and sharing. Compare quality, size, and use cases." },
   { slug: "zip-vs-rar", title: "ZIP vs RAR: File Compression Formats Compared", date: "2026-03-12", description: "ZIP is universally supported and works without extra software. RAR offers better compression and error recovery. Compare features, compatibility, and use cases." },
+  { slug: "7z-vs-zip", title: "7z vs ZIP: Compression, Compatibility, and Speed Compared", date: "2026-03-13", description: "7z compresses files 30-70% smaller than ZIP but needs extra software. ZIP works on every OS out of the box. Compare compression, speed, and compatibility." },
+  { slug: "doc-vs-docx", title: "DOC vs DOCX: What Changed and Does It Matter?", date: "2026-03-13", description: "DOCX replaced DOC in 2007 with smaller file sizes, better formatting, and XML-based structure. Learn the key differences and when the old format still shows up." },
+  { slug: "av1-vs-h265", title: "AV1 vs H.265 (HEVC): Compression, Quality, and Compatibility", date: "2026-03-13", description: "AV1 compresses 20-30% better than H.265 and is royalty-free. H.265 has wider device support and faster encoding. Compare quality, speed, and licensing." },
 ];
 
 function escapeXml(str: string): string {
