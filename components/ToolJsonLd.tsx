@@ -67,6 +67,9 @@ export default function ToolJsonLd({
     url: `https://www.filetoolworks.com/${slug}`,
     applicationCategory: "UtilityApplication",
     operatingSystem: "Any",
+    inLanguage: "en",
+    browserRequirements: "Requires JavaScript",
+    isAccessibleForFree: true,
     offers: {
       "@type": "Offer",
       price: "0",
@@ -77,6 +80,11 @@ export default function ToolJsonLd({
       ratingValue: rating,
       bestRating: 5,
       ratingCount: ratingCount,
+    },
+    potentialAction: {
+      "@type": "UseAction",
+      target: `https://www.filetoolworks.com/${slug}`,
+      name: `Use ${name}`,
     },
     creator: {
       "@type": "Organization",
