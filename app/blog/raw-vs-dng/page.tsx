@@ -60,7 +60,7 @@ export default function BlogPost() {
           </p>
 
           <p>
-            Need to convert your photos for web use? Our <Link href="/image-to-webp" className="text-blue-600 hover:underline font-semibold">image to WebP converter</Link> produces small, high-quality files perfect for websites. For more image format comparisons, see <Link href="/blog/raw-vs-jpeg" className="text-blue-600 hover:underline">RAW vs JPEG</Link>, <Link href="/blog/tiff-vs-jpg" className="text-blue-600 hover:underline">TIFF vs JPG</Link>, and <Link href="/blog/avif-vs-jpeg" className="text-blue-600 hover:underline">AVIF vs JPEG</Link>.
+            Need to convert your photos for web use? Our <Link href="/image-to-webp" className="text-blue-600 hover:underline font-semibold">image to WebP converter</Link> produces small, high-quality files perfect for websites. For more image format comparisons, see <Link href="/blog/raw-vs-jpeg" className="text-blue-600 hover:underline">RAW vs JPEG</Link>, <Link href="/blog/dng-vs-jpg" className="text-blue-600 hover:underline">DNG vs JPG</Link>, <Link href="/blog/tiff-vs-jpg" className="text-blue-600 hover:underline">TIFF vs JPG</Link>, and <Link href="/blog/avif-vs-jpeg" className="text-blue-600 hover:underline">AVIF vs JPEG</Link>.
           </p>
         </div>
       </article>

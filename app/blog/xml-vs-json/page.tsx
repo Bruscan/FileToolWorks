@@ -56,7 +56,7 @@ export default function BlogPost() {
 
           <h2>Which Format Should You Pick?</h2>
           <p>
-            For REST APIs, JavaScript applications, NoSQL databases, and configuration files: use JSON. For SOAP services, complex document markup, enterprise data exchange with strict schemas, and legacy system integration: use XML. If you are building something new and have no constraints pushing you toward XML, JSON is the practical default. For comparing other data formats, see our guides on <Link href="/blog/json-vs-csv" className="text-blue-600 hover:underline">JSON vs CSV</Link> and <Link href="/blog/yaml-vs-json" className="text-blue-600 hover:underline">YAML vs JSON</Link>.
+            For REST APIs, JavaScript applications, NoSQL databases, and configuration files: use JSON. For SOAP services, complex document markup, enterprise data exchange with strict schemas, and legacy system integration: use XML. If you are building something new and have no constraints pushing you toward XML, JSON is the practical default. For comparing other data formats, see our guides on <Link href="/blog/json-vs-csv" className="text-blue-600 hover:underline">JSON vs CSV</Link>, <Link href="/blog/xml-vs-csv" className="text-blue-600 hover:underline">XML vs CSV</Link>, and <Link href="/blog/yaml-vs-json" className="text-blue-600 hover:underline">YAML vs JSON</Link>.
           </p>
 
           <p>
