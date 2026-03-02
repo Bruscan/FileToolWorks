@@ -161,6 +161,9 @@ const blogPosts = [
   'mp3-vs-mp4',
   'aiff-vs-mp3',
   'wma-vs-aac',
+  'midi-vs-mp3',
+  'mp4-vs-ts',
+  'pdf-vs-html',
 ]
 
 export default function sitemap(): MetadataRoute.Sitemap {

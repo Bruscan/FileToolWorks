@@ -60,7 +60,7 @@ export default function BlogPost() {
           </p>
 
           <p>
-            Convert your MPEG files to MP4 with our <Link href="/video-to-mp4" className="text-blue-600 hover:underline font-semibold">video to MP4 converter</Link>. For related format comparisons, see <Link href="/blog/mkv-vs-mp4" className="text-blue-600 hover:underline">MKV vs MP4</Link> and <Link href="/blog/wmv-vs-mp4" className="text-blue-600 hover:underline">WMV vs MP4</Link>.
+            Convert your MPEG files to MP4 with our <Link href="/video-to-mp4" className="text-blue-600 hover:underline font-semibold">video to MP4 converter</Link>. For related format comparisons, see <Link href="/blog/mkv-vs-mp4" className="text-blue-600 hover:underline">MKV vs MP4</Link>, <Link href="/blog/wmv-vs-mp4" className="text-blue-600 hover:underline">WMV vs MP4</Link>, and <Link href="/blog/mp4-vs-ts" className="text-blue-600 hover:underline">MP4 vs TS</Link>.
           </p>
         </div>
       </article>

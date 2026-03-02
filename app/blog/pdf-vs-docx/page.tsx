@@ -66,7 +66,7 @@ export default function BlogPost() {
           </ul>
 
           <p>
-            <strong>Need to switch between the two?</strong> Use our <Link href="/word-to-pdf" className="text-blue-600 hover:underline font-semibold">Word to PDF converter</Link> to lock down your DOCX, or extract text from existing PDFs with our <Link href="/pdf-to-text" className="text-blue-600 hover:underline font-semibold">PDF to text tool</Link>.
+            <strong>Need to switch between the two?</strong> Use our <Link href="/word-to-pdf" className="text-blue-600 hover:underline font-semibold">Word to PDF converter</Link> to lock down your DOCX, or extract text from existing PDFs with our <Link href="/pdf-to-text" className="text-blue-600 hover:underline font-semibold">PDF to text tool</Link>. You can also compare <Link href="/blog/pdf-vs-html" className="text-blue-600 hover:underline">PDF vs HTML</Link> if you are deciding between web and document formats.
           </p>
           <p>
             If your PDF is too large to share, learn <Link href="/blog/how-to-compress-pdf" className="text-blue-600 hover:underline">how to compress a PDF</Link>. For more on Word file formats, see <Link href="/blog/doc-vs-docx" className="text-blue-600 hover:underline">DOC vs DOCX</Link>. If you need a format for ebooks and mobile reading, see <Link href="/blog/pdf-vs-epub" className="text-blue-600 hover:underline">PDF vs EPUB</Link>. Comparing PDF with image formats? See <Link href="/blog/png-vs-pdf" className="text-blue-600 hover:underline">PNG vs PDF</Link>.

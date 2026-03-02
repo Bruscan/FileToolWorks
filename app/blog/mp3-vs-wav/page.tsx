@@ -65,6 +65,7 @@ export default function BlogPost() {
             <li>Sharing or uploading? Use MP3.</li>
             <li>Archiving originals? Use WAV (or FLAC).</li>
             <li>Building a website or app? Use MP3 (or OGG/AAC for even better compression).</li>
+            <li>Composing music? <Link href="/blog/midi-vs-mp3" className="text-blue-600 hover:underline">Use MIDI in your DAW</Link>, then export to MP3.</li>
           </ul>
 
           <p>
