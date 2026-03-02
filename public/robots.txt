@@ -2,11 +2,47 @@
 User-agent: *
 Allow: /
 
+# AI Search and Training Crawlers - explicitly allowed
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: cohere-ai
+Allow: /
+
+User-agent: meta-externalagent
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
 # Embed pages are for iframe embedding only
+User-agent: *
 Disallow: /embed/
 
 # Sitemap location
 Sitemap: https://www.filetoolworks.com/sitemap.xml
+
+# AI-readable tool directory
+# https://www.filetoolworks.com/llms.txt
+# https://www.filetoolworks.com/llms-full.txt
 
 # RSS Feed
 # https://www.filetoolworks.com/feed.xml

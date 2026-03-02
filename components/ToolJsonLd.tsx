@@ -70,6 +70,8 @@ export default function ToolJsonLd({
     inLanguage: "en",
     browserRequirements: "Requires JavaScript",
     isAccessibleForFree: true,
+    datePublished: "2026-01-15",
+    dateModified: "2026-03-02",
     offers: {
       "@type": "Offer",
       price: "0",
@@ -90,6 +92,7 @@ export default function ToolJsonLd({
       "@type": "Organization",
       name: "FileToolWorks",
       url: "https://www.filetoolworks.com",
+      sameAs: ["https://github.com/Bruscan/FileToolWorks"],
     },
   };
 

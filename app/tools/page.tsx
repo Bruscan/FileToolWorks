@@ -173,6 +173,9 @@ export default function ToolsPage() {
               { name: "Smallpdf", href: "/vs/smallpdf", desc: "vs Smallpdf" },
               { name: "FreeConvert", href: "/vs/freeconvert", desc: "vs FreeConvert" },
               { name: "PDF24", href: "/vs/pdf24", desc: "vs PDF24" },
+              { name: "Online-Convert", href: "/vs/online-convert", desc: "vs Online-Convert" },
+              { name: "Media.io", href: "/vs/media-io", desc: "vs Media.io" },
+              { name: "XConvert", href: "/vs/xconvert", desc: "vs XConvert" },
             ].map((item) => (
               <Link
                 key={item.href}
