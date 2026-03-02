@@ -324,6 +324,10 @@ const imagePosts = [
     slug: "srgb-vs-adobe-rgb",
     title: "sRGB vs Adobe RGB: Which Color Space Should You Use?",
   },
+  {
+    slug: "nef-vs-jpg",
+    title: "NEF vs JPG: Nikon RAW vs JPEG for Photography",
+  },
 ];
 
 const pdfPosts = [
@@ -513,6 +517,14 @@ const videoPosts = [
   {
     slug: "hdr-vs-sdr",
     title: "HDR vs SDR: What's the Difference in Video and Display?",
+  },
+  {
+    slug: "mpeg4-vs-mp4",
+    title: "MPEG-4 vs MP4: Are They the Same Thing?",
+  },
+  {
+    slug: "avi-vs-mov",
+    title: "AVI vs MOV: Which Video Container Format Is Better?",
   },
 ];
 
