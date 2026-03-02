@@ -44,12 +44,12 @@ export default function BlogPost() {
 
           <h2>2. Smallpdf</h2>
           <p>
-            Smallpdf has a polished interface with 20+ PDF tools. The free tier gives you two tasks per day, which is limiting but workable for occasional use. It supports OCR, e-signatures, and PDF editing. Files are processed on their servers and deleted after one hour.
+            Smallpdf has a polished interface with 20+ PDF tools. The free tier gives you two tasks per day, which is limiting but workable for occasional use. It supports OCR, e-signatures, and PDF editing. Files are processed on their servers and deleted after one hour. See our <Link href="/vs/smallpdf" className="text-blue-600 hover:underline">detailed Smallpdf comparison</Link>.
           </p>
 
           <h2>3. PDF24</h2>
           <p>
-            PDF24 is genuinely free with no daily limits, which is rare for a PDF tool suite. It covers merging, splitting, compressing, and converting. The interface is functional rather than pretty. They also offer a desktop app for Windows if you prefer offline processing.
+            PDF24 is genuinely free with no daily limits, which is rare for a PDF tool suite. It covers merging, splitting, compressing, and converting. The interface is functional rather than pretty. They also offer a desktop app for Windows if you prefer offline processing. See our <Link href="/vs/pdf24" className="text-blue-600 hover:underline">detailed PDF24 comparison</Link>.
           </p>
 
           <h2>4. Sejda</h2>

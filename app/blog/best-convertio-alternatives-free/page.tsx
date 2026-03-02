@@ -49,7 +49,7 @@ export default function BlogPost() {
 
           <h2>3. FreeConvert</h2>
           <p>
-            FreeConvert handles image, video, audio, and document conversions with a clean interface. The free tier allows files up to 1 GB. It runs server-side processing, which means faster conversion for large files but requires uploading. Supports batch processing for multiple files.
+            FreeConvert handles image, video, audio, and document conversions with a clean interface. The free tier allows files up to 1 GB. It runs server-side processing, which means faster conversion for large files but requires uploading. Supports batch processing for multiple files. See our <Link href="/vs/freeconvert" className="text-blue-600 hover:underline">detailed FreeConvert comparison</Link>.
           </p>
 
           <h2>4. Online-Convert</h2>
