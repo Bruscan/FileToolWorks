@@ -258,12 +258,24 @@ const videoPosts = [
     slug: "webm-vs-mkv",
     title: "WebM vs MKV: Web Streaming vs Media Storage Compared",
   },
+  {
+    slug: "av1-vs-h265",
+    title: "AV1 vs H.265 (HEVC): Compression, Quality, and Compatibility",
+  },
 ];
 
 const generalPosts = [
   {
     slug: "zip-vs-rar",
     title: "ZIP vs RAR: File Compression Formats Compared",
+  },
+  {
+    slug: "7z-vs-zip",
+    title: "7z vs ZIP: Compression, Compatibility, and Speed Compared",
+  },
+  {
+    slug: "doc-vs-docx",
+    title: "DOC vs DOCX: What Changed and Does It Matter?",
   },
 ];
 
