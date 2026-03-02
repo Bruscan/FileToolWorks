@@ -490,6 +490,18 @@ const videoPosts = [
     slug: "1080i-vs-1080p",
     title: "1080i vs 1080p: What's the Difference?",
   },
+  {
+    slug: "720p-vs-1080p",
+    title: "720p vs 1080p: What's the Difference?",
+  },
+  {
+    slug: "1440p-vs-4k",
+    title: "1440p vs 4K: Which Resolution Should You Pick?",
+  },
+  {
+    slug: "24fps-vs-30fps",
+    title: "24fps vs 30fps: Which Frame Rate Should You Use?",
+  },
 ];
 
 const generalPosts = [
