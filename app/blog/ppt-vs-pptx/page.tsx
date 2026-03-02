@@ -63,7 +63,7 @@ export default function BlogPost() {
             Need to share a presentation as a PDF? Our <Link href="/ppt-to-pdf" className="text-blue-600 hover:underline font-semibold">PPT to PDF converter</Link> handles both PPT and PPTX files. PDF ensures your slides look identical on any device.
           </p>
           <p>
-            Related reading: <Link href="/blog/keynote-vs-pptx" className="text-blue-600 hover:underline">Keynote vs PPTX</Link> compares Apple and Microsoft presentation formats, <Link href="/blog/doc-vs-docx" className="text-blue-600 hover:underline">DOC vs DOCX</Link> covers the same transition for Word, and <Link href="/blog/xls-vs-xlsx" className="text-blue-600 hover:underline">XLS vs XLSX</Link> covers it for Excel.
+            Related reading: <Link href="/blog/keynote-vs-pptx" className="text-blue-600 hover:underline">Keynote vs PPTX</Link> compares Apple and Microsoft presentation formats, <Link href="/blog/doc-vs-docx" className="text-blue-600 hover:underline">DOC vs DOCX</Link> covers the same transition for Word, and <Link href="/blog/xls-vs-xlsx" className="text-blue-600 hover:underline">XLS vs XLSX</Link> covers it for Excel. For sharing presentations, see <Link href="/blog/pdf-vs-pptx" className="text-blue-600 hover:underline">PDF vs PPTX</Link>.
           </p>
         </div>
       </article>
