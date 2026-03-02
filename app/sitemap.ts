@@ -335,6 +335,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.8,
   })
 
+  // Format Guide
+  routes.push({
+    url: `${BASE_URL}/format-guide`,
+    lastModified: '2026-03-02T23:30:00.000Z',
+    changeFrequency: 'monthly',
+    priority: 0.8,
+  })
+
   // Use-case landing pages
   const useCasePages = ['compress-video-for-discord', 'compress-video-for-whatsapp', 'compress-audio-for-discord', 'compress-video-for-email']
   useCasePages.forEach((page) => {
