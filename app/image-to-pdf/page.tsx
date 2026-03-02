@@ -2,6 +2,7 @@
 
 import { useState, useCallback } from "react";
 import { Upload, X, ArrowUp, ArrowDown, Download, ChevronDown, Star } from "lucide-react";
+import Link from "next/link";
 import RelatedTools from "@/components/RelatedTools";
 import type { Metadata } from "next";
 
@@ -175,7 +176,7 @@ export default function ImageToPDF() {
             Convert JPG, PNG, HEIC, and other images to PDF instantly. Free, fast, and secure.
           </p>
           <p className="text-gray-600 mb-4">
-            Upload your images, arrange them in any order, and download as a single PDF file. All processing happens in your browser for complete privacy. No file size limits, no signup required.
+            Upload your images, arrange them in any order, and download as a single PDF file. All processing happens in your browser for complete privacy. No file size limits, no signup required. For JPG-only files, try our dedicated <Link href="/jpg-to-pdf" className="text-blue-600 hover:underline">JPG to PDF converter</Link>. Need to combine existing PDFs? Use <Link href="/merge-pdf" className="text-blue-600 hover:underline">Merge PDF</Link>.
           </p>
           <div className="flex items-center gap-2 mt-4">
             <div className="flex items-center gap-1">
@@ -561,7 +562,7 @@ export default function ImageToPDF() {
                 What PDF quality can I expect?
               </summary>
               <p className="mt-2 text-gray-600 text-sm">
-                High quality. You can choose between compressed (smaller file size) or original quality. Both options produce professional-looking PDFs suitable for printing and sharing.
+                High quality. You can choose between compressed (smaller file size) or original quality. Both options produce professional-looking PDFs suitable for printing and sharing. If the PDF is too large, you can <Link href="/compress-image" className="text-blue-600 hover:underline">compress images</Link> before converting.
               </p>
             </details>
           </div>

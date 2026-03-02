@@ -2,6 +2,7 @@
 
 import { useState, useCallback } from "react";
 import { Upload, X, Download, Star, FileText, Check } from "lucide-react";
+import Link from "next/link";
 import RelatedTools from "@/components/RelatedTools";
 import { PDFDocument } from "pdf-lib";
 
@@ -214,7 +215,7 @@ export default function ExtractPDFPages() {
             Extract specific pages from PDF documents instantly
           </p>
           <p className="text-gray-600 mb-4">
-            Upload your PDF and select which pages you want to extract. Choose pages individually using checkboxes or enter page ranges like 1,3,5-7. All processing happens in your browser for complete privacy. No file size limits, no signup required.
+            Upload your PDF and select which pages you want to extract. Choose pages individually using checkboxes or enter page ranges like 1,3,5-7. All processing happens in your browser for complete privacy. No file size limits, no signup required. Want to combine PDFs instead? Use our <Link href="/merge-pdf" className="text-blue-600 hover:underline">PDF merger</Link>.
           </p>
           {/* Rating */}
           <div className="flex items-center gap-2 mt-4">
@@ -487,7 +488,7 @@ export default function ExtractPDFPages() {
                 Does this cost anything?
               </summary>
               <p className="mt-2 text-gray-600 text-sm">
-                No. This tool is completely free to use with no hidden charges, subscriptions, or signup required. Extract pages from as many PDFs as you need.
+                No. This tool is completely free to use with no hidden charges, subscriptions, or signup required. Extract pages from as many PDFs as you need. Check out our other free PDF tools: <Link href="/sign-pdf" className="text-blue-600 hover:underline">Sign PDF</Link>, <Link href="/pdf-to-text" className="text-blue-600 hover:underline">PDF to Text</Link>, and <Link href="/compress-pdf" className="text-blue-600 hover:underline">Compress PDF</Link>.
               </p>
             </details>
           </div>

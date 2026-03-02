@@ -2,6 +2,7 @@
 
 import { useState, useRef } from "react";
 import { Upload, X, Download, Star, Loader2, AlertCircle } from "lucide-react";
+import Link from "next/link";
 import RelatedTools from "@/components/RelatedTools";
 
 interface AudioFile {
@@ -208,7 +209,7 @@ export default function MP3ToWAV() {
             Convert MP3 audio files to uncompressed WAV format. Free, fast, and secure.
           </p>
           <p className="text-gray-600 mb-4">
-            Upload your MP3 files and convert them to high-quality WAV format in seconds. WAV files are uncompressed and offer the highest audio quality, perfect for professional audio editing and production. All processing happens in your browser for complete privacy.
+            Upload your MP3 files and convert them to high-quality WAV format in seconds. WAV files are uncompressed and offer the highest audio quality, perfect for professional audio editing and production. All processing happens in your browser for complete privacy. Need to convert the other direction? Use our <Link href="/wav-to-mp3" className="text-blue-600 hover:underline">WAV to MP3 converter</Link>.
           </p>
           <div className="flex items-center gap-2 mt-4">
             <div className="flex items-center gap-1">
@@ -416,7 +417,7 @@ export default function MP3ToWAV() {
               <div>
                 <strong className="text-gray-900">Download WAV files</strong>
                 <p className="text-gray-600 text-sm">
-                  Download each file individually or all at once. Files are ready for professional use.
+                  Download each file individually or all at once. Files are ready for professional use. Need to <Link href="/trim-audio" className="text-blue-600 hover:underline">trim the audio</Link> first? Do that before converting.
                 </p>
               </div>
             </li>
@@ -444,7 +445,7 @@ export default function MP3ToWAV() {
                 When should I use WAV instead of MP3?
               </summary>
               <p className="mt-2 text-gray-600 text-sm">
-                Use WAV for professional audio editing, music production, archival purposes, or when you need the absolute highest quality. WAV is ideal for audio that will be further processed or edited. Use MP3 for everyday listening, streaming, or when file size matters.
+                Use WAV for professional audio editing, music production, archival purposes, or when you need the absolute highest quality. WAV is ideal for audio that will be further processed or edited. Use MP3 for everyday listening, streaming, or when file size matters. If file size is your concern, try our <Link href="/compress-audio" className="text-blue-600 hover:underline">audio compressor</Link> instead.
               </p>
             </details>
             <details className="border-b border-gray-200 pb-4">
@@ -468,7 +469,7 @@ export default function MP3ToWAV() {
                 Can I convert WAV back to MP3?
               </summary>
               <p className="mt-2 text-gray-600 text-sm">
-                Yes, but converting from MP3 to WAV and back to MP3 will not improve quality. The original MP3 compression has already removed some audio data. WAV is best used when you need uncompressed audio for editing or professional work.
+                Yes, you can use our <Link href="/wav-to-mp3" className="text-blue-600 hover:underline">WAV to MP3 converter</Link>, but converting back will not improve quality. The original MP3 compression has already removed some audio data. WAV is best used when you need uncompressed audio for editing or professional work.
               </p>
             </details>
             <details className="border-b border-gray-200 pb-4">

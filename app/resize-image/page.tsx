@@ -2,6 +2,7 @@
 
 import { useState, useCallback } from "react";
 import { Upload, X, Download, ChevronDown, Star } from "lucide-react";
+import Link from "next/link";
 import RelatedTools from "@/components/RelatedTools";
 
 interface ImageFile {
@@ -217,7 +218,7 @@ export default function ResizeImage() {
             Resize images by percentage or custom dimensions instantly. Free, fast, and secure.
           </p>
           <p className="text-gray-600 mb-4">
-            Upload your images and resize them by percentage or to specific pixel dimensions. Supports JPG, PNG, WebP and all common image formats. All processing happens in your browser for complete privacy. No file size limits, no signup required.
+            Upload your images and resize them by percentage or to specific pixel dimensions. Supports JPG, PNG, WebP and all common image formats. All processing happens in your browser for complete privacy. No file size limits, no signup required. Want to reduce file size without changing dimensions? Try our <Link href="/compress-image" className="text-blue-600 hover:underline">image compressor</Link>. Need to <Link href="/crop-image" className="text-blue-600 hover:underline">crop images</Link> instead?
           </p>
           <div className="flex items-center gap-2 mt-4">
             <div className="flex items-center gap-1">
@@ -705,7 +706,7 @@ export default function ResizeImage() {
                 Which output format should I choose?
               </summary>
               <p className="mt-2 text-gray-600 text-sm">
-                JPG is best for photos with smaller file sizes. PNG is best for images with transparency or text. WebP offers the best compression with high quality but may not work on older browsers.
+                JPG is best for photos with smaller file sizes. PNG is best for images with transparency or text. WebP offers the best compression with high quality but may not work on older browsers. You can convert between formats using our <Link href="/png-to-jpg" className="text-blue-600 hover:underline">PNG to JPG</Link> or <Link href="/image-to-webp" className="text-blue-600 hover:underline">Image to WebP</Link> tools.
               </p>
             </details>
             <details className="border-b border-gray-200 pb-4">

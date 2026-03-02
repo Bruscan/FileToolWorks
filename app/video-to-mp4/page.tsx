@@ -2,6 +2,7 @@
 
 import { useState, useCallback, useRef, useEffect } from "react";
 import { Upload, X, Download, ChevronDown, Star } from "lucide-react";
+import Link from "next/link";
 import RelatedTools from "@/components/RelatedTools";
 import { FFmpeg } from "@ffmpeg/ffmpeg";
 import { fetchFile, toBlobURL } from "@ffmpeg/util";
@@ -223,7 +224,7 @@ export default function VideoToMP4() {
             Convert any video format to MP4 instantly. Supports AVI, MOV, MKV, WebM, and more.
           </p>
           <p className="text-gray-600 mb-4">
-            Upload your video files in any format and convert them to MP4 for maximum compatibility. MP4 is the most widely supported video format, working on all devices and platforms. Choose quality and resolution settings to optimize file size and quality. All processing happens in your browser for complete privacy.
+            Upload your video files in any format and convert them to MP4 for maximum compatibility. MP4 is the most widely supported video format, working on all devices and platforms. Choose quality and resolution settings to optimize file size and quality. All processing happens in your browser for complete privacy. Need a web-optimized format? Try <Link href="/video-to-webm" className="text-blue-600 hover:underline">Video to WebM</Link>. Want to reduce file size? Use our <Link href="/compress-video" className="text-blue-600 hover:underline">video compressor</Link>.
           </p>
           <div className="flex items-center gap-2 mt-4">
             <div className="flex items-center gap-1">
@@ -571,7 +572,7 @@ export default function VideoToMP4() {
                 How long does conversion take?
               </summary>
               <p className="mt-2 text-gray-600 text-sm">
-                Conversion time depends on video length, size, and your device performance. Short videos convert in seconds, while longer videos may take several minutes. The tool shows progress during conversion.
+                Conversion time depends on video length, size, and your device performance. Short videos convert in seconds, while longer videos may take several minutes. The tool shows progress during conversion. After converting, you can <Link href="/trim-video" className="text-blue-600 hover:underline">trim</Link> or <Link href="/compress-video" className="text-blue-600 hover:underline">compress</Link> your MP4 files.
               </p>
             </details>
           </div>
