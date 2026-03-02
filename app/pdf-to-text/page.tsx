@@ -2,6 +2,7 @@
 
 import { useState, useCallback } from "react";
 import { Upload, X, Download, FileText, Star } from "lucide-react";
+import Link from "next/link";
 import RelatedTools from "@/components/RelatedTools";
 
 interface PDFFile {
@@ -115,7 +116,7 @@ export default function PDFToText() {
             Upload your PDF file and extract all text content in seconds. All
             processing happens in your browser for complete privacy. No file
             size limits, no signup required. Download the extracted text as a
-            plain text file.
+            plain text file. Need to work with full documents? Try our <Link href="/pdf-to-word" className="text-blue-600 hover:underline">PDF to Word converter</Link>.
           </p>
           <div className="flex items-center gap-2 mt-4">
             <div className="flex items-center gap-1">
@@ -367,7 +368,7 @@ export default function PDFToText() {
               <p className="mt-2 text-gray-600 text-sm">
                 The extracted text is saved as a plain text file (.txt) that
                 can be opened in any text editor or word processor. Each page
-                is labeled with a page number separator.
+                is labeled with a page number separator. For more PDF tools, try <Link href="/extract-pdf-pages" className="text-blue-600 hover:underline">Extract PDF Pages</Link>, <Link href="/merge-pdf" className="text-blue-600 hover:underline">Merge PDF</Link>, or <Link href="/sign-pdf" className="text-blue-600 hover:underline">Sign PDF</Link>.
               </p>
             </details>
           </div>

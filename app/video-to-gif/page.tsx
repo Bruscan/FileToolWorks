@@ -2,6 +2,7 @@
 
 import { useState, useCallback, useRef, useEffect } from "react";
 import { Upload, X, Download, ChevronDown, Star } from "lucide-react";
+import Link from "next/link";
 import RelatedTools from "@/components/RelatedTools";
 import { FFmpeg } from "@ffmpeg/ffmpeg";
 import { fetchFile, toBlobURL } from "@ffmpeg/util";
@@ -225,7 +226,7 @@ export default function VideoToGIF() {
             Convert video clips to animated GIFs instantly. Free, fast, and secure.
           </p>
           <p className="text-gray-600 mb-4">
-            Upload your video files and convert them to animated GIF format with customizable frame rate, size, and quality settings. All processing happens in your browser for complete privacy. No file size limits, no signup required. Note that large videos will produce large GIF files.
+            Upload your video files and convert them to animated GIF format with customizable frame rate, size, and quality settings. All processing happens in your browser for complete privacy. No file size limits, no signup required. Note that large videos will produce large GIF files. Want to <Link href="/trim-video" className="text-blue-600 hover:underline">trim the video</Link> first to keep only the best part?
           </p>
           <div className="flex items-center gap-2 mt-4">
             <div className="flex items-center gap-1">
@@ -625,7 +626,7 @@ export default function VideoToGIF() {
                 How do I trim my video?
               </summary>
               <p className="mt-2 text-gray-600 text-sm">
-                Use the start time field to skip to a specific point in your video (in seconds), and the duration field to set how many seconds to convert. Leave them empty to convert the entire video.
+                Use the start time field to skip to a specific point in your video (in seconds), and the duration field to set how many seconds to convert. Leave them empty to convert the entire video. For more precise trimming, use our <Link href="/trim-video" className="text-blue-600 hover:underline">Video Trimmer</Link> first. You can also <Link href="/extract-audio" className="text-blue-600 hover:underline">extract audio</Link> from the same video.
               </p>
             </details>
           </div>

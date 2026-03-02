@@ -2,6 +2,7 @@
 
 import { useState, useCallback, useRef, useEffect } from "react";
 import { Upload, X, Download, Scissors, Star } from "lucide-react";
+import Link from "next/link";
 import RelatedTools from "@/components/RelatedTools";
 import { FFmpeg } from "@ffmpeg/ffmpeg";
 import { fetchFile, toBlobURL } from "@ffmpeg/util";
@@ -279,7 +280,7 @@ export default function TrimVideo() {
             Trim and cut video clips online. Free, fast, and secure.
           </p>
           <p className="text-gray-600 mb-4">
-            Upload your video files and trim them by setting start and end times. The output keeps the same quality and format as your original video. All processing happens in your browser for complete privacy. No file size limits, no signup required.
+            Upload your video files and trim them by setting start and end times. The output keeps the same quality and format as your original video. All processing happens in your browser for complete privacy. No file size limits, no signup required. After trimming, you can <Link href="/compress-video" className="text-blue-600 hover:underline">compress the video</Link> or <Link href="/video-to-gif" className="text-blue-600 hover:underline">convert it to a GIF</Link>.
           </p>
           <div className="flex items-center gap-2 mt-4">
             <div className="flex items-center gap-1">
@@ -600,7 +601,7 @@ export default function TrimVideo() {
                 Can I trim multiple videos at once?
               </summary>
               <p className="mt-2 text-gray-600 text-sm">
-                Yes. You can upload multiple videos and apply the same trim settings to all of them. Each video will be processed and available for download individually or as a batch.
+                Yes. You can upload multiple videos and apply the same trim settings to all of them. Each video will be processed and available for download individually or as a batch. We also offer <Link href="/compress-video" className="text-blue-600 hover:underline">video compression</Link>, <Link href="/video-to-gif" className="text-blue-600 hover:underline">video to GIF</Link>, and <Link href="/extract-audio" className="text-blue-600 hover:underline">audio extraction</Link>.
               </p>
             </details>
           </div>

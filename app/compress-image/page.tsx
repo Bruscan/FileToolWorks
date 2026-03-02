@@ -2,6 +2,7 @@
 
 import { useState, useCallback } from "react";
 import { Upload, X, Download, ChevronDown, Star } from "lucide-react";
+import Link from "next/link";
 import RelatedTools from "@/components/RelatedTools";
 
 interface ImageFile {
@@ -175,7 +176,7 @@ export default function CompressImage() {
             Reduce image file size without losing quality. Free, fast, and secure.
           </p>
           <p className="text-gray-600 mb-4">
-            Compress JPG, PNG, and WebP images instantly. Reduce file size by up to 90% while maintaining quality. Choose compression level, output format, and resize options. All processing happens in your browser for complete privacy. No file size limits, no signup required.
+            Compress JPG, PNG, and WebP images instantly. Reduce file size by up to 90% while maintaining quality. Choose compression level, output format, and resize options. All processing happens in your browser for complete privacy. No file size limits, no signup required. Need to <Link href="/resize-image" className="text-blue-600 hover:underline">resize images</Link> or <Link href="/image-to-webp" className="text-blue-600 hover:underline">convert to WebP</Link> for even smaller files?
           </p>
           <div className="flex items-center gap-2 mt-4">
             <div className="flex items-center gap-1">
@@ -613,7 +614,7 @@ export default function CompressImage() {
                 Which output format should I choose?
               </summary>
               <p className="mt-2 text-gray-600 text-sm">
-                JPG is best for photos and images with many colors. PNG is ideal for images with transparency or text. WebP offers better compression than JPG while maintaining quality, but may have limited support on older browsers. Choose &quot;Same&quot; to keep the original format.
+                JPG is best for photos and images with many colors. PNG is ideal for images with transparency or text. WebP offers better compression than JPG while maintaining quality, but may have limited support on older browsers. Choose &quot;Same&quot; to keep the original format. You can also use our dedicated <Link href="/png-to-jpg" className="text-blue-600 hover:underline">PNG to JPG</Link> or <Link href="/image-to-webp" className="text-blue-600 hover:underline">Image to WebP</Link> converters.
               </p>
             </details>
             <details className="border-b border-gray-200 pb-4">
@@ -621,7 +622,7 @@ export default function CompressImage() {
                 Can I compress multiple images at once?
               </summary>
               <p className="mt-2 text-gray-600 text-sm">
-                Yes. Upload as many images as you want and they will all be compressed with the same settings. You can download them individually or all at once using the Download All button.
+                Yes. Upload as many images as you want and they will all be compressed with the same settings. You can download them individually or all at once using the Download All button. We also offer batch processing for <Link href="/resize-image" className="text-blue-600 hover:underline">resizing</Link> and <Link href="/remove-background" className="text-blue-600 hover:underline">background removal</Link>.
               </p>
             </details>
           </div>

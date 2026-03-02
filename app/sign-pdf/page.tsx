@@ -2,6 +2,7 @@
 
 import { useState, useCallback, useRef } from "react";
 import { Upload, X, Download, Star, RotateCcw, Pen, Image as ImageIcon, Type, Calendar } from "lucide-react";
+import Link from "next/link";
 import RelatedTools from "@/components/RelatedTools";
 import SignatureCanvas from "react-signature-canvas";
 
@@ -227,7 +228,7 @@ export default function SignPDF() {
             Add your signature to PDF documents online. Free, fast, and secure.
           </p>
           <p className="text-gray-600 mb-4">
-            Draw your signature or upload an image, position it anywhere on the PDF, and optionally add your name and date. All processing happens in your browser for complete privacy. No file size limits, no signup required.
+            Draw your signature or upload an image, position it anywhere on the PDF, and optionally add your name and date. All processing happens in your browser for complete privacy. No file size limits, no signup required. Need to <Link href="/merge-pdf" className="text-blue-600 hover:underline">merge PDFs</Link> or <Link href="/extract-pdf-pages" className="text-blue-600 hover:underline">extract specific pages</Link> before signing?
           </p>
           <div className="flex items-center gap-2 mt-4">
             <div className="flex items-center gap-1">
@@ -589,7 +590,7 @@ export default function SignPDF() {
                 Is the signature legally binding?
               </summary>
               <p className="mt-2 text-gray-600 text-sm">
-                In most jurisdictions, electronic signatures are legally binding. However, for important legal documents, you should consult with legal professionals to ensure compliance with applicable laws and regulations in your area.
+                In most jurisdictions, electronic signatures are legally binding. However, for important legal documents, you should consult with legal professionals to ensure compliance with applicable laws and regulations in your area. After signing, you can <Link href="/compress-pdf" className="text-blue-600 hover:underline">compress the PDF</Link> to reduce file size for emailing.
               </p>
             </details>
             <details className="border-b border-gray-200 pb-4">

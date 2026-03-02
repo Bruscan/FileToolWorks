@@ -2,6 +2,7 @@
 
 import { useState, useRef } from "react";
 import { Upload, X, Download, Star, Loader2 } from "lucide-react";
+import Link from "next/link";
 import RelatedTools from "@/components/RelatedTools";
 
 type Bitrate = "128k" | "192k" | "320k";
@@ -239,7 +240,7 @@ export default function WavToMp3() {
             Convert WAV audio files to MP3 format instantly. Free, fast, and secure.
           </p>
           <p className="text-gray-600 mb-4">
-            Upload WAV audio files and convert them to MP3 format with customizable bitrate settings. MP3 files are much smaller than WAV while maintaining good audio quality. All processing happens in your browser for complete privacy.
+            Upload WAV audio files and convert them to MP3 format with customizable bitrate settings. MP3 files are much smaller than WAV while maintaining good audio quality. All processing happens in your browser for complete privacy. Need to go the other way? Use our <Link href="/mp3-to-wav" className="text-blue-600 hover:underline">MP3 to WAV converter</Link>. You can also <Link href="/compress-audio" className="text-blue-600 hover:underline">compress audio files</Link> to reduce size even further.
           </p>
           <div className="flex items-center gap-2 mt-4">
             <div className="flex items-center gap-1">
@@ -485,7 +486,7 @@ export default function WavToMp3() {
               <div>
                 <strong className="text-gray-900">Convert and download</strong>
                 <p className="text-gray-600 text-sm">
-                  Click Convert to MP3 and your files will be ready to download. MP3 files are much smaller than WAV.
+                  Click Convert to MP3 and your files will be ready to download. MP3 files are much smaller than WAV. Want to trim first? Use the <Link href="/trim-audio" className="text-blue-600 hover:underline">Audio Trimmer</Link>.
                 </p>
               </div>
             </li>
@@ -545,7 +546,7 @@ export default function WavToMp3() {
                 Is this tool free to use?
               </summary>
               <p className="mt-2 text-gray-600 text-sm">
-                Yes. This WAV to MP3 converter is completely free with no hidden charges, subscriptions, or signup required. Convert as many files as you need.
+                Yes. This WAV to MP3 converter is completely free with no hidden charges, subscriptions, or signup required. Convert as many files as you need. Check out our full suite of <Link href="/compress-audio" className="text-blue-600 hover:underline">audio compression</Link> and <Link href="/extract-audio" className="text-blue-600 hover:underline">audio extraction</Link> tools.
               </p>
             </details>
           </div>

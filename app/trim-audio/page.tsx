@@ -2,6 +2,7 @@
 
 import { useState, useRef, useEffect } from "react";
 import { Upload, X, Download, Star, Loader2 } from "lucide-react";
+import Link from "next/link";
 import RelatedTools from "@/components/RelatedTools";
 
 interface AudioFile {
@@ -270,7 +271,7 @@ export default function TrimAudio() {
             Cut and trim audio files online. Fast, free, and secure.
           </p>
           <p className="text-gray-600 mb-4">
-            Upload your audio file and trim it to the exact length you need. Set start and end times in seconds to cut out unwanted parts. All processing happens in your browser for complete privacy. Supports MP3, WAV, AAC, and OGG formats. The output file maintains the same format and quality as the input.
+            Upload your audio file and trim it to the exact length you need. Set start and end times in seconds to cut out unwanted parts. All processing happens in your browser for complete privacy. Supports MP3, WAV, AAC, and OGG formats. The output file maintains the same format and quality as the input. Want to reduce file size after trimming? Try our <Link href="/compress-audio" className="text-blue-600 hover:underline">audio compressor</Link>.
           </p>
           <div className="flex items-center gap-2 mt-4">
             <div className="flex items-center gap-1">
@@ -493,7 +494,7 @@ export default function TrimAudio() {
               <div>
                 <strong className="text-gray-900">Trim and download</strong>
                 <p className="text-gray-600 text-sm">
-                  Click Trim Audio and your trimmed file will be ready to download instantly in the same format as the original.
+                  Click Trim Audio and your trimmed file will be ready to download instantly in the same format as the original. You can also <Link href="/compress-audio" className="text-blue-600 hover:underline">compress the trimmed audio</Link> to make it even smaller.
                 </p>
               </div>
             </li>
@@ -513,7 +514,7 @@ export default function TrimAudio() {
                 What audio formats can I trim?
               </summary>
               <p className="mt-2 text-gray-600 text-sm">
-                We support MP3, WAV, AAC, and OGG audio formats. The output file will be in the same format as your input file, preserving the original quality.
+                We support MP3, WAV, AAC, and OGG audio formats. The output file will be in the same format as your input file, preserving the original quality. Need to convert between formats? Use our <Link href="/wav-to-mp3" className="text-blue-600 hover:underline">WAV to MP3</Link> or <Link href="/mp3-to-wav" className="text-blue-600 hover:underline">MP3 to WAV</Link> converters.
               </p>
             </details>
             <details className="border-b border-gray-200 pb-4">
@@ -553,7 +554,7 @@ export default function TrimAudio() {
                 Is this tool free to use?
               </summary>
               <p className="mt-2 text-gray-600 text-sm">
-                Yes. This audio trimmer is completely free with no hidden charges, subscriptions, or signup required. Trim as many audio files as you need.
+                Yes. This audio trimmer is completely free with no hidden charges, subscriptions, or signup required. Trim as many audio files as you need. We also offer a free <Link href="/trim-video" className="text-blue-600 hover:underline">video trimmer</Link> and <Link href="/extract-audio" className="text-blue-600 hover:underline">audio extractor</Link>.
               </p>
             </details>
           </div>

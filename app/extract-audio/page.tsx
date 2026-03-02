@@ -2,6 +2,7 @@
 
 import { useState, useRef } from "react";
 import { Upload, X, Download, Star, Loader2 } from "lucide-react";
+import Link from "next/link";
 import RelatedTools from "@/components/RelatedTools";
 
 type AudioFormat = "mp3" | "wav" | "aac";
@@ -210,7 +211,7 @@ export default function ExtractAudio() {
             Extract audio from video files and save as MP3, WAV, or AAC. Free, fast, and secure.
           </p>
           <p className="text-gray-600 mb-4">
-            Upload any video file and extract its audio track in seconds. Choose your preferred audio format and quality level. All processing happens in your browser for complete privacy. No file uploads to servers, no file size limits.
+            Upload any video file and extract its audio track in seconds. Choose your preferred audio format and quality level. All processing happens in your browser for complete privacy. No file uploads to servers, no file size limits. After extracting, you can <Link href="/trim-audio" className="text-blue-600 hover:underline">trim the audio</Link> or <Link href="/compress-audio" className="text-blue-600 hover:underline">compress it</Link> to reduce file size.
           </p>
           <div className="flex items-center gap-2 mt-4">
             <div className="flex items-center gap-1">
@@ -472,7 +473,7 @@ export default function ExtractAudio() {
               <div>
                 <strong className="text-gray-900">Extract and download</strong>
                 <p className="text-gray-600 text-sm">
-                  Click Extract Audio and your audio file will be ready to download in seconds.
+                  Click Extract Audio and your audio file will be ready to download in seconds. Need a smaller file? <Link href="/compress-audio" className="text-blue-600 hover:underline">Compress the audio</Link> afterward.
                 </p>
               </div>
             </li>
@@ -500,7 +501,7 @@ export default function ExtractAudio() {
                 Which audio format should I choose?
               </summary>
               <p className="mt-2 text-gray-600 text-sm">
-                MP3 is the most universal format and works on all devices. WAV provides uncompressed quality but larger file sizes. AAC offers good quality with smaller files and is preferred for Apple devices.
+                MP3 is the most universal format and works on all devices. WAV provides uncompressed quality but larger file sizes. AAC offers good quality with smaller files and is preferred for Apple devices. You can also convert between formats later using our <Link href="/wav-to-mp3" className="text-blue-600 hover:underline">WAV to MP3</Link> converter.
               </p>
             </details>
             <details className="border-b border-gray-200 pb-4">
@@ -532,7 +533,7 @@ export default function ExtractAudio() {
                 Does this cost anything?
               </summary>
               <p className="mt-2 text-gray-600 text-sm">
-                No. This tool is completely free to use with no hidden charges, subscriptions, or signup required. Use it as many times as you need.
+                No. This tool is completely free to use with no hidden charges, subscriptions, or signup required. Use it as many times as you need. We also have free tools to <Link href="/compress-video" className="text-blue-600 hover:underline">compress videos</Link>, <Link href="/trim-video" className="text-blue-600 hover:underline">trim videos</Link>, and <Link href="/video-to-gif" className="text-blue-600 hover:underline">convert videos to GIF</Link>.
               </p>
             </details>
           </div>
