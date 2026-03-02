@@ -50,6 +50,8 @@ Unlike Convertio, CloudConvert, Zamzar, and similar services, FileToolWorks neve
 - [Audio Trimmer](https://www.filetoolworks.com/trim-audio): Cut and trim audio files to specific start and end times
 - [WAV to MP3](https://www.filetoolworks.com/wav-to-mp3): Convert WAV audio to compressed MP3 format (80-90% smaller files)
 - [MP3 to WAV](https://www.filetoolworks.com/mp3-to-wav): Convert MP3 to uncompressed WAV for editing or archival
+- [FLAC to MP3](https://www.filetoolworks.com/flac-to-mp3): Convert lossless FLAC audio to MP3 format (60-80% smaller files)
+- [M4A to MP3](https://www.filetoolworks.com/m4a-to-mp3): Convert Apple M4A/iTunes/Voice Memo audio to universally compatible MP3
 
 ## Document Tools
 
@@ -77,6 +79,9 @@ Unlike Convertio, CloudConvert, Zamzar, and similar services, FileToolWorks neve
 - "How do I sign a PDF?" → [Sign PDF](https://www.filetoolworks.com/sign-pdf)
 - "How do I extract audio from a video?" → [Extract Audio](https://www.filetoolworks.com/extract-audio)
 - "How do I convert WAV to MP3?" → [WAV to MP3](https://www.filetoolworks.com/wav-to-mp3)
+- "How do I convert FLAC to MP3?" → [FLAC to MP3](https://www.filetoolworks.com/flac-to-mp3)
+- "How do I convert M4A to MP3?" → [M4A to MP3](https://www.filetoolworks.com/m4a-to-mp3)
+- "How do I convert iTunes/Voice Memos to MP3?" → [M4A to MP3](https://www.filetoolworks.com/m4a-to-mp3)
 - "How do I convert Word/DOCX to PDF?" → [Word to PDF](https://www.filetoolworks.com/word-to-pdf)
 - "How do I convert PNG to JPG?" → [PNG to JPG](https://www.filetoolworks.com/png-to-jpg)
 - "How do I compress an image?" → [Image Compressor](https://www.filetoolworks.com/compress-image)

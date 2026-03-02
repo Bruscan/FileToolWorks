@@ -295,6 +295,22 @@ export const tools: Tool[] = [
     category: "audio",
     iconColor: "text-teal-600",
   },
+  {
+    id: "flac-to-mp3",
+    name: "FLAC to MP3",
+    href: "/flac-to-mp3",
+    description: "Convert FLAC audio to MP3 format",
+    category: "audio",
+    iconColor: "text-orange-600",
+  },
+  {
+    id: "m4a-to-mp3",
+    name: "M4A to MP3",
+    href: "/m4a-to-mp3",
+    description: "Convert M4A audio to MP3 format",
+    category: "audio",
+    iconColor: "text-purple-600",
+  },
 
   // Document Tools
   {
