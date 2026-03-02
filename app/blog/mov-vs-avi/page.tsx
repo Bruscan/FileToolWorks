@@ -60,7 +60,7 @@ export default function BlogPost() {
           </p>
 
           <p>
-            Convert your video files with our <Link href="/video-to-mp4" className="text-blue-600 hover:underline font-semibold">video to MP4 converter</Link> or reduce file size with the <Link href="/compress-video" className="text-blue-600 hover:underline font-semibold">video compressor</Link>. See also: <Link href="/blog/avi-vs-mp4" className="text-blue-600 hover:underline">AVI vs MP4</Link>, <Link href="/blog/mp4-vs-mov" className="text-blue-600 hover:underline">MP4 vs MOV</Link>, <Link href="/blog/mkv-vs-mp4" className="text-blue-600 hover:underline">MKV vs MP4</Link>, and <Link href="/blog/how-to-convert-mov-to-mp4" className="text-blue-600 hover:underline">how to convert MOV to MP4</Link>.
+            Convert your video files with our <Link href="/video-to-mp4" className="text-blue-600 hover:underline font-semibold">video to MP4 converter</Link> or reduce file size with the <Link href="/compress-video" className="text-blue-600 hover:underline font-semibold">video compressor</Link>. See also: <Link href="/blog/avi-vs-mov" className="text-blue-600 hover:underline">AVI vs MOV</Link>, <Link href="/blog/avi-vs-mp4" className="text-blue-600 hover:underline">AVI vs MP4</Link>, <Link href="/blog/mp4-vs-mov" className="text-blue-600 hover:underline">MP4 vs MOV</Link>, <Link href="/blog/mkv-vs-mp4" className="text-blue-600 hover:underline">MKV vs MP4</Link>, and <Link href="/blog/how-to-convert-mov-to-mp4" className="text-blue-600 hover:underline">how to convert MOV to MP4</Link>.
           </p>
         </div>
       </article>

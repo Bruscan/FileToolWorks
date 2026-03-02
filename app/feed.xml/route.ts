@@ -157,6 +157,9 @@ const blogPosts = [
   { slug: "60fps-vs-120fps", title: "60fps vs 120fps: Is Double the Frame Rate Worth It?", date: "2026-04-12", description: "60fps is smooth enough for most video and gaming. 120fps adds visible fluidity for fast-paced games and high-refresh displays. Compare both frame rates." },
   { slug: "hdr-vs-sdr", title: "HDR vs SDR: What's the Difference in Video and Display?", date: "2026-04-12", description: "HDR delivers brighter highlights, deeper blacks, and wider color range than SDR. Learn the key differences for video, gaming, and photo editing." },
   { slug: "srgb-vs-adobe-rgb", title: "sRGB vs Adobe RGB: Which Color Space Should You Use?", date: "2026-04-12", description: "sRGB is the web and screen standard. Adobe RGB covers 35% more colors for print work. Learn the differences and when each color space matters." },
+  { slug: "mpeg4-vs-mp4", title: "MPEG-4 vs MP4: Are They the Same Thing?", date: "2026-04-13", description: "MPEG-4 is a compression standard. MP4 is a container format based on that standard. Learn the actual differences between MPEG-4 and MP4." },
+  { slug: "avi-vs-mov", title: "AVI vs MOV: Which Video Container Format Is Better?", date: "2026-04-13", description: "AVI is Microsoft's legacy video container. MOV is Apple's QuickTime format. Compare compatibility, compression, features, and when to convert." },
+  { slug: "nef-vs-jpg", title: "NEF vs JPG: Nikon RAW vs JPEG for Photography", date: "2026-04-13", description: "NEF is Nikon's RAW format with full editing flexibility. JPG is smaller and ready to share. Compare quality, file size, and when to shoot each format." },
 ];
 
 function escapeXml(str: string): string {
