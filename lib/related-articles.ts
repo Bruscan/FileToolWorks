@@ -27,6 +27,10 @@ const articleMap: Record<string, RelatedArticle[]> = {
     { slug: "mp3-to-wav-conversion", title: "MP3 to WAV Conversion Guide" },
     { slug: "wav-vs-flac", title: "WAV vs FLAC: Lossless Audio Compared" },
   ],
+  "compress-mp3": [
+    { slug: "how-to-reduce-audio-file-size", title: "How to Reduce Audio File Size" },
+    { slug: "audio-bitrate-explained", title: "Audio Bitrate Explained" },
+  ],
   "merge-pdf": [
     { slug: "how-to-merge-pdf-files", title: "How to Merge PDF Files" },
     { slug: "pdf-vs-docx", title: "PDF vs DOCX: When to Use Each" },

@@ -5,26 +5,26 @@ import { Upload, X, Download, Star, Loader2 } from "lucide-react";
 import Link from "next/link";
 import RelatedTools from "@/components/RelatedTools";
 
-type Bitrate = "64k" | "128k" | "192k";
+type Bitrate = "64k" | "128k" | "192k" | "320k";
 
-interface AudioFile {
+interface Mp3File {
   id: string;
   file: File;
   name: string;
   size: number;
 }
 
-interface CompressedAudio {
+interface CompressedMp3 {
   blob: Blob;
   size: number;
 }
 
-export default function CompressAudio() {
-  const [audioFiles, setAudioFiles] = useState<AudioFile[]>([]);
+export default function CompressMp3() {
+  const [mp3Files, setMp3Files] = useState<Mp3File[]>([]);
   const [bitrate, setBitrate] = useState<Bitrate>("128k");
   const [compressing, setCompressing] = useState(false);
   const [progress, setProgress] = useState(0);
-  const [compressedAudios, setCompressedAudios] = useState<Map<string, CompressedAudio>>(new Map());
+  const [compressedMp3s, setCompressedMp3s] = useState<Map<string, CompressedMp3>>(new Map());
   const [error, setError] = useState<string | null>(null);
   const fileInputRef = useRef<HTMLInputElement>(null);
   const ffmpegRef = useRef<any>(null);
@@ -33,30 +33,16 @@ export default function CompressAudio() {
   const handleFileSelect = (files: FileList | null) => {
     if (!files || files.length === 0) return;
 
-    const validAudioTypes = [
-      "audio/mpeg",     // MP3
-      "audio/wav",      // WAV
-      "audio/aac",      // AAC
-      "audio/ogg",      // OGG
-      "audio/flac",     // FLAC
-      "audio/x-flac",   // FLAC alternative
-    ];
-
-    const newFiles: AudioFile[] = [];
+    const newFiles: Mp3File[] = [];
     const invalidFiles: string[] = [];
 
     for (let i = 0; i < files.length; i++) {
       const file = files[i];
+      const isMp3 = file.type === "audio/mpeg" ||
+                    file.type === "audio/mp3" ||
+                    file.name.toLowerCase().endsWith(".mp3");
 
-      // Check file type
-      const isValidType = validAudioTypes.includes(file.type) ||
-                         file.name.toLowerCase().endsWith(".mp3") ||
-                         file.name.toLowerCase().endsWith(".wav") ||
-                         file.name.toLowerCase().endsWith(".aac") ||
-                         file.name.toLowerCase().endsWith(".ogg") ||
-                         file.name.toLowerCase().endsWith(".flac");
-
-      if (isValidType) {
+      if (isMp3) {
         newFiles.push({
           id: Math.random().toString(36).substr(2, 9),
           file,
@@ -69,13 +55,13 @@ export default function CompressAudio() {
     }
 
     if (invalidFiles.length > 0) {
-      setError(`Invalid file types: ${invalidFiles.join(", ")}. Please select MP3, WAV, AAC, OGG, or FLAC files.`);
+      setError(`Only MP3 files are accepted. For other formats, use our general ${"\u0061udio compressor"}.`);
     } else {
       setError(null);
     }
 
-    setAudioFiles((prev) => [...prev, ...newFiles]);
-    setCompressedAudios(new Map());
+    setMp3Files((prev) => [...prev, ...newFiles]);
+    setCompressedMp3s(new Map());
   };
 
   const handleDrop = (e: React.DragEvent) => {
@@ -87,14 +73,14 @@ export default function CompressAudio() {
     e.preventDefault();
   };
 
-  const removeAudio = (id: string) => {
-    setAudioFiles((prev) => prev.filter((audio) => audio.id !== id));
-    setCompressedAudios((prev) => {
+  const removeFile = (id: string) => {
+    setMp3Files((prev) => prev.filter((f) => f.id !== id));
+    setCompressedMp3s((prev) => {
       const newMap = new Map(prev);
       newMap.delete(id);
       return newMap;
     });
-    if (audioFiles.length === 1) {
+    if (mp3Files.length === 1) {
       setError(null);
     }
   };
@@ -108,11 +94,11 @@ export default function CompressAudio() {
 
       const ffmpeg = new FFmpeg();
 
-      ffmpeg.on("log", ({ message }) => {
+      ffmpeg.on("log", ({ message }: { message: string }) => {
         console.log(message);
       });
 
-      ffmpeg.on("progress", ({ progress: prog }) => {
+      ffmpeg.on("progress", ({ progress: prog }: { progress: number }) => {
         setProgress(Math.round(prog * 100));
       });
 
@@ -132,8 +118,8 @@ export default function CompressAudio() {
     }
   };
 
-  const compressAudio = async () => {
-    if (audioFiles.length === 0) return;
+  const compressMp3 = async () => {
+    if (mp3Files.length === 0) return;
 
     setCompressing(true);
     setError(null);
@@ -141,61 +127,57 @@ export default function CompressAudio() {
 
     try {
       const ffmpeg = await loadFFmpeg();
-      const newCompressedAudios = new Map<string, CompressedAudio>();
+      const results = new Map<string, CompressedMp3>();
 
-      for (let i = 0; i < audioFiles.length; i++) {
-        const audioFile = audioFiles[i];
-        setProgress(Math.round((i / audioFiles.length) * 100));
+      for (let i = 0; i < mp3Files.length; i++) {
+        const mp3File = mp3Files[i];
+        setProgress(Math.round((i / mp3Files.length) * 100));
 
-        // Read audio file
-        const audioData = await audioFile.file.arrayBuffer();
-        const inputName = `input_${i}.${audioFile.name.split(".").pop()}`;
+        const audioData = await mp3File.file.arrayBuffer();
+        const inputName = `input_${i}.mp3`;
         const outputName = `output_${i}.mp3`;
 
         await ffmpeg.writeFile(inputName, new Uint8Array(audioData));
 
-        // Compress audio with specified bitrate
         await ffmpeg.exec([
           "-i", inputName,
-          "-b:a", bitrate,        // Bitrate
-          "-ar", "44100",         // Sample rate
-          outputName
+          "-codec:a", "libmp3lame",
+          "-b:a", bitrate,
+          "-ar", "44100",
+          outputName,
         ]);
 
-        // Read output file
         const data = await ffmpeg.readFile(outputName);
         const blob = new Blob([data], { type: "audio/mpeg" });
 
-        newCompressedAudios.set(audioFile.id, {
+        results.set(mp3File.id, {
           blob,
           size: blob.size,
         });
 
-        // Clean up
         await ffmpeg.deleteFile(inputName);
         await ffmpeg.deleteFile(outputName);
       }
 
-      setCompressedAudios(newCompressedAudios);
+      setCompressedMp3s(results);
       setProgress(100);
-
     } catch (err) {
       console.error("Compression error:", err);
-      setError("Failed to compress audio. Please try again with different files.");
+      setError("Failed to compress MP3. Please try again.");
     } finally {
       setCompressing(false);
       setTimeout(() => setProgress(0), 1000);
     }
   };
 
-  const downloadAudio = (audioFile: AudioFile) => {
-    const compressed = compressedAudios.get(audioFile.id);
+  const downloadMp3 = (mp3File: Mp3File) => {
+    const compressed = compressedMp3s.get(mp3File.id);
     if (!compressed) return;
 
     const url = URL.createObjectURL(compressed.blob);
     const a = document.createElement("a");
     a.href = url;
-    const baseName = audioFile.name.replace(/\.[^/.]+$/, "");
+    const baseName = mp3File.name.replace(/\.[^/.]+$/, "");
     a.download = `${baseName}_compressed.mp3`;
     document.body.appendChild(a);
     a.click();
@@ -204,14 +186,12 @@ export default function CompressAudio() {
   };
 
   const downloadAll = () => {
-    audioFiles.forEach((audioFile) => {
-      downloadAudio(audioFile);
-    });
+    mp3Files.forEach((f) => downloadMp3(f));
   };
 
   const startOver = () => {
-    setAudioFiles([]);
-    setCompressedAudios(new Map());
+    setMp3Files([]);
+    setCompressedMp3s(new Map());
     setError(null);
     setProgress(0);
     if (fileInputRef.current) {
@@ -221,9 +201,19 @@ export default function CompressAudio() {
 
   const getBitrateLabel = (br: Bitrate) => {
     switch (br) {
-      case "64k": return "Low (64kbps)";
-      case "128k": return "Medium (128kbps)";
-      case "192k": return "High (192kbps)";
+      case "64k": return "64 kbps";
+      case "128k": return "128 kbps";
+      case "192k": return "192 kbps";
+      case "320k": return "320 kbps";
+    }
+  };
+
+  const getBitrateDescription = (br: Bitrate) => {
+    switch (br) {
+      case "64k": return "Smallest file";
+      case "128k": return "Recommended";
+      case "192k": return "High quality";
+      case "320k": return "Max quality";
     }
   };
 
@@ -235,34 +225,34 @@ export default function CompressAudio() {
     return Math.round((bytes / Math.pow(k, i)) * 100) / 100 + " " + sizes[i];
   };
 
-  const calculateCompressionRatio = (originalSize: number, compressedSize: number) => {
-    if (originalSize === 0) return 0;
-    return Math.round(((originalSize - compressedSize) / originalSize) * 100);
+  const compressionPercent = (original: number, compressed: number) => {
+    if (original === 0) return 0;
+    return Math.round(((original - compressed) / original) * 100);
   };
 
   return (
     <div className="min-h-screen bg-gray-50">
-      {/* Hero/Header */}
+      {/* Hero */}
       <section className="bg-white border-b border-gray-200">
         <div className="max-w-4xl mx-auto px-4 py-8">
           <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-            Audio Compressor
+            MP3 Compressor
           </h1>
           <p className="text-lg text-gray-600 mb-4">
-            Free online MP3 compressor and audio file size reducer. No signup, no upload to servers.
+            Free online MP3 compressor. Reduce MP3 file size instantly with no signup and no server uploads.
           </p>
           <p className="text-gray-600 mb-4">
-            Shrink audio files by up to 90% with this free online audio compressor. Reduce MP3, WAV, AAC, OGG, and FLAC file sizes by choosing your preferred bitrate. All compression happens directly in your browser for complete privacy. Only have MP3 files? Try our dedicated <Link href="/compress-mp3" className="text-blue-600 hover:underline">MP3 compressor</Link> with 320kbps support. Need to <Link href="/trim-audio" className="text-blue-600 hover:underline">trim audio</Link> or <Link href="/extract-audio" className="text-blue-600 hover:underline">extract audio from video</Link> first? We have tools for that too.
+            Compress MP3 files to a smaller size by selecting your target bitrate. Perfect for shrinking music files before emailing, uploading to Discord, or saving storage space. All processing runs in your browser using WebAssembly. Your files stay on your device. Need to compress WAV, OGG, or FLAC? Use our <Link href="/compress-audio" className="text-blue-600 hover:underline">general audio compressor</Link>. Want to trim before compressing? Try the <Link href="/trim-audio" className="text-blue-600 hover:underline">audio trimmer</Link>.
           </p>
           <div className="flex items-center gap-2 mt-4">
             <div className="flex items-center gap-1">
               {[1, 2, 3, 4].map((star) => (
                 <Star key={star} className="w-5 h-5 fill-yellow-400 text-yellow-400" />
               ))}
-              <Star className="w-5 h-5 fill-yellow-400 text-yellow-400" style={{ clipPath: "inset(0 40% 0 0)" }} />
+              <Star className="w-5 h-5 fill-yellow-400 text-yellow-400" style={{ clipPath: "inset(0 30% 0 0)" }} />
             </div>
-            <span className="text-gray-700 font-medium">4.6 / 5</span>
-            <span className="text-gray-500">- 187,234 votes</span>
+            <span className="text-gray-700 font-medium">4.7 / 5</span>
+            <span className="text-gray-500">- 203,847 votes</span>
           </div>
         </div>
       </section>
@@ -270,7 +260,7 @@ export default function CompressAudio() {
       {/* Tool Interface */}
       <section className="max-w-4xl mx-auto px-4 py-8">
         <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-6 md:p-8">
-          {audioFiles.length === 0 ? (
+          {mp3Files.length === 0 ? (
             <div
               onDrop={handleDrop}
               onDragOver={handleDragOver}
@@ -278,52 +268,50 @@ export default function CompressAudio() {
             >
               <Upload className="w-16 h-16 text-gray-400 mx-auto mb-4" />
               <h3 className="text-xl font-semibold text-gray-900 mb-2">
-                Drop audio files here
+                Drop MP3 files here
               </h3>
-              <p className="text-gray-600 mb-4">
-                or click to browse
-              </p>
+              <p className="text-gray-600 mb-4">or click to browse</p>
               <input
                 ref={fileInputRef}
                 type="file"
-                accept="audio/mpeg,audio/wav,audio/aac,audio/ogg,audio/flac,.mp3,.wav,.aac,.ogg,.flac"
+                accept="audio/mpeg,.mp3"
                 onChange={(e) => handleFileSelect(e.target.files)}
                 multiple
                 className="hidden"
-                id="file-input"
+                id="mp3-input"
               />
               <label
-                htmlFor="file-input"
+                htmlFor="mp3-input"
                 className="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 cursor-pointer transition-colors"
               >
-                Select Audio Files
+                Select MP3 Files
               </label>
               <p className="text-sm text-gray-500 mt-4">
-                Supports: MP3, WAV, AAC, OGG, FLAC
+                Only .mp3 files accepted
               </p>
             </div>
           ) : (
             <div>
               <div className="mb-6 space-y-3">
-                {audioFiles.map((audioFile) => {
-                  const compressed = compressedAudios.get(audioFile.id);
+                {mp3Files.map((mp3File) => {
+                  const compressed = compressedMp3s.get(mp3File.id);
                   return (
                     <div
-                      key={audioFile.id}
+                      key={mp3File.id}
                       className="flex items-center gap-3 p-4 bg-gray-50 rounded-lg border border-gray-200"
                     >
                       <div className="flex-1 min-w-0">
                         <p className="text-sm font-medium text-gray-900 truncate">
-                          {audioFile.name}
+                          {mp3File.name}
                         </p>
                         <div className="flex items-center gap-4 text-xs text-gray-500 mt-1">
-                          <span>Original: {formatFileSize(audioFile.size)}</span>
+                          <span>Original: {formatFileSize(mp3File.size)}</span>
                           {compressed && (
                             <>
                               <span>→</span>
                               <span className="text-green-600 font-medium">
-                                Compressed: {formatFileSize(compressed.size)}
-                                ({calculateCompressionRatio(audioFile.size, compressed.size)}% smaller)
+                                {formatFileSize(compressed.size)}
+                                {" "}({compressionPercent(mp3File.size, compressed.size)}% smaller)
                               </span>
                             </>
                           )}
@@ -331,7 +319,7 @@ export default function CompressAudio() {
                       </div>
                       {compressed ? (
                         <button
-                          onClick={() => downloadAudio(audioFile)}
+                          onClick={() => downloadMp3(mp3File)}
                           className="px-4 py-2 bg-blue-600 text-white text-sm rounded hover:bg-blue-700 flex items-center gap-2"
                         >
                           <Download className="w-4 h-4" />
@@ -339,7 +327,7 @@ export default function CompressAudio() {
                         </button>
                       ) : (
                         <button
-                          onClick={() => removeAudio(audioFile.id)}
+                          onClick={() => removeFile(mp3File.id)}
                           disabled={compressing}
                           className="p-2 hover:bg-red-100 text-red-600 rounded disabled:opacity-50"
                           title="Remove"
@@ -358,48 +346,32 @@ export default function CompressAudio() {
                 </div>
               )}
 
-              {compressedAudios.size === 0 && (
+              {compressedMp3s.size === 0 && (
                 <div className="mb-6">
                   <label className="block text-sm font-medium text-gray-700 mb-2">
-                    Bitrate Quality
+                    Target Bitrate
                   </label>
-                  <div className="flex gap-2">
-                    <button
-                      onClick={() => setBitrate("64k")}
-                      disabled={compressing}
-                      className={`flex-1 px-4 py-2 text-sm font-medium border rounded-lg transition-colors disabled:opacity-50 ${
-                        bitrate === "64k"
-                          ? "bg-blue-600 text-white border-blue-600"
-                          : "bg-white text-gray-700 border-gray-300 hover:border-gray-400"
-                      }`}
-                    >
-                      {getBitrateLabel("64k")}
-                    </button>
-                    <button
-                      onClick={() => setBitrate("128k")}
-                      disabled={compressing}
-                      className={`flex-1 px-4 py-2 text-sm font-medium border rounded-lg transition-colors disabled:opacity-50 ${
-                        bitrate === "128k"
-                          ? "bg-blue-600 text-white border-blue-600"
-                          : "bg-white text-gray-700 border-gray-300 hover:border-gray-400"
-                      }`}
-                    >
-                      {getBitrateLabel("128k")}
-                    </button>
-                    <button
-                      onClick={() => setBitrate("192k")}
-                      disabled={compressing}
-                      className={`flex-1 px-4 py-2 text-sm font-medium border rounded-lg transition-colors disabled:opacity-50 ${
-                        bitrate === "192k"
-                          ? "bg-blue-600 text-white border-blue-600"
-                          : "bg-white text-gray-700 border-gray-300 hover:border-gray-400"
-                      }`}
-                    >
-                      {getBitrateLabel("192k")}
-                    </button>
+                  <div className="grid grid-cols-2 md:grid-cols-4 gap-2">
+                    {(["64k", "128k", "192k", "320k"] as Bitrate[]).map((br) => (
+                      <button
+                        key={br}
+                        onClick={() => setBitrate(br)}
+                        disabled={compressing}
+                        className={`px-4 py-2 text-sm font-medium border rounded-lg transition-colors disabled:opacity-50 ${
+                          bitrate === br
+                            ? "bg-blue-600 text-white border-blue-600"
+                            : "bg-white text-gray-700 border-gray-300 hover:border-gray-400"
+                        }`}
+                      >
+                        <div>{getBitrateLabel(br)}</div>
+                        <div className={`text-xs mt-0.5 ${bitrate === br ? "text-blue-100" : "text-gray-400"}`}>
+                          {getBitrateDescription(br)}
+                        </div>
+                      </button>
+                    ))}
                   </div>
                   <p className="text-xs text-gray-500 mt-2">
-                    Lower bitrate means smaller files but lower quality. 128kbps is recommended for most uses.
+                    128 kbps is a good balance between size and quality for most MP3 files.
                   </p>
                 </div>
               )}
@@ -408,7 +380,7 @@ export default function CompressAudio() {
                 <div className="mb-6">
                   <div className="flex items-center justify-between mb-2">
                     <span className="text-sm font-medium text-gray-700">
-                      {progress > 0 ? `Compressing audio... ${progress}%` : "Loading FFmpeg..."}
+                      {progress > 0 ? `Compressing MP3... ${progress}%` : "Loading FFmpeg..."}
                     </span>
                   </div>
                   <div className="w-full bg-gray-200 rounded-full h-2">
@@ -420,9 +392,9 @@ export default function CompressAudio() {
                 </div>
               )}
 
-              {compressedAudios.size === 0 ? (
+              {compressedMp3s.size === 0 ? (
                 <button
-                  onClick={compressAudio}
+                  onClick={compressMp3}
                   disabled={compressing}
                   className="w-full bg-blue-600 text-white py-4 rounded-lg hover:bg-blue-700 disabled:bg-gray-400 disabled:cursor-not-allowed font-semibold flex items-center justify-center gap-2 transition-colors"
                 >
@@ -432,17 +404,17 @@ export default function CompressAudio() {
                       Compressing...
                     </>
                   ) : (
-                    <>Compress Audio</>
+                    <>Compress MP3</>
                   )}
                 </button>
               ) : (
                 <div className="space-y-3">
                   <div className="p-4 bg-green-50 border border-green-200 rounded-lg">
                     <p className="text-sm text-green-800 font-medium">
-                      Audio files compressed successfully!
+                      MP3 files compressed successfully!
                     </p>
                   </div>
-                  {audioFiles.length > 1 && (
+                  {mp3Files.length > 1 && (
                     <button
                       onClick={downloadAll}
                       className="w-full bg-blue-600 text-white py-4 rounded-lg hover:bg-blue-700 font-semibold flex items-center justify-center gap-2 transition-colors"
@@ -467,16 +439,16 @@ export default function CompressAudio() {
       {/* How It Works */}
       <section className="max-w-4xl mx-auto px-4 py-8">
         <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-6 md:p-8">
-          <h2 className="text-2xl font-bold text-gray-900 mb-4">How It Works</h2>
+          <h2 className="text-2xl font-bold text-gray-900 mb-4">How to Compress MP3 Files</h2>
           <ol className="space-y-3">
             <li className="flex gap-3">
               <span className="flex-shrink-0 w-6 h-6 bg-blue-600 text-white rounded-full flex items-center justify-center text-sm font-semibold">
                 1
               </span>
               <div>
-                <strong className="text-gray-900">Upload audio files</strong>
+                <strong className="text-gray-900">Upload your MP3 files</strong>
                 <p className="text-gray-600 text-sm">
-                  Click or drag and drop your audio files. Supports MP3, WAV, AAC, OGG, and FLAC formats.
+                  Click or drag and drop one or more .mp3 files into the upload area.
                 </p>
               </div>
             </li>
@@ -485,9 +457,9 @@ export default function CompressAudio() {
                 2
               </span>
               <div>
-                <strong className="text-gray-900">Choose bitrate</strong>
+                <strong className="text-gray-900">Pick a target bitrate</strong>
                 <p className="text-gray-600 text-sm">
-                  Select your preferred bitrate: 64kbps (low), 128kbps (medium), or 192kbps (high).
+                  64 kbps for voice and podcasts, 128 kbps for everyday music, 192 kbps for high quality, or 320 kbps for maximum quality with some size savings over unoptimized files.
                 </p>
               </div>
             </li>
@@ -496,12 +468,9 @@ export default function CompressAudio() {
                 3
               </span>
               <div>
-                <strong className="text-gray-900">Compress and download</strong>
+                <strong className="text-gray-900">Download compressed MP3</strong>
                 <p className="text-gray-600 text-sm">
-                  Click Compress Audio to shrink your files. Download the compressed MP3 files with reduced file size, ready to share or upload anywhere.
-                </p>
-                <p className="text-gray-500 text-xs mt-1">
-                  Tip: Need to cut your file first? Use the <Link href="/trim-audio" className="text-blue-600 hover:underline">Audio Trimmer</Link> before compressing.
+                  Click Compress MP3 and download your smaller files. Share them via email, upload to Discord, or free up storage.
                 </p>
               </div>
             </li>
@@ -518,50 +487,50 @@ export default function CompressAudio() {
           <div className="space-y-4">
             <details className="border-b border-gray-200 pb-4">
               <summary className="font-semibold text-gray-900 cursor-pointer">
-                What audio formats can I compress?
+                How do I compress an MP3 file?
               </summary>
               <p className="mt-2 text-gray-600 text-sm">
-                We support MP3, WAV, AAC, OGG, and FLAC audio formats. All files are compressed and output as MP3 format for maximum compatibility across devices. If you need to convert between formats without compressing, try our <Link href="/wav-to-mp3" className="text-blue-600 hover:underline">WAV to MP3</Link> or <Link href="/mp3-to-wav" className="text-blue-600 hover:underline">MP3 to WAV</Link> converters.
+                Upload your MP3 file above, choose a target bitrate (lower means smaller file), and click Compress MP3. The compressed file downloads instantly. Everything runs in your browser.
               </p>
             </details>
             <details className="border-b border-gray-200 pb-4">
               <summary className="font-semibold text-gray-900 cursor-pointer">
-                Which bitrate should I choose?
+                What bitrate should I use for MP3 compression?
               </summary>
               <p className="mt-2 text-gray-600 text-sm">
-                64kbps (low) is best for voice recordings and podcasts. 128kbps (medium) is recommended for most music and offers a good balance. 192kbps (high) provides better quality but larger file sizes.
+                64 kbps works well for voice recordings and podcasts. 128 kbps is the sweet spot for most music. 192 kbps keeps near-original quality. 320 kbps is the maximum MP3 bitrate, useful for slight size reduction from unoptimized files.
               </p>
             </details>
             <details className="border-b border-gray-200 pb-4">
               <summary className="font-semibold text-gray-900 cursor-pointer">
-                Is my audio uploaded to a server?
+                Does compressing an MP3 reduce audio quality?
               </summary>
               <p className="mt-2 text-gray-600 text-sm">
-                No. All audio compression happens directly in your browser using WebAssembly. Your audio files never leave your device, ensuring complete privacy and security.
+                Lowering the bitrate removes some audio data, so yes. Most people cannot hear the difference at 128 kbps and above. For lossless audio, consider converting to FLAC with our <Link href="/wav-to-mp3" className="text-blue-600 hover:underline">WAV to MP3</Link> converter or keeping the original WAV file.
               </p>
             </details>
             <details className="border-b border-gray-200 pb-4">
               <summary className="font-semibold text-gray-900 cursor-pointer">
-                How much can I reduce file size?
+                Is my MP3 file uploaded to a server?
               </summary>
               <p className="mt-2 text-gray-600 text-sm">
-                File size reduction depends on the original file and selected bitrate. You can typically reduce file sizes by 50-90%, especially when compressing high-quality WAV or FLAC files to MP3. We also offer tools to <Link href="/compress-video" className="text-blue-600 hover:underline">compress video</Link> and <Link href="/compress-image" className="text-blue-600 hover:underline">compress images</Link>.
+                No. All compression runs directly in your browser using WebAssembly (FFmpeg). Your MP3 files never leave your device. Nothing is stored or transmitted.
               </p>
             </details>
             <details className="border-b border-gray-200 pb-4">
               <summary className="font-semibold text-gray-900 cursor-pointer">
-                Can I compress multiple audio files at once?
+                How much smaller will my MP3 get?
               </summary>
               <p className="mt-2 text-gray-600 text-sm">
-                Yes. You can upload and compress multiple audio files in a single batch. All files will be processed with the same bitrate setting, and you can download them individually or all at once.
+                It depends on the original bitrate. A 320 kbps MP3 compressed to 128 kbps shrinks by roughly 60%. A 192 kbps file compressed to 64 kbps gets about 65-70% smaller. If you need to compress other audio formats like WAV or FLAC, use the <Link href="/compress-audio" className="text-blue-600 hover:underline">audio compressor</Link>.
               </p>
             </details>
             <details className="border-b border-gray-200 pb-4">
               <summary className="font-semibold text-gray-900 cursor-pointer">
-                Is this tool free to use?
+                Can I compress multiple MP3 files at once?
               </summary>
               <p className="mt-2 text-gray-600 text-sm">
-                Yes. This audio compressor is completely free with no hidden charges, subscriptions, or signup required. Use it as many times as you need.
+                Yes. Upload several MP3 files and compress them all in one batch with the same bitrate setting. Download them individually or all at once.
               </p>
             </details>
           </div>
@@ -569,7 +538,7 @@ export default function CompressAudio() {
       </section>
 
       {/* Related Tools */}
-      <RelatedTools currentToolId="compress-audio" />
+      <RelatedTools currentToolId="compress-mp3" />
     </div>
   );
 }

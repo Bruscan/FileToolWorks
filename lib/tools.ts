@@ -287,6 +287,14 @@ export const tools: Tool[] = [
     category: "audio",
     iconColor: "text-sky-600",
   },
+  {
+    id: "compress-mp3",
+    name: "MP3 Compressor",
+    href: "/compress-mp3",
+    description: "Reduce MP3 file size with bitrate control",
+    category: "audio",
+    iconColor: "text-teal-600",
+  },
 
   // Document Tools
   {
