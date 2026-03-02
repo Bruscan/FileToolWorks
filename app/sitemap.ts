@@ -239,6 +239,9 @@ const blogPosts = [
   'apfs-vs-hfs',
   'ntfs-vs-refs',
   'ext4-vs-xfs',
+  'btrfs-vs-ext4',
+  'gzip-vs-brotli',
+  'jpeg-2000-vs-jpeg',
 ]
 
 export default function sitemap(): MetadataRoute.Sitemap {

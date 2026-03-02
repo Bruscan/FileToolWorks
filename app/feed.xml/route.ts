@@ -181,6 +181,9 @@ const blogPosts = [
   { slug: "apfs-vs-hfs", title: "APFS vs HFS+: Apple File System Differences Explained", date: "2026-04-20", description: "APFS replaced HFS+ in 2017 with SSD optimization, snapshots, and native encryption. Compare performance, features, and when each Apple file system applies." },
   { slug: "ntfs-vs-refs", title: "NTFS vs ReFS: Windows File System Differences Compared", date: "2026-04-20", description: "NTFS is the default Windows file system. ReFS adds data integrity and petabyte-scale volumes for servers. Compare features, performance, and use cases." },
   { slug: "ext4-vs-xfs", title: "ext4 vs XFS: Which Linux File System Should You Use?", date: "2026-04-20", description: "ext4 is the default on Ubuntu and Debian. XFS is the default on Red Hat. Compare performance, scalability, and use cases for each Linux file system." },
+  { slug: "btrfs-vs-ext4", title: "Btrfs vs ext4: Which Linux File System Should You Choose?", date: "2026-04-21", description: "Btrfs has snapshots, checksums, and built-in RAID. ext4 is faster, simpler, and the default on most distros. Compare both Linux file systems and pick the right one." },
+  { slug: "gzip-vs-brotli", title: "Gzip vs Brotli: Compression Ratio, Speed, and Web Performance", date: "2026-04-21", description: "Brotli compresses 15-25% smaller than Gzip for web assets like HTML, CSS, and JavaScript. Compare compression ratio, speed, browser support, and server setup." },
+  { slug: "jpeg-2000-vs-jpeg", title: "JPEG 2000 vs JPEG: Quality, Compression, and Compatibility", date: "2026-04-21", description: "JPEG 2000 uses wavelet compression for better quality at low bitrates, but has poor browser and device support. JPEG is universal. Compare both image formats." },
 ];
 
 function escapeXml(str: string): string {

@@ -56,7 +56,7 @@ export default function BlogPost() {
 
           <h2>When to Use Each</h2>
           <p>
-            Use gzip when compatibility is the top priority: distributing files to unknown recipients, serving web content to all browsers, or working with systems you do not control. Use zstd when speed matters: database backups, CI/CD artifact caching, container image layers, real-time data pipelines, or any internal system where you control both compression and decompression. For archive distribution, <Link href="/blog/7z-vs-zip" className="text-blue-600 hover:underline">7z</Link> or <Link href="/blog/tar-vs-zip" className="text-blue-600 hover:underline">tar</Link> with zstd is a strong option. For web delivery, gzip with a zstd upgrade path covers all cases.
+            Use gzip when compatibility is the top priority: distributing files to unknown recipients, serving web content to all browsers, or working with systems you do not control. Use zstd when speed matters: database backups, CI/CD artifact caching, container image layers, real-time data pipelines, or any internal system where you control both compression and decompression. For archive distribution, <Link href="/blog/7z-vs-zip" className="text-blue-600 hover:underline">7z</Link> or <Link href="/blog/tar-vs-zip" className="text-blue-600 hover:underline">tar</Link> with zstd is a strong option. For web delivery specifically, see our <Link href="/blog/gzip-vs-brotli" className="text-blue-600 hover:underline">Gzip vs Brotli</Link> comparison. Gzip with a zstd or Brotli upgrade path covers all cases.
           </p>
         </div>
       </article>
