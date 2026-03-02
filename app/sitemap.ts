@@ -307,6 +307,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.8,
   })
 
+  // Format Finder interactive tool
+  routes.push({
+    url: `${BASE_URL}/format-finder`,
+    lastModified: '2026-03-02T20:00:00.000Z',
+    changeFrequency: 'monthly',
+    priority: 0.8,
+  })
+
   // Blog index page
   routes.push({
     url: `${BASE_URL}/blog`,

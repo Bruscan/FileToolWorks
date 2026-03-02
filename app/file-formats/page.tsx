@@ -196,6 +196,16 @@ export default function FileFormatsPage() {
           </p>
         </section>
 
+        <section className="bg-blue-50 border border-blue-200 rounded-lg p-6 mb-8">
+          <h2 className="text-xl font-bold text-gray-900 mb-2">Not sure which format to use?</h2>
+          <p className="text-gray-700 mb-3">
+            Answer 2 quick questions and get a personalized recommendation with a free conversion tool.
+          </p>
+          <Link href="/format-finder" className="inline-flex items-center gap-2 bg-blue-600 text-white px-5 py-2.5 rounded-lg font-medium hover:bg-blue-700 transition-colors">
+            Open Format Finder &rarr;
+          </Link>
+        </section>
+
         <section className="bg-white rounded-lg shadow-sm p-6">
           <h2 className="text-xl font-bold text-gray-900 mb-3">Quick Format Recommendations</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
