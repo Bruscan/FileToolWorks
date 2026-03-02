@@ -163,6 +163,13 @@ export default function BlogPost() {
             >
               lossless vs lossy compression
             </Link>
+            . Comparing PNG to document formats? Read{" "}
+            <Link
+              href="/blog/png-vs-pdf"
+              className="text-blue-600 hover:underline"
+            >
+              PNG vs PDF
+            </Link>
             .
           </p>
         </div>

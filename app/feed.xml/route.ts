@@ -94,6 +94,9 @@ const blogPosts = [
   { slug: "av1-vs-vp9", title: "AV1 vs VP9: Compression, Quality, and Performance Compared", date: "2026-03-22", description: "AV1 compresses 30-50% better than VP9 but encodes much slower. VP9 has broader device support and faster real-time performance. Full codec comparison." },
   { slug: "wav-vs-ogg", title: "WAV vs OGG: Quality, File Size, and Compatibility Compared", date: "2026-03-22", description: "WAV is uncompressed with perfect audio quality but 10x larger files. OGG offers great quality at a fraction of the size. Compare formats, use cases, and compatibility." },
   { slug: "json-vs-csv", title: "JSON vs CSV: Structure, Performance, and Use Cases Compared", date: "2026-03-22", description: "CSV is smaller and faster for flat tabular data. JSON handles nested structures and mixed data types. Compare file size, parsing speed, and when to use each format." },
+  { slug: "xml-vs-json", title: "XML vs JSON: Syntax, Performance, and When to Use Each", date: "2026-03-23", description: "JSON is lighter and faster for APIs and web apps. XML is better for complex documents and strict validation. Compare syntax, file size, parsing speed, and use cases." },
+  { slug: "yaml-vs-json", title: "YAML vs JSON: Readability, Features, and Best Use Cases", date: "2026-03-23", description: "YAML is more readable and supports comments, making it ideal for config files. JSON is faster to parse and better for APIs. See when to use each format." },
+  { slug: "png-vs-pdf", title: "PNG vs PDF: Image Format vs Document Format Compared", date: "2026-03-23", description: "PNG is a raster image format for web graphics and screenshots. PDF is a document format for multi-page content and printing. Compare quality, size, and use cases." },
 ];
 
 function escapeXml(str: string): string {

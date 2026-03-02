@@ -152,6 +152,9 @@ const blogPosts = [
   'av1-vs-vp9',
   'wav-vs-ogg',
   'json-vs-csv',
+  'xml-vs-json',
+  'yaml-vs-json',
+  'png-vs-pdf',
 ]
 
 export default function sitemap(): MetadataRoute.Sitemap {

@@ -65,7 +65,7 @@ export default function BlogPost() {
           </p>
 
           <p>
-            Working with spreadsheet files? Our <Link href="/excel-to-pdf" className="text-blue-600 hover:underline font-semibold">Excel to PDF converter</Link> handles spreadsheet data, and you can compare other document formats in our <Link href="/blog/doc-vs-docx" className="text-blue-600 hover:underline">DOC vs DOCX</Link> and <Link href="/blog/xls-vs-xlsx" className="text-blue-600 hover:underline">XLS vs XLSX</Link> guides.
+            Working with spreadsheet files? Our <Link href="/excel-to-pdf" className="text-blue-600 hover:underline font-semibold">Excel to PDF converter</Link> handles spreadsheet data, and you can compare other document formats in our <Link href="/blog/doc-vs-docx" className="text-blue-600 hover:underline">DOC vs DOCX</Link> and <Link href="/blog/xls-vs-xlsx" className="text-blue-600 hover:underline">XLS vs XLSX</Link> guides. For other data serialization formats, see <Link href="/blog/xml-vs-json" className="text-blue-600 hover:underline">XML vs JSON</Link> and <Link href="/blog/yaml-vs-json" className="text-blue-600 hover:underline">YAML vs JSON</Link>.
           </p>
         </div>
       </article>
