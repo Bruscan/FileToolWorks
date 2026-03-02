@@ -2,6 +2,7 @@
 
 import { useState, useCallback } from "react";
 import { Upload, X, Download, Star, AlertCircle } from "lucide-react";
+import Link from "next/link";
 import RelatedTools from "@/components/RelatedTools";
 
 interface ImageFile {
@@ -147,7 +148,7 @@ export default function RemoveBackground() {
             Remove image background automatically with AI. Free, fast, and private.
           </p>
           <p className="text-gray-600 mb-4">
-            Remove background from any image using powerful AI technology. Upload photos of people, products, animals, or objects and get clean, transparent PNG files instantly. No manual editing required. Perfect for e-commerce, profile pictures, presentations, and graphic design. All processing happens in your browser for complete privacy.
+            Remove background from any image using powerful AI technology. Upload photos of people, products, animals, or objects and get clean, transparent PNG files instantly. No manual editing required. Perfect for e-commerce, profile pictures, presentations, and graphic design. All processing happens in your browser for complete privacy. Need to <Link href="/crop-image" className="text-blue-600 hover:underline">crop your image</Link> or <Link href="/resize-image" className="text-blue-600 hover:underline">resize it</Link> after removing the background? We have tools for that too.
           </p>
           <div className="flex items-center gap-2 mt-4">
             <div className="flex items-center gap-1">
@@ -407,6 +408,9 @@ export default function RemoveBackground() {
                 <p className="text-gray-600 text-sm">
                   View before/after preview with checkered background showing transparency. Download individually or all at once as PNG files with transparent backgrounds.
                 </p>
+                <p className="text-gray-500 text-xs mt-1">
+                  Tip: Want to crop or resize after removing the background? Use our <Link href="/crop-image" className="text-blue-600 hover:underline">Crop Image</Link> or <Link href="/resize-image" className="text-blue-600 hover:underline">Image Resizer</Link> tools.
+                </p>
               </div>
             </li>
           </ol>
@@ -441,7 +445,7 @@ export default function RemoveBackground() {
                 What types of images work best?
               </summary>
               <p className="mt-2 text-gray-600 text-sm">
-                The AI works best with clear subjects that have good contrast with the background. Photos of people, products, animals, and objects with defined edges produce excellent results. Images with complex backgrounds, hair, or transparent objects may require additional editing.
+                The AI works best with clear subjects that have good contrast with the background. Photos of people, products, animals, and objects with defined edges produce excellent results. Images with complex backgrounds, hair, or transparent objects may require additional editing. If you just need to hide sensitive parts of an image rather than remove the background entirely, try our <Link href="/blur-image" className="text-blue-600 hover:underline">Blur Image</Link> tool instead.
               </p>
             </details>
             <details className="border-b border-gray-200 pb-4">
@@ -457,7 +461,7 @@ export default function RemoveBackground() {
                 What format are the output images?
               </summary>
               <p className="mt-2 text-gray-600 text-sm">
-                All output images are saved as PNG files with transparent backgrounds. PNG is the standard format for images with transparency and is widely supported across all platforms, design software, and websites. The transparent areas are shown with a checkered pattern in the preview.
+                All output images are saved as PNG files with transparent backgrounds. PNG is the standard format for images with transparency and is widely supported across all platforms, design software, and websites. The transparent areas are shown with a checkered pattern in the preview. If you need a smaller file size afterward, you can convert the result to WebP using our <Link href="/image-to-webp" className="text-blue-600 hover:underline">Image to WebP</Link> converter or <Link href="/compress-image" className="text-blue-600 hover:underline">compress the image</Link> directly.
               </p>
             </details>
             <details className="border-b border-gray-200 pb-4">

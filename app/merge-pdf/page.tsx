@@ -2,6 +2,7 @@
 
 import { useState, useCallback } from "react";
 import { Upload, X, ArrowUp, ArrowDown, Download, Star, RotateCcw } from "lucide-react";
+import Link from "next/link";
 import RelatedTools from "@/components/RelatedTools";
 
 interface PDFFile {
@@ -122,7 +123,7 @@ export default function MergePDF() {
             Combine multiple PDF files into one document instantly. Free, fast, and secure.
           </p>
           <p className="text-gray-600 mb-4">
-            Upload your PDF files, arrange them in any order you want, and merge them into a single PDF document. All processing happens in your browser for complete privacy. No file size limits, no signup required.
+            Upload your PDF files, arrange them in any order you want, and merge them into a single PDF document. All processing happens in your browser for complete privacy. No file size limits, no signup required. Need to pick only certain pages? Use <Link href="/extract-pdf-pages" className="text-blue-600 hover:underline">Extract PDF Pages</Link> first. You can also <Link href="/sign-pdf" className="text-blue-600 hover:underline">sign your merged PDF</Link> when finished.
           </p>
           <div className="flex items-center gap-2 mt-4">
             <div className="flex items-center gap-1">
@@ -322,6 +323,9 @@ export default function MergePDF() {
                 <p className="text-gray-600 text-sm">
                   Click &quot;Merge PDFs&quot; and your combined file will download automatically.
                 </p>
+                <p className="text-gray-500 text-xs mt-1">
+                  Tip: Only need specific pages from a PDF? Use <Link href="/extract-pdf-pages" className="text-blue-600 hover:underline">Extract PDF Pages</Link> to pull them out before merging.
+                </p>
               </div>
             </li>
           </ol>
@@ -372,7 +376,7 @@ export default function MergePDF() {
                 Will the quality of my PDFs be preserved?
               </summary>
               <p className="mt-2 text-gray-600 text-sm">
-                Yes. The merging process preserves the original quality of all your PDF files. Text, images, and formatting remain exactly as they were in the original documents.
+                Yes. The merging process preserves the original quality of all your PDF files. Text, images, and formatting remain exactly as they were in the original documents. After merging, you can <Link href="/sign-pdf" className="text-blue-600 hover:underline">add a signature</Link> or <Link href="/pdf-to-text" className="text-blue-600 hover:underline">extract the text</Link> from your combined PDF.
               </p>
             </details>
             <details className="border-b border-gray-200 pb-4">
@@ -380,7 +384,7 @@ export default function MergePDF() {
                 Can I change the order of PDFs before merging?
               </summary>
               <p className="mt-2 text-gray-600 text-sm">
-                Yes. Use the up and down arrow buttons next to each file to reorder them. The numbers show the order in which PDFs will be merged. Arrange them however you like before clicking merge.
+                Yes. Use the up and down arrow buttons next to each file to reorder them. The numbers show the order in which PDFs will be merged. Arrange them however you like before clicking merge. If you only need certain pages from a file, <Link href="/extract-pdf-pages" className="text-blue-600 hover:underline">extract those pages</Link> first, then merge the result.
               </p>
             </details>
           </div>
