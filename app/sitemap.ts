@@ -236,6 +236,9 @@ const blogPosts = [
   'h265-vs-h266',
   'vp8-vs-vp9',
   'dsd-vs-pcm',
+  'apfs-vs-hfs',
+  'ntfs-vs-refs',
+  'ext4-vs-xfs',
 ]
 
 export default function sitemap(): MetadataRoute.Sitemap {

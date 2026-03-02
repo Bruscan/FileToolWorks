@@ -56,7 +56,7 @@ export default function BlogPost() {
 
           <h2>Cross-Platform Access</h2>
           <p>
-            Windows cannot read ext4 drives natively. Third-party tools like Ext2Fsd or WSL can provide access, but it is not seamless. Linux reads and writes NTFS through the ntfs3 kernel driver (kernel 5.15+), which performs well for most use cases. If you dual-boot Windows and Linux, <Link href="/blog/exfat-vs-ntfs" className="text-blue-600 hover:underline">exFAT</Link> or NTFS is the practical choice for shared partitions since both OSes can access them. For transferring files between systems, our <Link href="/zip-files" className="text-blue-600 hover:underline font-semibold">ZIP Files</Link> tool can compress them first to save space and time.
+            Windows cannot read ext4 drives natively. Third-party tools like Ext2Fsd or WSL can provide access, but it is not seamless. Linux reads and writes NTFS through the ntfs3 kernel driver (kernel 5.15+), which performs well for most use cases. If you dual-boot Windows and Linux, <Link href="/blog/exfat-vs-ntfs" className="text-blue-600 hover:underline">exFAT</Link> or NTFS is the practical choice for shared partitions since both OSes can access them. For choosing between Linux file systems, see <Link href="/blog/ext4-vs-xfs" className="text-blue-600 hover:underline">ext4 vs XFS</Link>. For transferring files between systems, our <Link href="/zip-files" className="text-blue-600 hover:underline font-semibold">ZIP Files</Link> tool can compress them first to save space and time.
           </p>
         </div>
       </article>

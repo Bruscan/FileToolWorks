@@ -56,7 +56,7 @@ export default function BlogPost() {
 
           <h2>When to Use Each</h2>
           <p>
-            Format your drive as exFAT when you need cross-platform compatibility: USB drives, SD cards, external SSDs shared between Mac and Windows, camera storage, and game console external storage. Format as NTFS for Windows internal drives, drives that store Windows backups, and any situation where you need file permissions or journaling. If you are only using Windows and do not need Mac compatibility, NTFS is the safer choice for external drives too, since journaling protects against data loss during unexpected disconnections.
+            Format your drive as exFAT when you need cross-platform compatibility: USB drives, SD cards, external SSDs shared between Mac and Windows, camera storage, and game console external storage. Format as NTFS for Windows internal drives, drives that store Windows backups, and any situation where you need file permissions or journaling. If you are only using Windows and do not need Mac compatibility, NTFS is the safer choice for external drives too, since journaling protects against data loss during unexpected disconnections. For Windows Server storage with data integrity requirements, see <Link href="/blog/ntfs-vs-refs" className="text-blue-600 hover:underline">NTFS vs ReFS</Link>.
           </p>
         </div>
       </article>

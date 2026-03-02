@@ -178,6 +178,9 @@ const blogPosts = [
   { slug: "h265-vs-h266", title: "H.265 vs H.266: VVC Next-Gen Codec Compared to HEVC", date: "2026-04-19", description: "H.266 (VVC) cuts bitrate by 50% compared to H.265 (HEVC) at the same quality. Compare compression, hardware support, and real-world adoption." },
   { slug: "vp8-vs-vp9", title: "VP8 vs VP9: Compression, Quality, and Browser Support", date: "2026-04-19", description: "VP9 delivers roughly 50% better compression than VP8 at the same quality. Compare Google's open video codecs for streaming, WebRTC, and web delivery." },
   { slug: "dsd-vs-pcm", title: "DSD vs PCM: How the Two Digital Audio Formats Differ", date: "2026-04-19", description: "DSD uses 1-bit samples at 2.8 MHz while PCM uses multi-bit samples at lower rates. Compare sound quality, editing, and compatibility for audiophile playback." },
+  { slug: "apfs-vs-hfs", title: "APFS vs HFS+: Apple File System Differences Explained", date: "2026-04-20", description: "APFS replaced HFS+ in 2017 with SSD optimization, snapshots, and native encryption. Compare performance, features, and when each Apple file system applies." },
+  { slug: "ntfs-vs-refs", title: "NTFS vs ReFS: Windows File System Differences Compared", date: "2026-04-20", description: "NTFS is the default Windows file system. ReFS adds data integrity and petabyte-scale volumes for servers. Compare features, performance, and use cases." },
+  { slug: "ext4-vs-xfs", title: "ext4 vs XFS: Which Linux File System Should You Use?", date: "2026-04-20", description: "ext4 is the default on Ubuntu and Debian. XFS is the default on Red Hat. Compare performance, scalability, and use cases for each Linux file system." },
 ];
 
 function escapeXml(str: string): string {
