@@ -721,6 +721,18 @@ const generalPosts = [
     slug: "ext4-vs-ntfs",
     title: "ext4 vs NTFS: Linux and Windows File Systems Compared",
   },
+  {
+    slug: "apfs-vs-hfs",
+    title: "APFS vs HFS+: Apple File System Differences Explained",
+  },
+  {
+    slug: "ntfs-vs-refs",
+    title: "NTFS vs ReFS: Windows File System Differences Compared",
+  },
+  {
+    slug: "ext4-vs-xfs",
+    title: "ext4 vs XFS: Which Linux File System Should You Use?",
+  },
 ];
 
 const categories = [
