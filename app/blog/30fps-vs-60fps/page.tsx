@@ -60,7 +60,7 @@ export default function BlogPost() {
           </p>
 
           <p>
-            Need to compress or trim your video footage? Try our <Link href="/compress-video" className="text-blue-600 hover:underline font-semibold">video compressor</Link> or <Link href="/trim-video" className="text-blue-600 hover:underline font-semibold">video trimmer</Link>. For more video comparisons, see <Link href="/blog/24fps-vs-30fps" className="text-blue-600 hover:underline">24fps vs 30fps</Link>, <Link href="/blog/4k-vs-1080p" className="text-blue-600 hover:underline">4K vs 1080p</Link>, and <Link href="/blog/h264-vs-h265" className="text-blue-600 hover:underline">H.264 vs H.265</Link>.
+            Need to compress or trim your video footage? Try our <Link href="/compress-video" className="text-blue-600 hover:underline font-semibold">video compressor</Link> or <Link href="/trim-video" className="text-blue-600 hover:underline font-semibold">video trimmer</Link>. For more video comparisons, see <Link href="/blog/24fps-vs-30fps" className="text-blue-600 hover:underline">24fps vs 30fps</Link>, <Link href="/blog/cfr-vs-vfr" className="text-blue-600 hover:underline">CFR vs VFR</Link>, and <Link href="/blog/h264-vs-h265" className="text-blue-600 hover:underline">H.264 vs H.265</Link>.
           </p>
         </div>
       </article>

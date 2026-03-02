@@ -60,7 +60,7 @@ export default function BlogPost() {
           </p>
 
           <p>
-            Need to convert between audio formats? Use our <Link href="/wav-to-mp3" className="text-blue-600 hover:underline font-semibold">WAV to MP3 converter</Link> or <Link href="/compress-audio" className="text-blue-600 hover:underline font-semibold">audio compressor</Link>. For more audio topics, see <Link href="/blog/stereo-vs-mono" className="text-blue-600 hover:underline">stereo vs mono</Link>, <Link href="/blog/cbr-vs-vbr" className="text-blue-600 hover:underline">CBR vs VBR</Link>, and <Link href="/blog/wav-vs-flac" className="text-blue-600 hover:underline">WAV vs FLAC</Link>.
+            Need to convert between audio formats? Use our <Link href="/wav-to-mp3" className="text-blue-600 hover:underline font-semibold">WAV to MP3 converter</Link> or <Link href="/compress-audio" className="text-blue-600 hover:underline font-semibold">audio compressor</Link>. For more audio topics, see <Link href="/blog/16-bit-vs-24-bit-audio" className="text-blue-600 hover:underline">16-bit vs 24-bit audio</Link>, <Link href="/blog/stereo-vs-mono" className="text-blue-600 hover:underline">stereo vs mono</Link>, and <Link href="/blog/wav-vs-flac" className="text-blue-600 hover:underline">WAV vs FLAC</Link>.
           </p>
         </div>
       </article>
