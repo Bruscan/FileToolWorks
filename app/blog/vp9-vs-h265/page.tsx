@@ -5,6 +5,9 @@ import BlogJsonLd from "@/components/BlogJsonLd";
 export const metadata: Metadata = {
   title: "VP9 vs H.265 (HEVC): Quality, Speed, and Licensing Compared | FileToolWorks",
   description: "VP9 is royalty-free with strong browser support. H.265 compresses slightly better with wider hardware decoding. Compare quality, encoding speed, and licensing.",
+  alternates: {
+    canonical: "/blog/vp9-vs-h265",
+  },
 };
 
 export default function BlogPost() {

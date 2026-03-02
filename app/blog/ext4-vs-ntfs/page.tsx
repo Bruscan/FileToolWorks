@@ -5,6 +5,9 @@ import BlogJsonLd from "@/components/BlogJsonLd";
 export const metadata: Metadata = {
   title: "ext4 vs NTFS: Linux and Windows File Systems Compared | FileToolWorks",
   description: "ext4 is the default Linux file system with fast I/O and low fragmentation. NTFS is the Windows default with encryption and ACL permissions.",
+  alternates: {
+    canonical: "/blog/ext4-vs-ntfs",
+  },
 };
 
 export default function BlogPost() {

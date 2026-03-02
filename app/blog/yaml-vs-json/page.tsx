@@ -5,6 +5,9 @@ import BlogJsonLd from "@/components/BlogJsonLd";
 export const metadata: Metadata = {
   title: "YAML vs JSON: Readability, Features, and Best Use Cases | FileToolWorks",
   description: "YAML is more readable and supports comments, making it ideal for config files. JSON is faster to parse and better for APIs. See when to use each format.",
+  alternates: {
+    canonical: "/blog/yaml-vs-json",
+  },
 };
 
 export default function BlogPost() {

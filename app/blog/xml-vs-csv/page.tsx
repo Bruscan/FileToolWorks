@@ -5,6 +5,9 @@ import BlogJsonLd from "@/components/BlogJsonLd";
 export const metadata: Metadata = {
   title: "XML vs CSV: Structure, File Size, and When to Use Each | FileToolWorks",
   description: "CSV is plain text with comma-separated values for flat tabular data. XML uses tags for hierarchical structured data. Compare file size, parsing, and best use cases.",
+  alternates: {
+    canonical: "/blog/xml-vs-csv",
+  },
 };
 
 export default function BlogPost() {

@@ -5,6 +5,9 @@ import BlogJsonLd from "@/components/BlogJsonLd";
 export const metadata: Metadata = {
   title: "JSON vs CSV: Structure, Performance, and Use Cases Compared | FileToolWorks",
   description: "CSV is smaller and faster for flat tabular data. JSON handles nested structures and mixed data types. Compare file size, parsing speed, and when to use each format.",
+  alternates: {
+    canonical: "/blog/json-vs-csv",
+  },
 };
 
 export default function BlogPost() {

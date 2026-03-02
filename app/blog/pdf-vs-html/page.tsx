@@ -5,6 +5,9 @@ import BlogJsonLd from "@/components/BlogJsonLd";
 export const metadata: Metadata = {
   title: "PDF vs HTML: Fixed Layout vs Flexible Web Content | FileToolWorks",
   description: "PDF preserves exact layout for print and legal documents. HTML adapts to any screen size for web content. Compare formatting, accessibility, and when to use each.",
+  alternates: {
+    canonical: "/blog/pdf-vs-html",
+  },
 };
 
 export default function BlogPost() {

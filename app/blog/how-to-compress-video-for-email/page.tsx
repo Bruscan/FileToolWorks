@@ -5,6 +5,9 @@ import BlogJsonLd from "@/components/BlogJsonLd";
 export const metadata: Metadata = {
   title: "How to Compress Video for Email (Under 25MB) | FileToolWorks",
   description: "Compress video files to fit email attachment limits. Reduce video size under 25MB with the right resolution, codec, and quality settings.",
+  alternates: {
+    canonical: "/blog/how-to-compress-video-for-email",
+  },
 };
 
 export default function BlogPost() {

@@ -5,6 +5,9 @@ import BlogJsonLd from "@/components/BlogJsonLd";
 export const metadata: Metadata = {
   title: "Best Audio Format for Web: MP3, OGG, AAC, or WAV? | FileToolWorks",
   description: "Which audio format is best for websites? Compare MP3, OGG, AAC, and WAV for browser support, file size, and quality to pick the right one.",
+  alternates: {
+    canonical: "/blog/best-audio-format-for-web",
+  },
 };
 
 export default function BlogPost() {

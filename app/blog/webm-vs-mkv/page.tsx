@@ -5,6 +5,9 @@ import BlogJsonLd from "@/components/BlogJsonLd";
 export const metadata: Metadata = {
   title: "WebM vs MKV: Web Streaming vs Media Storage Compared | FileToolWorks",
   description: "WebM is optimized for web browsers with VP8/VP9 codecs. MKV supports unlimited tracks and codecs for local storage. Compare features, size, and compatibility.",
+  alternates: {
+    canonical: "/blog/webm-vs-mkv",
+  },
 };
 
 export default function BlogPost() {

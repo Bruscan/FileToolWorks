@@ -5,6 +5,9 @@ import BlogJsonLd from "@/components/BlogJsonLd";
 export const metadata: Metadata = {
   title: "GIF vs SVG: Animation, File Size, and When to Use Each | FileToolWorks",
   description: "GIF is a raster format limited to 256 colors. SVG is vector-based, scalable, and interactive. Compare animation, file size, browser support, and best use cases.",
+  alternates: {
+    canonical: "/blog/gif-vs-svg",
+  },
 };
 
 export default function BlogPost() {

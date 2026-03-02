@@ -5,6 +5,9 @@ import BlogJsonLd from "@/components/BlogJsonLd";
 export const metadata: Metadata = {
   title: "EPS vs SVG: Differences, Features, and Which to Use | FileToolWorks",
   description: "EPS is a legacy print format. SVG is the web standard for vector graphics. Compare file structure, compatibility, transparency, and learn when to use each.",
+  alternates: {
+    canonical: "/blog/eps-vs-svg",
+  },
 };
 
 export default function BlogPost() {

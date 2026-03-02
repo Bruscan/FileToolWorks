@@ -5,6 +5,9 @@ import BlogJsonLd from "@/components/BlogJsonLd";
 export const metadata: Metadata = {
   title: "FLAC vs Opus: Lossless vs Lossy Audio Quality Compared | FileToolWorks",
   description: "FLAC preserves perfect audio quality with lossless compression. Opus delivers near-transparent quality at much smaller file sizes. Compare formats, use cases, and compatibility.",
+  alternates: {
+    canonical: "/blog/flac-vs-opus",
+  },
 };
 
 export default function BlogPost() {

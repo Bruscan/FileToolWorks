@@ -5,6 +5,9 @@ import BlogJsonLd from "@/components/BlogJsonLd";
 export const metadata: Metadata = {
   title: "AV1 vs VP9: Compression, Quality, and Performance Compared | FileToolWorks",
   description: "AV1 compresses 30-50% better than VP9 but encodes much slower. VP9 has broader device support and faster real-time performance. Full codec comparison.",
+  alternates: {
+    canonical: "/blog/av1-vs-vp9",
+  },
 };
 
 export default function BlogPost() {

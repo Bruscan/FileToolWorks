@@ -5,6 +5,9 @@ import BlogJsonLd from "@/components/BlogJsonLd";
 export const metadata: Metadata = {
   title: "MOV vs AVI: Quality, File Size, and Compatibility Compared | FileToolWorks",
   description: "MOV is Apple's video format with modern codec support. AVI is a legacy Microsoft format. Compare file size, quality, streaming, and compatibility.",
+  alternates: {
+    canonical: "/blog/mov-vs-avi",
+  },
 };
 
 export default function BlogPost() {

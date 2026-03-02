@@ -5,6 +5,9 @@ import BlogJsonLd from "@/components/BlogJsonLd";
 export const metadata: Metadata = {
   title: "How to Compress WAV Files (Without Ruining Audio Quality) | FileToolWorks",
   description: "Compress WAV files to reduce size by 80-90%. Learn which settings preserve quality and when to use WAV vs MP3.",
+  alternates: {
+    canonical: "/blog/how-to-compress-wav-files",
+  },
 };
 
 export default function BlogPost() {

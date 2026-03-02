@@ -5,6 +5,9 @@ import BlogJsonLd from "@/components/BlogJsonLd";
 export const metadata: Metadata = {
   title: "720p vs 1080p: What's the Difference? | FileToolWorks",
   description: "720p has 1280x720 pixels while 1080p has 1920x1080 pixels, giving 1080p over twice the detail. Learn when each resolution makes sense for your needs.",
+  alternates: {
+    canonical: "/blog/720p-vs-1080p",
+  },
 };
 
 export default function BlogPost() {

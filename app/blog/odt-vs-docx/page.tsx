@@ -5,6 +5,9 @@ import BlogJsonLd from "@/components/BlogJsonLd";
 export const metadata: Metadata = {
   title: "ODT vs DOCX: Which Document Format Should You Use? | FileToolWorks",
   description: "ODT is the open standard for documents. DOCX is Microsoft's format. Compare compatibility, features, and file size to pick the right one.",
+  alternates: {
+    canonical: "/blog/odt-vs-docx",
+  },
 };
 
 export default function BlogPost() {

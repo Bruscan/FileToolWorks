@@ -5,6 +5,9 @@ import BlogJsonLd from "@/components/BlogJsonLd";
 export const metadata: Metadata = {
   title: "TIFF vs BMP: Compression, Quality, and When to Use Each | FileToolWorks",
   description: "TIFF supports lossless compression and layers while BMP stores raw uncompressed pixels. Compare file size, quality, features, and best use cases for each format.",
+  alternates: {
+    canonical: "/blog/tiff-vs-bmp",
+  },
 };
 
 export default function BlogPost() {

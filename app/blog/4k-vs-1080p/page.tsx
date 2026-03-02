@@ -5,6 +5,9 @@ import BlogJsonLd from "@/components/BlogJsonLd";
 export const metadata: Metadata = {
   title: "4K vs 1080p: Resolution, File Size, and Quality Differences | FileToolWorks",
   description: "4K has four times the pixels of 1080p for sharper video, but files are 4x larger. Compare resolution, file size, hardware needs, and when each makes sense.",
+  alternates: {
+    canonical: "/blog/4k-vs-1080p",
+  },
 };
 
 export default function BlogPost() {

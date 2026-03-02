@@ -6,6 +6,9 @@ export const metadata: Metadata = {
   title: "How to Extract Pages from a PDF for Free | FileToolWorks",
   description:
     "Select and extract specific pages from any PDF file. Free online tool, no signup, runs in your browser.",
+  alternates: {
+    canonical: "/blog/extract-pages-from-pdf",
+  },
 };
 
 export default function BlogPost() {

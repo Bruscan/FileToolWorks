@@ -5,6 +5,9 @@ import BlogJsonLd from "@/components/BlogJsonLd";
 export const metadata: Metadata = {
   title: "ZFS vs Btrfs: Features, Performance, and Which to Choose | FileToolWorks",
   description: "ZFS has unmatched data integrity and RAID-Z. Btrfs is lighter, built into the Linux kernel, and easier to manage. Compare both copy-on-write file systems.",
+  alternates: {
+    canonical: "/blog/zfs-vs-btrfs",
+  },
 };
 
 export default function BlogPost() {

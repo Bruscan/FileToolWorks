@@ -5,6 +5,9 @@ import BlogJsonLd from "@/components/BlogJsonLd";
 export const metadata: Metadata = {
   title: "WMA vs MP3: Quality, Compatibility, and File Size Compared | FileToolWorks",
   description: "WMA sounds slightly better than MP3 at low bitrates but only works on Windows. MP3 plays everywhere. Compare quality, file size, DRM, and device support.",
+  alternates: {
+    canonical: "/blog/wma-vs-mp3",
+  },
 };
 
 export default function BlogPost() {

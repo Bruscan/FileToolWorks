@@ -5,6 +5,9 @@ import BlogJsonLd from "@/components/BlogJsonLd";
 export const metadata: Metadata = {
   title: "H.264 vs H.265: Compression, Quality, and When to Use Each | FileToolWorks",
   description: "H.265 cuts file size in half compared to H.264 at the same quality, but needs more processing power. Compare codecs for streaming, storage, and editing.",
+  alternates: {
+    canonical: "/blog/h264-vs-h265",
+  },
 };
 
 export default function BlogPost() {

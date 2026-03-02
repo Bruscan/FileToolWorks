@@ -6,6 +6,9 @@ export const metadata: Metadata = {
   title: "Audio Bitrate Explained: What It Means and How to Choose",
   description:
     "Learn what audio bitrate is, how it affects sound quality and file size, and which bitrate to pick for music, podcasts, and voice recordings.",
+  alternates: {
+    canonical: "/blog/audio-bitrate-explained",
+  },
 };
 
 export default function BlogPost() {

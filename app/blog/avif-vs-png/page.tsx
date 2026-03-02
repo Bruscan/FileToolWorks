@@ -5,6 +5,9 @@ import BlogJsonLd from "@/components/BlogJsonLd";
 export const metadata: Metadata = {
   title: "AVIF vs PNG: Compression, Quality, and When to Use Each | FileToolWorks",
   description: "AVIF compresses photos 10x smaller than PNG with minimal quality loss. PNG is lossless with universal support. Compare file size, features, and pick the right format.",
+  alternates: {
+    canonical: "/blog/avif-vs-png",
+  },
 };
 
 export default function BlogPost() {

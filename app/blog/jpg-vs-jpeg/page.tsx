@@ -5,6 +5,9 @@ import BlogJsonLd from "@/components/BlogJsonLd";
 export const metadata: Metadata = {
   title: "JPG vs JPEG: Is There a Difference? | FileToolWorks",
   description: "JPG and JPEG are the same format. The only difference is the file extension. Here is why both exist and which one to use.",
+  alternates: {
+    canonical: "/blog/jpg-vs-jpeg",
+  },
 };
 
 export default function BlogPost() {

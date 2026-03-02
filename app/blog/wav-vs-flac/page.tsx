@@ -5,6 +5,9 @@ import BlogJsonLd from "@/components/BlogJsonLd";
 export const metadata: Metadata = {
   title: "WAV vs FLAC: File Size, Quality, and When to Use Each | FileToolWorks",
   description: "FLAC is 30-50% smaller than WAV with zero quality loss. Compare file size, metadata support, compatibility, and use cases for both lossless formats.",
+  alternates: {
+    canonical: "/blog/wav-vs-flac",
+  },
 };
 
 export default function BlogPost() {

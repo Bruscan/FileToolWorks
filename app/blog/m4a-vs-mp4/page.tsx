@@ -5,6 +5,9 @@ import BlogJsonLd from "@/components/BlogJsonLd";
 export const metadata: Metadata = {
   title: "M4A vs MP4: Same Container, Different Contents Explained | FileToolWorks",
   description: "M4A and MP4 both use the MPEG-4 container. M4A holds audio only (AAC or ALAC), while MP4 includes video. Compare compatibility, quality, and use cases.",
+  alternates: {
+    canonical: "/blog/m4a-vs-mp4",
+  },
 };
 
 export default function BlogPost() {

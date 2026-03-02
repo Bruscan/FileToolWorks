@@ -5,6 +5,9 @@ import BlogJsonLd from "@/components/BlogJsonLd";
 export const metadata: Metadata = {
   title: "AVI vs MP4: File Size, Quality, and Compatibility Compared | FileToolWorks",
   description: "MP4 produces smaller files with better compression than AVI. Compare file size, codec support, streaming, and compatibility for both video formats.",
+  alternates: {
+    canonical: "/blog/avi-vs-mp4",
+  },
 };
 
 export default function BlogPost() {

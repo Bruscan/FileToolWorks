@@ -5,6 +5,9 @@ import BlogJsonLd from "@/components/BlogJsonLd";
 export const metadata: Metadata = {
   title: "AVI vs MOV: Which Video Container Format Is Better? | FileToolWorks",
   description: "AVI is Microsoft's legacy video container. MOV is Apple's QuickTime format. Compare compatibility, compression, features, and when to convert.",
+  alternates: {
+    canonical: "/blog/avi-vs-mov",
+  },
 };
 
 export default function BlogPost() {

@@ -5,6 +5,9 @@ import BlogJsonLd from "@/components/BlogJsonLd";
 export const metadata: Metadata = {
   title: "MP4 vs TS: Container Formats for Streaming and Storage | FileToolWorks",
   description: "MP4 is the standard container for video downloads and playback. TS (MPEG Transport Stream) is built for broadcasting and live streaming. Compare features and use cases.",
+  alternates: {
+    canonical: "/blog/mp4-vs-ts",
+  },
 };
 
 export default function BlogPost() {

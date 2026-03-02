@@ -5,6 +5,9 @@ import BlogJsonLd from "@/components/BlogJsonLd";
 export const metadata: Metadata = {
   title: "MPEG vs MP4: Format Differences, Codecs, and Compatibility | FileToolWorks",
   description: "MPEG is a family of compression standards (MPEG-1, MPEG-2, MPEG-4). MP4 is a container format based on MPEG-4 Part 14. Compare codecs, quality, and use cases.",
+  alternates: {
+    canonical: "/blog/mpeg-vs-mp4",
+  },
 };
 
 export default function BlogPost() {

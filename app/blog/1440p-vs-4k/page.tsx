@@ -5,6 +5,9 @@ import BlogJsonLd from "@/components/BlogJsonLd";
 export const metadata: Metadata = {
   title: "1440p vs 4K: Which Resolution Should You Pick? | FileToolWorks",
   description: "1440p (2560x1440) offers a balance of clarity and performance. 4K (3840x2160) delivers maximum detail. Compare both resolutions for gaming, work, and media.",
+  alternates: {
+    canonical: "/blog/1440p-vs-4k",
+  },
 };
 
 export default function BlogPost() {

@@ -5,6 +5,9 @@ import BlogJsonLd from "@/components/BlogJsonLd";
 export const metadata: Metadata = {
   title: "How to Convert Image to PDF - Free Guide | FileToolWorks",
   description: "Learn the easiest ways to convert JPG, PNG, and HEIC images to PDF on any device. Free online converter included.",
+  alternates: {
+    canonical: "/blog/how-to-convert-image-to-pdf",
+  },
 };
 
 export default function BlogPost() {

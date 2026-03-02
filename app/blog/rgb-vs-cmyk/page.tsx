@@ -5,6 +5,9 @@ import BlogJsonLd from "@/components/BlogJsonLd";
 export const metadata: Metadata = {
   title: "RGB vs CMYK: What's the Difference and When to Use Each | FileToolWorks",
   description: "RGB uses light for screens, CMYK uses ink for print. Understand the key differences in color range, file formats, and when to pick each color mode.",
+  alternates: {
+    canonical: "/blog/rgb-vs-cmyk",
+  },
 };
 
 export default function BlogPost() {
