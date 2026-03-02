@@ -105,10 +105,17 @@ export default function ToolsPage() {
         <h1 className="text-4xl font-bold text-gray-900 mb-4">
           All Free Online File Tools
         </h1>
-        <p className="text-lg text-gray-600 mb-10 max-w-3xl">
+        <p className="text-lg text-gray-600 mb-6 max-w-3xl">
           {toolCount} free tools for converting, compressing, and editing files
           directly in your browser. No signup, no upload limits, no watermarks.
           Your files never leave your device.
+        </p>
+        <p className="text-gray-600 mb-10">
+          Not sure which format to use? Try our{" "}
+          <Link href="/format-finder" className="text-blue-600 hover:underline font-medium">
+            Format Finder
+          </Link>{" "}
+          for a personalized recommendation.
         </p>
 
         {categories.map((category) => {
