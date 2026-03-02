@@ -179,6 +179,9 @@ const blogPosts = [
   'woff2-vs-woff',
   'm4v-vs-mp4',
   'bzip2-vs-gzip',
+  'raw-vs-dng',
+  'gif-vs-svg',
+  'mov-vs-mkv',
 ]
 
 export default function sitemap(): MetadataRoute.Sitemap {

@@ -121,6 +121,9 @@ const blogPosts = [
   { slug: "woff2-vs-woff", title: "WOFF2 vs WOFF: Compression, Browser Support, and Which to Use", date: "2026-03-31", description: "WOFF2 is 30% smaller than WOFF thanks to Brotli compression and has 97%+ browser support. Compare file size, performance, and when to use each web font format." },
   { slug: "m4v-vs-mp4", title: "M4V vs MP4: DRM, Compatibility, and Key Differences", date: "2026-03-31", description: "M4V is Apple's DRM-protected video format based on MP4. MP4 plays everywhere. Compare compatibility, codecs, file size, and when to use each format." },
   { slug: "bzip2-vs-gzip", title: "Bzip2 vs Gzip: Compression Ratio, Speed, and When to Use Each", date: "2026-03-31", description: "Bzip2 compresses 10-20% better than gzip but decompresses 6x slower. Compare compression speed, ratio, and use cases for Linux and server environments." },
+  { slug: "raw-vs-dng", title: "RAW vs DNG: File Size, Compatibility, and Which to Shoot", date: "2026-04-01", description: "DNG is Adobe's open raw format that is 15-20% smaller than proprietary RAW files. Compare editing flexibility, compatibility, metadata handling, and archival use." },
+  { slug: "gif-vs-svg", title: "GIF vs SVG: Animation, File Size, and When to Use Each", date: "2026-04-01", description: "GIF is a raster format limited to 256 colors. SVG is vector-based, scalable, and interactive. Compare animation, file size, browser support, and best use cases." },
+  { slug: "mov-vs-mkv", title: "MOV vs MKV: Compatibility, Features, and Which to Choose", date: "2026-04-01", description: "MOV is Apple's video format for editing. MKV is an open container with unlimited tracks and chapters. Compare compatibility, features, file size, and use cases." },
 ];
 
 function escapeXml(str: string): string {
