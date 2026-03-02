@@ -154,6 +154,9 @@ const blogPosts = [
   { slug: "720p-vs-1080p", title: "720p vs 1080p: What's the Difference?", date: "2026-04-11", description: "720p has 1280x720 pixels while 1080p has 1920x1080 pixels, giving 1080p over twice the detail. Learn when each resolution makes sense for your needs." },
   { slug: "1440p-vs-4k", title: "1440p vs 4K: Which Resolution Should You Pick?", date: "2026-04-11", description: "1440p (2560x1440) offers a balance of clarity and performance. 4K (3840x2160) delivers maximum detail. Compare both resolutions for gaming, work, and media." },
   { slug: "24fps-vs-30fps", title: "24fps vs 30fps: Which Frame Rate Should You Use?", date: "2026-04-11", description: "24fps gives video a cinematic film look while 30fps produces smoother, more realistic motion. Learn when to use each frame rate for your projects." },
+  { slug: "60fps-vs-120fps", title: "60fps vs 120fps: Is Double the Frame Rate Worth It?", date: "2026-04-12", description: "60fps is smooth enough for most video and gaming. 120fps adds visible fluidity for fast-paced games and high-refresh displays. Compare both frame rates." },
+  { slug: "hdr-vs-sdr", title: "HDR vs SDR: What's the Difference in Video and Display?", date: "2026-04-12", description: "HDR delivers brighter highlights, deeper blacks, and wider color range than SDR. Learn the key differences for video, gaming, and photo editing." },
+  { slug: "srgb-vs-adobe-rgb", title: "sRGB vs Adobe RGB: Which Color Space Should You Use?", date: "2026-04-12", description: "sRGB is the web and screen standard. Adobe RGB covers 35% more colors for print work. Learn the differences and when each color space matters." },
 ];
 
 function escapeXml(str: string): string {
