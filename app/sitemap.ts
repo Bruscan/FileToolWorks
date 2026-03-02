@@ -250,38 +250,30 @@ const blogPosts = [
   'smallest-video-format',
 ]
 
-// Generate a stable date for each item based on its index and a date range
-function getStaggeredDate(index: number, total: number, startDate: Date, endDate: Date): Date {
-  const startMs = startDate.getTime()
-  const endMs = endDate.getTime()
+// Generate a stable ISO date string for each item based on its index and a date range
+function getStaggeredDateString(index: number, total: number, startIso: string, endIso: string): string {
+  const startMs = new Date(startIso).getTime()
+  const endMs = new Date(endIso).getTime()
   const step = total > 1 ? (endMs - startMs) / (total - 1) : 0
-  return new Date(startMs + step * index)
+  return new Date(startMs + step * index).toISOString()
 }
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  // Tool pages were built from mid-Jan through early March 2026
-  const toolStart = new Date('2026-01-15')
-  const toolEnd = new Date('2026-03-01')
-
-  // Blog posts were published from March 1 through April 23 2026
-  const blogStart = new Date('2026-03-01')
-  const blogEnd = new Date('2026-04-23')
-
   // Homepage
   const routes: MetadataRoute.Sitemap = [
     {
       url: BASE_URL,
-      lastModified: new Date('2026-04-23'),
+      lastModified: '2026-03-02T00:00:00.000Z',
       changeFrequency: 'daily',
       priority: 1.0,
     },
   ]
 
-  // Tool pages (high priority) - staggered over build period
+  // Tool pages (high priority) - staggered Jan 15 to Mar 1 2026
   tools.forEach((tool, i) => {
     routes.push({
       url: `${BASE_URL}/${tool}`,
-      lastModified: getStaggeredDate(i, tools.length, toolStart, toolEnd),
+      lastModified: getStaggeredDateString(i, tools.length, '2026-01-15T08:00:00.000Z', '2026-03-01T16:00:00.000Z'),
       changeFrequency: 'weekly',
       priority: 0.9,
     })
@@ -290,7 +282,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // File format reference page
   routes.push({
     url: `${BASE_URL}/file-formats`,
-    lastModified: new Date('2026-03-02'),
+    lastModified: '2026-03-02T12:00:00.000Z',
     changeFrequency: 'monthly',
     priority: 0.8,
   })
@@ -298,16 +290,16 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // Blog index page
   routes.push({
     url: `${BASE_URL}/blog`,
-    lastModified: new Date('2026-04-23'),
+    lastModified: '2026-03-02T14:00:00.000Z',
     changeFrequency: 'weekly',
     priority: 0.8,
   })
 
-  // Blog posts - staggered over publishing period
+  // Blog posts - staggered Feb 1 to Mar 2 2026 (all in the past)
   blogPosts.forEach((post, i) => {
     routes.push({
       url: `${BASE_URL}/blog/${post}`,
-      lastModified: getStaggeredDate(i, blogPosts.length, blogStart, blogEnd),
+      lastModified: getStaggeredDateString(i, blogPosts.length, '2026-02-01T09:00:00.000Z', '2026-03-02T09:00:00.000Z'),
       changeFrequency: 'monthly',
       priority: 0.7,
     })
