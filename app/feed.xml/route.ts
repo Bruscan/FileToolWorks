@@ -184,6 +184,9 @@ const blogPosts = [
   { slug: "btrfs-vs-ext4", title: "Btrfs vs ext4: Which Linux File System Should You Choose?", date: "2026-04-21", description: "Btrfs has snapshots, checksums, and built-in RAID. ext4 is faster, simpler, and the default on most distros. Compare both Linux file systems and pick the right one." },
   { slug: "gzip-vs-brotli", title: "Gzip vs Brotli: Compression Ratio, Speed, and Web Performance", date: "2026-04-21", description: "Brotli compresses 15-25% smaller than Gzip for web assets like HTML, CSS, and JavaScript. Compare compression ratio, speed, browser support, and server setup." },
   { slug: "jpeg-2000-vs-jpeg", title: "JPEG 2000 vs JPEG: Quality, Compression, and Compatibility", date: "2026-04-21", description: "JPEG 2000 uses wavelet compression for better quality at low bitrates, but has poor browser and device support. JPEG is universal. Compare both image formats." },
+  { slug: "tar-gz-vs-zip", title: "tar.gz vs ZIP: Compression, Compatibility, and Key Differences", date: "2026-04-22", description: "tar.gz compresses all files as one stream for better ratios. ZIP compresses each file separately for easy random access. Compare both archive formats side by side." },
+  { slug: "zfs-vs-btrfs", title: "ZFS vs Btrfs: Features, Performance, and Which to Choose", date: "2026-04-22", description: "ZFS has unmatched data integrity and RAID-Z. Btrfs is lighter, built into the Linux kernel, and easier to manage. Compare both copy-on-write file systems." },
+  { slug: "utf-8-vs-ascii", title: "UTF-8 vs ASCII: Character Sets, Encoding, and Compatibility", date: "2026-04-22", description: "ASCII encodes 128 English characters in 7 bits. UTF-8 encodes every Unicode character in 1-4 bytes and is backward compatible with ASCII. Compare both encodings." },
 ];
 
 function escapeXml(str: string): string {
