@@ -145,6 +145,14 @@ const audioPosts = [
     slug: "16-bit-vs-24-bit-audio",
     title: "16-Bit vs 24-Bit Audio: Does Bit Depth Matter?",
   },
+  {
+    slug: "dolby-digital-vs-dts",
+    title: "Dolby Digital vs DTS: Audio Format Differences Explained",
+  },
+  {
+    slug: "pcm-vs-bitstream",
+    title: "PCM vs Bitstream: Which Audio Output Should You Use?",
+  },
 ];
 
 const imagePosts = [
@@ -684,6 +692,10 @@ const generalPosts = [
   {
     slug: "zstd-vs-gzip",
     title: "Zstd vs Gzip: Compression Speed, Ratio, and Use Cases",
+  },
+  {
+    slug: "exfat-vs-ntfs",
+    title: "exFAT vs NTFS: Which File System Should You Use?",
   },
 ];
 
