@@ -498,8 +498,98 @@ export default function FormatFinderPage() {
       ? recommendations[`${category}-${useCase}`]
       : null;
 
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebApplication",
+        name: "File Format Finder",
+        url: "https://www.filetoolworks.com/format-finder",
+        applicationCategory: "UtilityApplication",
+        operatingSystem: "Any",
+        offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
+        description:
+          "Interactive tool to find the best file format for your needs. Get personalized recommendations for image, audio, video, and document formats.",
+      },
+      {
+        "@type": "FAQPage",
+        mainEntity: [
+          {
+            "@type": "Question",
+            name: "What is the best image format for websites?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "WebP is the best image format for websites. It produces files 25-35% smaller than JPEG at the same visual quality and supports transparency like PNG. All modern browsers support WebP.",
+            },
+          },
+          {
+            "@type": "Question",
+            name: "Should I use MP3 or WAV for my audio?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "Use MP3 for sharing, streaming, and distribution. Use WAV for editing and production. MP3 at 192kbps sounds nearly identical to WAV but is 10x smaller.",
+            },
+          },
+          {
+            "@type": "Question",
+            name: "What video format should I use for social media?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "MP4 with H.264 encoding works on every social media platform including YouTube, Instagram, TikTok, and Facebook. Use 1080p resolution for the best balance of quality and file size.",
+            },
+          },
+          {
+            "@type": "Question",
+            name: "Is PDF or DOCX better for sharing documents?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "PDF is better for sharing finished documents because it looks identical on every device and cannot be accidentally edited. DOCX is better when the recipient needs to make changes.",
+            },
+          },
+          {
+            "@type": "Question",
+            name: "What format has the smallest file size?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "For images, WebP has the smallest file size at any given quality level. For audio, MP3 at 128kbps. For video, MP4 with H.264 at CRF 28.",
+            },
+          },
+          {
+            "@type": "Question",
+            name: "Are these format recommendations free to use?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "Yes. The Format Finder tool is completely free with no signup required. All linked conversion tools also run free in your browser with no file size limits and complete privacy.",
+            },
+          },
+        ],
+      },
+      {
+        "@type": "BreadcrumbList",
+        itemListElement: [
+          {
+            "@type": "ListItem",
+            position: 1,
+            name: "Home",
+            item: "https://www.filetoolworks.com",
+          },
+          {
+            "@type": "ListItem",
+            position: 2,
+            name: "Format Finder",
+            item: "https://www.filetoolworks.com/format-finder",
+          },
+        ],
+      },
+    ],
+  };
+
   return (
     <div className="min-h-screen bg-gray-50">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <div className="max-w-3xl mx-auto px-4 py-12">
         <Link
           href="/"
