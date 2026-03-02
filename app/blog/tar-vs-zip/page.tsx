@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import BlogJsonLd from "@/components/BlogJsonLd";
 
 export const metadata: Metadata = {
-  title: "TAR vs ZIP: Archiving, Compression, and Platform Differences",
+  title: "TAR vs ZIP: Archiving and Compression",
   description: "TAR bundles files without compression and preserves Unix permissions. ZIP compresses and archives in one step with universal OS support. Compare both formats.",
   alternates: {
     canonical: "/blog/tar-vs-zip",

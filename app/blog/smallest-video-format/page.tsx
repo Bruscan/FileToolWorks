@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import BlogJsonLd from "@/components/BlogJsonLd";
 
 export const metadata: Metadata = {
-  title: "Smallest Video Format: Which Format Has the Smallest File Size?",
+  title: "Smallest Video Format by File Size",
   description:
     "Compare MP4, WebM, AVI, and MKV file sizes. Learn which video format gives the smallest files while keeping good quality.",
   alternates: {

@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import BlogJsonLd from "@/components/BlogJsonLd";
 
 export const metadata: Metadata = {
-  title: "4K vs 1080p: Resolution, File Size, and Quality Differences",
+  title: "4K vs 1080p: Resolution, Size, and Quality",
   description: "4K has four times the pixels of 1080p for sharper video, but files are 4x larger. Compare resolution, file size, hardware needs, and when each makes sense.",
   alternates: {
     canonical: "/blog/4k-vs-1080p",

@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import BlogJsonLd from "@/components/BlogJsonLd";
 
 export const metadata: Metadata = {
-  title: "Free Online File Converter With No Signup (Browser-Based, Private)",
+  title: "Free File Converter Online - No Signup Needed",
   description: "Convert files online without creating an account. These browser-based tools process files locally so nothing gets uploaded to a server.",
   alternates: {
     canonical: "/blog/free-online-file-converter-no-signup",

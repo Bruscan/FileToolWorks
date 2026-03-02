@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import BlogJsonLd from "@/components/BlogJsonLd";
 
 export const metadata: Metadata = {
-  title: "RAW vs TIFF: Choosing Between Capture and Output Formats",
+  title: "RAW vs TIFF: Capture vs Output Formats",
   description: "RAW stores unprocessed sensor data for maximum editing flexibility. TIFF is a lossless processed format for archival and delivery. Compare quality, workflow, and best uses.",
   alternates: {
     canonical: "/blog/raw-vs-tiff",

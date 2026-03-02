@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import BlogJsonLd from "@/components/BlogJsonLd";
 
 export const metadata: Metadata = {
-  title: "Bzip2 vs Gzip: Compression Ratio, Speed, and When to Use Each",
+  title: "Bzip2 vs Gzip: Compression Ratio and Speed",
   description: "Bzip2 compresses 10-20% better than gzip but decompresses 6x slower. Compare compression speed, ratio, and use cases for Linux and server environments.",
   alternates: {
     canonical: "/blog/bzip2-vs-gzip",

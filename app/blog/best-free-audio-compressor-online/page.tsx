@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import BlogJsonLd from "@/components/BlogJsonLd";
 
 export const metadata: Metadata = {
-  title: "7 Best Free Audio Compressors Online (2026 Comparison)",
+  title: "7 Best Free Online Audio Compressors (2026)",
   description: "Compare the top free online audio compressors. Side-by-side review of features, file limits, privacy, and output quality for MP3, WAV, and more.",
   alternates: {
     canonical: "/blog/best-free-audio-compressor-online",

@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import BlogJsonLd from "@/components/BlogJsonLd";
 
 export const metadata: Metadata = {
-  title: "M4A vs MP3: Quality, Compatibility, and File Size Compared",
+  title: "M4A vs MP3: Quality, Size, and Compatibility",
   description: "M4A (AAC) sounds better than MP3 at the same bitrate but has narrower device support. Compare quality, file size, and when to use each format.",
   alternates: {
     canonical: "/blog/m4a-vs-mp3",

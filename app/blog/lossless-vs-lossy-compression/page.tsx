@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import BlogJsonLd from "@/components/BlogJsonLd";
 
 export const metadata: Metadata = {
-  title: "Lossless vs Lossy Compression: How They Work and When to Use Each",
+  title: "Lossless vs Lossy Compression Explained",
   description: "Lossy compression discards data to shrink files. Lossless keeps every bit intact. Learn how each works for images, audio, and video with real examples.",
   alternates: {
     canonical: "/blog/lossless-vs-lossy-compression",

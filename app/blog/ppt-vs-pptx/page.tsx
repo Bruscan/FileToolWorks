@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import BlogJsonLd from "@/components/BlogJsonLd";
 
 export const metadata: Metadata = {
-  title: "PPT vs PPTX: File Size, Features, and Compatibility Compared",
+  title: "PPT vs PPTX: Size, Features, and Compatibility",
   description: "PPTX replaced PPT in 2007 with 75% smaller files and XML-based structure. PPT is binary and lacks modern features. Compare both PowerPoint formats.",
   alternates: {
     canonical: "/blog/ppt-vs-pptx",

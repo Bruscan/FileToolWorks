@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import BlogJsonLd from "@/components/BlogJsonLd";
 
 export const metadata: Metadata = {
-  title: "AIFF vs WAV: Differences, Compatibility, and Which to Choose",
+  title: "AIFF vs WAV: Differences and Compatibility",
   description: "AIFF and WAV both store uncompressed lossless audio at identical quality. WAV has broader device support, AIFF stores richer metadata. Compare features and pick the right one.",
   alternates: {
     canonical: "/blog/aiff-vs-wav",

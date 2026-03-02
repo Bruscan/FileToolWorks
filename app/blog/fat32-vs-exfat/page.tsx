@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import BlogJsonLd from "@/components/BlogJsonLd";
 
 export const metadata: Metadata = {
-  title: "FAT32 vs exFAT: File Size Limits, Compatibility, and Which to Use",
+  title: "FAT32 vs exFAT: Size Limits and Compatibility",
   description: "FAT32 has a 4GB file size limit and works on everything. exFAT removes that limit and is better for large files on USB drives and SD cards.",
   alternates: {
     canonical: "/blog/fat32-vs-exfat",

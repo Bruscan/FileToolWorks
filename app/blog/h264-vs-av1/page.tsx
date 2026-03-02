@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import BlogJsonLd from "@/components/BlogJsonLd";
 
 export const metadata: Metadata = {
-  title: "H.264 vs AV1: Codec Comparison for Streaming and Video",
+  title: "H.264 vs AV1: Codec Comparison for Streaming",
   description: "H.264 offers universal compatibility and fast encoding. AV1 delivers 50% better compression and is royalty-free. Compare quality, speed, support, and which codec to choose.",
   alternates: {
     canonical: "/blog/h264-vs-av1",
