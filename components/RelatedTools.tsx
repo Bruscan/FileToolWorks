@@ -1,6 +1,7 @@
 import Link from "next/link";
-import { FileText } from "lucide-react";
+import { FileText, BookOpen } from "lucide-react";
 import { getRelatedTools } from "@/lib/tools";
+import { getRelatedArticles } from "@/lib/related-articles";
 
 interface RelatedToolsProps {
   currentToolId: string;
@@ -9,8 +10,9 @@ interface RelatedToolsProps {
 
 export default function RelatedTools({ currentToolId, limit = 3 }: RelatedToolsProps) {
   const relatedTools = getRelatedTools(currentToolId, limit);
+  const relatedArticles = getRelatedArticles(currentToolId);
 
-  if (relatedTools.length === 0) {
+  if (relatedTools.length === 0 && relatedArticles.length === 0) {
     return null;
   }
 
@@ -30,6 +32,23 @@ export default function RelatedTools({ currentToolId, limit = 3 }: RelatedToolsP
           </Link>
         ))}
       </div>
+      {relatedArticles.length > 0 && (
+        <div className="mt-6 flex flex-wrap gap-x-6 gap-y-2">
+          <span className="text-sm font-medium text-gray-500 flex items-center gap-1.5">
+            <BookOpen className="w-4 h-4" />
+            Related guides:
+          </span>
+          {relatedArticles.map((article) => (
+            <Link
+              key={article.slug}
+              href={`/blog/${article.slug}`}
+              className="text-sm text-blue-600 hover:underline"
+            >
+              {article.title}
+            </Link>
+          ))}
+        </div>
+      )}
     </section>
   );
 }
