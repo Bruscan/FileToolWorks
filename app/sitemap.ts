@@ -185,6 +185,9 @@ const blogPosts = [
   'tiff-vs-bmp',
   'cr2-vs-jpg',
   'ico-vs-png',
+  'pdf-vs-jpg',
+  'svg-vs-ai',
+  'keynote-vs-pptx',
 ]
 
 export default function sitemap(): MetadataRoute.Sitemap {

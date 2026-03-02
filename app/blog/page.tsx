@@ -284,6 +284,10 @@ const imagePosts = [
     slug: "ico-vs-png",
     title: "ICO vs PNG: Which Format for Favicons and Icons?",
   },
+  {
+    slug: "svg-vs-ai",
+    title: "SVG vs AI: Open Standard vs Adobe's Proprietary Vector Format",
+  },
 ];
 
 const pdfPosts = [
@@ -318,6 +322,10 @@ const pdfPosts = [
   {
     slug: "tiff-vs-pdf",
     title: "TIFF vs PDF: Quality, File Size, and Best Use Cases",
+  },
+  {
+    slug: "pdf-vs-jpg",
+    title: "PDF vs JPG: Key Differences and When to Use Each",
   },
 ];
 
@@ -516,6 +524,10 @@ const generalPosts = [
   {
     slug: "bzip2-vs-gzip",
     title: "Bzip2 vs Gzip: Compression Ratio, Speed, and When to Use Each",
+  },
+  {
+    slug: "keynote-vs-pptx",
+    title: "Keynote vs PPTX: Apple vs Microsoft Presentation Formats Compared",
   },
 ];
 

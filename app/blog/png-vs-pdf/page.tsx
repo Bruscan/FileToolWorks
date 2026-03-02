@@ -61,7 +61,7 @@ export default function BlogPost() {
 
           <h2>When to Use Each</h2>
           <p>
-            Use PNG for screenshots, web images, icons, UI mockups, and anything displayed on screen. Use PDF for reports, invoices, contracts, ebooks, and anything printed or shared as a document. Sometimes you need both: save images as PNG for the web, then combine them into a PDF for distribution. For more image format comparisons, see <Link href="/blog/png-vs-jpg" className="text-blue-600 hover:underline">PNG vs JPG</Link> and <Link href="/blog/svg-vs-png" className="text-blue-600 hover:underline">SVG vs PNG</Link>.
+            Use PNG for screenshots, web images, icons, UI mockups, and anything displayed on screen. Use PDF for reports, invoices, contracts, ebooks, and anything printed or shared as a document. Sometimes you need both: save images as PNG for the web, then combine them into a PDF for distribution. For more format comparisons, see <Link href="/blog/pdf-vs-jpg" className="text-blue-600 hover:underline">PDF vs JPG</Link>, <Link href="/blog/png-vs-jpg" className="text-blue-600 hover:underline">PNG vs JPG</Link>, and <Link href="/blog/svg-vs-png" className="text-blue-600 hover:underline">SVG vs PNG</Link>.
           </p>
         </div>
       </article>
