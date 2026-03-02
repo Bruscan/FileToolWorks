@@ -38,6 +38,10 @@ const audioPosts = [
     title: "How to Compress Podcast Audio Without Losing Voice Quality",
   },
   {
+    slug: "best-free-audio-compressor-online",
+    title: "7 Best Free Audio Compressors Online (2026 Comparison)",
+  },
+  {
     slug: "how-to-extract-audio-from-video",
     title: "How to Extract Audio from Video (Free, Any Format)",
   },
@@ -597,6 +601,10 @@ const videoPosts = [
 ];
 
 const generalPosts = [
+  {
+    slug: "free-online-file-converter-no-signup",
+    title: "Free Online File Converter With No Signup (Browser-Based, Private)",
+  },
   {
     slug: "zip-vs-rar",
     title: "ZIP vs RAR: File Compression Formats Compared",
