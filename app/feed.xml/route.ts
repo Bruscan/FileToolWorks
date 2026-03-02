@@ -109,6 +109,9 @@ const blogPosts = [
   { slug: "epub-vs-mobi", title: "EPUB vs MOBI: eBook Formats Compared", date: "2026-03-27", description: "EPUB is the universal eBook standard supported by almost every reader. MOBI is Amazon's legacy format, now largely replaced. Compare features, compatibility, and which to use." },
   { slug: "psd-vs-png", title: "PSD vs PNG: Editing Format vs Distribution Format", date: "2026-03-27", description: "PSD is Adobe Photoshop's layered editing format. PNG is a compressed image for sharing and the web. Compare features, file size, transparency, and when to use each." },
   { slug: "avi-vs-wmv", title: "AVI vs WMV: Microsoft's Video Formats Compared", date: "2026-03-27", description: "AVI stores high-quality uncompressed video in large files. WMV compresses aggressively for streaming and sharing. Compare file size, quality, compatibility, and modern alternatives." },
+  { slug: "ttf-vs-otf", title: "TTF vs OTF: Font Format Differences and Which to Use", date: "2026-03-28", description: "TTF uses quadratic curves and is universally compatible. OTF supports advanced typography features in a smaller file. Compare font formats, features, and pick the right one." },
+  { slug: "jpg-vs-gif", title: "JPG vs GIF: When to Use Each Image Format", date: "2026-03-28", description: "JPG handles photos with millions of colors and small file sizes. GIF supports animation and transparency but only 256 colors. Compare both formats and pick the right one." },
+  { slug: "svg-vs-pdf", title: "SVG vs PDF: Vector Formats for Web and Print Compared", date: "2026-03-28", description: "SVG is the web standard for scalable vector graphics with animation support. PDF preserves exact layout for print and documents. Compare features, use cases, and compatibility." },
 ];
 
 function escapeXml(str: string): string {

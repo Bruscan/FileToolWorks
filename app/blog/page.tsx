@@ -248,6 +248,14 @@ const imagePosts = [
     slug: "psd-vs-png",
     title: "PSD vs PNG: Editing Format vs Distribution Format",
   },
+  {
+    slug: "jpg-vs-gif",
+    title: "JPG vs GIF: When to Use Each Image Format",
+  },
+  {
+    slug: "svg-vs-pdf",
+    title: "SVG vs PDF: Vector Formats for Web and Print Compared",
+  },
 ];
 
 const pdfPosts = [
@@ -444,6 +452,10 @@ const generalPosts = [
   {
     slug: "epub-vs-mobi",
     title: "EPUB vs MOBI: eBook Formats Compared",
+  },
+  {
+    slug: "ttf-vs-otf",
+    title: "TTF vs OTF: Font Format Differences and Which to Use",
   },
 ];
 
