@@ -216,6 +216,10 @@ const imagePosts = [
     slug: "heic-vs-png",
     title: "HEIC vs PNG: File Size, Quality, and Compatibility Compared",
   },
+  {
+    slug: "png-vs-pdf",
+    title: "PNG vs PDF: Image Format vs Document Format Compared",
+  },
 ];
 
 const pdfPosts = [
@@ -384,6 +388,14 @@ const generalPosts = [
   {
     slug: "json-vs-csv",
     title: "JSON vs CSV: Structure, Performance, and Use Cases Compared",
+  },
+  {
+    slug: "xml-vs-json",
+    title: "XML vs JSON: Syntax, Performance, and When to Use Each",
+  },
+  {
+    slug: "yaml-vs-json",
+    title: "YAML vs JSON: Readability, Features, and Best Use Cases",
   },
 ];
 
