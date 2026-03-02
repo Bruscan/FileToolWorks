@@ -340,7 +340,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   })
 
   // VS comparison pages (competitor alternatives)
-  const vsPages = ['convertio', 'ilovepdf', 'cloudconvert', 'zamzar']
+  const vsPages = ['convertio', 'ilovepdf', 'cloudconvert', 'zamzar', 'smallpdf', 'freeconvert', 'pdf24']
   vsPages.forEach((competitor) => {
     routes.push({
       url: `${BASE_URL}/vs/${competitor}`,

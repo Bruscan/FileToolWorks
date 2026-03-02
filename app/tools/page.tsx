@@ -170,6 +170,9 @@ export default function ToolsPage() {
               { name: "iLovePDF", href: "/vs/ilovepdf", desc: "vs iLovePDF" },
               { name: "CloudConvert", href: "/vs/cloudconvert", desc: "vs CloudConvert" },
               { name: "Zamzar", href: "/vs/zamzar", desc: "vs Zamzar" },
+              { name: "Smallpdf", href: "/vs/smallpdf", desc: "vs Smallpdf" },
+              { name: "FreeConvert", href: "/vs/freeconvert", desc: "vs FreeConvert" },
+              { name: "PDF24", href: "/vs/pdf24", desc: "vs PDF24" },
             ].map((item) => (
               <Link
                 key={item.href}
