@@ -60,7 +60,7 @@ export default function BlogPost() {
           </p>
 
           <p>
-            Related reading: <Link href="/blog/doc-vs-docx" className="text-blue-600 hover:underline">DOC vs DOCX</Link> explains the older Word binary format, <Link href="/blog/pdf-vs-docx" className="text-blue-600 hover:underline">PDF vs DOCX</Link> compares document sharing formats, and <Link href="/blog/csv-vs-xlsx" className="text-blue-600 hover:underline">CSV vs XLSX</Link> covers a similar open-vs-proprietary choice for spreadsheets.
+            Related reading: <Link href="/blog/doc-vs-docx" className="text-blue-600 hover:underline">DOC vs DOCX</Link> explains the older Word binary format, <Link href="/blog/pdf-vs-docx" className="text-blue-600 hover:underline">PDF vs DOCX</Link> compares document sharing formats, and <Link href="/blog/csv-vs-xlsx" className="text-blue-600 hover:underline">CSV vs XLSX</Link> covers a similar open-vs-proprietary choice for spreadsheets, and <Link href="/blog/pages-vs-docx" className="text-blue-600 hover:underline">Pages vs DOCX</Link> compares Apple Pages with Microsoft Word.
           </p>
         </div>
       </article>

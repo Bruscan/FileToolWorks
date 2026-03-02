@@ -541,6 +541,18 @@ const generalPosts = [
     slug: "xml-vs-csv",
     title: "XML vs CSV: Structure, File Size, and When to Use Each",
   },
+  {
+    slug: "pages-vs-docx",
+    title: "Pages vs DOCX: Apple Pages vs Microsoft Word Format Compared",
+  },
+  {
+    slug: "numbers-vs-excel",
+    title: "Numbers vs Excel: Apple Numbers vs Microsoft Excel Compared",
+  },
+  {
+    slug: "xml-vs-yaml",
+    title: "XML vs YAML: Markup Language vs Data Serialization Compared",
+  },
 ];
 
 const categories = [
