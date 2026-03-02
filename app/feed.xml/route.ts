@@ -70,6 +70,9 @@ const blogPosts = [
   { slug: "tar-vs-zip", title: "TAR vs ZIP: Archiving, Compression, and Platform Differences", date: "2026-03-14", description: "TAR bundles files without compression and preserves Unix permissions. ZIP compresses and archives in one step with universal OS support. Compare both formats." },
   { slug: "csv-vs-xlsx", title: "CSV vs XLSX: When to Use Each Spreadsheet Format", date: "2026-03-14", description: "CSV is plain text that any program can read. XLSX supports formulas, formatting, and multiple sheets. Compare features, compatibility, and file size." },
   { slug: "ppt-vs-pptx", title: "PPT vs PPTX: File Size, Features, and Compatibility Compared", date: "2026-03-14", description: "PPTX replaced PPT in 2007 with 75% smaller files and XML-based structure. PPT is binary and lacks modern features. Compare both PowerPoint formats." },
+  { slug: "odt-vs-docx", title: "ODT vs DOCX: Which Document Format Should You Use?", date: "2026-03-15", description: "ODT is the open standard for documents. DOCX is Microsoft's format. Compare compatibility, features, and file size to pick the right one." },
+  { slug: "pdf-vs-epub", title: "PDF vs EPUB: Which Format for Your Document?", date: "2026-03-15", description: "PDF preserves exact layout. EPUB reflows text for different screen sizes. Learn which format works best for ebooks, reports, and reading on mobile." },
+  { slug: "xls-vs-xlsx", title: "XLS vs XLSX: Key Differences Between Excel Formats", date: "2026-03-15", description: "XLSX replaced XLS in 2007 with smaller files, more rows, and better compatibility. Learn the key differences and when the old XLS format still matters." },
 ];
 
 function escapeXml(str: string): string {

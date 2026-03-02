@@ -60,7 +60,7 @@ export default function BlogPost() {
           </p>
 
           <p>
-            Related reading: <Link href="/blog/pdf-vs-docx" className="text-blue-600 hover:underline">PDF vs DOCX</Link> covers when to use each document format, <Link href="/blog/ppt-vs-pptx" className="text-blue-600 hover:underline">PPT vs PPTX</Link> covers the same format transition for PowerPoint, and <Link href="/blog/csv-vs-xlsx" className="text-blue-600 hover:underline">CSV vs XLSX</Link> compares spreadsheet formats.
+            Related reading: <Link href="/blog/odt-vs-docx" className="text-blue-600 hover:underline">ODT vs DOCX</Link> compares the open-source alternative, <Link href="/blog/pdf-vs-docx" className="text-blue-600 hover:underline">PDF vs DOCX</Link> covers when to use each document format, <Link href="/blog/ppt-vs-pptx" className="text-blue-600 hover:underline">PPT vs PPTX</Link> covers the same format transition for PowerPoint, and <Link href="/blog/csv-vs-xlsx" className="text-blue-600 hover:underline">CSV vs XLSX</Link> compares spreadsheet formats.
           </p>
         </div>
       </article>

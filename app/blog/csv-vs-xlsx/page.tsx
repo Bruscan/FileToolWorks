@@ -63,7 +63,7 @@ export default function BlogPost() {
             Need to turn a spreadsheet into a shareable document? Our <Link href="/excel-to-pdf" className="text-blue-600 hover:underline font-semibold">Excel to PDF converter</Link> handles both XLS and XLSX files directly in your browser.
           </p>
           <p>
-            Related reading: <Link href="/blog/doc-vs-docx" className="text-blue-600 hover:underline">DOC vs DOCX</Link> covers a similar format evolution in word processing, and <Link href="/blog/pdf-vs-docx" className="text-blue-600 hover:underline">PDF vs DOCX</Link> helps decide between document formats for sharing.
+            Related reading: <Link href="/blog/xls-vs-xlsx" className="text-blue-600 hover:underline">XLS vs XLSX</Link> covers the same format evolution for Excel specifically, <Link href="/blog/doc-vs-docx" className="text-blue-600 hover:underline">DOC vs DOCX</Link> covers a similar transition in word processing, and <Link href="/blog/pdf-vs-docx" className="text-blue-600 hover:underline">PDF vs DOCX</Link> helps decide between document formats for sharing.
           </p>
         </div>
       </article>
