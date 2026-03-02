@@ -172,6 +172,9 @@ const blogPosts = [
   { slug: "exfat-vs-ntfs", title: "exFAT vs NTFS: Which File System Should You Use?", date: "2026-04-17", description: "exFAT is best for external drives shared across Windows and Mac. NTFS is better for internal Windows drives with its journaling and permissions support." },
   { slug: "dolby-digital-vs-dts", title: "Dolby Digital vs DTS: Audio Format Differences Explained", date: "2026-04-17", description: "DTS uses higher bitrates than Dolby Digital for potentially better audio quality. Compare surround sound formats, compatibility, and streaming support." },
   { slug: "pcm-vs-bitstream", title: "PCM vs Bitstream: Which Audio Output Should You Use?", date: "2026-04-17", description: "PCM decodes audio at the source device while bitstream sends compressed audio to your receiver for decoding. Learn when to use each setting." },
+  { slug: "fat32-vs-exfat", title: "FAT32 vs exFAT: File Size Limits, Compatibility, and Which to Use", date: "2026-04-18", description: "FAT32 has a 4GB file size limit and works on everything. exFAT removes that limit and is better for large files on USB drives and SD cards." },
+  { slug: "fat32-vs-ntfs", title: "FAT32 vs NTFS: Key Differences and When to Use Each", date: "2026-04-18", description: "FAT32 works on every device but limits files to 4GB. NTFS supports huge files, permissions, and journaling but is Windows-only for full read/write." },
+  { slug: "ext4-vs-ntfs", title: "ext4 vs NTFS: Linux and Windows File Systems Compared", date: "2026-04-18", description: "ext4 is the default Linux file system with fast I/O and low fragmentation. NTFS is the Windows default with encryption and ACL permissions." },
 ];
 
 function escapeXml(str: string): string {
