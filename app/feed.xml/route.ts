@@ -136,6 +136,9 @@ const blogPosts = [
   { slug: "pages-vs-docx", title: "Pages vs DOCX: Apple Pages vs Microsoft Word Format Compared", date: "2026-04-05", description: "Pages (.pages) is free on Apple devices with clean templates. DOCX is the universal standard for documents. Compare compatibility, features, and when to use each format." },
   { slug: "numbers-vs-excel", title: "Numbers vs Excel: Apple Numbers vs Microsoft Excel Compared", date: "2026-04-05", description: "Apple Numbers is free with beautiful templates. Excel has 420+ functions and is the industry standard. Compare features, formulas, compatibility, and pricing." },
   { slug: "xml-vs-yaml", title: "XML vs YAML: Markup Language vs Data Serialization Compared", date: "2026-04-05", description: "YAML is human-readable and used for config files. XML supports validation and complex document structures. Compare syntax, use cases, parsing, and readability." },
+  { slug: "psd-vs-tiff", title: "PSD vs TIFF: Which Format for Editing and Archiving Photos", date: "2026-04-06", description: "PSD is Adobe's native format with full layer support. TIFF is a universal lossless format. Compare compatibility, file size, features, and which to use for your workflow." },
+  { slug: "raw-vs-tiff", title: "RAW vs TIFF: Choosing Between Capture and Output Formats", date: "2026-04-06", description: "RAW stores unprocessed sensor data for maximum editing flexibility. TIFF is a lossless processed format for archival and delivery. Compare quality, workflow, and best uses." },
+  { slug: "pdf-vs-pptx", title: "PDF vs PPTX: When to Use Each for Presentations and Documents", date: "2026-04-06", description: "PDF preserves formatting across all devices. PPTX supports animations, editing, and live presenting. Compare features, compatibility, file size, and best use cases." },
 ];
 
 function escapeXml(str: string): string {

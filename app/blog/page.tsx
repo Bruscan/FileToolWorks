@@ -292,6 +292,14 @@ const imagePosts = [
     slug: "dng-vs-jpg",
     title: "DNG vs JPG: RAW Quality vs Compressed Photos",
   },
+  {
+    slug: "psd-vs-tiff",
+    title: "PSD vs TIFF: Which Format for Editing and Archiving Photos",
+  },
+  {
+    slug: "raw-vs-tiff",
+    title: "RAW vs TIFF: Choosing Between Capture and Output Formats",
+  },
 ];
 
 const pdfPosts = [
@@ -330,6 +338,10 @@ const pdfPosts = [
   {
     slug: "pdf-vs-jpg",
     title: "PDF vs JPG: Key Differences and When to Use Each",
+  },
+  {
+    slug: "pdf-vs-pptx",
+    title: "PDF vs PPTX: When to Use Each for Presentations and Documents",
   },
 ];
 
