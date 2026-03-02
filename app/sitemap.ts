@@ -206,6 +206,9 @@ const blogPosts = [
   'stereo-vs-mono',
   '4k-vs-1080p',
   'vector-vs-raster',
+  'rgb-vs-cmyk',
+  '30fps-vs-60fps',
+  '1080i-vs-1080p',
 ]
 
 export default function sitemap(): MetadataRoute.Sitemap {
