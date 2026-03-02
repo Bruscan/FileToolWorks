@@ -85,6 +85,10 @@ const audioPosts = [
     slug: "flac-vs-mp3",
     title: "FLAC vs MP3: Quality, File Size, and Compatibility Compared",
   },
+  {
+    slug: "aac-vs-ogg",
+    title: "AAC vs OGG Vorbis: Quality, Compatibility, and File Size",
+  },
 ];
 
 const imagePosts = [
@@ -184,6 +188,10 @@ const imagePosts = [
     slug: "avif-vs-jpeg",
     title: "AVIF vs JPEG: File Size, Quality, and Compatibility Compared",
   },
+  {
+    slug: "jpeg-xl-vs-avif",
+    title: "JPEG XL vs AVIF: Compression, Quality, and Browser Support",
+  },
 ];
 
 const pdfPosts = [
@@ -277,6 +285,10 @@ const videoPosts = [
   {
     slug: "mov-vs-avi",
     title: "MOV vs AVI: Quality, File Size, and Compatibility Compared",
+  },
+  {
+    slug: "vp9-vs-h265",
+    title: "VP9 vs H.265 (HEVC): Quality, Speed, and Licensing Compared",
   },
 ];
 

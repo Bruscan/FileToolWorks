@@ -79,6 +79,9 @@ const blogPosts = [
   { slug: "avif-vs-jpeg", title: "AVIF vs JPEG: File Size, Quality, and Compatibility Compared", date: "2026-03-17", description: "AVIF compresses images 50% smaller than JPEG with better quality. Compare file size, browser support, encoding speed, and when each format makes sense." },
   { slug: "gzip-vs-zip", title: "GZIP vs ZIP: Compression, Use Cases, and Key Differences", date: "2026-03-17", description: "GZIP compresses a single file stream while ZIP bundles and compresses multiple files. Compare compression ratio, speed, and when to use each format." },
   { slug: "mov-vs-avi", title: "MOV vs AVI: Quality, File Size, and Compatibility Compared", date: "2026-03-17", description: "MOV is Apple's video format with modern codec support. AVI is a legacy Microsoft format. Compare file size, quality, streaming, and compatibility." },
+  { slug: "vp9-vs-h265", title: "VP9 vs H.265 (HEVC): Quality, Speed, and Licensing Compared", date: "2026-03-18", description: "VP9 is royalty-free with strong browser support. H.265 compresses slightly better with wider hardware decoding. Compare quality, encoding speed, and licensing." },
+  { slug: "jpeg-xl-vs-avif", title: "JPEG XL vs AVIF: Compression, Quality, and Browser Support", date: "2026-03-18", description: "JPEG XL beats AVIF at high quality and handles huge images. AVIF has full browser support and wins at low bitrates. Compare both next-gen image formats." },
+  { slug: "aac-vs-ogg", title: "AAC vs OGG Vorbis: Quality, Compatibility, and File Size", date: "2026-03-18", description: "AAC sounds better at low bitrates and works on Apple devices. OGG Vorbis is open-source with higher max bitrate. Compare quality, size, and device support." },
 ];
 
 function escapeXml(str: string): string {
