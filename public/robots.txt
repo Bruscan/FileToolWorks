@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Sitemap location
-Sitemap: https://filetoolworks.com/sitemap.xml
+Sitemap: https://www.filetoolworks.com/sitemap.xml
 
 # RSS Feed
 # https://www.filetoolworks.com/feed.xml
