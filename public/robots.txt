@@ -2,6 +2,9 @@
 User-agent: *
 Allow: /
 
+# Embed pages are for iframe embedding only
+Disallow: /embed/
+
 # Sitemap location
 Sitemap: https://www.filetoolworks.com/sitemap.xml
 

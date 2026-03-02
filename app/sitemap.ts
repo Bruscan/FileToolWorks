@@ -287,6 +287,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.8,
   })
 
+  // Free tools widget page
+  routes.push({
+    url: `${BASE_URL}/free-tools-widget`,
+    lastModified: '2026-03-02T15:00:00.000Z',
+    changeFrequency: 'monthly',
+    priority: 0.8,
+  })
+
   // Blog index page
   routes.push({
     url: `${BASE_URL}/blog`,
