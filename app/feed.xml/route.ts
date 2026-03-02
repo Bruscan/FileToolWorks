@@ -106,6 +106,9 @@ const blogPosts = [
   { slug: "midi-vs-mp3", title: "MIDI vs MP3: Instructions vs Recorded Audio Explained", date: "2026-03-26", description: "MIDI stores musical instructions, not actual sound. MP3 stores compressed recorded audio. Compare file size, quality, compatibility, and when to use each format." },
   { slug: "mp4-vs-ts", title: "MP4 vs TS: Container Formats for Streaming and Storage", date: "2026-03-26", description: "MP4 is the standard container for video downloads and playback. TS (MPEG Transport Stream) is built for broadcasting and live streaming. Compare features and use cases." },
   { slug: "pdf-vs-html", title: "PDF vs HTML: Fixed Layout vs Flexible Web Content", date: "2026-03-26", description: "PDF preserves exact layout for print and legal documents. HTML adapts to any screen size for web content. Compare formatting, accessibility, and when to use each." },
+  { slug: "epub-vs-mobi", title: "EPUB vs MOBI: eBook Formats Compared", date: "2026-03-27", description: "EPUB is the universal eBook standard supported by almost every reader. MOBI is Amazon's legacy format, now largely replaced. Compare features, compatibility, and which to use." },
+  { slug: "psd-vs-png", title: "PSD vs PNG: Editing Format vs Distribution Format", date: "2026-03-27", description: "PSD is Adobe Photoshop's layered editing format. PNG is a compressed image for sharing and the web. Compare features, file size, transparency, and when to use each." },
+  { slug: "avi-vs-wmv", title: "AVI vs WMV: Microsoft's Video Formats Compared", date: "2026-03-27", description: "AVI stores high-quality uncompressed video in large files. WMV compresses aggressively for streaming and sharing. Compare file size, quality, compatibility, and modern alternatives." },
 ];
 
 function escapeXml(str: string): string {
