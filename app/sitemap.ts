@@ -4,7 +4,7 @@ const BASE_URL = 'https://www.filetoolworks.com'
 
 // All tools - matches actual pages in /app folder
 const tools = [
-  // Image Tools (15)
+  // Image Tools (18)
   'image-to-pdf',
   'heic-to-jpg',
   'png-to-jpg',
@@ -21,6 +21,8 @@ const tools = [
   'remove-background',
   'image-to-heic',
   'image-to-text',
+  'svg-to-png',
+  'png-to-pdf',
 
   // PDF Tools (10)
   'compress-pdf',

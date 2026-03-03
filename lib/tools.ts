@@ -122,6 +122,22 @@ export const tools: Tool[] = [
     iconColor: "text-red-600",
   },
   {
+    id: "svg-to-png",
+    name: "SVG to PNG",
+    href: "/svg-to-png",
+    description: "Convert SVG vector files to PNG images",
+    category: "image",
+    iconColor: "text-fuchsia-600",
+  },
+  {
+    id: "png-to-pdf",
+    name: "PNG to PDF",
+    href: "/png-to-pdf",
+    description: "Convert PNG images to PDF documents",
+    category: "image",
+    iconColor: "text-red-500",
+  },
+  {
     id: "image-to-heic",
     name: "Image to HEIC",
     href: "/image-to-heic",
