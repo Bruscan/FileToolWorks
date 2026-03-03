@@ -518,7 +518,7 @@ export default function CompressAudio() {
               Most online audio compressors upload your files to remote servers for processing. This tool is different. It runs entirely in your browser using WebAssembly (FFmpeg compiled to WASM), so your audio never leaves your device. No server uploads, no data collection, no privacy risk.
             </p>
             <p>
-              This makes it ideal for compressing sensitive audio like voice recordings, interviews, client calls, or any audio you want to keep private. The <Link href="/security" className="text-blue-600 hover:underline">FBI has warned about unsafe file converters</Link> that steal data. Our browser-based approach eliminates that risk entirely.
+              This makes it ideal for compressing sensitive audio like voice recordings, interviews, client calls, or any audio you want to keep private. The <Link href="/security" className="text-blue-600 hover:underline">FBI has warned about unsafe file converters</Link> that steal data. Our browser-based approach eliminates that risk entirely. You can <Link href="/is-my-converter-safe" className="text-blue-600 hover:underline">check if any converter is safe</Link> with our free safety checker.
             </p>
             <h3 className="text-lg font-semibold text-gray-900 pt-2">Who Uses This Tool</h3>
             <ul className="list-disc pl-5 space-y-1">
@@ -572,7 +572,7 @@ export default function CompressAudio() {
                 Is my audio uploaded to a server?
               </summary>
               <p className="mt-2 text-gray-600 text-sm">
-                No. All audio compression happens directly in your browser using WebAssembly. Your audio files never leave your device, ensuring complete privacy and security.
+                No. All audio compression happens directly in your browser using WebAssembly. Your audio files never leave your device, ensuring complete privacy and security. Not sure if a converter you are using is safe? Try our <Link href="/is-my-converter-safe" className="text-blue-600 hover:underline">file converter safety checker</Link>.
               </p>
             </details>
             <details className="border-b border-gray-200 pb-4">
