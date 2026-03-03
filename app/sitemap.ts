@@ -360,6 +360,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.85,
   })
 
+  // File Size Limits (linkable asset - platform reference)
+  routes.push({
+    url: `${BASE_URL}/file-size-limits`,
+    lastModified: '2026-03-03T18:00:00.000Z',
+    changeFrequency: 'monthly',
+    priority: 0.9,
+  })
+
   // Use-case landing pages
   const useCasePages = ['compress-video-for-discord', 'compress-video-for-whatsapp', 'compress-audio-for-discord', 'compress-video-for-email']
   useCasePages.forEach((page) => {
