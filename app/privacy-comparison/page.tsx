@@ -253,6 +253,66 @@ const converters = [
     tools: "PDF only",
     note: "Desktop app, PDF split and merge",
   },
+  {
+    name: "NoFileUpload",
+    url: "https://www.nofileupload.com",
+    processing: "Browser",
+    uploads: "No",
+    signup: "No",
+    retention: "None",
+    fileLimit: "None",
+    openSource: "No",
+    tools: "~10",
+    note: "No analytics, no cookies, no third-party scripts",
+  },
+  {
+    name: "NoUploadConvert",
+    url: "https://www.nouploadconvert.com",
+    processing: "Browser",
+    uploads: "No",
+    signup: "No",
+    retention: "None",
+    fileLimit: "None",
+    openSource: "No",
+    tools: "~15",
+    note: "PDF, image conversion, no server uploads",
+  },
+  {
+    name: "LocalConverter",
+    url: "https://localconverter.com",
+    processing: "Browser",
+    uploads: "No",
+    signup: "No",
+    retention: "None",
+    fileLimit: "None",
+    openSource: "No",
+    tools: "~20",
+    note: "Images, videos, documents without uploading",
+  },
+  {
+    name: "FreeConverter.cloud",
+    url: "https://freeconverter.cloud",
+    processing: "Browser",
+    uploads: "No",
+    signup: "No",
+    retention: "None",
+    fileLimit: "None",
+    openSource: "No",
+    tools: "~20",
+    note: "WebAssembly-based, documents never uploaded",
+  },
+  {
+    name: "NoUploadTools",
+    url: "https://nouploadtools.com",
+    processing: "Browser",
+    uploads: "No",
+    signup: "No",
+    retention: "None",
+    fileLimit: "None",
+    openSource: "No",
+    tools: "~10",
+    note: "Privacy-first browser utilities",
+  },
 ];
 
 const faqItems = [
@@ -264,7 +324,7 @@ const faqItems = [
   {
     question: "Which file converters do not upload your files?",
     answer:
-      "Browser-based converters like FileToolWorks, VERT.sh, SafeConvert, OfflineConvert, ezyZip, and FileForge process files entirely in your browser using JavaScript or WebAssembly. Your files never leave your device. You can verify this by checking the Network tab in browser DevTools during conversion.",
+      "Browser-based converters like FileToolWorks, VERT.sh, SafeConvert, OfflineConvert, ezyZip, FileForge, NoFileUpload, NoUploadConvert, and LocalConverter process files entirely in your browser using JavaScript or WebAssembly. Your files never leave your device. You can verify this by checking the Network tab in browser DevTools during conversion.",
   },
   {
     question: "What did the FBI say about file converters?",
@@ -295,7 +355,7 @@ export default function PrivacyComparisonPage() {
     "@type": "WebPage",
     name: "File Converter Privacy Comparison",
     description:
-      "Factual comparison of how 21+ file converters handle your data. See which upload files to servers vs process locally.",
+      "Factual comparison of how 26 file converters handle your data. See which upload files to servers vs process locally.",
     url: "https://www.filetoolworks.com/privacy-comparison",
     dateModified: "2026-03-03",
     breadcrumb: {
@@ -358,7 +418,7 @@ export default function PrivacyComparisonPage() {
         <p className="text-lg text-gray-600 mb-8">
           Not all file converters handle your data the same way. Some upload
           files to remote servers. Others process everything locally. This
-          comparison shows exactly how 21 popular file converters work, so you
+          comparison shows exactly how 26 popular file converters work, so you
           can make an informed choice.
         </p>
 
@@ -747,7 +807,7 @@ export default function PrivacyComparisonPage() {
             About This Comparison
           </h3>
           <p className="mb-2">
-            This page compares 21 file converter services based on publicly
+            This page compares 26 file converter services based on publicly
             available information from their websites, privacy policies, and
             documentation. Last updated March 2026. Policies may
             change. We recommend checking each service&apos;s current privacy
