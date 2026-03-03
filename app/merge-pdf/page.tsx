@@ -332,6 +332,32 @@ export default function MergePDF() {
         </div>
       </section>
 
+      {/* Why Use This Tool */}
+      <section className="max-w-4xl mx-auto px-4 py-8">
+        <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-6 md:p-8">
+          <h2 className="text-2xl font-bold text-gray-900 mb-4">Why Merge PDFs with FileToolWorks</h2>
+          <div className="space-y-4 text-gray-600 text-sm">
+            <p>
+              Most PDF merging tools require you to upload files to their servers. iLovePDF, Smallpdf, and Adobe Acrobat all process your documents on remote servers, which means your PDFs travel through the internet. This tool is different: it merges PDFs entirely in your browser using the pdf-lib library. Your files stay on your device the entire time.
+            </p>
+            <p>
+              This matters when you are merging contracts, tax documents, medical records, or anything with personal information. The <Link href="/security" className="text-blue-600 hover:underline">FBI has warned</Link> about online file converters that harvest data. Browser-based processing eliminates that risk.
+            </p>
+            <h3 className="text-lg font-semibold text-gray-900 pt-2">Common Uses</h3>
+            <ul className="list-disc pl-5 space-y-1">
+              <li><strong>Combining scanned documents</strong> into a single PDF for filing or sharing</li>
+              <li><strong>Merging invoices or receipts</strong> into one document for expense reports</li>
+              <li><strong>Assembling reports</strong> from separate chapters or sections</li>
+              <li><strong>Combining application materials</strong> (resume, cover letter, references) into one file</li>
+              <li><strong>Joining contract pages</strong> that were signed separately</li>
+            </ul>
+            <p>
+              After merging, you can <Link href="/sign-pdf" className="text-blue-600 hover:underline">sign the combined PDF</Link>, <Link href="/extract-pdf-pages" className="text-blue-600 hover:underline">extract specific pages</Link>, or <Link href="/compress-pdf" className="text-blue-600 hover:underline">compress it</Link> to reduce the file size for email.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* FAQ */}
       <section className="max-w-4xl mx-auto px-4 py-8">
         <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-6 md:p-8">

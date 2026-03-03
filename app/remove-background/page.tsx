@@ -417,6 +417,32 @@ export default function RemoveBackground() {
         </div>
       </section>
 
+      {/* Why Use This Tool */}
+      <section className="max-w-4xl mx-auto px-4 py-8">
+        <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-6 md:p-8">
+          <h2 className="text-2xl font-bold text-gray-900 mb-4">Why Use This Background Remover</h2>
+          <div className="space-y-4 text-gray-600 text-sm">
+            <p>
+              Services like remove.bg and Canva process your images on their servers. That means your photos travel over the internet and land on someone else&apos;s computer. This tool takes a completely different approach: the AI model runs locally in your browser using WebAssembly. Your images never leave your device.
+            </p>
+            <p>
+              The AI model (@imgly/background-removal) is about 50MB and downloads once. After that first load it is cached, so subsequent removals are fast. All the heavy computation happens on your CPU/GPU through your browser, not on a remote server.
+            </p>
+            <h3 className="text-lg font-semibold text-gray-900 pt-2">Common Uses</h3>
+            <ul className="list-disc pl-5 space-y-1">
+              <li><strong>Product photography</strong> for e-commerce listings (Amazon, Etsy, eBay)</li>
+              <li><strong>Profile photos</strong> and headshots for LinkedIn, resumes, or ID cards</li>
+              <li><strong>Social media graphics</strong> where you need a subject on a custom background</li>
+              <li><strong>Presentations and documents</strong> where a transparent PNG looks cleaner</li>
+              <li><strong>Design mockups</strong> where you need to composite subjects onto different backgrounds</li>
+            </ul>
+            <p>
+              After removing the background, you can <Link href="/crop-image" className="text-blue-600 hover:underline">crop the result</Link>, <Link href="/resize-image" className="text-blue-600 hover:underline">resize it</Link>, or <Link href="/image-to-webp" className="text-blue-600 hover:underline">convert to WebP</Link> for smaller file sizes on the web.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* FAQ */}
       <section className="max-w-4xl mx-auto px-4 py-8">
         <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-6 md:p-8">
