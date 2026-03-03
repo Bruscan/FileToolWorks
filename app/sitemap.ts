@@ -34,14 +34,15 @@ const tools = [
   'sign-pdf',
   'pdf-to-word',
 
-  // Video Tools (5)
+  // Video Tools (6)
   'compress-video',
   'video-to-gif',
   'trim-video',
   'video-to-mp4',
   'video-to-webm',
+  'mov-to-mp4',
 
-  // Audio Tools (5)
+  // Audio Tools (6)
   'extract-audio',
   'compress-audio',
   'trim-audio',
@@ -50,6 +51,7 @@ const tools = [
   'compress-mp3',
   'flac-to-mp3',
   'm4a-to-mp3',
+  'mp4-to-mp3',
 
   // Document Tools (3)
   'word-to-pdf',

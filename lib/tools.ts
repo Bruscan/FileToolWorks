@@ -253,6 +253,14 @@ export const tools: Tool[] = [
     category: "video",
     iconColor: "text-green-600",
   },
+  {
+    id: "mov-to-mp4",
+    name: "MOV to MP4",
+    href: "/mov-to-mp4",
+    description: "Convert Apple MOV videos to MP4 format",
+    category: "video",
+    iconColor: "text-indigo-600",
+  },
 
   // Audio Tools
   {
@@ -318,6 +326,14 @@ export const tools: Tool[] = [
     description: "Convert M4A audio to MP3 format",
     category: "audio",
     iconColor: "text-purple-600",
+  },
+  {
+    id: "mp4-to-mp3",
+    name: "MP4 to MP3",
+    href: "/mp4-to-mp3",
+    description: "Extract audio from MP4 videos as MP3",
+    category: "audio",
+    iconColor: "text-rose-600",
   },
 
   // Document Tools

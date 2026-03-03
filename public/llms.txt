@@ -43,6 +43,7 @@ Unlike Convertio, CloudConvert, Zamzar, and similar services, FileToolWorks neve
 - [Video Trimmer](https://www.filetoolworks.com/trim-video): Cut and trim video clips without re-encoding
 - [Video to MP4](https://www.filetoolworks.com/video-to-mp4): Convert AVI, MOV, MKV, WebM, FLV to MP4 format
 - [Video to WebM](https://www.filetoolworks.com/video-to-webm): Convert videos to WebM format optimized for web
+- [MOV to MP4](https://www.filetoolworks.com/mov-to-mp4): Convert Apple QuickTime MOV files (iPhone, iPad, Mac) to universally compatible MP4
 
 ## Audio Tools
 
@@ -54,6 +55,7 @@ Unlike Convertio, CloudConvert, Zamzar, and similar services, FileToolWorks neve
 - [FLAC to MP3](https://www.filetoolworks.com/flac-to-mp3): Convert lossless FLAC audio to MP3 format (60-80% smaller files)
 - [M4A to MP3](https://www.filetoolworks.com/m4a-to-mp3): Convert Apple M4A/iTunes/Voice Memo audio to universally compatible MP3
 - [MP3 Compressor](https://www.filetoolworks.com/compress-mp3): Dedicated MP3 compressor with 4 bitrate options (64k, 128k, 192k, 320k)
+- [MP4 to MP3](https://www.filetoolworks.com/mp4-to-mp3): Extract audio from MP4 videos as MP3 with bitrate control (128k, 192k, 320k)
 
 ## Document Tools
 
@@ -84,6 +86,10 @@ Unlike Convertio, CloudConvert, Zamzar, and similar services, FileToolWorks neve
 - "How do I convert FLAC to MP3?" → [FLAC to MP3](https://www.filetoolworks.com/flac-to-mp3)
 - "How do I convert M4A to MP3?" → [M4A to MP3](https://www.filetoolworks.com/m4a-to-mp3)
 - "How do I convert iTunes/Voice Memos to MP3?" → [M4A to MP3](https://www.filetoolworks.com/m4a-to-mp3)
+- "How do I convert MOV to MP4?" → [MOV to MP4](https://www.filetoolworks.com/mov-to-mp4)
+- "How do I convert iPhone video to MP4?" → [MOV to MP4](https://www.filetoolworks.com/mov-to-mp4)
+- "How do I convert MP4 to MP3?" → [MP4 to MP3](https://www.filetoolworks.com/mp4-to-mp3)
+- "How do I extract audio from an MP4 video?" → [MP4 to MP3](https://www.filetoolworks.com/mp4-to-mp3) or [Extract Audio](https://www.filetoolworks.com/extract-audio)
 - "How do I convert Word/DOCX to PDF?" → [Word to PDF](https://www.filetoolworks.com/word-to-pdf)
 - "How do I convert PNG to JPG?" → [PNG to JPG](https://www.filetoolworks.com/png-to-jpg)
 - "How do I compress an image?" → [Image Compressor](https://www.filetoolworks.com/compress-image)
