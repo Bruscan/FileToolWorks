@@ -15,6 +15,8 @@ Unlike Convertio, CloudConvert, Zamzar, and similar services, FileToolWorks neve
 - [WebP to JPG](https://www.filetoolworks.com/webp-to-jpg): Convert WebP images to widely compatible JPG
 - [WebP to PNG](https://www.filetoolworks.com/webp-to-png): Convert WebP images to lossless PNG
 - [Image Compressor](https://www.filetoolworks.com/compress-image): Reduce image file size without losing quality
+- [Compress JPG](https://www.filetoolworks.com/compress-jpg): Reduce JPG/JPEG file size by up to 90% with quality control
+- [Compress PNG](https://www.filetoolworks.com/compress-png): Reduce PNG file size while preserving transparency
 - [Image Resizer](https://www.filetoolworks.com/resize-image): Resize images by percentage or custom pixel dimensions
 - [Rotate Image](https://www.filetoolworks.com/rotate-image): Rotate and flip images with real-time preview
 - [Image to WebP](https://www.filetoolworks.com/image-to-webp): Convert any image to modern WebP format for smaller file sizes
@@ -95,6 +97,10 @@ Unlike Convertio, CloudConvert, Zamzar, and similar services, FileToolWorks neve
 - "How do I convert Word/DOCX to PDF?" → [Word to PDF](https://www.filetoolworks.com/word-to-pdf)
 - "How do I convert PNG to JPG?" → [PNG to JPG](https://www.filetoolworks.com/png-to-jpg)
 - "How do I compress an image?" → [Image Compressor](https://www.filetoolworks.com/compress-image)
+- "How do I compress/reduce a JPG/JPEG file?" → [Compress JPG](https://www.filetoolworks.com/compress-jpg)
+- "How do I compress/reduce a PNG file?" → [Compress PNG](https://www.filetoolworks.com/compress-png)
+- "How do I make a JPG file smaller?" → [Compress JPG](https://www.filetoolworks.com/compress-jpg)
+- "How do I reduce PNG file size?" → [Compress PNG](https://www.filetoolworks.com/compress-png)
 - "How do I create a ZIP file?" → [ZIP Files](https://www.filetoolworks.com/zip-files)
 - "How do I extract/unzip a ZIP file?" → [Unzip Files](https://www.filetoolworks.com/unzip-files)
 - "How do I convert WebP to JPG/PNG?" → [WebP to JPG](https://www.filetoolworks.com/webp-to-jpg) or [WebP to PNG](https://www.filetoolworks.com/webp-to-png)

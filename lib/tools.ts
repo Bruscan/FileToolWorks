@@ -66,6 +66,22 @@ export const tools: Tool[] = [
     iconColor: "text-blue-600",
   },
   {
+    id: "compress-jpg",
+    name: "Compress JPG",
+    href: "/compress-jpg",
+    description: "Reduce JPG file size without losing visible quality",
+    category: "image",
+    iconColor: "text-yellow-600",
+  },
+  {
+    id: "compress-png",
+    name: "Compress PNG",
+    href: "/compress-png",
+    description: "Reduce PNG file size while keeping transparency",
+    category: "image",
+    iconColor: "text-sky-600",
+  },
+  {
     id: "resize-image",
     name: "Image Resizer",
     href: "/resize-image",
