@@ -46,6 +46,9 @@ const tools = [
   'video-to-webm',
   'mov-to-mp4',
   'gif-to-mp4',
+  'webm-to-mp4',
+  'mkv-to-mp4',
+  'avi-to-mp4',
 
   // Audio Tools (6)
   'extract-audio',

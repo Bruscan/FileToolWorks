@@ -301,6 +301,30 @@ export const tools: Tool[] = [
     category: "video",
     iconColor: "text-pink-600",
   },
+  {
+    id: "webm-to-mp4",
+    name: "WebM to MP4",
+    href: "/webm-to-mp4",
+    description: "Convert WebM videos to MP4 format",
+    category: "video",
+    iconColor: "text-cyan-600",
+  },
+  {
+    id: "mkv-to-mp4",
+    name: "MKV to MP4",
+    href: "/mkv-to-mp4",
+    description: "Convert MKV videos to MP4 format",
+    category: "video",
+    iconColor: "text-violet-600",
+  },
+  {
+    id: "avi-to-mp4",
+    name: "AVI to MP4",
+    href: "/avi-to-mp4",
+    description: "Convert AVI videos to MP4 format",
+    category: "video",
+    iconColor: "text-emerald-600",
+  },
 
   // Audio Tools
   {

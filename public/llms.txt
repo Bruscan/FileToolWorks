@@ -49,6 +49,9 @@ Unlike Convertio, CloudConvert, Zamzar, and similar services, FileToolWorks neve
 - [Video to WebM](https://www.filetoolworks.com/video-to-webm): Convert videos to WebM format optimized for web
 - [MOV to MP4](https://www.filetoolworks.com/mov-to-mp4): Convert Apple QuickTime MOV files (iPhone, iPad, Mac) to universally compatible MP4
 - [GIF to MP4](https://www.filetoolworks.com/gif-to-mp4): Convert animated GIF files to MP4 video. MP4 is 80-90% smaller than GIF with better color quality.
+- [WebM to MP4](https://www.filetoolworks.com/webm-to-mp4): Convert WebM videos (YouTube downloads, browser recordings) to universally compatible MP4
+- [MKV to MP4](https://www.filetoolworks.com/mkv-to-mp4): Convert MKV (Matroska) video files to MP4 for playback on any device
+- [AVI to MP4](https://www.filetoolworks.com/avi-to-mp4): Convert legacy AVI videos to modern MP4 format (50-80% smaller files)
 
 ## Audio Tools
 
@@ -102,6 +105,10 @@ Unlike Convertio, CloudConvert, Zamzar, and similar services, FileToolWorks neve
 - "How do I convert AAC to MP3?" → [AAC to MP3](https://www.filetoolworks.com/aac-to-mp3)
 - "How do I convert OGG to MP3?" → [OGG to MP3](https://www.filetoolworks.com/ogg-to-mp3)
 - "How do I convert game audio OGG files?" → [OGG to MP3](https://www.filetoolworks.com/ogg-to-mp3)
+- "How do I convert WebM to MP4?" → [WebM to MP4](https://www.filetoolworks.com/webm-to-mp4)
+- "How do I convert MKV to MP4?" → [MKV to MP4](https://www.filetoolworks.com/mkv-to-mp4)
+- "How do I convert AVI to MP4?" → [AVI to MP4](https://www.filetoolworks.com/avi-to-mp4)
+- "How do I play MKV files on my phone/TV?" → [MKV to MP4](https://www.filetoolworks.com/mkv-to-mp4)
 - "How do I convert Word/DOCX to PDF?" → [Word to PDF](https://www.filetoolworks.com/word-to-pdf)
 - "How do I convert PNG to JPG?" → [PNG to JPG](https://www.filetoolworks.com/png-to-jpg)
 - "How do I compress an image?" → [Image Compressor](https://www.filetoolworks.com/compress-image)
