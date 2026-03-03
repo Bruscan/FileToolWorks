@@ -1,3 +1,12 @@
+function toHowToVerb(name: string): string {
+  if (name.endsWith(" Compressor")) return `Compress ${name.replace(" Compressor", "")}`;
+  if (name.endsWith(" Trimmer")) return `Trim ${name.replace(" Trimmer", "")}`;
+  if (name.endsWith(" Resizer")) return `Resize ${name.replace(" Resizer", "")}s`;
+  if (name === "Remove Background") return "Remove Image Background";
+  if (name.includes(" to ")) return `Convert ${name}`;
+  return name;
+}
+
 export default function ToolJsonLd({
   name,
   description,
@@ -16,7 +25,7 @@ export default function ToolJsonLd({
   const howToJsonLd = {
     "@context": "https://schema.org",
     "@type": "HowTo",
-    name: `How to ${name} Online for Free`,
+    name: `How to ${toHowToVerb(name)} Online for Free`,
     description: description,
     totalTime: "PT1M",
     tool: {
