@@ -2,21 +2,21 @@ import type { Metadata } from "next";
 import ToolJsonLd from "@/components/ToolJsonLd";
 
 export const metadata: Metadata = {
-  title: "Audio Compressor | Reduce MP3, WAV, AAC File Size",
-  description: "Free online audio compressor. Reduce MP3, WAV, AAC, OGG, and FLAC file size by up to 90%. No signup required. All processing happens in your browser.",
+  title: "Free Online Audio Compressor - Reduce MP3, WAV File Size",
+  description: "Compress MP3, WAV, AAC, OGG, and FLAC files online for free. Reduce audio file size by up to 90% in your browser. No upload to servers, no signup, no file size limits.",
   alternates: {
     canonical: "https://www.filetoolworks.com/compress-audio",
   },
   openGraph: {
-    title: "Free Online Audio Compressor | Reduce Audio File Size",
-    description: "Shrink MP3, WAV, and other audio files online. Free, no signup, no upload to servers.",
+    title: "Free Online Audio Compressor - No Upload Required",
+    description: "Compress MP3, WAV, and audio files in your browser. Files never leave your device. Free, no signup, no limits.",
     type: "website",
     images: [{ url: "/api/og?title=Audio%20Compressor&description=Reduce%20MP3%2C%20WAV%2C%20AAC%20file%20size%20by%20up%20to%2090%25&category=audio", width: 1200, height: 630 }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Audio Compressor",
-    description: "Free online audio compressor. Reduce MP3, WAV file size instantly. No signup.",
+    title: "Free Online Audio Compressor",
+    description: "Compress MP3, WAV files in your browser. No upload, no signup. Reduce file size by up to 90%.",
   },
 };
 
