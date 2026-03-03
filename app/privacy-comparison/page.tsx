@@ -38,6 +38,42 @@ const converters = [
     note: "Browser-based, no server",
   },
   {
+    name: "SafeConvert",
+    url: "https://www.safeconvert.net",
+    processing: "Browser",
+    uploads: "No",
+    signup: "No",
+    retention: "None",
+    fileLimit: "None",
+    openSource: "No",
+    tools: "~30",
+    note: "100% browser-based, images/docs/audio/video",
+  },
+  {
+    name: "OfflineConvert",
+    url: "https://www.offlineconvert.com",
+    processing: "Browser",
+    uploads: "No",
+    signup: "No",
+    retention: "None",
+    fileLimit: "None",
+    openSource: "No",
+    tools: "~30",
+    note: "WebAssembly-based, works offline after loading",
+  },
+  {
+    name: "ezyZip",
+    url: "https://www.ezyzip.com",
+    processing: "Browser",
+    uploads: "No",
+    signup: "No",
+    retention: "None",
+    fileLimit: "None",
+    openSource: "No",
+    tools: "~50",
+    note: "Archive and conversion tools, browser-based",
+  },
+  {
     name: "Convertio",
     url: "https://convertio.co",
     processing: "Server",
@@ -146,6 +182,30 @@ const converters = [
     note: "Wide format support, optional email delivery",
   },
   {
+    name: "FastlyConvert",
+    url: "https://www.fastlyconvert.com",
+    processing: "Hybrid",
+    uploads: "Partial",
+    signup: "No",
+    retention: "After processing",
+    fileLimit: "Varies",
+    openSource: "No",
+    tools: "~30",
+    note: "Browser-first for images, server for video/audio",
+  },
+  {
+    name: "SaferPDF",
+    url: "https://www.saferpdf.com",
+    processing: "Browser",
+    uploads: "No",
+    signup: "No",
+    retention: "None",
+    fileLimit: "None",
+    openSource: "No",
+    tools: "PDF only",
+    note: "Browser-based PDF compression and tools",
+  },
+  {
     name: "HandBrake",
     url: "https://handbrake.fr",
     processing: "Local (install)",
@@ -156,6 +216,18 @@ const converters = [
     openSource: "Yes",
     tools: "Video only",
     note: "Desktop app, must install, video transcoding",
+  },
+  {
+    name: "Stirling PDF",
+    url: "https://stirlingpdf.com",
+    processing: "Local (self-host)",
+    uploads: "No",
+    signup: "No",
+    retention: "None",
+    fileLimit: "None",
+    openSource: "Yes",
+    tools: "PDF only",
+    note: "Self-hosted Docker app, PDF tools, open source",
   },
   {
     name: "FFmpeg",
@@ -183,14 +255,49 @@ const converters = [
   },
 ];
 
+const faqItems = [
+  {
+    question: "Are free online file converters safe to use?",
+    answer:
+      "It depends on how they process your files. Browser-based converters that process files locally in your device are the safest option because your data never leaves your computer. Server-based converters upload your files to remote servers, which introduces privacy risks. The FBI warned in 2025 about malicious file converter sites distributing malware. You can verify safety by opening DevTools (F12) and watching the Network tab during conversion.",
+  },
+  {
+    question: "Which file converters do not upload your files?",
+    answer:
+      "Browser-based converters like FileToolWorks, VERT.sh, SafeConvert, OfflineConvert, ezyZip, and FileForge process files entirely in your browser using JavaScript or WebAssembly. Your files never leave your device. You can verify this by checking the Network tab in browser DevTools during conversion.",
+  },
+  {
+    question: "What did the FBI say about file converters?",
+    answer:
+      "In March 2025, the FBI Denver Field Office warned about free online file converters being used to distribute malware. The malicious converters appeared to work normally but secretly installed ransomware, credential stealers, or crypto miners. The FBI warned specifically about converters that required downloads or installations, and those uploading files to unknown servers.",
+  },
+  {
+    question: "How can I tell if a file converter uploads my files?",
+    answer:
+      "Open the converter in your browser, press F12 to open DevTools, click the Network tab, then upload and convert a test file. If your file data appears in any outgoing request, the converter uploads to a server. If the only requests are for page assets (HTML, CSS, JS, WASM modules), it processes everything locally in your browser.",
+  },
+  {
+    question: "Are browser-based file converters safer than server-based ones?",
+    answer:
+      "Yes, browser-based converters are safer for privacy because your files never leave your device. Server-based converters upload your data to third-party servers where it could potentially be accessed, stored, or intercepted. However, reputable server-based services like CloudConvert (ISO 27001 certified) have legitimate security practices and make sense for rare formats or very large files.",
+  },
+  {
+    question:
+      "What is the difference between browser-based and server-based file converters?",
+    answer:
+      "Browser-based converters use JavaScript or WebAssembly to process files directly in your browser tab. Your files stay on your device. Server-based converters upload your files to remote servers for processing, then return the converted file. Browser-based tools offer better privacy but may be slower for very large files. Server-based tools can handle more formats but require trusting the provider with your data.",
+  },
+];
+
 export default function PrivacyComparisonPage() {
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "WebPage",
     name: "File Converter Privacy Comparison",
     description:
-      "Factual comparison of how 15+ file converters handle your data. See which upload files to servers vs process locally.",
+      "Factual comparison of how 21+ file converters handle your data. See which upload files to servers vs process locally.",
     url: "https://www.filetoolworks.com/privacy-comparison",
+    dateModified: "2026-03-03",
     breadcrumb: {
       "@type": "BreadcrumbList",
       itemListElement: [
@@ -214,11 +321,28 @@ export default function PrivacyComparisonPage() {
     },
   };
 
+  const faqJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqItems.map((item) => ({
+      "@type": "Question",
+      name: item.question,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: item.answer,
+      },
+    })),
+  };
+
   return (
     <div className="min-h-screen bg-gray-50">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
       />
       <div className="max-w-6xl mx-auto px-4 py-12">
         <Link
@@ -234,7 +358,7 @@ export default function PrivacyComparisonPage() {
         <p className="text-lg text-gray-600 mb-8">
           Not all file converters handle your data the same way. Some upload
           files to remote servers. Others process everything locally. This
-          comparison shows exactly how 15 popular file converters work, so you
+          comparison shows exactly how 21 popular file converters work, so you
           can make an informed choice.
         </p>
 
@@ -337,9 +461,11 @@ export default function PrivacyComparisonPage() {
                       ? "bg-green-50"
                       : c.processing.startsWith("Local")
                         ? "bg-blue-50"
-                        : i % 2 === 0
-                          ? "bg-white"
-                          : "bg-gray-50"
+                        : c.processing === "Hybrid"
+                          ? "bg-orange-50"
+                          : i % 2 === 0
+                            ? "bg-white"
+                            : "bg-gray-50"
                   }`}
                 >
                   <td className="p-3 font-medium text-gray-900">{c.name}</td>
@@ -350,7 +476,9 @@ export default function PrivacyComparisonPage() {
                           ? "bg-green-200 text-green-800"
                           : c.processing.startsWith("Local")
                             ? "bg-blue-200 text-blue-800"
-                            : "bg-yellow-200 text-yellow-800"
+                            : c.processing === "Hybrid"
+                              ? "bg-orange-200 text-orange-800"
+                              : "bg-yellow-200 text-yellow-800"
                       }`}
                     >
                       {c.processing}
@@ -359,6 +487,8 @@ export default function PrivacyComparisonPage() {
                   <td className="p-3 text-center">
                     {c.uploads === "No" ? (
                       <span className="text-green-600 font-bold">No</span>
+                    ) : c.uploads === "Partial" ? (
+                      <span className="text-orange-600 font-bold">Partial</span>
                     ) : (
                       <span className="text-red-600 font-bold">Yes</span>
                     )}
@@ -544,9 +674,72 @@ export default function PrivacyComparisonPage() {
               href="/tools"
               className="bg-white px-4 py-2 rounded border border-blue-200 text-blue-700 hover:bg-blue-100 text-sm font-medium"
             >
-              View All 40+ Tools &rarr;
+              View All 56 Tools &rarr;
             </Link>
           </div>
+        </div>
+
+        <h2 className="text-2xl font-semibold text-gray-900 mb-4">
+          Quick Safety Checklist
+        </h2>
+        <div className="bg-white rounded-lg shadow-sm p-6 mb-10">
+          <p className="text-gray-700 mb-4">
+            Before using any file converter, check these five things:
+          </p>
+          <ul className="space-y-3 text-gray-700">
+            <li className="flex items-start gap-3">
+              <span className="text-green-600 font-bold text-lg leading-6">1.</span>
+              <span>
+                <strong>Does it upload your files?</strong> Open DevTools (F12),
+                click Network, and convert a test file. No outgoing data = safe.
+              </span>
+            </li>
+            <li className="flex items-start gap-3">
+              <span className="text-green-600 font-bold text-lg leading-6">2.</span>
+              <span>
+                <strong>Does it require a download or install?</strong> The FBI
+                warned about malicious converter installers. Browser-based tools
+                need no install.
+              </span>
+            </li>
+            <li className="flex items-start gap-3">
+              <span className="text-green-600 font-bold text-lg leading-6">3.</span>
+              <span>
+                <strong>Does it require signup or email?</strong> Legitimate
+                browser-based converters do not need your personal information.
+              </span>
+            </li>
+            <li className="flex items-start gap-3">
+              <span className="text-green-600 font-bold text-lg leading-6">4.</span>
+              <span>
+                <strong>Does the URL match the official site?</strong> Scam
+                converters use URLs similar to real tools. Check for misspellings
+                or extra words in the domain name.
+              </span>
+            </li>
+            <li className="flex items-start gap-3">
+              <span className="text-green-600 font-bold text-lg leading-6">5.</span>
+              <span>
+                <strong>Does it use HTTPS?</strong> A padlock icon in the
+                address bar means the connection is encrypted. Avoid any
+                converter on plain HTTP.
+              </span>
+            </li>
+          </ul>
+        </div>
+
+        <h2 className="text-2xl font-semibold text-gray-900 mb-4">
+          Frequently Asked Questions
+        </h2>
+        <div className="space-y-4 mb-10">
+          {faqItems.map((item, i) => (
+            <div key={i} className="bg-white rounded-lg shadow-sm p-6">
+              <h3 className="font-semibold text-gray-900 mb-2">
+                {item.question}
+              </h3>
+              <p className="text-gray-700">{item.answer}</p>
+            </div>
+          ))}
         </div>
 
         <div className="bg-gray-100 rounded-lg p-6 text-sm text-gray-600">
@@ -554,9 +747,9 @@ export default function PrivacyComparisonPage() {
             About This Comparison
           </h3>
           <p className="mb-2">
-            This page compares file converter services based on publicly
+            This page compares 21 file converter services based on publicly
             available information from their websites, privacy policies, and
-            documentation. All data was gathered in March 2026. Policies may
+            documentation. Last updated March 2026. Policies may
             change. We recommend checking each service&apos;s current privacy
             policy before use.
           </p>
