@@ -372,6 +372,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.85,
   })
 
+  // Press / Media Kit
+  routes.push({
+    url: `${BASE_URL}/press`,
+    lastModified: '2026-03-03T07:30:00.000Z',
+    changeFrequency: 'monthly',
+    priority: 0.7,
+  })
+
   // File Size Limits (linkable asset - platform reference)
   routes.push({
     url: `${BASE_URL}/file-size-limits`,

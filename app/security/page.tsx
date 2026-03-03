@@ -226,7 +226,15 @@ export default function SecurityPage() {
             >
               file converter privacy comparison
             </Link>{" "}
-            for a side-by-side breakdown of 15 services.
+            for a side-by-side breakdown of 15 services. Journalists and bloggers
+            can find ready-to-use information on our{" "}
+            <Link
+              href="/press"
+              className="text-blue-600 hover:underline"
+            >
+              press kit page
+            </Link>
+            .
           </p>
 
           <div className="mt-10 p-6 bg-blue-50 rounded-lg border border-blue-200">

@@ -106,7 +106,11 @@ export default function AboutPage() {
             <Link href="/privacy" className="text-blue-600 hover:underline">
               privacy policy
             </Link>{" "}
-            for details.
+            for details. For media inquiries, see our{" "}
+            <Link href="/press" className="text-blue-600 hover:underline">
+              press kit
+            </Link>
+            .
           </p>
         </div>
       </div>
