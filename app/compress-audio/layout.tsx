@@ -27,6 +27,9 @@ const faqs = [
     { question: "How much can I reduce file size?", answer: "File size reduction depends on the original file and selected bitrate. You can typically reduce file sizes by 50-90%, especially when compressing high-quality WAV or FLAC files to MP3." },
     { question: "Can I compress multiple audio files at once?", answer: "Yes. You can upload and compress multiple audio files in a single batch. All files will be processed with the same bitrate setting, and you can download them individually or all at once." },
     { question: "Is this tool free to use?", answer: "Yes. This audio compressor is completely free with no hidden charges, subscriptions, or signup required. Use it as many times as you need." },
+    { question: "Can I compress audio for email attachments?", answer: "Yes. Gmail limits attachments to 25MB and Outlook to 20MB. Compressing a WAV file at 128kbps typically reduces it by 80-90%, making it small enough for email." },
+    { question: "Does compressing audio reduce quality?", answer: "Compressing audio is lossy, meaning some quality is lost. At 128kbps most people cannot tell the difference from the original. At 64kbps the quality drop is more noticeable but still fine for voice recordings." },
+    { question: "How do I compress audio for Discord?", answer: "Discord limits file uploads to 10MB on free accounts and 50MB with Nitro Basic. Upload your audio file, select 128kbps or 64kbps bitrate, and compress. The output will usually be well under Discord's limit." },
 ];
 
 export default function CompressAudioLayout({

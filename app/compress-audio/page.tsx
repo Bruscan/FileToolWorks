@@ -509,6 +509,41 @@ export default function CompressAudio() {
         </div>
       </section>
 
+      {/* Why Use This Tool */}
+      <section className="max-w-4xl mx-auto px-4 py-8">
+        <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-6 md:p-8">
+          <h2 className="text-2xl font-bold text-gray-900 mb-4">Why Use This Audio Compressor</h2>
+          <div className="space-y-4 text-gray-600 text-sm">
+            <p>
+              Most online audio compressors upload your files to remote servers for processing. This tool is different. It runs entirely in your browser using WebAssembly (FFmpeg compiled to WASM), so your audio never leaves your device. No server uploads, no data collection, no privacy risk.
+            </p>
+            <p>
+              This makes it ideal for compressing sensitive audio like voice recordings, interviews, client calls, or any audio you want to keep private. The <Link href="/security" className="text-blue-600 hover:underline">FBI has warned about unsafe file converters</Link> that steal data. Our browser-based approach eliminates that risk entirely.
+            </p>
+            <h3 className="text-lg font-semibold text-gray-900 pt-2">Who Uses This Tool</h3>
+            <ul className="list-disc pl-5 space-y-1">
+              <li><strong>Podcasters</strong> who need smaller MP3 files for hosting platforms with storage limits</li>
+              <li><strong>Musicians and producers</strong> sharing demos or rough mixes via email</li>
+              <li><strong>Students</strong> compressing lecture recordings to save phone storage</li>
+              <li><strong>Content creators</strong> preparing audio for <Link href="/compress-audio-for-discord" className="text-blue-600 hover:underline">Discord</Link>, WhatsApp, or social media uploads</li>
+              <li><strong>Businesses</strong> reducing audio file sizes for email attachments (most email providers cap attachments at 25MB)</li>
+            </ul>
+            <h3 className="text-lg font-semibold text-gray-900 pt-2">Bitrate Guide</h3>
+            <p>
+              Bitrate controls the tradeoff between file size and audio quality. Lower bitrate means smaller files. Here is a quick reference for choosing the right bitrate:
+            </p>
+            <ul className="list-disc pl-5 space-y-1">
+              <li><strong>64 kbps</strong> - Best for voice-only content: podcasts, audiobooks, phone recordings. Cuts file size by 80-90%.</li>
+              <li><strong>128 kbps</strong> - Good for most music. Standard streaming quality. Reduces files by 50-70%.</li>
+              <li><strong>192 kbps</strong> - Near-transparent quality for critical listening. Smaller reduction but preserves more detail.</li>
+            </ul>
+            <p>
+              For even more control over MP3 compression, try our <Link href="/compress-mp3" className="text-blue-600 hover:underline">dedicated MP3 compressor</Link> which supports up to 320kbps output.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* FAQ */}
       <section className="max-w-4xl mx-auto px-4 py-8">
         <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-6 md:p-8">
@@ -562,6 +597,30 @@ export default function CompressAudio() {
               </summary>
               <p className="mt-2 text-gray-600 text-sm">
                 Yes. This audio compressor is completely free with no hidden charges, subscriptions, or signup required. Use it as many times as you need.
+              </p>
+            </details>
+            <details className="border-b border-gray-200 pb-4">
+              <summary className="font-semibold text-gray-900 cursor-pointer">
+                Can I compress audio for email attachments?
+              </summary>
+              <p className="mt-2 text-gray-600 text-sm">
+                Yes. Gmail limits attachments to 25MB and Outlook to 20MB. Compressing a WAV file at 128kbps typically reduces it by 80-90%, making it small enough for email. For video attachments, try our <Link href="/compress-video-for-email" className="text-blue-600 hover:underline">compress video for email</Link> tool.
+              </p>
+            </details>
+            <details className="border-b border-gray-200 pb-4">
+              <summary className="font-semibold text-gray-900 cursor-pointer">
+                Does compressing audio reduce quality?
+              </summary>
+              <p className="mt-2 text-gray-600 text-sm">
+                Compressing audio is lossy, meaning some quality is lost. At 128kbps most people cannot tell the difference from the original. At 64kbps the quality drop is more noticeable but still fine for voice recordings. For lossless audio, keep your original WAV or FLAC files.
+              </p>
+            </details>
+            <details className="border-b border-gray-200 pb-4">
+              <summary className="font-semibold text-gray-900 cursor-pointer">
+                How do I compress audio for Discord?
+              </summary>
+              <p className="mt-2 text-gray-600 text-sm">
+                Discord limits file uploads to 10MB on free accounts and 50MB with Nitro Basic. Upload your audio file here, select 128kbps or 64kbps bitrate, and compress. The output will usually be well under Discord&apos;s limit. See our full guide on <Link href="/compress-audio-for-discord" className="text-blue-600 hover:underline">compressing audio for Discord</Link>.
               </p>
             </details>
           </div>
