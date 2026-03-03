@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "VP8 vs VP9: Compression, Quality, and Browser Support",
   description: "VP9 delivers roughly 50% better compression than VP8 at the same quality. Compare Google's open video codecs for streaming, WebRTC, and web delivery.",
   alternates: {
-    canonical: "/blog/vp8-vs-vp9",
+    canonical: "https://www.filetoolworks.com/blog/vp8-vs-vp9",
   },
 };
 

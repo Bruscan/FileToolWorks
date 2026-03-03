@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   description:
     "Answer 3 quick questions to find the best file format for your needs. Covers image, audio, video, and document formats with conversion tool recommendations.",
   alternates: {
-    canonical: "/format-guide",
+    canonical: "https://www.filetoolworks.com/format-guide",
   },
   openGraph: {
     title: "What File Format Should I Use? Interactive Guide",

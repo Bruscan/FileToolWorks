@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "AC3 vs AAC: Dolby Digital or Advanced Audio Coding?",
   description: "AC3 (Dolby Digital) is built for surround sound in DVDs and Blu-rays. AAC is the modern codec for streaming and mobile. Here is how they compare.",
   alternates: {
-    canonical: "/blog/ac3-vs-aac",
+    canonical: "https://www.filetoolworks.com/blog/ac3-vs-aac",
   },
 };
 

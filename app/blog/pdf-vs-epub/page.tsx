@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "PDF vs EPUB: Which Format for Your Document?",
   description: "PDF preserves exact layout. EPUB reflows text for different screen sizes. Learn which format works best for ebooks, reports, and reading on mobile.",
   alternates: {
-    canonical: "/blog/pdf-vs-epub",
+    canonical: "https://www.filetoolworks.com/blog/pdf-vs-epub",
   },
 };
 

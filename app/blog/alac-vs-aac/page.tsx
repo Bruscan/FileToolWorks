@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "ALAC vs AAC: Apple Lossless vs Lossy Audio Compared",
   description: "ALAC preserves full audio quality in Apple's lossless format. AAC delivers good quality at 90% smaller file sizes. Compare quality, file size, and compatibility.",
   alternates: {
-    canonical: "/blog/alac-vs-aac",
+    canonical: "https://www.filetoolworks.com/blog/alac-vs-aac",
   },
 };
 

@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "7z vs ZIP: Compression, Speed, Compatibility",
   description: "7z compresses files 30-70% smaller than ZIP but needs extra software. ZIP works on every OS out of the box. Compare compression, speed, and compatibility.",
   alternates: {
-    canonical: "/blog/7z-vs-zip",
+    canonical: "https://www.filetoolworks.com/blog/7z-vs-zip",
   },
 };
 

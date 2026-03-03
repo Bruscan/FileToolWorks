@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "How to Convert Image to PDF - Free Guide",
   description: "Learn the easiest ways to convert JPG, PNG, and HEIC images to PDF on any device. Free online converter included.",
   alternates: {
-    canonical: "/blog/how-to-convert-image-to-pdf",
+    canonical: "https://www.filetoolworks.com/blog/how-to-convert-image-to-pdf",
   },
 };
 

@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "AIFF vs WAV: Differences and Compatibility",
   description: "AIFF and WAV both store uncompressed lossless audio at identical quality. WAV has broader device support, AIFF stores richer metadata. Compare features and pick the right one.",
   alternates: {
-    canonical: "/blog/aiff-vs-wav",
+    canonical: "https://www.filetoolworks.com/blog/aiff-vs-wav",
   },
 };
 

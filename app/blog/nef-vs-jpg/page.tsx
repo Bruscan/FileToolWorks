@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "NEF vs JPG: Nikon RAW vs JPEG for Photography",
   description: "NEF is Nikon's RAW format with full editing flexibility. JPG is smaller and ready to share. Compare quality, file size, and when to shoot each format.",
   alternates: {
-    canonical: "/blog/nef-vs-jpg",
+    canonical: "https://www.filetoolworks.com/blog/nef-vs-jpg",
   },
 };
 

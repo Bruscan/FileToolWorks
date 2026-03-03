@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "Zstd vs Gzip: Compression Speed, Ratio, and Use Cases",
   description: "Zstandard compresses and decompresses faster than Gzip at similar ratios. Compare speed, compression level, and when to use each algorithm.",
   alternates: {
-    canonical: "/blog/zstd-vs-gzip",
+    canonical: "https://www.filetoolworks.com/blog/zstd-vs-gzip",
   },
 };
 

@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "DPI vs PPI – What's the Difference?",
   description: "Understand the difference between DPI and PPI for better image quality. Simple explanation without the technical jargon.",
   alternates: {
-    canonical: "/blog/dpi-vs-ppi",
+    canonical: "https://www.filetoolworks.com/blog/dpi-vs-ppi",
   },
 };
 

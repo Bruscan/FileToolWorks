@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "PDF vs HTML: Fixed Layout vs Flexible Web Content",
   description: "PDF preserves exact layout for print and legal documents. HTML adapts to any screen size for web content. Compare formatting, accessibility, and when to use each.",
   alternates: {
-    canonical: "/blog/pdf-vs-html",
+    canonical: "https://www.filetoolworks.com/blog/pdf-vs-html",
   },
 };
 

@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "JPG vs JPEG: Is There a Difference?",
   description: "JPG and JPEG are the same format. The only difference is the file extension. Here is why both exist and which one to use.",
   alternates: {
-    canonical: "/blog/jpg-vs-jpeg",
+    canonical: "https://www.filetoolworks.com/blog/jpg-vs-jpeg",
   },
 };
 

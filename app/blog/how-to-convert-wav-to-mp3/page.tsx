@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   description:
     "Convert WAV files to MP3 in seconds. Choose your bitrate, keep good quality, and reduce file size by up to 90%. Free, no signup.",
   alternates: {
-    canonical: "/blog/how-to-convert-wav-to-mp3",
+    canonical: "https://www.filetoolworks.com/blog/how-to-convert-wav-to-mp3",
   },
 };
 

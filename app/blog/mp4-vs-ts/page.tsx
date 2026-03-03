@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "MP4 vs TS: Streaming and Storage Formats",
   description: "MP4 is the standard container for video downloads and playback. TS (MPEG Transport Stream) is built for broadcasting and live streaming. Compare features and use cases.",
   alternates: {
-    canonical: "/blog/mp4-vs-ts",
+    canonical: "https://www.filetoolworks.com/blog/mp4-vs-ts",
   },
 };
 

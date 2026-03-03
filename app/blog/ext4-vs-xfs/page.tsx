@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "ext4 vs XFS: Which Linux File System Should You Use?",
   description: "ext4 is the default on Ubuntu and Debian. XFS is the default on Red Hat. Compare performance, scalability, and use cases for each Linux file system.",
   alternates: {
-    canonical: "/blog/ext4-vs-xfs",
+    canonical: "https://www.filetoolworks.com/blog/ext4-vs-xfs",
   },
 };
 

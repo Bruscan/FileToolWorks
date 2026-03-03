@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "DNG vs JPG: RAW Quality vs Compressed Photos",
   description: "DNG is Adobe's open raw format with full editing flexibility. JPG is compressed and ready to share. Compare quality, file size, editing options, and when to use each.",
   alternates: {
-    canonical: "/blog/dng-vs-jpg",
+    canonical: "https://www.filetoolworks.com/blog/dng-vs-jpg",
   },
 };
 

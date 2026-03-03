@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "GIF vs MP4: Which Format Should You Use?",
   description: "GIF files are 5-10x larger than MP4 for the same clip. Learn when GIF still makes sense and when MP4 is the better choice for short videos and animations.",
   alternates: {
-    canonical: "/blog/gif-vs-mp4",
+    canonical: "https://www.filetoolworks.com/blog/gif-vs-mp4",
   },
 };
 

@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "16-Bit vs 24-Bit Audio: Does Bit Depth Matter?",
   description: "16-bit audio is CD quality with 96dB dynamic range. 24-bit gives 144dB for recording and mixing. Here is when each bit depth actually matters.",
   alternates: {
-    canonical: "/blog/16-bit-vs-24-bit-audio",
+    canonical: "https://www.filetoolworks.com/blog/16-bit-vs-24-bit-audio",
   },
 };
 

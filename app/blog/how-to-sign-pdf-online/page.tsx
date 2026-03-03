@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   description:
     "Sign PDF documents online without printing. Draw or upload your signature and place it on any page. Free, private, no account needed.",
   alternates: {
-    canonical: "/blog/how-to-sign-pdf-online",
+    canonical: "https://www.filetoolworks.com/blog/how-to-sign-pdf-online",
   },
 };
 

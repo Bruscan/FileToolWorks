@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "5 Best Free iLovePDF Alternatives (2026)",
   description: "Need a free iLovePDF alternative? Compare 5 online PDF tools for merging, compressing, splitting, signing, and converting PDFs without signup.",
   alternates: {
-    canonical: "/blog/best-ilovepdf-alternatives-free",
+    canonical: "https://www.filetoolworks.com/blog/best-ilovepdf-alternatives-free",
   },
 };
 

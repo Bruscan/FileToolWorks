@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "PDF vs PPTX: Presentations and Documents",
   description: "PDF preserves formatting across all devices. PPTX supports animations, editing, and live presenting. Compare features, compatibility, file size, and best use cases.",
   alternates: {
-    canonical: "/blog/pdf-vs-pptx",
+    canonical: "https://www.filetoolworks.com/blog/pdf-vs-pptx",
   },
 };
 

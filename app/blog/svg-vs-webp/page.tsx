@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "SVG vs WebP: Vector vs Raster for Web Images",
   description: "SVG is a vector format that scales infinitely for logos and icons. WebP is a raster format with excellent compression for photos. Compare features, performance, and when to use each.",
   alternates: {
-    canonical: "/blog/svg-vs-webp",
+    canonical: "https://www.filetoolworks.com/blog/svg-vs-webp",
   },
 };
 

@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "RAR vs 7z: Compression, Speed, Compatibility",
   description: "RAR offers better speed and error recovery. 7z achieves higher compression with AES-256 encryption and is completely free. Compare compression ratio, speed, and features.",
   alternates: {
-    canonical: "/blog/rar-vs-7z",
+    canonical: "https://www.filetoolworks.com/blog/rar-vs-7z",
   },
 };
 

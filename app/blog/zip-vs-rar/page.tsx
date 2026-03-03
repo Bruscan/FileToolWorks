@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "ZIP vs RAR: File Compression Formats Compared",
   description: "ZIP is universally supported and works without extra software. RAR offers better compression and error recovery. Compare features, compatibility, and use cases.",
   alternates: {
-    canonical: "/blog/zip-vs-rar",
+    canonical: "https://www.filetoolworks.com/blog/zip-vs-rar",
   },
 };
 

@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   description:
     "Calculate file sizes for audio, video, and images before recording or converting. Estimate MP3, WAV, MP4, JPG, PNG sizes by duration, resolution, and quality.",
   alternates: {
-    canonical: "/file-size-calculator",
+    canonical: "https://www.filetoolworks.com/file-size-calculator",
   },
   openGraph: {
     title: "File Size Calculator | Estimate File Sizes",

@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   description:
     "HEIC vs JPG compared. Learn the differences in file size, quality, compatibility, and when to convert between them.",
   alternates: {
-    canonical: "/blog/heic-vs-jpg",
+    canonical: "https://www.filetoolworks.com/blog/heic-vs-jpg",
   },
 };
 

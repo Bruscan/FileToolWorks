@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "How to Convert MOV to MP4 (3 Free Methods)",
   description: "Convert MOV to MP4 free using online tools, iMovie on Mac, or VLC. Keep full quality with the right codec settings.",
   alternates: {
-    canonical: "/blog/how-to-convert-mov-to-mp4",
+    canonical: "https://www.filetoolworks.com/blog/how-to-convert-mov-to-mp4",
   },
 };
 

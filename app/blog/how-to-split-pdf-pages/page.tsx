@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   description:
     "Split a PDF into separate pages or sections. Free browser-based tool, no installation required.",
   alternates: {
-    canonical: "/blog/how-to-split-pdf-pages",
+    canonical: "https://www.filetoolworks.com/blog/how-to-split-pdf-pages",
   },
 };
 

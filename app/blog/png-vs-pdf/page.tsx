@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "PNG vs PDF: Image Format vs Document Format Compared",
   description: "PNG is a raster image format for web graphics and screenshots. PDF is a document format for multi-page content and printing. Compare quality, size, and use cases.",
   alternates: {
-    canonical: "/blog/png-vs-pdf",
+    canonical: "https://www.filetoolworks.com/blog/png-vs-pdf",
   },
 };
 

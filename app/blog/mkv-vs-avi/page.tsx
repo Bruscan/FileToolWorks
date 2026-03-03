@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "MKV vs AVI: Features, Size, and Compatibility",
   description: "MKV supports modern codecs, multiple audio tracks, and subtitles. AVI is a legacy format with broad playback support. Compare features, quality, and use cases.",
   alternates: {
-    canonical: "/blog/mkv-vs-avi",
+    canonical: "https://www.filetoolworks.com/blog/mkv-vs-avi",
   },
 };
 

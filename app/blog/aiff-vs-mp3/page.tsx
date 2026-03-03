@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "AIFF vs MP3: Quality, File Size, and When to Use Each",
   description: "AIFF is uncompressed with full audio quality. MP3 is 10x smaller with lossy compression. Compare sound quality, file size, and compatibility.",
   alternates: {
-    canonical: "/blog/aiff-vs-mp3",
+    canonical: "https://www.filetoolworks.com/blog/aiff-vs-mp3",
   },
 };
 

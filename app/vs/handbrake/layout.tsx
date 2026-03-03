@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   description:
     "Compare FileToolWorks and HandBrake for video conversion and compression. No download needed, works in your browser instantly.",
   alternates: {
-    canonical: "/vs/handbrake",
+    canonical: "https://www.filetoolworks.com/vs/handbrake",
   },
   openGraph: {
     title: "FileToolWorks vs HandBrake - Free Online Alternative",

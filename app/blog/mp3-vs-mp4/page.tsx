@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "MP3 vs MP4: Audio vs Multimedia Differences",
   description: "MP3 is an audio-only format. MP4 is a multimedia container for video, audio, and subtitles. Compare file size, quality, compatibility, and use cases.",
   alternates: {
-    canonical: "/blog/mp3-vs-mp4",
+    canonical: "https://www.filetoolworks.com/blog/mp3-vs-mp4",
   },
 };
 

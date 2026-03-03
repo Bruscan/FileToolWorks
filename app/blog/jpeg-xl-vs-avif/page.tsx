@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "JPEG XL vs AVIF: Compression and Quality",
   description: "JPEG XL beats AVIF at high quality and handles huge images. AVIF has full browser support and wins at low bitrates. Compare both next-gen image formats.",
   alternates: {
-    canonical: "/blog/jpeg-xl-vs-avif",
+    canonical: "https://www.filetoolworks.com/blog/jpeg-xl-vs-avif",
   },
 };
 

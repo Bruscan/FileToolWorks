@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "CBR vs VBR: Constant vs Variable Bitrate Explained",
   description: "CBR uses a fixed bitrate throughout the file. VBR adjusts dynamically for better quality per byte. Learn when to use each for audio and video encoding.",
   alternates: {
-    canonical: "/blog/cbr-vs-vbr",
+    canonical: "https://www.filetoolworks.com/blog/cbr-vs-vbr",
   },
 };
 

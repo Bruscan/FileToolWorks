@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "APNG vs GIF: Color, Transparency, and Animation",
   description: "APNG supports 16 million colors and alpha transparency while GIF is limited to 256 colors. Compare file size, browser support, and animation quality.",
   alternates: {
-    canonical: "/blog/apng-vs-gif",
+    canonical: "https://www.filetoolworks.com/blog/apng-vs-gif",
   },
 };
 

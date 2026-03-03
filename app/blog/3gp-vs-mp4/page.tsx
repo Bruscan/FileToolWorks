@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "3GP vs MP4: Quality, Compatibility, and Which to Use",
   description: "3GP was designed for old mobile phones with limited bandwidth. MP4 supports HD/4K and plays everywhere. Compare both video formats and learn when to convert.",
   alternates: {
-    canonical: "/blog/3gp-vs-mp4",
+    canonical: "https://www.filetoolworks.com/blog/3gp-vs-mp4",
   },
 };
 

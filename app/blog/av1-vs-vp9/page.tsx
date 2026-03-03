@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "AV1 vs VP9: Compression, Quality, Performance",
   description: "AV1 compresses 30-50% better than VP9 but encodes much slower. VP9 has broader device support and faster real-time performance. Full codec comparison.",
   alternates: {
-    canonical: "/blog/av1-vs-vp9",
+    canonical: "https://www.filetoolworks.com/blog/av1-vs-vp9",
   },
 };
 

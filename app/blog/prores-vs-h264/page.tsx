@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "ProRes vs H.264: Quality and File Size",
   description: "ProRes is an editing codec with huge files and maximum quality. H.264 compresses aggressively for delivery. Compare file size, color depth, and workflows.",
   alternates: {
-    canonical: "/blog/prores-vs-h264",
+    canonical: "https://www.filetoolworks.com/blog/prores-vs-h264",
   },
 };
 

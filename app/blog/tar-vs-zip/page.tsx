@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "TAR vs ZIP: Archiving and Compression",
   description: "TAR bundles files without compression and preserves Unix permissions. ZIP compresses and archives in one step with universal OS support. Compare both formats.",
   alternates: {
-    canonical: "/blog/tar-vs-zip",
+    canonical: "https://www.filetoolworks.com/blog/tar-vs-zip",
   },
 };
 

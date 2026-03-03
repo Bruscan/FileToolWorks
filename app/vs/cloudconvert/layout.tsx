@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   description:
     "Compare FileToolWorks and CloudConvert. Unlimited free conversions, no account needed, files never leave your device. Full comparison.",
   alternates: {
-    canonical: "/vs/cloudconvert",
+    canonical: "https://www.filetoolworks.com/vs/cloudconvert",
   },
   openGraph: {
     title: "FileToolWorks vs CloudConvert - Free Alternative",

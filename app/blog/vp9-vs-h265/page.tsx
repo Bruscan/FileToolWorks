@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "VP9 vs H.265: Quality, Speed, and Licensing",
   description: "VP9 is royalty-free with strong browser support. H.265 compresses slightly better with wider hardware decoding. Compare quality, encoding speed, and licensing.",
   alternates: {
-    canonical: "/blog/vp9-vs-h265",
+    canonical: "https://www.filetoolworks.com/blog/vp9-vs-h265",
   },
 };
 

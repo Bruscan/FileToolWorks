@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   description:
     "Reduce video file size by 50-80% using compression, resolution changes, and trimming. Free browser-based tools, no upload needed.",
   alternates: {
-    canonical: "/blog/how-to-reduce-video-file-size",
+    canonical: "https://www.filetoolworks.com/blog/how-to-reduce-video-file-size",
   },
 };
 

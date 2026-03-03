@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "44.1kHz vs 48kHz: Which Sample Rate Should You Use?",
   description: "44.1kHz is the CD standard. 48kHz is the video and broadcast standard. Here is why the difference exists and which one to pick for your project.",
   alternates: {
-    canonical: "/blog/44-1khz-vs-48khz",
+    canonical: "https://www.filetoolworks.com/blog/44-1khz-vs-48khz",
   },
 };
 

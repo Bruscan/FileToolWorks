@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "MP4 vs MOV: Which Video Format Should You Use?",
   description: "MP4 and MOV compared on file size, codec support, compatibility, editing, and streaming. Learn which video format fits your project.",
   alternates: {
-    canonical: "/blog/mp4-vs-mov",
+    canonical: "https://www.filetoolworks.com/blog/mp4-vs-mov",
   },
 };
 

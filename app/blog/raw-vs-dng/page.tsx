@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "RAW vs DNG: Size, Compatibility, and Best Use",
   description: "DNG is Adobe's open raw format that is 15-20% smaller than proprietary RAW files. Compare editing flexibility, compatibility, metadata handling, and archival use.",
   alternates: {
-    canonical: "/blog/raw-vs-dng",
+    canonical: "https://www.filetoolworks.com/blog/raw-vs-dng",
   },
 };
 

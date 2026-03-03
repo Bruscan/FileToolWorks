@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "TIFF vs JPG: When to Use Each Image Format",
   description: "TIFF preserves full image quality for editing and print. JPG compresses images for smaller files ideal for web and sharing. Compare quality, size, and use cases.",
   alternates: {
-    canonical: "/blog/tiff-vs-jpg",
+    canonical: "https://www.filetoolworks.com/blog/tiff-vs-jpg",
   },
 };
 

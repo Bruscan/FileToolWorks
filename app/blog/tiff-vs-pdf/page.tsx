@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "TIFF vs PDF: Quality, File Size, and Best Use Cases",
   description: "TIFF preserves lossless image quality for printing and scanning. PDF is smaller, searchable, and better for sharing documents. Compare both formats for your needs.",
   alternates: {
-    canonical: "/blog/tiff-vs-pdf",
+    canonical: "https://www.filetoolworks.com/blog/tiff-vs-pdf",
   },
 };
 

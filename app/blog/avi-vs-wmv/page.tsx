@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "AVI vs WMV: Microsoft's Video Formats Compared",
   description: "AVI stores high-quality uncompressed video in large files. WMV compresses aggressively for streaming and sharing. Compare file size, quality, compatibility, and modern alternatives.",
   alternates: {
-    canonical: "/blog/avi-vs-wmv",
+    canonical: "https://www.filetoolworks.com/blog/avi-vs-wmv",
   },
 };
 

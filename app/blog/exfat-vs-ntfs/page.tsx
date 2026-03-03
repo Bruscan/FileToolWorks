@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "exFAT vs NTFS: Which File System Should You Use?",
   description: "exFAT is best for external drives shared across Windows and Mac. NTFS is better for internal Windows drives with its journaling and permissions support.",
   alternates: {
-    canonical: "/blog/exfat-vs-ntfs",
+    canonical: "https://www.filetoolworks.com/blog/exfat-vs-ntfs",
   },
 };
 

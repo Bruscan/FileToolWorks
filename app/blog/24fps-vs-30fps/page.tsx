@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "24fps vs 30fps: Which Frame Rate Should You Use?",
   description: "24fps gives video a cinematic film look while 30fps produces smoother, more realistic motion. Learn when to use each frame rate for your projects.",
   alternates: {
-    canonical: "/blog/24fps-vs-30fps",
+    canonical: "https://www.filetoolworks.com/blog/24fps-vs-30fps",
   },
 };
 

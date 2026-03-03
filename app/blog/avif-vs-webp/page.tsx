@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "AVIF vs WebP: Compression and Quality",
   description: "AVIF compresses 20% smaller than WebP but decodes slower. Compare quality, file size, browser support, and learn which next-gen image format to use.",
   alternates: {
-    canonical: "/blog/avif-vs-webp",
+    canonical: "https://www.filetoolworks.com/blog/avif-vs-webp",
   },
 };
 

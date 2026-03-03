@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "XML vs CSV: Structure, Size, and Best Uses",
   description: "CSV is plain text with comma-separated values for flat tabular data. XML uses tags for hierarchical structured data. Compare file size, parsing, and best use cases.",
   alternates: {
-    canonical: "/blog/xml-vs-csv",
+    canonical: "https://www.filetoolworks.com/blog/xml-vs-csv",
   },
 };
 

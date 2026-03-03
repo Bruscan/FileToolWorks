@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "WMV vs MP4: Quality, Size, and Compatibility",
   description: "WMV is a Windows-only format with shrinking support. MP4 plays everywhere. Compare codec quality, file size, streaming, and when to convert.",
   alternates: {
-    canonical: "/blog/wmv-vs-mp4",
+    canonical: "https://www.filetoolworks.com/blog/wmv-vs-mp4",
   },
 };
 

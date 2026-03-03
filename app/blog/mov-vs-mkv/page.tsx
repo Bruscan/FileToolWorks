@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "MOV vs MKV: Compatibility and Features",
   description: "MOV is Apple's video format for editing. MKV is an open container with unlimited tracks and chapters. Compare compatibility, features, file size, and use cases.",
   alternates: {
-    canonical: "/blog/mov-vs-mkv",
+    canonical: "https://www.filetoolworks.com/blog/mov-vs-mkv",
   },
 };
 

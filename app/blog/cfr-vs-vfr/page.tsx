@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "CFR vs VFR: Constant vs Variable Frame Rate Explained",
   description: "CFR uses a fixed frame rate throughout, while VFR changes frame rate dynamically. Learn the differences, compatibility issues, and when to use each.",
   alternates: {
-    canonical: "/blog/cfr-vs-vfr",
+    canonical: "https://www.filetoolworks.com/blog/cfr-vs-vfr",
   },
 };
 

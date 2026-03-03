@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "HDR vs SDR: Video and Display Differences",
   description: "HDR delivers brighter highlights, deeper blacks, and wider color range than SDR. Learn the key differences for video, gaming, and photo editing.",
   alternates: {
-    canonical: "/blog/hdr-vs-sdr",
+    canonical: "https://www.filetoolworks.com/blog/hdr-vs-sdr",
   },
 };
 

@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "EPUB vs MOBI: eBook Formats Compared",
   description: "EPUB is the universal eBook standard supported by almost every reader. MOBI is Amazon's legacy format, now largely replaced. Compare features, compatibility, and which to use.",
   alternates: {
-    canonical: "/blog/epub-vs-mobi",
+    canonical: "https://www.filetoolworks.com/blog/epub-vs-mobi",
   },
 };
 

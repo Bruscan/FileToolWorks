@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "4K vs 8K: Do You Actually Need 8K Resolution?",
   description: "4K is 3840x2160 pixels. 8K is 7680x4320, four times as many pixels. Learn the real differences between 4K and 8K resolution and whether 8K is worth it.",
   alternates: {
-    canonical: "/blog/4k-vs-8k",
+    canonical: "https://www.filetoolworks.com/blog/4k-vs-8k",
   },
 };
 

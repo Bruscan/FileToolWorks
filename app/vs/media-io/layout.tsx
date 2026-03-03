@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   description:
     "Compare FileToolWorks and Media.io for audio compression, video conversion, and image editing. No signup, no uploads, completely free.",
   alternates: {
-    canonical: "/vs/media-io",
+    canonical: "https://www.filetoolworks.com/vs/media-io",
   },
   openGraph: {
     title: "FileToolWorks vs Media.io - Free Alternative",

@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "Best Video Format for Social Media in 2026",
   description: "MP4 with H.264 is the universal video format for social media. See format requirements for YouTube, Instagram, TikTok, Facebook, and LinkedIn.",
   alternates: {
-    canonical: "/blog/best-video-format-for-social-media",
+    canonical: "https://www.filetoolworks.com/blog/best-video-format-for-social-media",
   },
 };
 

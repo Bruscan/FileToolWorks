@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   description:
     "Compare FileToolWorks and ezyZip. FileToolWorks is 100% free with 40+ tools. ezyZip has broader archive support but uses a freemium model with ads.",
   alternates: {
-    canonical: "/vs/ezyzip",
+    canonical: "https://www.filetoolworks.com/vs/ezyzip",
   },
   openGraph: {
     title: "FileToolWorks vs ezyZip - Free Alternative Comparison",

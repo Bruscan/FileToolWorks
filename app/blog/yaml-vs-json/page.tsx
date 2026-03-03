@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "YAML vs JSON: Readability and Best Use Cases",
   description: "YAML is more readable and supports comments, making it ideal for config files. JSON is faster to parse and better for APIs. See when to use each format.",
   alternates: {
-    canonical: "/blog/yaml-vs-json",
+    canonical: "https://www.filetoolworks.com/blog/yaml-vs-json",
   },
 };
 

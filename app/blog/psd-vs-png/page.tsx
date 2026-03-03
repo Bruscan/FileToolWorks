@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "PSD vs PNG: Editing Format vs Distribution Format",
   description: "PSD is Adobe Photoshop's layered editing format. PNG is a compressed image for sharing and the web. Compare features, file size, transparency, and when to use each.",
   alternates: {
-    canonical: "/blog/psd-vs-png",
+    canonical: "https://www.filetoolworks.com/blog/psd-vs-png",
   },
 };
 

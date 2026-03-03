@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "JSON vs CSV: Structure, Performance, Use Cases",
   description: "CSV is smaller and faster for flat tabular data. JSON handles nested structures and mixed data types. Compare file size, parsing speed, and when to use each format.",
   alternates: {
-    canonical: "/blog/json-vs-csv",
+    canonical: "https://www.filetoolworks.com/blog/json-vs-csv",
   },
 };
 

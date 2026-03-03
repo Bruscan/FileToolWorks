@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   description:
     "Compare FileToolWorks and Online-Convert. Browser-based processing with no file uploads, no daily limits, and no signup. See the full comparison.",
   alternates: {
-    canonical: "/vs/online-convert",
+    canonical: "https://www.filetoolworks.com/vs/online-convert",
   },
   openGraph: {
     title: "FileToolWorks vs Online-Convert - Free Alternative",

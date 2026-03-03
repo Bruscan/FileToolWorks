@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "WebP vs JPG: File Size, Quality, and Browser Support",
   description: "WebP produces 25-34% smaller files than JPG at the same quality. Compare compression, transparency, animation, and browser support.",
   alternates: {
-    canonical: "/blog/webp-vs-jpg",
+    canonical: "https://www.filetoolworks.com/blog/webp-vs-jpg",
   },
 };
 

@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "OGG vs MP3: Quality, Compatibility, and Which to Use",
   description: "OGG vs MP3 compared side by side. Learn how they differ in sound quality, file size, compatibility, and which format to pick for your use case.",
   alternates: {
-    canonical: "/blog/ogg-vs-mp3",
+    canonical: "https://www.filetoolworks.com/blog/ogg-vs-mp3",
   },
 };
 

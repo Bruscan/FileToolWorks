@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "CR2 vs JPG: Canon RAW vs JPEG for Photos",
   description: "CR2 is Canon's RAW format with full sensor data and editing flexibility. JPG is compressed and ready to share. Compare quality, file size, and when to shoot each.",
   alternates: {
-    canonical: "/blog/cr2-vs-jpg",
+    canonical: "https://www.filetoolworks.com/blog/cr2-vs-jpg",
   },
 };
 

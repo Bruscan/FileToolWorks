@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "How to Extract Audio from Video (Free, Any Format)",
   description: "Extract audio from any video file as MP3, WAV, or AAC. Free browser tool, no software install, works with MP4, MOV, AVI, MKV, and more.",
   alternates: {
-    canonical: "/blog/how-to-extract-audio-from-video",
+    canonical: "https://www.filetoolworks.com/blog/how-to-extract-audio-from-video",
   },
 };
 

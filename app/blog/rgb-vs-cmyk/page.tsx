@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "RGB vs CMYK: Differences and Best Uses",
   description: "RGB uses light for screens, CMYK uses ink for print. Understand the key differences in color range, file formats, and when to pick each color mode.",
   alternates: {
-    canonical: "/blog/rgb-vs-cmyk",
+    canonical: "https://www.filetoolworks.com/blog/rgb-vs-cmyk",
   },
 };
 

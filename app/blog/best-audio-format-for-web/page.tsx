@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "Best Audio Format for Web: MP3, OGG, AAC, or WAV?",
   description: "Which audio format is best for websites? Compare MP3, OGG, AAC, and WAV for browser support, file size, and quality to pick the right one.",
   alternates: {
-    canonical: "/blog/best-audio-format-for-web",
+    canonical: "https://www.filetoolworks.com/blog/best-audio-format-for-web",
   },
 };
 

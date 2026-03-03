@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "NTFS vs ReFS: Windows File System Differences",
   description: "NTFS is the default Windows file system. ReFS adds data integrity and petabyte-scale volumes for servers. Compare features, performance, and use cases.",
   alternates: {
-    canonical: "/blog/ntfs-vs-refs",
+    canonical: "https://www.filetoolworks.com/blog/ntfs-vs-refs",
   },
 };
 

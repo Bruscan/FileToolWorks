@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "How to Compress Video for Email (Under 25MB)",
   description: "Compress video files to fit email attachment limits. Reduce video size under 25MB with the right resolution, codec, and quality settings.",
   alternates: {
-    canonical: "/blog/how-to-compress-video-for-email",
+    canonical: "https://www.filetoolworks.com/blog/how-to-compress-video-for-email",
   },
 };
 

@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "XML vs JSON: Syntax, Performance, and Uses",
   description: "JSON is lighter and faster for APIs and web apps. XML is better for complex documents and strict validation. Compare syntax, file size, parsing speed, and use cases.",
   alternates: {
-    canonical: "/blog/xml-vs-json",
+    canonical: "https://www.filetoolworks.com/blog/xml-vs-json",
   },
 };
 

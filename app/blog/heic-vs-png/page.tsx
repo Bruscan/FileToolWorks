@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "HEIC vs PNG: Size, Quality, and Compatibility",
   description: "HEIC files are 60-70% smaller than PNG at similar quality. PNG offers lossless quality and universal compatibility. Compare file size, transparency, and use cases.",
   alternates: {
-    canonical: "/blog/heic-vs-png",
+    canonical: "https://www.filetoolworks.com/blog/heic-vs-png",
   },
 };
 

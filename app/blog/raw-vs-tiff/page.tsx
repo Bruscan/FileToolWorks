@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "RAW vs TIFF: Capture vs Output Formats",
   description: "RAW stores unprocessed sensor data for maximum editing flexibility. TIFF is a lossless processed format for archival and delivery. Compare quality, workflow, and best uses.",
   alternates: {
-    canonical: "/blog/raw-vs-tiff",
+    canonical: "https://www.filetoolworks.com/blog/raw-vs-tiff",
   },
 };
 

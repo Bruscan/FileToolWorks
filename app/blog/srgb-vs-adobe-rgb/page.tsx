@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "sRGB vs Adobe RGB: Which Color Space Should You Use?",
   description: "sRGB is the web and screen standard. Adobe RGB covers 35% more colors for print work. Learn the differences and when each color space matters.",
   alternates: {
-    canonical: "/blog/srgb-vs-adobe-rgb",
+    canonical: "https://www.filetoolworks.com/blog/srgb-vs-adobe-rgb",
   },
 };
 

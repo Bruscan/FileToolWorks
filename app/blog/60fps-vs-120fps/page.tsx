@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "60fps vs 120fps: Is Double the Frame Rate Worth It?",
   description: "60fps is smooth enough for most video and gaming. 120fps adds visible fluidity for fast-paced games and high-refresh displays. Compare both frame rates.",
   alternates: {
-    canonical: "/blog/60fps-vs-120fps",
+    canonical: "https://www.filetoolworks.com/blog/60fps-vs-120fps",
   },
 };
 

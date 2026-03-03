@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   description:
     "SVG vs PNG compared for web, print, and design use. Learn when vector SVG beats raster PNG and how to convert between them.",
   alternates: {
-    canonical: "/blog/svg-vs-png",
+    canonical: "https://www.filetoolworks.com/blog/svg-vs-png",
   },
 };
 

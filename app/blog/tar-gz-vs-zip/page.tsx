@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "tar.gz vs ZIP: Compression and Compatibility",
   description: "tar.gz compresses all files as one stream for better ratios. ZIP compresses each file separately for easy random access. Compare both archive formats side by side.",
   alternates: {
-    canonical: "/blog/tar-gz-vs-zip",
+    canonical: "https://www.filetoolworks.com/blog/tar-gz-vs-zip",
   },
 };
 

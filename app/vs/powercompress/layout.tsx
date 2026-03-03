@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   description:
     "Compare FileToolWorks and PowerCompress for free browser-based file compression. Both are client-side and free, but FileToolWorks has 40+ tools vs PowerCompress's 10.",
   alternates: {
-    canonical: "/vs/powercompress",
+    canonical: "https://www.filetoolworks.com/vs/powercompress",
   },
   openGraph: {
     title: "FileToolWorks vs PowerCompress - Free Alternative Comparison",

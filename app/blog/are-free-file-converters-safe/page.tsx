@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   description:
     "The FBI warned about malicious file converters in 2025. Learn which converters are safe, what to avoid, and how browser-based tools protect your files.",
   alternates: {
-    canonical: "/blog/are-free-file-converters-safe",
+    canonical: "https://www.filetoolworks.com/blog/are-free-file-converters-safe",
   },
 };
 

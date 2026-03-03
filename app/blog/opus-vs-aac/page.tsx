@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "Opus vs AAC: Quality, Latency, Compatibility",
   description: "Opus beats AAC at low bitrates and handles voice and music in one codec. AAC has broader device support. Compare quality, latency, file size, and use cases.",
   alternates: {
-    canonical: "/blog/opus-vs-aac",
+    canonical: "https://www.filetoolworks.com/blog/opus-vs-aac",
   },
 };
 

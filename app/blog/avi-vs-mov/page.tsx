@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "AVI vs MOV: Which Video Container Format Is Better?",
   description: "AVI is Microsoft's legacy video container. MOV is Apple's QuickTime format. Compare compatibility, compression, features, and when to convert.",
   alternates: {
-    canonical: "/blog/avi-vs-mov",
+    canonical: "https://www.filetoolworks.com/blog/avi-vs-mov",
   },
 };
 

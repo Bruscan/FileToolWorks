@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "5 Best Free Convertio Alternatives (2026)",
   description: "Looking for free Convertio alternatives without signup or file limits? Compare 5 online file converters for images, video, audio, and PDFs.",
   alternates: {
-    canonical: "/blog/best-convertio-alternatives-free",
+    canonical: "https://www.filetoolworks.com/blog/best-convertio-alternatives-free",
   },
 };
 

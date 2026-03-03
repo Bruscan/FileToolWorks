@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "WebM vs MKV: Web Streaming vs Media Storage Compared",
   description: "WebM is optimized for web browsers with VP8/VP9 codecs. MKV supports unlimited tracks and codecs for local storage. Compare features, size, and compatibility.",
   alternates: {
-    canonical: "/blog/webm-vs-mkv",
+    canonical: "https://www.filetoolworks.com/blog/webm-vs-mkv",
   },
 };
 

@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "WMA vs MP3: Quality, Size, and Compatibility",
   description: "WMA sounds slightly better than MP3 at low bitrates but only works on Windows. MP3 plays everywhere. Compare quality, file size, DRM, and device support.",
   alternates: {
-    canonical: "/blog/wma-vs-mp3",
+    canonical: "https://www.filetoolworks.com/blog/wma-vs-mp3",
   },
 };
 

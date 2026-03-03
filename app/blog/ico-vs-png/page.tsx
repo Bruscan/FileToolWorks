@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "ICO vs PNG: Which Format for Favicons and Icons?",
   description: "ICO bundles multiple icon sizes in one file while PNG offers better compression and transparency. Compare browser support, file size, and when to use each for favicons.",
   alternates: {
-    canonical: "/blog/ico-vs-png",
+    canonical: "https://www.filetoolworks.com/blog/ico-vs-png",
   },
 };
 

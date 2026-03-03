@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   description:
     "Compare FileToolWorks and Smallpdf. No 2-task daily limit, no signup, no file size cap. See which free PDF and file tool is right for you.",
   alternates: {
-    canonical: "/vs/smallpdf",
+    canonical: "https://www.filetoolworks.com/vs/smallpdf",
   },
   openGraph: {
     title: "FileToolWorks vs Smallpdf - Free Alternative",

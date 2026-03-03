@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "Best Image Format for Web: JPG, PNG, WebP Compared",
   description: "Pick the right image format for your website. JPG, PNG, and WebP compared by file size, quality, transparency, and browser support.",
   alternates: {
-    canonical: "/blog/best-image-format-for-web",
+    canonical: "https://www.filetoolworks.com/blog/best-image-format-for-web",
   },
 };
 

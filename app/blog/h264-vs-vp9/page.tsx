@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "H.264 vs VP9: Codec Comparison for Streaming",
   description: "VP9 compresses 30-50% better than H.264 but encodes slower. H.264 has universal device support and faster real-time performance. Full codec comparison.",
   alternates: {
-    canonical: "/blog/h264-vs-vp9",
+    canonical: "https://www.filetoolworks.com/blog/h264-vs-vp9",
   },
 };
 

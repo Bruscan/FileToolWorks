@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "OGG vs FLAC: Lossy vs Lossless Audio Compared",
   description: "FLAC preserves original audio quality with lossless compression. OGG Vorbis uses lossy compression for much smaller files. Compare quality, size, and use cases.",
   alternates: {
-    canonical: "/blog/ogg-vs-flac",
+    canonical: "https://www.filetoolworks.com/blog/ogg-vs-flac",
   },
 };
 

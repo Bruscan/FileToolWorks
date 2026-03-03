@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "Bzip2 vs Gzip: Compression Ratio and Speed",
   description: "Bzip2 compresses 10-20% better than gzip but decompresses 6x slower. Compare compression speed, ratio, and use cases for Linux and server environments.",
   alternates: {
-    canonical: "/blog/bzip2-vs-gzip",
+    canonical: "https://www.filetoolworks.com/blog/bzip2-vs-gzip",
   },
 };
 

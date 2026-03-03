@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "FLAC vs ALAC: Lossless Audio Formats Compared",
   description: "FLAC and ALAC both deliver identical lossless audio quality. FLAC works everywhere, ALAC works best on Apple devices. Compare compatibility, file size, and features.",
   alternates: {
-    canonical: "/blog/flac-vs-alac",
+    canonical: "https://www.filetoolworks.com/blog/flac-vs-alac",
   },
 };
 

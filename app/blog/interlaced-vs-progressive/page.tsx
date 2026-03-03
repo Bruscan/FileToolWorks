@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "Interlaced vs Progressive Scan Explained",
   description: "Interlaced video draws odd and even lines in alternating fields. Progressive video draws every line in sequence. Here is when each method matters.",
   alternates: {
-    canonical: "/blog/interlaced-vs-progressive",
+    canonical: "https://www.filetoolworks.com/blog/interlaced-vs-progressive",
   },
 };
 

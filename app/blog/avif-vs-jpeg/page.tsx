@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "AVIF vs JPEG: Size, Quality, and Compatibility",
   description: "AVIF compresses images 50% smaller than JPEG with better quality. Compare file size, browser support, encoding speed, and when each format makes sense.",
   alternates: {
-    canonical: "/blog/avif-vs-jpeg",
+    canonical: "https://www.filetoolworks.com/blog/avif-vs-jpeg",
   },
 };
 

@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "WebP vs PNG: File Size, Quality, and When to Use Each",
   description: "WebP vs PNG compared. Learn the differences in file size, transparency support, browser compatibility, and which format is best for your images.",
   alternates: {
-    canonical: "/blog/webp-vs-png",
+    canonical: "https://www.filetoolworks.com/blog/webp-vs-png",
   },
 };
 

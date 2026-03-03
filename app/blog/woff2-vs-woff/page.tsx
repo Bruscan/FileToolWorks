@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "WOFF2 vs WOFF: Compression and Browser Support",
   description: "WOFF2 is 30% smaller than WOFF thanks to Brotli compression and has 97%+ browser support. Compare file size, performance, and when to use each web font format.",
   alternates: {
-    canonical: "/blog/woff2-vs-woff",
+    canonical: "https://www.filetoolworks.com/blog/woff2-vs-woff",
   },
 };
 

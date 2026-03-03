@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "ext4 vs NTFS: Linux and Windows File Systems Compared",
   description: "ext4 is the default Linux file system with fast I/O and low fragmentation. NTFS is the Windows default with encryption and ACL permissions.",
   alternates: {
-    canonical: "/blog/ext4-vs-ntfs",
+    canonical: "https://www.filetoolworks.com/blog/ext4-vs-ntfs",
   },
 };
 

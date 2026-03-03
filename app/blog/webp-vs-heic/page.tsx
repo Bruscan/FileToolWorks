@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "WebP vs HEIC: Compression and Compatibility",
   description: "WebP works everywhere on the web with 96% browser support. HEIC compresses 50% better than JPEG but is limited to Apple devices. Full format comparison.",
   alternates: {
-    canonical: "/blog/webp-vs-heic",
+    canonical: "https://www.filetoolworks.com/blog/webp-vs-heic",
   },
 };
 

@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "WAV vs AAC: Quality, File Size, and When to Use Each",
   description: "WAV is uncompressed lossless audio. AAC is lossy but 90% smaller. Compare sound quality, file size, device support, and learn when each format makes sense.",
   alternates: {
-    canonical: "/blog/wav-vs-aac",
+    canonical: "https://www.filetoolworks.com/blog/wav-vs-aac",
   },
 };
 

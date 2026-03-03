@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   description:
     "Compare FileToolWorks and TinyPNG for image compression and conversion. No signup, no daily limits, complete browser privacy.",
   alternates: {
-    canonical: "/vs/tinypng",
+    canonical: "https://www.filetoolworks.com/vs/tinypng",
   },
   openGraph: {
     title: "FileToolWorks vs TinyPNG - Free Alternative",

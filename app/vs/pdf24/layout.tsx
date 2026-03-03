@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   description:
     "Compare FileToolWorks and PDF24 Tools. Browser-based privacy, no file uploads, plus image, video and audio tools PDF24 lacks.",
   alternates: {
-    canonical: "/vs/pdf24",
+    canonical: "https://www.filetoolworks.com/vs/pdf24",
   },
   openGraph: {
     title: "FileToolWorks vs PDF24 - Free Alternative",

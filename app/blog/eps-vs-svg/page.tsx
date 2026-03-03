@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "EPS vs SVG: Differences, Features, and Which to Use",
   description: "EPS is a legacy print format. SVG is the web standard for vector graphics. Compare file structure, compatibility, transparency, and learn when to use each.",
   alternates: {
-    canonical: "/blog/eps-vs-svg",
+    canonical: "https://www.filetoolworks.com/blog/eps-vs-svg",
   },
 };
 

@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "FLV vs MP4: Why FLV Is Dead and How to Convert",
   description: "FLV was built for Flash Player, which is gone. MP4 replaced it everywhere. Compare the two formats and learn how to convert FLV files to MP4.",
   alternates: {
-    canonical: "/blog/flv-vs-mp4",
+    canonical: "https://www.filetoolworks.com/blog/flv-vs-mp4",
   },
 };
 

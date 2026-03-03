@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "TIFF vs PNG: File Size, Quality, and When to Use Each",
   description: "TIFF is built for print and editing. PNG is built for the web. Compare file size, compression, color space support, and transparency for both formats.",
   alternates: {
-    canonical: "/blog/tiff-vs-png",
+    canonical: "https://www.filetoolworks.com/blog/tiff-vs-png",
   },
 };
 

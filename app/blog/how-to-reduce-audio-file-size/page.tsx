@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "How to Reduce Audio File Size (5 Methods That Work)",
   description: "Reduce audio file size by up to 90%. Five practical methods from format conversion to bitrate adjustment, with free tools.",
   alternates: {
-    canonical: "/blog/how-to-reduce-audio-file-size",
+    canonical: "https://www.filetoolworks.com/blog/how-to-reduce-audio-file-size",
   },
 };
 

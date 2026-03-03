@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "How to Make a GIF from Video (Best Settings)",
   description: "Turn any video clip into a GIF with the right FPS, resolution, and duration. Includes platform file size limits for Discord, Twitter, and Slack.",
   alternates: {
-    canonical: "/blog/how-to-make-gif-from-video",
+    canonical: "https://www.filetoolworks.com/blog/how-to-make-gif-from-video",
   },
 };
 

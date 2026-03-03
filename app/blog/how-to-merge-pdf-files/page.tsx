@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   description:
     "Combine multiple PDF files into one document in seconds. Free, no signup, works in your browser.",
   alternates: {
-    canonical: "/blog/how-to-merge-pdf-files",
+    canonical: "https://www.filetoolworks.com/blog/how-to-merge-pdf-files",
   },
 };
 

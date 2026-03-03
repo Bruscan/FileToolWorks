@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "CSV vs TSV: Comma vs Tab Delimited Files",
   description: "CSV uses commas as delimiters. TSV uses tabs. Compare parsing complexity, compatibility, performance, and which format to pick for your data.",
   alternates: {
-    canonical: "/blog/csv-vs-tsv",
+    canonical: "https://www.filetoolworks.com/blog/csv-vs-tsv",
   },
 };
 

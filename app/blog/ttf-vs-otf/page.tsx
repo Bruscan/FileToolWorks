@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "TTF vs OTF: Font Format Differences and Which to Use",
   description: "TTF uses quadratic curves and is universally compatible. OTF supports advanced typography features in a smaller file. Compare font formats, features, and pick the right one.",
   alternates: {
-    canonical: "/blog/ttf-vs-otf",
+    canonical: "https://www.filetoolworks.com/blog/ttf-vs-otf",
   },
 };
 

@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   description:
     "A clear comparison of PNG and JPG image formats. Learn which one to use for photos, graphics, transparency, and web images.",
   alternates: {
-    canonical: "/blog/png-vs-jpg",
+    canonical: "https://www.filetoolworks.com/blog/png-vs-jpg",
   },
 };
 

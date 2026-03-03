@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "BMP vs JPG: File Size, Quality, and When to Use Each",
   description: "BMP stores uncompressed pixel data for perfect quality but huge files. JPG uses lossy compression for much smaller files. Compare both image formats and pick the right one.",
   alternates: {
-    canonical: "/blog/bmp-vs-jpg",
+    canonical: "https://www.filetoolworks.com/blog/bmp-vs-jpg",
   },
 };
 

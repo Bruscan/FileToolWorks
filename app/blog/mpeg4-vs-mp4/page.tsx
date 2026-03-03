@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "MPEG-4 vs MP4: Are They the Same Thing?",
   description: "MPEG-4 is a compression standard. MP4 is a container format based on that standard. Learn the actual differences between MPEG-4 and MP4.",
   alternates: {
-    canonical: "/blog/mpeg4-vs-mp4",
+    canonical: "https://www.filetoolworks.com/blog/mpeg4-vs-mp4",
   },
 };
 

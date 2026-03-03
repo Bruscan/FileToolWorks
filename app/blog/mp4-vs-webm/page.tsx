@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "MP4 vs WebM: Size, Quality, and Compatibility",
   description: "MP4 uses H.264, WebM uses VP9. Compare file size, quality, browser support, and learn which video format to choose for web and sharing.",
   alternates: {
-    canonical: "/blog/mp4-vs-webm",
+    canonical: "https://www.filetoolworks.com/blog/mp4-vs-webm",
   },
 };
 
