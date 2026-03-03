@@ -64,6 +64,42 @@ const TOP_URLS = [
   '/compress-video-for-whatsapp',
   '/compress-audio-for-discord',
   '/compress-video-for-email',
+  // Tool pages previously missing
+  '/heic-to-jpg',
+  '/webp-to-jpg',
+  '/compress-pdf',
+  '/split-pdf',
+  '/ppt-to-pdf',
+  '/pdf-to-jpg',
+  '/image-to-heic',
+  // VS comparison pages (high-intent "alternatives" queries)
+  '/vs/convertio',
+  '/vs/ilovepdf',
+  '/vs/cloudconvert',
+  '/vs/zamzar',
+  '/vs/smallpdf',
+  '/vs/freeconvert',
+  '/vs/pdf24',
+  '/vs/online-convert',
+  '/vs/media-io',
+  '/vs/xconvert',
+  '/vs/adobe-acrobat',
+  '/vs/handbrake',
+  '/vs/tinypng',
+  '/vs/powercompress',
+  '/vs/ezyzip',
+  // Linkable assets
+  '/compare',
+  '/file-size-calculator',
+  '/format-finder',
+  '/format-guide',
+  '/free-tools-widget',
+  '/is-my-converter-safe',
+  // Trust pages (E-E-A-T)
+  '/about',
+  '/contact',
+  '/privacy',
+  '/terms',
 ].map(path => `${BASE_URL}${path}`)
 
 async function pingIndexNow(endpoint: string): Promise<{ ok: boolean; status: number }> {
