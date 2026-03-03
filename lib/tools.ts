@@ -338,6 +338,14 @@ export const tools: Tool[] = [
 
   // Document Tools
   {
+    id: "pdf-to-word",
+    name: "PDF to Word",
+    href: "/pdf-to-word",
+    description: "Convert PDF files to editable Word documents",
+    category: "document",
+    iconColor: "text-blue-700",
+  },
+  {
     id: "word-to-pdf",
     name: "Word to PDF",
     href: "/word-to-pdf",

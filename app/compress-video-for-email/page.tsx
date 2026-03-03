@@ -143,7 +143,7 @@ export default function CompressVideoForEmail() {
           </div>
           <p className="text-sm text-gray-500 mt-4">
             To maximize compatibility across email providers, compress to under
-            20MB. Corporate Exchange servers often have a 10MB limit.
+            20MB. Corporate Exchange servers often have a 10MB limit. See our complete <Link href="/file-size-limits" className="text-blue-600 hover:underline">file size limits reference</Link> for all platforms.
           </p>
         </div>
       </section>

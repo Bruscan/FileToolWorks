@@ -86,6 +86,14 @@ export default function AboutPage() {
             <Link href="/tools" className="text-blue-600 hover:underline">
               tools directory
             </Link>
+            . Not sure which format to use? Try our interactive{" "}
+            <Link href="/format-guide" className="text-blue-600 hover:underline">
+              format guide
+            </Link>
+            . Want to embed our tools on your own site? See{" "}
+            <Link href="/free-tools-widget" className="text-blue-600 hover:underline">
+              free tool widgets
+            </Link>
             .
           </p>
 

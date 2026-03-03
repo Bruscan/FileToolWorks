@@ -124,7 +124,7 @@ export default function CompressAudioForDiscord() {
           </div>
           <p className="text-sm text-gray-500 mt-4">
             A 5-minute WAV file is roughly 50MB. You need to compress it to fit
-            the free 10MB limit.
+            the free 10MB limit. Check our <Link href="/file-size-limits" className="text-blue-600 hover:underline">file size limits by platform</Link> for all Discord tiers and other apps.
           </p>
         </div>
       </section>

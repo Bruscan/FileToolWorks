@@ -123,7 +123,7 @@ export default function CompressVideoForDiscord() {
           </div>
           <p className="text-sm text-gray-500 mt-4">
             Servers with Nitro boosts may have higher limits. When in doubt,
-            compress to stay safely under the limit.
+            compress to stay safely under the limit. See <Link href="/file-size-limits" className="text-blue-600 hover:underline">file size limits by platform</Link> for a complete reference.
           </p>
         </div>
       </section>

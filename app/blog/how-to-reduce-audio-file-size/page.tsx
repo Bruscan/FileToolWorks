@@ -63,7 +63,7 @@ export default function BlogPost() {
           </p>
 
           <p>
-            Compressing podcast audio specifically? See our <Link href="/blog/how-to-compress-podcast-audio" className="text-blue-600 hover:underline">podcast compression guide</Link> for bitrate and mono settings tuned for voice. Working with WAV files specifically? See <Link href="/blog/how-to-compress-wav-files" className="text-blue-600 hover:underline">how to compress WAV files</Link>. For a detailed format comparison, check <Link href="/blog/mp3-vs-wav" className="text-blue-600 hover:underline">MP3 vs WAV</Link>.
+            Compressing podcast audio specifically? See our <Link href="/blog/how-to-compress-podcast-audio" className="text-blue-600 hover:underline">podcast compression guide</Link> for bitrate and mono settings tuned for voice. Working with WAV files specifically? See <Link href="/blog/how-to-compress-wav-files" className="text-blue-600 hover:underline">how to compress WAV files</Link>. For a detailed format comparison, check <Link href="/blog/mp3-vs-wav" className="text-blue-600 hover:underline">MP3 vs WAV</Link>. Want to estimate the output size before compressing? Use our <Link href="/file-size-calculator" className="text-blue-600 hover:underline">file size calculator</Link>.
           </p>
 
           <p>

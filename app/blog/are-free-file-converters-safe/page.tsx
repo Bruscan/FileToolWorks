@@ -63,7 +63,7 @@ export default function BlogPost() {
           <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-4">
             How to Tell If a File Converter Is Safe
           </h2>
-          <p>Check three things before using any online converter:</p>
+          <p>Not sure about the converter you already use? Try our <Link href="/is-my-converter-safe" className="text-blue-600 hover:underline">converter safety checker</Link> to get an instant risk score. Or check these three things manually:</p>
           <ol className="list-decimal pl-6 mb-4">
             <li>
               <strong>Does it upload your files?</strong> If the site uploads

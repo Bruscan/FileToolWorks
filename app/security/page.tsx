@@ -208,6 +208,17 @@ export default function SecurityPage() {
           </p>
 
           <p className="mt-6">
+            Not sure if your current converter is safe? Try our{" "}
+            <Link
+              href="/is-my-converter-safe"
+              className="text-blue-600 hover:underline"
+            >
+              converter safety checker
+            </Link>{" "}
+            to get an instant risk score.
+          </p>
+
+          <p className="mt-6">
             Want to see how other file converters compare on privacy? Check our{" "}
             <Link
               href="/privacy-comparison"

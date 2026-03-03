@@ -61,7 +61,7 @@ export default function BlogPost() {
             <strong>2. Lower the resolution.</strong> A 4K video downscaled to
             1080p can be 75% smaller. If you are sharing on social media or
             messaging apps, 720p is usually good enough and saves even more
-            space. The{" "}
+            space. Use our <Link href="/file-size-calculator" className="text-blue-600 hover:underline">file size calculator</Link> to estimate the result before compressing. The{" "}
             <Link
               href="/compress-video"
               className="text-blue-600 hover:underline font-semibold"

@@ -125,7 +125,7 @@ export default function CompressVideoForWhatsApp() {
           <p className="text-sm text-gray-500 mt-4">
             For the best experience, compress your video below 16MB so it plays
             inline with a thumbnail. Sending as a document avoids compression but
-            loses the preview.
+            loses the preview. See our <Link href="/file-size-limits" className="text-blue-600 hover:underline">platform file size limits</Link> for all messaging apps.
           </p>
         </div>
       </section>
