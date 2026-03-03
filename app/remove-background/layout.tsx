@@ -4,7 +4,7 @@ import ToolJsonLd from "@/components/ToolJsonLd";
 export const metadata: Metadata = {
   title: "Remove Background from Images - AI Background Remover",
   description:
-    "Remove image backgrounds automatically with AI. Free online tool to remove background from photos of people, products, animals, and objects. Get transparent PNG files instantly.",
+    "Remove image backgrounds automatically with AI, right in your browser. No upload to servers, no signup, complete privacy. Free tool for photos of people, products, and objects. Get transparent PNG files instantly.",
   keywords: [
     "remove background",
     "background remover",
@@ -20,11 +20,13 @@ export const metadata: Metadata = {
     "background eraser",
     "online background remover",
     "free background removal",
+    "no upload background remover",
+    "private background remover",
   ],
   openGraph: {
     title: "Remove Background from Images - AI Background Remover",
     description:
-      "Remove image backgrounds automatically with AI. Free online tool to remove background from photos of people, products, animals, and objects. Get transparent PNG files instantly.",
+      "Remove image backgrounds automatically with AI, right in your browser. No upload to servers, no signup, complete privacy. Free tool for photos of people, products, and objects.",
     type: "website",
     images: [{ url: "/api/og?title=AI%20Background%20Remover&description=Remove%20image%20backgrounds%20automatically%20with%20AI&category=image", width: 1200, height: 630 }],
   },
@@ -56,7 +58,7 @@ export default function RemoveBackgroundLayout({
     <>
       <ToolJsonLd
         name="Remove Background from Images - AI Background Remover"
-        description="Remove image backgrounds automatically with AI. Free online tool to remove background from photos of people, products, animals, and objects. Get transparent PNG files instantly."
+        description="Remove image backgrounds automatically with AI, right in your browser. No upload to servers, no signup, complete privacy. Free tool for photos of people, products, and objects."
         slug="remove-background"
         faqs={faqs}
         rating={4.9}

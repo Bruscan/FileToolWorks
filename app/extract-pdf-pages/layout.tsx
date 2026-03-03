@@ -4,7 +4,7 @@ import ToolJsonLd from "@/components/ToolJsonLd";
 export const metadata: Metadata = {
   title: "Extract PDF Pages - Free Online PDF Page Extractor",
   description:
-    "Extract specific pages from PDF documents instantly. Select pages with checkboxes or ranges like 1,3,5-7. Free, secure, no signup. Works in your browser.",
+    "Extract specific pages from PDF documents instantly in your browser. No upload to servers, no signup, complete privacy. Select pages with checkboxes or ranges like 1,3,5-7. Free and secure.",
   keywords: [
     "extract pdf pages",
     "pdf page extractor",
@@ -51,7 +51,7 @@ export default function ExtractPDFPagesLayout({
     <>
       <ToolJsonLd
         name="Extract PDF Pages - Free Online PDF Page Extractor"
-        description="Extract specific pages from PDF documents instantly. Select pages with checkboxes or ranges like 1,3,5-7. Free, secure, no signup. Works in your browser."
+        description="Extract specific pages from PDF documents instantly in your browser. No upload to servers, no signup, complete privacy. Select pages with checkboxes or ranges like 1,3,5-7. Free and secure."
         slug="extract-pdf-pages"
         faqs={faqs}
         rating={4.7}

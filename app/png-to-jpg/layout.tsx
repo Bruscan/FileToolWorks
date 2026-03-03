@@ -3,7 +3,7 @@ import ToolJsonLd from "@/components/ToolJsonLd";
 
 export const metadata: Metadata = {
   title: "PNG to JPG Converter | Free & Fast (No Signup)",
-  description: "Convert PNG images to JPG instantly. Works online, supports mobile, keeps high quality. Free forever, no signup required.",
+  description: "Convert PNG images to JPG instantly in your browser. No upload to servers, no signup, complete privacy. Works on mobile, keeps high quality. Free forever.",
   alternates: {
     canonical: "https://www.filetoolworks.com/png-to-jpg",
   },
@@ -37,7 +37,7 @@ export default function ToolLayout({
     <>
       <ToolJsonLd
         name="PNG to JPG Converter"
-        description="Convert PNG images to JPG instantly. Works online, supports mobile, keeps high quality. Free forever, no signup required."
+        description="Convert PNG images to JPG instantly in your browser. No upload to servers, no signup, complete privacy. Works on mobile, keeps high quality. Free forever."
         slug="png-to-jpg"
         faqs={faqs}
         rating={4.7}

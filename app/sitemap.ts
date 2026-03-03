@@ -352,6 +352,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.85,
   })
 
+  // Safety Checker (linkable asset - FBI warning angle)
+  routes.push({
+    url: `${BASE_URL}/is-my-converter-safe`,
+    lastModified: '2026-03-03T10:00:00.000Z',
+    changeFrequency: 'monthly',
+    priority: 0.85,
+  })
+
   // Use-case landing pages
   const useCasePages = ['compress-video-for-discord', 'compress-video-for-whatsapp', 'compress-audio-for-discord', 'compress-video-for-email']
   useCasePages.forEach((page) => {

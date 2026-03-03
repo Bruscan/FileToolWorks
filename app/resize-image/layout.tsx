@@ -3,7 +3,7 @@ import ToolJsonLd from "@/components/ToolJsonLd";
 
 export const metadata: Metadata = {
   title: "Image Resizer | Resize Photos Online Free (No Signup)",
-  description: "Resize images by percentage or custom dimensions instantly. Supports JPG, PNG, WebP. Works online, keeps quality. Free forever, no signup required.",
+  description: "Resize images by percentage or custom dimensions instantly in your browser. No upload to servers, no signup, complete privacy. Supports JPG, PNG, WebP. Free forever.",
   alternates: {
     canonical: "https://www.filetoolworks.com/resize-image",
   },
@@ -38,7 +38,7 @@ export default function ToolLayout({
     <>
       <ToolJsonLd
         name="Image Resizer"
-        description="Resize images by percentage or custom dimensions instantly. Supports JPG, PNG, WebP. Works online, keeps quality. Free forever, no signup required."
+        description="Resize images by percentage or custom dimensions instantly in your browser. No upload to servers, no signup, complete privacy. Supports JPG, PNG, WebP. Free forever."
         slug="resize-image"
         faqs={faqs}
         rating={4.8}

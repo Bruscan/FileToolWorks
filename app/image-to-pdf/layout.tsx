@@ -3,7 +3,7 @@ import ToolJsonLd from "@/components/ToolJsonLd";
 
 export const metadata: Metadata = {
   title: "Image to PDF Converter | Free & Fast (No Signup)",
-  description: "Convert JPG, PNG, HEIC to PDF instantly. Works online, supports mobile, keeps high quality. Free forever, no signup required.",
+  description: "Convert JPG, PNG, HEIC to PDF instantly in your browser. No upload to servers, no signup, complete privacy. Free forever, works on mobile, keeps high quality.",
   alternates: {
     canonical: "https://www.filetoolworks.com/image-to-pdf",
   },
@@ -38,7 +38,7 @@ export default function ImageToPDFLayout({
     <>
       <ToolJsonLd
         name="Image to PDF Converter"
-        description="Convert JPG, PNG, HEIC to PDF instantly. Works online, supports mobile, keeps high quality. Free forever, no signup required."
+        description="Convert JPG, PNG, HEIC to PDF instantly in your browser. No upload to servers, no signup, complete privacy. Free forever, works on mobile, keeps high quality."
         slug="image-to-pdf"
         faqs={faqs}
         rating={4.8}

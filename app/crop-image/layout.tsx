@@ -3,7 +3,7 @@ import ToolJsonLd from "@/components/ToolJsonLd";
 
 export const metadata: Metadata = {
   title: "Crop Image | Crop Photos to Any Size or Ratio Online Free",
-  description: "Crop images to preset ratios (1:1, 16:9, 4:3, 3:2) or custom dimensions instantly. Supports JPG, PNG, WebP. Works online, free forever, no signup required.",
+  description: "Crop images to preset ratios (1:1, 16:9, 4:3, 3:2) or custom dimensions instantly in your browser. No upload to servers, no signup, complete privacy. Supports JPG, PNG, WebP. Free forever.",
   alternates: {
     canonical: "https://www.filetoolworks.com/crop-image",
   },
@@ -37,7 +37,7 @@ export default function ToolLayout({
     <>
       <ToolJsonLd
         name="Crop Image"
-        description="Crop images to preset ratios (1:1, 16:9, 4:3, 3:2) or custom dimensions instantly. Supports JPG, PNG, WebP. Works online, free forever, no signup required."
+        description="Crop images to preset ratios (1:1, 16:9, 4:3, 3:2) or custom dimensions instantly in your browser. No upload to servers, no signup, complete privacy. Supports JPG, PNG, WebP. Free forever."
         slug="crop-image"
         faqs={faqs}
         rating={4.8}

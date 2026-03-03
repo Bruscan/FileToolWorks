@@ -3,7 +3,7 @@ import ToolJsonLd from "@/components/ToolJsonLd";
 
 export const metadata: Metadata = {
   title: "Merge PDF | Combine PDFs Free & Fast (No Signup)",
-  description: "Merge multiple PDF files into one instantly. Works online, supports mobile, keeps high quality. Free forever, no signup required.",
+  description: "Merge multiple PDF files into one instantly in your browser. No upload to servers, no signup, complete privacy. Free forever, works on mobile, keeps high quality.",
   alternates: {
     canonical: "https://www.filetoolworks.com/merge-pdf",
   },
@@ -38,7 +38,7 @@ export default function MergePDFLayout({
     <>
       <ToolJsonLd
         name="Merge PDF"
-        description="Merge multiple PDF files into one instantly. Works online, supports mobile, keeps high quality. Free forever, no signup required."
+        description="Merge multiple PDF files into one instantly in your browser. No upload to servers, no signup, complete privacy. Free forever, works on mobile, keeps high quality."
         slug="merge-pdf"
         faqs={faqs}
         rating={4.8}
