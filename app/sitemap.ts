@@ -38,13 +38,14 @@ const tools = [
   'sign-pdf',
   'pdf-to-word',
 
-  // Video Tools (6)
+  // Video Tools (7)
   'compress-video',
   'video-to-gif',
   'trim-video',
   'video-to-mp4',
   'video-to-webm',
   'mov-to-mp4',
+  'gif-to-mp4',
 
   // Audio Tools (6)
   'extract-audio',

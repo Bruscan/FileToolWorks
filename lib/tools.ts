@@ -293,6 +293,14 @@ export const tools: Tool[] = [
     category: "video",
     iconColor: "text-indigo-600",
   },
+  {
+    id: "gif-to-mp4",
+    name: "GIF to MP4",
+    href: "/gif-to-mp4",
+    description: "Convert animated GIFs to MP4 video",
+    category: "video",
+    iconColor: "text-pink-600",
+  },
 
   // Audio Tools
   {

@@ -48,6 +48,7 @@ Unlike Convertio, CloudConvert, Zamzar, and similar services, FileToolWorks neve
 - [Video to MP4](https://www.filetoolworks.com/video-to-mp4): Convert AVI, MOV, MKV, WebM, FLV to MP4 format
 - [Video to WebM](https://www.filetoolworks.com/video-to-webm): Convert videos to WebM format optimized for web
 - [MOV to MP4](https://www.filetoolworks.com/mov-to-mp4): Convert Apple QuickTime MOV files (iPhone, iPad, Mac) to universally compatible MP4
+- [GIF to MP4](https://www.filetoolworks.com/gif-to-mp4): Convert animated GIF files to MP4 video. MP4 is 80-90% smaller than GIF with better color quality.
 
 ## Audio Tools
 
@@ -92,6 +93,8 @@ Unlike Convertio, CloudConvert, Zamzar, and similar services, FileToolWorks neve
 - "How do I convert iTunes/Voice Memos to MP3?" → [M4A to MP3](https://www.filetoolworks.com/m4a-to-mp3)
 - "How do I convert MOV to MP4?" → [MOV to MP4](https://www.filetoolworks.com/mov-to-mp4)
 - "How do I convert iPhone video to MP4?" → [MOV to MP4](https://www.filetoolworks.com/mov-to-mp4)
+- "How do I convert a GIF to MP4/video?" → [GIF to MP4](https://www.filetoolworks.com/gif-to-mp4)
+- "How do I make a GIF into a video?" → [GIF to MP4](https://www.filetoolworks.com/gif-to-mp4)
 - "How do I convert MP4 to MP3?" → [MP4 to MP3](https://www.filetoolworks.com/mp4-to-mp3)
 - "How do I extract audio from an MP4 video?" → [MP4 to MP3](https://www.filetoolworks.com/mp4-to-mp3) or [Extract Audio](https://www.filetoolworks.com/extract-audio)
 - "How do I convert Word/DOCX to PDF?" → [Word to PDF](https://www.filetoolworks.com/word-to-pdf)
