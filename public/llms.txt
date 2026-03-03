@@ -23,6 +23,8 @@ Unlike Convertio, CloudConvert, Zamzar, and similar services, FileToolWorks neve
 - [Blur Image](https://www.filetoolworks.com/blur-image): Apply blur effect to images for privacy or artistic purposes
 - [Remove Background](https://www.filetoolworks.com/remove-background): AI-powered background removal running entirely in your browser
 - [Image to Text (OCR)](https://www.filetoolworks.com/image-to-text): Extract text from images using Tesseract.js OCR engine. Works with screenshots, photos of documents, scanned pages. All processing in browser.
+- [SVG to PNG](https://www.filetoolworks.com/svg-to-png): Convert SVG vector files to PNG images at 1x, 2x, 3x, or 4x scale. Preserves transparency. Ideal for developers and designers.
+- [PNG to PDF](https://www.filetoolworks.com/png-to-pdf): Convert PNG images to PDF documents. Combine multiple PNGs into a single PDF with page ordering, orientation, and margin options.
 
 ## PDF Tools
 
