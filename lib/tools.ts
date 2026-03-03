@@ -375,6 +375,22 @@ export const tools: Tool[] = [
     category: "audio",
     iconColor: "text-rose-600",
   },
+  {
+    id: "aac-to-mp3",
+    name: "AAC to MP3",
+    href: "/aac-to-mp3",
+    description: "Convert AAC audio to MP3 format",
+    category: "audio",
+    iconColor: "text-amber-600",
+  },
+  {
+    id: "ogg-to-mp3",
+    name: "OGG to MP3",
+    href: "/ogg-to-mp3",
+    description: "Convert OGG Vorbis audio to MP3 format",
+    category: "audio",
+    iconColor: "text-lime-600",
+  },
 
   // Document Tools
   {

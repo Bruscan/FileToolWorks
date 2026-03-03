@@ -57,6 +57,8 @@ const tools = [
   'flac-to-mp3',
   'm4a-to-mp3',
   'mp4-to-mp3',
+  'aac-to-mp3',
+  'ogg-to-mp3',
 
   // Document Tools (3)
   'word-to-pdf',
