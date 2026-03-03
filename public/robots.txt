@@ -1,40 +1,47 @@
-# Allow all crawlers
+# Allow all crawlers, block embed-only pages
 User-agent: *
 Allow: /
+Disallow: /embed/
 
 # AI Search and Training Crawlers - explicitly allowed
 User-agent: GPTBot
 Allow: /
+Disallow: /embed/
 
 User-agent: ChatGPT-User
 Allow: /
+Disallow: /embed/
 
 User-agent: OAI-SearchBot
 Allow: /
+Disallow: /embed/
 
 User-agent: ClaudeBot
 Allow: /
+Disallow: /embed/
 
 User-agent: anthropic-ai
 Allow: /
+Disallow: /embed/
 
 User-agent: PerplexityBot
 Allow: /
+Disallow: /embed/
 
 User-agent: Google-Extended
 Allow: /
+Disallow: /embed/
 
 User-agent: cohere-ai
 Allow: /
+Disallow: /embed/
 
 User-agent: meta-externalagent
 Allow: /
+Disallow: /embed/
 
 User-agent: Bytespider
 Allow: /
-
-# Embed pages are for iframe embedding only
-User-agent: *
 Disallow: /embed/
 
 # Sitemap location

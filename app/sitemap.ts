@@ -344,6 +344,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.8,
   })
 
+  // Privacy Comparison (linkable asset)
+  routes.push({
+    url: `${BASE_URL}/privacy-comparison`,
+    lastModified: '2026-03-02T12:00:00.000Z',
+    changeFrequency: 'monthly',
+    priority: 0.85,
+  })
+
   // Use-case landing pages
   const useCasePages = ['compress-video-for-discord', 'compress-video-for-whatsapp', 'compress-audio-for-discord', 'compress-video-for-email']
   useCasePages.forEach((page) => {

@@ -197,6 +197,13 @@ export default function BlogPost() {
             >
               security page
             </Link>
+            . You can also see a side-by-side{" "}
+            <Link
+              href="/privacy-comparison"
+              className="text-blue-600 hover:underline"
+            >
+              privacy comparison of 15 popular file converters
+            </Link>
             .
           </p>
         </div>

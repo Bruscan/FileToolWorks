@@ -207,6 +207,17 @@ export default function SecurityPage() {
             .
           </p>
 
+          <p className="mt-6">
+            Want to see how other file converters compare on privacy? Check our{" "}
+            <Link
+              href="/privacy-comparison"
+              className="text-blue-600 hover:underline"
+            >
+              file converter privacy comparison
+            </Link>{" "}
+            for a side-by-side breakdown of 15 services.
+          </p>
+
           <div className="mt-10 p-6 bg-blue-50 rounded-lg border border-blue-200">
             <h3 className="text-lg font-semibold text-gray-900 mb-2">
               Try It Yourself
