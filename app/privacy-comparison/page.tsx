@@ -313,6 +313,18 @@ const converters = [
     tools: "~10",
     note: "Privacy-first browser utilities",
   },
+  {
+    name: "CleanPX",
+    url: "https://cleanpx.com",
+    processing: "Browser",
+    uploads: "No",
+    signup: "No",
+    retention: "None",
+    fileLimit: "None",
+    openSource: "No",
+    tools: "Image only",
+    note: "Image converter and optimizer, no upload",
+  },
 ];
 
 const faqItems = [
@@ -355,7 +367,7 @@ export default function PrivacyComparisonPage() {
     "@type": "WebPage",
     name: "File Converter Privacy Comparison",
     description:
-      "Factual comparison of how 26 file converters handle your data. See which upload files to servers vs process locally.",
+      "Factual comparison of how 27 file converters handle your data. See which upload files to servers vs process locally.",
     url: "https://www.filetoolworks.com/privacy-comparison",
     dateModified: "2026-03-03",
     breadcrumb: {
@@ -418,7 +430,7 @@ export default function PrivacyComparisonPage() {
         <p className="text-lg text-gray-600 mb-8">
           Not all file converters handle your data the same way. Some upload
           files to remote servers. Others process everything locally. This
-          comparison shows exactly how 26 popular file converters work, so you
+          comparison shows exactly how 27 popular file converters work, so you
           can make an informed choice.
         </p>
 
@@ -807,7 +819,7 @@ export default function PrivacyComparisonPage() {
             About This Comparison
           </h3>
           <p className="mb-2">
-            This page compares 26 file converter services based on publicly
+            This page compares 27 file converter services based on publicly
             available information from their websites, privacy policies, and
             documentation. Last updated March 2026. Policies may
             change. We recommend checking each service&apos;s current privacy
