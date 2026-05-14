@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<!DOCTYPE data [
+<!ENTITY a "AAAA">
+<!ENTITY b "&a;&a;&a;&a;">
+<!ENTITY c "&b;&b;&b;&b;">
+]>
+<data>&c;</data>
