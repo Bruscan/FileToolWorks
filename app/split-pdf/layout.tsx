@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   title: "Split PDF | Free & Fast (No Signup)",
   description: "Split PDF into separate pages or ranges instantly. Works online, supports mobile, keeps high quality. Free forever, no signup required.",
   alternates: {
-    canonical: "https://www.filetoolworks.com/split-pdf",
+    canonical: "https://filetoolworks.com/split-pdf",
   },
   openGraph: {
     title: "Split PDF",

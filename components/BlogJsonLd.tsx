@@ -23,11 +23,11 @@ export default function BlogJsonLd({
     publisher: {
       "@type": "Organization",
       name: "FileToolWorks",
-      url: "https://www.filetoolworks.com",
+      url: "https://filetoolworks.com",
     },
     mainEntityOfPage: {
       "@type": "WebPage",
-      "@id": `https://www.filetoolworks.com/blog/${slug}`,
+      "@id": `https://filetoolworks.com/blog/${slug}`,
     },
   };
 
@@ -39,19 +39,19 @@ export default function BlogJsonLd({
         "@type": "ListItem",
         position: 1,
         name: "Home",
-        item: "https://www.filetoolworks.com",
+        item: "https://filetoolworks.com",
       },
       {
         "@type": "ListItem",
         position: 2,
         name: "Blog",
-        item: "https://www.filetoolworks.com/blog",
+        item: "https://filetoolworks.com/blog",
       },
       {
         "@type": "ListItem",
         position: 3,
         name: title.replace(" | FileToolWorks", ""),
-        item: `https://www.filetoolworks.com/blog/${slug}`,
+        item: `https://filetoolworks.com/blog/${slug}`,
       },
     ],
   };

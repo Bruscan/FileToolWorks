@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   title: "Merge PDF | Combine PDFs Free & Fast (No Signup)",
   description: "Merge multiple PDF files into one instantly in your browser. No upload to servers, no signup, complete privacy. Free forever, works on mobile, keeps high quality.",
   alternates: {
-    canonical: "https://www.filetoolworks.com/merge-pdf",
+    canonical: "https://filetoolworks.com/merge-pdf",
   },
   openGraph: {
     title: "Merge PDF",

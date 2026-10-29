@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   title: "Audio Trimmer | Cut and Trim Audio Files Online",
   description: "Cut and trim audio files online. Supports MP3, WAV, AAC, and OGG. Fast, free, and secure. Set start and end times to trim audio instantly.",
   alternates: {
-    canonical: "https://www.filetoolworks.com/trim-audio",
+    canonical: "https://filetoolworks.com/trim-audio",
   },
   openGraph: {
     title: "Audio Trimmer | Cut and Trim Audio Online",

@@ -5,13 +5,13 @@ export const metadata: Metadata = {
   description:
     "Compare FileToolWorks and Convertio. No signup, no file limits, browser-based privacy. See which free file converter is right for you.",
   alternates: {
-    canonical: "https://www.filetoolworks.com/vs/convertio",
+    canonical: "https://filetoolworks.com/vs/convertio",
   },
   openGraph: {
     title: "FileToolWorks vs Convertio - Free Alternative",
     description:
       "Compare FileToolWorks and Convertio. No signup, no file limits, browser-based privacy.",
-    url: "https://www.filetoolworks.com/vs/convertio",
+    url: "https://filetoolworks.com/vs/convertio",
     siteName: "FileToolWorks",
     type: "website",
   },

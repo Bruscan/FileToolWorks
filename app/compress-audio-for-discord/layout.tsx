@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   description:
     "Compress audio files to fit Discord's file size limits. Free, browser-based, no signup. Reduce MP3, WAV, FLAC under 10MB or 50MB for Discord uploads.",
   alternates: {
-    canonical: "https://www.filetoolworks.com/compress-audio-for-discord",
+    canonical: "https://filetoolworks.com/compress-audio-for-discord",
   },
   openGraph: {
     title: "Compress Audio for Discord | Free Online",
@@ -83,7 +83,7 @@ export default function CompressAudioForDiscordLayout({
                 position: 1,
                 name: "Open the audio compressor",
                 text: "Go to the free audio compressor tool at FileToolWorks.",
-                url: "https://www.filetoolworks.com/compress-audio",
+                url: "https://filetoolworks.com/compress-audio",
               },
               {
                 "@type": "HowToStep",
@@ -107,7 +107,7 @@ export default function CompressAudioForDiscordLayout({
             tool: {
               "@type": "HowToTool",
               name: "FileToolWorks Audio Compressor",
-              url: "https://www.filetoolworks.com/compress-audio",
+              url: "https://filetoolworks.com/compress-audio",
             },
           }),
         }}

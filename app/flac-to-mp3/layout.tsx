@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     "lossless to mp3",
   ],
   alternates: {
-    canonical: "https://www.filetoolworks.com/flac-to-mp3",
+    canonical: "https://filetoolworks.com/flac-to-mp3",
   },
   openGraph: {
     title: "FLAC to MP3 Converter - Free Online Audio Converter",

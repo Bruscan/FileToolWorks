@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   description:
     "Compress videos to fit email attachment limits. Free, browser-based, no signup. Reduce video size under 25MB for Gmail or 20MB for Outlook.",
   alternates: {
-    canonical: "https://www.filetoolworks.com/compress-video-for-email",
+    canonical: "https://filetoolworks.com/compress-video-for-email",
   },
   openGraph: {
     title: "Compress Video for Email | Free Online",
@@ -83,7 +83,7 @@ export default function CompressVideoForEmailLayout({
                 position: 1,
                 name: "Open the video compressor",
                 text: "Go to the free video compressor tool at FileToolWorks.",
-                url: "https://www.filetoolworks.com/compress-video",
+                url: "https://filetoolworks.com/compress-video",
               },
               {
                 "@type": "HowToStep",
@@ -107,7 +107,7 @@ export default function CompressVideoForEmailLayout({
             tool: {
               "@type": "HowToTool",
               name: "FileToolWorks Video Compressor",
-              url: "https://www.filetoolworks.com/compress-video",
+              url: "https://filetoolworks.com/compress-video",
             },
           }),
         }}

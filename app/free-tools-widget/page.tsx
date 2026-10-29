@@ -103,7 +103,7 @@ export default function FreeToolsWidget() {
   const [copied, setCopied] = useState(false);
 
   const embedCode = `<iframe
-  src="https://www.filetoolworks.com${selectedWidget.embedPath}"
+  src="https://filetoolworks.com${selectedWidget.embedPath}"
   width="100%"
   height="${selectedWidget.height}"
   frameborder="0"
@@ -111,7 +111,7 @@ export default function FreeToolsWidget() {
   style="border: 1px solid #e5e7eb; border-radius: 8px;"
 ></iframe>
 <p style="text-align: center; margin-top: 8px;">
-  <a href="https://www.filetoolworks.com${selectedWidget.fullPath}" target="_blank" rel="noopener" style="color: #6b7280; font-size: 12px; text-decoration: none;">
+  <a href="https://filetoolworks.com${selectedWidget.fullPath}" target="_blank" rel="noopener" style="color: #6b7280; font-size: 12px; text-decoration: none;">
     Powered by FileToolWorks - Free Online File Tools
   </a>
 </p>`;
@@ -211,7 +211,7 @@ export default function FreeToolsWidget() {
               {/* Preview link */}
               <div className="text-center">
                 <a
-                  href={`https://www.filetoolworks.com${selectedWidget.fullPath}`}
+                  href={`https://filetoolworks.com${selectedWidget.fullPath}`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-sm text-blue-600 hover:underline"

@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   title: "Compress PNG | Reduce PNG File Size Online Free",
   description: "Compress PNG images online for free. Reduce file size while keeping transparency. No upload, no signup - runs entirely in your browser.",
   alternates: {
-    canonical: "https://www.filetoolworks.com/compress-png",
+    canonical: "https://filetoolworks.com/compress-png",
   },
   openGraph: {
     title: "Compress PNG Online Free",

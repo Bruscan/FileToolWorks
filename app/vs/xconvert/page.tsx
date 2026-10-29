@@ -7,7 +7,7 @@ export default function VsXConvert() {
     name: "FileToolWorks vs XConvert",
     description:
       "Compare FileToolWorks and XConvert for free online audio compression and file conversion.",
-    url: "https://www.filetoolworks.com/vs/xconvert",
+    url: "https://filetoolworks.com/vs/xconvert",
     breadcrumb: {
       "@type": "BreadcrumbList",
       itemListElement: [
@@ -15,13 +15,13 @@ export default function VsXConvert() {
           "@type": "ListItem",
           position: 1,
           name: "Home",
-          item: "https://www.filetoolworks.com",
+          item: "https://filetoolworks.com",
         },
         {
           "@type": "ListItem",
           position: 2,
           name: "FileToolWorks vs XConvert",
-          item: "https://www.filetoolworks.com/vs/xconvert",
+          item: "https://filetoolworks.com/vs/xconvert",
         },
       ],
     },

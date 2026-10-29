@@ -7,7 +7,7 @@ export default function VsHandBrake() {
     name: "FileToolWorks vs HandBrake",
     description:
       "Compare FileToolWorks and HandBrake for free video conversion and compression.",
-    url: "https://www.filetoolworks.com/vs/handbrake",
+    url: "https://filetoolworks.com/vs/handbrake",
     breadcrumb: {
       "@type": "BreadcrumbList",
       itemListElement: [
@@ -15,13 +15,13 @@ export default function VsHandBrake() {
           "@type": "ListItem",
           position: 1,
           name: "Home",
-          item: "https://www.filetoolworks.com",
+          item: "https://filetoolworks.com",
         },
         {
           "@type": "ListItem",
           position: 2,
           name: "FileToolWorks vs HandBrake",
-          item: "https://www.filetoolworks.com/vs/handbrake",
+          item: "https://filetoolworks.com/vs/handbrake",
         },
       ],
     },

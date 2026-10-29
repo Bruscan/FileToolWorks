@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "AAC vs OGG: Quality, Size, and Compatibility",
   description: "AAC sounds better at low bitrates and works on Apple devices. OGG Vorbis is open-source with higher max bitrate. Compare quality, size, and device support.",
   alternates: {
-    canonical: "https://www.filetoolworks.com/blog/aac-vs-ogg",
+    canonical: "https://filetoolworks.com/blog/aac-vs-ogg",
   },
 };
 

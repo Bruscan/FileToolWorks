@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     description: "Convert any video format to MP4. Free.",
   },
   alternates: {
-    canonical: "https://www.filetoolworks.com/video-to-mp4",
+    canonical: "https://filetoolworks.com/video-to-mp4",
   },
 };
 

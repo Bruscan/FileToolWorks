@@ -562,10 +562,11 @@ All tools use flat URLs (e.g., `/image-to-pdf/` not `/tools/image-to-pdf/`)
 4. Deploy to production
 
 ## SEO Implementation
-- **Metadata**: metadataBase set to filetoolworks.com
-- **Canonical URLs**: Configured via metadata alternates
-- **Sitemap**: Dynamic sitemap.ts generates all pages
-- **Robots.txt**: Allows all crawlers, references sitemap
+- **Metadata**: metadataBase set to https://filetoolworks.com (apex)
+- **Canonical host**: Apex https://filetoolworks.com. www.filetoolworks.com permanently redirects to the apex host in next.config.ts. In Vercel Domains, the apex must be primary and www must redirect to it with 308, otherwise the platform 307 from apex to www loops with the in-code redirect.
+- **Canonical URLs**: Configured via metadata alternates. Homepage canonical is /.
+- **Sitemap**: Dynamic sitemap.ts generates all pages on the apex host
+- **Robots.txt**: Allows all crawlers, references the apex sitemap
 - **Content**: Keyword-rich hero text, category descriptions
 - **Rating**: 4.7/5 stars with vote count for trust building
 - **No em-dashes or special characters in text content**

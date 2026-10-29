@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     "apple video converter",
   ],
   alternates: {
-    canonical: "https://www.filetoolworks.com/mov-to-mp4",
+    canonical: "https://filetoolworks.com/mov-to-mp4",
   },
   openGraph: {
     title: "MOV to MP4 Converter - Free Online Video Converter",

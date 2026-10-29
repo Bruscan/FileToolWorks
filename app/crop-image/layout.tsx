@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   title: "Crop Image | Crop Photos to Any Size or Ratio Online Free",
   description: "Crop images to preset ratios (1:1, 16:9, 4:3, 3:2) or custom dimensions instantly in your browser. No upload to servers, no signup, complete privacy. Supports JPG, PNG, WebP. Free forever.",
   alternates: {
-    canonical: "https://www.filetoolworks.com/crop-image",
+    canonical: "https://filetoolworks.com/crop-image",
   },
   openGraph: {
     title: "Crop Image",

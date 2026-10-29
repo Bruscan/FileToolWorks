@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     "convert animated gif to video",
   ],
   alternates: {
-    canonical: "https://www.filetoolworks.com/gif-to-mp4",
+    canonical: "https://filetoolworks.com/gif-to-mp4",
   },
   openGraph: {
     title: "GIF to MP4 Converter - Free Online, No Upload",

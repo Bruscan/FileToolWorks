@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     "mkv video converter",
   ],
   alternates: {
-    canonical: "https://www.filetoolworks.com/mkv-to-mp4",
+    canonical: "https://filetoolworks.com/mkv-to-mp4",
   },
   openGraph: {
     title: "MKV to MP4 Converter - Free Online Video Converter",

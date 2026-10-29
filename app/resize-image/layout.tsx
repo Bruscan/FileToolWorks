@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   title: "Image Resizer | Resize Photos Online Free (No Signup)",
   description: "Resize images by percentage or custom dimensions instantly in your browser. No upload to servers, no signup, complete privacy. Supports JPG, PNG, WebP. Free forever.",
   alternates: {
-    canonical: "https://www.filetoolworks.com/resize-image",
+    canonical: "https://filetoolworks.com/resize-image",
   },
   openGraph: {
     title: "Image Resizer",

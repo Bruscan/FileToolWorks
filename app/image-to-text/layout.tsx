@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     description: "Extract text from images using OCR. Free, no upload.",
   },
   alternates: {
-    canonical: "https://www.filetoolworks.com/image-to-text",
+    canonical: "https://filetoolworks.com/image-to-text",
   },
 };
 

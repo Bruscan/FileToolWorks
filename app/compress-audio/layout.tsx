@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   title: "Free Online Audio Compressor - Reduce MP3, WAV File Size",
   description: "Compress MP3, WAV, AAC, OGG, and FLAC files online for free. Reduce audio file size by up to 90% in your browser. No upload to servers, no signup, no file size limits.",
   alternates: {
-    canonical: "https://www.filetoolworks.com/compress-audio",
+    canonical: "https://filetoolworks.com/compress-audio",
   },
   openGraph: {
     title: "Free Online Audio Compressor - No Upload Required",

@@ -7,7 +7,7 @@ export default function VsPowerCompress() {
     name: "FileToolWorks vs PowerCompress",
     description:
       "Compare FileToolWorks and PowerCompress for free browser-based file conversion and compression.",
-    url: "https://www.filetoolworks.com/vs/powercompress",
+    url: "https://filetoolworks.com/vs/powercompress",
     breadcrumb: {
       "@type": "BreadcrumbList",
       itemListElement: [
@@ -15,13 +15,13 @@ export default function VsPowerCompress() {
           "@type": "ListItem",
           position: 1,
           name: "Home",
-          item: "https://www.filetoolworks.com",
+          item: "https://filetoolworks.com",
         },
         {
           "@type": "ListItem",
           position: 2,
           name: "FileToolWorks vs PowerCompress",
-          item: "https://www.filetoolworks.com/vs/powercompress",
+          item: "https://filetoolworks.com/vs/powercompress",
         },
       ],
     },

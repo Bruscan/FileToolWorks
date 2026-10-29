@@ -7,7 +7,7 @@ export default function VsSmallpdf() {
     name: "FileToolWorks vs Smallpdf",
     description:
       "Compare FileToolWorks and Smallpdf for free online file conversion and PDF tools.",
-    url: "https://www.filetoolworks.com/vs/smallpdf",
+    url: "https://filetoolworks.com/vs/smallpdf",
     breadcrumb: {
       "@type": "BreadcrumbList",
       itemListElement: [
@@ -15,13 +15,13 @@ export default function VsSmallpdf() {
           "@type": "ListItem",
           position: 1,
           name: "Home",
-          item: "https://www.filetoolworks.com",
+          item: "https://filetoolworks.com",
         },
         {
           "@type": "ListItem",
           position: 2,
           name: "FileToolWorks vs Smallpdf",
-          item: "https://www.filetoolworks.com/vs/smallpdf",
+          item: "https://filetoolworks.com/vs/smallpdf",
         },
       ],
     },

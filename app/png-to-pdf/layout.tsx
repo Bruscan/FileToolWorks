@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   title: "PNG to PDF Converter | Free Online (No Upload)",
   description: "Convert PNG images to PDF documents instantly in your browser. Combine multiple PNGs into one PDF. Free, no upload to servers, no signup needed.",
   alternates: {
-    canonical: "https://www.filetoolworks.com/png-to-pdf",
+    canonical: "https://filetoolworks.com/png-to-pdf",
   },
   openGraph: {
     title: "PNG to PDF Converter",

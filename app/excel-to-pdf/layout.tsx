@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     description: "Convert Excel spreadsheets to PDF format. Free.",
   },
   alternates: {
-    canonical: "https://www.filetoolworks.com/excel-to-pdf",
+    canonical: "https://filetoolworks.com/excel-to-pdf",
   },
 };
 

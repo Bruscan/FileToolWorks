@@ -3,7 +3,7 @@ import Link from "next/link";
 const converters = [
   {
     name: "FileToolWorks",
-    url: "https://www.filetoolworks.com",
+    url: "https://filetoolworks.com",
     processing: "Browser",
     uploads: "No",
     signup: "No",
@@ -368,7 +368,7 @@ export default function PrivacyComparisonPage() {
     name: "File Converter Privacy Comparison",
     description:
       "Factual comparison of how 27 file converters handle your data. See which upload files to servers vs process locally.",
-    url: "https://www.filetoolworks.com/privacy-comparison",
+    url: "https://filetoolworks.com/privacy-comparison",
     dateModified: "2026-03-03",
     breadcrumb: {
       "@type": "BreadcrumbList",
@@ -377,13 +377,13 @@ export default function PrivacyComparisonPage() {
           "@type": "ListItem",
           position: 1,
           name: "Home",
-          item: "https://www.filetoolworks.com",
+          item: "https://filetoolworks.com",
         },
         {
           "@type": "ListItem",
           position: 2,
           name: "Privacy Comparison",
-          item: "https://www.filetoolworks.com/privacy-comparison",
+          item: "https://filetoolworks.com/privacy-comparison",
         },
       ],
     },

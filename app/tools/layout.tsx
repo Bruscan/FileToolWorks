@@ -5,13 +5,13 @@ export const metadata: Metadata = {
   description:
     "Browse 40+ free online file tools. Convert, compress, edit, and merge images, PDFs, videos, audio, and documents. No upload to servers, no signup, all processing in your browser for complete privacy.",
   alternates: {
-    canonical: "https://www.filetoolworks.com/tools",
+    canonical: "https://filetoolworks.com/tools",
   },
   openGraph: {
     title: "40+ Free Online File Tools - No Upload, Browser-Based, Private",
     description:
       "Browse 40+ free online file tools. Convert, compress, edit, and merge files. No upload to servers, no signup, all processing in your browser for complete privacy.",
-    url: "https://www.filetoolworks.com/tools",
+    url: "https://filetoolworks.com/tools",
     type: "website",
     siteName: "FileToolWorks",
   },

@@ -280,7 +280,7 @@ export default function EmbedCompressAudio() {
         </div>
         <div className="mt-3 text-center">
           <a
-            href="https://www.filetoolworks.com/compress-audio"
+            href="https://filetoolworks.com/compress-audio"
             target="_blank"
             rel="noopener"
             className="text-xs text-gray-400 hover:text-blue-600 transition-colors"

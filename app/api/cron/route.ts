@@ -1,6 +1,6 @@
 import { NextResponse } from 'next/server'
 
-const BASE_URL = 'https://www.filetoolworks.com'
+const BASE_URL = 'https://filetoolworks.com'
 const INDEXNOW_KEY = '6a0e17fe43174fd68eb13a7bd32c26f3'
 
 async function getAllUrlsFromSitemap(): Promise<string[]> {
@@ -28,7 +28,7 @@ async function pingIndexNow(endpoint: string, urls: string[]): Promise<{ ok: boo
       method: 'POST',
       headers: { 'Content-Type': 'application/json; charset=utf-8' },
       body: JSON.stringify({
-        host: 'www.filetoolworks.com',
+        host: 'filetoolworks.com',
         key: INDEXNOW_KEY,
         keyLocation: `${BASE_URL}/${INDEXNOW_KEY}.txt`,
         urlList: urls,

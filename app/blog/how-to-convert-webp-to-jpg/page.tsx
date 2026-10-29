@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   description:
     "Convert WebP images to JPG format instantly in your browser. No upload needed, no software to install. Works on any device.",
   alternates: {
-    canonical: "https://www.filetoolworks.com/blog/how-to-convert-webp-to-jpg",
+    canonical: "https://filetoolworks.com/blog/how-to-convert-webp-to-jpg",
   },
 };
 

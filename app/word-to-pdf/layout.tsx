@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     description: "Convert Word documents to PDF format. Free.",
   },
   alternates: {
-    canonical: "https://www.filetoolworks.com/word-to-pdf",
+    canonical: "https://filetoolworks.com/word-to-pdf",
   },
 };
 

@@ -5,13 +5,13 @@ export const metadata: Metadata = {
   description:
     "Compare FileToolWorks and XConvert for audio compression and file conversion. Browser-based privacy, no signup, no daily limits.",
   alternates: {
-    canonical: "https://www.filetoolworks.com/vs/xconvert",
+    canonical: "https://filetoolworks.com/vs/xconvert",
   },
   openGraph: {
     title: "FileToolWorks vs XConvert - Free Alternative",
     description:
       "Compare FileToolWorks and XConvert. Browser-based privacy, no signup, no limits.",
-    url: "https://www.filetoolworks.com/vs/xconvert",
+    url: "https://filetoolworks.com/vs/xconvert",
     siteName: "FileToolWorks",
     type: "website",
   },

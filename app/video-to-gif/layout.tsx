@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   title: "Video to GIF Converter | Free & Fast (No Signup)",
   description: "Convert video clips to animated GIFs instantly in your browser. No upload to servers, no signup, complete privacy. Free forever, works on mobile, keeps high quality.",
   alternates: {
-    canonical: "https://www.filetoolworks.com/video-to-gif",
+    canonical: "https://filetoolworks.com/video-to-gif",
   },
   openGraph: {
     title: "Video to GIF",

@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   description:
     "Press kit for FileToolWorks. Free browser-based file conversion tools that process files locally. No uploads, no signup. Media resources, key facts, and contact.",
   alternates: {
-    canonical: "https://www.filetoolworks.com/press",
+    canonical: "https://filetoolworks.com/press",
   },
 };
 
@@ -317,8 +317,8 @@ export default function PressPage() {
           <ul className="space-y-3 text-gray-700">
             <li>
               <span className="font-medium">Website:</span>{" "}
-              <a href="https://www.filetoolworks.com" className="text-blue-600 hover:underline" target="_blank" rel="noopener">
-                www.filetoolworks.com
+              <a href="https://filetoolworks.com" className="text-blue-600 hover:underline" target="_blank" rel="noopener">
+                filetoolworks.com
               </a>
             </li>
             <li>
