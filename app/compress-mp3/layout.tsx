@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   title: "MP3 Compressor | Reduce MP3 File Size Online Free",
   description: "Free online MP3 compressor. Reduce MP3 file size by up to 90% without re-uploading to any server. Choose bitrate from 64kbps to 320kbps. No signup needed.",
   alternates: {
-    canonical: "https://www.filetoolworks.com/compress-mp3",
+    canonical: "https://filetoolworks.com/compress-mp3",
   },
   openGraph: {
     title: "Free MP3 Compressor Online | Reduce MP3 File Size",

@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     "convert webm online",
   ],
   alternates: {
-    canonical: "https://www.filetoolworks.com/webm-to-mp4",
+    canonical: "https://filetoolworks.com/webm-to-mp4",
   },
   openGraph: {
     title: "WebM to MP4 Converter - Free Online Video Converter",

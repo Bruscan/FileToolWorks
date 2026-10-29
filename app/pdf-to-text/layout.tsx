@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     description: "Extract text from PDF files instantly. Free.",
   },
   alternates: {
-    canonical: "https://www.filetoolworks.com/pdf-to-text",
+    canonical: "https://filetoolworks.com/pdf-to-text",
   },
 };
 

@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   description:
     "Complete reference of file upload size limits for Gmail, Outlook, Discord, WhatsApp, Telegram, Slack, Instagram, TikTok, and 40+ more platforms. Updated for 2026.",
   alternates: {
-    canonical: "https://www.filetoolworks.com/file-size-limits",
+    canonical: "https://filetoolworks.com/file-size-limits",
   },
   openGraph: {
     title: "File Size Limits by Platform (2026)",
@@ -80,13 +80,13 @@ export default function FileSizeLimitsLayout({
         "@type": "ListItem",
         position: 1,
         name: "Home",
-        item: "https://www.filetoolworks.com",
+        item: "https://filetoolworks.com",
       },
       {
         "@type": "ListItem",
         position: 2,
         name: "File Size Limits by Platform",
-        item: "https://www.filetoolworks.com/file-size-limits",
+        item: "https://filetoolworks.com/file-size-limits",
       },
     ],
   };

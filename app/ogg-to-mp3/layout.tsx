@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     "ogg file to mp3",
   ],
   alternates: {
-    canonical: "https://www.filetoolworks.com/ogg-to-mp3",
+    canonical: "https://filetoolworks.com/ogg-to-mp3",
   },
   openGraph: {
     title: "OGG to MP3 Converter - Free Online Audio Converter",

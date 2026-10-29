@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     "aac file to mp3",
   ],
   alternates: {
-    canonical: "https://www.filetoolworks.com/aac-to-mp3",
+    canonical: "https://filetoolworks.com/aac-to-mp3",
   },
   openGraph: {
     title: "AAC to MP3 Converter - Free Online Audio Converter",

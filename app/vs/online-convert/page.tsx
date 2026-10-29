@@ -7,7 +7,7 @@ export default function VsOnlineConvert() {
     name: "FileToolWorks vs Online-Convert",
     description:
       "Compare FileToolWorks and Online-Convert for free online file conversion.",
-    url: "https://www.filetoolworks.com/vs/online-convert",
+    url: "https://filetoolworks.com/vs/online-convert",
     breadcrumb: {
       "@type": "BreadcrumbList",
       itemListElement: [
@@ -15,13 +15,13 @@ export default function VsOnlineConvert() {
           "@type": "ListItem",
           position: 1,
           name: "Home",
-          item: "https://www.filetoolworks.com",
+          item: "https://filetoolworks.com",
         },
         {
           "@type": "ListItem",
           position: 2,
           name: "FileToolWorks vs Online-Convert",
-          item: "https://www.filetoolworks.com/vs/online-convert",
+          item: "https://filetoolworks.com/vs/online-convert",
         },
       ],
     },

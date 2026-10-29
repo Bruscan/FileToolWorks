@@ -5,13 +5,13 @@ export const metadata: Metadata = {
   description:
     "Compare FileToolWorks and iLovePDF for PDF tools. No signup, no daily limits, all processing in your browser. See the full comparison.",
   alternates: {
-    canonical: "https://www.filetoolworks.com/vs/ilovepdf",
+    canonical: "https://filetoolworks.com/vs/ilovepdf",
   },
   openGraph: {
     title: "FileToolWorks vs iLovePDF - Free Alternative",
     description:
       "Compare FileToolWorks and iLovePDF for PDF tools. No signup, no daily limits, all processing in your browser.",
-    url: "https://www.filetoolworks.com/vs/ilovepdf",
+    url: "https://filetoolworks.com/vs/ilovepdf",
     siteName: "FileToolWorks",
     type: "website",
   },

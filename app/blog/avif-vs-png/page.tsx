@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "AVIF vs PNG: Compression, Quality, and Uses",
   description: "AVIF compresses photos 10x smaller than PNG with minimal quality loss. PNG is lossless with universal support. Compare file size, features, and pick the right format.",
   alternates: {
-    canonical: "https://www.filetoolworks.com/blog/avif-vs-png",
+    canonical: "https://filetoolworks.com/blog/avif-vs-png",
   },
 };
 

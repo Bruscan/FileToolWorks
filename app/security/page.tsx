@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   description:
     "FileToolWorks processes files in your browser. No uploads, no servers, no risk. Learn how client-side processing keeps your files safe from malware and data theft.",
   alternates: {
-    canonical: "https://www.filetoolworks.com/security",
+    canonical: "https://filetoolworks.com/security",
   },
 };
 

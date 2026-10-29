@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   description:
     "Compare MP4, WebM, AVI, and MKV file sizes. Learn which video format gives the smallest files while keeping good quality.",
   alternates: {
-    canonical: "https://www.filetoolworks.com/blog/smallest-video-format",
+    canonical: "https://filetoolworks.com/blog/smallest-video-format",
   },
 };
 

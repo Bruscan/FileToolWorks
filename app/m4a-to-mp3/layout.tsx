@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     "m4a to mp3 free",
   ],
   alternates: {
-    canonical: "https://www.filetoolworks.com/m4a-to-mp3",
+    canonical: "https://filetoolworks.com/m4a-to-mp3",
   },
   openGraph: {
     title: "M4A to MP3 Converter - Free Online Audio Converter",

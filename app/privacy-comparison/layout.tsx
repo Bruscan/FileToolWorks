@@ -5,13 +5,13 @@ export const metadata: Metadata = {
   description:
     "Compare 27 file converters on privacy and safety. See which upload files to servers, which process locally in your browser, and how to verify safety yourself.",
   alternates: {
-    canonical: "https://www.filetoolworks.com/privacy-comparison",
+    canonical: "https://filetoolworks.com/privacy-comparison",
   },
   openGraph: {
     title: "File Converter Privacy & Safety Comparison 2026 - Who Uploads Your Files?",
     description:
       "Compare 27 file converters on privacy and safety. See which upload to servers vs process locally in your browser.",
-    url: "https://www.filetoolworks.com/privacy-comparison",
+    url: "https://filetoolworks.com/privacy-comparison",
     siteName: "FileToolWorks",
     type: "website",
   },

@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "PDF vs DOCX: Differences and When to Use Each",
   description: "PDF vs DOCX explained. Learn when to use each format for sharing, editing, printing, and archiving documents.",
   alternates: {
-    canonical: "https://www.filetoolworks.com/blog/pdf-vs-docx",
+    canonical: "https://filetoolworks.com/blog/pdf-vs-docx",
   },
 };
 

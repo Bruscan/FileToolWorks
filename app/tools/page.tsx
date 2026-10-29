@@ -74,7 +74,7 @@ export default function ToolsPage() {
     "@type": "CollectionPage",
     name: "All Free Online File Tools",
     description: `Browse ${toolCount}+ free online file tools for converting, compressing, and editing files.`,
-    url: "https://www.filetoolworks.com/tools",
+    url: "https://filetoolworks.com/tools",
     mainEntity: {
       "@type": "ItemList",
       numberOfItems: toolCount,
@@ -82,7 +82,7 @@ export default function ToolsPage() {
         "@type": "ListItem",
         position: index + 1,
         name: tool.name,
-        url: `https://www.filetoolworks.com${tool.href}`,
+        url: `https://filetoolworks.com${tool.href}`,
       })),
     },
   };

@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   title: "SVG to PNG Converter | Free Online (No Upload)",
   description: "Convert SVG vector files to PNG images instantly in your browser. Choose 1x, 2x, 3x or 4x scale. Free, no upload to servers, no signup. Preserves transparency.",
   alternates: {
-    canonical: "https://www.filetoolworks.com/svg-to-png",
+    canonical: "https://filetoolworks.com/svg-to-png",
   },
   openGraph: {
     title: "SVG to PNG Converter",

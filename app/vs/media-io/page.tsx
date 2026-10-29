@@ -7,7 +7,7 @@ export default function VsMediaIo() {
     name: "FileToolWorks vs Media.io",
     description:
       "Compare FileToolWorks and Media.io for free online file conversion and audio compression.",
-    url: "https://www.filetoolworks.com/vs/media-io",
+    url: "https://filetoolworks.com/vs/media-io",
     breadcrumb: {
       "@type": "BreadcrumbList",
       itemListElement: [
@@ -15,13 +15,13 @@ export default function VsMediaIo() {
           "@type": "ListItem",
           position: 1,
           name: "Home",
-          item: "https://www.filetoolworks.com",
+          item: "https://filetoolworks.com",
         },
         {
           "@type": "ListItem",
           position: 2,
           name: "FileToolWorks vs Media.io",
-          item: "https://www.filetoolworks.com/vs/media-io",
+          item: "https://filetoolworks.com/vs/media-io",
         },
       ],
     },

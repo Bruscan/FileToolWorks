@@ -5,13 +5,13 @@ export const metadata: Metadata = {
   description:
     "Compare FileToolWorks and Zamzar for free online file conversion. No 50MB limit, no 2-file cap, no signup. See the full comparison.",
   alternates: {
-    canonical: "https://www.filetoolworks.com/vs/zamzar",
+    canonical: "https://filetoolworks.com/vs/zamzar",
   },
   openGraph: {
     title: "FileToolWorks vs Zamzar - Free Alternative",
     description:
       "Compare FileToolWorks and Zamzar for free online file conversion. No 50MB limit, no 2-file cap, no signup.",
-    url: "https://www.filetoolworks.com/vs/zamzar",
+    url: "https://filetoolworks.com/vs/zamzar",
     siteName: "FileToolWorks",
     type: "website",
   },

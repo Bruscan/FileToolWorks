@@ -7,7 +7,7 @@ export default function VsAdobeAcrobat() {
     name: "FileToolWorks vs Adobe Acrobat",
     description:
       "Compare FileToolWorks and Adobe Acrobat Online for free PDF conversion and editing tools.",
-    url: "https://www.filetoolworks.com/vs/adobe-acrobat",
+    url: "https://filetoolworks.com/vs/adobe-acrobat",
     breadcrumb: {
       "@type": "BreadcrumbList",
       itemListElement: [
@@ -15,13 +15,13 @@ export default function VsAdobeAcrobat() {
           "@type": "ListItem",
           position: 1,
           name: "Home",
-          item: "https://www.filetoolworks.com",
+          item: "https://filetoolworks.com",
         },
         {
           "@type": "ListItem",
           position: 2,
           name: "FileToolWorks vs Adobe Acrobat",
-          item: "https://www.filetoolworks.com/vs/adobe-acrobat",
+          item: "https://filetoolworks.com/vs/adobe-acrobat",
         },
       ],
     },

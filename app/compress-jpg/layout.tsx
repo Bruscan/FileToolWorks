@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   title: "Compress JPG | Reduce JPEG File Size Online Free",
   description: "Compress JPG and JPEG images online for free. Reduce file size by up to 90% without losing quality. No upload, no signup - runs in your browser.",
   alternates: {
-    canonical: "https://www.filetoolworks.com/compress-jpg",
+    canonical: "https://filetoolworks.com/compress-jpg",
   },
   openGraph: {
     title: "Compress JPG Online Free",

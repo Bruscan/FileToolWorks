@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     "extract mp3 from video",
   ],
   alternates: {
-    canonical: "https://www.filetoolworks.com/mp4-to-mp3",
+    canonical: "https://filetoolworks.com/mp4-to-mp3",
   },
   openGraph: {
     title: "MP4 to MP3 Converter - Extract Audio from Video Free",

@@ -5,13 +5,13 @@ export const metadata: Metadata = {
   description:
     "Compare 150+ file formats side by side. Audio, image, video, document, and archive format comparisons with detailed breakdowns. Find the right format for your project.",
   alternates: {
-    canonical: "https://www.filetoolworks.com/compare",
+    canonical: "https://filetoolworks.com/compare",
   },
   openGraph: {
     title: "File Format Comparisons - 150+ Formats Compared Side by Side",
     description:
       "Compare 150+ file formats side by side. Audio, image, video, document, and archive format comparisons with detailed breakdowns.",
-    url: "https://www.filetoolworks.com/compare",
+    url: "https://filetoolworks.com/compare",
     type: "website",
     siteName: "FileToolWorks",
   },

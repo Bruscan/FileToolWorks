@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     "FBI warning file converter safe alternative",
   ],
   alternates: {
-    canonical: "https://www.filetoolworks.com/is-my-converter-safe",
+    canonical: "https://filetoolworks.com/is-my-converter-safe",
   },
   openGraph: {
     title: "Is My File Converter Safe? Free Safety Checker",

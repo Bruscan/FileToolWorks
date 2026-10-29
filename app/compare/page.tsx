@@ -349,7 +349,7 @@ export default function ComparePage() {
     "@type": "CollectionPage",
     name: "File Format Comparisons",
     description: `Compare ${totalComparisons}+ file formats side by side. Audio, image, video, document, and archive format comparisons.`,
-    url: "https://www.filetoolworks.com/compare",
+    url: "https://filetoolworks.com/compare",
     mainEntity: {
       "@type": "ItemList",
       numberOfItems: totalComparisons,
@@ -360,7 +360,7 @@ export default function ComparePage() {
             "@type": "ListItem",
             position: ci * 100 + si + 1,
             name: `${a} vs ${b}`,
-            url: `https://www.filetoolworks.com/blog/${slug}`,
+            url: `https://filetoolworks.com/blog/${slug}`,
           };
         })
       ),
@@ -368,8 +368,8 @@ export default function ComparePage() {
     breadcrumb: {
       "@type": "BreadcrumbList",
       itemListElement: [
-        { "@type": "ListItem", position: 1, name: "Home", item: "https://www.filetoolworks.com" },
-        { "@type": "ListItem", position: 2, name: "Format Comparisons", item: "https://www.filetoolworks.com/compare" },
+        { "@type": "ListItem", position: 1, name: "Home", item: "https://filetoolworks.com" },
+        { "@type": "ListItem", position: 2, name: "Format Comparisons", item: "https://filetoolworks.com/compare" },
       ],
     },
   };

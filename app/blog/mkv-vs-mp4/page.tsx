@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "MKV vs MP4: Size, Quality, and Compatibility",
   description: "MKV supports unlimited tracks and subtitles, MP4 works everywhere. Compare file size, codec support, streaming, and learn which video format to pick.",
   alternates: {
-    canonical: "https://www.filetoolworks.com/blog/mkv-vs-mp4",
+    canonical: "https://filetoolworks.com/blog/mkv-vs-mp4",
   },
 };
 

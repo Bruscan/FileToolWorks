@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   title: "Image to PDF Converter | Free & Fast (No Signup)",
   description: "Convert JPG, PNG, HEIC to PDF instantly in your browser. No upload to servers, no signup, complete privacy. Free forever, works on mobile, keeps high quality.",
   alternates: {
-    canonical: "https://www.filetoolworks.com/image-to-pdf",
+    canonical: "https://filetoolworks.com/image-to-pdf",
   },
   openGraph: {
     title: "Image to PDF Converter | Free & Fast",

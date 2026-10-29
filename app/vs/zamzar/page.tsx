@@ -7,7 +7,7 @@ export default function VsZamzar() {
     name: "FileToolWorks vs Zamzar",
     description:
       "Compare FileToolWorks and Zamzar for free online file conversion.",
-    url: "https://www.filetoolworks.com/vs/zamzar",
+    url: "https://filetoolworks.com/vs/zamzar",
     breadcrumb: {
       "@type": "BreadcrumbList",
       itemListElement: [
@@ -15,13 +15,13 @@ export default function VsZamzar() {
           "@type": "ListItem",
           position: 1,
           name: "Home",
-          item: "https://www.filetoolworks.com",
+          item: "https://filetoolworks.com",
         },
         {
           "@type": "ListItem",
           position: 2,
           name: "FileToolWorks vs Zamzar",
-          item: "https://www.filetoolworks.com/vs/zamzar",
+          item: "https://filetoolworks.com/vs/zamzar",
         },
       ],
     },

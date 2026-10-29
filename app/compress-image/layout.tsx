@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   title: "Image Compressor | Reduce File Size Without Losing Quality (Free)",
   description: "Compress JPG, PNG, and WebP images instantly. Reduce file size by up to 90% while maintaining quality. Free forever, no signup required.",
   alternates: {
-    canonical: "https://www.filetoolworks.com/compress-image",
+    canonical: "https://filetoolworks.com/compress-image",
   },
   openGraph: {
     title: "Image Compressor",

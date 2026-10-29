@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   description:
     "Compress videos to fit WhatsApp's 16MB file size limit. Free, browser-based, no signup. Reduce video size for WhatsApp sharing on iPhone and Android.",
   alternates: {
-    canonical: "https://www.filetoolworks.com/compress-video-for-whatsapp",
+    canonical: "https://filetoolworks.com/compress-video-for-whatsapp",
   },
   openGraph: {
     title: "Compress Video for WhatsApp | Free Online",
@@ -83,7 +83,7 @@ export default function CompressVideoForWhatsAppLayout({
                 position: 1,
                 name: "Open the video compressor",
                 text: "Go to the free video compressor tool at FileToolWorks.",
-                url: "https://www.filetoolworks.com/compress-video",
+                url: "https://filetoolworks.com/compress-video",
               },
               {
                 "@type": "HowToStep",
@@ -107,7 +107,7 @@ export default function CompressVideoForWhatsAppLayout({
             tool: {
               "@type": "HowToTool",
               name: "FileToolWorks Video Compressor",
-              url: "https://www.filetoolworks.com/compress-video",
+              url: "https://filetoolworks.com/compress-video",
             },
           }),
         }}

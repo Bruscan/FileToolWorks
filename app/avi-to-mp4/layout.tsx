@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     "convert avi online",
   ],
   alternates: {
-    canonical: "https://www.filetoolworks.com/avi-to-mp4",
+    canonical: "https://filetoolworks.com/avi-to-mp4",
   },
   openGraph: {
     title: "AVI to MP4 Converter - Free Online Video Converter",

@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     "blur online free",
   ],
   alternates: {
-    canonical: "https://www.filetoolworks.com/blur-image",
+    canonical: "https://filetoolworks.com/blur-image",
   },
   openGraph: {
     title: "Blur Image - Apply Blur Effect Online Free",

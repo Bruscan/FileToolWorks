@@ -45,11 +45,11 @@ Allow: /
 Disallow: /embed/
 
 # Sitemap location
-Sitemap: https://www.filetoolworks.com/sitemap.xml
+Sitemap: https://filetoolworks.com/sitemap.xml
 
 # AI-readable tool directory
-# https://www.filetoolworks.com/llms.txt
-# https://www.filetoolworks.com/llms-full.txt
+# https://filetoolworks.com/llms.txt
+# https://filetoolworks.com/llms-full.txt
 
 # RSS Feed
-# https://www.filetoolworks.com/feed.xml
+# https://filetoolworks.com/feed.xml

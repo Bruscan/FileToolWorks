@@ -5,13 +5,13 @@ export const metadata: Metadata = {
   description:
     "Compare FileToolWorks and FreeConvert. No daily limits, no file uploads, full privacy. See which free file converter is right for you.",
   alternates: {
-    canonical: "https://www.filetoolworks.com/vs/freeconvert",
+    canonical: "https://filetoolworks.com/vs/freeconvert",
   },
   openGraph: {
     title: "FileToolWorks vs FreeConvert - Free Alternative",
     description:
       "Compare FileToolWorks and FreeConvert. No daily limits, no file uploads, full privacy.",
-    url: "https://www.filetoolworks.com/vs/freeconvert",
+    url: "https://filetoolworks.com/vs/freeconvert",
     siteName: "FileToolWorks",
     type: "website",
   },

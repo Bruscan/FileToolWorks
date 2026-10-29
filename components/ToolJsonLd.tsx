@@ -38,7 +38,7 @@ export default function ToolJsonLd({
         position: 1,
         name: "Upload your file",
         text: `Go to the ${name} tool on FileToolWorks and drag and drop your file into the upload area, or click to browse and select files from your device.`,
-        url: `https://www.filetoolworks.com/${slug}`,
+        url: `https://filetoolworks.com/${slug}`,
       },
       {
         "@type": "HowToStep",
@@ -73,7 +73,7 @@ export default function ToolJsonLd({
     "@type": "WebApplication",
     name: name,
     description: description,
-    url: `https://www.filetoolworks.com/${slug}`,
+    url: `https://filetoolworks.com/${slug}`,
     applicationCategory: "UtilityApplication",
     operatingSystem: "Any",
     inLanguage: "en",
@@ -94,13 +94,13 @@ export default function ToolJsonLd({
     },
     potentialAction: {
       "@type": "UseAction",
-      target: `https://www.filetoolworks.com/${slug}`,
+      target: `https://filetoolworks.com/${slug}`,
       name: `Use ${name}`,
     },
     creator: {
       "@type": "Organization",
       name: "FileToolWorks",
-      url: "https://www.filetoolworks.com",
+      url: "https://filetoolworks.com",
       sameAs: ["https://github.com/Bruscan/FileToolWorks"],
     },
   };
@@ -113,13 +113,13 @@ export default function ToolJsonLd({
         "@type": "ListItem",
         position: 1,
         name: "Home",
-        item: "https://www.filetoolworks.com",
+        item: "https://filetoolworks.com",
       },
       {
         "@type": "ListItem",
         position: 2,
         name: name,
-        item: `https://www.filetoolworks.com/${slug}`,
+        item: `https://filetoolworks.com/${slug}`,
       },
     ],
   };

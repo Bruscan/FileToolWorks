@@ -7,7 +7,7 @@ export default function VsPdf24() {
     name: "FileToolWorks vs PDF24",
     description:
       "Compare FileToolWorks and PDF24 Tools for free online PDF and file conversion.",
-    url: "https://www.filetoolworks.com/vs/pdf24",
+    url: "https://filetoolworks.com/vs/pdf24",
     breadcrumb: {
       "@type": "BreadcrumbList",
       itemListElement: [
@@ -15,13 +15,13 @@ export default function VsPdf24() {
           "@type": "ListItem",
           position: 1,
           name: "Home",
-          item: "https://www.filetoolworks.com",
+          item: "https://filetoolworks.com",
         },
         {
           "@type": "ListItem",
           position: 2,
           name: "FileToolWorks vs PDF24",
-          item: "https://www.filetoolworks.com/vs/pdf24",
+          item: "https://filetoolworks.com/vs/pdf24",
         },
       ],
     },

@@ -7,7 +7,7 @@ export default function VsCloudConvert() {
     name: "FileToolWorks vs CloudConvert",
     description:
       "Compare FileToolWorks and CloudConvert for free online file conversion.",
-    url: "https://www.filetoolworks.com/vs/cloudconvert",
+    url: "https://filetoolworks.com/vs/cloudconvert",
     breadcrumb: {
       "@type": "BreadcrumbList",
       itemListElement: [
@@ -15,13 +15,13 @@ export default function VsCloudConvert() {
           "@type": "ListItem",
           position: 1,
           name: "Home",
-          item: "https://www.filetoolworks.com",
+          item: "https://filetoolworks.com",
         },
         {
           "@type": "ListItem",
           position: 2,
           name: "FileToolWorks vs CloudConvert",
-          item: "https://www.filetoolworks.com/vs/cloudconvert",
+          item: "https://filetoolworks.com/vs/cloudconvert",
         },
       ],
     },

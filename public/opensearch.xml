@@ -2,7 +2,7 @@
 <OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/">
   <ShortName>FileToolWorks</ShortName>
   <Description>Free online file conversion and compression tools</Description>
-  <Url type="text/html" template="https://www.filetoolworks.com/tools?q={searchTerms}"/>
-  <Image width="32" height="32" type="image/svg+xml">https://www.filetoolworks.com/icon.svg</Image>
+  <Url type="text/html" template="https://filetoolworks.com/tools?q={searchTerms}"/>
+  <Image width="32" height="32" type="image/svg+xml">https://filetoolworks.com/icon.svg</Image>
   <InputEncoding>UTF-8</InputEncoding>
 </OpenSearchDescription>

@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   description:
     "Compress videos to fit Discord's file size limits. Free, browser-based, no signup. Reduce video size under 10MB, 25MB, or 50MB for Discord uploads.",
   alternates: {
-    canonical: "https://www.filetoolworks.com/compress-video-for-discord",
+    canonical: "https://filetoolworks.com/compress-video-for-discord",
   },
   openGraph: {
     title: "Compress Video for Discord | Free Online",
@@ -83,7 +83,7 @@ export default function CompressVideoForDiscordLayout({
                 position: 1,
                 name: "Open the video compressor",
                 text: "Go to the free video compressor tool at FileToolWorks.",
-                url: "https://www.filetoolworks.com/compress-video",
+                url: "https://filetoolworks.com/compress-video",
               },
               {
                 "@type": "HowToStep",
@@ -107,7 +107,7 @@ export default function CompressVideoForDiscordLayout({
             tool: {
               "@type": "HowToTool",
               name: "FileToolWorks Video Compressor",
-              url: "https://www.filetoolworks.com/compress-video",
+              url: "https://filetoolworks.com/compress-video",
             },
           }),
         }}
